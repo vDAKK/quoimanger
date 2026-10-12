@@ -18,10 +18,16 @@ Pour une vraie PWA installable et utilisable hors-ligne (service worker), héber
 5. **Courses (Intermarché Bourg-en-Bresse)** : tout est traduit en français et converti en g, ml et cuillères. Les quantités sont cumulées entre recettes et classées dans l'ordre des rayons d'un parcours Intermarché type (ordre et magasin modifiables). Les basiques de placard sont mis à part, et une loupe ouvre la recherche du produit sur intermarche.com.
 6. **Apprentissage** : 👍 favorise un plat, 👎 l'exclut définitivement.
 
+## Langues
+
+Français, English, 中文 : détection automatique selon le téléphone, changement via le bouton 🌐 (choix propre à chaque appareil, les données du foyer restent communes). Les noms et instructions des recettes viennent de TheMealDB (anglais) ; un lien ouvre la traduction.
+
 ## Fichiers
 
 - `js/ingredients-fr.js` : 810 ingrédients → nom français + rayon
 - `js/shop.js` : conversion des mesures, liste de courses par rayon
+- `js/i18n.js` : textes de l'interface en FR / EN / 中文
+- `js/ingredients-zh.js` : noms chinois des ingrédients
 - `js/data.js` : options du questionnaire, mots-clés de détection, traductions FR des ingrédients
 - `js/engine.js` : chargement, enrichissement, scoring, menu, liste de courses
 - `js/app.js` : interface

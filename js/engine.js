@@ -169,9 +169,16 @@ function enrich(m) {
 }
 
 // ---------- Scoring ----------
-const cuisineLabel = (id) => (CUISINES.find(c => c.id === id) || { label: 'Autre' }).label;
-const proteinLabel = (id) => (PROTEINS.find(p => p.id === id) || { label: 'Légumes' }).label;
-const dishLabel = (id) => (DISH_TYPES.find(d => d.id === id) || {}).label || id;
+const cuisineLabel = (id) => { const c = CUISINES.find(x => x.id === id); return c ? L('cuisines', c) : t('other'); };
+const proteinLabel = (id) => { const p = PROTEINS.find(x => x.id === id); return p ? L('proteins', p) : t('vegetables'); };
+const dishLabel = (id) => { const d = DISH_TYPES.find(x => x.id === id); return d ? L('dishes', d) : id; };
+const GROUP_SRC = { proteins: PROTEINS, flavours: FLAVOURS, dishes: DISH_TYPES };
+// Les raisons sont stockées sous forme de clés [clé, variables] et traduites à l'affichage.
+function reasonText(r) {
+  if (r[0] === 'lbl') return L(r[1].g, GROUP_SRC[r[1].g].find(x => x.id === r[1].id));
+  if (r[0] === 'r_cuisine') return t('r_cuisine', { c: cuisineLabel(r[1].id) });
+  return t(r[0], r[1]);
+}
 
 /** Renvoie { score, reasons } ou null si le plat est exclu par les préférences. */
 function scoreMeal(m, P, feedback = {}) {
@@ -192,36 +199,36 @@ function scoreMeal(m, P, feedback = {}) {
 
   // Envie
   if (P.craving === 'quick') {
-    if (f.time <= 25) add(16, `Prêt en ~${f.time} min`); else if (f.time <= 35) add(8, `Prêt en ~${f.time} min`); else if (f.time > 60) add(-15);
+    if (f.time <= 25) add(16, ['r_ready', { n: f.time }]); else if (f.time <= 35) add(8, ['r_ready', { n: f.time }]); else if (f.time > 60) add(-15);
     if (f.overnight) add(-10);
   } else if (P.craving === 'chef') {
-    add(f.chef * 4, f.chef >= 3 ? 'Recette digne d’un resto' : null);
+    add(f.chef * 4, f.chef >= 3 ? ['r_chef'] : null);
     if (f.time < 20) add(-5);
   } else if (P.craving === 'family') {
-    add(f.family * 4, f.family >= 2 ? 'Parfait pour toute la famille' : null);
+    add(f.family * 4, f.family >= 2 ? ['r_family'] : null);
   }
 
   // Profil alimentaire
-  if (P.diet === 'flexi') add(f.isMeat ? -10 : 8, f.isMeat ? null : 'Recette sans viande');
-  if (P.diet === 'pesco' && (f.proteins.has('fish') || f.proteins.has('seafood'))) add(10, 'Poisson & fruits de mer');
+  if (P.diet === 'flexi') add(f.isMeat ? -10 : 8, f.isMeat ? null : ['r_nomeat']);
+  if (P.diet === 'pesco' && (f.proteins.has('fish') || f.proteins.has('seafood'))) add(10, ['r_seafood']);
 
   // Nutrition
-  if (P.nutrition.includes('light')) add(-f.heavy * 4 + (f.heavy === 0 ? 8 : 0), f.heavy === 0 ? 'Léger (Calorie Smart)' : null);
-  if (P.nutrition.includes('lowcarb')) add(f.carbs === 0 ? 12 : -f.carbs * 6, f.carbs === 0 ? 'Pauvre en glucides' : null);
+  if (P.nutrition.includes('light')) add(-f.heavy * 4 + (f.heavy === 0 ? 8 : 0), f.heavy === 0 ? ['r_light'] : null);
+  if (P.nutrition.includes('lowcarb')) add(f.carbs === 0 ? 12 : -f.carbs * 6, f.carbs === 0 ? ['r_lowcarb'] : null);
   if (P.nutrition.includes('protein')) {
     const rich = ['beef', 'pork', 'poultry', 'lamb', 'fish', 'seafood', 'plant'].some(p => f.proteins.has(p));
-    add(rich ? 10 : -6, rich ? 'Riche en protéines' : null);
+    add(rich ? 10 : -6, rich ? ['r_protein'] : null);
   }
-  if (P.nutrition.includes('veg')) add(Math.min(f.veg, 5) * 3 - 3, f.veg >= 4 ? `${f.veg} légumes` : null);
+  if (P.nutrition.includes('veg')) add(Math.min(f.veg, 5) * 3 - 3, f.veg >= 4 ? ['r_veg', { n: f.veg }] : null);
 
   // Cuisines
   const c = P.cuisines[f.cuisine];
-  if (c === 1) add(12, `Cuisine ${cuisineLabel(f.cuisine).toLowerCase()}`);
+  if (c === 1) add(12, ['r_cuisine', { id: f.cuisine }]);
   if (c === -1) add(-25);
 
   // Protéines aimées
   const likedProt = [...f.proteins].filter(p => P.proteins[p] === 1);
-  if (likedProt.length) add(10, proteinLabel(f.main === 'veg' ? likedProt[0] : (likedProt.includes(f.main) ? f.main : likedProt[0])));
+  if (likedProt.length) add(10, ['lbl', { g: 'proteins', id: likedProt.includes(f.main) ? f.main : likedProt[0] }]);
   if (f.proteins.has('plant') && P.proteins.plant === -1) add(-12);
   if (f.proteins.has('egg') && P.proteins.egg === -1) add(-8);
 
@@ -229,24 +236,24 @@ function scoreMeal(m, P, feedback = {}) {
   const flv = { herbs: f.herbs >= 2, cheese: f.cheese >= 2, sweet: f.sweet >= 2, spiced: f.spiced >= 3, hot: f.hot >= 1 };
   for (const [k, on] of Object.entries(flv)) {
     if (!on) continue;
-    if (P.flavours[k] === 1) add(6, FLAVOURS.find(x => x.id === k).label);
+    if (P.flavours[k] === 1) add(6, ['lbl', { g: 'flavours', id: k }]);
     if (P.flavours[k] === -1) add(k === 'hot' ? -25 : -14);
   }
 
   // Types de plat
   for (const t of f.types) {
-    if (P.dishes[t] === 1) add(10, dishLabel(t));
+    if (P.dishes[t] === 1) add(10, ['lbl', { g: 'dishes', id: t }]);
     if (P.dishes[t] === -1) add(-20);
   }
 
   // Objectifs
-  if (P.objectives.includes('eco')) add(-f.cost * 1.6 + 8, f.cost < 4 ? 'Petit budget' : null);
-  if (P.objectives.includes('time')) add(f.time <= 30 ? 8 : f.time > 60 ? -8 : 0, f.time <= 30 ? 'Gain de temps' : null);
+  if (P.objectives.includes('eco')) add(-f.cost * 1.6 + 8, f.cost < 4 ? ['r_budget'] : null);
+  if (P.objectives.includes('time')) add(f.time <= 30 ? 8 : f.time > 60 ? -8 : 0, f.time <= 30 ? ['r_time'] : null);
   if (P.objectives.includes('nutri')) add(Math.min(f.veg, 4) * 2 - f.heavy * 2, null);
-  if (P.objectives.includes('plan')) add(m.ingr.length <= 10 ? 4 : 0, m.ingr.length <= 10 ? `Seulement ${m.ingr.length} ingrédients` : null);
+  if (P.objectives.includes('plan')) add(m.ingr.length <= 10 ? 4 : 0, m.ingr.length <= 10 ? ['r_few', { n: m.ingr.length }] : null);
 
   // Retours de l’utilisateur
-  if (feedback[m.id] === 1) add(18, 'Vous avez aimé ce plat');
+  if (feedback[m.id] === 1) add(18, ['r_liked']);
 
   why.sort((a, b) => b[0] - a[0]);
   return { score: s, reasons: why.slice(0, 3).map(w => w[1]) };
@@ -332,11 +339,12 @@ function fmtQty(v) {
   const f = fr.find(([d]) => Math.abs(dec - d) < 0.06);
   if (dec < 0.06) return String(whole || 1);
   if (f) return (whole ? whole + ' ' : '') + f[1];
-  return String(Math.round(v * 10) / 10).replace('.', ',');
+  return String(Math.round(v * 10) / 10).replace('.', decimalSep());
 }
 
 function trIng(name) {
   const k = name.toLowerCase();
+  if (LANG !== 'fr') return ingLabel(name, name);
   const fr = FR[k];
   if (fr) return fr.charAt(0).toUpperCase() + fr.slice(1);
   return ING_FR[k] ? ING_FR[k].fr : name;

@@ -1,6 +1,6 @@
 // Service worker : app utilisable hors-ligne une fois ouverte une première fois.
-const CACHE = 'qm-v4';
-const SHELL = ['./', 'index.html', 'styles.css', 'js/data.js', 'js/ingredients-fr.js', 'js/engine.js', 'js/shop.js', 'js/firebase-config.js', 'js/sync.js', 'js/app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png'];
+const CACHE = 'qm-v5';
+const SHELL = ['./', 'index.html', 'styles.css', 'js/data.js', 'js/ingredients-fr.js', 'js/ingredients-zh.js', 'js/i18n.js', 'js/engine.js', 'js/shop.js', 'js/firebase-config.js', 'js/sync.js', 'js/app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));

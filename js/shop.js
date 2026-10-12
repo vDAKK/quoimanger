@@ -23,13 +23,14 @@ const RAYONS = [
   { id: 'sg', label: 'Surgelés', icon: '❄️' },
 ];
 
+const rayonLabel = (r) => L('rayons', r);
 const intermarcheSearch = (fr) => 'https://www.intermarche.com/recherche/' + encodeURIComponent(fr.split(' (')[0].split(' / ')[0].trim());
 const mapsLink = (store) => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Intermarché ' + store.address);
 
 // Ingrédient inconnu du dictionnaire (nouveau plat dans l'API) : on devine le rayon.
 function ingInfo(en) {
   const k = en.toLowerCase().trim();
-  if (ING_FR[k]) return ING_FR[k];
+  if (ING_FR[k]) return { ...ING_FR[k], en };
   const guess =
     [KW.beef, KW.pork, KW.poultry, KW.lamb].some(r => r.test(k)) ? 'bo'
       : KW.fish.test(k) || KW.seafood.test(k) ? 'po'
@@ -40,7 +41,7 @@ function ingInfo(en) {
                 : KW.veg.test(k) || KW.herbs.test(k) ? 'fl'
                   : 'ep';
   const fr = FR[k];
-  return { fr: fr ? fr.charAt(0).toUpperCase() + fr.slice(1) : en, rayon: guess, pantry: PANTRY.test(k), skip: /^water$|warm water|cold water|boiling water/.test(k) };
+  return { en, fr: fr ? fr.charAt(0).toUpperCase() + fr.slice(1) : en, rayon: guess, pantry: PANTRY.test(k), skip: /^water$|warm water|cold water|boiling water/.test(k) };
 }
 
 // ---------- Mesures ----------
@@ -130,12 +131,11 @@ const roundMetric = (v) => v < 20 ? Math.max(5, Math.round(v / 5) * 5) : v < 200
 function fmtMetric(v, unit) {
   if (unit === 'g') { const r = roundMetric(v); return r >= 1000 ? (r / 1000).toLocaleString('fr-FR', { maximumFractionDigits: 2 }) + ' kg' : r + ' g'; }
   if (unit === 'ml') { const r = roundMetric(v); return r >= 1000 ? (r / 1000).toLocaleString('fr-FR', { maximumFractionDigits: 2 }) + ' L' : r + ' ml'; }
-  if ((unit === 'cs' && v < 0.07) || (unit === 'cc' && v < 0.2)) return '1 pincée';
-  if (unit === 'cs') return fmtQty(v) + ' c. à soupe';
-  if (unit === 'cc') return fmtQty(v) + ' c. à café';
+  if ((unit === 'cs' && v < 0.07) || (unit === 'cc' && v < 0.2)) return unitSpoon('pinch');
+  if (unit === 'cs' || unit === 'cc') return fmtQty(v) + ' ' + unitSpoon(unit);
   return null;
 }
-const plural = (unit, n) => n > 1 && unit !== 'noix' ? (unit === 'bocal' ? 'bocaux' : unit + 's') : unit;
+const plural = (unit, n) => unitWord(unit, n);
 function fmtCount(v, unit, round) {
   const n = round ? Math.max(1, Math.ceil(v - 0.01)) : v;
   const txt = round ? String(n) : fmtQty(n);
@@ -156,7 +156,11 @@ const DESC_FR = [
   [/wedges/g, 'quartiers'], [/rings/g, 'rondelles'], [/divided/g, 'en plusieurs fois'], [/room temperature/g, 'à température ambiante'], [/deseeded|seeded/g, 'épépiné'],
   [/leaves/g, 'feuilles'], [/sprigs?/g, 'brins'], [/topping/g, 'garniture'], [/optional/g, 'facultatif'],
 ];
-const descFr = (s) => DESC_FR.reduce((t, [re, fr]) => t.replace(re, fr), s || '').replace(/\s+/g, ' ').trim();
+const descFr = (s) => {
+  if (LANG === 'en') return (s || '').replace(/\s+/g, ' ').trim();
+  if (LANG === 'zh') return descZh(s);
+  return DESC_FR.reduce((x, [re, fr]) => x.replace(re, fr), s || '').replace(/\s+/g, ' ').trim();
+};
 
 /** Mesure d'une recette, convertie en métrique et ajustée au nombre de portions (affichage dans la fiche recette). */
 function measureFr(measure, factor, en) {
@@ -178,7 +182,8 @@ function buildShopping(plan, portions) {
       const info = ingInfo(i.n);
       if (info.skip) continue;
       const key = info.fr.toLowerCase();
-      if (!items.has(key)) items.set(key, { key, fr: info.fr, rayon: info.rayon, pantry: info.pantry, totals: {}, vague: false, meals: new Set() });
+      // la clé reste le nom français (partagée entre appareils du foyer), seul l'affichage change de langue
+      if (!items.has(key)) items.set(key, { key, fr: info.fr, label: ingLabel(info.en, info.fr), rayon: info.rayon, pantry: info.pantry, totals: {}, vague: false, meals: new Set() });
       const it = items.get(key);
       it.meals.add(m.id);
       const p = parseMeasure(i.m, info);
@@ -191,16 +196,16 @@ function buildShopping(plan, portions) {
     for (const u of ['g', 'ml']) if (it.totals[u]) parts.push(fmtMetric(it.totals[u], u));
     for (const u of COUNT_UNITS) if (it.totals[u]) parts.push(fmtCount(it.totals[u], u, true));
     for (const u of ['cs', 'cc']) if (it.totals[u]) parts.push(fmtMetric(it.totals[u], u));
-    if (it.totals.gousse >= 4 && it.fr === 'Ail') parts.push(`(≈ ${Math.ceil(it.totals.gousse / 10)} tête${it.totals.gousse > 10 ? 's' : ''})`);
-    it.qty = parts.length ? parts.join(' + ') : 'selon besoin';
+    if (it.totals.gousse >= 4 && it.fr === 'Ail') parts.push(headsApprox(Math.ceil(it.totals.gousse / 10)));
+    it.qty = parts.length ? parts.join(' + ') : t('as_needed');
   }
   const order = getRayonOrder();
   const all = [...items.values()];
   const byRayon = order.map(id => ({
     rayon: RAYONS.find(r => r.id === id),
-    items: all.filter(it => it.rayon === id && !it.pantry).sort((a, b) => a.fr.localeCompare(b.fr, 'fr')),
+    items: all.filter(it => it.rayon === id && !it.pantry).sort((a, b) => a.label.localeCompare(b.label, langInfo().locale)),
   })).filter(g => g.items.length);
-  const pantry = all.filter(it => it.pantry).sort((a, b) => a.fr.localeCompare(b.fr, 'fr'));
+  const pantry = all.filter(it => it.pantry).sort((a, b) => a.label.localeCompare(b.label, langInfo().locale));
   return { byRayon, pantry, count: all.length - pantry.length };
 }
 
@@ -213,15 +218,15 @@ function getRayonOrder() {
 const getStore = () => ({ ...DEFAULT_STORE, ...store.get('qm_store', {}) });
 
 function shoppingText(sh, checked, storeInfo) {
-  const lines = [`🛒 Courses — ${storeInfo.name}`, ''];
+  const lines = [`🛒 ${t('list_title')} — ${storeInfo.name}`, ''];
   for (const g of sh.byRayon) {
     const todo = g.items.filter(it => !checked[it.key]);
     if (!todo.length) continue;
-    lines.push(`${g.rayon.icon} ${g.rayon.label.toUpperCase()}`);
-    todo.forEach(it => lines.push(`☐ ${it.fr} — ${it.qty}`));
+    lines.push(`${g.rayon.icon} ${rayonLabel(g.rayon).toUpperCase()}`);
+    todo.forEach(it => lines.push(`☐ ${it.label} — ${it.qty}`));
     lines.push('');
   }
   const p = sh.pantry.filter(it => !checked[it.key]);
-  if (p.length) lines.push('🏠 À VÉRIFIER DANS LES PLACARDS', p.map(it => it.fr).join(', '));
+  if (p.length) lines.push(t('pantry_check'), p.map(it => it.label).join(', '));
   return lines.join('\n').trim();
 }

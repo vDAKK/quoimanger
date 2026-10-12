@@ -13,7 +13,7 @@
   --radius-lg: 22px;
   --shadow-sm: 0 1px 2px rgba(60, 40, 10, .06), 0 2px 10px rgba(60, 40, 10, .05);
   --shadow: 0 2px 6px rgba(60, 40, 10, .08), 0 12px 32px rgba(60, 40, 10, .12);
-  --head: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --head: 'Barlow Condensed', 'Arial Narrow', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   --gutter: 16px;
   --tabbar-h: 64px;
   --safe-b: env(safe-area-inset-bottom, 0px);
@@ -27,7 +27,7 @@ html, body { margin: 0; }
 body {
   background: var(--bg);
   color: var(--ink);
-  font: 15px/1.5 Roboto, system-ui, sans-serif;
+  font: 15px/1.5 Roboto, system-ui, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
   min-height: 100dvh;
   overflow-x: hidden;
   padding-bottom: calc(var(--tabbar-h) + var(--safe-b) + 24px);
@@ -394,6 +394,19 @@ main.enter { animation: page-in .28s ease-out; }
 .prefs-actions { display: grid; gap: 10px; margin-top: 20px; }
 .prefs-actions .btn { border-width: 1.5px; }
 
+/* Langue */
+.lang-btn { display: inline-flex; align-items: center; gap: 4px; height: 32px; padding: 0 10px; border-radius: 999px; border: 0; background: var(--white); font-size: 13px; font-weight: 700; box-shadow: var(--shadow-sm); flex-shrink: 0; }
+.sync-pill:not([hidden]) + .lang-btn { margin-left: 8px; }
+.sync-pill[hidden] + .lang-btn { margin-left: auto; }
+.step-count:not([hidden]) ~ .lang-btn { margin-left: 10px; }
+.lang-list { display: grid; gap: 10px; }
+.lang-opt { display: flex; align-items: center; justify-content: space-between; height: 58px; padding: 0 18px; border-radius: 16px; border: 2px solid transparent; background: var(--white); font-size: 17px; font-weight: 600; box-shadow: var(--shadow-sm); }
+.lang-opt.on { border-color: var(--ink); background: var(--lime); }
+.lang-opt svg { width: 22px; height: 22px; }
+.cta-card.light { background: var(--white); color: var(--ink); box-shadow: var(--shadow-sm); margin: 0 0 14px; }
+.cta-card.light .cta-ico { background: var(--card); }
+html[lang=zh-CN] h1, html[lang=zh-CN] h2, html[lang=zh-CN] h3 { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; font-weight: 800; letter-spacing: 0; }
+
 /* Foyer partagé */
 .sync-card { background: var(--white); border-radius: var(--radius-lg); padding: 16px; margin-bottom: 14px; box-shadow: var(--shadow-sm); display: grid; gap: 12px; }
 .sync-card.on { box-shadow: 0 0 0 2px var(--lime-dark), var(--shadow-sm); }
@@ -462,7 +475,7 @@ main.enter { animation: page-in .28s ease-out; }
 .col-title { font-size: 22px; margin-bottom: 6px; }
 .col-title small { font-family: Roboto, sans-serif; font-size: 13px; font-weight: 400; color: var(--muted); }
 .col-title a { color: var(--ink); font-weight: 600; }
-.recipe-tabs { position: sticky; top: calc(62px + var(--safe-t)); z-index: 3; margin: 16px 0 12px; box-shadow: 0 -76px 0 76px var(--bg); clip-path: inset(-200px -40px -8px -40px); }
+.recipe-tabs { position: sticky; top: calc(62px + var(--safe-t)); z-index: 3; margin: 16px 0 12px; box-shadow: 0 0 0 6px var(--bg), 0 4px 14px rgba(60, 40, 10, .12); }
 .recipe-cols.tab-ingr .col-steps, .recipe-cols.tab-steps .col-ingr { display: none; }
 .recipe-cols .col-title { display: none; }
 .ingr-list { list-style: none; padding: 0; margin: 0; background: var(--white); border-radius: 18px; padding: 4px 14px; box-shadow: var(--shadow-sm); }
@@ -528,7 +541,8 @@ body.no-scroll .toast { bottom: calc(86px + var(--safe-b)); }
   .nav button:hover { background: var(--card); }
   .nav button.active { background: var(--ink); color: var(--white); }
   .badge { top: -9px; right: auto; left: 8px; }
-  .sync-pill { margin-right: 440px; }
+  .sync-pill, .lang-btn { position: relative; }
+  .topbar { padding-right: calc(var(--gutter) + 470px); }
   .sheet-bar .btn:not(.grow) .lbl { display: inline; }
   .sheet-bar .btn:not(.grow):not(.icon-only) { width: auto; padding: 0 20px; }
   .toast { bottom: 24px; }

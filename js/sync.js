@@ -55,10 +55,10 @@ const Sync = {
   /** Rejoint un foyer existant ; renvoie ses données (qui remplacent l'état local). */
   async join(rawCode) {
     const code = this.normalize(rawCode);
-    if (!/^[A-Z0-9]{5}-[A-Z0-9]{5}$/.test(code)) throw new Error('Code invalide (format XXXXX-XXXXX)');
+    if (!/^[A-Z0-9]{5}-[A-Z0-9]{5}$/.test(code)) throw new Error(t('code_invalid'));
     const { fs, db } = await this.load();
     const snap = await fs.getDoc(fs.doc(db, 'foyers', code));
-    if (!snap.exists()) throw new Error('Aucun foyer avec ce code');
+    if (!snap.exists()) throw new Error(t('code_unknown'));
     this.code = code; store.set('qm_household', code);
     this.remote = this.clean(snap.data());
     await this.connect();

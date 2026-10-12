@@ -5,9 +5,7 @@ const app = $('#app');
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const img = (src, alt = '', cls = '') => `<img src="${esc(src)}" alt="${esc(alt)}" class="${cls}" loading="lazy" onerror="this.style.visibility='hidden'">`;
 const med = (thumb) => thumb ? thumb + '/medium' : '';
-const DAYS = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
 const todayISO = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
-const fmtMinutes = (n) => n < 60 ? `${n} min` : `${Math.floor(n / 60)} h${n % 60 ? ' ' + String(n % 60).padStart(2, '0') : ''}`;
 
 const ICON = {
   back: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>',
@@ -71,7 +69,7 @@ function applyRemote(data, changed = []) {
   rerank();
   if (S.draft) return; // questionnaire en cours : on ne l'interrompt pas
   if ($('#nav').hidden) showView('menu'); else refreshCurrent();
-  if (changed.some(k => k === 'planIds' || k === 'prefs')) toast('🔄 Menu mis à jour depuis l’autre téléphone');
+  if (changed.some(k => k === 'planIds' || k === 'prefs')) toast(t('sync_updated'));
 }
 
 function renderSyncPill() {
@@ -79,7 +77,7 @@ function renderSyncPill() {
   if (!pill) return;
   pill.hidden = !Sync.code;
   pill.dataset.status = Sync.status;
-  pill.title = { online: 'Foyer synchronisé', offline: 'Hors connexion : synchro au retour du réseau', connecting: 'Connexion…', error: 'Erreur de synchronisation', off: '' }[Sync.status] || '';
+  pill.title = Sync.status === 'off' ? '' : t('pill_' + Sync.status);
   if (S.view === 'prefs' && !S.draft && $('#sync-card')) $('#sync-card').outerHTML = syncCard();
 }
 
@@ -92,14 +90,14 @@ function toast(msg) {
 // ---------- Démarrage ----------
 async function boot() {
   app.innerHTML = `<div class="loading">
-    <h1>On prépare la cuisine…</h1>
-    <p class="sub" id="load-msg">Récupération de la base de plats TheMealDB</p>
+    <h1>${t('loading_title')}</h1>
+    <p class="sub" id="load-msg">${t('loading_msg')}</p>
     <div class="bar"><div id="load-bar"></div></div>
   </div>`;
   try {
     const info = await loadDatabase((done, total, n) => {
       $('#load-bar').style.width = (done / total * 100) + '%';
-      $('#load-msg').textContent = `${n} plats récupérés (${done}/${total})`;
+      $('#load-msg').textContent = t('loading_count', { n, d: done, t: total });
     });
     S.dbInfo = info;
     const seenNames = new Set();
@@ -110,12 +108,13 @@ async function boot() {
     }).map(enrich);
     S.byId = new Map(S.db.map(m => [m.id, m]));
     computeRepresentatives();
-    if (info.source === 'snapshot') toast('API injoignable : copie locale utilisée');
+    if (info.source === 'snapshot') toast(t('api_fallback'));
   } catch (e) {
-    app.innerHTML = `<div class="empty"><h2>Impossible de charger la base de plats</h2><p class="sub">${esc(e.message)}</p>
-      <button class="btn primary" onclick="location.reload()">Réessayer</button></div>`;
+    app.innerHTML = `<div class="empty"><h2>${t('load_error')}</h2><p class="sub">${esc(e.message)}</p>
+      <button class="btn primary" onclick="location.reload()">${t('retry')}</button></div>`;
     return;
   }
+  applyStaticI18n();
   Sync.onRemote = applyRemote;
   Sync.onStatus = renderSyncPill;
   if (Sync.code && Sync.available) Sync.connect();
@@ -132,16 +131,16 @@ async function boot() {
 
 async function joinHousehold(code, fromLink = false) {
   const fallback = () => { if (!fromLink) return; if (S.prefs) { rerank(); showView('menu'); } else startWizard(); };
-  if (S.prefs && !confirm('Rejoindre ce foyer ? Vos préférences et votre menu seront remplacés par ceux du foyer partagé.')) { fallback(); return; }
+  if (S.prefs && !confirm(t('join_confirm'))) { fallback(); return; }
   try {
-    toast('Connexion au foyer…');
+    toast(t('joining'));
     const data = await Sync.join(code);
     S.draft = null;
     applyRemote(data, []);
-    if (S.prefs) { showView('menu'); toast('✅ Foyer rejoint : vous partagez maintenant les mêmes données'); }
+    if (S.prefs) { showView('menu'); toast(t('joined_ok')); }
     else startWizard();
   } catch (e) {
-    toast(e.message || 'Impossible de rejoindre le foyer');
+    toast(e.message || t('join_fail'));
     fallback();
   }
 }
@@ -204,104 +203,104 @@ function startWizard(fromPrefs = false) {
 const voteBtns = (key, id) => {
   const v = S.draft[key][id];
   return `<div class="thumbs">
-    <button class="thumb up ${v === 1 ? 'on' : ''}" data-action="vote" data-key="${key}" data-val="${id}" data-dir="1" aria-label="J’aime">${ICON.up}</button>
-    <button class="thumb down ${v === -1 ? 'on' : ''}" data-action="vote" data-key="${key}" data-val="${id}" data-dir="-1" aria-label="Je n’aime pas">${ICON.down}</button>
+    <button class="thumb up ${v === 1 ? 'on' : ''}" data-action="vote" data-key="${key}" data-val="${id}" data-dir="1" aria-label="${t('like')}">${ICON.up}</button>
+    <button class="thumb down ${v === -1 ? 'on' : ''}" data-action="vote" data-key="${key}" data-val="${id}" data-dir="-1" aria-label="${t('dislike')}">${ICON.down}</button>
   </div>`;
 };
 
 const STEPS = [
   {
-    title: 'Quels sont vos objectifs ?', sub: 'Choisissez jusqu’à 3 objectifs.',
+    title: () => t('s1_title'), sub: () => t('s1_sub'),
     valid: d => d.objectives.length > 0,
     render: d => `<div class="grid two">${OBJECTIVES.map(o =>
-      `<button class="opt ${d.objectives.includes(o.id) ? 'on' : ''}" data-action="toggle" data-key="objectives" data-val="${o.id}" data-max="3">${o.label}</button>`).join('')}</div>`,
+      `<button class="opt ${d.objectives.includes(o.id) ? 'on' : ''}" data-action="toggle" data-key="objectives" data-val="${o.id}" data-max="3">${L('objectives', o)}</button>`).join('')}</div>`,
   },
   {
-    title: 'Ça tombe bien, on a ce qu’il faut.',
+    title: () => t('s2_title'),
     render: d => {
       const ids = d.objectives.length ? d.objectives : ['eco', 'time', 'nutri'];
       return `<div class="pitch">${ids.map(id => {
-        const [ico, t, p] = OBJECTIVE_PITCH[id];
-        return `<div class="row"><span class="ico">${ico}</span><div><b>${t}</b><p>${p}</p></div></div>`;
+        const [ico, title, p] = pitchFor(id);
+        return `<div class="row"><span class="ico">${ico}</span><div><b>${title}</b><p>${p}</p></div></div>`;
       }).join('')}
-      <div class="row"><span class="ico">📚</span><div><b>${S.db.length} plats du monde entier.</b><p>Récupérés en direct depuis la base TheMealDB, et triés rien que pour vous.</p></div></div></div>`;
+      <div class="row"><span class="ico">📚</span><div><b>${t('s2_db_title', { n: S.db.length })}</b><p>${t('s2_db_desc')}</p></div></div></div>`;
     },
   },
   {
-    title: 'Qu’est-ce qui vous fait envie ?',
+    title: () => t('s3_title'),
     valid: d => !!d.craving,
     render: d => `<div class="grid three">${CRAVINGS.map(c => `
       <button class="opt img-card ${d.craving === c.id ? 'on' : ''}" data-action="pick" data-key="craving" data-val="${c.id}">
-        ${img(S.rep.craving[c.id], c.label)}
-        <div class="body"><div class="title">${c.label}</div><div class="desc">${c.desc}</div></div>
+        ${img(S.rep.craving[c.id], L('cravings', c))}
+        <div class="body"><div class="title">${L('cravings', c)}</div><div class="desc">${L('cravings', c, 'desc')}</div></div>
       </button>`).join('')}</div>`,
   },
   {
-    title: 'Quel est votre profil alimentaire ?',
+    title: () => t('s4_title'),
     valid: d => !!d.diet,
     render: d => `<div class="grid four">${DIETS.map(c => `
       <button class="opt img-card ${d.diet === c.id ? 'on' : ''}" data-action="pick" data-key="diet" data-val="${c.id}">
-        ${img(S.rep.diet[c.id], c.label)}
-        <div class="body"><div class="title">${c.label}</div><div class="desc">${c.desc}</div></div>
+        ${img(S.rep.diet[c.id], L('diets', c))}
+        <div class="body"><div class="title">${L('diets', c)}</div><div class="desc">${L('diets', c, 'desc')}</div></div>
       </button>`).join('')}</div>`,
   },
   {
-    title: 'Des ingrédients à éviter ?', sub: 'Vous pouvez passer cette section si vous ne voulez pas y répondre.',
+    title: () => t('s5_title'), sub: () => t('s5_sub'),
     render: d => `<div class="grid tiles">
-      <button class="opt center" data-action="skip-avoid">Passer</button>
+      <button class="opt center" data-action="skip-avoid">${t('skip')}</button>
       ${AVOID.map(a => `<button class="opt ${d.avoid.includes(a.id) ? 'on' : ''}" data-action="toggle" data-key="avoid" data-val="${a.id}">
-        <span class="icon">${a.icon}</span>${a.label}</button>`).join('')}</div>`,
+        <span class="icon">${a.icon}</span>${L('avoid', a)}</button>`).join('')}</div>`,
   },
   {
-    title: 'Des préférences côté nutrition ?', sub: 'Facultatif — plusieurs choix possibles.',
+    title: () => t('s6_title'), sub: () => t('s6_sub'),
     render: d => `<div class="split"><div class="grid two">${NUTRITION.map(n =>
-      `<button class="opt slim ${d.nutrition.includes(n.id) ? 'on' : ''}" data-action="toggle" data-key="nutrition" data-val="${n.id}">${n.label}</button>`).join('')}</div>
+      `<button class="opt slim ${d.nutrition.includes(n.id) ? 'on' : ''}" data-action="toggle" data-key="nutrition" data-val="${n.id}">${L('nutrition', n)}</button>`).join('')}</div>
       ${S.rep.nutrition ? img(S.rep.nutrition.replace('/medium', ''), '', 'hero') : ''}</div>`,
   },
   {
-    title: 'Vos cuisines préférées ?',
+    title: () => t('s7_title'),
     render: () => `<div class="grid votes">${CUISINES.map(c => `
-      <div class="vote">${img(S.rep.cuisine[c.id], c.label)}<div class="name">${c.label}</div>${voteBtns('cuisines', c.id)}</div>`).join('')}</div>`,
+      <div class="vote">${img(S.rep.cuisine[c.id], L('cuisines', c))}<div class="name">${L('cuisines', c)}</div>${voteBtns('cuisines', c.id)}</div>`).join('')}</div>`,
   },
   {
-    title: 'Des saveurs qui vous font craquer ?',
+    title: () => t('s8_title'),
     render: () => `<div class="grid votes small">${FLAVOURS.map(f => `
-      <div class="vote tile"><div class="emoji">${f.icon}</div><div class="name">${f.label}</div>${voteBtns('flavours', f.id)}</div>`).join('')}</div>`,
+      <div class="vote tile"><div class="emoji">${f.icon}</div><div class="name">${L('flavours', f)}</div>${voteBtns('flavours', f.id)}</div>`).join('')}</div>`,
   },
   {
-    title: 'Quelles protéines vous font envie ?',
+    title: () => t('s9_title'),
     render: d => {
       const hidden = d.diet === 'veggie' ? ['beef', 'pork', 'poultry', 'lamb', 'fish', 'seafood'] : d.diet === 'pesco' ? ['beef', 'pork', 'poultry', 'lamb'] : [];
       return `<div class="grid votes small">${PROTEINS.filter(p => !hidden.includes(p.id) && !d.avoid.includes(p.id)).map(p => `
-        <div class="vote tile">${img(ING_IMG(p.img), p.label, 'ing')}<div class="name">${p.label}</div>${voteBtns('proteins', p.id)}</div>`).join('')}</div>`;
+        <div class="vote tile">${img(ING_IMG(p.img), L('proteins', p), 'ing')}<div class="name">${L('proteins', p)}</div>${voteBtns('proteins', p.id)}</div>`).join('')}</div>`;
     },
   },
   {
-    title: 'À quoi ressemble votre dîner idéal ?',
-    render: () => `<div class="grid votes">${DISH_TYPES.map(t => `
-      <div class="vote">${img(S.rep.dish[t.id], t.label)}<div class="name">${t.label}</div>${voteBtns('dishes', t.id)}</div>`).join('')}</div>`,
+    title: () => t('s10_title'),
+    render: () => `<div class="grid votes">${DISH_TYPES.map(d => `
+      <div class="vote">${img(S.rep.dish[d.id], L('dishes', d))}<div class="name">${L('dishes', d)}</div>${voteBtns('dishes', d.id)}</div>`).join('')}</div>`,
   },
   {
-    title: 'Combien de soirs par semaine ?',
+    title: () => t('s11_title'),
     render: d => `<div class="grid two">${NIGHTS.map(n =>
-      `<button class="opt slim ${d.nights === n.id ? 'on' : ''}" data-action="pick" data-key="nights" data-val="${n.id}" data-num="1">${n.label}</button>`).join('')}</div>
-      <div class="seg-label">Portions par dîner</div>
+      `<button class="opt slim ${d.nights === n.id ? 'on' : ''}" data-action="pick" data-key="nights" data-val="${n.id}" data-num="1">${L('nights', n)}</button>`).join('')}</div>
+      <div class="seg-label">${t('portions_per_dinner')}</div>
       <div class="seg">${[1, 2, 3, 4, 5, 6].map(v => `<button class="${d.portions === v ? 'on' : ''}" data-action="pick" data-key="portions" data-val="${v}" data-num="1">${v}</button>`).join('')}</div>
-      <div class="seg-label">Dîners par semaine</div>
+      <div class="seg-label">${t('dinners_per_week')}</div>
       <div class="seg">${[1, 2, 3, 4, 5, 6, 7].map(v => `<button class="${d.nights === v ? 'on' : ''}" data-action="pick" data-key="nights" data-val="${v}" data-num="1">${v}</button>`).join('')}</div>`,
   },
 ];
 
 function renderStep() {
   const st = STEPS[S.step];
-  app.innerHTML = `<div class="step-head"><h1>${st.title}</h1>${st.sub ? `<p class="sub">${st.sub}</p>` : ''}</div>${st.render(S.draft)}`;
+  app.innerHTML = `<div class="step-head"><h1>${st.title()}</h1>${st.sub ? `<p class="sub">${st.sub()}</p>` : ''}</div>${st.render(S.draft)}`;
   $('#step-count').hidden = false;
   $('#step-count').textContent = `${S.step + 1} / ${STEPS.length}`;
   $('#progress-fill').style.width = ((S.step + 1) / STEPS.length * 100) + '%';
   $('#btn-back').style.visibility = S.step === 0 && !S.prefs ? 'hidden' : 'visible';
-  $('#btn-back').textContent = S.step === 0 ? 'Annuler' : 'Retour';
+  $('#btn-back').textContent = S.step === 0 ? t('cancel') : t('back');
   $('#btn-next').disabled = st.valid ? !st.valid(S.draft) : false;
-  $('#btn-next').textContent = S.step === STEPS.length - 1 ? 'Voir mon menu' : 'Continuer';
+  $('#btn-next').textContent = S.step === STEPS.length - 1 ? t('see_menu') : t('next');
 }
 
 function nextStep() {
@@ -313,7 +312,7 @@ function nextStep() {
   rerank();
   newPlan();
   showView('menu');
-  toast(`${S.ranked.length} plats correspondent à votre profil`);
+  toast(t('n_match', { n: S.ranked.length }));
 }
 
 function prevStep() {
@@ -333,7 +332,7 @@ function wizardClick(el) {
     if (i >= 0) list.splice(i, 1);
     else {
       const max = +el.dataset.max || Infinity;
-      if (list.length >= max) { toast(`${max} choix maximum`); return; }
+      if (list.length >= max) { toast(t('max_choices', { n: max })); return; }
       list.push(val);
     }
   } else if (action === 'vote') {
@@ -379,10 +378,10 @@ function dayInfo(idx) {
   const start = S.planStart ? new Date(S.planStart + 'T12:00:00') : new Date();
   const d = new Date(start); d.setDate(start.getDate() + idx);
   const diff = Math.round((new Date(d.toDateString()) - new Date(new Date().toDateString())) / 86400000);
-  const name = DAYS[d.getDay()];
+  const name = capitalize(weekdayName(d));
   return {
-    label: diff === 0 ? 'Ce soir' : diff === 1 ? 'Demain' : name,
-    short: name.slice(0, 3).toUpperCase(), num: d.getDate(), diff,
+    label: diff === 0 ? t('tonight') : diff === 1 ? t('tomorrow') : name,
+    short: weekdayShort(d), num: d.getDate(), diff,
   };
 }
 
@@ -394,11 +393,11 @@ function tagsFor(m, max = 4, basics = true) {
     out.push(`<span class="tag">${ICON.clock}${fmtMinutes(f.time)}</span>`);
     out.push(`<span class="tag">${esc(cuisineLabel(f.cuisine))}</span>`);
   }
-  if (f.isVeggie) out.push('<span class="tag green">🌱 Végé</span>');
+  if (f.isVeggie) out.push(`<span class="tag green">${t('tag_veg')}</span>`);
   else if (f.main !== 'veg') out.push(`<span class="tag">${esc(proteinLabel(f.main))}</span>`);
-  if (f.hot >= 2) out.push('<span class="tag red">🌶️ Pimenté</span>');
-  if (f.heavy === 0) out.push('<span class="tag green">Léger</span>');
-  if (f.overnight) out.push('<span class="tag">🌙 Prévoir la veille</span>');
+  if (f.hot >= 2) out.push(`<span class="tag red">${t('tag_hot')}</span>`);
+  if (f.heavy === 0) out.push(`<span class="tag green">${t('tag_light')}</span>`);
+  if (f.overnight) out.push(`<span class="tag">${t('tag_overnight')}</span>`);
   return out.length ? `<div class="tags">${out.slice(0, max).join('')}</div>` : '';
 }
 
@@ -407,7 +406,7 @@ function renderMenu() {
   const plan = planEntries();
   const P = S.prefs;
   const h = new Date().getHours();
-  const hello = h < 5 || h >= 18 ? 'Bonsoir' : h < 12 ? 'Bonjour' : 'Bon après-midi';
+  const hello = h < 5 || h >= 18 ? t('hello_evening') : h < 12 ? t('hello_morning') : t('hello_afternoon');
   const totalTime = plan.reduce((t, r) => t + r.m.f.time, 0);
   const featuredIdx = Math.max(0, plan.findIndex((_, i) => dayInfo(i).diff === 0));
   const feat = plan[featuredIdx];
@@ -417,11 +416,11 @@ function renderMenu() {
   app.innerHTML = `
     <section class="page-head">
       <p class="eyebrow">${hello} 👋</p>
-      <h1>Votre semaine</h1>
+      <h1>${t('your_week')}</h1>
       <div class="stats">
-        <span><b>${plan.length}</b> dîner${plan.length > 1 ? 's' : ''}</span>
-        <span><b>${P.portions}</b> pers.</span>
-        <span><b>${fmtMinutes(totalTime)}</b> en cuisine</span>
+        <span>${t('stat_dinners', { n: plan.length })}</span>
+        <span>${t('stat_people', { n: P.portions })}</span>
+        <span>${t('stat_time', { t: fmtMinutes(totalTime) })}</span>
       </div>
     </section>
 
@@ -430,33 +429,33 @@ function renderMenu() {
       ${img(med(feat.m.thumb), feat.m.name)}
       <div class="feature-shade"></div>
       <div class="feature-body">
-        <span class="pill lime">${dayInfo(featuredIdx).label === 'Ce soir' ? '🍽️ Ce soir' : dayInfo(featuredIdx).label}</span>
+        <span class="pill lime">${dayInfo(featuredIdx).diff === 0 ? '🍽️ ' : ''}${dayInfo(featuredIdx).label}</span>
         <h2>${esc(feat.m.name)}</h2>
         ${tagsFor(feat.m, 3)}
         <div class="feature-actions">
-          <span class="btn lime">Voir la recette ${ICON.chev}</span>
-          <button class="btn glass" data-action="swap" data-idx="${featuredIdx}" title="Proposer un autre plat">${ICON.swap} Changer</button>
+          <span class="btn lime">${t('see_recipe')} ${ICON.chev}</span>
+          <button class="btn glass" data-action="swap" data-idx="${featuredIdx}" title="${t('change_dish')}">${ICON.swap} ${t('change')}</button>
         </div>
       </div>
-    </article>` : `<div class="empty"><div class="empty-ico">🍽️</div><h2>Aucun dîner prévu</h2><p class="sub">Générez une semaine ou ajoutez des recettes depuis l’onglet Recettes.</p></div>`}
+    </article>` : `<div class="empty"><div class="empty-ico">🍽️</div><h2>${t('no_dinner_title')}</h2><p class="sub">${t('no_dinner_sub')}</p></div>`}
 
     ${plan.length > 1 ? `
-    <h2 class="section-title">Au menu cette semaine</h2>
+    <h2 class="section-title">${t('on_menu')}</h2>
     <div class="day-list">${plan.map((r, i) => i === featuredIdx ? '' : dayRow(r, i)).join('')}</div>` : ''}
 
     ${plan.length ? `
     <button class="cta-card" data-action="goto" data-view="shop">
       <span class="cta-ico">${ICON.cart}</span>
-      <span><b>Liste de courses</b><small>${left ? `${left} article${left > 1 ? 's' : ''} à acheter pour ${plan.length} recettes` : 'Tout est dans le caddie ✓'}</small></span>
+      <span><b>${t('shop_list')}</b><small>${left ? t('items_to_buy', { n: left, r: plan.length }) : t('all_in_cart')}</small></span>
       ${ICON.chev}
     </button>` : ''}
 
     <div class="menu-tools">
-      ${plan.length < P.nights ? `<button class="btn" data-action="fill">${ICON.plus} Ajouter ${P.nights - plan.length} dîner(s)</button>` : ''}
-      <button class="btn" data-action="regen">${ICON.dice} Nouvelle semaine</button>
-      <button class="btn" data-action="goto" data-view="explore">Parcourir les recettes</button>
+      ${plan.length < P.nights ? `<button class="btn" data-action="fill">${ICON.plus} ${t('add_dinners', { n: P.nights - plan.length })}</button>` : ''}
+      <button class="btn" data-action="regen">${ICON.dice} ${t('new_week')}</button>
+      <button class="btn" data-action="goto" data-view="explore">${t('browse_recipes')}</button>
     </div>
-    <p class="source-note">Touchez un plat pour voir la recette. ⇄ propose un autre plat pour ce jour.</p>`;
+    <p class="source-note">${t('menu_hint')}</p>`;
 }
 
 function dayRow(r, i) {
@@ -467,7 +466,7 @@ function dayRow(r, i) {
       ${img(m.thumb ? m.thumb + '/small' : '', m.name)}
       <span class="day-txt"><b>${esc(m.name)}</b><small>${fmtMinutes(m.f.time)} · ${esc(cuisineLabel(m.f.cuisine))}${m.f.isVeggie ? ' · 🌱' : ''}</small></span>
     </button>
-    <button class="round-btn" data-action="swap" data-idx="${i}" title="Changer ce plat" aria-label="Changer ce plat">${ICON.swap}</button>
+    <button class="round-btn" data-action="swap" data-idx="${i}" title="${t('change_dish')}" aria-label="${t('change_dish')}">${ICON.swap}</button>
   </div>`;
 }
 
@@ -488,7 +487,7 @@ function recipeTile(r) {
   return `<article class="tile" data-action="open" data-id="${m.id}">
     <div class="tile-pic">${img(med(m.thumb), m.name)}
       ${pct ? `<span class="tile-match">${pct} %</span>` : ''}
-      <button class="tile-add ${inPlan ? 'on' : ''}" data-action="${inPlan ? 'noop' : 'add'}" data-id="${m.id}" aria-label="${inPlan ? 'Déjà dans ma semaine' : 'Ajouter à ma semaine'}">${inPlan ? ICON.check : ICON.plus}</button>
+      <button class="tile-add ${inPlan ? 'on' : ''}" data-action="${inPlan ? 'noop' : 'add'}" data-id="${m.id}" aria-label="${inPlan ? t('in_week') : t('add_week')}">${inPlan ? ICON.check : ICON.plus}</button>
     </div>
     <div class="tile-body"><b>${esc(m.name)}</b><small>${fmtMinutes(m.f.time)} · ${esc(cuisineLabel(m.f.cuisine))}</small></div>
   </article>`;
@@ -497,28 +496,28 @@ function recipeTile(r) {
 function renderExploreResults() {
   const list = exploreResults();
   $('#explore-results').innerHTML = list.length
-    ? `<p class="result-count">${list.length} recettes · triées selon vos goûts</p>
+    ? `<p class="result-count">${t('result_count', { n: list.length })}</p>
        <div class="tiles">${list.slice(0, S.explore.limit).map(recipeTile).join('')}</div>
-       ${list.length > S.explore.limit ? '<div class="more"><button class="btn" data-action="more">Voir plus de recettes</button></div>' : ''}`
-    : '<div class="empty"><div class="empty-ico">🔍</div><h2>Aucune recette</h2><p class="sub">Essayez un autre mot ou retirez un filtre.</p></div>';
+       ${list.length > S.explore.limit ? `<div class="more"><button class="btn" data-action="more">${t('more_recipes')}</button></div>` : ''}`
+    : `<div class="empty"><div class="empty-ico">🔍</div><h2>${t('no_recipe_title')}</h2><p class="sub">${t('no_recipe_sub')}</p></div>`;
 }
 
 function renderExplore() {
   const E = S.explore;
   app.innerHTML = `
     <section class="page-head">
-      <p class="eyebrow">${S.ranked.length} recettes pour vous</p>
-      <h1>Recettes</h1>
+      <p class="eyebrow">${t('recipes_for_you', { n: S.ranked.length })}</p>
+      <h1>${t('recipes_title')}</h1>
     </section>
     <div class="search">
       ${ICON.search}
-      <input type="search" id="q" placeholder="Plat, ingrédient : poulet, curry, feta…" value="${esc(E.q)}" autocomplete="off">
+      <input type="search" id="q" placeholder="${t('search_ph')}" value="${esc(E.q)}" autocomplete="off">
     </div>
     <div class="chip-row filters-row">
-      <button class="toggle ${E.quick ? 'on' : ''}" data-action="filter" data-key="quick">⏱ Rapide</button>
-      <button class="toggle ${E.veggie ? 'on' : ''}" data-action="filter" data-key="veggie">🌱 Végé</button>
-      <button class="toggle ${!E.cuisine ? 'on' : ''}" data-action="cuisine" data-id="">Toutes</button>
-      ${CUISINES.map(c => `<button class="toggle ${E.cuisine === c.id ? 'on' : ''}" data-action="cuisine" data-id="${c.id}">${c.label}</button>`).join('')}
+      <button class="toggle ${E.quick ? 'on' : ''}" data-action="filter" data-key="quick">${t('quick')}</button>
+      <button class="toggle ${E.veggie ? 'on' : ''}" data-action="filter" data-key="veggie">${t('veggie')}</button>
+      <button class="toggle ${!E.cuisine ? 'on' : ''}" data-action="cuisine" data-id="">${t('all')}</button>
+      ${CUISINES.map(c => `<button class="toggle ${E.cuisine === c.id ? 'on' : ''}" data-action="cuisine" data-id="${c.id}">${L('cuisines', c)}</button>`).join('')}
     </div>
     <div id="explore-results"></div>`;
   renderExploreResults();
@@ -536,7 +535,7 @@ function recipeChips(it) {
   return `<span class="uses stack">${ids.map(id => {
     const m = S.byId.get(id), i = planIndexOf(id);
     return `<button class="ava" data-action="open" data-id="${id}" title="${i >= 0 ? dayInfo(i).label + ' · ' : ''}${esc(m.name)}">${img(m.thumb ? m.thumb + '/small' : '', m.name)}</button>`;
-  }).join('')}<span class="stack-txt">${ids.length} recettes</span></span>`;
+  }).join('')}<span class="stack-txt">${t('n_recipes', { n: ids.length })}</span></span>`;
 }
 const shortName = (n) => n.length > 22 ? n.slice(0, 20).trim() + '…' : n;
 
@@ -545,10 +544,10 @@ function shopRow(it, qty = it.qty, withUses = true) {
   return `<div class="shop-item ${done ? 'done' : ''}">
     <label class="tick"><input type="checkbox" data-action="check" data-key="${esc(it.key)}" ${done ? 'checked' : ''}><span class="box">${ICON.check}</span></label>
     <div class="shop-txt">
-      <div class="shop-line"><b>${esc(it.fr)}</b><span class="qty">${esc(qty)}</span></div>
+      <div class="shop-line"><b>${esc(it.label)}</b><span class="qty">${esc(qty)}</span></div>
       ${withUses ? recipeChips(it) : ''}
     </div>
-    <a class="find" href="${intermarcheSearch(it.fr)}" target="_blank" rel="noopener" title="Chercher sur intermarche.com" aria-label="Chercher ${esc(it.fr)} sur Intermarché">${ICON.search}</a>
+    <a class="find" href="${intermarcheSearch(it.fr)}" target="_blank" rel="noopener" title="${t('search_store')}" aria-label="${t('search_store')} : ${esc(it.label)}">${ICON.search}</a>
   </div>`;
 }
 
@@ -574,11 +573,11 @@ function renderShop() {
         const info = ingInfo(ing.n); if (info.skip) return '';
         const it = byKey.get(info.fr.toLowerCase()); if (!it || seen.has(it.key)) return '';
         seen.add(it.key);
-        return shopRow(it, measureFr(ing.m, factor, ing.n) || 'selon besoin', false);
+        return shopRow(it, measureFr(ing.m, factor, ing.n) || t('as_needed'), false);
       }).join('');
       return `<section class="shop-sec">
         <button class="recipe-head" data-action="open" data-id="${r.m.id}">${img(r.m.thumb ? r.m.thumb + '/small' : '', '')}
-          <span><small>${d.label}</small><b>${esc(r.m.name)}</b></span><em>Recette ${ICON.chev}</em></button>
+          <span><small>${d.label}</small><b>${esc(r.m.name)}</b></span><em>${t('recipe_word')} ${ICON.chev}</em></button>
         ${rows}
       </section>`;
     }).join('');
@@ -587,70 +586,70 @@ function renderShop() {
       const items = g.items.filter(keep);
       if (!items.length) return '';
       return `<section class="shop-sec">
-        <h3><span class="ray-ico">${g.rayon.icon}</span>${g.rayon.label}<span class="count">${items.filter(it => !S.shopChecked[it.key]).length || '✓'}</span></h3>
+        <h3><span class="ray-ico">${g.rayon.icon}</span>${rayonLabel(g.rayon)}<span class="count">${items.filter(it => !S.shopChecked[it.key]).length || '✓'}</span></h3>
         ${sortDone(items).map(it => shopRow(it)).join('')}
       </section>`;
     }).join('');
     const pantry = sh.pantry.filter(keep);
-    if (pantry.length) body += `<details class="shop-sec pantry"><summary><span class="ray-ico">🏠</span>À vérifier dans vos placards<span class="count">${pantry.length}</span></summary>
-      <p class="sub">Basiques souvent déjà à la maison. Cochez ce que vous avez.</p>${sortDone(pantry).map(it => shopRow(it)).join('')}</details>`;
+    if (pantry.length) body += `<details class="shop-sec pantry"><summary><span class="ray-ico">🏠</span>${t('pantry_title')}<span class="count">${pantry.length}</span></summary>
+      <p class="sub">${t('pantry_sub')}</p>${sortDone(pantry).map(it => shopRow(it)).join('')}</details>`;
   }
 
   app.innerHTML = `
     <section class="page-head">
       <p class="eyebrow">🏪 ${esc(st.name)}</p>
-      <h1>Courses</h1>
+      <h1>${t('shop_title')}</h1>
     </section>
     ${plan.length ? `
     <div class="shop-bar">
       <div class="shop-progress"><div style="width:${all.length ? doneCount / all.length * 100 : 0}%"></div></div>
       <div class="shop-bar-row">
-        <span><b>${doneCount}/${all.length}</b> dans le caddie</span>
-        <span class="stepper small"><button data-action="portions" data-dir="-1" aria-label="Moins">−</button><span>${P.portions} pers.</span><button data-action="portions" data-dir="1" aria-label="Plus">+</button></span>
+        <span>${t('in_cart', { d: doneCount, t: all.length })}</span>
+        <span class="stepper small"><button data-action="portions" data-dir="-1" aria-label="${t('less')}">−</button><span>${t('stat_people', { n: P.portions }).replace(/<\/?b>/g, '')}</span><button data-action="portions" data-dir="1" aria-label="${t('more')}">+</button></span>
       </div>
     </div>
 
-    <p class="mini-title">Pour ces recettes <small>— touchez-en une pour filtrer</small></p>
+    <p class="mini-title">${t('for_recipes')} <small>${t('for_recipes_hint')}</small></p>
     <div class="recipe-strip">
-      <button class="strip-all ${!filt ? 'on' : ''}" data-action="shop-filter" data-id="">Tout</button>
+      <button class="strip-all ${!filt ? 'on' : ''}" data-action="shop-filter" data-id="">${t('all_short')}</button>
       ${plan.map((r, i) => `<button class="strip-item ${filt === r.m.id ? 'on' : ''}" data-action="shop-filter" data-id="${r.m.id}">
         ${img(r.m.thumb ? r.m.thumb + '/small' : '', '')}<small>${dayInfo(i).label}</small><span>${esc(shortName(r.m.name))}</span></button>`).join('')}
     </div>
-    ${filt ? `<button class="filter-note" data-action="open" data-id="${filt}"><span>Uniquement les ingrédients de <b>${esc(S.byId.get(filt).name)}</b> — voir la recette</span>${ICON.chev}</button>` : ''}
+    ${filt ? `<button class="filter-note" data-action="open" data-id="${filt}"><span>${t('only_of', { name: esc(S.byId.get(filt).name) })}</span>${ICON.chev}</button>` : ''}
 
     <div class="seg-toggle">
-      <button class="${S.shopMode !== 'recipe' ? 'on' : ''}" data-action="shop-mode" data-id="rayon">Par rayon</button>
-      <button class="${S.shopMode === 'recipe' ? 'on' : ''}" data-action="shop-mode" data-id="recipe">Par recette</button>
+      <button class="${S.shopMode !== 'recipe' ? 'on' : ''}" data-action="shop-mode" data-id="rayon">${t('by_aisle')}</button>
+      <button class="${S.shopMode === 'recipe' ? 'on' : ''}" data-action="shop-mode" data-id="recipe">${t('by_recipe')}</button>
     </div>
 
     <div class="shop">${body}</div>
 
     <div class="shop-tools">
-      <button class="btn" data-action="share">📤 Partager la liste</button>
-      <button class="btn ${wakeLock ? 'lime' : ''}" data-action="wake">🔆 ${wakeLock ? 'Écran maintenu allumé' : 'Garder l’écran allumé'}</button>
-      <button class="btn" data-action="uncheck">↺ Tout décocher</button>
+      <button class="btn" data-action="share">${t('share_list')}</button>
+      <button class="btn ${wakeLock ? 'lime' : ''}" data-action="wake">${wakeLock ? t('awake_on') : t('keep_awake')}</button>
+      <button class="btn" data-action="uncheck">${t('uncheck_all')}</button>
     </div>
     <div class="store-card">
       <div class="store-info"><span class="store-logo">🏪</span><div><b>${esc(st.name)}</b><span>${esc(st.address)}</span></div></div>
       <div class="store-links">
-        <a class="btn small" href="${mapsLink(st)}" target="_blank" rel="noopener">📍 Itinéraire</a>
-        <a class="btn small" href="https://www.intermarche.com/" target="_blank" rel="noopener">🚗 Drive</a>
-        <button class="btn small" data-action="shop-settings">⚙️ Magasin & rayons</button>
+        <a class="btn small" href="${mapsLink(st)}" target="_blank" rel="noopener">${t('itinerary')}</a>
+        <a class="btn small" href="https://www.intermarche.com/" target="_blank" rel="noopener">${t('drive')}</a>
+        <button class="btn small" data-action="shop-settings">${t('store_settings')}</button>
       </div>
     </div>`
-      : '<div class="empty"><div class="empty-ico">🛒</div><h2>Rien à acheter</h2><p class="sub">Ajoutez des dîners à votre semaine pour générer la liste.</p></div>'}
-    <p class="source-note">Quantités en g / ml pour ${P.portions} pers., cumulées entre recettes. Rayons dans l’ordre d’un parcours Intermarché type (modifiable). 🔍 = chercher le produit sur intermarche.com.</p>`;
+      : `<div class="empty"><div class="empty-ico">🛒</div><h2>${t('nothing_to_buy')}</h2><p class="sub">${t('nothing_to_buy_sub')}</p></div>`}
+    <p class="source-note">${t('shop_note', { p: P.portions })}</p>`;
 }
 
 let wakeLock = null;
 async function toggleWakeLock() {
-  if (wakeLock) { await wakeLock.release().catch(() => {}); wakeLock = null; toast('Mise en veille réactivée'); return; }
-  if (!('wakeLock' in navigator)) { toast('Non disponible sur ce navigateur (nécessite HTTPS)'); return; }
+  if (wakeLock) { await wakeLock.release().catch(() => {}); wakeLock = null; toast(t('wake_off')); return; }
+  if (!('wakeLock' in navigator)) { toast(t('wake_unavailable')); return; }
   try {
     wakeLock = await navigator.wakeLock.request('screen');
     wakeLock.addEventListener('release', () => { wakeLock = null; });
-    toast('L’écran restera allumé pendant vos courses');
-  } catch { toast('Impossible de garder l’écran allumé'); }
+    toast(t('wake_on'));
+  } catch { toast(t('wake_fail')); }
 }
 
 let rayonDraft = null;
@@ -658,21 +657,21 @@ function openShopSettings(order = getRayonOrder(), st = getStore()) {
   rayonDraft = order;
   modalId = null;
   $('#modal-body').innerHTML = `
-    <div class="sheet-top"><button class="back" data-action="close-modal">${ICON.back} Retour</button><b>Magasin & rayons</b><span></span></div>
+    <div class="sheet-top"><button class="back" data-action="close-modal">${ICON.back} ${t('back')}</button><b>${t('store_settings_title')}</b><span></span></div>
     <div class="recipe-body settings">
-      <label class="field">Nom du magasin<input id="st-name" value="${esc(st.name)}"></label>
-      <label class="field">Adresse<input id="st-address" value="${esc(st.address)}"></label>
-      <h3 style="margin-top:22px">Ordre des rayons</h3>
-      <p class="sub">Classez les rayons dans l’ordre où vous les croisez dans votre magasin.</p>
+      <label class="field">${t('store_name')}<input id="st-name" value="${esc(st.name)}"></label>
+      <label class="field">${t('address')}<input id="st-address" value="${esc(st.address)}"></label>
+      <h3 style="margin-top:22px">${t('aisle_order')}</h3>
+      <p class="sub">${t('aisle_order_sub')}</p>
       <ol class="rayon-list">${order.map((id, i) => {
         const r = RAYONS.find(x => x.id === id);
-        return `<li><span>${r.icon} ${r.label}</span>
-          <button data-action="rayon-move" data-idx="${i}" data-dir="-1" ${i === 0 ? 'disabled' : ''} aria-label="Monter">↑</button>
-          <button data-action="rayon-move" data-idx="${i}" data-dir="1" ${i === order.length - 1 ? 'disabled' : ''} aria-label="Descendre">↓</button></li>`;
+        return `<li><span>${r.icon} ${rayonLabel(r)}</span>
+          <button data-action="rayon-move" data-idx="${i}" data-dir="-1" ${i === 0 ? 'disabled' : ''} aria-label="${t('up')}">↑</button>
+          <button data-action="rayon-move" data-idx="${i}" data-dir="1" ${i === order.length - 1 ? 'disabled' : ''} aria-label="${t('down')}">↓</button></li>`;
       }).join('')}</ol>
       <div class="prefs-actions">
-        <button class="btn primary" data-action="shop-settings-save">Enregistrer</button>
-        <button class="btn ghost" data-action="shop-settings-reset">Revenir au parcours par défaut</button>
+        <button class="btn primary" data-action="shop-settings-save">${t('save')}</button>
+        <button class="btn ghost" data-action="shop-settings-reset">${t('reset_default')}</button>
       </div>
     </div>`;
   showSheet();
@@ -681,61 +680,62 @@ function openShopSettings(order = getRayonOrder(), st = getStore()) {
 // ----- Profil -----
 function renderPrefs() {
   const P = S.prefs;
-  const list = (ids, src) => ids.length ? ids.map(id => (src.find(x => x.id === id) || { label: id }).label).join(', ') : '—';
-  const votes = (obj, src, dir) => list(Object.keys(obj).filter(k => obj[k] === dir), src);
-  const vote = (obj, src) => {
-    const up = votes(obj, src, 1), down = votes(obj, src, -1);
+  const list = (ids, src, g) => ids.length ? ids.map(id => { const it = src.find(x => x.id === id); return it ? L(g, it) : id; }).join(', ') : '—';
+  const votes = (obj, src, dir, g) => list(Object.keys(obj).filter(k => obj[k] === dir), src, g);
+  const vote = (obj, src, g) => {
+    const up = esc(votes(obj, src, 1, g)), down = esc(votes(obj, src, -1, g));
     return `${up !== '—' ? '👍 ' + up : ''}${up !== '—' && down !== '—' ? '<br>' : ''}${down !== '—' ? '👎 ' + down : ''}` || '—';
   };
   const rows = [
-    ['🎯', 'Objectifs', esc(list(P.objectives, OBJECTIVES))],
-    ['😋', 'Envie', esc(list([P.craving].filter(Boolean), CRAVINGS))],
-    ['🥗', 'Profil alimentaire', esc(list([P.diet].filter(Boolean), DIETS))],
-    ['🚫', 'À éviter', esc(list(P.avoid, AVOID))],
-    ['💪', 'Nutrition', esc(list(P.nutrition, NUTRITION))],
-    ['🌍', 'Cuisines', vote(P.cuisines, CUISINES)],
-    ['🌶️', 'Saveurs', vote(P.flavours, FLAVOURS)],
-    ['🍗', 'Protéines', vote(P.proteins, PROTEINS)],
-    ['🍝', 'Plats', vote(P.dishes, DISH_TYPES)],
-    ['🗓️', 'Semaine', `${P.nights} dîners · ${P.portions} pers.`],
-    ['⭐', 'Plats notés', `${Object.values(S.feedback).filter(v => v === 1).length} aimés · ${Object.values(S.feedback).filter(v => v === -1).length} écartés`],
+    ['🎯', t('row_objectives'), esc(list(P.objectives, OBJECTIVES, 'objectives'))],
+    ['😋', t('row_craving'), esc(list([P.craving].filter(Boolean), CRAVINGS, 'cravings'))],
+    ['🥗', t('row_diet'), esc(list([P.diet].filter(Boolean), DIETS, 'diets'))],
+    ['🚫', t('row_avoid'), esc(list(P.avoid, AVOID, 'avoid'))],
+    ['💪', t('row_nutrition'), esc(list(P.nutrition, NUTRITION, 'nutrition'))],
+    ['🌍', t('row_cuisines'), vote(P.cuisines, CUISINES, 'cuisines')],
+    ['🌶️', t('row_flavours'), vote(P.flavours, FLAVOURS, 'flavours')],
+    ['🍗', t('row_proteins'), vote(P.proteins, PROTEINS, 'proteins')],
+    ['🍝', t('row_dishes'), vote(P.dishes, DISH_TYPES, 'dishes')],
+    ['🗓️', t('row_week'), t('week_value', { n: P.nights, p: P.portions })],
+    ['⭐', t('row_rated'), t('rated_value', { l: Object.values(S.feedback).filter(v => v === 1).length, d: Object.values(S.feedback).filter(v => v === -1).length })],
   ];
   const info = S.dbInfo;
-  const srcLabel = { api: 'téléchargée depuis TheMealDB', cache: 'en cache (TheMealDB)', snapshot: 'copie locale de secours' }[info.source];
+  const srcLabel = t('src_' + info.source);
   app.innerHTML = `
     <section class="page-head">
-      <p class="eyebrow">Vos goûts</p>
-      <h1>Profil</h1>
+      <p class="eyebrow">${t('your_tastes')}</p>
+      <h1>${t('profile_title')}</h1>
     </section>
     <button class="cta-card" data-action="edit-prefs">
-      <span class="cta-ico">✏️</span><span><b>Refaire le questionnaire</b><small>Vos réponses actuelles sont pré-remplies</small></span>${ICON.chev}
+      <span class="cta-ico">✏️</span><span><b>${t('redo_quiz')}</b><small>${t('redo_quiz_sub')}</small></span>${ICON.chev}
     </button>
+    <button class="cta-card light" data-action="lang"><span class="cta-ico">🌐</span><span><b>${t('language')}</b><small>${langInfo().label}</small></span>${ICON.chev}</button>
     ${syncCard()}
     <div class="prefs">${rows.map(([ico, k, v]) => `<div class="row"><span class="row-ico">${ico}</span><div><b>${k}</b><div>${v}</div></div></div>`).join('')}</div>
     <div class="prefs-actions">
-      <button class="btn" data-action="reset-feedback">Effacer mes notes de plats</button>
-      <button class="btn" data-action="refresh-db">Mettre à jour la base</button>
-      <button class="btn ghost" data-action="reset-all">Tout réinitialiser</button>
+      <button class="btn" data-action="reset-feedback">${t('reset_feedback')}</button>
+      <button class="btn" data-action="refresh-db">${t('refresh_db')}</button>
+      <button class="btn ghost" data-action="reset-all">${t('reset_all')}</button>
     </div>
-    <p class="source-note">Base : ${S.db.length} plats, ${srcLabel}${info.at ? ' — ' + new Date(info.at).toLocaleString('fr-FR') : ''}.</p>`;
+    <p class="source-note">${t('base_note', { n: S.db.length, src: srcLabel })}${info.at ? ' — ' + new Date(info.at).toLocaleString(langInfo().locale) : ''}.</p>`;
 }
 
 function syncCard() {
   if (!Sync.available) return `<section id="sync-card" class="sync-card">
-    <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>Foyer partagé</b><small>Synchronisation pas encore configurée</small></div></div>
-    <p class="sub">Une fois Firebase configuré, vous pourrez partager menu et courses avec un autre téléphone.</p></section>`;
+    <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>${t('household')}</b><small>${t('sync_off')}</small></div></div>
+    <p class="sub">${t('sync_off_sub')}</p></section>`;
   if (!Sync.code) return `<section id="sync-card" class="sync-card">
-    <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>Partager avec mon foyer</b><small>Même menu, mêmes courses, sur plusieurs téléphones</small></div></div>
-    <button class="btn primary" data-action="sync-create">Créer un foyer partagé</button>
-    <div class="join-row"><input id="join-code" placeholder="XXXXX-XXXXX" autocomplete="off" autocapitalize="characters"><button class="btn" data-action="sync-join">Rejoindre</button></div>
+    <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>${t('share_household')}</b><small>${t('share_household_sub')}</small></div></div>
+    <button class="btn primary" data-action="sync-create">${t('create_household')}</button>
+    <div class="join-row"><input id="join-code" placeholder="XXXXX-XXXXX" autocomplete="off" autocapitalize="characters"><button class="btn" data-action="sync-join">${t('join')}</button></div>
   </section>`;
-  const label = { online: '● Synchronisé', offline: '● Hors connexion — synchro au retour du réseau', connecting: '● Connexion…', error: '● Erreur de synchronisation', off: '' }[Sync.status];
+  const label = Sync.status === 'off' ? '' : t('st_' + Sync.status);
   return `<section id="sync-card" class="sync-card on">
-    <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>Foyer partagé</b><small class="st-${Sync.status}">${label}</small></div></div>
-    <div class="code-box"><span>Code du foyer</span><b>${Sync.code}</b></div>
-    <button class="btn primary" data-action="sync-share">📤 Inviter l’autre téléphone</button>
-    <p class="sub">L’autre personne ouvre le lien reçu (ou saisit le code dans Profil) : vous partagez alors préférences, menu, notes et liste de courses en temps réel.</p>
-    <button class="btn ghost" data-action="sync-leave">Quitter le foyer</button>
+    <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>${t('household')}</b><small class="st-${Sync.status}">${label}</small></div></div>
+    <div class="code-box"><span>${t('household_code')}</span><b>${Sync.code}</b></div>
+    <button class="btn primary" data-action="sync-share">${t('invite_phone')}</button>
+    <p class="sub">${t('household_help')}</p>
+    <button class="btn ghost" data-action="sync-leave">${t('leave_household')}</button>
   </section>`;
 }
 
@@ -767,16 +767,17 @@ function renderRecipe() {
   const m = S.byId.get(modalId), r = S.rankedById.get(modalId);
   const factor = modalPortions / BASE_SERVINGS;
   const pIdx = planIndexOf(m.id), fb = S.feedback[m.id];
-  const translate = `https://translate.google.com/?sl=en&tl=fr&op=translate&text=${encodeURIComponent(m.instr.slice(0, 4500))}`;
+  const tl = langInfo().translate;
+  const translate = tl ? `https://translate.google.com/?sl=en&tl=${tl}&op=translate&text=${encodeURIComponent(m.instr.slice(0, 4500))}` : '';
   const steps = splitSteps(m.instr);
   const tab = S.recipeTab;
   $('#modal-body').innerHTML = `
     <div class="sheet-top floating">
-      <button class="back" data-action="close-modal" aria-label="Retour">${ICON.back}<span>Retour</span></button>
+      <button class="back" data-action="close-modal" aria-label="${t('back')}">${ICON.back}<span>${t('back')}</span></button>
       <span></span>
       <div class="top-actions">
-        <button class="round-btn ${fb === 1 ? 'on' : ''}" data-action="like" data-id="${m.id}" title="J’aime" aria-label="J’aime">${ICON.up}</button>
-        <button class="round-btn" data-action="dislike" data-id="${m.id}" title="Pas pour moi" aria-label="Pas pour moi">${ICON.down}</button>
+        <button class="round-btn ${fb === 1 ? 'on' : ''}" data-action="like" data-id="${m.id}" title="${t('like')}" aria-label="${t('like')}">${ICON.up}</button>
+        <button class="round-btn" data-action="dislike" data-id="${m.id}" title="${t('dislike')}" aria-label="${t('dislike')}">${ICON.down}</button>
       </div>
     </div>
     <div class="recipe-hero">${img(m.thumb, m.name)}<div class="hero-shade"></div>
@@ -784,35 +785,36 @@ function renderRecipe() {
     </div>
     <div class="recipe-body">
       <div class="facts">
-        <div><span>Temps</span><b>${fmtMinutes(m.f.time)}</b></div>
-        <div><span>Cuisine</span><b>${esc(cuisineLabel(m.f.cuisine))}</b></div>
-        <div><span>Ingrédients</span><b>${m.ingr.length}</b></div>
-        <div class="fact-portions"><span>Portions</span><span class="stepper small"><button data-action="mportions" data-dir="-1" aria-label="Moins">−</button><b>${modalPortions}</b><button data-action="mportions" data-dir="1" aria-label="Plus">+</button></span></div>
+        <div><span>${t('f_time')}</span><b>${fmtMinutes(m.f.time)}</b></div>
+        <div><span>${t('f_cuisine')}</span><b>${esc(cuisineLabel(m.f.cuisine))}</b></div>
+        <div><span>${t('f_ingredients')}</span><b>${m.ingr.length}</b></div>
+        <div class="fact-portions"><span>${t('f_portions')}</span><span class="stepper small"><button data-action="mportions" data-dir="-1" aria-label="${t('less')}">−</button><b>${modalPortions}</b><button data-action="mportions" data-dir="1" aria-label="${t('more')}">+</button></span></div>
       </div>
       ${tagsFor(m, 6, false)}
-      ${r && r.reasons.length ? `<p class="why"><b>Pour vous :</b> ${r.reasons.map(esc).join(' · ')}</p>` : ''}
+      ${r && r.reasons.length ? `<p class="why"><b>${t('for_you')}</b> ${r.reasons.map(x => esc(reasonText(x))).join(' · ')}</p>` : ''}
 
       <div class="seg-toggle recipe-tabs">
-        <button class="${tab === 'ingr' ? 'on' : ''}" data-action="recipe-tab" data-id="ingr">Ingrédients</button>
-        <button class="${tab === 'steps' ? 'on' : ''}" data-action="recipe-tab" data-id="steps">Préparation · ${steps.length} étapes</button>
+        <button class="${tab === 'ingr' ? 'on' : ''}" data-action="recipe-tab" data-id="ingr">${t('tab_ingr')}</button>
+        <button class="${tab === 'steps' ? 'on' : ''}" data-action="recipe-tab" data-id="steps">${t('tab_steps', { n: steps.length })}</button>
       </div>
       <div class="recipe-cols tab-${tab}">
         <div class="col-ingr">
-          <h3 class="col-title">Ingrédients <small>pour ${modalPortions} pers.</small></h3>
+          <h3 class="col-title">${t('tab_ingr')} <small>${t('ingr_for', { n: modalPortions })}</small></h3>
           <ul class="ingr-list">${m.ingr.map(i => `<li>${img(ING_IMG(i.n), '')}<span class="ingr-name">${esc(trIng(i.n))}</span><span class="m">${esc(measureFr(i.m, factor, i.n))}</span></li>`).join('')}</ul>
         </div>
         <div class="col-steps">
-          <h3 class="col-title">Préparation <small>en anglais · <a href="${translate}" target="_blank" rel="noopener">traduire 🇫🇷</a></small></h3>
+          <h3 class="col-title">${t('prep')} ${translate ? `<small>${t('in_english')} · <a href="${translate}" target="_blank" rel="noopener">${t('translate')}</a></small>` : ''}</h3>
           <ol class="step-list">${steps.map((t, i) => `<li class="${doneSteps.has(i) ? 'done' : ''}" data-action="step" data-idx="${i}"><span class="num">${doneSteps.has(i) ? ICON.check : i + 1}</span><p>${esc(t)}</p></li>`).join('')}</ol>
-          <p class="sub">Touchez une étape pour la cocher.</p>
+          ${translate ? `<p class="sub"><a href="${translate}" target="_blank" rel="noopener">${t('translate')}</a></p>` : ''}
+          <p class="sub">${t('tap_step')}</p>
         </div>
       </div>
     </div>
     <div class="sheet-bar">
       ${pIdx >= 0
-        ? `<button class="btn" data-action="swap-open" data-idx="${pIdx}" aria-label="Changer ce plat">${ICON.swap}<span class="lbl">Changer</span></button><button class="btn primary grow" data-action="close-modal">${ICON.check} Dans ma semaine</button>`
-        : `<button class="btn primary grow" data-action="add" data-id="${m.id}">${ICON.plus} Ajouter à ma semaine</button>`}
-      ${m.yt ? `<a class="btn icon-only" href="${esc(m.yt)}" target="_blank" rel="noopener" aria-label="Vidéo">${ICON.play}</a>` : ''}
+        ? `<button class="btn" data-action="swap-open" data-idx="${pIdx}" aria-label="${t('change_dish')}">${ICON.swap}<span class="lbl">${t('change')}</span></button><button class="btn primary grow" data-action="close-modal">${ICON.check} ${t('in_my_week')}</button>`
+        : `<button class="btn primary grow" data-action="add" data-id="${m.id}">${ICON.plus} ${t('add_to_week')}</button>`}
+      ${m.yt ? `<a class="btn icon-only" href="${esc(m.yt)}" target="_blank" rel="noopener" aria-label="${t('video')}">${ICON.play}</a>` : ''}
     </div>`;
 }
 
@@ -831,6 +833,23 @@ function closeModal() {
 }
 window.addEventListener('popstate', () => { if (!$('#modal').hidden) hideSheet(); });
 
+// ---------- Langue ----------
+function openLangSheet() {
+  modalId = null;
+  $('#modal-body').innerHTML = `
+    <div class="sheet-top"><button class="back" data-action="close-modal">${ICON.back} ${t('back')}</button><b>Langue · Language · 语言</b><span></span></div>
+    <div class="recipe-body settings lang-list">${LANGS.map(l => `
+      <button class="lang-opt ${l.id === LANG ? 'on' : ''}" data-action="set-lang" data-id="${l.id}"><span>${l.label}</span>${l.id === LANG ? ICON.check : ''}</button>`).join('')}
+    </div>`;
+  showSheet();
+}
+
+// Textes fixes de index.html (onglets, pastille du foyer, bouton de langue).
+function applyStaticI18n() {
+  document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+  const lb = $('#lang-btn'); if (lb) lb.lastChild.textContent = langInfo().short;
+}
+
 // ---------- Actions ----------
 function refreshCurrent() {
   if (S.draft) return;
@@ -846,7 +865,7 @@ function swapAt(idx) {
   const plan = planEntries();
   S.swapped.add(S.planIds[idx]);
   const rep = pickReplacement(S.ranked, S.prefs, plan, idx, S.swapped);
-  if (!rep) { toast('Plus d’alternative disponible'); return; }
+  if (!rep) { toast(t('no_alternative')); return; }
   S.planIds[idx] = rep.m.id;
   save();
 }
@@ -858,26 +877,26 @@ async function handleAction(el) {
     case 'goto': showView(view); break;
     case 'open': openRecipe(id); break;
     case 'close-modal': closeModal(); break;
-    case 'regen': newPlan(); renderMenu(); updateCartBadge(); toast('Nouvelle semaine générée'); break;
+    case 'regen': newPlan(); renderMenu(); updateCartBadge(); toast(t('new_week_toast')); break;
     case 'fill': {
       const kept = planEntries();
       S.planIds = buildPlan(S.ranked, S.prefs, S.prefs.nights, kept).map(p => p.m.id);
       save(); renderMenu(); updateCartBadge(); break;
     }
-    case 'swap': swapAt(+idx); refreshCurrent(); toast('Nouveau plat proposé'); break;
+    case 'swap': swapAt(+idx); refreshCurrent(); toast(t('new_dish')); break;
     case 'remove': S.planIds.splice(+idx, 1); save(); refreshCurrent(); break;
     case 'add':
       if (!S.planIds.includes(id)) {
         if (!S.planIds.length) S.planStart = todayISO();
         S.planIds.push(id); save();
-        toast(`Ajouté à votre semaine (${dayInfo(S.planIds.length - 1).label.toLowerCase()})`);
+        toast(t('added_to_week', { day: dayInfo(S.planIds.length - 1).label.toLowerCase() }));
       }
       refreshCurrent(); break;
     case 'noop': break;
     case 'swap-open': {
       swapAt(+idx);
       const newId = S.planIds[+idx];
-      refreshCurrent(); openRecipe(newId); toast('Nouveau plat proposé'); break;
+      refreshCurrent(); openRecipe(newId); toast(t('new_dish')); break;
     }
     case 'shop-filter': S.shopFilter = id || null; renderShop(); break;
     case 'shop-mode': S.shopMode = id; save(); renderShop(); break;
@@ -897,7 +916,7 @@ async function handleAction(el) {
       if (i >= 0) swapAt(i);
       save();
       if (modalId === id) closeModal();
-      toast('Noté : on ne vous le proposera plus');
+      toast(t('disliked'));
       refreshCurrent(); break;
     }
     case 'filter': S.explore[el.dataset.key] = !S.explore[el.dataset.key]; S.explore.limit = 24; el.classList.toggle('on'); renderExploreResults(); break;
@@ -914,8 +933,8 @@ async function handleAction(el) {
     case 'uncheck': S.shopChecked = {}; save(); renderShop(); break;
     case 'share': {
       const text = shoppingText(buildShopping(planEntries(), S.prefs.portions), S.shopChecked, getStore());
-      if (navigator.share) { try { await navigator.share({ title: 'Liste de courses', text }); } catch { } break; }
-      try { await navigator.clipboard.writeText(text); toast('Liste copiée'); } catch { toast('Copie impossible dans ce navigateur'); }
+      if (navigator.share) { try { await navigator.share({ title: t('list_title'), text }); } catch { } break; }
+      try { await navigator.clipboard.writeText(text); toast(t('list_copied')); } catch { toast(t('copy_fail')); }
       break;
     }
     case 'wake': await toggleWakeLock(); renderShop(); break;
@@ -931,36 +950,38 @@ async function handleAction(el) {
     case 'shop-settings-save':
       store.set('qm_rayons', rayonDraft);
       store.set('qm_store', { name: $('#st-name').value.trim() || DEFAULT_STORE.name, address: $('#st-address').value.trim() || DEFAULT_STORE.address });
-      rayonDraft = null; save(); closeModal(); renderShop(); toast('Magasin enregistré'); break;
+      rayonDraft = null; save(); closeModal(); renderShop(); toast(t('store_saved')); break;
     case 'shop-settings-reset':
-      store.del('qm_rayons'); store.del('qm_store'); rayonDraft = null; save(); closeModal(); renderShop(); toast('Parcours par défaut rétabli'); break;
+      store.del('qm_rayons'); store.del('qm_store'); rayonDraft = null; save(); closeModal(); renderShop(); toast(t('default_restored')); break;
     case 'edit-prefs': startWizard(true); break;
+    case 'lang': openLangSheet(); break;
+    case 'set-lang': setLang(id); break;
     case 'sync-create':
-      try { el.disabled = true; await Sync.create(sharedState()); renderPrefs(); toast('Foyer créé ! Invitez l’autre téléphone'); }
-      catch (e) { console.warn(e); toast('Création impossible : vérifiez la connexion'); el.disabled = false; }
+      try { el.disabled = true; await Sync.create(sharedState()); renderPrefs(); toast(t('household_created')); }
+      catch (e) { console.warn(e); toast(t('create_fail')); el.disabled = false; }
       break;
     case 'sync-join': {
       const v = $('#join-code').value.trim();
-      if (!v) { toast('Entrez le code du foyer'); break; }
+      if (!v) { toast(t('enter_code')); break; }
       await joinHousehold(v);
       break;
     }
     case 'sync-share': {
-      const text = `Rejoins notre foyer sur QuoiManger pour partager le menu et la liste de courses : ${Sync.inviteLink()} (code : ${Sync.code})`;
+      const text = t('invite_text', { link: Sync.inviteLink(), code: Sync.code });
       if (navigator.share) { try { await navigator.share({ title: 'QuoiManger', text }); } catch { } break; }
-      try { await navigator.clipboard.writeText(text); toast('Lien d’invitation copié'); } catch { toast(Sync.code); }
+      try { await navigator.clipboard.writeText(text); toast(t('invite_copied')); } catch { toast(Sync.code); }
       break;
     }
     case 'sync-leave':
-      if (confirm('Quitter le foyer partagé ? Les données restent sur ce téléphone mais ne seront plus synchronisées.')) { Sync.leave(); renderPrefs(); }
+      if (confirm(t('leave_confirm'))) { Sync.leave(); renderPrefs(); }
       break;
     case 'reset-feedback':
-      if (confirm('Effacer tous les plats aimés / écartés ?')) { S.feedback = {}; save(); rerank(); renderPrefs(); toast('Notes effacées'); }
+      if (confirm(t('reset_feedback_confirm'))) { S.feedback = {}; save(); rerank(); renderPrefs(); toast(t('feedback_cleared')); }
       break;
     case 'refresh-db':
       store.del(DB_CACHE_KEY); location.reload(); break;
     case 'reset-all':
-      if (confirm('Supprimer vos préférences, votre menu et vos notes ?')) {
+      if (confirm(t('reset_all_confirm'))) {
         ['qm_prefs', 'qm_feedback', 'qm_plan', 'qm_shop'].forEach(k => store.del(k)); location.reload();
       }
       break;
