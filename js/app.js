@@ -213,7 +213,11 @@ const STEPS = [
     title: () => t('s1_title'), sub: () => t('s1_sub'),
     valid: d => d.objectives.length > 0,
     render: d => `<div class="grid two">${OBJECTIVES.map(o =>
-      `<button class="opt ${d.objectives.includes(o.id) ? 'on' : ''}" data-action="toggle" data-key="objectives" data-val="${o.id}" data-max="3">${L('objectives', o)}</button>`).join('')}</div>`,
+      `<button class="opt ${d.objectives.includes(o.id) ? 'on' : ''}" data-action="toggle" data-key="objectives" data-val="${o.id}" data-max="3">${L('objectives', o)}</button>`).join('')}</div>
+      ${!S.prefs && Sync.available ? `<section class="join-first">
+        <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>${t('have_household')}</b><small>${t('have_household_sub')}</small></div></div>
+        <div class="join-row"><input id="join-code" placeholder="XXXXX-XXXXX" autocomplete="off" autocapitalize="characters"><button class="btn" data-action="sync-join">${t('join')}</button></div>
+      </section>` : ''}`,
   },
   {
     title: () => t('s2_title'),
@@ -325,6 +329,7 @@ $('#btn-back').addEventListener('click', prevStep);
 
 function wizardClick(el) {
   const d = S.draft, { action, key, val } = el.dataset;
+  if (action === 'sync-join') { handleAction(el); return; }
   if (action === 'pick') d[key] = el.dataset.num ? +val : val;
   else if (action === 'toggle') {
     const list = d[key];
@@ -459,6 +464,11 @@ function renderMenu() {
       <span class="cta-ico">${ICON.cart}</span>
       <span><b>${t('shop_list')}</b><small>${left ? t('items_to_buy', { n: left, r: plan.length }) : t('all_in_cart')}</small></span>
       ${ICON.chev}
+    </button>` : ''}
+
+    ${Sync.available && !Sync.code ? `
+    <button class="cta-card light" data-action="goto" data-view="prefs">
+      <span class="cta-ico">👨‍👩‍👧</span><span><b>${t('multi_device')}</b><small>${t('multi_device_sub')}</small></span>${ICON.chev}
     </button>` : ''}
 
     <div class="menu-tools">

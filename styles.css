@@ -425,6 +425,10 @@ main.enter { animation: page-in .28s ease-out; }
 html[lang=zh-CN] h1, html[lang=zh-CN] h2, html[lang=zh-CN] h3 { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; font-weight: 800; letter-spacing: 0; }
 
 /* Foyer partagé */
+.join-first { margin-top: 26px; background: var(--white); border-radius: var(--radius-lg); padding: 16px; box-shadow: var(--shadow-sm); display: grid; gap: 12px; max-width: 560px; }
+.join-first .sync-head small { line-height: 1.4; }
+.menu-tools { margin-top: 12px; }
+.cta-card + .cta-card.light { margin-top: 12px; margin-bottom: 0; }
 .sync-card { background: var(--white); border-radius: var(--radius-lg); padding: 16px; margin-bottom: 14px; box-shadow: var(--shadow-sm); display: grid; gap: 12px; }
 .sync-card.on { box-shadow: 0 0 0 2px var(--lime-dark), var(--shadow-sm); }
 .sync-head { display: flex; gap: 12px; align-items: center; }

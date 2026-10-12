@@ -20,6 +20,8 @@ const pl = (n, one, many) => (n > 1 ? many : one);
 
 const STR = {
   fr: {
+    have_household: 'Déjà utilisé sur un autre appareil ?', have_household_sub: 'Entrez le code du foyer (Profil → Foyer partagé sur l’autre appareil) pour retrouver le même menu sans refaire le questionnaire.',
+    multi_device: 'Utiliser l’app sur plusieurs téléphones', multi_device_sub: 'Créez un foyer partagé pour avoir le même menu et la même liste partout.',
     stat_ingr: v => `🛒 <b>${v.n}</b> ingrédients`, opt_title: 'Courses optimisées',
     opt_saving: v => `${v.n} ingrédients à acheter au lieu de ~${v.b} : les recettes de la semaine partagent leurs ingrédients.`,
     opt_n: v => `${v.n} ingrédients à acheter : les recettes de la semaine partagent un maximum d’ingrédients.`,
@@ -99,6 +101,8 @@ const STR = {
   },
 
   en: {
+    have_household: 'Already using it on another device?', have_household_sub: 'Enter the household code (Profile → Shared household on the other device) to get the same menu without redoing the questionnaire.',
+    multi_device: 'Use the app on several phones', multi_device_sub: 'Create a shared household to get the same menu and list everywhere.',
     stat_ingr: v => `🛒 <b>${v.n}</b> ingredients`, opt_title: 'Smart shopping',
     opt_saving: v => `${v.n} ingredients to buy instead of ~${v.b}: this week’s recipes share their ingredients.`,
     opt_n: v => `${v.n} ingredients to buy: this week’s recipes share as many ingredients as possible.`,
@@ -178,6 +182,8 @@ const STR = {
   },
 
   zh: {
+    have_household: '已在其他设备上使用？', have_household_sub: '输入家庭代码（在另一台设备的「我的 → 共享家庭」中查看），无需重新填写问卷即可同步菜单。',
+    multi_device: '在多部手机上使用', multi_device_sub: '创建共享家庭，所有设备上都是同一份菜单和购物清单。',
     stat_ingr: v => `🛒 <b>${v.n}</b> 种食材`, opt_title: '精简采购',
     opt_saving: v => `只需购买 ${v.n} 种食材（原本约 ${v.b} 种）：本周菜谱共用食材。`,
     opt_n: v => `需购买 ${v.n} 种食材：本周菜谱尽量共用食材。`,
