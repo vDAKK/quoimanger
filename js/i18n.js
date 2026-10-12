@@ -20,6 +20,11 @@ const pl = (n, one, many) => (n > 1 ? many : one);
 
 const STR = {
   fr: {
+    stat_ingr: v => `🛒 <b>${v.n}</b> ingrédients`, opt_title: 'Courses optimisées',
+    opt_saving: v => `${v.n} ingrédients à acheter au lieu de ~${v.b} : les recettes de la semaine partagent leurs ingrédients.`,
+    opt_n: v => `${v.n} ingrédients à acheter : les recettes de la semaine partagent un maximum d’ingrédients.`,
+    opt_off: 'Désactivé : les recettes sont choisies sans chercher à partager les ingrédients.',
+    plan_recomputed: 'Menu recalculé', shared_n: v => `♻️ ${v.n} en commun`, shared_title: 'Aussi utilisé dans une autre recette de la semaine',
     nav_menu: 'Semaine', nav_recipes: 'Recettes', nav_shop: 'Courses', nav_profile: 'Profil',
     loading_title: 'On prépare la cuisine…', loading_msg: 'Récupération de la base de plats TheMealDB',
     loading_count: v => `${v.n} plats récupérés (${v.d}/${v.t})`, api_fallback: 'API injoignable : copie locale utilisée',
@@ -94,6 +99,11 @@ const STR = {
   },
 
   en: {
+    stat_ingr: v => `🛒 <b>${v.n}</b> ingredients`, opt_title: 'Smart shopping',
+    opt_saving: v => `${v.n} ingredients to buy instead of ~${v.b}: this week’s recipes share their ingredients.`,
+    opt_n: v => `${v.n} ingredients to buy: this week’s recipes share as many ingredients as possible.`,
+    opt_off: 'Off: recipes are chosen without trying to share ingredients.',
+    plan_recomputed: 'Menu recalculated', shared_n: v => `♻️ ${v.n} shared`, shared_title: 'Also used in another recipe this week',
     nav_menu: 'Week', nav_recipes: 'Recipes', nav_shop: 'Shopping', nav_profile: 'Profile',
     loading_title: 'Getting the kitchen ready…', loading_msg: 'Fetching the TheMealDB recipe database',
     loading_count: v => `${v.n} dishes fetched (${v.d}/${v.t})`, api_fallback: 'API unreachable: using the offline copy',
@@ -168,6 +178,11 @@ const STR = {
   },
 
   zh: {
+    stat_ingr: v => `🛒 <b>${v.n}</b> 种食材`, opt_title: '精简采购',
+    opt_saving: v => `只需购买 ${v.n} 种食材（原本约 ${v.b} 种）：本周菜谱共用食材。`,
+    opt_n: v => `需购买 ${v.n} 种食材：本周菜谱尽量共用食材。`,
+    opt_off: '已关闭：选菜时不考虑共用食材。',
+    plan_recomputed: '菜单已重新生成', shared_n: v => `♻️ 共用 ${v.n} 种`, shared_title: '本周其他菜谱也会用到',
     nav_menu: '本周', nav_recipes: '菜谱', nav_shop: '购物', nav_profile: '我的',
     loading_title: '正在准备厨房…', loading_msg: '正在获取 TheMealDB 菜谱库',
     loading_count: v => `已获取 ${v.n} 道菜（${v.d}/${v.t}）`, api_fallback: '无法连接接口：使用离线副本',

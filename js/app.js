@@ -412,6 +412,9 @@ function renderMenu() {
   const feat = plan[featuredIdx];
   const sh = plan.length ? buildShopping(plan, P.portions) : null;
   const left = sh ? sh.byRayon.flatMap(g => g.items).filter(it => !S.shopChecked[it.key]).length : 0;
+  const ps = planShopping(plan);
+  const optOn = P.optimizeShopping !== false;
+  const baseline = optOn && plan.length > 1 ? baselineDistinct(S.ranked, P, plan.length) : 0;
 
   app.innerHTML = `
     <section class="page-head">
@@ -421,6 +424,7 @@ function renderMenu() {
         <span>${t('stat_dinners', { n: plan.length })}</span>
         <span>${t('stat_people', { n: P.portions })}</span>
         <span>${t('stat_time', { t: fmtMinutes(totalTime) })}</span>
+        ${plan.length ? `<span>${t('stat_ingr', { n: ps.distinct })}</span>` : ''}
       </div>
     </section>
 
@@ -441,7 +445,14 @@ function renderMenu() {
 
     ${plan.length > 1 ? `
     <h2 class="section-title">${t('on_menu')}</h2>
-    <div class="day-list">${plan.map((r, i) => i === featuredIdx ? '' : dayRow(r, i)).join('')}</div>` : ''}
+    <div class="day-list">${plan.map((r, i) => i === featuredIdx ? '' : dayRow(r, i, ps.shared)).join('')}</div>` : ''}
+
+    ${plan.length > 1 ? `
+    <button class="opt-card ${optOn ? 'on' : ''}" data-action="toggle-opt" role="switch" aria-checked="${optOn}">
+      <span class="opt-ico">♻️</span>
+      <span class="opt-txt"><b>${t('opt_title')}</b><small>${!optOn ? t('opt_off') : baseline > ps.distinct ? t('opt_saving', { n: ps.distinct, b: baseline }) : t('opt_n', { n: ps.distinct })}</small></span>
+      <span class="switch"><i></i></span>
+    </button>` : ''}
 
     ${plan.length ? `
     <button class="cta-card" data-action="goto" data-view="shop">
@@ -458,13 +469,14 @@ function renderMenu() {
     <p class="source-note">${t('menu_hint')}</p>`;
 }
 
-function dayRow(r, i) {
+function dayRow(r, i, shared = new Set()) {
   const m = r.m, d = dayInfo(i);
+  let common = 0; freshKeys(m).forEach(k => shared.has(k) && common++);
   return `<div class="day-row">
     <div class="day-date ${d.diff === 0 ? 'today' : ''}"><span>${d.short}</span><b>${d.num}</b></div>
     <button class="day-card" data-action="open" data-id="${m.id}">
       ${img(m.thumb ? m.thumb + '/small' : '', m.name)}
-      <span class="day-txt"><b>${esc(m.name)}</b><small>${fmtMinutes(m.f.time)} · ${esc(cuisineLabel(m.f.cuisine))}${m.f.isVeggie ? ' · 🌱' : ''}</small></span>
+      <span class="day-txt"><b>${esc(m.name)}</b><small>${fmtMinutes(m.f.time)} · ${esc(cuisineLabel(m.f.cuisine))}${m.f.isVeggie ? ' · 🌱' : ''}${common ? ` · <span class="common">${t('shared_n', { n: common })}</span>` : ''}</small></span>
     </button>
     <button class="round-btn" data-action="swap" data-idx="${i}" title="${t('change_dish')}" aria-label="${t('change_dish')}">${ICON.swap}</button>
   </div>`;
@@ -771,6 +783,9 @@ function renderRecipe() {
   const translate = tl ? `https://translate.google.com/?sl=en&tl=${tl}&op=translate&text=${encodeURIComponent(m.instr.slice(0, 4500))}` : '';
   const steps = splitSteps(m.instr);
   const tab = S.recipeTab;
+  const others = pIdx >= 0 ? planEntries().filter(x => x.m.id !== m.id) : [];
+  const elsewhere = new Set(); others.forEach(x => freshKeys(x.m).forEach(k => elsewhere.add(k)));
+  const isShared = (n) => { const info = ingInfo(n); return !info.pantry && !info.skip && elsewhere.has(info.fr.toLowerCase()); };
   $('#modal-body').innerHTML = `
     <div class="sheet-top floating">
       <button class="back" data-action="close-modal" aria-label="${t('back')}">${ICON.back}<span>${t('back')}</span></button>
@@ -800,7 +815,7 @@ function renderRecipe() {
       <div class="recipe-cols tab-${tab}">
         <div class="col-ingr">
           <h3 class="col-title">${t('tab_ingr')} <small>${t('ingr_for', { n: modalPortions })}</small></h3>
-          <ul class="ingr-list">${m.ingr.map(i => `<li>${img(ING_IMG(i.n), '')}<span class="ingr-name">${esc(trIng(i.n))}</span><span class="m">${esc(measureFr(i.m, factor, i.n))}</span></li>`).join('')}</ul>
+          <ul class="ingr-list">${m.ingr.map(i => `<li>${img(ING_IMG(i.n), '')}<span class="ingr-name">${esc(trIng(i.n))}${isShared(i.n) ? ` <span class="shared-tag" title="${t('shared_title')}">♻️</span>` : ''}</span><span class="m">${esc(measureFr(i.m, factor, i.n))}</span></li>`).join('')}</ul>
         </div>
         <div class="col-steps">
           <h3 class="col-title">${t('prep')} ${translate ? `<small>${t('in_english')} · <a href="${translate}" target="_blank" rel="noopener">${t('translate')}</a></small>` : ''}</h3>
@@ -955,6 +970,9 @@ async function handleAction(el) {
       store.del('qm_rayons'); store.del('qm_store'); rayonDraft = null; save(); closeModal(); renderShop(); toast(t('default_restored')); break;
     case 'edit-prefs': startWizard(true); break;
     case 'lang': openLangSheet(); break;
+    case 'toggle-opt':
+      S.prefs.optimizeShopping = S.prefs.optimizeShopping === false;
+      newPlan(); renderMenu(); updateCartBadge(); toast(t('plan_recomputed')); break;
     case 'set-lang': setLang(id); break;
     case 'sync-create':
       try { el.disabled = true; await Sync.create(sharedState()); renderPrefs(); toast(t('household_created')); }

@@ -269,53 +269,129 @@ function rankAll(meals, P, feedback) {
 }
 
 // ---------- Menu de la semaine ----------
-const freshIngredients = (m) => new Set(m.ingr.map(i => i.n.toLowerCase()).filter(n => !PANTRY.test(n)));
-
-function diversityAdjust(cand, chosen, P) {
-  const f = cand.m.f;
-  let adj = 0;
-  const sameCuisine = chosen.filter(c => c.m.f.cuisine === f.cuisine).length;
-  adj -= sameCuisine * (P.objectives.includes('discover') ? 14 : 7);
-  const sameMain = chosen.filter(c => c.m.f.main === f.main).length;
-  adj -= sameMain * 6;
-  const sameType = chosen.filter(c => c.m.f.types[0] === f.types[0]).length;
-  adj -= sameType * 5;
-  if (P.diet === 'flexi' && f.isMeat) adj -= chosen.filter(c => c.m.f.isMeat).length * 15;
-  if (P.objectives.includes('waste') && chosen.length) {
-    const mine = freshIngredients(cand.m);
-    const shared = new Set();
-    chosen.forEach(c => freshIngredients(c.m).forEach(n => mine.has(n) && shared.add(n)));
-    adj += Math.min(shared.size * 3, 15);
+// Ingrédients à acheter pour un plat : noms regroupés (onion / onions / chopped onion → « oignons »), placard exclu.
+function freshKeys(m) {
+  if (!m.f.fresh) {
+    m.f.fresh = new Set();
+    for (const i of m.ingr) {
+      const info = ingInfo(i.n);
+      if (!info.skip && !info.pantry) m.f.fresh.add(info.fr.toLowerCase());
+    }
   }
-  return adj;
+  return m.f.fresh;
 }
 
-function buildPlan(ranked, P, n, keep = []) {
-  // On tire dans le haut du classement avec un peu d’aléatoire pour varier d’une semaine à l’autre.
-  const pool = ranked.slice(0, Math.max(60, n * 10)).map(r => ({ ...r, jitter: Math.random() * 10 }));
-  const chosen = [...keep];
-  while (chosen.length < n && pool.length) {
-    let best = -1, bestVal = -Infinity;
-    pool.forEach((c, i) => {
-      if (chosen.some(x => x.m.id === c.m.id)) return;
-      const v = c.score + c.jitter + diversityAdjust(c, chosen, P);
-      if (v > bestVal) { bestVal = v; best = i; }
-    });
-    if (best < 0) break;
-    chosen.push(pool.splice(best, 1)[0]);
+// Poids d'un ingrédient différent supplémentaire, en points de score : plus il est élevé, plus le menu mutualise les courses.
+const shoppingWeight = (P) => (P.optimizeShopping === false ? 0 : P.objectives.includes('waste') ? 7 : 5);
+
+function pairPenalty(a, b, P) {
+  let p = 0;
+  if (a.m.f.cuisine === b.m.f.cuisine) p += P.objectives.includes('discover') ? 14 : 7;
+  if (a.m.f.main === b.m.f.main) p += 6;
+  if (a.m.f.types[0] === b.m.f.types[0]) p += 5;
+  if (P.diet === 'flexi' && a.m.f.isMeat && b.m.f.isMeat) p += 15;
+  // quasi-doublons (mêmes ingrédients ou même nom) : on ne veut pas deux fois le même plat dans la semaine
+  const fa = freshKeys(a.m), fb = freshKeys(b.m);
+  let inter = 0; fa.forEach(k => fb.has(k) && inter++);
+  const jaccard = inter / Math.max(1, fa.size + fb.size - inter);
+  if (jaccard > 0.45 || sameDish(a.m.name, b.m.name)) p += 80;
+  return p;
+}
+
+const dishWords = (n) => n.toLowerCase().replace(/chakchouka|chakchuka|shakshuka|shakshouka/g, 'shakshuka').replace(/[^a-z ]/g, ' ').split(/\s+/).filter(w => w.length > 3).map(w => w.slice(0, 6));
+function sameDish(x, y) {
+  const a = new Set(dishWords(x)), b = dishWords(y);
+  if (!a.size || !b.length) return false;
+  const common = b.filter(w => a.has(w)).length;
+  return common / Math.min(a.size, b.length) >= 1 || common / Math.max(a.size, b.length) >= 0.75;
+}
+
+/** Valeur d'un menu : goûts + variété − coût des ingrédients différents à acheter. */
+function planValue(set, P, lambda) {
+  let v = 0;
+  const keys = new Set();
+  for (let i = 0; i < set.length; i++) {
+    v += set[i].score + (set[i].jitter || 0);
+    // un vrai dîner a un minimum d'ingrédients frais : sans ça l'optimiseur préférerait des plats « vides »
+    const size = freshKeys(set[i].m).size;
+    if (size < 5) v -= (5 - size) * 8;
+    for (let j = 0; j < i; j++) v -= pairPenalty(set[i], set[j], P);
+    freshKeys(set[i].m).forEach(k => keys.add(k));
   }
-  return chosen;
+  return v - lambda * keys.size;
+}
+
+// Amélioration locale : on remplace un plat à la fois tant que la valeur du menu augmente.
+function improvePlan(set, pool, P, lambda, locked = 0) {
+  for (let pass = 0; pass < 4; pass++) {
+    let improved = false;
+    for (let i = locked; i < set.length; i++) {
+      let base = planValue(set, P, lambda), best = null, bestVal = base;
+      for (const c of pool) {
+        if (set.some(x => x.m.id === c.m.id)) continue;
+        const prev = set[i]; set[i] = c;
+        const v = planValue(set, P, lambda);
+        set[i] = prev;
+        if (v > bestVal + 0.01) { bestVal = v; best = c; }
+      }
+      if (best) { set[i] = best; improved = true; }
+    }
+    if (!improved) break;
+  }
+  return set;
+}
+
+function buildPlan(ranked, P, n, keep = [], opts = {}) {
+  const lambda = opts.lambda ?? shoppingWeight(P);
+  const jitterAmp = opts.noJitter ? 0 : 10; // un peu d'aléatoire pour varier d'une semaine à l'autre
+  // accompagnements et entrées exclus : on cherche des plats principaux
+  const pool = ranked.filter(r => !r.m.f.isSide).slice(0, Math.max(90, n * 14)).map(r => ({ ...r, jitter: Math.random() * jitterAmp }));
+  const chosen = [...keep];
+  while (chosen.length < n) {
+    let best = null, bestVal = -Infinity;
+    const base = planValue(chosen, P, lambda);
+    for (const c of pool) {
+      if (chosen.some(x => x.m.id === c.m.id)) continue;
+      chosen.push(c);
+      const v = planValue(chosen, P, lambda) - base;
+      chosen.pop();
+      if (v > bestVal) { bestVal = v; best = c; }
+    }
+    if (!best) break;
+    chosen.push(best);
+  }
+  return improvePlan(chosen, pool, P, lambda, keep.length);
 }
 
 function pickReplacement(ranked, P, plan, index, excluded) {
-  const others = plan.filter((_, i) => i !== index);
-  const pool = ranked.filter(r => !plan.some(p => p.m.id === r.m.id) && !excluded.has(r.m.id)).slice(0, 80);
+  const lambda = shoppingWeight(P);
+  const pool = ranked.filter(r => !r.m.f.isSide && !plan.some(p => p.m.id === r.m.id) && !excluded.has(r.m.id)).slice(0, 100);
+  const set = [...plan];
   let best = null, bestVal = -Infinity;
   for (const c of pool) {
-    const v = c.score + Math.random() * 8 + diversityAdjust(c, others, P);
+    set[index] = { ...c, jitter: Math.random() * 8 };
+    const v = planValue(set, P, lambda);
     if (v > bestVal) { bestVal = v; best = c; }
   }
   return best;
+}
+
+/** Statistiques d'achats d'un menu : nombre d'ingrédients différents et ingrédients partagés par au moins 2 plats. */
+function planShopping(plan) {
+  const count = new Map();
+  plan.forEach(r => freshKeys(r.m).forEach(k => count.set(k, (count.get(k) || 0) + 1)));
+  const shared = new Set([...count].filter(([, c]) => c > 1).map(([k]) => k));
+  return { distinct: count.size, shared };
+}
+
+// Référence « menu non optimisé » : mêmes goûts, sans chercher à mutualiser les ingrédients (déterministe).
+let baselineCache = { key: '', value: 0 };
+function baselineDistinct(ranked, P, n) {
+  const key = JSON.stringify([P, n, ranked.length, ranked[0] && ranked[0].m.id]);
+  if (baselineCache.key !== key) {
+    baselineCache = { key, value: planShopping(buildPlan(ranked, P, n, [], { lambda: 0, noJitter: true })).distinct };
+  }
+  return baselineCache.value;
 }
 
 // ---------- Quantités & courses ----------
