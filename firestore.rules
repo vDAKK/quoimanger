@@ -1,0 +1,14 @@
+rules_version = '2';
+// Règles Firestore de QuoiManger : à coller dans Console Firebase → Firestore → Règles.
+// Chaque foyer est un document dont l'identifiant (code aléatoire XXXXX-XXXXX) sert de clé d'accès :
+// on peut lire / écrire un foyer si on connaît son code, mais impossible de lister ou supprimer les foyers.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /foyers/{code} {
+      allow get: if code.matches('^[A-Z0-9]{5}-[A-Z0-9]{5}$');
+      allow create, update: if code.matches('^[A-Z0-9]{5}-[A-Z0-9]{5}$')
+        && request.resource.data.keys().hasOnly(['prefs', 'feedback', 'planIds', 'planStart', 'shop', 'store', 'rayons', 'createdAt', 'updatedAt']);
+      allow list, delete: if false;
+    }
+  }
+}
