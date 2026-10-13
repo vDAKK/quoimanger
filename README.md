@@ -19,6 +19,7 @@ Pour une vraie PWA installable et utilisable hors-ligne (service worker), héber
    **Midis** : option du questionnaire ou bouton « Ajouter les midis » ; le midi favorise les plats rapides et légers. Chaque repas a ses portions et peut être exclu (« je ne mange pas ce repas ») via le bouton 👤 : il sort alors de la liste de courses.
    **Alternatives** : bouton ↔ sur un ingrédient de la fiche recette pour choisir un produit de remplacement ; la liste de courses suit et regroupe les alternatives sur une ligne (« ou : … »).
 5. **Courses (Intermarché Bourg-en-Bresse)** : tout est traduit en français et converti en g, ml et cuillères. Les quantités sont cumulées entre recettes et classées dans l'ordre des rayons d'un parcours Intermarché type (ordre et magasin modifiables). Les basiques de placard sont mis à part, et une loupe ouvre la recherche du produit sur intermarche.com.
+   **Indisponible au magasin** : le bouton barré d'un article le remplace par une alternative de la même famille, sinon change les recettes qui l'utilisent ; les plats proposés ensuite évitent ce produit pour la semaine. (Remplir automatiquement le caddie drive n'est pas possible : Intermarché n'a pas d'API publique et son site bloque les robots.)
    Les repas passés (jours précédents, et le midi du jour à partir de 15 h) sont masqués de la liste de courses.
 6. **Apprentissage** : 👍 favorise un plat, 👎 l'exclut définitivement.
 

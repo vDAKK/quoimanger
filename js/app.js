@@ -28,8 +28,8 @@ const DEFAULT_PREFS = {
   cuisines: {}, flavours: {}, proteins: {}, dishes: {}, nights: 4, portions: 2, lunch: false, lunchPortions: 2,
 };
 // Données du menu en plus des dîners : déjeuners (par jour), réglages par repas { id: { p: portions, off: 1 } },
-// alternatives choisies { 'idPlat|ingrédient': produit }.
-const emptyWeek = () => ({ lunchIds: [], slots: {}, subs: {} });
+// alternatives choisies { 'idPlat|ingrédient': produit }, produits indisponibles au magasin (noms français).
+const emptyWeek = () => ({ lunchIds: [], slots: {}, subs: {}, unavail: [] });
 const asWeek = (w) => ({ ...emptyWeek(), ...(w || {}) });
 
 const S = {
@@ -200,7 +200,7 @@ function fillWeek(reset = false) {
   }
   // un repas exclu (« je ne mange pas ») reste à sa place mais ne compte pas dans l'optimisation
   const opt = layout.filter(x => !(x.id && S.week.slots[x.id] && S.week.slots[x.id].off));
-  const res = buildPlan(S.ranked, S.prefs, opt.map(x => x.kind), opt.map(x => (x.id && rankedOf(x.id)) || null));
+  const res = buildPlan(S.ranked, S.prefs, opt.map(x => x.kind), opt.map(x => (x.id && rankedOf(x.id)) || null), { exclude: blockedMeals() });
   opt.forEach((x, i) => { x.id = res[i] ? res[i].m.id : x.id; });
   const dinners = [], lunches = [];
   layout.forEach(x => ((x.kind === 'lunch' ? lunches : dinners)[x.day] = x.id || ''));
@@ -682,6 +682,7 @@ function shopRow(it, qty = it.qty, withUses = true) {
       ${it.alts && it.alts.length ? `<span class="alts">${icon('arrow-left-right')}${esc(t('or_alts', { a: it.alts.join(', ') }))}</span>` : ''}
       ${withUses ? recipeChips(it) : ''}
     </div>
+    <button class="find unav" data-action="unavail" data-key="${esc(it.key)}" title="${t('unavailable')}" aria-label="${t('unavailable')} : ${esc(it.label)}">${icon('ban')}</button>
     <a class="find" href="${intermarcheSearch(it.fr)}" target="_blank" rel="noopener" title="${t('search_store')}" aria-label="${t('search_store')} : ${esc(it.label)}">${ICON.search}</a>
   </div>`;
 }
@@ -735,6 +736,7 @@ function renderShop() {
       <p class="eyebrow">${icon('store')} ${esc(st.name)}</p>
       <h1>${t('shop_title')}</h1>
     </section>
+    ${(S.week.unavail || []).length ? `<div class="filter-note unavail-note">${icon('ban')}<span>${t('unavail_list', { l: esc(S.week.unavail.map(unavailLabel).join(', ')) })}</span><button data-action="unavail-reset">${t('reset')}</button></div>` : ''}
     ${pastCount ? `<button class="filter-note past-note" data-action="show-past"><span>${S.showPast ? t('past_shown', { n: pastCount }) : t('past_hidden', { n: pastCount })}</span><em>${S.showPast ? t('hide') : t('show')}</em></button>` : ''}
     ${plan.length ? `
     <div class="shop-bar">
@@ -1041,16 +1043,67 @@ function swapAt(id) {
   const idx = list.findIndex(x => x.id === id);
   if (idx < 0) return null;
   S.swapped.add(id);
-  const rep = pickReplacement(S.ranked, S.prefs, list.map(x => x.kind), list, idx, new Set([...S.swapped, ...weekSlots().map(x => x.id)]));
+  const rep = pickReplacement(S.ranked, S.prefs, list.map(x => x.kind), list, idx, new Set([...S.swapped, ...weekSlots().map(x => x.id), ...blockedMeals()]));
   if (!rep) { toast(t('no_alternative')); return null; }
   const x = list[idx];
   (x.kind === 'lunch' ? S.week.lunchIds : S.planIds)[x.day] = rep.m.id;
   // les réglages du repas (portions, exclusion) suivent le nouveau plat
   if (S.week.slots[id]) { S.week.slots[rep.m.id] = S.week.slots[id]; delete S.week.slots[id]; }
   dropSubs(id);
+  useAlternatives(rep.m);
   save();
   return rep.m.id;
 }
+
+// ---------- Produits indisponibles ----------
+const unavailSet = () => new Set(S.week.unavail || []);
+const isUnavail = (fr, un = unavailSet()) => un.has(normFr(fr));
+// alternative disponible pour un produit indisponible (de préférence un produit déjà dans la liste de courses)
+function availableAlt(fr, un, prefer = new Set()) {
+  const fam = familyOf(fr);
+  if (!fam) return null;
+  const ok = fam.items.filter(a => !un.has(normFr(a.fr)));
+  return ok.find(a => prefer.has(normFr(a.fr))) || ok[0] || null;
+}
+/** Plats impossibles à cuisiner : un ingrédient indisponible sans alternative disponible. */
+function blockedMeals() {
+  const un = unavailSet(), out = new Set();
+  if (!un.size) return out;
+  for (const r of S.ranked) {
+    if (r.m.ingr.some(i => { const info = ingInfo(i.n); return !info.skip && un.has(normFr(info.fr)) && !availableAlt(info.fr, un); })) out.add(r.m.id);
+  }
+  return out;
+}
+/** Remplace par une alternative les ingrédients indisponibles d'un plat ; renvoie false si l'un n'a pas d'alternative. */
+function useAlternatives(m, prefer) {
+  const un = unavailSet();
+  let ok = true;
+  for (const i of m.ingr) {
+    const info = boughtInfo(m.id, i.n, S.week.subs);
+    if (info.skip || !un.has(normFr(info.fr))) continue;
+    const alt = availableAlt(info.fr, un, prefer);
+    const k = m.id + '|' + i.n;
+    if (!alt) { ok = false; continue; }
+    if (normFr(alt.fr) === normFr(ingInfo(i.n).fr)) delete S.week.subs[k]; else S.week.subs[k] = alt.fr;
+  }
+  return ok;
+}
+/** Un article de la liste est introuvable au magasin : alternative si possible, sinon on change les recettes concernées. */
+function markUnavailable(it) {
+  S.week.unavail = [...new Set([...(S.week.unavail || []), normFr(it.fr)])];
+  const sh = buildShopping(shopSlots(), S.week.subs);
+  const prefer = new Set([...sh.byKey.values()].flatMap(x => [...x.members.keys()].map(normFr)));
+  const toSwap = [];
+  for (const x of shopSlots()) if (it.meals.has(x.id) && !useAlternatives(x.m, prefer)) toSwap.push(x.id);
+  let swapped = 0;
+  for (const id of toSwap) if (swapAt(id)) swapped++;
+  delete S.shopChecked[it.key];
+  save();
+  const after = buildShopping(shopSlots(), S.week.subs).byKey.get(it.key);
+  if (toSwap.length) toast(swapped === toSwap.length ? t('unavail_swap', { n: swapped }) : t('unavail_none'));
+  else toast(t('unavail_alt', { x: it.label, y: after ? after.label : '' }));
+}
+const unavailLabel = (fr) => { const a = altItem(fr) || Object.entries(ING_FR).map(([en, v]) => ({ ...v, en })).find(v => normFr(v.fr) === fr); return a ? ingLabel(a.en, a.fr) : fr; };
 const dropSubs = (id) => Object.keys(S.week.subs).forEach(k => k.startsWith(id + '|') && delete S.week.subs[k]);
 const slotOpts = (id) => (S.week.slots[id] = S.week.slots[id] || {});
 
@@ -1085,6 +1138,12 @@ async function handleAction(el) {
       if (S.prefs.lunch) { S.prefs.lunchPortions = S.prefs.lunchPortions || S.prefs.portions; fillWeek(); }
       save(); renderMenu(); updateCartBadge(); toast(S.prefs.lunch ? t('lunches_added') : t('lunches_removed')); break;
     case 'show-past': S.showPast = !S.showPast; renderShop(); updateCartBadge(); break;
+    case 'unavail': {
+      const it = buildShopping(shopSlots(), S.week.subs).byKey.get(el.dataset.key);
+      if (it && confirm(t('unavail_confirm', { x: it.label }))) { markUnavailable(it); refreshCurrent(); }
+      break;
+    }
+    case 'unavail-reset': S.week.unavail = []; save(); renderShop(); break;
     case 'alt': S.altOpen = S.altOpen === +idx ? null : +idx; renderRecipe(); break;
     case 'alt-pick': {
       const ing = S.byId.get(modalId).ingr[+idx], k = modalId + '|' + ing.n;

@@ -707,3 +707,11 @@ body.no-scroll .toast { bottom: calc(86px + var(--safe-b)); }
 .por-btn .ico { width: 18px; height: 18px; }
 .lang-btn .ico { width: 15px; height: 15px; }
 .store-links { flex-wrap: wrap; }
+
+/* ---------- Produits indisponibles ---------- */
+.shop-item .find.unav { border: 0; background: none; color: var(--muted); }
+.shop-item .find.unav:active { color: #c0392b; }
+.unavail-note { margin: 0 0 12px; background: #fde7e3; align-items: center; gap: 8px; }
+.unavail-note .ico { width: 16px; height: 16px; color: #c0392b; }
+.unavail-note span { flex: 1; }
+.unavail-note button { border: 0; background: none; font-weight: 700; text-decoration: underline; padding: 0; font-size: 13px; }
