@@ -3,7 +3,23 @@
 const DEFAULT_STORE = {
   name: 'Intermarché Super Bourg-en-Bresse',
   address: '56 rue du Stand, 01000 Bourg-en-Bresse',
+  chain: 'intermarche', drive: 'likely',
 };
+
+// Enseignes : recherche d'un produit sur leur site et adresse de leur drive (null = pas de drive).
+const CHAINS = [
+  { id: 'intermarche', name: 'Intermarché', rx: /intermarch/i, site: 'intermarche.com', search: 'https://www.intermarche.com/recherche/{q}', drive: 'https://www.intermarche.com/' },
+  { id: 'carrefour', name: 'Carrefour', rx: /carrefour/i, site: 'carrefour.fr', search: 'https://www.carrefour.fr/s?q={q}', drive: 'https://www.carrefour.fr/services/drive' },
+  { id: 'leclerc', name: 'E.Leclerc', rx: /leclerc/i, site: 'e.leclerc', search: 'https://www.e.leclerc/recherche?q={q}', drive: 'https://www.leclercdrive.fr/' },
+  { id: 'auchan', name: 'Auchan', rx: /auchan/i, site: 'auchan.fr', search: 'https://www.auchan.fr/recherche?text={q}', drive: 'https://www.auchan.fr/' },
+  { id: 'u', name: 'Magasins U', rx: /\b(super|hyper|marché) ?u\b|^u express|système u|^u$/i, site: 'coursesu.com', search: 'https://www.coursesu.com/recherche?q={q}', drive: 'https://www.coursesu.com/drive' },
+  { id: 'monoprix', name: 'Monoprix', rx: /monoprix|monop'/i, site: 'monoprix.fr', search: 'https://courses.monoprix.fr/search?q={q}', drive: 'https://courses.monoprix.fr/' },
+  { id: 'lidl', name: 'Lidl', rx: /lidl/i, site: 'lidl.fr', search: 'https://www.lidl.fr/q/search?q={q}', drive: null },
+  { id: 'nodrive', name: '', rx: /aldi|netto|grand frais|biocoop|spar\b|franprix|picard|naturalia|la vie claire|leader price/i, site: null, search: null, drive: null },
+  { id: 'other', name: '', rx: null, site: null, search: null, drive: null },
+];
+const chainOf = (name) => CHAINS.find(c => c.rx && c.rx.test(name || '')) || CHAINS[CHAINS.length - 1];
+const storeChain = (st) => CHAINS.find(c => c.id === st.chain) || chainOf(st.name);
 
 // Parcours type d'un Intermarché : frais à l'entrée, épicerie au centre, boissons puis surgelés en fin de parcours.
 const RAYONS = [
@@ -24,8 +40,59 @@ const RAYONS = [
 ];
 
 const rayonLabel = (r) => L('rayons', r);
-const intermarcheSearch = (fr) => 'https://www.intermarche.com/recherche/' + encodeURIComponent(fr.split(' (')[0].split(' / ')[0].trim());
-const mapsLink = (store) => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Intermarché ' + store.address);
+/** Lien de recherche du produit sur le site de l'enseigne du magasin (null si l'enseigne n'a pas de recherche en ligne). */
+function productSearch(fr, st = getStore()) {
+  const c = storeChain(st);
+  return c.search ? c.search.replace('{q}', encodeURIComponent(fr.split(' (')[0].split(' / ')[0].trim())) : null;
+}
+const mapsLink = (st) => 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(st.lat ? `${st.lat},${st.lon}` : `${st.name} ${st.address}`);
+
+// ---------- Recherche de magasins (OpenStreetMap) ----------
+const OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter', 'https://overpass.private.coffee/api/interpreter'];
+
+/** Ville ou code postal → { lat, lon, label } (Nominatim). */
+async function geocode(q) {
+  const res = await fetch('https://nominatim.openstreetmap.org/search?format=json&countrycodes=fr&limit=1&accept-language=fr&q=' + encodeURIComponent(q));
+  const j = await res.json();
+  if (!j.length) return null;
+  return { lat: +j[0].lat, lon: +j[0].lon, label: j[0].display_name.split(',')[0] };
+}
+
+const distKm = (a, b) => {
+  const r = Math.PI / 180, x = (b.lon - a.lon) * r * Math.cos((a.lat + b.lat) / 2 * r), y = (b.lat - a.lat) * r;
+  return Math.sqrt(x * x + y * y) * 6371;
+};
+
+/**
+ * Supermarchés autour d'un point, du plus proche au plus loin. Un drive est « trouvé » quand un point de retrait
+ * de la même enseigne est référencé à moins de 3 km, « probable » quand l'enseigne propose le drive.
+ */
+async function findStores(at, radius = 8000) {
+  const q = `[out:json][timeout:20];(nwr["shop"="supermarket"](around:${radius},${at.lat},${at.lon});nwr["name"~"drive",i]["shop"](around:${radius},${at.lat},${at.lon}););out center tags;`;
+  // serveurs interrogés en parallèle : le premier qui répond l'emporte (ils sont souvent saturés)
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 30000);
+  let data;
+  try {
+    data = await Promise.any(OVERPASS.map(async ep => {
+      const res = await fetch(ep, { method: 'POST', body: 'data=' + encodeURIComponent(q), signal: ctrl.signal });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    }));
+  } finally { clearTimeout(timer); ctrl.abort(); }
+  const pts = data.elements.map(e => ({ tags: e.tags || {}, lat: e.lat ?? e.center?.lat, lon: e.lon ?? e.center?.lon })).filter(p => p.lat);
+  const isDrive = (p) => /drive/i.test((p.tags.name || '') + ' ' + (p.tags.brand || ''));
+  const drives = pts.filter(isDrive);
+  const seen = new Set();
+  return pts.filter(p => !isDrive(p) && (p.tags.name || p.tags.brand)).map(p => {
+    const t = p.tags, name = t.name || t.brand, chain = chainOf(t.brand || name);
+    const near = chain.drive && drives.some(d => chainOf(d.tags.brand || d.tags.name).id === chain.id && distKm(p, d) < 3);
+    const street = t['addr:street'] ? [t['addr:housenumber'], t['addr:street']].filter(Boolean).join(' ') : '';
+    const address = [street, [t['addr:postcode'], t['addr:city']].filter(Boolean).join(' ')].filter(Boolean).join(', ');
+    return { name, address, chain: chain.id, lat: p.lat, lon: p.lon, km: distKm(at, p), drive: chain.drive ? (near ? 'found' : 'likely') : null };
+  }).filter(st => { const k = st.name + Math.round(st.lat * 500) + Math.round(st.lon * 500); if (seen.has(k)) return false; seen.add(k); return true; })
+    .sort((a, b) => a.km - b.km).slice(0, 30);
+}
 
 // Ingrédient inconnu du dictionnaire (nouveau plat dans l'API) : on devine le rayon.
 function ingInfo(en) {
@@ -233,7 +300,11 @@ function getRayonOrder() {
   if (!saved) return ids;
   return [...saved.filter(id => ids.includes(id)), ...ids.filter(id => !saved.includes(id))];
 }
-const getStore = () => ({ ...DEFAULT_STORE, ...store.get('qm_store', {}) });
+const getStore = () => {
+  const saved = store.get('qm_store', {}) || {};
+  // magasin enregistré avant le choix d'enseigne : on la déduit de son nom
+  return { ...DEFAULT_STORE, ...(saved.name && !saved.chain ? { chain: chainOf(saved.name).id, drive: chainOf(saved.name).drive ? 'likely' : null } : {}), ...saved };
+};
 
 function shoppingText(sh, checked, storeInfo) {
   const lines = [`${t('list_title')} — ${storeInfo.name}`, ''];

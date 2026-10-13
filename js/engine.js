@@ -187,11 +187,17 @@ function reasonText(r) {
   return t(r[0], r[1]);
 }
 
+// Préférences « pas pour moi » appliquées comme exclusions. S'il ne reste pas assez de plats, les plats exclus
+// reviennent avec un fort malus par préférence enfreinte : ils ne servent qu'à compléter.
+const SOFT_ORDER = ['dishes', 'flavours', 'proteins', 'cuisines', 'budget'];
+const DISLIKE = 100;
+const flavourHits = (f) => ({ herbs: f.herbs >= 2, cheese: f.cheese >= 2, sweet: f.sweet >= 2, spiced: f.spiced >= 3, hot: f.hot >= 1 });
+
 /**
  * Renvoie { score, reasons } ou null si le plat est exclu par les préférences.
- * strict : une cuisine marquée 👎 est exclue (sinon simple malus, quand il resterait trop peu de recettes).
+ * hard : groupes de 👎 traités comme exclusions (voir SOFT_ORDER) ; les autres ne donnent qu'un malus.
  */
-function scoreMeal(m, P, feedback = {}, strict = true) {
+function scoreMeal(m, P, feedback = {}, hard = new Set(SOFT_ORDER)) {
   const f = m.f;
   if (!f.isDinner) return null;
   if (feedback[m.id] === -1) return null;
@@ -199,7 +205,14 @@ function scoreMeal(m, P, feedback = {}, strict = true) {
   if (P.diet === 'veggie' && !f.isVeggie) return null;
   if (P.diet === 'pesco' && !f.isPesco) return null;
   for (const p of f.proteins) if (P.proteins[p] === -1 && ['beef', 'pork', 'poultry', 'lamb', 'fish', 'seafood'].includes(p)) return null;
-  if (strict && P.cuisines[f.cuisine] === -1) return null;
+  if (hard.has('cuisines') && P.cuisines[f.cuisine] === -1) return null;
+  if (hard.has('proteins') && ['plant', 'egg'].some(p => f.proteins.has(p) && P.proteins[p] === -1)) return null;
+  const flv = flavourHits(f);
+  if (hard.has('flavours') && Object.keys(flv).some(k => flv[k] && P.flavours[k] === -1)) return null;
+  if (hard.has('dishes') && f.types.some(t => P.dishes[t] === -1)) return null;
+  const price = mealPrice(m), bmax = budgetMax(P);
+  // budget : un plat nettement trop cher est écarté, un peu au-dessus est pénalisé
+  if (hard.has('budget') && bmax && price > bmax * 1.5) return null;
 
   let s = 50;
   const why = [];
@@ -230,35 +243,35 @@ function scoreMeal(m, P, feedback = {}, strict = true) {
     const rich = ['beef', 'pork', 'poultry', 'lamb', 'fish', 'seafood', 'plant'].some(p => f.proteins.has(p));
     add(rich ? 10 : -6, rich ? ['r_protein'] : null);
   }
-  if (P.nutrition.includes('veg')) add(Math.min(f.veg, 5) * 3 - 3, f.veg >= 4 ? ['r_veg', { n: f.veg }] : null);
+  if (P.nutrition.includes('veg')) add(Math.min(f.veg, 6) * 6 - 10, f.veg >= 4 ? ['r_veg', { n: f.veg }] : null);
 
   // Cuisines
   const c = P.cuisines[f.cuisine];
-  if (c === 1) add(12, ['r_cuisine', { id: f.cuisine }]);
-  if (c === -1) add(-60);
+  if (c === 1) add(15, ['r_cuisine', { id: f.cuisine }]);
+  if (c === -1) add(-DISLIKE);
 
   // Protéines aimées
   const likedProt = [...f.proteins].filter(p => P.proteins[p] === 1);
-  if (likedProt.length) add(10, ['lbl', { g: 'proteins', id: likedProt.includes(f.main) ? f.main : likedProt[0] }]);
-  if (f.proteins.has('plant') && P.proteins.plant === -1) add(-12);
-  if (f.proteins.has('egg') && P.proteins.egg === -1) add(-8);
+  if (likedProt.length) add(16, ['lbl', { g: 'proteins', id: likedProt.includes(f.main) ? f.main : likedProt[0] }]);
+  if (f.proteins.has('plant') && P.proteins.plant === -1) add(-DISLIKE);
+  if (f.proteins.has('egg') && P.proteins.egg === -1) add(-DISLIKE);
 
   // Saveurs
-  const flv = { herbs: f.herbs >= 2, cheese: f.cheese >= 2, sweet: f.sweet >= 2, spiced: f.spiced >= 3, hot: f.hot >= 1 };
   for (const [k, on] of Object.entries(flv)) {
     if (!on) continue;
-    if (P.flavours[k] === 1) add(6, ['lbl', { g: 'flavours', id: k }]);
-    if (P.flavours[k] === -1) add(k === 'hot' ? -25 : -14);
+    if (P.flavours[k] === 1) add(12, ['lbl', { g: 'flavours', id: k }]);
+    if (P.flavours[k] === -1) add(-DISLIKE);
   }
 
   // Types de plat
   for (const t of f.types) {
-    if (P.dishes[t] === 1) add(10, ['lbl', { g: 'dishes', id: t }]);
-    if (P.dishes[t] === -1) add(-20);
+    if (P.dishes[t] === 1) add(12, ['lbl', { g: 'dishes', id: t }]);
+    if (P.dishes[t] === -1) add(-DISLIKE);
   }
 
   // Objectifs
-  if (P.objectives.includes('eco')) add(-f.cost * 1.6 + 8, f.cost < 4 ? ['r_budget'] : null);
+  if (P.objectives.includes('eco')) add(Math.round((3 - price) * 6), price <= 2.5 ? ['r_budget'] : null);
+  if (bmax) add(price > bmax ? -Math.min(80, Math.round((price - bmax) * 35)) : 4, price <= bmax * 0.7 ? ['r_budget'] : null);
   if (P.objectives.includes('time')) add(f.time <= 30 ? 8 : f.time > 60 ? -8 : 0, f.time <= 30 ? ['r_time'] : null);
   if (P.objectives.includes('nutri')) add(Math.min(f.veg, 4) * 2 - f.heavy * 2, null);
   if (P.objectives.includes('plan')) add(m.ingr.length <= 10 ? 4 : 0, m.ingr.length <= 10 ? ['r_few', { n: m.ingr.length }] : null);
@@ -270,20 +283,27 @@ function scoreMeal(m, P, feedback = {}, strict = true) {
   return { score: s, reasons: why.slice(0, 3).map(w => w[1]) };
 }
 
-// En dessous de ce nombre de plats principaux, les cuisines 👎 redeviennent possibles (avec un malus) pour garder du choix.
+// En dessous de ce nombre de plats principaux, les plats exclus par un 👎 redeviennent possibles (avec un fort malus).
 const MIN_MAINS = 30;
 
 function rankAll(meals, P, feedback) {
-  const rank = (strict) => {
+  const rank = (hard) => {
     const out = [];
     for (const m of meals) {
-      const r = scoreMeal(m, P, feedback, strict);
+      const r = scoreMeal(m, P, feedback, hard);
       if (r) out.push({ m, ...r });
     }
     return out.sort((a, b) => b.score - a.score);
   };
-  const strict = rank(true);
-  return strict.filter(r => !r.m.f.isSide).length >= MIN_MAINS ? strict : rank(false);
+  const mains = (list) => list.filter(r => !r.m.f.isSide).length;
+  const strict = rank(new Set(SOFT_ORDER));
+  if (mains(strict) >= MIN_MAINS) return strict;
+  // le budget cède en premier (simple malus), les « pas pour moi » ensuite
+  const noBudget = rank(new Set(SOFT_ORDER.filter(g => g !== 'budget')));
+  if (mains(noBudget) >= MIN_MAINS) return noBudget;
+  const relaxed = rank(new Set());
+  relaxed.strictCount = mains(noBudget); // signalé à l'utilisateur : ses 👎 ne peuvent pas tous être respectés
+  return relaxed;
 }
 
 // ---------- Familles d'ingrédients interchangeables ----------
@@ -329,7 +349,8 @@ const shoppingWeight = (P) => (P.optimizeShopping === false ? 0 : P.objectives.i
 
 function pairPenalty(a, b, P) {
   let p = 0;
-  if (a.f.cuisine === b.f.cuisine) p += P.objectives.includes('discover') ? 14 : 7;
+  // deux plats d'une cuisine aimée peuvent se suivre : la variété ne doit pas pousser vers les cuisines refusées
+  if (a.f.cuisine === b.f.cuisine) p += P.cuisines[a.f.cuisine] === 1 ? 2 : P.objectives.includes('discover') ? 30 : 7;
   if (a.f.main === b.f.main) p += 6;
   if (a.f.types[0] === b.f.types[0]) p += 5;
   if (P.diet === 'flexi' && a.f.isMeat && b.f.isMeat) p += 15;

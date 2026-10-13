@@ -717,3 +717,51 @@ body.no-scroll .toast { bottom: calc(86px + var(--safe-b)); }
 .unavail-note button { border: 0; background: none; font-weight: 700; text-decoration: underline; padding: 0; font-size: 13px; }
 .quick-note { display: flex; gap: 6px; align-items: flex-start; margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .quick-note .ico { width: 15px; height: 15px; margin-top: 2px; }
+
+/* ---------- Choix du magasin ---------- */
+.store-finder { display: grid; gap: 12px; }
+.store-results { display: grid; gap: 8px; }
+.store-result { display: flex; align-items: center; gap: 12px; text-align: left; width: 100%; border: 0; background: var(--white); border-radius: 16px; padding: 10px 12px; box-shadow: var(--shadow-sm); }
+.store-result .store-logo { width: 40px; height: 40px; }
+.store-result > svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--muted); }
+.sr-txt { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.sr-txt small { color: var(--muted); font-size: 12.5px; }
+.drive-state { display: flex; align-items: center; gap: 4px; font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.drive-state .ico { width: 14px; height: 14px; }
+.drive-state.ok { color: #3f7a12; font-weight: 600; }
+.drive-state.maybe { color: #a8741a; }
+.store-finder input { text-transform: none; letter-spacing: normal; }
+
+/* ---------- Budget ---------- */
+.budget-card .opt-txt { display: grid; gap: 3px; }
+.budget-card.over { box-shadow: 0 0 0 2px #e8a33d, var(--shadow-sm); }
+.budget-card.over .opt-ico { background: #fdf0d8; color: #a8741a; }
+.budget-card > svg:last-child { width: 18px; height: 18px; color: var(--muted); flex-shrink: 0; }
+.budget-bar { display: block; height: 6px; border-radius: 999px; background: var(--card); overflow: hidden; margin-top: 4px; }
+.budget-bar i { display: block; height: 100%; background: var(--lime-dark); border-radius: inherit; }
+.budget-card.over .budget-bar i { background: #e8a33d; }
+.budget-over { color: #a8741a !important; font-weight: 600; }
+.budget-list { display: grid; gap: 8px; }
+.budget-opts { margin-bottom: 4px; }
+
+/* ---------- Mode cuisine ---------- */
+.cook { padding: 8px var(--gutter) 24px; display: grid; gap: 16px; }
+.cook-progress { height: 6px; background: var(--card); border-radius: 999px; overflow: hidden; }
+.cook-progress i { display: block; height: 100%; background: var(--lime-dark); border-radius: inherit; transition: width .25s; }
+.cook-name { margin: 0; color: var(--muted); font-size: 13.5px; font-weight: 600; }
+.cook-text { margin: 0; font-size: 22px; line-height: 1.45; color: var(--ink); }
+.cook-ingr { list-style: none; margin: 0; padding: 6px 14px; background: var(--white); border-radius: 16px; box-shadow: var(--shadow-sm); }
+.cook-ingr li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px solid #f0ebe3; font-size: 14.5px; }
+.cook-ingr li:last-child { border-bottom: 0; }
+.cook-ingr .m { color: var(--muted); text-align: right; }
+.cook-timer-btn { justify-self: start; }
+.cook-timers { display: grid; gap: 8px; }
+.timer { display: flex; align-items: center; gap: 10px; background: var(--ink); color: var(--white); border-radius: 14px; padding: 10px 12px; }
+.timer .ico { width: 18px; height: 18px; color: var(--lime); }
+.timer span { flex: 1; font-size: 13.5px; }
+.timer b { font-family: var(--head); font-size: 24px; font-variant-numeric: tabular-nums; }
+.timer button { width: 32px; height: 32px; border-radius: 50%; border: 0; background: rgba(255,255,255,.15); color: var(--white); font-size: 18px; display: grid; place-items: center; }
+.timer button svg { width: 16px; height: 16px; }
+.timer.done { background: var(--lime); color: var(--ink); animation: ring 1s ease-in-out infinite alternate; }
+.timer.done .ico { color: var(--ink); }
+@keyframes ring { to { transform: scale(1.02); } }

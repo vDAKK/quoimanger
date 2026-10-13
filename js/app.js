@@ -25,7 +25,7 @@ const ICON = {
 
 const DEFAULT_PREFS = {
   objectives: [], craving: null, diet: null, avoid: [], nutrition: [],
-  cuisines: {}, flavours: {}, proteins: {}, dishes: {}, nights: 4, portions: 2, lunch: false, lunchPortions: 2,
+  cuisines: {}, flavours: {}, proteins: {}, dishes: {}, nights: 4, portions: 2, lunch: false, lunchPortions: 2, budget: 'none',
 };
 // Données du menu en plus des dîners : déjeuners (par jour), réglages par repas { id: { p: portions, off: 1 } },
 // alternatives choisies { 'idPlat|ingrédient': produit }, produits indisponibles au magasin (noms français).
@@ -361,6 +361,8 @@ const STEPS = [
         <button class="${!d.lunch ? 'on' : ''}" data-action="pick" data-key="lunch" data-val="" data-bool="1">${t('no')}</button>
         <button class="${d.lunch ? 'on' : ''}" data-action="pick" data-key="lunch" data-val="1" data-bool="1">${t('yes_lunch')}</button>
       </div>
+      <div class="seg-label">${t('budget_q')}</div>
+      <div class="grid two budget-opts">${BUDGETS.map(b => `<button class="opt slim ${(d.budget || 'none') === b.id ? 'on' : ''}" data-action="pick" data-key="budget" data-val="${b.id}">${budgetLabel(b)}</button>`).join('')}</div>
       ${d.lunch ? `<div class="seg-label">${t('portions_per_lunch')}</div>
       <div class="seg">${[1, 2, 3, 4, 5, 6].map(v => `<button class="${(d.lunchPortions || d.portions) === v ? 'on' : ''}" data-action="pick" data-key="lunchPortions" data-val="${v}" data-num="1">${v}</button>`).join('')}</div>` : ''}`,
   },
@@ -468,6 +470,7 @@ function tagsFor(m, max = 4, basics = true) {
     out.push(`<span class="tag">${ICON.clock}${fmtMinutes(f.time)}</span>`);
     out.push(`<span class="tag">${esc(cuisineLabel(f.cuisine))}</span>`);
   }
+  out.push(`<span class="tag ${budgetMax(S.prefs || {}) && mealPrice(m) > budgetMax(S.prefs) ? 'red' : ''}">${icon('piggy-bank')}${t('per_part', { p: fmtEuro(mealPrice(m)) })}</span>`);
   if (f.isVeggie) out.push(`<span class="tag green">${icon('leaf')}${t('tag_veg')}</span>`);
   else if (f.main !== 'veg') out.push(`<span class="tag">${esc(proteinLabel(f.main))}</span>`);
   if (f.hot >= 2) out.push(`<span class="tag red">${icon('flame')}${t('tag_hot')}</span>`);
@@ -506,7 +509,9 @@ function renderMenu() {
         <span>${t('stat_dinners', { n: nDin })}</span>
         <span>${t('stat_time', { t: fmtMinutes(totalTime) })}</span>
         ${active.length ? `<span>${icon('shopping-cart')}${t('stat_ingr', { n: ps.distinct })}</span>` : ''}
+        ${active.length ? `<span>${icon('piggy-bank')}≈ <b>${fmtEuro(weekCost(active))}</b></span>` : ''}
       </div>
+      ${S.ranked.strictCount != null ? `<p class="quick-note">${icon('ban')}${t('too_strict', { n: S.ranked.strictCount })}</p>` : ''}
       ${P.craving === 'quick' && active.some(x => x.m.f.time > 25) ? `<p class="quick-note">${icon('timer')}${t('quick_relaxed', { n: Math.max(...active.map(x => x.m.f.time)) })}</p>` : ''}
     </section>
 
@@ -542,6 +547,8 @@ function renderMenu() {
       <span class="switch"><i></i></span>
     </button>` : ''}
 
+    ${active.length ? budgetCard(active) : ''}
+
     ${all.length ? `
     <button class="cta-card" data-action="goto" data-view="shop">
       <span class="cta-ico">${ICON.cart}</span>
@@ -561,6 +568,38 @@ function renderMenu() {
       <button class="btn" data-action="goto" data-view="explore">${t('browse_recipes')}</button>
     </div>
     <p class="source-note">${t('menu_hint')}</p>`;
+}
+
+// Coût estimé d'un ensemble de repas (portions comprises).
+const weekCost = (slots) => slots.reduce((sum, x) => sum + mealPrice(x.m) * x.portions, 0);
+const budgetLabel = (b) => b.max ? `${t('budget_' + b.id)} · ≤ ${fmtEuro(b.max)}` : t('budget_none');
+
+function budgetCard(active) {
+  const cost = weekCost(active), parts = active.reduce((n, x) => n + x.portions, 0);
+  const max = budgetMax(S.prefs), avg = cost / Math.max(1, parts);
+  const over = max ? active.filter(x => mealPrice(x.m) > max).length : 0;
+  const pct = max ? Math.min(100, avg / max * 100) : 0;
+  return `<button class="opt-card budget-card ${max ? (avg > max ? 'over' : 'on') : ''}" data-action="budget">
+      <span class="opt-ico">${icon('piggy-bank')}</span>
+      <span class="opt-txt"><b>${t('budget_title')} ≈ ${fmtEuro(cost)}</b>
+        <small>${t('budget_avg', { p: fmtEuro(avg) })}${max ? ' · ' + t('budget_target', { m: fmtEuro(max), w: fmtEuro(max * parts) }) : ' · ' + t('budget_none')}</small>
+        ${max ? `<span class="budget-bar"><i style="width:${pct}%"></i></span>` : ''}
+        ${over ? `<small class="budget-over">${t('budget_over', { n: over })}</small>` : ''}</span>
+      ${ICON.chev}
+    </button>`;
+}
+
+function openBudgetSheet() {
+  modalId = null;
+  const cur = S.prefs.budget || 'none';
+  $('#modal-body').innerHTML = `
+    <div class="sheet-top"><button class="back" data-action="close-modal">${ICON.back} ${t('back')}</button><b>${t('budget_title')}</b><span></span></div>
+    <div class="recipe-body settings">
+      <p class="sub">${t('budget_q')}</p>
+      <div class="budget-list">${BUDGETS.map(b => `<button class="lang-opt ${cur === b.id ? 'on' : ''}" data-action="set-budget" data-id="${b.id}"><span>${budgetLabel(b)}</span>${cur === b.id ? ICON.check : ''}</button>`).join('')}</div>
+      <p class="sub">${t('price_note')}</p>
+    </div>`;
+  showSheet();
 }
 
 function slotRow(x, showDate, shared = new Set()) {
@@ -684,7 +723,7 @@ function shopRow(it, qty = it.qty, withUses = true) {
       ${withUses ? recipeChips(it) : ''}
     </div>
     <button class="find unav" data-action="unavail" data-key="${esc(it.key)}" title="${t('unavailable')}" aria-label="${t('unavailable')} : ${esc(it.label)}">${icon('ban')}</button>
-    <a class="find" href="${intermarcheSearch(it.fr)}" target="_blank" rel="noopener" title="${t('search_store')}" aria-label="${t('search_store')} : ${esc(it.label)}">${ICON.search}</a>
+    ${productSearch(it.fr) ? `<a class="find" href="${productSearch(it.fr)}" target="_blank" rel="noopener" title="${t('search_on', { s: storeChain(getStore()).site })}" aria-label="${t('search_on', { s: storeChain(getStore()).site })} : ${esc(it.label)}">${ICON.search}</a>` : ''}
   </div>`;
 }
 
@@ -744,7 +783,7 @@ function renderShop() {
       <div class="shop-progress"><div style="width:${all.length ? doneCount / all.length * 100 : 0}%"></div></div>
       <div class="shop-bar-row">
         <span>${t('in_cart', { d: doneCount, t: all.length })}</span>
-        <span>${t('n_meals', { n: plan.length })}</span>
+        <span>${t('n_meals', { n: plan.length })} · ≈ ${fmtEuro(weekCost(plan))}</span>
       </div>
     </div>
 
@@ -768,16 +807,59 @@ function renderShop() {
       <button class="btn ${wakeLock ? 'lime' : ''}" data-action="wake">${icon('lightbulb')} ${wakeLock ? t('awake_on') : t('keep_awake')}</button>
       <button class="btn" data-action="uncheck">${icon('rotate-ccw')} ${t('uncheck_all')}</button>
     </div>
-    <div class="store-card">
-      <div class="store-info"><span class="store-logo">${icon('store')}</span><div><b>${esc(st.name)}</b><span>${esc(st.address)}</span></div></div>
+    ${storeCard(st)}`
+      : `<div class="empty"><div class="empty-ico">${icon('shopping-cart')}</div><h2>${t('nothing_to_buy')}</h2><p class="sub">${t('nothing_to_buy_sub')}</p></div>`}
+    <p class="source-note">${t('shop_note', { p: people.join(' / ') || S.prefs.portions })}${storeChain(st).site ? ' ' + t('shop_note_search', { s: storeChain(st).site }) : ''}</p>`;
+}
+
+// Carte du magasin : itinéraire, drive configuré selon l'enseigne, changement de magasin.
+function storeCard(st) {
+  const c = storeChain(st);
+  const drive = c.drive ? (st.drive === 'found' ? t('drive_found') : t('drive_likely')) : t('drive_none');
+  return `<div class="store-card">
+      <div class="store-info"><span class="store-logo">${icon('store')}</span><div><b>${esc(st.name)}</b><span>${esc(st.address)}</span>
+        <small class="drive-state ${c.drive ? (st.drive === 'found' ? 'ok' : 'maybe') : ''}">${icon('car')} ${drive}</small></div></div>
       <div class="store-links">
         <a class="btn small" href="${mapsLink(st)}" target="_blank" rel="noopener">${icon('map-pin')} ${t('itinerary')}</a>
-        <a class="btn small" href="https://www.intermarche.com/" target="_blank" rel="noopener">${icon('car')} ${t('drive')}</a>
+        ${c.drive ? `<a class="btn small" href="${c.drive}" target="_blank" rel="noopener">${icon('car')} ${t('drive_btn', { c: c.name })}</a>` : ''}
+        <button class="btn small" data-action="store-finder">${icon('search')} ${t('change_store')}</button>
         <button class="btn small" data-action="shop-settings">${icon('settings')} ${t('store_settings')}</button>
       </div>
-    </div>`
-      : `<div class="empty"><div class="empty-ico">${icon('shopping-cart')}</div><h2>${t('nothing_to_buy')}</h2><p class="sub">${t('nothing_to_buy_sub')}</p></div>`}
-    <p class="source-note">${t('shop_note', { p: people.join(' / ') || S.prefs.portions })}</p>`;
+    </div>`;
+}
+
+// Choix du magasin : recherche par ville / code postal ou autour de moi, via OpenStreetMap.
+let storeResults = [], storeQuery = '', storeStatus = '';
+function openStoreFinder() {
+  modalId = null;
+  $('#modal-body').innerHTML = `
+    <div class="sheet-top"><button class="back" data-action="close-modal">${ICON.back} ${t('back')}</button><b>${t('store_find_title')}</b><span></span></div>
+    <div class="recipe-body settings store-finder">
+      <div class="join-row"><input id="store-q" placeholder="${t('store_find_ph')}" value="${esc(storeQuery)}" autocomplete="postal-code"><button class="btn" data-action="store-find">${icon('search')}</button></div>
+      <button class="btn" data-action="store-geo">${icon('map-pin')} ${t('near_me')}</button>
+      ${storeStatus ? `<p class="sub">${storeStatus}</p>` : ''}
+      <div class="store-results">${storeResults.map((r, i) => {
+        const c = CHAINS.find(x => x.id === r.chain);
+        return `<button class="store-result" data-action="store-pick" data-idx="${i}">
+          <span class="store-logo">${icon('store')}</span>
+          <span class="sr-txt"><b>${esc(r.name)}</b><small>${esc(r.address || '')}${r.address ? ' · ' : ''}${r.km < 1 ? Math.round(r.km * 1000) + ' m' : r.km.toFixed(1).replace('.', decimalSep()) + ' km'}</small>
+            <small class="drive-state ${r.drive === 'found' ? 'ok' : r.drive ? 'maybe' : ''}">${icon('car')} ${r.drive === 'found' ? t('drive_found') : r.drive ? t('drive_likely_short') : c && c.id !== 'other' ? t('drive_none') : t('drive_unknown')}</small></span>
+          ${ICON.chev}</button>`;
+      }).join('')}</div>
+      <p class="source-note">${t('osm_credit')}</p>
+    </div>`;
+  showSheet();
+  const input = $('#store-q');
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') handleAction($('[data-action=store-find]')); });
+}
+
+async function searchStores(at) {
+  storeStatus = t('searching_stores'); storeResults = []; openStoreFinder();
+  try {
+    storeResults = await findStores(at);
+    storeStatus = storeResults.length ? '' : t('no_store');
+  } catch { storeStatus = t('store_err'); }
+  openStoreFinder();
 }
 
 let wakeLock = null;
@@ -836,6 +918,7 @@ function renderPrefs() {
     ['drumstick', t('row_proteins'), vote(P.proteins, PROTEINS, 'proteins')],
     ['chef-hat', t('row_dishes'), vote(P.dishes, DISH_TYPES, 'dishes')],
     ['calendar', t('row_week'), t('week_value', { n: P.nights, p: P.portions }) + (P.lunch ? '<br>' + t('week_lunch_value', { p: P.lunchPortions || P.portions }) : '')],
+    ['piggy-bank', t('budget_title'), budgetLabel(BUDGETS.find(b => b.id === (P.budget || 'none')))],
     ['star', t('row_rated'), t('rated_value', { l: Object.values(S.feedback).filter(v => v === 1).length, d: Object.values(S.feedback).filter(v => v === -1).length })],
   ];
   const info = S.dbInfo;
@@ -898,7 +981,9 @@ function openRecipe(id) {
 // Découpe les instructions en étapes numérotées.
 function splitSteps(text) {
   const lines = text.replace(/\r/g, '').split(/\n+/).map(l => l.trim()).filter(Boolean)
-    .filter(l => !/^(step\s*|étape\s*|步骤\s*)?\d+[.):]?$/i.test(l));
+    .filter(l => !/^(step\s*|étape\s*|步骤\s*)?\d+[.):]?$/i.test(l))
+    // lignes de valeurs nutritionnelles (« 445 calories, 24g fat… ») : pas une étape
+    .filter(l => !/\d+\s*(calories|kcal|卡路里|千卡)?.*\d+\s*(g|克)?/i.test(l) || l.length > 220);
   let steps = lines.map(l => l.replace(/^(step\s*\d+[.:)]?\s*|étape\s*\d+[.:)]?\s*|步骤\s*\d+[.:)：]?\s*|\d+[.)]\s+)/i, '').trim()).filter(Boolean);
   if (steps.length === 1 && steps[0].length > 400) steps = steps[0].match(/[^.!?。！？]+[.!?。！？]+(\s|$)/g)?.reduce((acc, sentence) => {
     if (!acc.length || acc[acc.length - 1].length > 220) acc.push(sentence.trim()); else acc[acc.length - 1] += ' ' + sentence.trim();
@@ -988,11 +1073,96 @@ function renderRecipe() {
     </div>
     <div class="sheet-bar">
       ${slot
-        ? `<button class="btn" data-action="swap-open" data-id="${m.id}" aria-label="${t('change_dish')}">${ICON.swap}<span class="lbl">${t('change')}</span></button><button class="btn primary grow" data-action="close-modal">${ICON.check} ${t('in_my_week')}</button>`
-        : `<button class="btn primary grow" data-action="add" data-id="${m.id}">${ICON.plus} ${t('add_to_week')}</button>`}
+        ? `<button class="btn" data-action="swap-open" data-id="${m.id}" aria-label="${t('change_dish')}">${ICON.swap}<span class="lbl">${t('change')}</span></button><button class="btn primary grow" data-action="cook" data-id="${m.id}">${icon('chef-hat')} ${t('cook')}</button>`
+        : `<button class="btn" data-action="cook" data-id="${m.id}" aria-label="${t('cook')}">${icon('chef-hat')}<span class="lbl">${t('cook')}</span></button><button class="btn primary grow" data-action="add" data-id="${m.id}">${ICON.plus} ${t('add_to_week')}</button>`}
       ${m.yt ? `<a class="btn icon-only" href="${esc(m.yt)}" target="_blank" rel="noopener" aria-label="${t('video')}">${ICON.play}</a>` : ''}
     </div>`;
 }
+
+// ---------- Mode cuisine : une étape à la fois, minuteurs, écran allumé ----------
+let cook = null; // { id, step, showIngr }
+const timers = []; // { label, end, done }
+const TIMER_RX = /(\d+(?:[.,]\d+)?)\s*(?:(?:-|–|to|à|~|至)\s*(\d+(?:[.,]\d+)?))?\s*(minutes?|mins?\b|min\b|heures?|hours?|hrs?\b|h\b|分钟|小时)/gi;
+
+/** Durées (en minutes) citées dans une étape : « 10 minutes », « 1-2 hours », « 20 分钟 »… */
+function stepTimers(text) {
+  const out = [];
+  text = text.replace(/(\d*)\s?½/g, (_, a) => String((+a || 0) + 0.5));
+  for (const x of text.matchAll(TIMER_RX)) {
+    const v = parseFloat((x[2] || x[1]).replace(',', '.'));
+    const mins = Math.round(/^(h|heure|hour|hr|小时)/i.test(x[3]) ? v * 60 : v);
+    if (mins > 0 && mins <= 600 && !out.includes(mins)) out.push(mins);
+  }
+  return out.slice(0, 3);
+}
+
+async function keepAwake() {
+  if (wakeLock || !('wakeLock' in navigator)) return;
+  try { wakeLock = await navigator.wakeLock.request('screen'); wakeLock.addEventListener('release', () => { wakeLock = null; }); } catch { /* non supporté */ }
+}
+
+function openCook(id) {
+  cook = { id, step: 0, showIngr: false };
+  modalId = null; sheetSlot = null;
+  keepAwake();
+  renderCook();
+  showSheet();
+}
+
+function endCook() {
+  if (!cook) return;
+  cook = null;
+  if (wakeLock) wakeLock.release().catch(() => {});
+}
+
+const fmtClock = (ms) => { const sec = Math.max(0, Math.ceil(ms / 1000)); return `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, '0')}`; };
+const timersHtml = () => timers.map((tm, i) => `<div class="timer ${tm.done ? 'done' : ''}">${icon('timer')}<span>${esc(tm.label)}</span><b>${tm.done ? t('timer_over') : fmtClock(tm.end - Date.now())}</b><button data-action="timer-stop" data-idx="${i}" aria-label="${t('timer_stop')}">${tm.done ? ICON.check : '×'}</button></div>`).join('');
+
+function renderCook() {
+  const m = S.byId.get(cook.id);
+  const steps = splitSteps(mealInstr(m));
+  const i = Math.min(cook.step, steps.length - 1);
+  const factor = modalPortions / BASE_SERVINGS;
+  $('#modal-body').innerHTML = `
+    <div class="sheet-top"><button class="back" data-action="cook-exit">${ICON.back} ${t('back')}</button><b>${t('cook_step', { i: i + 1, n: steps.length })}</b>
+      <button class="round-btn ${cook.showIngr ? 'on' : ''}" data-action="cook-ingr" title="${t('tab_ingr')}" aria-label="${t('tab_ingr')}">${icon('salad')}</button></div>
+    <div class="cook">
+      <div class="cook-progress"><i style="width:${(i + 1) / steps.length * 100}%"></i></div>
+      <p class="cook-name">${esc(mealName(m))} · ${t('ingr_for', { n: modalPortions })}</p>
+      ${cook.showIngr ? `<ul class="cook-ingr">${m.ingr.map(g => { const info = boughtInfo(m.id, g.n, S.week.subs); return `<li><span>${esc(info.subOf ? ingLabel(info.en, info.fr) : trIng(g.n))}</span><span class="m">${esc(measureFr(g.m, factor, info.subOf ? info.en : g.n))}</span></li>`; }).join('')}</ul>` : ''}
+      <p class="cook-text">${esc(steps[i] || '')}</p>
+      ${stepTimers(steps[i] || '').map(d => `<button class="btn lime cook-timer-btn" data-action="timer-start" data-min="${d}" data-step="${i + 1}">${icon('timer')} ${t('start_timer', { t: fmtMinutes(d) })}</button>`).join('')}
+      <div class="cook-timers" id="cook-timers">${timersHtml()}</div>
+    </div>
+    <div class="sheet-bar">
+      <button class="btn" data-action="cook-prev" ${i === 0 ? 'disabled' : ''} aria-label="${t('prev_step')}">${ICON.back}<span class="lbl">${t('prev_step')}</span></button>
+      ${i < steps.length - 1
+        ? `<button class="btn primary grow" data-action="cook-next">${t('next_step')} ${ICON.chev}</button>`
+        : `<button class="btn primary grow" data-action="cook-done">${ICON.check} ${t('cook_done')}</button>`}
+    </div>`;
+}
+
+// Fin d'un minuteur : vibration + trois bips, même si le mode cuisine est fermé.
+function ring(tm) {
+  tm.done = true;
+  toast(t('timer_ended', { l: tm.label }));
+  if (navigator.vibrate) navigator.vibrate([400, 200, 400, 200, 400]);
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    [0, 0.5, 1].forEach(at => {
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.frequency.value = 880; g.gain.value = 0.25;
+      o.connect(g); g.connect(ctx.destination);
+      o.start(ctx.currentTime + at); o.stop(ctx.currentTime + at + 0.3);
+    });
+  } catch { /* pas de son */ }
+}
+setInterval(() => {
+  if (!timers.length) return;
+  timers.forEach(tm => { if (!tm.done && tm.end <= Date.now()) ring(tm); });
+  const box = $('#cook-timers');
+  if (box) box.innerHTML = timersHtml();
+}, 1000);
 
 // Feuille modale avec gestion du bouton « retour » du téléphone.
 function showSheet() {
@@ -1002,6 +1172,7 @@ function showSheet() {
 }
 function hideSheet() {
   $('#modal').hidden = true; modalId = null; sheetSlot = null;
+  endCook();
   document.body.classList.remove('no-scroll');
 }
 function closeModal() {
@@ -1033,7 +1204,8 @@ function refreshCurrent() {
   if (S.view === 'explore') renderExploreResults();
   else ({ menu: renderMenu, shop: renderShop, prefs: renderPrefs })[S.view]();
   window.scrollTo(0, y);
-  if (modalId) renderRecipe();
+  if (cook) renderCook();
+  else if (modalId) renderRecipe();
   else if (sheetSlot) openSlotSheet(sheetSlot);
   updateCartBadge();
 }
@@ -1139,6 +1311,22 @@ async function handleAction(el) {
       if (S.prefs.lunch) { S.prefs.lunchPortions = S.prefs.lunchPortions || S.prefs.portions; fillWeek(); }
       save(); renderMenu(); updateCartBadge(); toast(S.prefs.lunch ? t('lunches_added') : t('lunches_removed')); break;
     case 'show-past': S.showPast = !S.showPast; renderShop(); updateCartBadge(); break;
+    case 'budget': openBudgetSheet(); break;
+    case 'set-budget':
+      S.prefs.budget = id; rerank(); newPlan(); closeModal(); renderMenu(); updateCartBadge(); toast(t('plan_recomputed')); break;
+    case 'cook': openCook(id); break;
+    case 'cook-exit': { const back = cook.id; endCook(); openRecipe(back); break; }
+    case 'cook-ingr': cook.showIngr = !cook.showIngr; renderCook(); break;
+    case 'cook-prev': cook.step = Math.max(0, cook.step - 1); renderCook(); $('.modal-card').scrollTop = 0; break;
+    case 'cook-next': cook.step++; renderCook(); $('.modal-card').scrollTop = 0; break;
+    case 'cook-done': endCook(); closeModal(); toast(t('cook_bravo')); break;
+    case 'timer-start': {
+      const mins = +el.dataset.min;
+      timers.push({ label: t('timer_label', { s: el.dataset.step, t: fmtMinutes(mins) }), end: Date.now() + mins * 60000, done: false });
+      $('#cook-timers').innerHTML = timersHtml();
+      break;
+    }
+    case 'timer-stop': timers.splice(+idx, 1); if ($('#cook-timers')) $('#cook-timers').innerHTML = timersHtml(); break;
     case 'unavail': {
       const it = buildShopping(shopSlots(), S.week.subs).byKey.get(el.dataset.key);
       if (it && confirm(t('unavail_confirm', { x: it.label }))) { markUnavailable(it); refreshCurrent(); }
@@ -1207,6 +1395,35 @@ async function handleAction(el) {
     }
     case 'wake': await toggleWakeLock(); renderShop(); break;
     case 'shop-settings': openShopSettings(); break;
+    case 'store-finder': storeStatus = ''; openStoreFinder(); break;
+    case 'store-find': {
+      storeQuery = $('#store-q').value.trim();
+      if (!storeQuery) break;
+      storeStatus = t('searching_stores'); openStoreFinder();
+      try {
+        const at = await geocode(storeQuery);
+        if (!at) { storeStatus = t('place_unknown'); openStoreFinder(); break; }
+        await searchStores(at);
+      } catch { storeStatus = t('store_err'); openStoreFinder(); }
+      break;
+    }
+    case 'store-geo':
+      if (!navigator.geolocation) { toast(t('geo_denied')); break; }
+      storeStatus = t('locating'); openStoreFinder();
+      navigator.geolocation.getCurrentPosition(
+        p => searchStores({ lat: p.coords.latitude, lon: p.coords.longitude }),
+        () => { storeStatus = t('geo_denied'); openStoreFinder(); },
+        { timeout: 15000, maximumAge: 600000 });
+      break;
+    case 'store-pick': {
+      const r = storeResults[+idx];
+      if (!r) break;
+      const { km, ...picked } = r;
+      store.set('qm_store', { ...picked, address: picked.address || storeQuery });
+      save(); closeModal(); renderShop();
+      toast(r.drive ? t('store_chosen_drive', { c: CHAINS.find(c => c.id === r.chain).name }) : t('store_chosen'));
+      break;
+    }
     case 'rayon-move': {
       const order = [...rayonDraft], i = +idx, j = i + +el.dataset.dir;
       [order[i], order[j]] = [order[j], order[i]];
@@ -1217,7 +1434,7 @@ async function handleAction(el) {
     }
     case 'shop-settings-save':
       store.set('qm_rayons', rayonDraft);
-      store.set('qm_store', { name: $('#st-name').value.trim() || DEFAULT_STORE.name, address: $('#st-address').value.trim() || DEFAULT_STORE.address });
+      store.set('qm_store', { ...getStore(), name: $('#st-name').value.trim() || DEFAULT_STORE.name, address: $('#st-address').value.trim() || DEFAULT_STORE.address });
       rayonDraft = null; save(); closeModal(); renderShop(); toast(t('store_saved')); break;
     case 'shop-settings-reset':
       store.del('qm_rayons'); store.del('qm_store'); rayonDraft = null; save(); closeModal(); renderShop(); toast(t('default_restored')); break;
