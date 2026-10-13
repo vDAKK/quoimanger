@@ -807,3 +807,11 @@ body.no-scroll .toast { bottom: calc(86px + var(--safe-b)); }
 .ingr-chips .chip img, .fridge-items .chip img { width: 26px; height: 26px; object-fit: contain; }
 .ingr-chips .chip.on, .fridge-items .chip.on { background: var(--lime); border-color: var(--ink); font-weight: 600; }
 .ingr-chips .chip.on { text-decoration: line-through; }
+.feature-badges { position: absolute; top: 14px; right: 14px; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 5px; max-width: 70%; }
+.feature-badges .bdg { height: 28px; min-width: 28px; }
+.feature-badges .bdg svg { width: 16px; height: 16px; }
+.feature-badges .bdg.kcal { font-size: 12px; padding: 0 9px; }
+.day-card { position: relative; }
+.day-badges { position: absolute; left: 11px; bottom: 11px; display: flex; gap: 2px; pointer-events: none; }
+.day-badges .bdg { height: 19px; min-width: 19px; }
+.day-badges .bdg svg { width: 12px; height: 12px; }

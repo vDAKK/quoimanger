@@ -527,10 +527,11 @@ function renderMenu() {
     <article class="feature ${feat.off ? 'off' : ''}" data-action="open" data-id="${feat.id}">
       ${img(med(feat.m.thumb), mealName(feat.m))}
       <div class="feature-shade"></div>
+      ${tileBadges(feat.m, 'feature-badges')}
       <div class="feature-body">
         <span class="pill lime">${icon(feat.kind === 'lunch' ? 'sun' : 'moon')}${slotLabel(feat)}</span>
         <h2>${esc(mealName(feat.m))}</h2>
-        ${tagsFor(feat.m, 3)}
+        ${tagsFor(feat.m, 4)}
         <div class="feature-actions">
           <span class="btn lime">${t('see_recipe')} ${ICON.chev}</span>
           <button class="btn glass" data-action="swap" data-id="${feat.id}" title="${t('change_dish')}" aria-label="${t('change_dish')}">${ICON.swap}<span class="lbl"> ${t('change')}</span></button>
@@ -619,6 +620,7 @@ function slotRow(x, showDate, shared = new Set()) {
     <div class="day-date ${d.diff === 0 ? 'today' : ''} ${showDate ? '' : 'ghost'}"><span>${d.short}</span><b>${d.num}</b></div>
     <button class="day-card" data-action="open" data-id="${m.id}">
       ${img(m.thumb ? m.thumb + '/small' : '', mealName(m))}
+      ${x.off ? '' : `<span class="day-badges">${badgeList(m).slice(0, 3).map(badgeIcon).join('')}</span>`}
       <span class="day-txt">${lunchOn() ? `<em class="kind ${x.kind}">${icon(x.kind === 'lunch' ? 'sun' : 'moon')}${slotKindLabel(x)}</em>` : ''}<b>${esc(mealName(m))}</b><small>${meta}</small></span>
     </button>
     <button class="por-btn" data-action="slot" data-id="${m.id}" title="${t('slot_settings')}" aria-label="${t('slot_settings')}">${x.off ? icon('ban') : `${ICON.user}<b>${x.portions}</b>`}</button>
@@ -682,8 +684,8 @@ function exploreResults() {
   return list;
 }
 
-// Petits pictos sur la photo : pimenté, épicé, sucré, fromage, végé, rapide + calories.
-function tileBadges(m) {
+// Pictos d'un plat : pimenté, épicé, sucré, fromage, végé, rapide.
+function badgeList(m) {
   const f = m.f, b = [];
   if (f.hot >= 2) b.push(['flame', 'b_hot', 'hot']);
   if (f.spiced >= 3) b.push(['sparkles', 'b_spiced', 'spiced']);
@@ -691,7 +693,13 @@ function tileBadges(m) {
   if (f.cheese >= 2) b.push(['cheese', 'b_cheese', 'cheese']);
   if (f.isVeggie) b.push(['leaf', 'b_veg', 'veg']);
   if (f.time <= 25) b.push(['timer', 'b_quick', 'quick']);
-  return `<span class="tile-badges">${b.slice(0, 4).map(([ico, k, cls]) => `<i class="bdg ${cls}" title="${t(k)}" aria-label="${t(k)}">${icon(ico)}</i>`).join('')}<i class="bdg kcal" title="${t('kcal_title')}">${t('kcal', { n: mealKcal(m) })}</i></span>`;
+  return b;
+}
+const badgeIcon = ([ico, k, cls]) => `<i class="bdg ${cls}" title="${t(k)}" aria-label="${t(k)}">${icon(ico)}</i>`;
+// Pictos posés sur une photo (vignettes, plat du jour), avec les calories.
+function tileBadges(m, cls = 'tile-badges') {
+  const b = badgeList(m);
+  return `<span class="${cls}">${b.slice(0, 4).map(badgeIcon).join('')}<i class="bdg kcal" title="${t('kcal_title')}">${t('kcal', { n: mealKcal(m) })}</i></span>`;
 }
 
 function recipeTile(r) {
