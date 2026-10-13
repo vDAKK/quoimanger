@@ -210,7 +210,7 @@ function scoreMeal(m, P, feedback = {}, strict = true) {
 
   // Envie
   if (P.craving === 'quick') {
-    if (f.time <= 25) add(16, ['r_ready', { n: f.time }]); else if (f.time <= 35) add(8, ['r_ready', { n: f.time }]); else if (f.time > 60) add(-15);
+    if (f.time <= 25) add(16, ['r_ready', { n: f.time }]); else if (f.time <= 35) add(4, ['r_ready', { n: f.time }]); else add(-Math.round((f.time - 35) / 5) * 6);
     if (f.overnight) add(-10);
   } else if (P.craving === 'chef') {
     add(f.chef * 4, f.chef >= 3 ? ['r_chef'] : null);
@@ -349,6 +349,9 @@ function sameDish(x, y) {
   return common / Math.min(a.size, b.length) >= 1 || common / Math.max(a.size, b.length) >= 0.75;
 }
 
+// Paliers de durée maximale (min) pour « recettes rapides » : on reste au plus court possible.
+const QUICK_CAPS = [25, 30, 35, 45, 60];
+
 // Bonus d'un plat selon le créneau : le midi favorise le rapide et le léger ; une entrée ne fait pas un dîner.
 const slotBonus = (m, kind) => (kind === 'lunch' ? m.f.lunch : m.f.isStarter ? -1e6 : 0);
 
@@ -365,9 +368,16 @@ function buildPlan(ranked, P, kinds, fixed = [], opts = {}) {
   const fixedList = kinds.map((_, i) => fixed[i] || null);
   const fixedIds = new Set(fixedList.filter(Boolean).map(r => r.m.id));
   const lunchy = kinds.includes('lunch');
+  const free = kinds.map((_, i) => i).filter(i => !fixedList[i]);
   // accompagnements exclus (entrées acceptées le midi) : on cherche des plats principaux
-  const pool = ranked.filter(r => (!r.m.f.isSide || (lunchy && r.m.f.isStarter)) && !exclude.has(r.m.id) && !fixedIds.has(r.m.id))
-    .slice(0, Math.max(120, n * 12));
+  let cands = ranked.filter(r => (!r.m.f.isSide || (lunchy && r.m.f.isStarter)) && !exclude.has(r.m.id) && !fixedIds.has(r.m.id));
+  // « recettes rapides » : durée maximale stricte, élargie par paliers seulement s'il manque des recettes
+  if (P.craving === 'quick') {
+    const need = Math.ceil(free.length * 1.5) + 2;
+    const cap = QUICK_CAPS.find(c => cands.filter(r => r.m.f.time <= c).length >= need);
+    if (cap) cands = cands.filter(r => r.m.f.time <= cap);
+  }
+  const pool = cands.slice(0, Math.max(120, n * 12));
   const items = [...fixedList.filter(Boolean), ...pool];
   const M = items.length;
   const keyId = new Map();
@@ -382,7 +392,6 @@ function buildPlan(ranked, P, kinds, fixed = [], opts = {}) {
   };
   const fixedIdx = []; let fi = 0;
   fixedList.forEach((r, i) => { if (r) fixedIdx[i] = fi++; });
-  const free = kinds.map((_, i) => i).filter(i => !fixedList[i]);
 
   function run(randomize) {
     const jit = items.map(() => Math.random() * jitterAmp);

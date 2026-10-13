@@ -507,6 +507,7 @@ function renderMenu() {
         <span>${t('stat_time', { t: fmtMinutes(totalTime) })}</span>
         ${active.length ? `<span>${icon('shopping-cart')}${t('stat_ingr', { n: ps.distinct })}</span>` : ''}
       </div>
+      ${P.craving === 'quick' && active.some(x => x.m.f.time > 25) ? `<p class="quick-note">${icon('timer')}${t('quick_relaxed', { n: Math.max(...active.map(x => x.m.f.time)) })}</p>` : ''}
     </section>
 
     ${feat ? `

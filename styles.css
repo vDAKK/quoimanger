@@ -715,3 +715,5 @@ body.no-scroll .toast { bottom: calc(86px + var(--safe-b)); }
 .unavail-note .ico { width: 16px; height: 16px; color: #c0392b; }
 .unavail-note span { flex: 1; }
 .unavail-note button { border: 0; background: none; font-weight: 700; text-decoration: underline; padding: 0; font-size: 13px; }
+.quick-note { display: flex; gap: 6px; align-items: flex-start; margin: 10px 0 0; font-size: 13px; color: var(--muted); }
+.quick-note .ico { width: 15px; height: 15px; margin-top: 2px; }
