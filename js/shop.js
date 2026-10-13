@@ -7,20 +7,20 @@ const DEFAULT_STORE = {
 
 // Parcours type d'un Intermarché : frais à l'entrée, épicerie au centre, boissons puis surgelés en fin de parcours.
 const RAYONS = [
-  { id: 'fl', label: 'Fruits & légumes', icon: '🥕' },
-  { id: 'bl', label: 'Boulangerie', icon: '🥖' },
-  { id: 'bo', label: 'Boucherie & volaille', icon: '🥩' },
-  { id: 'po', label: 'Poissonnerie', icon: '🐟' },
-  { id: 'ch', label: 'Charcuterie & traiteur', icon: '🥓' },
-  { id: 'cr', label: 'Crèmerie & œufs', icon: '🥛' },
-  { id: 'fr', label: 'Fromages', icon: '🧀' },
-  { id: 'ep', label: 'Épicerie salée & conserves', icon: '🥫' },
-  { id: 'mo', label: 'Produits du monde', icon: '🌏' },
-  { id: 'sa', label: 'Sauces, huiles & condiments', icon: '🫒' },
-  { id: 'es', label: 'Épices & bouillons', icon: '🧂' },
-  { id: 'su', label: 'Épicerie sucrée & pâtisserie', icon: '🍯' },
-  { id: 'bs', label: 'Boissons & vins', icon: '🍷' },
-  { id: 'sg', label: 'Surgelés', icon: '❄️' },
+  { id: 'fl', label: 'Fruits & légumes', icon: 'carrot' },
+  { id: 'bl', label: 'Boulangerie', icon: 'croissant' },
+  { id: 'bo', label: 'Boucherie & volaille', icon: 'beef' },
+  { id: 'po', label: 'Poissonnerie', icon: 'fish' },
+  { id: 'ch', label: 'Charcuterie & traiteur', icon: 'ham' },
+  { id: 'cr', label: 'Crèmerie & œufs', icon: 'milk' },
+  { id: 'fr', label: 'Fromages', icon: 'cheese' },
+  { id: 'ep', label: 'Épicerie salée & conserves', icon: 'package' },
+  { id: 'mo', label: 'Produits du monde', icon: 'earth' },
+  { id: 'sa', label: 'Sauces, huiles & condiments', icon: 'droplet' },
+  { id: 'es', label: 'Épices & bouillons', icon: 'sparkles' },
+  { id: 'su', label: 'Épicerie sucrée & pâtisserie', icon: 'cookie' },
+  { id: 'bs', label: 'Boissons & vins', icon: 'wine' },
+  { id: 'sg', label: 'Surgelés', icon: 'snowflake' },
 ];
 
 const rayonLabel = (r) => L('rayons', r);
@@ -236,11 +236,11 @@ function getRayonOrder() {
 const getStore = () => ({ ...DEFAULT_STORE, ...store.get('qm_store', {}) });
 
 function shoppingText(sh, checked, storeInfo) {
-  const lines = [`🛒 ${t('list_title')} — ${storeInfo.name}`, ''];
+  const lines = [`${t('list_title')} — ${storeInfo.name}`, ''];
   for (const g of sh.byRayon) {
     const todo = g.items.filter(it => !checked[it.key]);
     if (!todo.length) continue;
-    lines.push(`${g.rayon.icon} ${rayonLabel(g.rayon).toUpperCase()}`);
+    lines.push(rayonLabel(g.rayon).toUpperCase());
     todo.forEach(it => lines.push(`☐ ${it.label}${it.alts.length ? ' (' + t('or_alts', { a: it.alts.join(', ') }) + ')' : ''} — ${it.qty}`));
     lines.push('');
   }

@@ -187,8 +187,11 @@ function reasonText(r) {
   return t(r[0], r[1]);
 }
 
-/** Renvoie { score, reasons } ou null si le plat est exclu par les préférences. */
-function scoreMeal(m, P, feedback = {}) {
+/**
+ * Renvoie { score, reasons } ou null si le plat est exclu par les préférences.
+ * strict : une cuisine marquée 👎 est exclue (sinon simple malus, quand il resterait trop peu de recettes).
+ */
+function scoreMeal(m, P, feedback = {}, strict = true) {
   const f = m.f;
   if (!f.isDinner) return null;
   if (feedback[m.id] === -1) return null;
@@ -196,6 +199,7 @@ function scoreMeal(m, P, feedback = {}) {
   if (P.diet === 'veggie' && !f.isVeggie) return null;
   if (P.diet === 'pesco' && !f.isPesco) return null;
   for (const p of f.proteins) if (P.proteins[p] === -1 && ['beef', 'pork', 'poultry', 'lamb', 'fish', 'seafood'].includes(p)) return null;
+  if (strict && P.cuisines[f.cuisine] === -1) return null;
 
   let s = 50;
   const why = [];
@@ -231,7 +235,7 @@ function scoreMeal(m, P, feedback = {}) {
   // Cuisines
   const c = P.cuisines[f.cuisine];
   if (c === 1) add(12, ['r_cuisine', { id: f.cuisine }]);
-  if (c === -1) add(-25);
+  if (c === -1) add(-60);
 
   // Protéines aimées
   const likedProt = [...f.proteins].filter(p => P.proteins[p] === 1);
@@ -266,13 +270,20 @@ function scoreMeal(m, P, feedback = {}) {
   return { score: s, reasons: why.slice(0, 3).map(w => w[1]) };
 }
 
+// En dessous de ce nombre de plats principaux, les cuisines 👎 redeviennent possibles (avec un malus) pour garder du choix.
+const MIN_MAINS = 30;
+
 function rankAll(meals, P, feedback) {
-  const out = [];
-  for (const m of meals) {
-    const r = scoreMeal(m, P, feedback);
-    if (r) out.push({ m, ...r });
-  }
-  return out.sort((a, b) => b.score - a.score);
+  const rank = (strict) => {
+    const out = [];
+    for (const m of meals) {
+      const r = scoreMeal(m, P, feedback, strict);
+      if (r) out.push({ m, ...r });
+    }
+    return out.sort((a, b) => b.score - a.score);
+  };
+  const strict = rank(true);
+  return strict.filter(r => !r.m.f.isSide).length >= MIN_MAINS ? strict : rank(false);
 }
 
 // ---------- Familles d'ingrédients interchangeables ----------

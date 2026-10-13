@@ -279,7 +279,7 @@ const STEPS = [
     render: d => `<div class="grid two">${OBJECTIVES.map(o =>
       `<button class="opt ${d.objectives.includes(o.id) ? 'on' : ''}" data-action="toggle" data-key="objectives" data-val="${o.id}" data-max="3">${L('objectives', o)}</button>`).join('')}</div>
       ${!S.prefs && Sync.available ? `<section class="join-first">
-        <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>${t('have_household')}</b><small>${t('have_household_sub')}</small></div></div>
+        <div class="sync-head"><span class="sync-ico">${icon('users')}</span><div><b>${t('have_household')}</b><small>${t('have_household_sub')}</small></div></div>
         <div class="join-row"><input id="join-code" placeholder="XXXXX-XXXXX" autocomplete="off" autocapitalize="characters"><button class="btn" data-action="sync-join">${t('join')}</button></div>
       </section>` : ''}`,
   },
@@ -289,9 +289,9 @@ const STEPS = [
       const ids = d.objectives.length ? d.objectives : ['eco', 'time', 'nutri'];
       return `<div class="pitch">${ids.map(id => {
         const [ico, title, p] = pitchFor(id);
-        return `<div class="row"><span class="ico">${ico}</span><div><b>${title}</b><p>${p}</p></div></div>`;
+        return `<div class="row"><span class="ico">${icon(ico)}</span><div><b>${title}</b><p>${p}</p></div></div>`;
       }).join('')}
-      <div class="row"><span class="ico">📚</span><div><b>${t('s2_db_title', { n: S.db.length })}</b><p>${t('s2_db_desc')}</p></div></div></div>`;
+      <div class="row"><span class="ico">${icon('book-open')}</span><div><b>${t('s2_db_title', { n: S.db.length })}</b><p>${t('s2_db_desc')}</p></div></div></div>`;
     },
   },
   {
@@ -317,7 +317,7 @@ const STEPS = [
     render: d => `<div class="grid tiles">
       <button class="opt center" data-action="skip-avoid">${t('skip')}</button>
       ${AVOID.map(a => `<button class="opt ${d.avoid.includes(a.id) ? 'on' : ''}" data-action="toggle" data-key="avoid" data-val="${a.id}">
-        <span class="icon">${a.icon}</span>${L('avoid', a)}</button>`).join('')}</div>`,
+        <span class="icon">${icon(a.icon)}</span>${L('avoid', a)}</button>`).join('')}</div>`,
   },
   {
     title: () => t('s6_title'), sub: () => t('s6_sub'),
@@ -333,7 +333,7 @@ const STEPS = [
   {
     title: () => t('s8_title'),
     render: () => `<div class="grid votes small">${FLAVOURS.map(f => `
-      <div class="vote tile"><div class="emoji">${f.icon}</div><div class="name">${L('flavours', f)}</div>${voteBtns('flavours', f.id)}</div>`).join('')}</div>`,
+      <div class="vote tile"><div class="emoji">${icon(f.icon)}</div><div class="name">${L('flavours', f)}</div>${voteBtns('flavours', f.id)}</div>`).join('')}</div>`,
   },
   {
     title: () => t('s9_title'),
@@ -468,11 +468,11 @@ function tagsFor(m, max = 4, basics = true) {
     out.push(`<span class="tag">${ICON.clock}${fmtMinutes(f.time)}</span>`);
     out.push(`<span class="tag">${esc(cuisineLabel(f.cuisine))}</span>`);
   }
-  if (f.isVeggie) out.push(`<span class="tag green">${t('tag_veg')}</span>`);
+  if (f.isVeggie) out.push(`<span class="tag green">${icon('leaf')}${t('tag_veg')}</span>`);
   else if (f.main !== 'veg') out.push(`<span class="tag">${esc(proteinLabel(f.main))}</span>`);
-  if (f.hot >= 2) out.push(`<span class="tag red">${t('tag_hot')}</span>`);
+  if (f.hot >= 2) out.push(`<span class="tag red">${icon('flame')}${t('tag_hot')}</span>`);
   if (f.heavy === 0) out.push(`<span class="tag green">${t('tag_light')}</span>`);
-  if (f.overnight) out.push(`<span class="tag">${t('tag_overnight')}</span>`);
+  if (f.overnight) out.push(`<span class="tag">${icon('moon')}${t('tag_overnight')}</span>`);
   return out.length ? `<div class="tags">${out.slice(0, max).join('')}</div>` : '';
 }
 
@@ -499,13 +499,13 @@ function renderMenu() {
 
   app.innerHTML = `
     <section class="page-head">
-      <p class="eyebrow">${hello} 👋</p>
+      <p class="eyebrow">${hello}</p>
       <h1>${t('your_week')}</h1>
       <div class="stats">
         ${lunchOn() ? `<span>${t('stat_lunches', { n: nLun })}</span>` : ''}
         <span>${t('stat_dinners', { n: nDin })}</span>
         <span>${t('stat_time', { t: fmtMinutes(totalTime) })}</span>
-        ${active.length ? `<span>${t('stat_ingr', { n: ps.distinct })}</span>` : ''}
+        ${active.length ? `<span>${icon('shopping-cart')}${t('stat_ingr', { n: ps.distinct })}</span>` : ''}
       </div>
     </section>
 
@@ -514,16 +514,16 @@ function renderMenu() {
       ${img(med(feat.m.thumb), mealName(feat.m))}
       <div class="feature-shade"></div>
       <div class="feature-body">
-        <span class="pill lime">${dayInfo(feat.day).diff === 0 ? (feat.kind === 'lunch' ? '☀️ ' : '🍽️ ') : ''}${slotLabel(feat)}</span>
+        <span class="pill lime">${icon(feat.kind === 'lunch' ? 'sun' : 'moon')}${slotLabel(feat)}</span>
         <h2>${esc(mealName(feat.m))}</h2>
         ${tagsFor(feat.m, 3)}
         <div class="feature-actions">
           <span class="btn lime">${t('see_recipe')} ${ICON.chev}</span>
           <button class="btn glass" data-action="swap" data-id="${feat.id}" title="${t('change_dish')}" aria-label="${t('change_dish')}">${ICON.swap}<span class="lbl"> ${t('change')}</span></button>
-          <button class="btn glass" data-action="slot" data-id="${feat.id}" title="${t('slot_settings')}" aria-label="${t('slot_settings')}">${feat.off ? '🚫' : `${ICON.user} ${feat.portions}`}</button>
+          <button class="btn glass" data-action="slot" data-id="${feat.id}" title="${t('slot_settings')}" aria-label="${t('slot_settings')}">${feat.off ? icon('ban') : `${ICON.user} ${feat.portions}`}</button>
         </div>
       </div>
-    </article>` : `<div class="empty"><div class="empty-ico">🍽️</div><h2>${t('no_dinner_title')}</h2><p class="sub">${t('no_dinner_sub')}</p></div>`}
+    </article>` : `<div class="empty"><div class="empty-ico">${icon('utensils')}</div><h2>${t('no_dinner_title')}</h2><p class="sub">${t('no_dinner_sub')}</p></div>`}
 
     ${all.length > 1 ? `
     <h2 class="section-title">${t('on_menu')}</h2>
@@ -536,7 +536,7 @@ function renderMenu() {
 
     ${active.length > 1 ? `
     <button class="opt-card ${optOn ? 'on' : ''}" data-action="toggle-opt" role="switch" aria-checked="${optOn}">
-      <span class="opt-ico">♻️</span>
+      <span class="opt-ico">${icon('recycle')}</span>
       <span class="opt-txt"><b>${t('opt_title')}</b><small>${!optOn ? t('opt_off') : baseline > ps.distinct ? t('opt_saving', { n: ps.distinct, b: baseline }) : t('opt_n', { n: ps.distinct })}</small></span>
       <span class="switch"><i></i></span>
     </button>` : ''}
@@ -550,12 +550,12 @@ function renderMenu() {
 
     ${Sync.available && !Sync.code ? `
     <button class="cta-card light" data-action="goto" data-view="prefs">
-      <span class="cta-ico">👨‍👩‍👧</span><span><b>${t('multi_device')}</b><small>${t('multi_device_sub')}</small></span>${ICON.chev}
+      <span class="cta-ico">${icon('users')}</span><span><b>${t('multi_device')}</b><small>${t('multi_device_sub')}</small></span>${ICON.chev}
     </button>` : ''}
 
     <div class="menu-tools">
       ${missing ? `<button class="btn" data-action="fill">${ICON.plus} ${t('add_meals', { n: missing })}</button>` : ''}
-      <button class="btn" data-action="toggle-lunch">${lunchOn() ? t('remove_lunches') : '☀️ ' + t('add_lunches')}</button>
+      <button class="btn" data-action="toggle-lunch">${icon('sun')} ${lunchOn() ? t('remove_lunches') : t('add_lunches')}</button>
       <button class="btn" data-action="regen">${ICON.dice} ${t('new_week')}</button>
       <button class="btn" data-action="goto" data-view="explore">${t('browse_recipes')}</button>
     </div>
@@ -566,14 +566,14 @@ function slotRow(x, showDate, shared = new Set()) {
   const m = x.m, d = dayInfo(x.day);
   let common = 0; if (!x.off) freshKeys(m).forEach(k => shared.has(k) && common++);
   const meta = x.off ? t('slot_off_short')
-    : `${fmtMinutes(m.f.time)} · ${esc(cuisineLabel(m.f.cuisine))}${m.f.isVeggie ? ' · 🌱' : ''}${common ? ` · <span class="common">${t('shared_n', { n: common })}</span>` : ''}`;
+    : `${fmtMinutes(m.f.time)} · ${esc(cuisineLabel(m.f.cuisine))}${m.f.isVeggie ? ` · <span class="veg">${icon('leaf')}</span>` : ''}${common ? ` · <span class="common">${icon('recycle')}${t('shared_n', { n: common })}</span>` : ''}`;
   return `<div class="day-row ${x.off ? 'off' : ''} ${x.past ? 'past' : ''}">
     <div class="day-date ${d.diff === 0 ? 'today' : ''} ${showDate ? '' : 'ghost'}"><span>${d.short}</span><b>${d.num}</b></div>
     <button class="day-card" data-action="open" data-id="${m.id}">
       ${img(m.thumb ? m.thumb + '/small' : '', mealName(m))}
-      <span class="day-txt">${lunchOn() ? `<em class="kind ${x.kind}">${x.kind === 'lunch' ? '☀️' : '🌙'} ${slotKindLabel(x)}</em>` : ''}<b>${esc(mealName(m))}</b><small>${meta}</small></span>
+      <span class="day-txt">${lunchOn() ? `<em class="kind ${x.kind}">${icon(x.kind === 'lunch' ? 'sun' : 'moon')}${slotKindLabel(x)}</em>` : ''}<b>${esc(mealName(m))}</b><small>${meta}</small></span>
     </button>
-    <button class="por-btn" data-action="slot" data-id="${m.id}" title="${t('slot_settings')}" aria-label="${t('slot_settings')}">${x.off ? '🚫' : `${ICON.user}<b>${x.portions}</b>`}</button>
+    <button class="por-btn" data-action="slot" data-id="${m.id}" title="${t('slot_settings')}" aria-label="${t('slot_settings')}">${x.off ? icon('ban') : `${ICON.user}<b>${x.portions}</b>`}</button>
   </div>`;
 }
 
@@ -593,7 +593,7 @@ function openSlotSheet(id) {
         <span class="stepper"><button data-action="slot-portions" data-id="${id}" data-dir="-1" aria-label="${t('less')}">−</button><b>${x.portions}</b><button data-action="slot-portions" data-id="${id}" data-dir="1" aria-label="${t('more')}">+</button></span>
       </div>
       <button class="opt-card ${x.off ? '' : 'on'}" data-action="slot-off" data-id="${id}" role="switch" aria-checked="${!x.off}">
-        <span class="opt-ico">${x.kind === 'lunch' ? '☀️' : '🌙'}</span>
+        <span class="opt-ico">${icon(x.kind === 'lunch' ? 'sun' : 'moon')}</span>
         <span class="opt-txt"><b>${t('slot_eat')}</b><small>${x.off ? t('slot_off_sub') : t('slot_on_sub')}</small></span>
         <span class="switch"><i></i></span>
       </button>
@@ -631,7 +631,7 @@ function renderExploreResults() {
     ? `<p class="result-count">${t('result_count', { n: list.length })}</p>
        <div class="tiles">${list.slice(0, S.explore.limit).map(recipeTile).join('')}</div>
        ${list.length > S.explore.limit ? `<div class="more"><button class="btn" data-action="more">${t('more_recipes')}</button></div>` : ''}`
-    : `<div class="empty"><div class="empty-ico">🔍</div><h2>${t('no_recipe_title')}</h2><p class="sub">${t('no_recipe_sub')}</p></div>`;
+    : `<div class="empty"><div class="empty-ico">${icon('search')}</div><h2>${t('no_recipe_title')}</h2><p class="sub">${t('no_recipe_sub')}</p></div>`;
 }
 
 function renderExplore() {
@@ -646,8 +646,8 @@ function renderExplore() {
       <input type="search" id="q" placeholder="${t('search_ph')}" value="${esc(E.q)}" autocomplete="off">
     </div>
     <div class="chip-row filters-row">
-      <button class="toggle ${E.quick ? 'on' : ''}" data-action="filter" data-key="quick">${t('quick')}</button>
-      <button class="toggle ${E.veggie ? 'on' : ''}" data-action="filter" data-key="veggie">${t('veggie')}</button>
+      <button class="toggle ${E.quick ? 'on' : ''}" data-action="filter" data-key="quick">${icon('timer')}${t('quick')}</button>
+      <button class="toggle ${E.veggie ? 'on' : ''}" data-action="filter" data-key="veggie">${icon('leaf')}${t('veggie')}</button>
       <button class="toggle ${!E.cuisine ? 'on' : ''}" data-action="cuisine" data-id="">${t('all')}</button>
       ${CUISINES.map(c => `<button class="toggle ${E.cuisine === c.id ? 'on' : ''}" data-action="cuisine" data-id="${c.id}">${L('cuisines', c)}</button>`).join('')}
     </div>
@@ -657,7 +657,7 @@ function renderExplore() {
 }
 
 // ----- Courses -----
-const slotShort = (x) => `${dayInfo(x.day).short.toLowerCase()}${lunchOn() ? ' ' + (x.kind === 'lunch' ? '☀️' : '🌙') : ''}`;
+const slotShort = (x) => `${dayInfo(x.day).short.toLowerCase()}${lunchOn() ? ' ' + t(x.kind === 'lunch' ? 'lunch' : 'dinner').toLowerCase() : ''}`;
 
 // Recettes qui utilisent l'ingrédient : noms si 1–2 recettes, sinon pastilles photo compactes.
 function recipeChips(it) {
@@ -679,7 +679,7 @@ function shopRow(it, qty = it.qty, withUses = true) {
     <label class="tick"><input type="checkbox" data-action="check" data-key="${esc(it.key)}" ${done ? 'checked' : ''}><span class="box">${ICON.check}</span></label>
     <div class="shop-txt">
       <div class="shop-line"><b>${esc(it.label)}</b><span class="qty">${esc(qty)}</span></div>
-      ${it.alts && it.alts.length ? `<span class="alts">↔ ${esc(t('or_alts', { a: it.alts.join(', ') }))}</span>` : ''}
+      ${it.alts && it.alts.length ? `<span class="alts">${icon('arrow-left-right')}${esc(t('or_alts', { a: it.alts.join(', ') }))}</span>` : ''}
       ${withUses ? recipeChips(it) : ''}
     </div>
     <a class="find" href="${intermarcheSearch(it.fr)}" target="_blank" rel="noopener" title="${t('search_store')}" aria-label="${t('search_store')} : ${esc(it.label)}">${ICON.search}</a>
@@ -721,18 +721,18 @@ function renderShop() {
       const items = g.items.filter(keep);
       if (!items.length) return '';
       return `<section class="shop-sec">
-        <h3><span class="ray-ico">${g.rayon.icon}</span>${rayonLabel(g.rayon)}<span class="count">${items.filter(it => !S.shopChecked[it.key]).length || '✓'}</span></h3>
+        <h3><span class="ray-ico">${icon(g.rayon.icon)}</span>${rayonLabel(g.rayon)}<span class="count">${items.filter(it => !S.shopChecked[it.key]).length || ICON.check}</span></h3>
         ${sortDone(items).map(it => shopRow(it)).join('')}
       </section>`;
     }).join('');
     const pantry = sh.pantry.filter(keep);
-    if (pantry.length) body += `<details class="shop-sec pantry"><summary><span class="ray-ico">🏠</span>${t('pantry_title')}<span class="count">${pantry.length}</span></summary>
+    if (pantry.length) body += `<details class="shop-sec pantry"><summary><span class="ray-ico">${icon('house')}</span>${t('pantry_title')}<span class="count">${pantry.length}</span></summary>
       <p class="sub">${t('pantry_sub')}</p>${sortDone(pantry).map(it => shopRow(it)).join('')}</details>`;
   }
 
   app.innerHTML = `
     <section class="page-head">
-      <p class="eyebrow">🏪 ${esc(st.name)}</p>
+      <p class="eyebrow">${icon('store')} ${esc(st.name)}</p>
       <h1>${t('shop_title')}</h1>
     </section>
     ${pastCount ? `<button class="filter-note past-note" data-action="show-past"><span>${S.showPast ? t('past_shown', { n: pastCount }) : t('past_hidden', { n: pastCount })}</span><em>${S.showPast ? t('hide') : t('show')}</em></button>` : ''}
@@ -761,19 +761,19 @@ function renderShop() {
     <div class="shop">${body}</div>
 
     <div class="shop-tools">
-      <button class="btn" data-action="share">${t('share_list')}</button>
-      <button class="btn ${wakeLock ? 'lime' : ''}" data-action="wake">${wakeLock ? t('awake_on') : t('keep_awake')}</button>
-      <button class="btn" data-action="uncheck">${t('uncheck_all')}</button>
+      <button class="btn" data-action="share">${icon('share-2')} ${t('share_list')}</button>
+      <button class="btn ${wakeLock ? 'lime' : ''}" data-action="wake">${icon('lightbulb')} ${wakeLock ? t('awake_on') : t('keep_awake')}</button>
+      <button class="btn" data-action="uncheck">${icon('rotate-ccw')} ${t('uncheck_all')}</button>
     </div>
     <div class="store-card">
-      <div class="store-info"><span class="store-logo">🏪</span><div><b>${esc(st.name)}</b><span>${esc(st.address)}</span></div></div>
+      <div class="store-info"><span class="store-logo">${icon('store')}</span><div><b>${esc(st.name)}</b><span>${esc(st.address)}</span></div></div>
       <div class="store-links">
-        <a class="btn small" href="${mapsLink(st)}" target="_blank" rel="noopener">${t('itinerary')}</a>
-        <a class="btn small" href="https://www.intermarche.com/" target="_blank" rel="noopener">${t('drive')}</a>
-        <button class="btn small" data-action="shop-settings">${t('store_settings')}</button>
+        <a class="btn small" href="${mapsLink(st)}" target="_blank" rel="noopener">${icon('map-pin')} ${t('itinerary')}</a>
+        <a class="btn small" href="https://www.intermarche.com/" target="_blank" rel="noopener">${icon('car')} ${t('drive')}</a>
+        <button class="btn small" data-action="shop-settings">${icon('settings')} ${t('store_settings')}</button>
       </div>
     </div>`
-      : `<div class="empty"><div class="empty-ico">🛒</div><h2>${t('nothing_to_buy')}</h2><p class="sub">${t('nothing_to_buy_sub')}</p></div>`}
+      : `<div class="empty"><div class="empty-ico">${icon('shopping-cart')}</div><h2>${t('nothing_to_buy')}</h2><p class="sub">${t('nothing_to_buy_sub')}</p></div>`}
     <p class="source-note">${t('shop_note', { p: people.join(' / ') || S.prefs.portions })}</p>`;
 }
 
@@ -801,9 +801,9 @@ function openShopSettings(order = getRayonOrder(), st = getStore()) {
       <p class="sub">${t('aisle_order_sub')}</p>
       <ol class="rayon-list">${order.map((id, i) => {
         const r = RAYONS.find(x => x.id === id);
-        return `<li><span>${r.icon} ${rayonLabel(r)}</span>
-          <button data-action="rayon-move" data-idx="${i}" data-dir="-1" ${i === 0 ? 'disabled' : ''} aria-label="${t('up')}">↑</button>
-          <button data-action="rayon-move" data-idx="${i}" data-dir="1" ${i === order.length - 1 ? 'disabled' : ''} aria-label="${t('down')}">↓</button></li>`;
+        return `<li><span>${icon(r.icon)} ${rayonLabel(r)}</span>
+          <button data-action="rayon-move" data-idx="${i}" data-dir="-1" ${i === 0 ? 'disabled' : ''} aria-label="${t('up')}">${icon('chevron-up')}</button>
+          <button data-action="rayon-move" data-idx="${i}" data-dir="1" ${i === order.length - 1 ? 'disabled' : ''} aria-label="${t('down')}">${icon('chevron-down')}</button></li>`;
       }).join('')}</ol>
       <div class="prefs-actions">
         <button class="btn primary" data-action="shop-settings-save">${t('save')}</button>
@@ -820,20 +820,20 @@ function renderPrefs() {
   const votes = (obj, src, dir, g) => list(Object.keys(obj).filter(k => obj[k] === dir), src, g);
   const vote = (obj, src, g) => {
     const up = esc(votes(obj, src, 1, g)), down = esc(votes(obj, src, -1, g));
-    return `${up !== '—' ? '👍 ' + up : ''}${up !== '—' && down !== '—' ? '<br>' : ''}${down !== '—' ? '👎 ' + down : ''}` || '—';
+    return `${up !== '—' ? `<span class="vote-line">${icon('thumbs-up')} ${up}</span>` : ''}${down !== '—' ? `<span class="vote-line">${icon('thumbs-down')} ${down}</span>` : ''}` || '—';
   };
   const rows = [
-    ['🎯', t('row_objectives'), esc(list(P.objectives, OBJECTIVES, 'objectives'))],
-    ['😋', t('row_craving'), esc(list([P.craving].filter(Boolean), CRAVINGS, 'cravings'))],
-    ['🥗', t('row_diet'), esc(list([P.diet].filter(Boolean), DIETS, 'diets'))],
-    ['🚫', t('row_avoid'), esc(list(P.avoid, AVOID, 'avoid'))],
-    ['💪', t('row_nutrition'), esc(list(P.nutrition, NUTRITION, 'nutrition'))],
-    ['🌍', t('row_cuisines'), vote(P.cuisines, CUISINES, 'cuisines')],
-    ['🌶️', t('row_flavours'), vote(P.flavours, FLAVOURS, 'flavours')],
-    ['🍗', t('row_proteins'), vote(P.proteins, PROTEINS, 'proteins')],
-    ['🍝', t('row_dishes'), vote(P.dishes, DISH_TYPES, 'dishes')],
-    ['🗓️', t('row_week'), t('week_value', { n: P.nights, p: P.portions }) + (P.lunch ? '<br>' + t('week_lunch_value', { p: P.lunchPortions || P.portions }) : '')],
-    ['⭐', t('row_rated'), t('rated_value', { l: Object.values(S.feedback).filter(v => v === 1).length, d: Object.values(S.feedback).filter(v => v === -1).length })],
+    ['target', t('row_objectives'), esc(list(P.objectives, OBJECTIVES, 'objectives'))],
+    ['smile', t('row_craving'), esc(list([P.craving].filter(Boolean), CRAVINGS, 'cravings'))],
+    ['salad', t('row_diet'), esc(list([P.diet].filter(Boolean), DIETS, 'diets'))],
+    ['ban', t('row_avoid'), esc(list(P.avoid, AVOID, 'avoid'))],
+    ['dumbbell', t('row_nutrition'), esc(list(P.nutrition, NUTRITION, 'nutrition'))],
+    ['earth', t('row_cuisines'), vote(P.cuisines, CUISINES, 'cuisines')],
+    ['flame', t('row_flavours'), vote(P.flavours, FLAVOURS, 'flavours')],
+    ['drumstick', t('row_proteins'), vote(P.proteins, PROTEINS, 'proteins')],
+    ['chef-hat', t('row_dishes'), vote(P.dishes, DISH_TYPES, 'dishes')],
+    ['calendar', t('row_week'), t('week_value', { n: P.nights, p: P.portions }) + (P.lunch ? '<br>' + t('week_lunch_value', { p: P.lunchPortions || P.portions }) : '')],
+    ['star', t('row_rated'), t('rated_value', { l: Object.values(S.feedback).filter(v => v === 1).length, d: Object.values(S.feedback).filter(v => v === -1).length })],
   ];
   const info = S.dbInfo;
   const srcLabel = t('src_' + info.source);
@@ -843,11 +843,11 @@ function renderPrefs() {
       <h1>${t('profile_title')}</h1>
     </section>
     <button class="cta-card" data-action="edit-prefs">
-      <span class="cta-ico">✏️</span><span><b>${t('redo_quiz')}</b><small>${t('redo_quiz_sub')}</small></span>${ICON.chev}
+      <span class="cta-ico">${icon('pencil')}</span><span><b>${t('redo_quiz')}</b><small>${t('redo_quiz_sub')}</small></span>${ICON.chev}
     </button>
-    <button class="cta-card light" data-action="lang"><span class="cta-ico">🌐</span><span><b>${t('language')}</b><small>${langInfo().label}</small></span>${ICON.chev}</button>
+    <button class="cta-card light" data-action="lang"><span class="cta-ico">${icon('globe')}</span><span><b>${t('language')}</b><small>${langInfo().label}</small></span>${ICON.chev}</button>
     ${syncCard()}
-    <div class="prefs">${rows.map(([ico, k, v]) => `<div class="row"><span class="row-ico">${ico}</span><div><b>${k}</b><div>${v}</div></div></div>`).join('')}</div>
+    <div class="prefs">${rows.map(([ico, k, v]) => `<div class="row"><span class="row-ico">${icon(ico)}</span><div><b>${k}</b><div>${v}</div></div></div>`).join('')}</div>
     <div class="prefs-actions">
       <button class="btn" data-action="reset-feedback">${t('reset_feedback')}</button>
       <button class="btn" data-action="refresh-db">${t('refresh_db')}</button>
@@ -858,18 +858,18 @@ function renderPrefs() {
 
 function syncCard() {
   if (!Sync.available) return `<section id="sync-card" class="sync-card">
-    <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>${t('household')}</b><small>${t('sync_off')}</small></div></div>
+    <div class="sync-head"><span class="sync-ico">${icon('users')}</span><div><b>${t('household')}</b><small>${t('sync_off')}</small></div></div>
     <p class="sub">${t('sync_off_sub')}</p></section>`;
   if (!Sync.code) return `<section id="sync-card" class="sync-card">
-    <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>${t('share_household')}</b><small>${t('share_household_sub')}</small></div></div>
+    <div class="sync-head"><span class="sync-ico">${icon('users')}</span><div><b>${t('share_household')}</b><small>${t('share_household_sub')}</small></div></div>
     <button class="btn primary" data-action="sync-create">${t('create_household')}</button>
     <div class="join-row"><input id="join-code" placeholder="XXXXX-XXXXX" autocomplete="off" autocapitalize="characters"><button class="btn" data-action="sync-join">${t('join')}</button></div>
   </section>`;
   const label = Sync.status === 'off' ? '' : t('st_' + Sync.status);
   return `<section id="sync-card" class="sync-card on">
-    <div class="sync-head"><span class="sync-ico">👨‍👩‍👧</span><div><b>${t('household')}</b><small class="st-${Sync.status}">${label}</small></div></div>
+    <div class="sync-head"><span class="sync-ico">${icon('users')}</span><div><b>${t('household')}</b><small class="st-${Sync.status}">${label}</small></div></div>
     <div class="code-box"><span>${t('household_code')}</span><b>${Sync.code}</b></div>
-    <button class="btn primary" data-action="sync-share">${t('invite_phone')}</button>
+    <button class="btn primary" data-action="sync-share">${icon('share-2')} ${t('invite_phone')}</button>
     <p class="sub">${t('household_help')}</p>
     <button class="btn ghost" data-action="sync-leave">${t('leave_household')}</button>
   </section>`;
@@ -917,14 +917,14 @@ function ingredientRow(m, i, idx, factor, ctx) {
   const shared = !info.pantry && !info.skip && ctx.elsewhere.has(buyKey(info));
   const open = S.altOpen === idx;
   return `<li class="${open ? 'open' : ''}">${img(ING_IMG(subbed ? info.en : i.n), '')}
-    <span class="ingr-name">${esc(name)}${shared ? ` <span class="shared-tag" title="${t('shared_title')}">♻️</span>` : ''}
+    <span class="ingr-name">${esc(name)}${shared ? ` <span class="shared-tag" title="${t('shared_title')}">${icon('recycle')}</span>` : ''}
       ${subbed ? `<small class="was">${t('instead_of', { x: esc(trIng(i.n)) })}</small>` : ''}
-      ${buyAs ? `<small class="was">🛒 ${esc(t('buy_as', { x: buyAs }))}</small>` : ''}</span>
+      ${buyAs ? `<small class="was">${icon('shopping-cart')} ${esc(t('buy_as', { x: buyAs }))}</small>` : ''}</span>
     <span class="m">${esc(measureFr(i.m, factor, subbed ? info.en : i.n))}</span>
-    ${fam ? `<button class="alt-btn ${subbed ? 'on' : ''}" data-action="alt" data-idx="${idx}" title="${t('alternatives')}" aria-label="${t('alternatives')}">↔</button>` : ''}
+    ${fam ? `<button class="alt-btn ${subbed ? 'on' : ''}" data-action="alt" data-idx="${idx}" title="${t('alternatives')}" aria-label="${t('alternatives')}">${icon('arrow-left-right')}</button>` : ''}
     ${open ? `<div class="alt-list"><small>${t('replace_with')}</small>${fam.items.map(a => {
       const isOrig = normFr(a.fr) === normFr(orig.fr), on = normFr(a.fr) === normFr(info.fr);
-      return `<button class="chip ${on ? 'on' : ''}" data-action="alt-pick" data-idx="${idx}" data-fr="${esc(isOrig ? '' : a.fr)}">${esc(ingLabel(a.en, a.fr))}${isOrig ? ' ✓' : ''}</button>`;
+      return `<button class="chip ${on ? 'on' : ''}" data-action="alt-pick" data-idx="${idx}" data-fr="${esc(isOrig ? '' : a.fr)}">${isOrig ? ICON.check : ''}${esc(ingLabel(a.en, a.fr))}</button>`;
     }).join('')}</div>` : ''}
   </li>`;
 }
@@ -952,11 +952,11 @@ function renderRecipe() {
       </div>
     </div>
     <div class="recipe-hero">${img(m.thumb, mealName(m))}<div class="hero-shade"></div>
-      <div class="hero-title">${slot ? `<span class="pill lime">${slot.kind === 'lunch' ? '☀️' : '🗓️'} ${slotLabel(slot)}</span>` : ''}<h2>${esc(mealName(m))}</h2>
+      <div class="hero-title">${slot ? `<span class="pill lime">${icon(slot.kind === 'lunch' ? 'sun' : 'calendar')}${slotLabel(slot)}</span>` : ''}<h2>${esc(mealName(m))}</h2>
         ${LANG !== 'en' && mealName(m) !== m.name ? `<small class="orig-name">${esc(m.name)}</small>` : ''}</div>
     </div>
     <div class="recipe-body">
-      ${slot && slot.off ? `<button class="filter-note" data-action="slot" data-id="${m.id}"><span>🚫 ${t('slot_off_short')}</span>${ICON.chev}</button>` : ''}
+      ${slot && slot.off ? `<button class="filter-note" data-action="slot" data-id="${m.id}"><span>${icon('ban')} ${t('slot_off_short')}</span>${ICON.chev}</button>` : ''}
       <div class="facts">
         <div><span>${t('f_time')}</span><b>${fmtMinutes(m.f.time)}</b></div>
         <div><span>${t('f_cuisine')}</span><b>${esc(cuisineLabel(m.f.cuisine))}</b></div>

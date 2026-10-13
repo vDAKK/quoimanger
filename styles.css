@@ -671,3 +671,39 @@ body.no-scroll .toast { bottom: calc(86px + var(--safe-b)); }
 .hero-title .orig-name { display: block; color: rgba(255,255,255,.8); font-size: 13px; margin-top: 2px; }
 .feature-actions .btn.glass { flex-shrink: 0; }
 @media (max-width: 480px) { .feature-actions .btn.glass .lbl { display: none; } }
+
+/* ---------- Icônes (Lucide) ---------- */
+.ico { width: 1em; height: 1em; flex-shrink: 0; vertical-align: -0.14em; }
+.btn .ico, .toggle .ico, .lang-btn .ico, .eyebrow .ico, .alts .ico, .was .ico { width: 1.1em; height: 1.1em; }
+.toggle .ico { margin-right: 5px; }
+.pill { display: inline-flex; align-items: center; gap: 5px; }
+.pill .ico { width: 14px; height: 14px; }
+.stats span { display: inline-flex; align-items: center; gap: 5px; }
+.stats .ico { width: 15px; height: 15px; color: var(--muted); }
+.opt .icon .ico { width: 26px; height: 26px; }
+.vote .emoji { color: var(--ink); }
+.vote .emoji .ico { width: 34px; height: 34px; stroke-width: 1.7; }
+.pitch .row .ico { width: 30px; height: 30px; stroke-width: 1.8; }
+.empty-ico .ico { width: 44px; height: 44px; stroke-width: 1.6; color: var(--muted); }
+.opt-ico, .sync-ico { color: #3f7a12; }
+.ray-ico .ico { width: 18px; height: 18px; }
+.store-logo { color: #c0392b; }
+.store-logo .ico { width: 24px; height: 24px; }
+.row-ico .ico { width: 19px; height: 19px; }
+.day-txt .kind { display: inline-flex; align-items: center; gap: 4px; }
+.day-txt .kind .ico { width: 13px; height: 13px; }
+.day-txt .common, .day-txt .veg { display: inline-flex; align-items: center; gap: 3px; vertical-align: -2px; }
+.day-txt .common .ico, .day-txt .veg .ico { width: 13px; height: 13px; color: #3f7a12; }
+.shared-tag { color: #3f7a12; }
+.shared-tag .ico { width: 14px; height: 14px; vertical-align: -2px; }
+.alt-btn .ico { width: 16px; height: 16px; vertical-align: middle; }
+.alt-list .chip { display: inline-flex; align-items: center; gap: 4px; }
+.alt-list .chip svg { width: 14px; height: 14px; }
+.alts { display: flex; align-items: center; gap: 4px; }
+.vote-line { display: flex; align-items: center; gap: 6px; }
+.vote-line .ico { width: 15px; height: 15px; color: var(--muted); }
+.count svg { width: 13px; height: 13px; }
+.rayon-list button .ico { width: 16px; height: 16px; }
+.por-btn .ico { width: 18px; height: 18px; }
+.lang-btn .ico { width: 15px; height: 15px; }
+.store-links { flex-wrap: wrap; }

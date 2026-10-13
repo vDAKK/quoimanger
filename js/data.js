@@ -14,12 +14,12 @@ const OBJECTIVES = [
 ];
 
 const OBJECTIVE_PITCH = {
-  eco: ['💸', 'Le dîner a tout bon. Même le prix.', 'On privilégie les plats aux ingrédients abordables : légumineuses, œufs, riz, pommes de terre…'],
-  waste: ['♻️', 'Zéro gâchis, zéro prise de tête.', 'Votre menu réutilise les mêmes ingrédients d’un soir à l’autre pour finir les paquets entamés.'],
-  discover: ['🌍', 'Un tour du monde dans l’assiette.', 'Plus de 30 pays au menu : on varie les cuisines chaque semaine.'],
-  time: ['⏱️', 'Moins de "trop la flemme", plus de "miaaam".', 'On met en avant les recettes rapides. À peine le temps de dire « j’ai faim ».'],
-  nutri: ['🥦', 'Dîner réglé. Corps comblé.', 'Des repas plus légers et riches en légumes, adaptés à vos préférences nutritionnelles.'],
-  plan: ['🗓️', 'Votre semaine, réglée en un clic.', 'Un menu complet + la liste de courses générée automatiquement.'],
+  eco: ['piggy-bank', 'Le dîner a tout bon. Même le prix.', 'On privilégie les plats aux ingrédients abordables : légumineuses, œufs, riz, pommes de terre…'],
+  waste: ['recycle', 'Zéro gâchis, zéro prise de tête.', 'Votre menu réutilise les mêmes ingrédients d’un soir à l’autre pour finir les paquets entamés.'],
+  discover: ['earth', 'Un tour du monde dans l’assiette.', 'Plus de 30 pays au menu : on varie les cuisines chaque semaine.'],
+  time: ['timer', 'Moins de "trop la flemme", plus de "miaaam".', 'On met en avant les recettes rapides. À peine le temps de dire « j’ai faim ».'],
+  nutri: ['carrot', 'Dîner réglé. Corps comblé.', 'Des repas plus légers et riches en légumes, adaptés à vos préférences nutritionnelles.'],
+  plan: ['calendar-check', 'Votre semaine, réglée en un clic.', 'Un menu complet + la liste de courses générée automatiquement.'],
 };
 
 const CRAVINGS = [
@@ -36,14 +36,14 @@ const DIETS = [
 ];
 
 const AVOID = [
-  { id: 'pork', label: 'Porc', icon: '🥓' },
-  { id: 'seafood', label: 'Fruits de mer', icon: '🦐' },
-  { id: 'fish', label: 'Poisson', icon: '🐟' },
-  { id: 'peanut', label: 'Cacahuètes', icon: '🥜' },
-  { id: 'nuts', label: 'Noix', icon: '🌰' },
-  { id: 'dairy', label: 'Produits laitiers', icon: '🥛' },
-  { id: 'gluten', label: 'Gluten', icon: '🌾' },
-  { id: 'egg', label: 'Œufs', icon: '🥚' },
+  { id: 'pork', label: 'Porc', icon: 'ham' },
+  { id: 'seafood', label: 'Fruits de mer', icon: 'shell' },
+  { id: 'fish', label: 'Poisson', icon: 'fish' },
+  { id: 'peanut', label: 'Cacahuètes', icon: 'bean' },
+  { id: 'nuts', label: 'Noix', icon: 'nut' },
+  { id: 'dairy', label: 'Produits laitiers', icon: 'milk' },
+  { id: 'gluten', label: 'Gluten', icon: 'wheat' },
+  { id: 'egg', label: 'Œufs', icon: 'egg' },
 ];
 
 const NUTRITION = [
@@ -83,11 +83,11 @@ const AREA_TO_COUNTRY = {
 };
 
 const FLAVOURS = [
-  { id: 'herbs', label: 'Les herbes', icon: '🌿' },
-  { id: 'cheese', label: 'Beaucoup de fromage', icon: '🧀' },
-  { id: 'sweet', label: 'Sucré', icon: '🍯' },
-  { id: 'spiced', label: 'Épicé', icon: '🫙' },
-  { id: 'hot', label: 'Pimenté', icon: '🌶️' },
+  { id: 'herbs', label: 'Les herbes', icon: 'leaf' },
+  { id: 'cheese', label: 'Beaucoup de fromage', icon: 'cheese' },
+  { id: 'sweet', label: 'Sucré', icon: 'candy' },
+  { id: 'spiced', label: 'Épicé', icon: 'sparkles' },
+  { id: 'hot', label: 'Pimenté', icon: 'flame' },
 ];
 
 const PROTEINS = [
