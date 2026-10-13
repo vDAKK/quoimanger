@@ -1708,7 +1708,19 @@ document.addEventListener('change', (e) => {
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('#modal').hidden) closeModal(); });
 
 if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+  navigator.serviceWorker.register('sw.js').then(reg => reg.update()).catch(() => {});
+  // nouvelle version installée (PWA déjà ouverte) : on recharge une fois, sauf pendant le questionnaire
+  if (navigator.serviceWorker.controller) {
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (sessionStorage.getItem('qm_reloaded') || S.draft) return;
+      sessionStorage.setItem('qm_reloaded', '1');
+      location.reload();
+    });
+  }
+  // revenir sur l'app (PWA en arrière-plan) vérifie aussi les mises à jour
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') navigator.serviceWorker.getRegistration().then(r => r && r.update()).catch(() => {});
+  });
 }
 
 boot();
