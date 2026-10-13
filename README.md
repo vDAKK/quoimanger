@@ -15,21 +15,29 @@ Pour une vraie PWA installable et utilisable hors-ligne (service worker), héber
 2. **Enrichissement** (`js/engine.js`) : pour chaque plat, l'app déduit de ses ingrédients et de ses instructions le temps estimé, les protéines, les allergènes, le type de plat, les saveurs (herbes, fromage, sucré, épicé, pimenté), le côté léger ou riche, les glucides, le coût et le côté « familial ».
 3. **Questionnaire** (11 étapes) : objectifs, envie, profil alimentaire, ingrédients à éviter, nutrition, cuisines, saveurs, protéines, types de plats, nombre de soirs et de portions.
 4. **Scoring** : les allergènes, le régime et les protéines refusées excluent un plat. Tout le reste ajoute ou retire des points. Le menu est ensuite tiré en variant les cuisines, les protéines et les types de plats. Avec l'objectif anti-gaspi, les plats qui partagent des ingrédients sont favorisés.
-   **Courses optimisées** (activé par défaut) : le menu est ensuite amélioré plat par plat pour minimiser le nombre d'ingrédients différents à acheter (synonymes regroupés, placard exclu, accompagnements et quasi-doublons écartés). En moyenne 30 à 40 % d'ingrédients différents en moins pour une perte de score faible.
+   **Courses optimisées** (activé par défaut) : chaque produit acheté coûte des points ; l'optimiseur (glouton + amélioration locale, plusieurs essais, évaluation incrémentale) choisit les plats qui partagent leurs ingrédients. Les ingrédients interchangeables (`ALT_FAMILIES` dans `js/data.js` : oignon / échalote, crème fraîche / liquide, coupes de poulet…) comptent pour un seul achat. Résultat : environ 50 % d'ingrédients différents en moins.
+   **Midis** : option du questionnaire ou bouton « Ajouter les midis » ; le midi favorise les plats rapides et légers. Chaque repas a ses portions et peut être exclu (« je ne mange pas ce repas ») via le bouton 👤 : il sort alors de la liste de courses.
+   **Alternatives** : bouton ↔ sur un ingrédient de la fiche recette pour choisir un produit de remplacement ; la liste de courses suit et regroupe les alternatives sur une ligne (« ou : … »).
 5. **Courses (Intermarché Bourg-en-Bresse)** : tout est traduit en français et converti en g, ml et cuillères. Les quantités sont cumulées entre recettes et classées dans l'ordre des rayons d'un parcours Intermarché type (ordre et magasin modifiables). Les basiques de placard sont mis à part, et une loupe ouvre la recherche du produit sur intermarche.com.
+   Les repas passés (jours précédents, et le midi du jour à partir de 15 h) sont masqués de la liste de courses.
 6. **Apprentissage** : 👍 favorise un plat, 👎 l'exclut définitivement.
 
 ## Langues
 
-Français, English, 中文 : détection automatique selon le téléphone, changement via le bouton 🌐 (choix propre à chaque appareil, les données du foyer restent communes). Les noms et instructions des recettes viennent de TheMealDB (anglais) ; un lien ouvre la traduction.
+Français, English, 中文 : détection automatique selon le téléphone, changement via le bouton 🌐 (choix propre à chaque appareil, les données du foyer restent communes). Les noms des recettes sont traduits dans `js/recipe-names.js`. Les instructions (et les noms des recettes ajoutées ensuite à l'API) sont traduites à la volée via Google Traduction à l'ouverture, puis gardées en cache sur l'appareil ; à défaut, un lien ouvre la traduction.
 
 ## Fichiers
 
 - `js/ingredients-fr.js` : 810 ingrédients → nom français + rayon
 - `js/shop.js` : conversion des mesures, liste de courses par rayon
+- `js/recipe-names.js` : noms des recettes en français et en chinois
 - `js/i18n.js` : textes de l'interface en FR / EN / 中文
 - `js/ingredients-zh.js` : noms chinois des ingrédients
 - `js/data.js` : options du questionnaire, mots-clés de détection, traductions FR des ingrédients
 - `js/engine.js` : chargement, enrichissement, scoring, menu, liste de courses
 - `js/app.js` : interface
 - `js/meals-snapshot.js` : copie locale de secours de la base
+
+## Foyer partagé
+
+Les règles Firestore autorisent le champ `week` (midis, portions et exclusions par repas, alternatives choisies) : recoller `firestore.rules` dans la console Firebase après mise à jour.

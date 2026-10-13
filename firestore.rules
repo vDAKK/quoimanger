@@ -7,7 +7,7 @@ service cloud.firestore {
     match /foyers/{code} {
       allow get: if code.matches('^[A-Z0-9]{5}-[A-Z0-9]{5}$');
       allow create, update: if code.matches('^[A-Z0-9]{5}-[A-Z0-9]{5}$')
-        && request.resource.data.keys().hasOnly(['prefs', 'feedback', 'planIds', 'planStart', 'shop', 'store', 'rayons', 'createdAt', 'updatedAt']);
+        && request.resource.data.keys().hasOnly(['prefs', 'feedback', 'planIds', 'planStart', 'shop', 'store', 'rayons', 'week', 'createdAt', 'updatedAt']);
       allow list, delete: if false;
     }
   }

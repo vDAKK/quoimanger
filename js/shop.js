@@ -174,24 +174,42 @@ function measureFr(measure, factor, en) {
 }
 
 // ---------- Liste de courses ----------
-function buildShopping(plan, portions) {
-  const factor = portions / BASE_SERVINGS;
+/** Produit réellement acheté pour un ingrédient d'une recette (alternative choisie par l'utilisateur comprise). */
+function boughtInfo(mealId, en, subs = {}) {
+  const info = ingInfo(en);
+  const sub = subs[mealId + '|' + en];
+  const alt = sub && altItem(sub);
+  return alt ? { ...alt, subOf: info } : info;
+}
+
+/**
+ * entries : [{ m, portions }] (un par repas). Les alternatives d'une même famille sont regroupées sur une seule ligne,
+ * au nom du produit le plus utilisé ; les autres sont indiqués en « ou ».
+ */
+function buildShopping(entries, subs = {}) {
   const items = new Map();
-  for (const { m } of plan) {
+  for (const { m, portions } of entries) {
+    const factor = portions / BASE_SERVINGS;
     for (const i of m.ingr) {
-      const info = ingInfo(i.n);
+      const info = boughtInfo(m.id, i.n, subs);
       if (info.skip) continue;
-      const key = info.fr.toLowerCase();
-      // la clé reste le nom français (partagée entre appareils du foyer), seul l'affichage change de langue
-      if (!items.has(key)) items.set(key, { key, fr: info.fr, label: ingLabel(info.en, info.fr), rayon: info.rayon, pantry: info.pantry, totals: {}, vague: false, meals: new Set() });
+      // la clé reste en français (partagée entre appareils du foyer), seul l'affichage change de langue
+      const key = buyKey(info);
+      if (!items.has(key)) items.set(key, { key, pantry: info.pantry, totals: {}, vague: false, meals: new Set(), members: new Map() });
       const it = items.get(key);
       it.meals.add(m.id);
+      const mem = it.members.get(info.fr) || { info, n: 0 };
+      mem.n++; it.members.set(info.fr, mem);
       const p = parseMeasure(i.m, info);
       if (p.vague) { it.vague = true; continue; }
       it.totals[p.unit] = (it.totals[p.unit] || 0) + p.v * factor;
     }
   }
   for (const it of items.values()) {
+    const mems = [...it.members.values()].sort((a, b) => b.n - a.n);
+    const top = mems[0].info;
+    Object.assign(it, { fr: top.fr, label: ingLabel(top.en, top.fr), rayon: top.rayon });
+    it.alts = mems.slice(1).map(x => ingLabel(x.info.en, x.info.fr));
     const parts = [];
     for (const u of ['g', 'ml']) if (it.totals[u]) parts.push(fmtMetric(it.totals[u], u));
     for (const u of COUNT_UNITS) if (it.totals[u]) parts.push(fmtCount(it.totals[u], u, true));
@@ -206,7 +224,7 @@ function buildShopping(plan, portions) {
     items: all.filter(it => it.rayon === id && !it.pantry).sort((a, b) => a.label.localeCompare(b.label, langInfo().locale)),
   })).filter(g => g.items.length);
   const pantry = all.filter(it => it.pantry).sort((a, b) => a.label.localeCompare(b.label, langInfo().locale));
-  return { byRayon, pantry, count: all.length - pantry.length };
+  return { byRayon, pantry, count: all.length - pantry.length, byKey: items };
 }
 
 function getRayonOrder() {
@@ -223,7 +241,7 @@ function shoppingText(sh, checked, storeInfo) {
     const todo = g.items.filter(it => !checked[it.key]);
     if (!todo.length) continue;
     lines.push(`${g.rayon.icon} ${rayonLabel(g.rayon).toUpperCase()}`);
-    todo.forEach(it => lines.push(`☐ ${it.label} — ${it.qty}`));
+    todo.forEach(it => lines.push(`☐ ${it.label}${it.alts.length ? ' (' + t('or_alts', { a: it.alts.join(', ') }) + ')' : ''} — ${it.qty}`));
     lines.push('');
   }
   const p = sh.pantry.filter(it => !checked[it.key]);

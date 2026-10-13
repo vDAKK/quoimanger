@@ -2,7 +2,7 @@
 // Un foyer = un document `foyers/{code}`. Le code (aléatoire, non devinable) fait office de clé d'accès.
 
 const FB_VERSION = '10.12.2';
-const SYNC_FIELDS = ['prefs', 'feedback', 'planIds', 'planStart', 'shop', 'store', 'rayons'];
+const SYNC_FIELDS = ['prefs', 'feedback', 'planIds', 'planStart', 'shop', 'store', 'rayons', 'week'];
 
 const Sync = {
   code: store.get('qm_household', null),
@@ -129,7 +129,16 @@ const Sync = {
     if (!args.length) return;
     args.push('updatedAt', fs.serverTimestamp());
     this.remote = { ...this.remote, ...this.clean(next) };
-    try { await fs.updateDoc(this.ref, ...args); } catch (e) { console.warn('Sync push', e); this.setStatus('error'); }
+    try { await fs.updateDoc(this.ref, ...args); } catch (e) {
+      // règles Firestore pas encore mises à jour (champ `week` refusé) : on synchronise au moins le reste
+      const i = args.indexOf('week');
+      if (e.code === 'permission-denied' && i >= 0) {
+        args.splice(i, 2);
+        console.warn('Règles Firestore à mettre à jour (champ week) : voir firestore.rules');
+        try { await fs.updateDoc(this.ref, ...args); return; } catch (e2) { e = e2; }
+      }
+      console.warn('Sync push', e); this.setStatus('error');
+    }
   },
 
   inviteLink() {

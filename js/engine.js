@@ -163,6 +163,13 @@ function enrich(m) {
   f.family = fam;
   f.isDinner = !['Dessert', 'Breakfast'].includes(m.cat);
   f.isSide = ['Side', 'Starter'].includes(m.cat);
+  f.isStarter = m.cat === 'Starter';
+  // aptitude au déjeuner : rapide, léger, salades / sandwichs / bols / soupes
+  let lunch = f.time <= 25 ? 8 : f.time <= 35 ? 4 : f.time > 60 ? -10 : 0;
+  if (f.overnight) lunch -= 10;
+  if (f.types.some(t => ['salad', 'sandwich', 'wrap', 'rice', 'soup', 'burger'].includes(t))) lunch += 6;
+  if (f.heavy >= 4) lunch -= 4;
+  f.lunch = lunch;
   f.cuisine = COUNTRY_TO_CUISINE[m.country] || 'other';
   m.f = f;
   return m;
@@ -268,33 +275,58 @@ function rankAll(meals, P, feedback) {
   return out.sort((a, b) => b.score - a.score);
 }
 
+// ---------- Familles d'ingrédients interchangeables ----------
+const normFr = (s) => s.toLowerCase().replace(/’/g, "'").trim();
+let FAMILY = null; // nom français normalisé → famille
+
+/** Famille d'alternatives d'un produit (ou null). Chaque famille a `items` : produits du dictionnaire { fr, en, rayon, pantry }. */
+function familyOf(fr) {
+  if (!FAMILY) {
+    FAMILY = new Map();
+    const byFr = new Map();
+    for (const [en, v] of Object.entries(ING_FR)) if (!byFr.has(normFr(v.fr))) byFr.set(normFr(v.fr), { ...v, en });
+    for (const fam of ALT_FAMILIES) {
+      fam.items = fam.members.map(fr => byFr.get(normFr(fr))).filter(Boolean);
+      if (fam.items.length > 1) fam.items.forEach(it => FAMILY.set(normFr(it.fr), fam));
+    }
+  }
+  return FAMILY.get(normFr(fr)) || null;
+}
+const altItem = (fr) => { const fam = familyOf(fr); return fam ? fam.items.find(it => normFr(it.fr) === normFr(fr)) : null; };
+
+/** Clé d'achat d'un produit : toute une famille d'alternatives compte pour un seul achat. */
+function buyKey(info) {
+  const fam = info.pantry ? null : familyOf(info.fr);
+  return fam ? 'fam:' + fam.id : normFr(info.fr);
+}
+
 // ---------- Menu de la semaine ----------
-// Ingrédients à acheter pour un plat : noms regroupés (onion / onions / chopped onion → « oignons »), placard exclu.
+// Ingrédients à acheter pour un plat : synonymes et alternatives regroupés, placard exclu.
 function freshKeys(m) {
   if (!m.f.fresh) {
     m.f.fresh = new Set();
     for (const i of m.ingr) {
       const info = ingInfo(i.n);
-      if (!info.skip && !info.pantry) m.f.fresh.add(info.fr.toLowerCase());
+      if (!info.skip && !info.pantry) m.f.fresh.add(buyKey(info));
     }
   }
   return m.f.fresh;
 }
 
 // Poids d'un ingrédient différent supplémentaire, en points de score : plus il est élevé, plus le menu mutualise les courses.
-const shoppingWeight = (P) => (P.optimizeShopping === false ? 0 : P.objectives.includes('waste') ? 7 : 5);
+const shoppingWeight = (P) => (P.optimizeShopping === false ? 0 : P.objectives.includes('waste') ? 12 : 9);
 
 function pairPenalty(a, b, P) {
   let p = 0;
-  if (a.m.f.cuisine === b.m.f.cuisine) p += P.objectives.includes('discover') ? 14 : 7;
-  if (a.m.f.main === b.m.f.main) p += 6;
-  if (a.m.f.types[0] === b.m.f.types[0]) p += 5;
-  if (P.diet === 'flexi' && a.m.f.isMeat && b.m.f.isMeat) p += 15;
+  if (a.f.cuisine === b.f.cuisine) p += P.objectives.includes('discover') ? 14 : 7;
+  if (a.f.main === b.f.main) p += 6;
+  if (a.f.types[0] === b.f.types[0]) p += 5;
+  if (P.diet === 'flexi' && a.f.isMeat && b.f.isMeat) p += 15;
   // quasi-doublons (mêmes ingrédients ou même nom) : on ne veut pas deux fois le même plat dans la semaine
-  const fa = freshKeys(a.m), fb = freshKeys(b.m);
+  const fa = freshKeys(a), fb = freshKeys(b);
   let inter = 0; fa.forEach(k => fb.has(k) && inter++);
   const jaccard = inter / Math.max(1, fa.size + fb.size - inter);
-  if (jaccard > 0.45 || sameDish(a.m.name, b.m.name)) p += 80;
+  if (jaccard > 0.55 || sameDish(a.name, b.name)) p += 80;
   return p;
 }
 
@@ -306,74 +338,96 @@ function sameDish(x, y) {
   return common / Math.min(a.size, b.length) >= 1 || common / Math.max(a.size, b.length) >= 0.75;
 }
 
-/** Valeur d'un menu : goûts + variété − coût des ingrédients différents à acheter. */
-function planValue(set, P, lambda) {
-  let v = 0;
-  const keys = new Set();
-  for (let i = 0; i < set.length; i++) {
-    v += set[i].score + (set[i].jitter || 0);
-    // un vrai dîner a un minimum d'ingrédients frais : sans ça l'optimiseur préférerait des plats « vides »
-    const size = freshKeys(set[i].m).size;
-    if (size < 5) v -= (5 - size) * 8;
-    for (let j = 0; j < i; j++) v -= pairPenalty(set[i], set[j], P);
-    freshKeys(set[i].m).forEach(k => keys.add(k));
-  }
-  return v - lambda * keys.size;
-}
+// Bonus d'un plat selon le créneau : le midi favorise le rapide et le léger ; une entrée ne fait pas un dîner.
+const slotBonus = (m, kind) => (kind === 'lunch' ? m.f.lunch : m.f.isStarter ? -1e6 : 0);
 
-// Amélioration locale : on remplace un plat à la fois tant que la valeur du menu augmente.
-function improvePlan(set, pool, P, lambda, locked = 0) {
-  for (let pass = 0; pass < 4; pass++) {
-    let improved = false;
-    for (let i = locked; i < set.length; i++) {
-      let base = planValue(set, P, lambda), best = null, bestVal = base;
-      for (const c of pool) {
-        if (set.some(x => x.m.id === c.m.id)) continue;
-        const prev = set[i]; set[i] = c;
-        const v = planValue(set, P, lambda);
-        set[i] = prev;
-        if (v > bestVal + 0.01) { bestVal = v; best = c; }
-      }
-      if (best) { set[i] = best; improved = true; }
-    }
-    if (!improved) break;
-  }
-  return set;
-}
-
-function buildPlan(ranked, P, n, keep = [], opts = {}) {
+/**
+ * Choisit un plat par créneau (kinds : 'dinner' | 'lunch') en maximisant goûts + variété − λ × ingrédients différents.
+ * fixed[i] : plat imposé au créneau i (ou null). opts : lambda, noJitter, jitter, runs, exclude (ids interdits).
+ * Évaluation incrémentale : changer un plat ne recalcule que ses paires et ses ingrédients.
+ */
+function buildPlan(ranked, P, kinds, fixed = [], opts = {}) {
   const lambda = opts.lambda ?? shoppingWeight(P);
-  const jitterAmp = opts.noJitter ? 0 : 10; // un peu d'aléatoire pour varier d'une semaine à l'autre
-  // accompagnements et entrées exclus : on cherche des plats principaux
-  const pool = ranked.filter(r => !r.m.f.isSide).slice(0, Math.max(90, n * 14)).map(r => ({ ...r, jitter: Math.random() * jitterAmp }));
-  const chosen = [...keep];
-  while (chosen.length < n) {
-    let best = null, bestVal = -Infinity;
-    const base = planValue(chosen, P, lambda);
-    for (const c of pool) {
-      if (chosen.some(x => x.m.id === c.m.id)) continue;
-      chosen.push(c);
-      const v = planValue(chosen, P, lambda) - base;
-      chosen.pop();
-      if (v > bestVal) { bestVal = v; best = c; }
+  const jitterAmp = opts.noJitter ? 0 : (opts.jitter ?? 10); // un peu d'aléatoire pour varier d'une semaine à l'autre
+  const exclude = opts.exclude || new Set();
+  const n = kinds.length;
+  const fixedList = kinds.map((_, i) => fixed[i] || null);
+  const fixedIds = new Set(fixedList.filter(Boolean).map(r => r.m.id));
+  const lunchy = kinds.includes('lunch');
+  // accompagnements exclus (entrées acceptées le midi) : on cherche des plats principaux
+  const pool = ranked.filter(r => (!r.m.f.isSide || (lunchy && r.m.f.isStarter)) && !exclude.has(r.m.id) && !fixedIds.has(r.m.id))
+    .slice(0, Math.max(120, n * 12));
+  const items = [...fixedList.filter(Boolean), ...pool];
+  const M = items.length;
+  const keyId = new Map();
+  const keys = items.map(r => [...freshKeys(r.m)].map(k => (keyId.has(k) ? keyId.get(k) : (keyId.set(k, keyId.size), keyId.size - 1))));
+  // un vrai repas a un minimum d'ingrédients frais : sans ça l'optimiseur préférerait des plats « vides »
+  const base = items.map((r, j) => (r.score ?? 0) - (keys[j].length < 5 ? (5 - keys[j].length) * 8 : 0));
+  const pairC = new Float64Array(M * M).fill(NaN);
+  const pair = (a, b) => {
+    let v = pairC[a * M + b];
+    if (v !== v) { v = pairPenalty(items[a].m, items[b].m, P); pairC[a * M + b] = pairC[b * M + a] = v; }
+    return v;
+  };
+  const fixedIdx = []; let fi = 0;
+  fixedList.forEach((r, i) => { if (r) fixedIdx[i] = fi++; });
+  const free = kinds.map((_, i) => i).filter(i => !fixedList[i]);
+
+  function run(randomize) {
+    const jit = items.map(() => Math.random() * jitterAmp);
+    const val = (j, i) => base[j] + jit[j] + slotBonus(items[j].m, kinds[i]);
+    const pick = new Array(n).fill(-1), used = new Uint8Array(M), cnt = new Int32Array(keyId.size);
+    const place = (i, j) => { pick[i] = j; used[j] = 1; for (const k of keys[j]) cnt[k]++; };
+    const unplace = (i) => { const j = pick[i]; pick[i] = -1; used[j] = 0; for (const k of keys[j]) cnt[k]--; };
+    // gain à mettre le plat j dans le créneau i (vide)
+    const gain = (i, j) => {
+      let g = val(j, i);
+      for (let x = 0; x < n; x++) if (pick[x] >= 0 && x !== i) g -= pair(j, pick[x]);
+      for (const k of keys[j]) if (!cnt[k]) g -= lambda;
+      return g;
+    };
+    fixedList.forEach((r, i) => r && place(i, fixedIdx[i]));
+    const order = randomize ? [...free].sort(() => Math.random() - 0.5) : free;
+    for (const i of order) {
+      const cands = [];
+      for (let j = 0; j < M; j++) if (!used[j]) cands.push([gain(i, j), j]);
+      if (!cands.length) break;
+      cands.sort((a, b) => b[0] - a[0]);
+      place(i, cands[randomize ? Math.floor(Math.random() * Math.min(3, cands.length)) : 0][1]);
     }
-    if (!best) break;
-    chosen.push(best);
+    // amélioration locale : on remplace un plat à la fois tant que la valeur du menu augmente
+    for (let pass = 0; pass < 8; pass++) {
+      let improved = false;
+      for (const i of free) {
+        if (pick[i] < 0) continue;
+        const cur = pick[i];
+        unplace(i);
+        let best = cur, bv = gain(i, cur) + 0.01;
+        for (let j = 0; j < M; j++) if (!used[j] && j !== cur) { const g = gain(i, j); if (g > bv) { bv = g; best = j; } }
+        place(i, best);
+        if (best !== cur) improved = true;
+      }
+      if (!improved) break;
+    }
+    let total = 0;
+    for (let i = 0; i < n; i++) if (pick[i] >= 0) { total += val(pick[i], i); for (let x = 0; x < i; x++) if (pick[x] >= 0) total -= pair(pick[i], pick[x]); }
+    total -= lambda * cnt.reduce((a, c) => a + (c > 0), 0);
+    return { pick, total };
   }
-  return improvePlan(chosen, pool, P, lambda, keep.length);
+
+  const runs = opts.noJitter ? 1 : (opts.runs ?? 4);
+  let best = null;
+  for (let k = 0; k < runs; k++) {
+    const r = run(k > 0);
+    if (!best || r.total > best.total) best = r;
+  }
+  return best.pick.map(j => (j >= 0 ? items[j] : null));
 }
 
-function pickReplacement(ranked, P, plan, index, excluded) {
-  const lambda = shoppingWeight(P);
-  const pool = ranked.filter(r => !r.m.f.isSide && !plan.some(p => p.m.id === r.m.id) && !excluded.has(r.m.id)).slice(0, 100);
-  const set = [...plan];
-  let best = null, bestVal = -Infinity;
-  for (const c of pool) {
-    set[index] = { ...c, jitter: Math.random() * 8 };
-    const v = planValue(set, P, lambda);
-    if (v > bestVal) { bestVal = v; best = c; }
-  }
-  return best;
+/** Meilleur remplaçant pour le créneau `index` (les autres plats restent en place). */
+function pickReplacement(ranked, P, kinds, current, index, excluded) {
+  const fixed = current.map((r, i) => (i === index ? null : r));
+  return buildPlan(ranked, P, kinds, fixed, { exclude: excluded, jitter: 8, runs: 1 })[index];
 }
 
 /** Statistiques d'achats d'un menu : nombre d'ingrédients différents et ingrédients partagés par au moins 2 plats. */
@@ -386,10 +440,10 @@ function planShopping(plan) {
 
 // Référence « menu non optimisé » : mêmes goûts, sans chercher à mutualiser les ingrédients (déterministe).
 let baselineCache = { key: '', value: 0 };
-function baselineDistinct(ranked, P, n) {
-  const key = JSON.stringify([P, n, ranked.length, ranked[0] && ranked[0].m.id]);
+function baselineDistinct(ranked, P, kinds) {
+  const key = JSON.stringify([P, kinds, ranked.length, ranked[0] && ranked[0].m.id]);
   if (baselineCache.key !== key) {
-    baselineCache = { key, value: planShopping(buildPlan(ranked, P, n, [], { lambda: 0, noJitter: true })).distinct };
+    baselineCache = { key, value: planShopping(buildPlan(ranked, P, kinds, [], { lambda: 0, noJitter: true }).filter(Boolean)).distinct };
   }
   return baselineCache.value;
 }

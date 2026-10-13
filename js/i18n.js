@@ -27,6 +27,19 @@ const STR = {
     opt_n: v => `${v.n} ingrédients à acheter : les recettes de la semaine partagent un maximum d’ingrédients.`,
     opt_off: 'Désactivé : les recettes sont choisies sans chercher à partager les ingrédients.',
     plan_recomputed: 'Menu recalculé', shared_n: v => `♻️ ${v.n} en commun`, shared_title: 'Aussi utilisé dans une autre recette de la semaine',
+    today_lunch: 'Ce midi', day_lunch: v => `${v.d} midi`, day_dinner: v => `${v.d} soir`, lunch: 'Midi', dinner: 'Soir',
+    lunch_too: 'Repas du midi aussi ?', no: 'Non', yes_lunch: 'Oui, midi et soir', portions_per_lunch: 'Portions par déjeuner',
+    stat_lunches: v => `<b>${v.n}</b> ${pl(v.n, 'déjeuner', 'déjeuners')}`, add_meals: v => `Compléter (${v.n} repas)`,
+    add_lunches: 'Ajouter les midis', remove_lunches: 'Retirer les midis', lunches_added: 'Midis ajoutés au menu', lunches_removed: 'Midis retirés du menu',
+    slot_settings: 'Portions et options du repas', slot_off_short: 'Je ne mange pas ce repas · retiré des courses',
+    portions_hint: 'Les quantités des courses suivent', slot_eat: 'Je mange ce repas',
+    slot_on_sub: 'Décochez si vous ne mangez pas ici ce jour-là : la recette sort de la liste de courses.',
+    slot_off_sub: 'Exclu : la recette ne compte plus dans la liste de courses.', slot_removed: 'Repas exclu des courses', slot_restored: 'Repas remis au menu',
+    or_alts: v => `ou : ${v.a}`, past_hidden: v => `${v.n} ${pl(v.n, 'repas passé masqué', 'repas passés masqués')} de la liste`,
+    past_shown: v => `${v.n} ${pl(v.n, 'repas passé affiché', 'repas passés affichés')}`, hide: 'Masquer', show: 'Afficher',
+    n_meals: v => `${v.n} repas`, week_lunch_value: v => `+ midis · ${v.p} pers.`,
+    instead_of: v => `au lieu de : ${v.x}`, buy_as: v => `dans les courses : ${v.x}`, alternatives: 'Alternatives', replace_with: 'Remplacer par :',
+    alt_hint: '↔ = ingrédient remplaçable : choisissez une alternative, la liste de courses suit.',
     nav_menu: 'Semaine', nav_recipes: 'Recettes', nav_shop: 'Courses', nav_profile: 'Profil',
     loading_title: 'On prépare la cuisine…', loading_msg: 'Récupération de la base de plats TheMealDB',
     loading_count: v => `${v.n} plats récupérés (${v.d}/${v.t})`, api_fallback: 'API injoignable : copie locale utilisée',
@@ -108,6 +121,19 @@ const STR = {
     opt_n: v => `${v.n} ingredients to buy: this week’s recipes share as many ingredients as possible.`,
     opt_off: 'Off: recipes are chosen without trying to share ingredients.',
     plan_recomputed: 'Menu recalculated', shared_n: v => `♻️ ${v.n} shared`, shared_title: 'Also used in another recipe this week',
+    today_lunch: 'Lunch today', day_lunch: v => `${v.d} lunch`, day_dinner: v => `${v.d} dinner`, lunch: 'Lunch', dinner: 'Dinner',
+    lunch_too: 'Lunches too?', no: 'No', yes_lunch: 'Yes, lunch and dinner', portions_per_lunch: 'Servings per lunch',
+    stat_lunches: v => `<b>${v.n}</b> ${pl(v.n, 'lunch', 'lunches')}`, add_meals: v => `Fill in (${v.n} ${pl(v.n, 'meal', 'meals')})`,
+    add_lunches: 'Add lunches', remove_lunches: 'Remove lunches', lunches_added: 'Lunches added to the menu', lunches_removed: 'Lunches removed from the menu',
+    slot_settings: 'Servings and meal options', slot_off_short: 'Not eating this meal · removed from shopping',
+    portions_hint: 'Shopping quantities follow', slot_eat: 'I’m eating this meal',
+    slot_on_sub: 'Untick if you won’t eat here that day: the recipe leaves the shopping list.',
+    slot_off_sub: 'Skipped: the recipe no longer counts in the shopping list.', slot_removed: 'Meal removed from shopping', slot_restored: 'Meal back on the menu',
+    or_alts: v => `or: ${v.a}`, past_hidden: v => `${v.n} past ${pl(v.n, 'meal', 'meals')} hidden from the list`,
+    past_shown: v => `${v.n} past ${pl(v.n, 'meal', 'meals')} shown`, hide: 'Hide', show: 'Show',
+    n_meals: v => `${v.n} ${pl(v.n, 'meal', 'meals')}`, week_lunch_value: v => `+ lunches · ${v.p} ${pl(v.p, 'person', 'people')}`,
+    instead_of: v => `instead of: ${v.x}`, buy_as: v => `on the list as: ${v.x}`, alternatives: 'Alternatives', replace_with: 'Replace with:',
+    alt_hint: '↔ = swappable ingredient: pick an alternative and the shopping list follows.',
     nav_menu: 'Week', nav_recipes: 'Recipes', nav_shop: 'Shopping', nav_profile: 'Profile',
     loading_title: 'Getting the kitchen ready…', loading_msg: 'Fetching the TheMealDB recipe database',
     loading_count: v => `${v.n} dishes fetched (${v.d}/${v.t})`, api_fallback: 'API unreachable: using the offline copy',
@@ -189,6 +215,19 @@ const STR = {
     opt_n: v => `需购买 ${v.n} 种食材：本周菜谱尽量共用食材。`,
     opt_off: '已关闭：选菜时不考虑共用食材。',
     plan_recomputed: '菜单已重新生成', shared_n: v => `♻️ 共用 ${v.n} 种`, shared_title: '本周其他菜谱也会用到',
+    today_lunch: '今天午餐', day_lunch: v => `${v.d}午餐`, day_dinner: v => `${v.d}晚餐`, lunch: '午餐', dinner: '晚餐',
+    lunch_too: '也安排午餐吗？', no: '不用', yes_lunch: '要，午餐和晚餐', portions_per_lunch: '每顿午餐份数',
+    stat_lunches: v => `<b>${v.n}</b> 顿午餐`, add_meals: v => `补全（${v.n} 顿）`,
+    add_lunches: '添加午餐', remove_lunches: '移除午餐', lunches_added: '已添加午餐', lunches_removed: '已移除午餐',
+    slot_settings: '份数和用餐选项', slot_off_short: '这顿不吃 · 已从购物清单移除',
+    portions_hint: '购物数量随之调整', slot_eat: '我吃这顿',
+    slot_on_sub: '如果当天这顿不在家吃，请关闭：菜谱会从购物清单中移除。',
+    slot_off_sub: '已排除：该菜谱不再计入购物清单。', slot_removed: '已从购物清单移除', slot_restored: '已恢复到菜单',
+    or_alts: v => `或：${v.a}`, past_hidden: v => `已隐藏 ${v.n} 顿过去的餐`,
+    past_shown: v => `正在显示 ${v.n} 顿过去的餐`, hide: '隐藏', show: '显示',
+    n_meals: v => `${v.n} 顿`, week_lunch_value: v => `+ 午餐 · ${v.p} 人`,
+    instead_of: v => `代替：${v.x}`, buy_as: v => `清单中为：${v.x}`, alternatives: '替代食材', replace_with: '替换为：',
+    alt_hint: '↔ = 可替换食材：选择替代品后，购物清单会同步更新。',
     nav_menu: '本周', nav_recipes: '菜谱', nav_shop: '购物', nav_profile: '我的',
     loading_title: '正在准备厨房…', loading_msg: '正在获取 TheMealDB 菜谱库',
     loading_count: v => `已获取 ${v.n} 道菜（${v.d}/${v.t}）`, api_fallback: '无法连接接口：使用离线副本',
@@ -400,4 +439,54 @@ function setLang(id) {
   if (!LANGS.some(l => l.id === id)) return;
   store.set('qm_lang', id);
   location.reload();
+}
+
+// ---------- Recettes traduites ----------
+// Noms traduits embarqués (js/recipe-names.js). Les instructions, et les noms des recettes ajoutées ensuite à l'API,
+// sont traduits à la volée puis gardés en cache sur l'appareil.
+const RECIPE_CACHE_KEY = 'qm_tr_' + LANG;
+const recipeCache = LANG === 'en' ? {} : store.get(RECIPE_CACHE_KEY, {});
+const GTX_LANG = { fr: 'fr', zh: 'zh-CN' };
+
+const mealName = (m) => (LANG !== 'en' && ((RECIPE_NAMES[m.id] || {})[LANG] || (recipeCache[m.id] || [])[0])) || m.name;
+const mealInstr = (m) => (LANG !== 'en' && (recipeCache[m.id] || [])[1]) || m.instr;
+const needsTranslation = (m) => LANG !== 'en' && !!m && !!m.instr && !(recipeCache[m.id] || [])[1];
+
+async function gtxTranslate(text) {
+  const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${GTX_LANG[LANG]}&dt=t`, {
+    method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }, body: 'q=' + encodeURIComponent(text),
+  });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  return (await res.json())[0].filter(Boolean).map(x => x[0] || '').join('');
+}
+const saveRecipeCache = () => store.set(RECIPE_CACHE_KEY, recipeCache);
+
+/** Traduit nom + instructions d'une recette ; renvoie true si la traduction a réussi. */
+async function translateMeal(m) {
+  if (!needsTranslation(m)) return false;
+  try {
+    const name = (recipeCache[m.id] || [])[0] || (RECIPE_NAMES[m.id] ? null : (await gtxTranslate(m.name)).trim());
+    let instr = '';
+    for (let i = 0; i < m.instr.length; i += 4000) instr += await gtxTranslate(m.instr.slice(i, i + 4000));
+    recipeCache[m.id] = [name, instr.trim()];
+    saveRecipeCache();
+    return true;
+  } catch (e) { console.warn('Traduction impossible', e); return false; }
+}
+
+/** Traduit en lot les noms de recettes qui n'en ont pas ; renvoie le nombre de noms traduits. */
+async function translateNames(meals) {
+  if (LANG === 'en') return 0;
+  const todo = meals.filter(m => !RECIPE_NAMES[m.id] && !recipeCache[m.id]);
+  let n = 0;
+  for (let i = 0; i < todo.length; i += 40) {
+    const batch = todo.slice(i, i + 40);
+    try {
+      const out = (await gtxTranslate(batch.map(m => m.name.replace(/\n/g, ' ')).join('\n'))).split('\n');
+      if (out.length !== batch.length) continue;
+      batch.forEach((m, j) => { recipeCache[m.id] = [out[j].trim(), null]; n++; });
+    } catch { break; }
+  }
+  if (n) saveRecipeCache();
+  return n;
 }
