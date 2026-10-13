@@ -25,7 +25,7 @@ const ICON = {
 
 const DEFAULT_PREFS = {
   objectives: [], craving: null, diet: null, avoid: [], nutrition: [],
-  cuisines: {}, flavours: {}, proteins: {}, dishes: {}, nights: 4, portions: 2, lunch: false, lunchPortions: 2, budget: 'none',
+  cuisines: {}, flavours: {}, proteins: {}, dishes: {}, noIngr: [], nights: 4, portions: 2, lunch: false, lunchPortions: 2, budget: 'none',
 };
 // Données du menu en plus des dîners : déjeuners (par jour), réglages par repas { id: { p: portions, off: 1 } },
 // alternatives choisies { 'idPlat|ingrédient': produit }, produits indisponibles au magasin (noms français).
@@ -46,7 +46,8 @@ const S = {
   recipeTab: 'ingr',
   shopChecked: store.get('qm_shop', {}),
   draft: null, step: 0, view: 'menu',
-  explore: { q: '', quick: false, veggie: false, cuisine: '', limit: 24 },
+  explore: { q: '', mode: 'fav', quick: false, veggie: false, light: false, mild: false, cheap: false, cuisine: '', limit: 24, fq: '' },
+  fridge: store.get('qm_fridge', []), // ingrédients à la maison : [{ k: clé d'achat, en: nom TheMealDB }]
   swapped: new Set(),
   rep: {},
 };
@@ -55,7 +56,7 @@ const saveLocal = () => {
   store.set('qm_prefs', S.prefs); store.set('qm_feedback', S.feedback);
   store.set('qm_plan', S.planIds); store.set('qm_shop', S.shopChecked);
   store.set('qm_plan_start', S.planStart); store.set('qm_shop_mode', S.shopMode);
-  store.set('qm_week', S.week);
+  store.set('qm_week', S.week); store.set('qm_fridge', S.fridge);
 };
 // État partagé avec les autres appareils du foyer.
 const sharedState = () => ({
@@ -257,6 +258,7 @@ function computeRepresentatives() {
 // ---------- Questionnaire ----------
 function startWizard(fromPrefs = false) {
   S.draft = JSON.parse(JSON.stringify(fromPrefs && S.prefs ? S.prefs : DEFAULT_PREFS));
+  S.draft.noIngr = S.draft.noIngr || [];
   S.step = 0;
   $('#nav').hidden = true;
   $('#wizard-bar').hidden = false;
@@ -317,7 +319,9 @@ const STEPS = [
     render: d => `<div class="grid tiles">
       <button class="opt center" data-action="skip-avoid">${t('skip')}</button>
       ${AVOID.map(a => `<button class="opt ${d.avoid.includes(a.id) ? 'on' : ''}" data-action="toggle" data-key="avoid" data-val="${a.id}">
-        <span class="icon">${icon(a.icon)}</span>${L('avoid', a)}</button>`).join('')}</div>`,
+        <span class="icon">${icon(a.icon)}</span>${L('avoid', a)}</button>`).join('')}</div>
+      <h3 class="seg-label">${t('s5_no_ingr')}</h3>
+      <div class="ingr-chips">${NO_INGR.map(x => noIngrChip(x, d.noIngr.includes(x.id), 'toggle', 'data-key="noIngr" data-val="' + x.id + '"')).join('')}</div>`,
   },
   {
     title: () => t('s6_title'), sub: () => t('s6_sub'),
@@ -471,9 +475,13 @@ function tagsFor(m, max = 4, basics = true) {
     out.push(`<span class="tag">${esc(cuisineLabel(f.cuisine))}</span>`);
   }
   out.push(`<span class="tag ${budgetMax(S.prefs || {}) && mealPrice(m) > budgetMax(S.prefs) ? 'red' : ''}">${icon('piggy-bank')}${t('per_part', { p: fmtEuro(mealPrice(m)) })}</span>`);
+  out.push(`<span class="tag" title="${t('kcal_title')}">${icon('zap')}≈ ${t('kcal', { n: mealKcal(m) })}</span>`);
   if (f.isVeggie) out.push(`<span class="tag green">${icon('leaf')}${t('tag_veg')}</span>`);
   else if (f.main !== 'veg') out.push(`<span class="tag">${esc(proteinLabel(f.main))}</span>`);
   if (f.hot >= 2) out.push(`<span class="tag red">${icon('flame')}${t('tag_hot')}</span>`);
+  if (f.spiced >= 3) out.push(`<span class="tag">${icon('sparkles')}${t('b_spiced')}</span>`);
+  if (f.sweet >= 3) out.push(`<span class="tag">${icon('candy')}${t('b_sweet')}</span>`);
+  if (f.cheese >= 2) out.push(`<span class="tag">${icon('cheese')}${t('b_cheese')}</span>`);
   if (f.heavy === 0) out.push(`<span class="tag green">${t('tag_light')}</span>`);
   if (f.overnight) out.push(`<span class="tag">${icon('moon')}${t('tag_overnight')}</span>`);
   return out.length ? `<div class="tags">${out.slice(0, max).join('')}</div>` : '';
@@ -606,7 +614,7 @@ function slotRow(x, showDate, shared = new Set()) {
   const m = x.m, d = dayInfo(x.day);
   let common = 0; if (!x.off) freshKeys(m).forEach(k => shared.has(k) && common++);
   const meta = x.off ? t('slot_off_short')
-    : `${fmtMinutes(m.f.time)} · ${esc(cuisineLabel(m.f.cuisine))}${m.f.isVeggie ? ` · <span class="veg">${icon('leaf')}</span>` : ''}${common ? ` · <span class="common">${icon('recycle')}${t('shared_n', { n: common })}</span>` : ''}`;
+    : `${fmtMinutes(m.f.time)} · ${t('kcal', { n: mealKcal(m) })} · ${esc(cuisineLabel(m.f.cuisine))}${m.f.isVeggie ? ` · <span class="veg">${icon('leaf')}</span>` : ''}${common ? ` · <span class="common">${icon('recycle')}${t('shared_n', { n: common })}</span>` : ''}`;
   return `<div class="day-row ${x.off ? 'off' : ''} ${x.past ? 'past' : ''}">
     <div class="day-date ${d.diff === 0 ? 'today' : ''} ${showDate ? '' : 'ghost'}"><span>${d.short}</span><b>${d.num}</b></div>
     <button class="day-card" data-action="open" data-id="${m.id}">
@@ -643,57 +651,228 @@ function openSlotSheet(id) {
 }
 
 // ----- Recettes -----
+// Onglets : favoris (par défaut), recettes pour moi, toute la base, ou ce qu'on peut cuisiner avec son frigo.
+const EXPLORE_TABS = [['fav', 'heart'], ['forme', 'smile'], ['all', 'book-open'], ['fridge', 'refrigerator']];
+const favIds = () => Object.keys(S.feedback).filter(id => S.feedback[id] === 1 && S.byId.has(id)).reverse();
+const fold = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+function exploreBase() {
+  const mode = S.explore.mode;
+  if (mode === 'fav') return favIds().map(rankedOf);
+  if (mode === 'all') {
+    const rest = S.db.filter(m => !S.rankedById.has(m.id)).sort((a, b) => mealName(a).localeCompare(mealName(b)))
+      .map(m => ({ m, score: null, reasons: [], out: true }));
+    return [...S.ranked, ...rest];
+  }
+  return S.ranked;
+}
+
 function exploreResults() {
   const E = S.explore;
-  const q = E.q.trim().toLowerCase();
-  let list = S.ranked;
-  if (q) list = list.filter(({ m }) => (m.name + ' ' + mealName(m) + ' ' + cuisineLabel(m.f.cuisine) + ' ' + m.country + ' ' + m.ingr.map(i => i.n + ' ' + trIng(i.n)).join(' ')).toLowerCase().includes(q));
+  if (E.mode === 'fridge') return fridgeResults();
+  const q = fold(E.q.trim());
+  let list = exploreBase();
+  if (q) list = list.filter(({ m }) => fold(m.name + ' ' + mealName(m) + ' ' + cuisineLabel(m.f.cuisine) + ' ' + m.country + ' ' + m.ingr.map(i => i.n + ' ' + trIng(i.n)).join(' ')).includes(q));
   if (E.quick) list = list.filter(({ m }) => m.f.time <= 30);
   if (E.veggie) list = list.filter(({ m }) => m.f.isVeggie);
+  if (E.light) list = list.filter(({ m }) => mealKcal(m) <= 550);
+  if (E.mild) list = list.filter(({ m }) => m.f.hot === 0);
+  if (E.cheap) list = list.filter(({ m }) => mealPrice(m) <= 2.5);
   if (E.cuisine) list = list.filter(({ m }) => m.f.cuisine === E.cuisine);
   return list;
 }
 
+// Petits pictos sur la photo : pimenté, épicé, sucré, fromage, végé, rapide + calories.
+function tileBadges(m) {
+  const f = m.f, b = [];
+  if (f.hot >= 2) b.push(['flame', 'b_hot', 'hot']);
+  if (f.spiced >= 3) b.push(['sparkles', 'b_spiced', 'spiced']);
+  if (f.sweet >= 3) b.push(['candy', 'b_sweet', 'sweet']);
+  if (f.cheese >= 2) b.push(['cheese', 'b_cheese', 'cheese']);
+  if (f.isVeggie) b.push(['leaf', 'b_veg', 'veg']);
+  if (f.time <= 25) b.push(['timer', 'b_quick', 'quick']);
+  return `<span class="tile-badges">${b.slice(0, 4).map(([ico, k, cls]) => `<i class="bdg ${cls}" title="${t(k)}" aria-label="${t(k)}">${icon(ico)}</i>`).join('')}<i class="bdg kcal" title="${t('kcal_title')}">${t('kcal', { n: mealKcal(m) })}</i></span>`;
+}
+
 function recipeTile(r) {
-  const m = r.m, inPlan = inWeek(m.id), pct = matchPct(r.score);
-  return `<article class="tile" data-action="open" data-id="${m.id}">
+  const m = r.m, inPlan = inWeek(m.id), pct = r.out ? null : matchPct(r.score), fav = S.feedback[m.id] === 1;
+  const sub = r.fridge
+    ? `<small class="fridge-line ${r.fridge.miss.length ? '' : 'ok'}">${r.fridge.miss.length ? esc(t('fridge_missing', { l: r.fridge.miss.slice(0, 3).join(', ') + (r.fridge.miss.length > 3 ? '…' : '') })) : ICON.check + t('fridge_all')}</small>`
+    : `<small>${fmtMinutes(m.f.time)} · ${esc(cuisineLabel(m.f.cuisine))}${r.out ? ` · <span class="out">${t('out_of_taste')}</span>` : ''}</small>`;
+  return `<article class="tile ${r.out ? 'is-out' : ''}" data-action="open" data-id="${m.id}">
     <div class="tile-pic">${img(med(m.thumb), mealName(m))}
-      ${pct ? `<span class="tile-match">${pct} %</span>` : ''}
+      ${r.fridge ? `<span class="tile-match">${t('fridge_have', { h: r.fridge.have, t: r.fridge.total })}</span>` : pct ? `<span class="tile-match">${pct} %</span>` : ''}
+      <button class="tile-fav ${fav ? 'on' : ''}" data-action="like" data-id="${m.id}" aria-label="${t('fav_add')}" aria-pressed="${fav}">${icon('heart')}</button>
+      ${tileBadges(m)}
       <button class="tile-add ${inPlan ? 'on' : ''}" data-action="${inPlan ? 'noop' : 'add'}" data-id="${m.id}" aria-label="${inPlan ? t('in_week') : t('add_week')}">${inPlan ? ICON.check : ICON.plus}</button>
     </div>
-    <div class="tile-body"><b>${esc(mealName(m))}</b><small>${fmtMinutes(m.f.time)} · ${esc(cuisineLabel(m.f.cuisine))}</small></div>
+    <div class="tile-body"><b>${esc(mealName(m))}</b>${sub}</div>
   </article>`;
 }
 
-function renderExploreResults() {
-  const list = exploreResults();
-  $('#explore-results').innerHTML = list.length
-    ? `<p class="result-count">${t('result_count', { n: list.length })}</p>
-       <div class="tiles">${list.slice(0, S.explore.limit).map(recipeTile).join('')}</div>
-       ${list.length > S.explore.limit ? `<div class="more"><button class="btn" data-action="more">${t('more_recipes')}</button></div>` : ''}`
-    : `<div class="empty"><div class="empty-ico">${icon('search')}</div><h2>${t('no_recipe_title')}</h2><p class="sub">${t('no_recipe_sub')}</p></div>`;
+function renderExploreTabs() {
+  const nFav = favIds().length;
+  $('#explore-tabs').innerHTML = EXPLORE_TABS.map(([id, ico]) =>
+    `<button class="${S.explore.mode === id ? 'on' : ''}" data-action="explore-mode" data-id="${id}">${icon(ico)}<span>${t('tab_' + id)}${id === 'fav' && nFav ? ` <em>${nFav}</em>` : ''}</span></button>`).join('');
 }
 
-function renderExplore() {
+function renderExplorePanel() {
   const E = S.explore;
-  app.innerHTML = `
-    <section class="page-head">
-      <p class="eyebrow">${t('recipes_for_you', { n: S.ranked.length })}</p>
-      <h1>${t('recipes_title')}</h1>
-    </section>
+  if (E.mode === 'fridge') { $('#explore-panel').innerHTML = fridgePanel(); bindIngrSearch('#fridge-q', '#fridge-sugg', 'fridge-add'); return; }
+  const nNo = (S.prefs.noIngr || []).length;
+  $('#explore-panel').innerHTML = `
     <div class="search">
       ${ICON.search}
       <input type="search" id="q" placeholder="${t('search_ph')}" value="${esc(E.q)}" autocomplete="off">
     </div>
     <div class="chip-row filters-row">
-      <button class="toggle ${E.quick ? 'on' : ''}" data-action="filter" data-key="quick">${icon('timer')}${t('quick')}</button>
-      <button class="toggle ${E.veggie ? 'on' : ''}" data-action="filter" data-key="veggie">${icon('leaf')}${t('veggie')}</button>
+      ${[['quick', 'timer'], ['veggie', 'leaf'], ['light', 'zap'], ['mild', 'snowflake'], ['cheap', 'piggy-bank']].map(([k, ico]) =>
+        `<button class="toggle ${E[k] ? 'on' : ''}" data-action="filter" data-key="${k}">${icon(ico)}${t(k === 'quick' || k === 'veggie' ? k : 'f_' + k)}</button>`).join('')}
+      <button class="toggle ${nNo ? 'on' : ''}" data-action="no-ingr">${icon('ban')}${t('no_ingr_btn', { n: nNo })}</button>
+    </div>
+    <div class="chip-row filters-row">
       <button class="toggle ${!E.cuisine ? 'on' : ''}" data-action="cuisine" data-id="">${t('all')}</button>
       ${CUISINES.map(c => `<button class="toggle ${E.cuisine === c.id ? 'on' : ''}" data-action="cuisine" data-id="${c.id}">${L('cuisines', c)}</button>`).join('')}
-    </div>
-    <div id="explore-results"></div>`;
-  renderExploreResults();
+    </div>`;
   $('#q').addEventListener('input', e => { E.q = e.target.value; E.limit = 24; renderExploreResults(); });
+}
+
+function renderExploreResults() {
+  const E = S.explore, list = exploreResults();
+  renderExploreTabs();
+  let empty = `<div class="empty"><div class="empty-ico">${icon('search')}</div><h2>${t('no_recipe_title')}</h2><p class="sub">${t('no_recipe_sub')}</p></div>`;
+  if (E.mode === 'fav' && !favIds().length) empty = `<div class="empty"><div class="empty-ico">${icon('heart')}</div><h2>${t('no_fav_title')}</h2><p class="sub">${t('no_fav_sub')}</p>
+    <div class="menu-tools"><button class="btn primary" data-action="explore-mode" data-id="forme">${t('see_for_me')}</button><button class="btn" data-action="explore-mode" data-id="all">${t('see_all')}</button></div></div>`;
+  if (E.mode === 'fridge' && !S.fridge.length) empty = `<div class="empty"><div class="empty-ico">${icon('refrigerator')}</div><h2>${t('fridge_none_title')}</h2><p class="sub">${t('fridge_none_sub')}</p></div>`;
+  const count = E.mode === 'fav' ? t('fav_count', { n: list.length }) : E.mode === 'all' ? t('all_count', { n: list.length }) : E.mode === 'fridge' ? '' : t('result_count', { n: list.length });
+  $('#explore-results').innerHTML = list.length
+    ? `${count ? `<p class="result-count">${count}</p>` : ''}
+       <div class="tiles">${list.slice(0, E.limit).map(recipeTile).join('')}</div>
+       ${list.length > E.limit ? `<div class="more"><button class="btn" data-action="more">${t('more_recipes')}</button></div>` : ''}`
+    : empty;
+}
+
+function renderExplore() {
+  app.innerHTML = `
+    <section class="page-head">
+      <p class="eyebrow">${t('recipes_for_you', { n: S.ranked.length })}</p>
+      <h1>${t('recipes_title')}</h1>
+    </section>
+    <div class="seg-toggle explore-tabs" id="explore-tabs"></div>
+    <div id="explore-panel"></div>
+    <div id="explore-results"></div>`;
+  renderExplorePanel();
+  renderExploreResults();
+}
+
+// ----- Ingrédients : recherche dans toute la base (frigo, « je n'aime pas ») -----
+let ALL_INGR = null;
+function allIngredients() {
+  if (!ALL_INGR) {
+    const c = new Map();
+    for (const m of S.db) for (const i of m.ingr) { const k = i.n.toLowerCase().trim(); c.set(k, (c.get(k) || 0) + 1); }
+    ALL_INGR = [...c].sort((a, b) => b[1] - a[1]).map(([en]) => ({ en, label: trIng(en) }));
+  }
+  return ALL_INGR;
+}
+function searchIngredients(q, skip = new Set()) {
+  q = fold(q.trim());
+  if (!q) return [];
+  const seen = new Set();
+  return allIngredients().filter(x => {
+    if (skip.has(x.en) || !(fold(x.label).includes(q) || x.en.includes(q))) return false;
+    const k = fold(x.label);
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  }).slice(0, 12);
+}
+// Champ de recherche d'ingrédient : propositions affichées sous le champ, sans perdre le focus.
+function bindIngrSearch(input, box, action, skip = () => new Set()) {
+  const el = $(input);
+  const show = () => {
+    $(box).innerHTML = searchIngredients(el.value, skip()).map(x =>
+      `<button class="chip" data-action="${action}" data-en="${esc(x.en)}">${ICON.plus}${esc(x.label)}</button>`).join('');
+  };
+  el.addEventListener('input', show);
+  el.addEventListener('keydown', e => { if (e.key === 'Enter') { const first = $(box + ' button'); if (first) handleAction(first); } });
+  show();
+}
+
+// ----- Mon frigo -----
+function fridgePanel() {
+  return `<section class="fridge">
+      <p class="sub">${t('fridge_sub')}</p>
+      <div class="search">${ICON.search}<input type="search" id="fridge-q" placeholder="${t('fridge_ph')}" autocomplete="off"></div>
+      <div class="ingr-sugg" id="fridge-sugg"></div>
+      ${S.fridge.length ? `<div class="fridge-items">${S.fridge.map(x => `<button class="chip on" data-action="fridge-del" data-k="${esc(x.k)}">${img(ING_IMG(x.en), '')}${esc(trIng(x.en))}${icon('x')}</button>`).join('')}</div>
+        <button class="btn ghost small" data-action="fridge-clear">${icon('rotate-ccw')} ${t('fridge_clear')}</button>` : ''}
+      <p class="source-note">${t('fridge_basics')}</p>
+    </section>`;
+}
+
+/** Plats classés par nombre d'ingrédients à acheter en plus de ce qu'il y a dans le frigo. */
+function fridgeResults() {
+  if (!S.fridge.length) return [];
+  const have = new Set(S.fridge.map(x => x.k));
+  const out = [];
+  for (const r of S.ranked) {
+    const keys = freshKeys(r.m);
+    if (keys.size < 4 || r.m.f.isSide) continue; // un vrai plat, pas un condiment
+    let n = 0; keys.forEach(k => have.has(k) && n++);
+    if (!n) continue;
+    const miss = [], seen = new Set();
+    for (const i of r.m.ingr) {
+      const info = ingInfo(i.n);
+      if (info.skip || info.pantry) continue;
+      const k = buyKey(info);
+      if (!have.has(k) && !seen.has(k)) { seen.add(k); miss.push(trIng(i.n)); }
+    }
+    out.push({ ...r, fridge: { have: n, total: keys.size, miss } });
+  }
+  // d'abord les plats qui utilisent le plus ce qu'on a, chaque ingrédient manquant coûtant un peu moins qu'un ingrédient utilisé
+  const val = (r) => r.fridge.have - r.fridge.miss.length * 0.7;
+  return out.sort((a, b) => val(b) - val(a) || b.score - a.score);
+}
+
+// ----- Ingrédients que je n'aime pas -----
+let noIngrDraft = null;
+const noIngrLabel = (id) => {
+  if (id.startsWith('i:')) return trIng(id.slice(2));
+  const x = NO_INGR_BY_ID.get(id);
+  return x ? (LANG === 'fr' ? x.label : LANG === 'en' ? x.en : x.zh) : id;
+};
+const noIngrChip = (x, on, action, attrs = `data-id="${x.id}"`) =>
+  `<button class="chip ingr-chip ${on ? 'on' : ''}" data-action="${action}" ${attrs}>${img(ING_IMG(x.img), '')}${esc(noIngrLabel(x.id))}</button>`;
+
+function openNoIngrSheet() {
+  noIngrDraft = noIngrDraft || [...(S.prefs.noIngr || [])];
+  modalId = null;
+  const custom = noIngrDraft.filter(id => id.startsWith('i:'));
+  $('#modal-body').innerHTML = `
+    <div class="sheet-top"><button class="back" data-action="close-modal">${ICON.back} ${t('back')}</button><b>${t('no_ingr_title')}</b><span></span></div>
+    <div class="recipe-body settings">
+      <p class="sub">${t('no_ingr_sub')}</p>
+      <div class="ingr-chips">${NO_INGR.map(x => noIngrChip(x, noIngrDraft.includes(x.id), 'noingr-toggle')).join('')}</div>
+      <div class="search" style="margin-top:18px">${ICON.search}<input type="search" id="noingr-q" placeholder="${t('no_ingr_search')}" autocomplete="off"></div>
+      <div class="ingr-sugg" id="noingr-sugg"></div>
+      ${custom.length ? `<div class="fridge-items">${custom.map(id => `<button class="chip on" data-action="noingr-toggle" data-id="${esc(id)}">${img(ING_IMG(id.slice(2)), '')}${esc(noIngrLabel(id))}${icon('x')}</button>`).join('')}</div>` : ''}
+      <div class="prefs-actions"><button class="btn primary" data-action="noingr-save">${t('save')}</button></div>
+    </div>`;
+  showSheet();
+  bindIngrSearch('#noingr-q', '#noingr-sugg', 'noingr-add', () => new Set(custom.map(id => id.slice(2))));
+}
+
+/** Enregistre les ingrédients refusés et remplace les plats de la semaine qui en contiennent. */
+function saveNoIngr() {
+  S.prefs.noIngr = noIngrDraft;
+  noIngrDraft = null;
+  rerank();
+  let n = 0;
+  for (const x of weekSlots()) if (dislikedIngr(x.m, S.prefs.noIngr) && swapAt(x.id)) n++;
+  save(); closeModal();
+  toast(t('no_ingr_saved', { n }));
+  if (S.view === 'explore') renderExplorePanel();
+  refreshCurrent();
 }
 
 // ----- Courses -----
@@ -912,6 +1091,7 @@ function renderPrefs() {
     ['smile', t('row_craving'), esc(list([P.craving].filter(Boolean), CRAVINGS, 'cravings'))],
     ['salad', t('row_diet'), esc(list([P.diet].filter(Boolean), DIETS, 'diets'))],
     ['ban', t('row_avoid'), esc(list(P.avoid, AVOID, 'avoid'))],
+    ['thumbs-down', t('row_no_ingr'), esc((P.noIngr || []).map(noIngrLabel).join(', ') || '—')],
     ['dumbbell', t('row_nutrition'), esc(list(P.nutrition, NUTRITION, 'nutrition'))],
     ['earth', t('row_cuisines'), vote(P.cuisines, CUISINES, 'cuisines')],
     ['flame', t('row_flavours'), vote(P.flavours, FLAVOURS, 'flavours')],
@@ -931,6 +1111,8 @@ function renderPrefs() {
     <button class="cta-card" data-action="edit-prefs">
       <span class="cta-ico">${icon('pencil')}</span><span><b>${t('redo_quiz')}</b><small>${t('redo_quiz_sub')}</small></span>${ICON.chev}
     </button>
+    <button class="cta-card light" data-action="no-ingr"><span class="cta-ico">${icon('ban')}</span><span><b>${t('no_ingr_title')}</b><small>${esc((P.noIngr || []).map(noIngrLabel).join(', ')) || t('no_ingr_edit')}</small></span>${ICON.chev}</button>
+    <button class="cta-card light" data-action="goto-fav"><span class="cta-ico">${icon('heart')}</span><span><b>${t('tab_fav')}</b><small>${t('fav_count', { n: favIds().length })}</small></span>${ICON.chev}</button>
     <button class="cta-card light" data-action="lang"><span class="cta-ico">${icon('globe')}</span><span><b>${t('language')}</b><small>${langInfo().label}</small></span>${ICON.chev}</button>
     ${syncCard()}
     <div class="prefs">${rows.map(([ico, k, v]) => `<div class="row"><span class="row-ico">${icon(ico)}</span><div><b>${k}</b><div>${v}</div></div></div>`).join('')}</div>
@@ -1035,7 +1217,7 @@ function renderRecipe() {
       <button class="back" data-action="close-modal" aria-label="${t('back')}">${ICON.back}<span>${t('back')}</span></button>
       <span></span>
       <div class="top-actions">
-        <button class="round-btn ${fb === 1 ? 'on' : ''}" data-action="like" data-id="${m.id}" title="${t('like')}" aria-label="${t('like')}">${ICON.up}</button>
+        <button class="round-btn fav ${fb === 1 ? 'on' : ''}" data-action="like" data-id="${m.id}" title="${t('fav_add')}" aria-label="${t('fav_add')}" aria-pressed="${fb === 1}">${icon('heart')}</button>
         <button class="round-btn" data-action="dislike" data-id="${m.id}" title="${t('dislike')}" aria-label="${t('dislike')}">${ICON.down}</button>
       </div>
     </div>
@@ -1051,7 +1233,7 @@ function renderRecipe() {
         <div><span>${t('f_ingredients')}</span><b>${m.ingr.length}</b></div>
         <div class="fact-portions"><span>${t('f_portions')}</span><span class="stepper small"><button data-action="mportions" data-dir="-1" aria-label="${t('less')}">−</button><b>${modalPortions}</b><button data-action="mportions" data-dir="1" aria-label="${t('more')}">+</button></span></div>
       </div>
-      ${tagsFor(m, 6, false)}
+      ${tagsFor(m, 9, false)}
       ${r && r.reasons.length ? `<p class="why"><b>${t('for_you')}</b> ${r.reasons.map(x => esc(reasonText(x))).join(' · ')}</p>` : ''}
 
       <div class="seg-toggle recipe-tabs">
@@ -1285,6 +1467,7 @@ async function handleAction(el) {
   switch (action) {
     case 'home': if (S.prefs && !S.draft) showView('menu'); break;
     case 'goto': showView(view); break;
+    case 'goto-fav': S.explore.mode = 'fav'; showView('explore'); break;
     case 'open': openRecipe(id); break;
     case 'close-modal': closeModal(); break;
     case 'regen': newPlan(); renderMenu(); updateCartBadge(); toast(t('new_week_toast')); break;
@@ -1363,7 +1546,7 @@ async function handleAction(el) {
     case 'like':
       S.feedback[id] = S.feedback[id] === 1 ? undefined : 1;
       if (S.feedback[id] === undefined) delete S.feedback[id];
-      save(); rerank(); refreshCurrent(); break;
+      save(); rerank(); refreshCurrent(); toast(S.feedback[id] === 1 ? t('fav_added') : t('fav_removed')); break;
     case 'dislike': {
       S.feedback[id] = -1;
       rerank();
@@ -1379,6 +1562,25 @@ async function handleAction(el) {
       document.querySelectorAll('[data-action=cuisine]').forEach(b => b.classList.toggle('on', b === el));
       renderExploreResults(); break;
     case 'more': S.explore.limit += 24; renderExploreResults(); break;
+    case 'explore-mode': S.explore.mode = id; S.explore.limit = 24; renderExplorePanel(); renderExploreResults(); break;
+    case 'no-ingr': noIngrDraft = null; openNoIngrSheet(); break;
+    case 'noingr-toggle': case 'noingr-add': {
+      const v = action === 'noingr-add' ? 'i:' + el.dataset.en : id;
+      noIngrDraft = noIngrDraft.includes(v) ? noIngrDraft.filter(x => x !== v) : [...noIngrDraft, v];
+      const y = $('.modal-card').scrollTop; openNoIngrSheet(); $('.modal-card').scrollTop = y;
+      if (action === 'noingr-add') $('#noingr-q').focus();
+      break;
+    }
+    case 'noingr-save': saveNoIngr(); break;
+    case 'fridge-add': case 'fridge-del': case 'fridge-clear': {
+      if (action === 'fridge-add') {
+        const k = buyKey(ingInfo(el.dataset.en));
+        if (!S.fridge.some(x => x.k === k)) S.fridge.push({ k, en: el.dataset.en });
+      } else S.fridge = action === 'fridge-clear' ? [] : S.fridge.filter(x => x.k !== el.dataset.k);
+      saveLocal(); S.explore.limit = 24; renderExplorePanel(); renderExploreResults();
+      if (action === 'fridge-add') $('#fridge-q').focus();
+      break;
+    }
     case 'mportions': {
       modalPortions = Math.min(12, Math.max(1, modalPortions + +el.dataset.dir));
       // recette de la semaine : les portions sont mémorisées pour ce repas (et la liste de courses suit)

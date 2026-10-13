@@ -62,20 +62,26 @@ function priceRule(info) {
   return r ? r[1] : { kg: RAYON_PRICE[info.rayon] ?? 5 };
 }
 
+/** Poids (g, ou ml ≈ g) d'une mesure de recette déjà analysée. */
+function measureGrams(p, info, rule = priceRule(info)) {
+  // poids d'une pièce : une gousse de cardamome ou une feuille de laurier ne pèsent qu'un gramme
+  const pieceG = rule.w || (info.rayon === 'es' ? 1 : 120);
+  if (p.unit === 'pièce') return p.v * pieceG;
+  return p.unit === 'g' || p.unit === 'ml' ? p.v
+    : p.unit === 'cs' ? p.v * 15 : p.unit === 'cc' ? p.v * 5
+      : p.unit === 'tête' ? p.v * (rule.w || 400) : p.unit === 'bâton' ? p.v * (/cannelle/i.test(info.fr) ? 3 : 40)
+        : p.v * (UNIT_G[p.unit] ?? 100);
+}
+
 /** Coût (€) d'un ingrédient pour la quantité indiquée dans la recette. */
 function ingredientCost(measure, info) {
   const rule = priceRule(info);
   const p = parseMeasure(measure, info);
   if (p.vague) return info.pantry ? 0.02 : 0.15; // « selon goût », « une pincée »…
-  // poids d'une pièce : une gousse de cardamome ou une feuille de laurier ne pèsent qu'un gramme
   const pieceG = rule.w || (info.rayon === 'es' ? 1 : 120);
   const perKg = rule.kg ?? (rule.pc / (pieceG / 1000));
-  if (p.unit === 'pièce') return rule.pc != null ? p.v * rule.pc : p.v * pieceG / 1000 * perKg;
-  const grams = p.unit === 'g' || p.unit === 'ml' ? p.v
-    : p.unit === 'cs' ? p.v * 15 : p.unit === 'cc' ? p.v * 5
-      : p.unit === 'tête' ? p.v * (rule.w || 400) : p.unit === 'bâton' ? p.v * (/cannelle/i.test(info.fr) ? 3 : 40)
-        : p.v * (UNIT_G[p.unit] ?? 100);
-  return grams / 1000 * perKg;
+  if (p.unit === 'pièce' && rule.pc != null) return p.v * rule.pc;
+  return measureGrams(p, info, rule) / 1000 * perKg;
 }
 
 /** Coût estimé d'une portion (les recettes de la base sont prévues pour ~4 personnes). */
@@ -98,3 +104,53 @@ const BUDGETS = [
   { id: 'tight', max: 2.5 }, { id: 'medium', max: 4 }, { id: 'comfy', max: 6 }, { id: 'none', max: null },
 ];
 const budgetMax = (P) => (BUDGETS.find(b => b.id === P.budget) || {}).max ?? null;
+
+// ---------- Calories ----------
+// kcal pour 100 g (ou 100 ml) par produit (nom français normalisé), w = poids d'une pièce si différent de la règle de prix.
+// Ordre de grandeur pour repérer les plats légers ou copieux, pas une fiche nutritionnelle.
+const KCAL_RULES = [
+  [/^eau|glaçons/, 0], [/bouillon|fond de|fumet|cube/, 5], [/concentré de tomate/, 80], [/tomate|coulis|passata/, 25], [/champignon|pleurote|shiitak|cèpe/, 25],
+  [/oignons? nouveaux|ciboule|ciboulette/, 30, 15], [/galettes de riz|feuilles de riz/, 340, 9], [/lait de coco|crème de coco/, 190], [/beurre de cacahuète/, 600],
+  [/huile|graisse|saindoux/, 880], [/beurre|ghee/, 740], [/mayonnaise/, 680],
+  [/sucre|miel|sirop|confiture/, 320], [/chocolat/, 540], [/cacao/, 380],
+  [/amandes|noix|noisettes|pignons|pistaches|cacahuètes|cajou|sésame|graines/, 600],
+  [/crème légère|crème liquide légère/, 150], [/crème/, 300], [/^lait/, 50], [/yaourt|fromage blanc/, 80],
+  [/mascarpone/, 430], [/parmesan|pecorino|comté|gruyère/, 400], [/ricotta|cottage|fromage frais/, 160],
+  [/mozzarella/, 250], [/feta|chèvre|brebis|halloumi|paneer/, 280], [/cheddar|emmental|gouda|fromage/, 380],
+  [/œufs?/, 145, 55],
+  [/lardons|bacon|poitrine fumée|chorizo|saucisse|merguez|salami|pepperoni/, 320], [/jambon cru|parme|serrano|ibérique/, 250], [/jambon/, 120],
+  [/haché/, 220], [/agneau|chèvre/, 250], [/porc|échine|travers/, 220], [/canard/, 250], [/bœuf|veau|bavette|faux-filet|onglet|steak/, 200],
+  [/poulet|dinde|volaille/, 160],
+  [/saumon|truite|maquereau|sardine|hareng|anchois/, 200], [/thon/, 130], [/crevettes|gambas|moules|calamar|palourdes|seiche|poulpe|crabe|homard/, 90],
+  [/poisson|cabillaud|merlu|églefin|haddock|lotte|bar|dorade|vivaneau|morue/, 90],
+  [/tofu/, 140], [/tempeh/, 190],
+  [/pâte (feuilletée|brisée)/, 400], [/pâte filo|feuilles de brick/, 300], [/chapelure/, 380],
+  [/^riz|riz basmati|riz thaï|spaghetti|penne|linguine|tagliatelles|rigatoni|farfalle|macaronis|^pâtes|lasagne|nouilles|vermicelles|semoule|boulgour|quinoa|polenta|farine|maïzena|fécule|lentilles|pois cassés|flocons d'avoine/, 350],
+  [/pain|baguette|ciabatta|pita|naan|brioche|tortillas|galettes/, 270],
+  [/haricots verts|haricots plats|pois gourmands/, 30], [/pois chiches|haricots|cornilles|borlotti/, 130],
+  [/pommes? de terre/, 80], [/patates? douces?/, 86], [/avocat/, 160], [/olives/, 150], [/maïs|petits pois/, 85],
+  [/raisins secs|abricots secs|pruneaux|dattes|cranberries/, 280], [/banane/, 90], [/mangue|ananas|pomme|poire|orange/, 55],
+  [/ketchup|hoisin|barbecue|sauce chili douce/, 130], [/vin|bière|cidre|xérès|saké|mirin/, 80],
+];
+const RAYON_KCAL = { fl: 30, bl: 270, bo: 200, po: 100, ch: 250, cr: 150, fr: 350, ep: 150, mo: 150, sa: 150, es: 250, su: 350, bs: 50, sg: 80 };
+
+/** Calories estimées d'une portion (≈, arrondies à 10 kcal). */
+function mealKcal(m) {
+  if (m.f.kcal == null) {
+    let k = 0;
+    for (const i of m.ingr) {
+      const info = ingInfo(i.n);
+      if (info.skip) continue;
+      const p = parseMeasure(i.m, info);
+      if (p.vague) continue;
+      const n = normFr(info.fr), r = KCAL_RULES.find(([rx]) => rx.test(n));
+      const rule = priceRule(info);
+      const g = measureGrams(p, info, r && r[2] && p.unit === 'pièce' ? { ...rule, w: r[2] } : rule);
+      // la friture ne reste pas dans l'assiette, et garde-fou contre une mesure aberrante
+      const cap = /fry|frying/i.test(i.m) ? 200 : 1600;
+      k += Math.min(g * (r ? r[1] : RAYON_KCAL[info.rayon] ?? 150) / 100, cap);
+    }
+    m.f.kcal = Math.max(150, Math.min(1400, Math.round(k / BASE_SERVINGS / 10) * 10));
+  }
+  return m.f.kcal;
+}

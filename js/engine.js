@@ -193,6 +193,18 @@ const SOFT_ORDER = ['dishes', 'flavours', 'proteins', 'cuisines', 'budget'];
 const DISLIKE = 100;
 const flavourHits = (f) => ({ herbs: f.herbs >= 2, cheese: f.cheese >= 2, sweet: f.sweet >= 2, spiced: f.spiced >= 3, hot: f.hot >= 1 });
 
+/** Premier ingrédient refusé (« je n'aime pas ») présent dans le plat, ou null. noIngr : ids de NO_INGR ou « i:nom anglais ». */
+function dislikedIngr(m, noIngr) {
+  if (!noIngr || !noIngr.length) return null;
+  const names = m.ingr.map(i => i.n.toLowerCase());
+  for (const id of noIngr) {
+    if (id.startsWith('i:')) { if (names.includes(id.slice(2))) return id; continue; }
+    const x = NO_INGR_BY_ID.get(id);
+    if (x && names.some(n => x.rx.test(n) && !(x.not && x.not.test(n)))) return id;
+  }
+  return null;
+}
+
 /**
  * Renvoie { score, reasons } ou null si le plat est exclu par les préférences.
  * hard : groupes de 👎 traités comme exclusions (voir SOFT_ORDER) ; les autres ne donnent qu'un malus.
@@ -202,6 +214,7 @@ function scoreMeal(m, P, feedback = {}, hard = new Set(SOFT_ORDER)) {
   if (!f.isDinner) return null;
   if (feedback[m.id] === -1) return null;
   for (const a of P.avoid) if (f.allergens.has(a)) return null;
+  if (dislikedIngr(m, P.noIngr)) return null;
   if (P.diet === 'veggie' && !f.isVeggie) return null;
   if (P.diet === 'pesco' && !f.isPesco) return null;
   for (const p of f.proteins) if (P.proteins[p] === -1 && ['beef', 'pork', 'poultry', 'lamb', 'fish', 'seafood'].includes(p)) return null;

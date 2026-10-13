@@ -765,3 +765,45 @@ body.no-scroll .toast { bottom: calc(86px + var(--safe-b)); }
 .timer.done { background: var(--lime); color: var(--ink); animation: ring 1s ease-in-out infinite alternate; }
 .timer.done .ico { color: var(--ink); }
 @keyframes ring { to { transform: scale(1.02); } }
+
+/* ---------- Recettes : onglets, pictos, favoris, frigo, ingrédients refusés ---------- */
+.explore-tabs { grid-template-columns: repeat(4, 1fr); }
+.explore-tabs button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; height: 54px; font-size: 12.5px; line-height: 1.1; padding: 0 2px; }
+.explore-tabs button svg { width: 18px; height: 18px; }
+.explore-tabs em { font-style: normal; background: var(--lime); color: var(--ink); border-radius: 999px; padding: 0 6px; font-size: 11px; }
+.tile-fav {
+  position: absolute; right: 8px; top: 8px; width: 34px; height: 34px; border-radius: 50%; border: 0;
+  background: rgba(255,255,255,.92); display: grid; place-items: center; box-shadow: 0 2px 8px rgba(0,0,0,.15); color: var(--ink);
+}
+.tile-fav svg { width: 17px; height: 17px; }
+.tile-fav.on, .round-btn.fav.on { color: #e5484d; }
+.tile-fav.on svg, .round-btn.fav.on svg { fill: currentColor; }
+.round-btn.fav.on { background: var(--white); }
+.tile-badges { position: absolute; left: 8px; bottom: 8px; right: 52px; display: flex; flex-wrap: wrap; gap: 4px; pointer-events: none; }
+.bdg {
+  display: inline-grid; place-items: center; height: 24px; min-width: 24px; border-radius: 999px; font-style: normal;
+  background: rgba(255,255,255,.94); color: var(--ink); box-shadow: 0 1px 4px rgba(0,0,0,.18);
+}
+.bdg svg { width: 14px; height: 14px; }
+.bdg.hot { color: #d9381e; } .bdg.spiced { color: #b4690e; } .bdg.sweet { color: #c2418a; }
+.bdg.cheese { color: #b08800; } .bdg.veg { color: #2f8a3a; } .bdg.quick { color: #2563c9; }
+.bdg.kcal { font-size: 11px; font-weight: 700; padding: 0 7px; background: rgba(20,18,15,.72); color: var(--white); }
+.tile.is-out .tile-pic img { filter: saturate(.55); }
+.tile-body .out { color: #b4441e; }
+.fridge-line { color: #b4441e !important; }
+.fridge-line.ok { color: #2f8a3a !important; font-weight: 600; display: inline-flex; align-items: center; gap: 3px; }
+.fridge-line.ok svg { width: 13px; height: 13px; }
+.fridge .sub { margin: 0 0 12px; }
+.fridge .btn.ghost { margin-top: 6px; }
+.ingr-sugg, .fridge-items, .ingr-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.ingr-sugg:not(:empty) { margin-top: 10px; }
+.fridge-items { margin-top: 14px; }
+.ingr-sugg .chip, .fridge-items .chip, .ingr-chips .chip {
+  display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid var(--line); background: var(--white);
+  border-radius: 999px; padding: 4px 12px 4px 6px; font-size: 13.5px; font-weight: 500; min-height: 36px; color: var(--ink);
+}
+.ingr-sugg .chip { padding-left: 10px; }
+.ingr-sugg .chip svg, .fridge-items .chip svg { width: 14px; height: 14px; }
+.ingr-chips .chip img, .fridge-items .chip img { width: 26px; height: 26px; object-fit: contain; }
+.ingr-chips .chip.on, .fridge-items .chip.on { background: var(--lime); border-color: var(--ink); font-weight: 600; }
+.ingr-chips .chip.on { text-decoration: line-through; }
