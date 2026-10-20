@@ -62,10 +62,10 @@ const CUISINES = [
   { id: 'medit', label: 'Méditerranéenne', countries: ['Spain', 'Greece', 'Portugal', 'Turkey', 'Croatia', 'Albania', 'Andorra', 'Morocco', 'Tunisia', 'Algeria', 'Egypt'] },
   { id: 'mideast', label: 'Moyen-Orient', countries: ['Syria', 'Saudi Arabia', 'Afghanistan', 'Armenia', 'Azerbaijan'] },
   { id: 'american', label: 'Américaine', countries: ['United States', 'Canada', 'Australia'] },
-  { id: 'latino', label: 'Mexicaine & Latino', countries: ['Mexico', 'Brazil', 'Colombia', 'Argentina', 'Venezuela', 'Uruguay', 'Chile', 'Costa Rica', 'Cuba'] },
+  { id: 'latino', label: 'Mexicaine & Latino', countries: ['Mexico', 'Peru', 'Brazil', 'Colombia', 'Argentina', 'Venezuela', 'Uruguay', 'Chile', 'Costa Rica', 'Cuba'] },
   { id: 'thai', label: 'Thaïe', countries: ['Thailand'] },
-  { id: 'japanese', label: 'Japonaise', countries: ['Japan'] },
-  { id: 'seasia', label: 'Asie du Sud-Est', countries: ['Vietnam', 'Malaysia', 'Philippines', 'Cambodia', 'Laos'] },
+  { id: 'japanese', label: 'Japonaise & coréenne', countries: ['Japan', 'South Korea'] },
+  { id: 'seasia', label: 'Asie du Sud-Est', countries: ['Vietnam', 'Malaysia', 'Indonesia', 'Philippines', 'Cambodia', 'Laos'] },
   { id: 'caribbean', label: 'Caraïbes & Afrique', countries: ['Jamaica', 'Barbados', 'Dominica', 'Aruba', 'Antigua and Barbuda', 'Cayman Islands', 'Bahamas', 'Kenya', 'Botswana', 'Angola'] },
   { id: 'europe', label: 'Europe du Nord & de l’Est', countries: ['United Kingdom', 'Ireland', 'Netherlands', 'Norway', 'Denmark', 'Estonia', 'Poland', 'Russia', 'Ukraine', 'Slovakia', 'Bulgaria', 'Austria'] },
 ];
@@ -161,10 +161,25 @@ const NO_INGR = [
   ['goatcheese', 'Fromage de chèvre', 'Goat’s cheese', '山羊奶酪', 'Goats Cheese', /goat.?s? cheese|chevre|chèvre/],
   ['bluecheese', 'Fromage bleu', 'Blue cheese', '蓝纹奶酪', 'Stilton Cheese', /stilton|gorgonzola|roquefort|blue cheese|dolcelatte/],
   ['anchovy', 'Anchois', 'Anchovies', '凤尾鱼', 'Anchovy Fillet', /anchov/],
-  ['offal', 'Abats', 'Offal', '内脏', 'Chicken Livers', /liver|kidney\b|kidneys|tripe|heart\b|tongue|sweetbread|gizzard|black pudding/],
+  ['offal', 'Abats', 'Offal', '内脏', 'Chicken Livers', /liver|kidney\b|kidneys|tripe|heart\b|tongue|sweetbread|gizzard|black pudding/, /bean|sweetheart/],
   ['tofu', 'Tofu', 'Tofu', '豆腐', 'Tofu', /tofu/],
 ].map(([id, label, en, zh, img, rx, not]) => ({ id, label, en, zh, img, rx, not }));
 const NO_INGR_BY_ID = new Map(NO_INGR.map(x => [x.id, x]));
+// Plats dont l'ingrédient est la base sans que leur nom le dise (regex sur le nom anglais du plat).
+const NO_INGR_DISH = {
+  aubergine: /moussaka|ratatouille|baba ?g[ah]noush|caponata|imam bayildi|baingan|talong|melanzane|parmigiana/,
+  courgette: /ratatouille|pisto\b/,
+  pepper: /ratatouille|pisto\b|shakshuka|chakchouka|fajita|peperonata|piperade|basquaise/,
+  mushroom: /stroganoff|wellington|duxelles/,
+  cabbage: /slaw|golabki|bigos|colcannon|stamppot|dolmasi|kimchi|sukuma/,
+  beetroot: /borsc?h|bortsch/,
+  avocado: /guacamole/,
+  chickpeas: /hummus|falafel|chana|chole/,
+  lentils: /\bdh?al\b|koshari/,
+  spinach: /saag|palak|florentine/,
+  onion: /onion soup|soupe à l.oignon/,
+  coconut: /laksa|rendang/,
+};
 
 const NIGHTS = [
   { id: 2, label: '1 à 2 soirs par semaine' },

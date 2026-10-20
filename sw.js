@@ -1,6 +1,6 @@
 // Service worker : app utilisable hors-ligne une fois ouverte une première fois.
-const CACHE = 'qm-v16';
-const SHELL = ['./', 'index.html', 'styles.css', 'js/icons.js', 'js/data.js', 'js/ingredients-fr.js', 'js/ingredients-zh.js', 'js/recipe-names.js', 'js/i18n.js', 'js/engine.js', 'js/shop.js', 'js/prices.js', 'js/firebase-config.js', 'js/sync.js', 'js/app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png'];
+const CACHE = 'qm-v17';
+const SHELL = ['./', 'index.html', 'styles.css', 'js/icons.js', 'js/data.js', 'js/ingredients-fr.js', 'js/ingredients-zh.js', 'js/recipe-names.js', 'js/recipes-extra.js', 'js/i18n.js', 'js/engine.js', 'js/shop.js', 'js/prices.js', 'js/firebase-config.js', 'js/sync.js', 'js/app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -21,7 +21,7 @@ self.addEventListener('fetch', (e) => {
     return;
   }
   // Photos des plats / ingrédients : cache d’abord.
-  if (url.hostname.endsWith('themealdb.com') && url.pathname.startsWith('/images/')) {
+  if ((url.hostname.endsWith('themealdb.com') && url.pathname.startsWith('/images/')) || url.hostname === 'upload.wikimedia.org') {
     e.respondWith(caches.match(e.request).then(hit => hit || fetch(e.request).then(res => {
       const copy = res.clone(); caches.open(CACHE).then(c => c.put(e.request, copy)); return res;
     })));

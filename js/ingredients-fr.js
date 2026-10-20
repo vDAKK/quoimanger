@@ -21,6 +21,7 @@ apple cider vinegar;Vinaigre de cidre;sa*
 apples;Pommes;fl
 apricot;Abricots;fl
 apricot jam;Confiture d'abricot;su
+arborio rice;Riz arborio (risotto);ep
 asparagus;Asperges;fl
 aubergine;Aubergine;fl
 avocado;Avocat;fl
@@ -121,6 +122,7 @@ cassaba;Manioc;mo
 cassava;Manioc;mo
 cassava flour;Farine de manioc;mo
 caster sugar;Sucre en poudre;su*
+cauliflower;Chou-fleur;fl
 cayenne pepper;Piment de Cayenne;es
 celeriac;Céleri-rave;fl
 celery;Céleri branche;fl
@@ -151,6 +153,7 @@ chili powder;Piment en poudre;es
 chilli;Piment rouge;fl
 chilli bean paste;Pâte de piment (doubanjiang);mo
 chilli flakes;Flocons de piment;es
+chilli oil;Huile pimentée;mo
 chilli powder;Piment en poudre;es
 chilli sauce;Sauce piquante;sa
 chimichurri sauce;Sauce chimichurri;sa
@@ -171,9 +174,9 @@ ciabatta;Ciabatta;bl
 cider;Cidre;bs
 cider vinegar;Vinaigre de cidre;sa*
 cilantro;Coriandre fraîche;fl
+cilantro leaves;Coriandre fraîche;fl
 cinnamon;Cannelle;es
 cinnamon stick;Cannelle en bâton;es
-cilantro leaves;Coriandre fraîche;fl
 clams;Palourdes;po
 clear honey;Miel liquide;su
 clotted cream;Crème épaisse;cr
@@ -249,6 +252,7 @@ dry sherry;Xérès sec;bs
 dry white wine;Vin blanc sec;bs
 duck legs;Cuisses de canard;bo
 duck sauce;Sauce aigre-douce;mo
+edamame beans;Edamames;sg
 egg;Œufs;cr
 egg noodles;Nouilles aux œufs;mo
 egg plants;Aubergines;fl
@@ -318,6 +322,7 @@ ginger cordial;Sirop de gingembre;bs
 ginger garlic paste;Pâte ail-gingembre;mo
 ginger paste;Gingembre en purée;mo
 glutinous rice;Riz gluant;mo
+gnocchi;Gnocchis;ch
 goat meat;Viande de chèvre / agneau;bo
 goats cheese;Fromage de chèvre;fr
 gochujang;Gochujang;mo
@@ -359,6 +364,7 @@ gruyère;Gruyère / comté râpé;fr
 habanero pepper;Piment habanero;fl
 haddock;Églefin / haddock;po
 hake;Merlu;po
+halloumi;Halloumi;fr
 ham;Jambon;ch
 hard taco shells;Coques à tacos;mo
 haricot beans;Haricots blancs;ep
@@ -400,6 +406,7 @@ kampot pepper;Poivre de Kampot;es
 khus khus;Graines de pavot;es
 kidney beans;Haricots rouges;ep
 kielbasa;Saucisse fumée polonaise;ch
+kimchi;Kimchi;mo
 king prawns;Gambas;po
 kosher salt;Gros sel;es*
 lamb;Agneau;bo
@@ -448,6 +455,7 @@ massaman curry paste;Pâte de curry massaman;mo
 mature cheddar;Cheddar affiné;fr
 mayonnaise;Mayonnaise;sa
 melted butter;Beurre;cr
+merguez;Merguez;bo
 milk;Lait demi-écrémé;cr
 minced beef;Bœuf haché;bo
 minced garlic;Ail;fl
@@ -515,6 +523,7 @@ passata;Coulis de tomate;ep
 peanut butter;Beurre de cacahuète;su
 peanut oil;Huile d'arachide;sa*
 peanuts;Cacahuètes;ep
+pear;Poire;fl
 peas;Petits pois;sg
 pecorino;Pecorino;fr
 penne rigate;Penne;ep
@@ -719,6 +728,7 @@ sweetcorn;Maïs (boîte);ep
 swiss cheese;Emmental;fr
 szechuan peppercorns;Poivre de Sichuan;mo
 tabasco sauce;Tabasco;sa
+tagliatelle;Tagliatelles;ep
 tahini;Tahin (crème de sésame);mo
 tahini paste;Tahin (crème de sésame);mo
 tamarind ball;Tamarin;mo
@@ -745,6 +755,7 @@ tomato purée;Concentré de tomate;ep
 tomato sauce;Sauce tomate;ep
 tomatoes;Tomates;fl
 toor dal;Lentilles toor dal;mo
+tortellini;Tortellini;ch
 tortillas;Tortillas de blé;mo
 trout;Truite;po
 truffle oil;Huile de truffe;sa

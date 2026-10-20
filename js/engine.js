@@ -138,7 +138,7 @@ function enrich(m) {
   if (count(names, KW.gluten, KW.glutenNot)) f.allergens.add('gluten');
   if (count(names, KW.egg, EGG_NOT)) f.allergens.add('egg');
 
-  f.time = estimateTime(m);
+  f.time = m.time || estimateTime(m); // les recettes maison donnent leur durée
   f.overnight = /overnight|the day before/i.test(m.instr);
   f.herbs = count(names, KW.herbs);
   f.cheese = count(names, KW.cheese) + (m.tags.some(t => /chees|cheas/i.test(t)) ? 2 : 0);
@@ -193,17 +193,67 @@ const SOFT_ORDER = ['dishes', 'flavours', 'proteins', 'cuisines', 'budget'];
 const DISLIKE = 100;
 const flavourHits = (f) => ({ herbs: f.herbs >= 2, cheese: f.cheese >= 2, sweet: f.sweet >= 2, spiced: f.spiced >= 3, hot: f.hot >= 1 });
 
-/** Premier ingrédient refusé (« je n'aime pas ») présent dans le plat, ou null. noIngr : ids de NO_INGR ou « i:nom anglais ». */
-function dislikedIngr(m, noIngr) {
-  if (!noIngr || !noIngr.length) return null;
-  const names = m.ingr.map(i => i.n.toLowerCase());
-  for (const id of noIngr) {
-    if (id.startsWith('i:')) { if (names.includes(id.slice(2))) return id; continue; }
-    const x = NO_INGR_BY_ID.get(id);
-    if (x && names.some(n => x.rx.test(n) && !(x.not && x.not.test(n)))) return id;
+// Un ingrédient refusé n'exclut un plat que s'il en est un ingrédient principal : cité dans le nom du plat, base d'un
+// plat connu (NO_INGR_DISH) ou au moins MAIN_SHARE du poids des ingrédients (hors placard). Une garniture ou un
+// aromate ne donne qu'un petit malus.
+const MAIN_SHARE = 0.2;
+const MINOR_DISLIKE = 6;
+const wordRxCache = new Map();
+const wordRx = (s) => wordRxCache.get(s) || wordRxCache.set(s, wordRx0(s)).get(s);
+const wordRx0 = (s) => new RegExp('(^|[^a-zà-ÿ])' + s.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/(s|x)$/, '') + '(s|x)?([^a-zà-ÿ]|$)');
+
+/** Poids (g) de chaque ingrédient du plat, placard et eau comptés pour 0. */
+function ingrGrams(m) {
+  if (!m.f.grams) {
+    m.f.grams = m.ingr.map(i => {
+      const info = ingInfo(i.n);
+      if (info.skip || info.pantry) return 0;
+      const p = parseMeasure(i.m, info);
+      return p.vague ? 20 : Math.min(measureGrams(p, info), 3000);
+    });
   }
+  return m.f.grams;
+}
+
+/** Test sur le nom anglais (en minuscules) d'un ingrédient pour un id de « je n'aime pas ». */
+function dislikeMatch(id) {
+  if (id.startsWith('i:')) return (n) => n === id.slice(2);
+  const x = NO_INGR_BY_ID.get(id);
+  return x ? (n) => x.rx.test(n) && !(x.not && x.not.test(n)) : () => false;
+}
+const isDislikedIngr = (name, noIngr) => (noIngr || []).some(id => dislikeMatch(id)(name.toLowerCase()));
+
+/** Place d'un ingrédient refusé dans le plat : 'main', 'minor' ou null s'il n'y est pas. */
+function dislikeLevel(m, id) {
+  let label, dish;
+  const match = dislikeMatch(id);
+  if (id.startsWith('i:')) {
+    const en = id.slice(2);
+    label = [wordRx(en), wordRx(ingInfo(en).fr)];
+  } else {
+    const x = NO_INGR_BY_ID.get(id);
+    if (!x) return null;
+    label = [x.rx, wordRx(x.label)];
+    dish = NO_INGR_DISH[id];
+  }
+  const names = m.ingr.map(i => i.n.toLowerCase());
+  if (!names.some(match)) return null;
+  const en = m.name.toLowerCase(), fr = ((RECIPE_NAMES[m.id] || {}).fr || '').toLowerCase();
+  if (label.some(r => r.test(en) || r.test(fr)) || (dish && dish.test(en))) return 'main';
+  const g = ingrGrams(m);
+  let hit = 0, total = 0;
+  names.forEach((n, i) => { if (match(n)) hit += g[i] || 20; else total += g[i]; });
+  return hit / (hit + total) >= MAIN_SHARE ? 'main' : 'minor';
+}
+
+/** Premier ingrédient refusé (« je n'aime pas ») qui est un ingrédient principal du plat, ou null. noIngr : ids de NO_INGR ou « i:nom anglais ». */
+function dislikedIngr(m, noIngr) {
+  for (const id of noIngr || []) if (dislikeLevel(m, id) === 'main') return id;
   return null;
 }
+
+/** Ingrédients refusés présents seulement en petite quantité (garniture, aromate). */
+const minorDislikes = (m, noIngr) => (noIngr || []).filter(id => dislikeLevel(m, id) === 'minor');
 
 /**
  * Renvoie { score, reasons } ou null si le plat est exclu par les préférences.
@@ -233,6 +283,7 @@ function scoreMeal(m, P, feedback = {}, hard = new Set(SOFT_ORDER)) {
 
   if (f.isSide) add(-12);
   if (f.offal) add(-8);
+  add(-MINOR_DISLIKE * minorDislikes(m, P.noIngr).length);
 
   // Envie
   if (P.craving === 'quick') {

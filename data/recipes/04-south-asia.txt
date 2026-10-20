@@ -1,0 +1,427 @@
+// Asie du Sud-Est et Inde. Format : voir tools/build-recipes.js
+
+# Thai red chicken curry | Curry rouge thaï au poulet | 泰式红咖喱鸡
+@ Chicken | Thailand | 30 | en:Red curry | Curry,Spicy
+- Chicken Thighs: 600g
+- Thai Red Curry Paste: 3 tbs
+- Coconut Milk: 400ml
+- Green Beans: 200g
+- Fish Sauce: 2 tbs
+- Brown Sugar: 1 tbs
+- Kaffir Lime Leaves: 4
+- Basil Leaves: 1 handful
+- Jasmine Rice: 300g
+1. Cook the rice.
+2. Fry the curry paste in a few spoons of the thick coconut cream for 2 minutes until fragrant.
+3. Add the sliced chicken and cook for 3 minutes, then the rest of the coconut milk, the lime leaves, fish sauce and sugar.
+4. Simmer for 12 minutes, adding the green beans for the last 5 minutes. Stir in the basil and serve with rice.
+
+# Thai yellow curry with chicken and potatoes | Curry jaune thaï poulet pommes de terre | 泰式黄咖喱鸡
+@ Chicken | Thailand | 35 | en:Yellow curry | Curry,Family
+- Chicken Thighs: 600g
+- Curry Powder: 2 tbs
+- Thai Red Curry Paste: 1 tbs
+- Coconut Milk: 400ml
+- Potatoes: 400g
+- Onion: 1
+- Fish Sauce: 2 tbs
+- Brown Sugar: 1 tbs
+- Jasmine Rice: 300g
+1. Cook the rice. Fry the curry paste and curry powder in a little oil for 1 minute.
+2. Add the chicken pieces and onion and cook for 4 minutes.
+3. Add the coconut milk, potatoes in cubes, fish sauce, sugar and 150ml water. Simmer for 20 minutes until the potatoes are tender.
+4. Serve with rice.
+
+# Larb gai | Larb gai (salade de poulet haché thaï) | 泰式鸡肉末沙拉
+@ Chicken | Thailand | 20 | en:Larb | Quick,Salad,Spicy
+- Chicken Breasts: 500g
+- Lime: 2
+- Fish Sauce: 3 tbs
+- Red Onions: 1
+- Mint: 1 handful
+- Coriander: 1 handful
+- Chilli Flakes: 1 tsp
+- Rice: 2 tbs
+- Little Gem Lettuce: 2
+1. Toast the 2 tbs of rice in a dry pan until golden, then grind to a powder.
+2. Cook the minced chicken with 3 tbs water for 5 minutes, breaking it up.
+3. Off the heat, add the lime juice, fish sauce, chilli, sliced onion, herbs and toasted rice powder.
+4. Serve in lettuce cups.
+
+# Thai basil tofu stir-fry | Tofu sauté au basilic thaï | 泰式罗勒炒豆腐
+@ Vegan | Thailand | 20 | en:Phat kaphrao | Quick,Spicy
+- Tofu: 400g
+- Green Beans: 150g
+- Garlic: 4 cloves
+- Red Chilli: 2
+- Soy Sauce: 3 tbs
+- Brown Sugar: 1 tsp
+- Basil Leaves: 2 handfuls
+- Jasmine Rice: 300g
+1. Cook the rice. Crumble or dice the tofu and pat dry.
+2. Fry the tofu in a hot wok for 6 minutes until golden.
+3. Add the crushed garlic, chilli and green beans in pieces and stir-fry for 3 minutes.
+4. Add the soy sauce, sugar and basil and toss until wilted.
+
+# Khao man gai | Khao man gai (riz au poulet poché) | 泰式海南鸡饭
+@ Chicken | Thailand | 60 | en:Hainanese chicken rice | Rice
+- Chicken Thighs: 8
+- Jasmine Rice: 320g
+- Ginger: 5 slices
+- Garlic: 4 cloves
+- Cucumber: 1
+- Soy Sauce: 3 tbs
+- Rice Vinegar: 2 tbs
+- Red Chilli: 1
+- Coriander: 1 handful
+1. Poach the chicken in water with the ginger and 2 garlic cloves for 25 minutes. Keep the broth.
+2. Fry the rice with the remaining chopped garlic for 2 minutes, then cook it in 500ml of the chicken broth for 15 minutes.
+3. Mix the soy sauce, vinegar, a little ginger and chopped chilli for the sauce.
+4. Slice the chicken and serve on the rice with cucumber, coriander, the sauce and a bowl of broth.
+
+# Shaking beef | Bœuf sauté vietnamien (bò lúc lắc) | 越南骰子牛肉
+@ Beef | Vietnam | 25 | en:Shaking beef | Quick
+- Sirloin Steak: 600g
+- Soy Sauce: 2 tbs
+- Oyster Sauce: 2 tbs
+- Garlic: 3 cloves
+- Red Onions: 1
+- Rocket: 100g
+- Cherry Tomatoes: 200g
+- Lime: 1
+- Rice: 300g
+1. Cut the steak into 2cm cubes and marinate with the soy sauce, oyster sauce and garlic for 10 minutes.
+2. Cook the rice.
+3. Sear the beef in a very hot pan in one layer for 1 minute, then shake the pan for 2 minutes more. Add the onion wedges for the last minute.
+4. Serve on rocket and tomatoes with lime and pepper.
+
+# Vietnamese lemongrass chicken | Poulet sauté à la citronnelle | 越南香茅鸡
+@ Chicken | Vietnam | 30 | File:Lemongrass Chicken (7491346796).jpg | Quick
+- Chicken Thighs: 700g
+- Lemongrass: 3 stalks
+- Garlic: 3 cloves
+- Fish Sauce: 3 tbs
+- Brown Sugar: 2 tbs
+- Red Chilli: 1
+- Onion: 1
+- Rice: 300g
+1. Finely chop the lemongrass and mix with the garlic, fish sauce and sugar. Marinate the chicken pieces for 10 minutes.
+2. Cook the rice.
+3. Fry the chicken in a hot pan for 10 minutes until caramelised. Add the onion wedges and chilli for the last 3 minutes.
+
+# Bun bo noodle salad | Bò bún | 越南牛肉米粉沙拉
+@ Beef | Vietnam | 30 | File:Bun Bo Nam Bo.jpg | Salad,Noodles
+- Rice Vermicelli: 300g
+- Beef: 400g
+- Lemongrass: 2 stalks
+- Fish Sauce: 4 tbs
+- Lime: 2
+- Sugar: 2 tbs
+- Carrots: 2
+- Cucumber: 1
+- Lettuce: 1
+- Mint: 1 handful
+- Roasted Peanut: 50g
+1. Cook the vermicelli, rinse in cold water and drain.
+2. Mix the fish sauce, lime juice, sugar and 6 tbs water for the dressing.
+3. Stir-fry the beef with the chopped lemongrass for 3 minutes.
+4. Fill bowls with lettuce, noodles, grated carrot and cucumber, top with the beef, mint and crushed peanuts and pour over the dressing.
+
+# Nasi goreng | Nasi goreng | 印尼炒饭
+@ Chicken | Indonesia | 25 | en:Nasi goreng | Quick,Rice
+- Rice: 300g
+- Chicken Breasts: 2
+- Shallots: 3
+- Garlic: 2 cloves
+- Red Chilli: 1
+- Dark Soy Sauce: 3 tbs
+- Shrimp Paste: 1 tsp
+- Eggs: 4
+- Cucumber: 1
+1. Stir-fry the diced chicken for 5 minutes. Add the chopped shallots, garlic, chilli and shrimp paste and cook for 2 minutes.
+2. Add the rice and soy sauce and stir-fry for 5 minutes.
+3. Fry the eggs and serve on top of the rice with sliced cucumber.
+
+# Gado-gado | Gado-gado | 印尼加多加多沙拉
+@ Vegetarian | Indonesia | 35 | en:Gado-gado | Salad,Vegetarian
+- Potatoes: 400g
+- Green Beans: 200g
+- Bean Sprouts: 150g
+- Eggs: 4
+- Tofu: 250g
+- Cucumber: 1
+- Peanut Butter: 5 tbs
+- Coconut Milk: 150ml
+- Soy Sauce: 2 tbs
+- Lime: 1
+- Sweet Chilli Sauce: 2 tbs
+1. Boil the potatoes for 15 minutes, the eggs for 9 minutes and the beans for 5 minutes.
+2. Fry the tofu cubes until golden.
+3. Warm the peanut butter, coconut milk, soy sauce, lime juice and chilli sauce, whisking until smooth.
+4. Arrange the vegetables, tofu and halved eggs on plates and pour over the peanut sauce.
+
+# Chicken adobo | Adobo de poulet | 菲律宾醋焖鸡
+@ Chicken | Philippines | 50 | en:Philippine adobo | Braise
+- Chicken Thighs: 8
+- Soy Sauce: 100ml
+- White Wine Vinegar: 100ml
+- Garlic: 8 cloves
+- Bay Leaves: 3
+- Peppercorns: 1 tsp
+- Brown Sugar: 1 tbs
+- Rice: 300g
+1. Put the chicken, soy sauce, vinegar, crushed garlic, bay leaves and peppercorns in a pan with 150ml water.
+2. Bring to the boil without stirring, then cover and simmer for 30 minutes.
+3. Lift out the chicken and brown it in a hot pan. Boil the sauce with the sugar for 5 minutes.
+4. Return the chicken to the sauce and serve with rice.
+
+# Pancit | Pancit (nouilles sautées philippines) | 菲律宾炒米粉
+@ Chicken | Philippines | 30 | en:Pancit | Noodles
+- Rice Vermicelli: 250g
+- Chicken Breasts: 2
+- Carrots: 1
+- White Cabbage: 200g
+- Onion: 1
+- Garlic: 2 cloves
+- Soy Sauce: 4 tbs
+- Chicken Stock: 250ml
+- Lemon: 1
+1. Soak the noodles following the packet.
+2. Stir-fry the sliced chicken with the onion and garlic for 5 minutes.
+3. Add the carrot and cabbage and stir-fry for 3 minutes.
+4. Add the stock, soy sauce and noodles and toss until the liquid is absorbed. Serve with lemon wedges.
+
+# Butter chicken | Poulet au beurre (butter chicken) | 黄油鸡
+@ Chicken | India | 45 | en:Butter chicken | Curry,Family
+- Chicken Thighs: 700g
+- Greek Yogurt: 150g
+- Garam Masala: 2 tsp
+- Ginger Garlic Paste: 2 tbs
+- Butter: 50g
+- Onion: 1
+- Passata: 400ml
+- Double Cream: 150ml
+- Chilli Powder: 1 tsp
+- Basmati Rice: 300g
+- Naan Bread: 4
+1. Marinate the chicken pieces in the yogurt, half the garam masala and half the ginger garlic paste for 20 minutes.
+2. Grill or pan-fry the chicken for 10 minutes until charred.
+3. Melt the butter, fry the onion for 6 minutes, add the rest of the paste, spices and the passata and simmer for 10 minutes. Blend smooth.
+4. Add the chicken and cream and simmer for 5 minutes. Serve with rice and naan.
+
+# Chicken tikka masala | Poulet tikka masala | 印度烤鸡玛莎拉
+@ Chicken | India | 45 | en:Chicken tikka masala | Curry
+- Chicken Breasts: 4
+- Natural Yoghurt: 150g
+- Garam Masala: 2 tsp
+- Ground Cumin: 1 tsp
+- Turmeric: 1 tsp
+- Onions: 2
+- Garlic: 3 cloves
+- Ginger: 1 tbs grated
+- Chopped Tomatoes: 400g
+- Single Cream: 150ml
+- Basmati Rice: 300g
+1. Marinate the chicken pieces in the yogurt with half the spices for 20 minutes, then grill for 10 minutes.
+2. Fry the chopped onions for 8 minutes, add the garlic, ginger and remaining spices and cook for 1 minute.
+3. Add the tomatoes and simmer for 10 minutes, then the cream and chicken for 5 minutes.
+4. Serve with basmati rice.
+
+# Chana masala | Chana masala (curry de pois chiches) | 鹰嘴豆咖喱
+@ Vegan | India | 30 | en:Chana masala | Curry,Vegetarian
+- Chickpeas: 800g
+- Onions: 2
+- Garlic: 3 cloves
+- Ginger: 1 tbs grated
+- Chopped Tomatoes: 400g
+- Garam Masala: 2 tsp
+- Ground Cumin: 1 tsp
+- Turmeric: 1/2 tsp
+- Lemon: 1/2
+- Coriander: 1 handful
+- Basmati Rice: 300g
+1. Fry the chopped onions in oil for 8 minutes until golden.
+2. Add the garlic, ginger and spices and cook for 1 minute.
+3. Add the tomatoes and chickpeas with 150ml water and simmer for 15 minutes.
+4. Finish with lemon juice and coriander and serve with rice.
+
+# Palak paneer | Palak paneer (épinards au fromage indien) | 菠菜奶酪咖喱
+@ Vegetarian | India | 35 | en:Palak paneer | Curry,Vegetarian
+- Paneer: 300g
+- Spinach: 500g
+- Onion: 1
+- Garlic: 3 cloves
+- Ginger: 1 tbs grated
+- Tomatoes: 2
+- Garam Masala: 1 tsp
+- Ground Cumin: 1 tsp
+- Single Cream: 100ml
+- Naan Bread: 4
+1. Wilt the spinach in a pan for 3 minutes, then blend to a purée.
+2. Fry the paneer cubes until golden and set aside.
+3. Fry the onion for 6 minutes, add the garlic, ginger, spices and chopped tomatoes and cook for 5 minutes.
+4. Add the spinach and cream, simmer for 5 minutes and stir in the paneer. Serve with naan.
+
+# Aloo gobi | Aloo gobi (pommes de terre et chou-fleur) | 土豆花椰菜咖喱
+@ Vegan | India | 35 | en:Aloo gobi | Curry,Vegetarian
+- Potatoes: 500g
+- Cauliflower: 1
+- Onion: 1
+- Garlic: 2 cloves
+- Ginger: 1 tbs grated
+- Cumin Seeds: 1 tsp
+- Turmeric: 1 tsp
+- Garam Masala: 1 tsp
+- Tomatoes: 2
+- Coriander: 1 handful
+- Naan Bread: 4
+1. Fry the cumin seeds in oil for 30 seconds, then the onion for 5 minutes.
+2. Add the garlic, ginger, turmeric and chopped tomatoes and cook for 3 minutes.
+3. Add the potatoes and cauliflower in pieces with 100ml water, cover and cook for 20 minutes, stirring now and then.
+4. Sprinkle with garam masala and coriander. Serve with naan.
+
+# Dal makhani | Dal makhani | 黄油黑扁豆
+@ Vegetarian | India | 60 | en:Dal makhani | Curry,Vegetarian
+- Brown Lentils: 250g
+- Kidney Beans: 400g
+- Onion: 1
+- Garlic: 3 cloves
+- Ginger: 1 tbs grated
+- Passata: 300ml
+- Butter: 50g
+- Double Cream: 100ml
+- Garam Masala: 2 tsp
+- Basmati Rice: 300g
+1. Cook the lentils in water for 30 minutes until soft.
+2. Fry the onion in the butter for 6 minutes, add the garlic, ginger and garam masala for 1 minute.
+3. Add the passata, the lentils with a little of their water and the beans. Simmer for 20 minutes, stirring often.
+4. Stir in the cream and serve with rice.
+
+# Chicken korma | Korma de poulet | 印度奶油鸡
+@ Chicken | India | 40 | en:Korma | Curry,Family
+- Chicken Breasts: 4
+- Onions: 2
+- Garlic: 2 cloves
+- Ginger: 1 tbs grated
+- Ground Coriander: 1 tsp
+- Garam Masala: 1 tsp
+- Turmeric: 1/2 tsp
+- Almonds: 50g
+- Coconut Milk: 200ml
+- Natural Yoghurt: 100g
+- Basmati Rice: 300g
+1. Fry the chopped onions for 8 minutes until soft, add the garlic, ginger and spices for 1 minute.
+2. Add the chicken pieces and cook for 5 minutes.
+3. Add the coconut milk and ground almonds and simmer for 15 minutes.
+4. Off the heat, stir in the yogurt. Serve with rice.
+
+# Lamb keema with peas | Keema matar (agneau haché aux petits pois) | 印度羊肉末豌豆
+@ Lamb | India | 35 | File:Keema Matar (a dish from India).jpg | Curry,Quick
+- Lamb Mince: 500g
+- Onion: 1
+- Garlic: 3 cloves
+- Ginger: 1 tbs grated
+- Garam Masala: 2 tsp
+- Ground Cumin: 1 tsp
+- Chopped Tomatoes: 400g
+- Frozen Peas: 200g
+- Naan Bread: 4
+1. Fry the onion for 6 minutes, add the mince and brown for 6 minutes.
+2. Add the garlic, ginger and spices and cook for 1 minute.
+3. Add the tomatoes and simmer for 15 minutes, adding the peas for the last 5 minutes. Serve with naan.
+
+# Vegetable biryani | Biryani de légumes | 蔬菜香饭
+@ Vegetarian | India | 50 | en:Biryani | Rice,Vegetarian
+- Basmati Rice: 320g
+- Onions: 2
+- Carrots: 2
+- Cauliflower: 1/2
+- Frozen Peas: 150g
+- Biryani Masala: 2 tbs
+- Natural Yoghurt: 150g
+- Saffron: 1 pinch
+- Cashew Nuts: 50g
+- Ghee: 3 tbs
+1. Fry the sliced onions in the ghee for 12 minutes until deep golden. Set half aside.
+2. Add the vegetables and spice mix and cook for 5 minutes, then stir in the yogurt.
+3. Parboil the rice for 5 minutes and drain. Spread over the vegetables and sprinkle with the saffron soaked in 3 tbs hot water.
+4. Cover tightly and cook on very low heat for 20 minutes. Serve topped with the crispy onions and cashews.
+
+# Goan prawn curry | Curry de crevettes goanais | 果阿椰香咖喱虾
+@ Seafood | India | 30 | File:Goan prawn curry.jpg | Curry,Spicy
+- King Prawns: 500g
+- Coconut Milk: 400ml
+- Onion: 1
+- Garlic: 3 cloves
+- Ginger: 1 tbs grated
+- Chilli Powder: 1 tsp
+- Turmeric: 1 tsp
+- Ground Coriander: 1 tsp
+- Tamarind Paste: 1 tbs
+- Basmati Rice: 300g
+1. Fry the onion for 6 minutes, add the garlic, ginger and spices and cook for 1 minute.
+2. Add the coconut milk and tamarind and simmer for 8 minutes.
+3. Add the prawns and cook for 4 minutes until pink. Serve with rice.
+
+# Egg curry | Curry d'œufs | 印度鸡蛋咖喱
+@ Vegetarian | India | 30 | File:Egg curry pic.jpg | Curry,Quick,Vegetarian
+- Eggs: 8
+- Onions: 2
+- Garlic: 2 cloves
+- Ginger: 1 tbs grated
+- Chopped Tomatoes: 400g
+- Garam Masala: 2 tsp
+- Turmeric: 1/2 tsp
+- Coconut Milk: 200ml
+- Basmati Rice: 300g
+1. Boil the eggs for 9 minutes, peel them and score lightly.
+2. Fry the onions for 8 minutes, add the garlic, ginger and spices for 1 minute.
+3. Add the tomatoes and coconut milk and simmer for 10 minutes.
+4. Add the eggs and simmer for 5 minutes. Serve with rice.
+
+# Chicken jalfrezi | Jalfrezi de poulet | 印度辣炒鸡
+@ Chicken | India | 35 | en:Jalfrezi | Curry,Spicy
+- Chicken Breasts: 4
+- Onions: 2
+- Red Pepper: 1
+- Green Pepper: 1
+- Green Chilli: 2
+- Garlic: 3 cloves
+- Curry Powder: 2 tbs
+- Chopped Tomatoes: 400g
+- Basmati Rice: 300g
+1. Brown the chicken pieces in oil for 5 minutes. Set aside.
+2. Stir-fry the onions and peppers in chunks with the chillies and garlic for 5 minutes.
+3. Add the curry powder, then the tomatoes and chicken and simmer for 12 minutes. Serve with rice.
+
+# Saag aloo | Saag aloo (pommes de terre aux épinards) | 菠菜土豆
+@ Vegan | India | 30 | en:Saag aloo | Curry,Quick,Vegetarian
+- Potatoes: 700g
+- Spinach: 300g
+- Onion: 1
+- Garlic: 2 cloves
+- Ginger: 1 tbs grated
+- Cumin Seeds: 1 tsp
+- Turmeric: 1 tsp
+- Garam Masala: 1 tsp
+- Naan Bread: 4
+1. Boil the potatoes in cubes for 10 minutes and drain.
+2. Fry the cumin seeds for 30 seconds, then the onion for 5 minutes, then the garlic, ginger and turmeric.
+3. Add the potatoes and fry for 5 minutes, then the spinach until wilted. Sprinkle with garam masala and serve with naan.
+
+# Malaysian chicken satay with peanut sauce | Brochettes saté et sauce cacahuète | 马来西亚沙爹鸡串
+@ Chicken | Malaysia | 40 | en:Satay | Grill
+- Chicken Thighs: 700g
+- Turmeric: 1 tsp
+- Ground Cumin: 1 tsp
+- Brown Sugar: 2 tbs
+- Soy Sauce: 3 tbs
+- Peanut Butter: 5 tbs
+- Coconut Milk: 200ml
+- Lime: 1
+- Jasmine Rice: 300g
+- Cucumber: 1
+1. Marinate the chicken strips with the turmeric, cumin, 1 tbs sugar and 2 tbs soy sauce for 20 minutes. Thread onto skewers.
+2. Cook the rice.
+3. Warm the peanut butter, coconut milk, remaining sugar and soy sauce and the lime juice, stirring until smooth.
+4. Grill the skewers for 8 minutes, turning. Serve with the sauce, rice and cucumber.

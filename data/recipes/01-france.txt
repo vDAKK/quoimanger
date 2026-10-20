@@ -1,0 +1,641 @@
+// Cuisine française du quotidien. Format : voir tools/build-recipes.js
+
+# Steak frites | Steak-frites | 牛排配薯条
+@ Beef | France | 40 | fr:Steak-frites | Classic,Meat
+- Sirloin Steak: 720g
+- Floury Potatoes: 1kg
+- Sunflower Oil: For frying
+- Butter: 30g
+- Shallots: 1
+- Parsley: 2 tbs chopped
+- Salt: to taste
+- Black Pepper: to taste
+1. Peel the potatoes and cut them into 1cm sticks. Rinse in cold water and dry well with a clean tea towel.
+2. Heat the oil to 160C and fry the chips in batches for 6 minutes until soft but not coloured. Drain on kitchen paper.
+3. Take the steaks out of the fridge 15 minutes before cooking. Season with salt and pepper.
+4. Raise the oil to 180C and fry the chips again for 3 minutes until golden and crisp. Drain and salt.
+5. Heat a heavy frying pan until very hot, add a knob of butter and cook the steaks for 2 to 3 minutes on each side for medium-rare. Rest for 3 minutes.
+6. Melt the rest of the butter in the pan with the finely chopped shallot and parsley, spoon over the steaks and serve with the chips.
+
+# Blanquette de veau | Blanquette de veau | 法式白汁炖小牛肉
+@ Beef | France | 120 | fr:Blanquette de veau | Classic,Stew
+- Veal: 1kg
+- Carrots: 3
+- Onion: 1
+- Cloves: 2
+- Bouquet Garni: 1
+- Mushrooms: 200g
+- Butter: 40g
+- Plain Flour: 40g
+- Creme Fraiche: 200ml
+- Egg Yolks: 1
+- Lemon: 1/2
+- Rice: 300g
+1. Put the veal in a large pot, cover with cold water and bring to the boil. Skim off the foam.
+2. Add the carrots cut in chunks, the onion studded with the cloves and the bouquet garni. Simmer gently for 1 hour 30 minutes.
+3. Cook the rice. Fry the quartered mushrooms in a little butter for 5 minutes.
+4. Lift out the meat and carrots and keep warm. Strain and keep 750ml of the cooking stock.
+5. Melt the butter in the pot, stir in the flour and cook for 1 minute, then whisk in the stock and simmer for 10 minutes until thickened.
+6. Off the heat, mix the crème fraîche with the egg yolk and lemon juice, stir into the sauce, add the meat, carrots and mushrooms and warm through without boiling. Serve with the rice.
+
+# Hachis parmentier | Hachis parmentier | 法式牧羊人派
+@ Beef | France | 60 | fr:Hachis parmentier | Classic,Bake
+- Floury Potatoes: 1kg
+- Minced Beef: 600g
+- Onions: 2
+- Garlic: 2 cloves
+- Tomato Puree: 1 tbs
+- Milk: 200ml
+- Butter: 50g
+- Gruyère: 80g
+- Nutmeg: 1 pinch
+- Salt: to taste
+- Black Pepper: to taste
+1. Boil the peeled potatoes in salted water for 20 minutes until tender.
+2. Meanwhile fry the chopped onions in a little butter for 5 minutes, add the garlic and the minced beef and cook for 8 minutes, breaking it up. Stir in the tomato purée and season.
+3. Mash the potatoes with the hot milk, the butter and the nutmeg. Season.
+4. Heat the oven to 200C. Spread the meat in a baking dish, cover with the mash and sprinkle with the grated cheese.
+5. Bake for 20 minutes until golden.
+
+# Quiche lorraine | Quiche lorraine | 洛林乳蛋饼
+@ Pork | France | 50 | fr:Quiche lorraine | Classic,Tart
+- Shortcrust Pastry: 1 sheet
+- Bacon Lardon: 200g
+- Eggs: 3
+- Double Cream: 200ml
+- Milk: 100ml
+- Gruyère: 60g
+- Nutmeg: 1 pinch
+- Black Pepper: to taste
+- Lettuce: 1
+- Vinaigrette Dressing: 3 tbs
+1. Heat the oven to 200C. Line a tart tin with the pastry and prick the base with a fork.
+2. Fry the lardons in a dry pan for 5 minutes and drain.
+3. Whisk the eggs with the cream, milk, nutmeg and pepper.
+4. Scatter the lardons and grated cheese over the pastry and pour over the egg mixture.
+5. Bake for 30 minutes until set and golden. Serve warm with a green salad dressed with vinaigrette.
+
+# Croque-monsieur | Croque-monsieur | 法式火腿奶酪烤三明治
+@ Pork | France | 20 | fr:Croque-monsieur | Quick,Sandwich
+- White Bread: 8 slices
+- Ham: 4 slices
+- Gruyère: 150g
+- Butter: 30g
+- Milk: 250ml
+- Plain Flour: 20g
+- Nutmeg: 1 pinch
+- Lettuce: 1
+1. Make a quick béchamel: melt half the butter, stir in the flour, then whisk in the milk and cook for 3 minutes until thick. Season with nutmeg.
+2. Heat the oven grill. Butter the bread on one side.
+3. Lay 4 slices buttered side down, spread with a little béchamel, add a slice of ham and some cheese, then close with the other slices, buttered side up.
+4. Spread the rest of the béchamel on top and cover with the remaining cheese.
+5. Grill for 8 minutes until bubbling and golden. Serve with a green salad.
+
+# Roast chicken with potatoes | Poulet rôti et pommes de terre | 烤鸡配土豆
+@ Chicken | France | 90 | fr:Poulet rôti | Classic,Roast
+- Chicken: 1.5kg
+- Potatoes: 1kg
+- Garlic: 6 cloves
+- Thyme: 4 sprigs
+- Butter: 30g
+- Olive Oil: 3 tbs
+- Lemon: 1
+- Salt: to taste
+- Black Pepper: to taste
+1. Heat the oven to 210C. Rub the chicken with the soft butter, salt and pepper and put the halved lemon and two thyme sprigs inside.
+2. Cut the potatoes into chunks and toss with the olive oil, the unpeeled garlic cloves, thyme, salt and pepper.
+3. Put the chicken in a roasting tin with the potatoes around it.
+4. Roast for 1 hour 15 minutes, basting twice, until the juices run clear.
+5. Rest the chicken for 10 minutes, then carve and serve with the potatoes and the cooking juices.
+
+# Beef and carrot stew | Bœuf carottes | 胡萝卜炖牛肉
+@ Beef | France | 150 | fr:Bœuf mode | Stew,Classic
+- Beef: 1kg
+- Carrots: 1kg
+- Onions: 2
+- Bacon Lardon: 100g
+- Plain Flour: 1 tbs
+- Dry White Wine: 250ml
+- Beef Stock: 500ml
+- Bouquet Garni: 1
+- Olive Oil: 2 tbs
+- Potatoes: 600g
+1. Brown the beef in the oil in a casserole in batches. Set aside.
+2. Fry the lardons and sliced onions for 5 minutes, then return the beef, sprinkle with flour and stir for 1 minute.
+3. Pour in the wine and stock, add the bouquet garni, cover and simmer gently for 1 hour.
+4. Add the carrots cut into thick rounds and simmer for 1 hour more until the beef is very tender.
+5. Boil the potatoes for 20 minutes and serve with the stew.
+
+# Pot-au-feu | Pot-au-feu | 法式蔬菜炖牛肉
+@ Beef | France | 210 | fr:Pot-au-feu | Classic,Stew,Soup
+- Beef Shin: 1.2kg
+- Carrots: 6
+- Leek: 2
+- Turnips: 4
+- Potatoes: 600g
+- Onion: 1
+- Cloves: 3
+- Bouquet Garni: 1
+- Peppercorns: 1 tsp
+- Coarse Salt: 1 tbs
+- Dijon Mustard: to serve
+1. Put the beef in a large pot, cover with 4 litres of cold water and bring slowly to the boil. Skim well.
+2. Add the onion studded with cloves, the bouquet garni, peppercorns and salt. Simmer gently for 2 hours 30 minutes.
+3. Add the carrots, leeks and turnips and simmer for 40 minutes more.
+4. Cook the potatoes in a ladle of the broth for 25 minutes.
+5. Serve the broth first, then the sliced meat and vegetables with mustard and coarse salt.
+
+# Tartiflette | Tartiflette | 法式焗土豆
+@ Pork | France | 60 | fr:Tartiflette | Bake,Cheese
+- Potatoes: 1.2kg
+- Bacon Lardon: 200g
+- Onions: 2
+- Dry White Wine: 100ml
+- Brie: 450g
+- Creme Fraiche: 100ml
+- Black Pepper: to taste
+- Lettuce: 1
+1. Boil the potatoes in their skins for 20 minutes, then peel and slice them.
+2. Fry the lardons and sliced onions for 10 minutes until golden, then add the wine and let it bubble for 2 minutes.
+3. Heat the oven to 200C. Layer the potatoes with the onion mixture and the crème fraîche in a baking dish. Season with pepper.
+4. Cut the cheese in half horizontally and lay it rind side up on top.
+5. Bake for 25 minutes until bubbling. Serve with a green salad.
+
+# Lamb navarin | Navarin d'agneau | 法式春蔬炖羊肉
+@ Lamb | France | 120 | fr:Navarin d'agneau | Stew,Classic
+- Lamb Shoulder: 1kg
+- Onions: 2
+- Garlic: 2 cloves
+- Plain Flour: 1 tbs
+- Tomato Puree: 1 tbs
+- Chicken Stock: 600ml
+- Bouquet Garni: 1
+- New Potatoes: 600g
+- Carrots: 4
+- Frozen Peas: 200g
+- Olive Oil: 2 tbs
+1. Brown the lamb in the oil in batches. Add the chopped onions and garlic and cook for 3 minutes.
+2. Sprinkle over the flour, stir in the tomato purée, then add the stock and bouquet garni. Cover and simmer for 1 hour.
+3. Add the potatoes and carrots and cook for 30 minutes more.
+4. Add the peas for the last 5 minutes. Season and serve.
+
+# Chicken with cider and cream | Poulet vallée d'Auge | 苹果酒奶油炖鸡
+@ Chicken | France | 50 | fr:Poulet vallée d'Auge | Classic
+- Chicken Thighs: 8
+- Butter: 30g
+- Shallots: 3
+- Mushrooms: 250g
+- Cider: 300ml
+- Creme Fraiche: 200ml
+- Apples: 2
+- Rice: 300g
+- Salt: to taste
+1. Brown the seasoned chicken in half the butter for 10 minutes. Add the chopped shallots and cook for 2 minutes.
+2. Pour in the cider, cover and simmer for 25 minutes. Cook the rice.
+3. Fry the sliced mushrooms and apple wedges in the remaining butter for 6 minutes.
+4. Lift out the chicken, boil the sauce for 3 minutes, stir in the crème fraîche and simmer for 2 minutes.
+5. Return the chicken with the mushrooms and apples and serve with the rice.
+
+# Salmon en papillote | Saumon en papillote | 纸包三文鱼
+@ Seafood | France | 30 | fr:Papillote | Quick,Fish
+- Salmon: 4 fillets
+- Lemon: 1
+- Cherry Tomatoes: 200g
+- Dill: 1 bunch
+- Olive Oil: 2 tbs
+- Rice: 300g
+- Salt: to taste
+- Black Pepper: to taste
+1. Heat the oven to 200C and cook the rice.
+2. Put each salmon fillet on a large sheet of baking paper with a few lemon slices, halved cherry tomatoes and dill.
+3. Drizzle with olive oil, season and fold into sealed parcels.
+4. Bake for 15 minutes. Open the parcels at the table and serve with the rice.
+
+# Cod with lemon butter and crushed potatoes | Cabillaud au beurre citronné, écrasé de pommes de terre | 柠檬黄油鳕鱼配土豆泥
+@ Seafood | France | 35 | File:Sous vide cod 2018.jpg | Fish
+- Cod: 4 fillets
+- New Potatoes: 800g
+- Butter: 60g
+- Lemon: 1
+- Parsley: 3 tbs chopped
+- Olive Oil: 3 tbs
+- Green Beans: 300g
+- Salt: to taste
+1. Boil the potatoes for 18 minutes, adding the green beans for the last 6 minutes. Drain.
+2. Roughly crush the potatoes with a fork, the olive oil and half the parsley. Season.
+3. Pat the cod dry, season and fry in a little butter for 3 to 4 minutes on each side.
+4. Add the rest of the butter to the pan with the lemon juice and parsley and spoon over the fish.
+5. Serve the cod with the crushed potatoes and beans.
+
+# Ham and cheese pasta bake | Gratin de pâtes au jambon | 火腿奶酪焗通心粉
+@ Pasta | France | 35 | en:Macaroni and cheese | Bake,Family
+- Macaroni: 400g
+- Ham: 200g
+- Milk: 500ml
+- Butter: 30g
+- Plain Flour: 30g
+- Gruyère: 150g
+- Nutmeg: 1 pinch
+- Salt: to taste
+1. Cook the pasta for 2 minutes less than the packet says. Drain.
+2. Make a béchamel: melt the butter, stir in the flour, whisk in the milk and simmer for 5 minutes. Season with nutmeg.
+3. Heat the oven to 200C. Mix the pasta with the sauce, the diced ham and half the cheese.
+4. Pour into a baking dish, top with the rest of the cheese and bake for 20 minutes until golden.
+
+# Steak au poivre | Steak au poivre | 黑胡椒牛排
+@ Beef | France | 30 | fr:Steak au poivre | Classic,Quick
+- Fillet Of Steak: 640g
+- Peppercorns: 2 tbs
+- Butter: 20g
+- Brandy: 3 tbs
+- Double Cream: 150ml
+- Beef Stock: 100ml
+- Potatoes: 800g
+- Sunflower Oil: 2 tbs
+1. Cut the potatoes into wedges, toss in the oil and roast at 220C for 30 minutes.
+2. Crush the peppercorns coarsely and press them on both sides of the steaks.
+3. Fry the steaks in the butter for 3 minutes on each side. Keep warm.
+4. Pour the brandy into the pan, then add the stock and cream. Bubble for 3 minutes until the sauce coats a spoon.
+5. Pour the sauce over the steaks and serve with the potatoes.
+
+# Turkey escalopes with mushroom cream sauce | Escalopes de dinde à la crème | 奶油蘑菇火鸡排
+@ Chicken | France | 25 | File:Creamy Mushroom Pasta.jpg | Quick
+- Turkey: 4 escalopes
+- Mushrooms: 250g
+- Shallots: 2
+- Creme Fraiche: 200ml
+- Butter: 20g
+- Tagliatelle: 350g
+- Salt: to taste
+- Black Pepper: to taste
+1. Cook the pasta following the packet instructions.
+2. Season the turkey and fry in the butter for 4 minutes on each side. Set aside.
+3. In the same pan cook the chopped shallots and sliced mushrooms for 5 minutes.
+4. Stir in the crème fraîche, simmer for 2 minutes and return the turkey to warm through.
+5. Serve with the pasta.
+
+# Homemade chicken cordon bleu | Cordon bleu maison | 自制蓝带鸡排
+@ Chicken | France | 35 | en:Cordon bleu (dish) | Family
+- Chicken Breasts: 4
+- Ham: 4 slices
+- Emmentaler Cheese: 4 slices
+- Plain Flour: 50g
+- Eggs: 2
+- Breadcrumbs: 100g
+- Sunflower Oil: 4 tbs
+- Potatoes: 800g
+- Butter: 30g
+- Milk: 150ml
+1. Boil the potatoes for 20 minutes and mash with the butter and hot milk.
+2. Slice each chicken breast horizontally to open it like a book and flatten slightly.
+3. Fill with a slice of ham and a slice of cheese and close.
+4. Coat each one in flour, then beaten egg, then breadcrumbs.
+5. Fry in the oil for 6 to 7 minutes on each side over medium heat until cooked through. Serve with the mash.
+
+# Fish fingers with mash and peas | Poisson pané, purée et petits pois | 炸鱼条配土豆泥
+@ Seafood | France | 35 | en:Fish finger | Family
+- White Fish Fillets: 600g
+- Plain Flour: 50g
+- Eggs: 2
+- Breadcrumbs: 120g
+- Sunflower Oil: 4 tbs
+- Floury Potatoes: 800g
+- Milk: 150ml
+- Butter: 30g
+- Frozen Peas: 300g
+- Lemon: 1
+1. Boil the potatoes for 20 minutes, then mash with the butter and hot milk.
+2. Cut the fish into thick fingers, coat in flour, beaten egg and breadcrumbs.
+3. Fry in the oil for 3 minutes on each side until golden.
+4. Cook the peas in boiling water for 3 minutes.
+5. Serve the fish with the mash, peas and lemon wedges.
+
+# Sausages with mashed potatoes and onion gravy | Saucisses purée, sauce aux oignons | 香肠配土豆泥
+@ Pork | France | 40 | en:Bangers and mash | Family
+- Sausages: 8
+- Floury Potatoes: 1kg
+- Milk: 150ml
+- Butter: 40g
+- Onions: 2
+- Beef Stock: 300ml
+- Plain Flour: 1 tbs
+- Wholegrain Mustard: 1 tbs
+1. Boil the potatoes for 20 minutes and mash with the milk and half the butter.
+2. Fry the sausages over medium heat for 15 minutes, turning often.
+3. In another pan soften the sliced onions in the rest of the butter for 10 minutes. Stir in the flour, then the stock and mustard, and simmer for 5 minutes.
+4. Serve the sausages on the mash with the onion gravy.
+
+# Sausages and lentils | Saucisses aux lentilles | 扁豆炖香肠
+@ Pork | France | 50 | fr:Petit salé aux lentilles | Stew
+- Sausages: 8
+- French Lentils: 300g
+- Carrots: 2
+- Onion: 1
+- Bacon Lardon: 100g
+- Bouquet Garni: 1
+- Chicken Stock: 900ml
+- Dijon Mustard: 1 tsp
+1. Fry the lardons, chopped onion and diced carrots for 5 minutes.
+2. Add the rinsed lentils, the stock and the bouquet garni. Simmer for 30 minutes.
+3. Meanwhile brown the sausages in a frying pan for 10 minutes, then add them to the lentils for the last 10 minutes.
+4. Stir in the mustard and season before serving.
+
+# Duck parmentier | Parmentier de canard | 法式鸭肉土豆泥派
+@ Chicken | France | 60 | fr:Hachis parmentier | Bake
+- Duck Legs: 4
+- Floury Potatoes: 1.2kg
+- Milk: 200ml
+- Butter: 30g
+- Shallots: 3
+- Parsley: 2 tbs chopped
+- Breadcrumbs: 3 tbs
+1. Boil the potatoes for 20 minutes and mash with the milk and butter.
+2. Warm the duck legs in a pan to melt the fat, then shred the meat, discarding the skin and bones.
+3. Fry the chopped shallots in a spoon of duck fat for 3 minutes and mix with the duck and parsley.
+4. Heat the oven to 200C. Spread the duck in a dish, cover with the mash and sprinkle with breadcrumbs.
+5. Bake for 25 minutes until golden.
+
+# Mussels with white wine and fries | Moules marinières et frites | 白葡萄酒青口配薯条
+@ Seafood | France | 40 | fr:Moules-frites | Classic,Shellfish
+- Mussels: 2kg
+- Shallots: 3
+- Garlic: 2 cloves
+- Dry White Wine: 200ml
+- Butter: 30g
+- Parsley: 4 tbs chopped
+- Floury Potatoes: 1kg
+- Sunflower Oil: For frying
+1. Cut the potatoes into sticks and fry twice: 6 minutes at 160C, then 3 minutes at 180C. Drain and salt.
+2. Scrub the mussels and throw away any that stay open when tapped.
+3. Soften the shallots and garlic in the butter in a large pot for 3 minutes. Add the wine and bring to the boil.
+4. Add the mussels, cover and cook for 5 minutes, shaking the pot, until they open.
+5. Sprinkle with parsley and serve with the fries.
+
+# Pork tenderloin with mustard sauce | Filet mignon de porc à la moutarde | 芥末酱猪里脊
+@ Pork | France | 40 | File:Pork tenderloin with onion sauce.jpg | Classic
+- Pork Tenderloin: 700g
+- Dijon Mustard: 2 tbs
+- Wholegrain Mustard: 1 tbs
+- Creme Fraiche: 200ml
+- Shallots: 2
+- Dry White Wine: 100ml
+- Butter: 20g
+- Green Beans: 400g
+- Potatoes: 600g
+1. Boil the potatoes for 20 minutes. Steam the green beans for 8 minutes.
+2. Brown the pork in the butter on all sides for 5 minutes, then cover and cook gently for 15 minutes, turning twice.
+3. Remove the pork and rest it. Cook the chopped shallots in the pan for 2 minutes, add the wine and reduce by half.
+4. Stir in both mustards and the crème fraîche and simmer for 2 minutes.
+5. Slice the pork and serve with the sauce, potatoes and beans.
+
+# Cauliflower cheese gratin | Gratin de chou-fleur | 焗奶酪花椰菜
+@ Vegetarian | France | 40 | en:Cauliflower cheese | Bake,Vegetarian
+- Cauliflower: 1 large
+- Milk: 600ml
+- Butter: 40g
+- Plain Flour: 40g
+- Cheddar Cheese: 150g
+- Dijon Mustard: 1 tsp
+- Nutmeg: 1 pinch
+- Breadcrumbs: 3 tbs
+- Crusty Bread: 1
+1. Cut the cauliflower into florets and boil for 6 minutes. Drain well.
+2. Melt the butter, stir in the flour, then whisk in the milk and simmer for 5 minutes. Stir in the mustard, nutmeg and two thirds of the cheese.
+3. Heat the oven to 200C. Put the cauliflower in a dish and pour over the sauce.
+4. Top with the rest of the cheese and the breadcrumbs and bake for 20 minutes. Serve with bread.
+
+# Tomato and mustard tart | Tarte à la tomate et à la moutarde | 番茄芥末挞
+@ Vegetarian | France | 45 | fr:Tarte à la tomate | Tart,Vegetarian
+- Shortcrust Pastry: 1 sheet
+- Dijon Mustard: 3 tbs
+- Tomatoes: 6
+- Gruyère: 80g
+- Thyme: 1 tsp
+- Olive Oil: 2 tbs
+- Lettuce: 1
+1. Heat the oven to 200C and line a tart tin with the pastry.
+2. Spread the mustard over the base and sprinkle with the grated cheese.
+3. Slice the tomatoes and arrange them in overlapping circles.
+4. Sprinkle with thyme, drizzle with olive oil and season.
+5. Bake for 35 minutes. Serve warm with a green salad.
+
+# Salmon cream pasta | Pâtes au saumon | 三文鱼奶油意面
+@ Pasta | France | 20 | File:Pasta with cold-smoked salmon and peas in Loviisa.jpg | Quick,Fish
+- Tagliatelle: 400g
+- Salmon: 400g
+- Creme Fraiche: 200ml
+- Lemon: 1
+- Dill: 2 tbs chopped
+- Olive Oil: 1 tbs
+- Salt: to taste
+- Black Pepper: to taste
+1. Cook the pasta following the packet instructions.
+2. Cut the salmon into cubes and fry in the oil for 3 minutes.
+3. Add the crème fraîche, lemon zest and a little juice and simmer for 2 minutes.
+4. Drain the pasta, keeping a little cooking water, and toss with the sauce and dill, loosening with the water if needed.
+
+# Salt cod brandade | Brandade de morue | 法式鳕鱼土豆泥
+@ Seafood | France | 60 | fr:Brandade de morue | Bake,Fish
+- Salt Cod: 500g
+- Floury Potatoes: 600g
+- Garlic: 3 cloves
+- Milk: 300ml
+- Olive Oil: 100ml
+- Breadcrumbs: 3 tbs
+- Lettuce: 1
+1. Soak the salt cod in cold water for 24 hours, changing the water three times.
+2. Poach the cod in the milk with the garlic for 10 minutes. Boil the potatoes for 20 minutes.
+3. Flake the fish, removing skin and bones, and mash it with the potatoes, the garlic, the olive oil and enough of the milk to make it creamy.
+4. Heat the oven to 200C, spread in a dish, sprinkle with breadcrumbs and bake for 15 minutes. Serve with a green salad.
+
+# Provençal beef daube | Daube provençale | 普罗旺斯红酒炖牛肉
+@ Beef | France | 180 | fr:Daube provençale | Stew,Classic
+- Beef: 1.2kg
+- Red Wine: 750ml
+- Onions: 2
+- Carrots: 3
+- Garlic: 3 cloves
+- Orange Zest: 1 strip
+- Bouquet Garni: 1
+- Bacon Lardon: 150g
+- Black Olives: 100g
+- Tagliatelle: 400g
+1. Put the beef in a bowl with the wine, sliced onions and carrots, garlic, orange zest and bouquet garni. Marinate overnight.
+2. Fry the lardons in a casserole. Drain the meat, keeping the wine, and brown it with the lardons.
+3. Add the vegetables and wine, cover and simmer very gently for 2 hours 30 minutes.
+4. Add the olives for the last 15 minutes. Serve with the pasta.
+
+# Choucroute garnie | Choucroute garnie | 阿尔萨斯酸菜配肉
+@ Pork | France | 90 | fr:Choucroute garnie | Classic,Alsace
+- Sauerkraut: 1.2kg
+- Smoked Ham: 400g
+- Sausages: 4
+- Kielbasa: 1
+- Bacon Lardon: 200g
+- Onion: 1
+- Juniper Berries: 8
+- Dry White Wine: 300ml
+- Potatoes: 800g
+- Goose Fat: 2 tbs
+1. Rinse the sauerkraut in cold water and squeeze it dry.
+2. Soften the sliced onion in the goose fat, add the sauerkraut, juniper berries and wine. Cover and cook gently for 45 minutes.
+3. Add the ham, lardons and sliced kielbasa and cook for 20 minutes more.
+4. Boil the potatoes for 20 minutes and warm the sausages in simmering water for 10 minutes.
+5. Serve the sauerkraut topped with the meats and potatoes, with mustard.
+
+# Tarte flambée | Tarte flambée (flammekueche) | 阿尔萨斯火焰薄饼
+@ Pork | France | 30 | fr:Tarte flambée | Quick,Alsace
+- Bread Flour: 250g
+- Water: 150ml
+- Olive Oil: 2 tbs
+- Creme Fraiche: 200ml
+- Fromage Frais: 100g
+- Onions: 2
+- Bacon Lardon: 200g
+- Nutmeg: 1 pinch
+1. Mix the flour with the water, the oil and a pinch of salt and knead for 5 minutes. Rest for 10 minutes.
+2. Heat the oven to its maximum (250C) with a baking tray inside.
+3. Roll out the dough very thinly into two rectangles.
+4. Mix the crème fraîche, fromage frais and nutmeg and spread on the dough. Top with very thinly sliced onions and the lardons.
+5. Bake for 8 to 10 minutes until the edges are crisp.
+
+# Rougail sausage | Rougail saucisse | 留尼汪番茄香肠
+@ Pork | France | 50 | fr:Rougail | Spicy,Stew
+- Sausages: 8
+- Onions: 2
+- Tomatoes: 6
+- Garlic: 3 cloves
+- Ginger: 1 tbs grated
+- Turmeric: 1 tsp
+- Red Chilli: 1
+- Thyme: 2 sprigs
+- Rice: 300g
+- Kidney Beans: 400g
+1. Prick the sausages, cover with water and boil for 10 minutes to remove some fat. Slice them.
+2. Brown the sausage slices in a casserole for 5 minutes. Add the chopped onions and cook for 5 minutes.
+3. Add the garlic, ginger, turmeric, chilli and thyme, then the chopped tomatoes. Cover and simmer for 25 minutes.
+4. Cook the rice and warm the beans. Serve together.
+
+# Chicken colombo | Colombo de poulet | 安的列斯咖喱鸡
+@ Chicken | France | 60 | File:Carri-poulet.jpg | Curry,Spicy
+- Chicken Thighs: 8
+- Curry Powder: 2 tbs
+- Onions: 2
+- Garlic: 3 cloves
+- Potatoes: 500g
+- Courgettes: 1
+- Coconut Milk: 200ml
+- Lime: 1
+- Thyme: 2 sprigs
+- Rice: 300g
+1. Rub the chicken with the curry powder, lime juice, garlic and salt. Leave for 15 minutes.
+2. Brown the chicken in a casserole with a little oil, then add the chopped onions.
+3. Add the cubed potatoes, thyme, coconut milk and 200ml water. Cover and simmer for 25 minutes.
+4. Add the courgette in chunks and simmer for 10 minutes more. Serve with rice.
+
+# Lentil salad with eggs | Salade de lentilles aux œufs | 扁豆鸡蛋沙拉
+@ Vegetarian | France | 35 | File:Lentil salad (7668557930).jpg | Salad,Vegetarian
+- French Lentils: 300g
+- Eggs: 4
+- Shallots: 2
+- Carrots: 2
+- Parsley: 3 tbs chopped
+- Dijon Mustard: 1 tsp
+- Red Wine Vinegar: 2 tbs
+- Olive Oil: 5 tbs
+1. Cook the lentils with the diced carrots in unsalted water for 25 minutes. Drain.
+2. Boil the eggs for 9 minutes, cool and halve.
+3. Whisk the mustard, vinegar and oil with salt and pepper.
+4. Toss the warm lentils with the dressing, chopped shallots and parsley. Top with the eggs.
+
+# Vegetarian lentil shepherd's pie | Hachis parmentier végétarien aux lentilles | 扁豆素食牧羊人派
+@ Vegetarian | France | 60 | en:Shepherd's pie | Bake,Vegetarian
+- Brown Lentils: 250g
+- Carrots: 2
+- Onion: 1
+- Garlic: 2 cloves
+- Chopped Tomatoes: 400g
+- Vegetable Stock: 300ml
+- Thyme: 1 tsp
+- Floury Potatoes: 1kg
+- Milk: 150ml
+- Butter: 40g
+- Cheddar Cheese: 80g
+1. Boil the potatoes for 20 minutes and mash with the milk and butter.
+2. Soften the chopped onion, carrots and garlic in a little oil for 8 minutes.
+3. Add the lentils, tomatoes, stock and thyme and simmer for 25 minutes until thick.
+4. Heat the oven to 200C. Spread the lentils in a dish, cover with the mash and the grated cheese and bake for 20 minutes.
+
+# Tuna pasta bake | Gratin de pâtes au thon | 金枪鱼焗意面
+@ Pasta | France | 35 | en:Tuna casserole | Bake,Family
+- Penne Rigate: 400g
+- Tuna: 300g
+- Chopped Tomatoes: 400g
+- Sweetcorn: 150g
+- Onion: 1
+- Creme Fraiche: 100ml
+- Mozzarella: 125g
+- Cheddar Cheese: 80g
+1. Cook the pasta for 2 minutes less than the packet says.
+2. Soften the chopped onion in a little oil for 5 minutes, add the tomatoes and simmer for 10 minutes. Stir in the crème fraîche.
+3. Heat the oven to 200C. Mix the pasta with the sauce, the tuna and the sweetcorn.
+4. Put in a dish, top with the torn mozzarella and grated cheddar and bake for 15 minutes.
+
+# Vichyssoise-style leek and potato soup | Potage poireaux pommes de terre | 韭葱土豆浓汤
+@ Vegetarian | France | 40 | fr:Vichyssoise | Soup,Vegetarian
+- Leek: 3
+- Potatoes: 600g
+- Onion: 1
+- Butter: 30g
+- Vegetable Stock: 1.2 litres
+- Creme Fraiche: 100ml
+- Chives: 2 tbs chopped
+- Crusty Bread: 1
+1. Soften the sliced leeks and onion in the butter for 10 minutes without colouring.
+2. Add the diced potatoes and stock and simmer for 20 minutes.
+3. Blend until smooth, stir in the crème fraîche and season.
+4. Sprinkle with chives and serve with crusty bread.
+
+# Buckwheat galettes with ham, egg and cheese | Galettes complètes | 布列塔尼荞麦可丽饼
+@ Pork | France | 40 | File:Galette de sarrasin complète bretonne.jpg | Brittany
+- Buckwheat: 250g
+- Eggs: 5
+- Water: 500ml
+- Salted Butter: 50g
+- Ham: 4 slices
+- Emmentaler Cheese: 150g
+- Lettuce: 1
+1. Whisk the buckwheat flour with 1 egg, the water and a pinch of salt. Rest for 30 minutes.
+2. Heat a large frying pan, butter it and pour in a ladle of batter, swirling to cover the pan. Cook for 2 minutes.
+3. Turn the galette, sprinkle with cheese, add a slice of ham and crack an egg in the middle.
+4. Cook for 3 minutes until the white is set, fold the edges over in a square and serve with salad.
+
+# Courgette and goat's cheese gratin | Gratin de courgettes au chèvre | 山羊奶酪焗西葫芦
+@ Vegetarian | France | 45 | File:Préparation gratin de courgettes-tomates (017) - sortie du four.jpg | Bake,Vegetarian
+- Courgettes: 4
+- Goats Cheese: 150g
+- Eggs: 3
+- Creme Fraiche: 200ml
+- Garlic: 1 clove
+- Thyme: 1 tsp
+- Rice: 250g
+1. Heat the oven to 190C. Slice the courgettes and fry them with the garlic in a little oil for 8 minutes.
+2. Beat the eggs with the crème fraîche, thyme, salt and pepper.
+3. Put the courgettes in a dish, crumble over the goat's cheese and pour over the egg mixture.
+4. Bake for 25 minutes. Serve with rice.
+
+# Chicken and leek pie | Tourte poulet poireaux | 鸡肉韭葱派
+@ Chicken | France | 55 | File:Chicken & leek pie with mushroom - The Kew Greenhouse Cafe 2025-05-14.jpg | Pie,Family
+- Chicken Breasts: 3
+- Leek: 3
+- Butter: 30g
+- Plain Flour: 2 tbs
+- Chicken Stock: 300ml
+- Creme Fraiche: 150ml
+- Puff Pastry: 1 sheet
+- Egg: 1
+- Lettuce: 1
+1. Cut the chicken into cubes and brown in the butter for 5 minutes. Add the sliced leeks and cook for 8 minutes.
+2. Sprinkle with flour, stir, then add the stock and crème fraîche and simmer for 5 minutes. Season.
+3. Heat the oven to 200C. Pour into a pie dish and cover with the pastry, pressing the edges.
+4. Brush with beaten egg and bake for 25 minutes until golden. Serve with salad.

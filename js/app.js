@@ -4,7 +4,10 @@ const $ = (s, el = document) => el.querySelector(s);
 const app = $('#app');
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const img = (src, alt = '', cls = '') => `<img src="${esc(src)}" alt="${esc(alt)}" class="${cls}" loading="lazy" onerror="this.style.visibility='hidden'">`;
-const med = (thumb) => thumb ? thumb + '/medium' : '';
+// Vignettes : TheMealDB sert /small et /medium ; les photos Wikimedia Commons (recettes maison) ont la largeur dans l'URL.
+const sized = (thumb, size, px) => !thumb ? '' : thumb.includes('/960px-') ? thumb.replace('/960px-', `/${px}px-`) : thumb.includes('themealdb.com') ? `${thumb}/${size}` : thumb;
+const med = (thumb) => sized(thumb, 'medium', 500);
+const small = (thumb) => sized(thumb, 'small', 330);
 const todayISO = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
 
 const ICON = {
@@ -46,7 +49,7 @@ const S = {
   recipeTab: 'ingr',
   shopChecked: store.get('qm_shop', {}),
   draft: null, step: 0, view: 'menu',
-  explore: { q: '', mode: 'fav', quick: false, veggie: false, light: false, mild: false, cheap: false, cuisine: '', limit: 24, fq: '' },
+  explore: { q: '', mode: 'fav', quick: false, veggie: false, light: false, mild: false, cheap: false, cuisine: '', limit: 24, fq: '', cat: '' },
   fridge: store.get('qm_fridge', []), // ingrédients à la maison : [{ k: clé d'achat, en: nom TheMealDB }]
   swapped: new Set(),
   rep: {},
@@ -112,7 +115,8 @@ async function boot() {
     });
     S.dbInfo = info;
     const seenNames = new Set();
-    S.db = info.meals.filter(m => {
+    // recettes maison (js/recipes-extra.js) en plus de TheMealDB
+    S.db = info.meals.concat(window.EXTRA_MEALS || []).filter(m => {
       const k = m.name.toLowerCase().replace(/[^a-z]/g, '');
       if (seenNames.has(k)) return false;
       seenNames.add(k); return true;
@@ -504,7 +508,7 @@ function renderMenu() {
   const baseline = optOn && active.length > 1 ? baselineDistinct(S.ranked, P, active.map(x => x.kind)) : 0;
   const nDin = active.filter(x => x.kind === 'dinner').length, nLun = active.length - nDin;
   const days = Math.max(P.nights, S.planIds.length);
-  let missing = Math.max(0, P.nights - S.planIds.length);
+  let missing = Math.max(0, P.nights - S.planIds.length) + S.planIds.filter(id => !S.byId.has(id)).length;
   if (lunchOn()) for (let d = 0; d < days; d++) if (!S.byId.has(S.week.lunchIds[d])) missing++;
   let lastDay = -1;
 
@@ -619,7 +623,7 @@ function slotRow(x, showDate, shared = new Set()) {
   return `<div class="day-row ${x.off ? 'off' : ''} ${x.past ? 'past' : ''}">
     <div class="day-date ${d.diff === 0 ? 'today' : ''} ${showDate ? '' : 'ghost'}"><span>${d.short}</span><b>${d.num}</b></div>
     <button class="day-card" data-action="open" data-id="${m.id}">
-      ${img(m.thumb ? m.thumb + '/small' : '', mealName(m))}
+      ${img(small(m.thumb), mealName(m))}
       ${x.off ? '' : `<span class="day-badges">${badgeList(m).slice(0, 3).map(badgeIcon).join('')}</span>`}
       <span class="day-txt">${lunchOn() ? `<em class="kind ${x.kind}">${icon(x.kind === 'lunch' ? 'sun' : 'moon')}${slotKindLabel(x)}</em>` : ''}<b>${esc(mealName(m))}</b><small>${meta}</small></span>
     </button>
@@ -636,7 +640,7 @@ function openSlotSheet(id) {
   $('#modal-body').innerHTML = `
     <div class="sheet-top"><button class="back" data-action="close-modal">${ICON.back} ${t('back')}</button><b>${slotLabel(x)}</b><span></span></div>
     <div class="recipe-body settings slot-sheet">
-      <button class="recipe-head" data-action="open" data-id="${id}">${img(x.m.thumb ? x.m.thumb + '/small' : '', '')}
+      <button class="recipe-head" data-action="open" data-id="${id}">${img(small(x.m.thumb), '')}
         <span><small>${slotKindLabel(x)}</small><b>${esc(mealName(x.m))}</b></span><em>${t('recipe_word')} ${ICON.chev}</em></button>
       <div class="slot-line ${x.off ? 'disabled' : ''}">
         <span><b>${t('f_portions')}</b><small>${t('portions_hint')}</small></span>
@@ -718,6 +722,103 @@ function recipeTile(r) {
   </article>`;
 }
 
+// « Toute la base » : catégories à gauche, liste de plats à droite, « + » pour choisir le jour et le repas.
+const mealCat = (m) => (m.cat === 'Dessert' ? 'dessert' : m.cat === 'Breakfast' ? 'breakfast' : m.f.isSide ? 'side' : m.f.types[0]);
+const BROWSE_CATS = () => [...DISH_TYPES.map(d => [d.id, L('dishes', d)]), ['side', t('cat_side')], ['breakfast', t('cat_breakfast')], ['dessert', t('cat_dessert')]];
+
+function stars(pct) {
+  const n = Math.max(1, Math.min(5, Math.round((pct - 50) / 10)));
+  return `<span class="stars" aria-label="${pct} %">${[1, 2, 3, 4, 5].map(i => `<i class="${i <= n ? 'on' : ''}">${icon('star')}</i>`).join('')}</span>`;
+}
+
+function browseRow(r) {
+  const m = r.m, at = slotOf(m.id), pct = r.out ? null : matchPct(r.score);
+  return `<div class="brow ${r.out ? 'is-out' : ''}">
+    <button class="brow-main" data-action="open" data-id="${m.id}">
+      <span class="brow-pic">${img(small(m.thumb), mealName(m))}<span class="day-badges">${badgeList(m).slice(0, 3).map(badgeIcon).join('')}</span></span>
+      <span class="brow-txt"><b>${esc(mealName(m))}</b>
+        ${pct ? stars(pct) : `<small class="out">${t('out_of_taste')}</small>`}
+        <small>${fmtMinutes(m.f.time)} · ${t('kcal', { n: mealKcal(m) })} · ${fmtEuro(mealPrice(m))}</small>
+        ${at ? `<small class="brow-in">${ICON.check}${esc(slotLabel(at))}</small>` : ''}</span>
+    </button>
+    <button class="brow-add ${at ? 'on' : ''}" data-action="pick" data-id="${m.id}" aria-label="${t('pick_title')}">${at ? ICON.check : ICON.plus}</button>
+  </div>`;
+}
+
+function browseView(list) {
+  const E = S.explore, counts = new Map();
+  list.forEach(r => { const c = mealCat(r.m); counts.set(c, (counts.get(c) || 0) + 1); });
+  const cats = BROWSE_CATS().filter(([id]) => counts.get(id));
+  if (E.cat && !counts.get(E.cat)) E.cat = '';
+  const shown = E.cat ? list.filter(r => mealCat(r.m) === E.cat) : list;
+  const title = E.cat ? cats.find(([id]) => id === E.cat)[1] : t('all');
+  return `<div class="browse">
+    <nav class="browse-cats">
+      <button class="${!E.cat ? 'on' : ''}" data-action="browse-cat" data-id="">${t('all')}<small>${list.length}</small></button>
+      ${cats.map(([id, label]) => `<button class="${E.cat === id ? 'on' : ''}" data-action="browse-cat" data-id="${id}">${esc(label)}<small>${counts.get(id)}</small></button>`).join('')}
+    </nav>
+    <div class="browse-list">
+      <h3 class="browse-title">${esc(title)} <small>(${shown.length})</small></h3>
+      ${shown.slice(0, E.limit).map(browseRow).join('')}
+      ${shown.length > E.limit ? `<div class="more"><button class="btn" data-action="more">${t('more_recipes')}</button></div>` : ''}
+    </div>
+  </div>`;
+}
+
+// Choix du jour et du repas pour un plat (ajout, remplacement ou échange de place).
+let pick = null;
+const pickDays = () => {
+  const out = [];
+  for (let d = 0; d <= S.planIds.length; d++) if (dayInfo(d).diff >= 0) out.push(d);
+  return out.length ? out : [S.planIds.length];
+};
+// libellé explicite même sans les midis : « Jeudi soir » plutôt que « Jeudi »
+const pickLabel = (x) => (x.kind === 'dinner' && dayInfo(x.day).diff !== 0 ? t('day_dinner', { d: dayInfo(x.day).label }) : slotLabel(x));
+const slotIdAt = (day, kind) => (kind === 'lunch' ? (lunchOn() ? S.week.lunchIds[day] : null) : S.planIds[day]) || null;
+
+function openPickSheet(id) {
+  if (!S.planIds.length && !S.week.lunchIds.length) S.planStart = todayISO();
+  const at = slotOf(id), days = pickDays();
+  if (!pick || pick.id !== id) {
+    const free = days.find(d => !S.byId.has(S.planIds[d]));
+    pick = at ? { id, day: at.day, kind: at.kind } : { id, day: free ?? days[0], kind: 'dinner' };
+  }
+  const m = S.byId.get(id), cur = slotIdAt(pick.day, pick.kind), x = { day: pick.day, kind: pick.kind };
+  const same = cur === id;
+  modalId = null; sheetSlot = null;
+  $('#modal-body').innerHTML = `
+    <div class="sheet-top"><button class="back" data-action="close-modal">${ICON.back} ${t('back')}</button><b>${t('pick_title')}</b><span></span></div>
+    <div class="recipe-body settings pick-sheet">
+      <div class="recipe-head">${img(small(m.thumb), '')}<span><small>${at ? esc(t('pick_now', { s: slotLabel(at) })) : t('pick_sub')}</small><b>${esc(mealName(m))}</b></span></div>
+      <h3 class="pick-h">${t('pick_day')}</h3>
+      <div class="pick-days">${days.map(d => { const i = dayInfo(d); return `<button class="${pick.day === d ? 'on' : ''} ${i.diff === 0 ? 'today' : ''}" data-action="pick-day" data-idx="${d}"><span>${i.short}</span><b>${i.num}</b></button>`; }).join('')}</div>
+      <h3 class="pick-h">${t('pick_meal')}</h3>
+      <div class="seg-toggle pick-kind">${['lunch', 'dinner'].map(k => `<button class="${pick.kind === k ? 'on' : ''}" data-action="pick-kind" data-id="${k}">${icon(k === 'lunch' ? 'sun' : 'moon')}<span>${t(k)}</span></button>`).join('')}</div>
+      <p class="pick-note">${same ? t('pick_same') : cur && S.byId.has(cur)
+        ? esc(t(at ? 'pick_swap' : 'pick_replace', { x: mealName(S.byId.get(cur)) }))
+        : t('pick_free')}${pick.kind === 'lunch' && !lunchOn() ? ' ' + t('pick_lunch_on') : ''}</p>
+    </div>
+    <div class="sheet-bar"><button class="btn primary grow" data-action="pick-ok" ${same ? 'disabled' : ''}>${ICON.check} ${esc(pickLabel(x))}</button></div>`;
+  showSheet();
+}
+
+/** Place un plat à un repas ; s'il était déjà au menu, il échange sa place avec le plat qui s'y trouvait. */
+function placeMeal(id, day, kind) {
+  if (kind === 'lunch' && !lunchOn()) {
+    S.prefs.lunch = true; S.prefs.lunchPortions = S.prefs.lunchPortions || S.prefs.portions; S.week.lunchIds = [];
+  }
+  const arr = kind === 'lunch' ? S.week.lunchIds : S.planIds;
+  const prev = arr[day] || '', at = slotOf(id);
+  if (prev === id) return;
+  if (at) (at.kind === 'lunch' ? S.week.lunchIds : S.planIds)[at.day] = prev;
+  else if (prev) { delete S.week.slots[prev]; dropSubs(prev); }
+  arr[day] = id;
+  for (let d = 0; d < arr.length; d++) if (arr[d] == null) arr[d] = '';
+  // un dîner vidé en fin de semaine disparaît
+  while (S.planIds.length && !S.planIds[S.planIds.length - 1]) S.planIds.pop();
+  save();
+}
+
 function renderExploreTabs() {
   const nFav = favIds().length;
   $('#explore-tabs').innerHTML = EXPLORE_TABS.map(([id, ico]) =>
@@ -753,7 +854,9 @@ function renderExploreResults() {
     <div class="menu-tools"><button class="btn primary" data-action="explore-mode" data-id="forme">${t('see_for_me')}</button><button class="btn" data-action="explore-mode" data-id="all">${t('see_all')}</button></div></div>`;
   if (E.mode === 'fridge' && !S.fridge.length) empty = `<div class="empty"><div class="empty-ico">${icon('refrigerator')}</div><h2>${t('fridge_none_title')}</h2><p class="sub">${t('fridge_none_sub')}</p></div>`;
   const count = E.mode === 'fav' ? t('fav_count', { n: list.length }) : E.mode === 'all' ? t('all_count', { n: list.length }) : E.mode === 'fridge' ? '' : t('result_count', { n: list.length });
-  $('#explore-results').innerHTML = list.length
+  $('#explore-results').innerHTML = list.length && E.mode === 'all'
+    ? `<p class="result-count">${count}</p>${browseView(list)}`
+    : list.length
     ? `${count ? `<p class="result-count">${count}</p>` : ''}
        <div class="tiles">${list.slice(0, E.limit).map(recipeTile).join('')}</div>
        ${list.length > E.limit ? `<div class="more"><button class="btn" data-action="more">${t('more_recipes')}</button></div>` : ''}`
@@ -891,11 +994,11 @@ function recipeChips(it) {
   const ids = [...it.meals].filter(id => S.byId.has(id));
   if (ids.length <= 2) return `<span class="uses">${ids.map(id => {
     const m = S.byId.get(id), x = slotOf(id);
-    return `<button class="use" data-action="open" data-id="${id}" title="${esc(mealName(m))}">${img(m.thumb ? m.thumb + '/small' : '', '')}<span>${x ? slotShort(x) + ' · ' : ''}${esc(shortName(mealName(m)))}</span></button>`;
+    return `<button class="use" data-action="open" data-id="${id}" title="${esc(mealName(m))}">${img(small(m.thumb), '')}<span>${x ? slotShort(x) + ' · ' : ''}${esc(shortName(mealName(m)))}</span></button>`;
   }).join('')}</span>`;
   return `<span class="uses stack">${ids.map(id => {
     const m = S.byId.get(id), x = slotOf(id);
-    return `<button class="ava" data-action="open" data-id="${id}" title="${x ? slotLabel(x) + ' · ' : ''}${esc(mealName(m))}">${img(m.thumb ? m.thumb + '/small' : '', mealName(m))}</button>`;
+    return `<button class="ava" data-action="open" data-id="${id}" title="${x ? slotLabel(x) + ' · ' : ''}${esc(mealName(m))}">${img(small(m.thumb), mealName(m))}</button>`;
   }).join('')}<span class="stack-txt">${t('n_recipes', { n: ids.length })}</span></span>`;
 }
 const shortName = (n) => n.length > 22 ? n.slice(0, 20).trim() + '…' : n;
@@ -939,7 +1042,7 @@ function renderShop() {
         return shopRow(it, measureFr(ing.m, factor, ing.n) || t('as_needed'), false);
       }).join('');
       return `<section class="shop-sec">
-        <button class="recipe-head" data-action="open" data-id="${x.id}">${img(x.m.thumb ? x.m.thumb + '/small' : '', '')}
+        <button class="recipe-head" data-action="open" data-id="${x.id}">${img(small(x.m.thumb), '')}
           <span><small>${slotLabel(x)} · ${t('stat_people', { n: x.portions }).replace(/<\/?b>/g, '')}</small><b>${esc(mealName(x.m))}</b></span><em>${t('recipe_word')} ${ICON.chev}</em></button>
         ${rows}
       </section>`;
@@ -978,7 +1081,7 @@ function renderShop() {
     <div class="recipe-strip">
       <button class="strip-all ${!filt ? 'on' : ''}" data-action="shop-filter" data-id="">${t('all_short')}</button>
       ${plan.map(x => `<button class="strip-item ${filt === x.id ? 'on' : ''}" data-action="shop-filter" data-id="${x.id}">
-        ${img(x.m.thumb ? x.m.thumb + '/small' : '', '')}<small>${slotLabel(x)}</small><span>${esc(shortName(mealName(x.m)))}</span></button>`).join('')}
+        ${img(small(x.m.thumb), '')}<small>${slotLabel(x)}</small><span>${esc(shortName(mealName(x.m)))}</span></button>`).join('')}
     </div>
     ${filt ? `<button class="filter-note" data-action="open" data-id="${filt}"><span>${t('only_of', { name: esc(mealName(S.byId.get(filt))) })}</span>${ICON.chev}</button>` : ''}
 
@@ -1197,7 +1300,8 @@ function ingredientRow(m, i, idx, factor, ctx) {
   return `<li class="${open ? 'open' : ''}">${img(ING_IMG(subbed ? info.en : i.n), '')}
     <span class="ingr-name">${esc(name)}${shared ? ` <span class="shared-tag" title="${t('shared_title')}">${icon('recycle')}</span>` : ''}
       ${subbed ? `<small class="was">${t('instead_of', { x: esc(trIng(i.n)) })}</small>` : ''}
-      ${buyAs ? `<small class="was">${icon('shopping-cart')} ${esc(t('buy_as', { x: buyAs }))}</small>` : ''}</span>
+      ${buyAs ? `<small class="was">${icon('shopping-cart')} ${esc(t('buy_as', { x: buyAs }))}</small>` : ''}
+      ${!subbed && isDislikedIngr(i.n, minorDislikes(m, S.prefs.noIngr)) ? `<small class="was">${icon('thumbs-down')} ${t('disliked_minor')}</small>` : ''}</span>
     <span class="m">${esc(measureFr(i.m, factor, subbed ? info.en : i.n))}</span>
     ${fam ? `<button class="alt-btn ${subbed ? 'on' : ''}" data-action="alt" data-idx="${idx}" title="${t('alternatives')}" aria-label="${t('alternatives')}">${icon('arrow-left-right')}</button>` : ''}
     ${open ? `<div class="alt-list"><small>${t('replace_with')}</small>${fam.items.map(a => {
@@ -1234,6 +1338,7 @@ function renderRecipe() {
         ${LANG !== 'en' && mealName(m) !== m.name ? `<small class="orig-name">${esc(m.name)}</small>` : ''}</div>
     </div>
     <div class="recipe-body">
+      ${m.photo ? `<a class="photo-credit" href="${esc(m.photo.page)}" target="_blank" rel="noopener">${t('photo')} : ${esc(m.photo.artist || 'Wikimedia Commons')}${m.photo.license ? ' · ' + esc(m.photo.license) : ''}</a>` : ''}
       ${slot && slot.off ? `<button class="filter-note" data-action="slot" data-id="${m.id}"><span>${icon('ban')} ${t('slot_off_short')}</span>${ICON.chev}</button>` : ''}
       <div class="facts">
         <div><span>${t('f_time')}</span><b>${fmtMinutes(m.f.time)}</b></div>
@@ -1539,6 +1644,15 @@ async function handleAction(el) {
       }
       refreshCurrent(); break;
     case 'noop': break;
+    case 'pick': pick = null; openPickSheet(id); break;
+    case 'pick-day': pick.day = +idx; openPickSheet(pick.id); break;
+    case 'pick-kind': pick.kind = id; openPickSheet(pick.id); break;
+    case 'pick-ok': {
+      const x = { day: pick.day, kind: pick.kind };
+      placeMeal(pick.id, x.day, x.kind); pick = null;
+      closeModal(); refreshCurrent(); toast(t('placed', { s: pickLabel(x) })); break;
+    }
+    case 'browse-cat': S.explore.cat = id; S.explore.limit = 24; renderExploreResults(); break;
     case 'swap-open': {
       const newId = swapAt(id);
       if (newId) { refreshCurrent(); openRecipe(newId); toast(t('new_dish')); }

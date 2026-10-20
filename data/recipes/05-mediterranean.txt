@@ -1,0 +1,426 @@
+// Espagne, Grèce, Turquie, Maghreb, Moyen-Orient. Format : voir tools/build-recipes.js
+
+# Garlic chicken | Poulet à l'ail (pollo al ajillo) | 西班牙蒜香鸡
+@ Chicken | Spain | 40 | File:Pollo al ajillo.jpg | Classic
+- Chicken Thighs: 8
+- Garlic: 12 cloves
+- Dry White Wine: 150ml
+- Bay Leaves: 2
+- Olive Oil: 4 tbs
+- Parsley: 3 tbs chopped
+- Potatoes: 700g
+1. Cut the potatoes into cubes and roast them with a little oil at 210C for 30 minutes.
+2. Brown the seasoned chicken in the oil for 10 minutes. Add the halved garlic cloves and bay leaves and cook for 3 minutes.
+3. Pour in the wine, cover and simmer for 20 minutes.
+4. Sprinkle with parsley and serve with the potatoes.
+
+# Fabada asturiana | Fabada asturienne | 阿斯图里亚斯炖豆
+@ Pork | Spain | 70 | en:Fabada asturiana | Stew
+- Butter Beans: 800g
+- Chorizo: 200g
+- Morcilla: 150g
+- Bacon: 150g
+- Onion: 1
+- Garlic: 2 cloves
+- Smoked Paprika: 1 tsp
+- Saffron: 1 pinch
+- Crusty Bread: 1
+1. Put the bacon, whole chorizo and onion in a pot with 1 litre of water and simmer for 30 minutes.
+2. Add the beans, garlic, paprika and saffron and simmer for 20 minutes.
+3. Add the morcilla for the last 10 minutes. Slice the meats and serve with the beans and bread.
+
+# Spanish lentil stew with chorizo | Lentilles à l'espagnole au chorizo | 西班牙香肠炖扁豆
+@ Pork | Spain | 45 | en:Lentil soup | Stew
+- Brown Lentils: 300g
+- Chorizo: 150g
+- Onion: 1
+- Carrots: 2
+- Potatoes: 2
+- Garlic: 2 cloves
+- Smoked Paprika: 1 tsp
+- Bay Leaf: 1
+- Chopped Tomatoes: 200g
+1. Fry the sliced chorizo for 3 minutes, add the onion, carrots and garlic and cook for 5 minutes.
+2. Stir in the paprika, then add the lentils, diced potatoes, tomatoes, bay leaf and 1.2 litres of water.
+3. Simmer for 30 minutes until the lentils are tender. Season and serve.
+
+# Riojan potatoes with chorizo | Pommes de terre à la riojana | 里奥哈土豆炖香肠
+@ Pork | Spain | 45 | File:Patatas a la riojana.jpg | Stew
+- Potatoes: 1kg
+- Chorizo: 250g
+- Onion: 1
+- Green Pepper: 1
+- Garlic: 2 cloves
+- Smoked Paprika: 2 tsp
+- Bay Leaf: 1
+- Crusty Bread: 1
+1. Fry the sliced chorizo for 3 minutes, then the onion, pepper and garlic for 5 minutes.
+2. Add the paprika and the potatoes broken into chunks with a knife, stir for 1 minute.
+3. Cover with water, add the bay leaf and simmer for 25 minutes. Serve with bread.
+
+# Spanakopita | Spanakopita (tourte grecque aux épinards) | 希腊菠菜派
+@ Vegetarian | Greece | 60 | en:Spanakopita | Pie,Vegetarian
+- Spinach: 800g
+- Feta: 250g
+- Eggs: 2
+- Spring Onions: 6
+- Dill: 1 bunch
+- Filo Pastry: 250g
+- Olive Oil: 6 tbs
+- Lettuce: 1
+1. Wilt the spinach, squeeze it very dry and chop.
+2. Mix with the crumbled feta, eggs, sliced spring onions and dill.
+3. Heat the oven to 190C. Layer half the filo sheets in an oiled dish, brushing each with oil, add the filling and cover with the remaining sheets, oiling each.
+4. Score the top and bake for 40 minutes until golden. Serve with salad.
+
+# Pastitsio | Pastitsio (gratin grec de pâtes) | 希腊焗通心粉
+@ Beef | Greece | 75 | en:Pastitsio | Bake,Family
+- Macaroni: 400g
+- Minced Beef: 500g
+- Onion: 1
+- Chopped Tomatoes: 400g
+- Ground Cinnamon: 1/2 tsp
+- Milk: 700ml
+- Butter: 60g
+- Plain Flour: 60g
+- Eggs: 2
+- Parmesan: 80g
+1. Fry the onion and beef for 8 minutes, add the tomatoes and cinnamon and simmer for 20 minutes.
+2. Cook the pasta for 2 minutes less than the packet says.
+3. Make a béchamel with the butter, flour and milk, simmer for 5 minutes, then off the heat beat in the eggs and half the cheese.
+4. Heat the oven to 180C. Layer half the pasta, the meat, the rest of the pasta and the béchamel, sprinkle with the cheese and bake for 40 minutes.
+
+# Greek salad with chickpeas | Salade grecque aux pois chiches | 希腊鹰嘴豆沙拉
+@ Vegetarian | Greece | 15 | en:Greek salad | Quick,Salad,Vegetarian
+- Tomatoes: 4
+- Cucumber: 1
+- Red Onions: 1
+- Feta: 200g
+- Black Olives: 80g
+- Chickpeas: 400g
+- Dried Oregano: 1 tsp
+- Extra Virgin Olive Oil: 5 tbs
+- Pita Bread: 4
+1. Cut the tomatoes and cucumber into chunks and slice the onion thinly.
+2. Mix with the drained chickpeas and olives and season.
+3. Top with the feta in a slab, sprinkle with oregano and drizzle with olive oil. Serve with warm pita.
+
+# Pork gyros with tzatziki | Gyros de porc et tzatziki | 希腊猪肉卷饼
+@ Pork | Greece | 35 | en:Gyros | Wrap
+- Pork Shoulder Steaks: 600g
+- Dried Oregano: 2 tsp
+- Smoked Paprika: 1 tsp
+- Garlic: 3 cloves
+- Lemon: 1
+- Greek Yogurt: 250g
+- Cucumber: 1
+- Pita Bread: 4
+- Tomatoes: 2
+- Red Onions: 1
+- Fries: 400g
+1. Slice the pork thinly and marinate with the oregano, paprika, 2 garlic cloves, lemon juice and olive oil for 15 minutes.
+2. Grate the cucumber, squeeze it and mix with the yogurt and remaining garlic.
+3. Cook the fries in the oven following the packet. Fry the pork in a hot pan for 6 minutes until charred.
+4. Fill the warm pitas with pork, tzatziki, tomato, onion and a few fries.
+
+# Lamb kleftiko | Kleftiko (agneau confit grec) | 希腊烤羊肉
+@ Lamb | Greece | 180 | en:Kleftiko | Roast
+- Lamb Shoulder: 1.2kg
+- Potatoes: 800g
+- Garlic: 6 cloves
+- Lemon: 2
+- Dried Oregano: 2 tsp
+- Tomatoes: 2
+- Red Onions: 2
+- Olive Oil: 4 tbs
+- Feta: 100g
+1. Rub the lamb with garlic, lemon juice, oregano, oil, salt and pepper.
+2. Put it in a large dish with the potatoes, onions and tomatoes in chunks, cover tightly with foil.
+3. Bake at 160C for 2 hours 30 minutes until the meat falls apart.
+4. Crumble the feta on top and serve.
+
+# Chicken lemon rice soup | Soupe grecque poulet citron (avgolemono) | 希腊柠檬鸡汤
+@ Chicken | Greece | 40 | en:Avgolemono | Soup
+- Chicken Breasts: 2
+- Chicken Stock: 1.5 litres
+- Rice: 100g
+- Eggs: 3
+- Lemon: 2
+- Dill: 2 tbs chopped
+- Crusty Bread: 1
+1. Poach the chicken in the stock for 15 minutes, lift out and shred.
+2. Cook the rice in the stock for 15 minutes.
+3. Whisk the eggs with the lemon juice, then whisk in two ladles of hot stock.
+4. Off the heat, stir the egg mixture into the soup, add the chicken and dill and warm gently without boiling.
+
+# Menemen | Menemen (œufs brouillés turcs) | 土耳其番茄炒蛋
+@ Vegetarian | Turkey | 20 | en:Menemen (food) | Quick,Eggs,Vegetarian
+- Eggs: 8
+- Tomatoes: 4
+- Green Pepper: 2
+- Onion: 1
+- Butter: 20g
+- Pul Biber: 1 tsp
+- Feta: 80g
+- Crusty Bread: 1
+1. Soften the chopped onion and peppers in the butter for 6 minutes.
+2. Add the chopped tomatoes and pul biber and cook for 6 minutes.
+3. Add the beaten eggs and stir gently until just set. Crumble over the feta and serve with bread.
+
+# Red lentil soup | Soupe de lentilles corail (mercimek) | 土耳其红扁豆汤
+@ Vegan | Turkey | 35 | en:Lentil soup | Soup,Vegetarian
+- Green Red Lentils: 250g
+- Onion: 1
+- Carrots: 1
+- Potatoes: 1
+- Tomato Puree: 1 tbs
+- Ground Cumin: 1 tsp
+- Paprika: 1 tsp
+- Vegetable Stock: 1.5 litres
+- Lemon: 1
+- Crusty Bread: 1
+1. Soften the chopped onion and carrot in oil for 5 minutes.
+2. Add the tomato purée and spices, then the rinsed lentils, diced potato and stock.
+3. Simmer for 25 minutes and blend until smooth.
+4. Serve with lemon wedges and bread.
+
+# Turkish kofte with bulgur pilaf | Köfte et pilaf de boulgour | 土耳其肉丸配碎麦饭
+@ Lamb | Turkey | 40 | File:Turkish kofte, bulgur and fries.jpg | Grill
+- Lamb Mince: 500g
+- Onion: 1
+- Parsley: 3 tbs chopped
+- Ground Cumin: 1 tsp
+- Paprika: 1 tsp
+- Bulgur Wheat: 250g
+- Tomato Puree: 1 tbs
+- Vegetable Stock: 500ml
+- Greek Yogurt: 150g
+- Tomatoes: 2
+1. Mix the lamb with the grated onion, parsley, spices and salt. Shape into 16 small oval kofte.
+2. Fry the bulgur with the tomato purée in a little oil for 2 minutes, add the stock, cover and cook for 15 minutes.
+3. Grill or pan-fry the kofte for 8 minutes, turning.
+4. Serve with the pilaf, yogurt and sliced tomatoes.
+
+# Chicken tagine with preserved lemon and olives | Tajine de poulet au citron et aux olives | 摩洛哥柠檬橄榄鸡塔吉
+@ Chicken | Morocco | 60 | en:Tajine | Stew
+- Chicken Thighs: 8
+- Onions: 2
+- Garlic: 3 cloves
+- Ground Ginger: 1 tsp
+- Turmeric: 1 tsp
+- Saffron: 1 pinch
+- Lemon: 1
+- Green Olives: 120g
+- Coriander: 1 handful
+- Couscous: 300g
+1. Brown the chicken in oil, add the sliced onions, garlic and spices and cook for 5 minutes.
+2. Add 300ml water, cover and simmer for 35 minutes.
+3. Add the lemon in thin wedges and the olives and cook uncovered for 10 minutes.
+4. Prepare the couscous with boiling water and serve with the tagine and coriander.
+
+# Harira | Harira (soupe marocaine) | 摩洛哥哈里拉汤
+@ Lamb | Morocco | 70 | en:Harira | Soup
+- Lamb: 300g
+- Chickpeas: 400g
+- Green Red Lentils: 100g
+- Onion: 1
+- Celery: 2 sticks
+- Chopped Tomatoes: 400g
+- Ground Ginger: 1 tsp
+- Ground Cinnamon: 1/2 tsp
+- Turmeric: 1 tsp
+- Coriander: 1 handful
+- Lemon: 1
+1. Brown the lamb with the onion and celery for 6 minutes. Add the spices.
+2. Add the tomatoes and 1.5 litres of water and simmer for 30 minutes.
+3. Add the lentils and chickpeas and simmer for 25 minutes more.
+4. Stir in the chopped coriander and serve with lemon.
+
+# Couscous royal | Couscous royal | 皇家古斯米
+@ Lamb | Morocco | 90 | fr:Couscous royal | Stew,Classic
+- Lamb Shoulder: 600g
+- Chicken Drumsticks: 4
+- Merguez: 4
+- Carrots: 3
+- Turnips: 2
+- Courgettes: 2
+- Chickpeas: 400g
+- Ras El Hanout: 2 tbs
+- Onion: 1
+- Couscous: 400g
+- Harissa Spice: 1 tsp
+1. Brown the lamb and chicken in a large pot with the onion and ras el hanout.
+2. Cover with 2 litres of water and simmer for 45 minutes.
+3. Add the carrots and turnips and cook for 15 minutes, then the courgettes and chickpeas for 15 minutes.
+4. Grill the merguez. Prepare the couscous with some of the broth.
+5. Serve the couscous with the meats, vegetables, broth and harissa.
+
+# Kefta tagine with eggs | Tajine de kefta aux œufs | 摩洛哥肉丸鸡蛋塔吉
+@ Beef | Morocco | 40 | File:Tajine kefta (8348397161).jpg | Stew
+- Minced Beef: 500g
+- Onion: 1
+- Ground Cumin: 2 tsp
+- Paprika: 2 tsp
+- Parsley: 3 tbs chopped
+- Chopped Tomatoes: 800g
+- Garlic: 2 cloves
+- Eggs: 4
+- Crusty Bread: 1
+1. Mix the beef with the grated onion, half the spices and the parsley. Roll into small balls.
+2. Simmer the tomatoes with the garlic and remaining spices for 10 minutes.
+3. Add the meatballs, cover and cook for 15 minutes.
+4. Crack the eggs into the sauce, cover and cook for 5 minutes. Serve with bread.
+
+# Mujaddara | Mujaddara (lentilles, riz et oignons frits) | 扁豆饭配炸洋葱
+@ Vegan | Syria | 50 | en:Mujaddara | Rice,Vegetarian
+- Brown Lentils: 200g
+- Basmati Rice: 200g
+- Onions: 4
+- Olive Oil: 6 tbs
+- Ground Cumin: 2 tsp
+- Greek Yogurt: 200g
+- Cucumber: 1
+1. Cook the lentils in water for 15 minutes and drain.
+2. Fry the sliced onions in the oil for 20 minutes until deep brown and crisp. Set half aside.
+3. Add the rice and cumin to the pan, then the lentils and 500ml water. Cover and cook for 15 minutes.
+4. Serve topped with the crispy onions, with yogurt and cucumber.
+
+# Fattoush with chicken | Fattoush au poulet | 黎巴嫩面包沙拉配鸡肉
+@ Chicken | Syria | 30 | en:Fattoush | Salad
+- Chicken Breasts: 3
+- Pita Bread: 3
+- Tomatoes: 4
+- Cucumber: 1
+- Radish: 8
+- Little Gem Lettuce: 2
+- Mint: 1 handful
+- Sumac: 2 tsp
+- Lemon: 1
+- Extra Virgin Olive Oil: 5 tbs
+1. Season the chicken with half the sumac and pan-fry for 6 minutes on each side. Slice.
+2. Tear the pita into pieces and toast in the oven at 200C for 8 minutes.
+3. Chop the vegetables and mix with the mint, lemon juice, oil and remaining sumac.
+4. Toss with the pita and top with the chicken.
+
+# Tabbouleh with grilled halloumi | Taboulé libanais et halloumi grillé | 塔博勒沙拉配烤哈罗米奶酪
+@ Vegetarian | Syria | 25 | en:Tabbouleh | Salad,Quick,Vegetarian
+- Bulgur Wheat: 150g
+- Parsley: 2 bunches
+- Mint: 1 handful
+- Tomatoes: 4
+- Spring Onions: 4
+- Lemon: 2
+- Extra Virgin Olive Oil: 6 tbs
+- Halloumi: 250g
+1. Soak the bulgur in boiling water for 15 minutes and drain.
+2. Chop the parsley, mint, tomatoes and spring onions finely and mix with the bulgur, lemon juice and oil.
+3. Slice the halloumi and fry in a dry pan for 2 minutes on each side. Serve on the tabbouleh.
+
+# Shish tawook | Shish taouk (brochettes de poulet libanaises) | 黎巴嫩烤鸡肉串
+@ Chicken | Syria | 35 | en:Shish taouk | Grill
+- Chicken Breasts: 4
+- Natural Yoghurt: 150g
+- Garlic: 3 cloves
+- Lemon: 1
+- Paprika: 1 tsp
+- Tomato Puree: 1 tbs
+- Pita Bread: 4
+- Garlic Sauce: 4 tbs
+- Lettuce: 1
+- Tomatoes: 2
+1. Marinate the chicken cubes with the yogurt, garlic, lemon juice, paprika and tomato purée for at least 20 minutes.
+2. Thread onto skewers and grill for 10 minutes, turning.
+3. Serve in pita with garlic sauce, lettuce and tomatoes.
+
+# Musakhan | Musakhan (poulet au sumac et oignons) | 巴勒斯坦漆树洋葱烤鸡
+@ Chicken | Syria | 70 | en:Musakhan | Roast
+- Chicken Legs: 4
+- Onions: 4
+- Sumac: 3 tbs
+- Ground Allspice: 1 tsp
+- Olive Oil: 6 tbs
+- Pine Nuts: 40g
+- Naan Bread: 4
+- Greek Yogurt: 150g
+1. Rub the chicken with half the sumac, the allspice, oil and salt. Roast at 200C for 45 minutes.
+2. Cook the sliced onions slowly in the remaining oil for 25 minutes until soft and sweet. Stir in the remaining sumac.
+3. Toast the pine nuts.
+4. Spread the onions on the warmed flatbreads, top with the chicken and pine nuts and serve with yogurt.
+
+# Falafel bowl with hummus | Bowl falafels et houmous | 炸豆丸碗配鹰嘴豆泥
+@ Vegan | Egypt | 25 | en:Falafel | Quick,Bowl
+- Falafel: 400g
+- Hummus: 200g
+- Couscous: 200g
+- Cucumber: 1
+- Cherry Tomatoes: 200g
+- Red Onions: 1
+- Parsley: 1 handful
+- Lemon: 1
+- Tahini: 2 tbs
+1. Heat the falafel in the oven following the packet.
+2. Prepare the couscous with boiling water and fluff with lemon juice and olive oil.
+3. Chop the cucumber, tomatoes, onion and parsley.
+4. Fill bowls with couscous, vegetables, falafel and hummus, and drizzle with tahini loosened with water.
+
+# Chicken shawarma traybake | Shawarma de poulet au four | 烤盘沙威玛鸡
+@ Chicken | Syria | 45 | en:Shawarma | Roast
+- Chicken Thighs: 800g
+- Ground Cumin: 2 tsp
+- Paprika: 2 tsp
+- Turmeric: 1 tsp
+- Ground Cinnamon: 1/2 tsp
+- Garlic: 3 cloves
+- Lemon: 1
+- Red Onions: 2
+- Pita Bread: 4
+- Greek Yogurt: 150g
+1. Mix the chicken with the spices, garlic, lemon juice and olive oil.
+2. Spread on a tray with the onion wedges and roast at 220C for 30 minutes until charred.
+3. Slice and serve in warm pita with yogurt.
+
+# Spanish garlic prawns with rice | Crevettes à l'ail et riz | 西班牙蒜香虾饭
+@ Seafood | Spain | 20 | en:Gambas al ajillo | Quick,Shellfish
+- King Prawns: 500g
+- Garlic: 6 cloves
+- Chilli Flakes: 1 pinch
+- Olive Oil: 6 tbs
+- Smoked Paprika: 1 tsp
+- Parsley: 3 tbs chopped
+- Rice: 300g
+- Lemon: 1
+1. Cook the rice.
+2. Warm the oil with the sliced garlic and chilli for 2 minutes.
+3. Add the prawns and paprika and cook for 3 minutes until pink.
+4. Sprinkle with parsley and serve over the rice with lemon.
+
+# Portuguese chicken with rice | Arroz de frango (riz au poulet portugais) | 葡萄牙鸡肉饭
+@ Chicken | Portugal | 50 | pt:Galinhada | Rice,Family
+- Chicken Thighs: 8
+- Rice: 320g
+- Onion: 1
+- Garlic: 2 cloves
+- Chorizo: 100g
+- Chopped Tomatoes: 200g
+- Chicken Stock: 800ml
+- Smoked Paprika: 1 tsp
+- Parsley: 2 tbs chopped
+1. Brown the chicken in a casserole for 8 minutes. Add the onion, garlic and sliced chorizo and cook for 4 minutes.
+2. Add the paprika, tomatoes and stock, cover and simmer for 15 minutes.
+3. Add the rice and cook for 18 minutes until tender. Sprinkle with parsley.
+
+# Grilled halloumi and vegetable couscous | Couscous aux légumes rôtis et halloumi | 烤蔬菜哈罗米古斯米
+@ Vegetarian | Greece | 35 | en:Halloumi | Vegetarian
+- Halloumi: 250g
+- Couscous: 300g
+- Red Onions: 2
+- Courgettes: 2
+- Cherry Tomatoes: 250g
+- Chickpeas: 400g
+- Ras El Hanout: 2 tsp
+- Lemon: 1
+- Mint: 1 handful
+1. Roast the onion wedges, courgettes in chunks, tomatoes and chickpeas with the spice and oil at 220C for 25 minutes.
+2. Prepare the couscous with boiling water and season with lemon and oil.
+3. Fry the sliced halloumi for 2 minutes on each side.
+4. Mix the vegetables with the couscous and mint and top with the halloumi.

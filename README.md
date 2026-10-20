@@ -1,6 +1,6 @@
 # QuoiManger
 
-Menu de la semaine personnalisé, façon HelloFresh, à partir de la base gratuite [TheMealDB](https://www.themealdb.com) (~790 plats).
+Menu de la semaine personnalisé, façon HelloFresh, à partir de la base gratuite [TheMealDB](https://www.themealdb.com) (~790 plats) et de ~200 recettes maison (`data/recipes/`).
 
 ## Lancer
 
@@ -14,7 +14,7 @@ Pour une vraie PWA installable et utilisable hors-ligne (service worker), héber
 1. **Chargement** : les ~790 plats sont téléchargés depuis l'API TheMealDB (26 requêtes, une par lettre), puis mis en cache 7 jours dans le navigateur. Sans réseau, l'app utilise la copie locale `js/meals-snapshot.js`.
 2. **Enrichissement** (`js/engine.js`) : pour chaque plat, l'app déduit de ses ingrédients et de ses instructions le temps estimé, les protéines, les allergènes, le type de plat, les saveurs (herbes, fromage, sucré, épicé, pimenté), le côté léger ou riche, les glucides, le coût et le côté « familial ».
 3. **Questionnaire** (11 étapes) : objectifs, envie, profil alimentaire, ingrédients à éviter, nutrition, cuisines, saveurs, protéines, types de plats, nombre de soirs et de portions.
-4. **Scoring** : les allergènes, le régime et tous les « pas pour moi » (cuisines, saveurs, types de plats, protéines) excluent un plat ; s'il reste moins de 30 plats, les plats exclus reviennent avec un fort malus et un message le signale. « Recettes rapides » impose une durée maximale par repas (25 min, élargie par paliers si besoin). Tout le reste ajoute ou retire des points. Le menu est ensuite tiré en variant les cuisines, les protéines et les types de plats. Avec l'objectif anti-gaspi, les plats qui partagent des ingrédients sont favorisés.
+4. **Scoring** : un ingrédient « je n'aime pas » n'exclut un plat que s'il en est un ingrédient principal (cité dans le nom du plat, base d'un plat connu comme la moussaka pour l'aubergine, ou au moins 20 % du poids des ingrédients) ; en garniture, il ne donne qu'un petit malus et la fiche le signale comme facultatif. Les allergènes, le régime et tous les « pas pour moi » (cuisines, saveurs, types de plats, protéines) excluent un plat ; s'il reste moins de 30 plats, les plats exclus reviennent avec un fort malus et un message le signale. « Recettes rapides » impose une durée maximale par repas (25 min, élargie par paliers si besoin). Tout le reste ajoute ou retire des points. Le menu est ensuite tiré en variant les cuisines, les protéines et les types de plats. Avec l'objectif anti-gaspi, les plats qui partagent des ingrédients sont favorisés.
    **Courses optimisées** (activé par défaut) : chaque produit acheté coûte des points ; l'optimiseur (glouton + amélioration locale, plusieurs essais, évaluation incrémentale) choisit les plats qui partagent leurs ingrédients. Les ingrédients interchangeables (`ALT_FAMILIES` dans `js/data.js` : oignon / échalote, crème fraîche / liquide, coupes de poulet…) comptent pour un seul achat. Résultat : environ 50 % d'ingrédients différents en moins.
    **Midis** : option du questionnaire ou bouton « Ajouter les midis » ; le midi favorise les plats rapides et légers. Chaque repas a ses portions et peut être exclu (« je ne mange pas ce repas ») via le bouton 👤 : il sort alors de la liste de courses.
    **Alternatives** : bouton ↔ sur un ingrédient de la fiche recette pour choisir un produit de remplacement ; la liste de courses suit et regroupe les alternatives sur une ligne (« ou : … »).
@@ -41,6 +41,7 @@ Français, English, 中文 : détection automatique selon le téléphone, change
 - `js/engine.js` : chargement, enrichissement, scoring, menu, liste de courses
 - `js/app.js` : interface
 - `js/meals-snapshot.js` : copie locale de secours de la base
+- `data/recipes/*.txt` : recettes maison (format décrit dans `tools/build-recipes.js`). Après modification : `node tools/build-recipes.js`, qui vérifie les ingrédients, cherche les photos sur Wikimedia Commons (auteur et licence affichés sur la fiche, cache dans `data/recipes/photos.json`) et génère `js/recipes-extra.js`
 
 ## Foyer partagé
 

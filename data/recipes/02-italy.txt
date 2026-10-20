@@ -1,0 +1,396 @@
+// Cuisine italienne. Format : voir tools/build-recipes.js
+
+# Mushroom risotto | Risotto aux champignons | 蘑菇烩饭
+@ Vegetarian | Italy | 40 | File:Mushroom risotto (3990739885).jpg | Rice,Vegetarian
+- Arborio Rice: 320g
+- Mushrooms: 400g
+- Onion: 1
+- Garlic: 1 clove
+- Dry White Wine: 100ml
+- Vegetable Stock: 1.2 litres
+- Butter: 40g
+- Parmesan: 60g
+- Parsley: 2 tbs chopped
+1. Keep the stock hot in a pan. Fry the sliced mushrooms in half the butter for 6 minutes and set aside.
+2. Soften the chopped onion and garlic in the rest of the butter for 4 minutes. Add the rice and stir for 1 minute.
+3. Pour in the wine and let it evaporate, then add the stock a ladle at a time, stirring, for 18 minutes until the rice is creamy and just tender.
+4. Stir in the mushrooms, parmesan and parsley. Rest for 2 minutes before serving.
+
+# Risotto alla milanese | Risotto à la milanaise | 米兰藏红花烩饭
+@ Vegetarian | Italy | 35 | File:Risotto alla Milanese.JPG | Rice
+- Arborio Rice: 320g
+- Saffron: 1 pinch
+- Onion: 1
+- Dry White Wine: 100ml
+- Chicken Stock: 1.2 litres
+- Butter: 50g
+- Parmesan: 70g
+1. Soak the saffron in a ladle of hot stock.
+2. Soften the chopped onion in half the butter for 4 minutes, add the rice and stir for 1 minute.
+3. Add the wine, let it evaporate, then add the hot stock a ladle at a time, stirring, for 18 minutes. Add the saffron halfway.
+4. Off the heat, beat in the rest of the butter and the parmesan.
+
+# Pasta with basil pesto | Pâtes au pesto | 罗勒青酱意面
+@ Vegetarian | Italy | 20 | en:Pesto | Quick,Pasta,Vegetarian
+- Farfalle: 400g
+- Basil Leaves: 60g
+- Pine Nuts: 40g
+- Garlic: 1 clove
+- Parmesan: 50g
+- Extra Virgin Olive Oil: 120ml
+- Cherry Tomatoes: 200g
+1. Cook the pasta following the packet instructions.
+2. Blend the basil, pine nuts, garlic and parmesan, then blend in the olive oil and a pinch of salt.
+3. Drain the pasta, keeping a cup of the cooking water. Toss with the pesto, loosening with a little water.
+4. Serve topped with halved cherry tomatoes.
+
+# Pasta e fagioli | Pasta e fagioli (pâtes aux haricots) | 意式豆子意面汤
+@ Vegetarian | Italy | 40 | en:Pasta e fagioli | Soup,Vegetarian
+- Macaroni: 200g
+- Borlotti Beans: 800g
+- Onion: 1
+- Carrots: 1
+- Celery: 1 stick
+- Garlic: 2 cloves
+- Chopped Tomatoes: 400g
+- Vegetable Stock: 1 litre
+- Rosemary: 1 sprig
+- Parmesan: 40g
+1. Soften the chopped onion, carrot, celery and garlic in olive oil for 8 minutes.
+2. Add the tomatoes, half the beans, the rosemary and the stock and simmer for 15 minutes.
+3. Mash the remaining beans and add them with the pasta. Cook for 10 minutes until the pasta is tender.
+4. Serve with grated parmesan and a drizzle of olive oil.
+
+# Pasta alla Norma | Pâtes alla Norma | 西西里茄子意面
+@ Vegetarian | Italy | 40 | en:Pasta alla Norma | Pasta,Vegetarian
+- Penne Rigate: 400g
+- Aubergine: 2
+- Garlic: 2 cloves
+- Chopped Tomatoes: 800g
+- Basil: 1 handful
+- Ricotta: 100g
+- Olive Oil: 6 tbs
+- Chilli Flakes: 1 pinch
+1. Cut the aubergines into cubes and fry in the oil for 12 minutes until golden. Drain.
+2. Fry the garlic and chilli for 1 minute, add the tomatoes and simmer for 15 minutes.
+3. Cook the pasta. Stir the aubergine and torn basil into the sauce.
+4. Toss with the pasta and serve topped with crumbled ricotta.
+
+# Spaghetti aglio e olio | Spaghetti aglio e olio | 蒜香橄榄油意面
+@ Vegan | Italy | 15 | en:Spaghetti aglio e olio | Quick,Pasta
+- Spaghetti: 400g
+- Garlic: 6 cloves
+- Extra Virgin Olive Oil: 100ml
+- Chilli Flakes: 1 tsp
+- Parsley: 4 tbs chopped
+- Lemon: 1/2
+1. Cook the spaghetti in well-salted water.
+2. Meanwhile warm the oil with the thinly sliced garlic and chilli over low heat for 4 minutes until the garlic is pale golden.
+3. Drain the pasta, keeping some water, and toss in the oil with the parsley, a squeeze of lemon and a splash of the cooking water.
+
+# Cacio e pepe | Cacio e pepe | 黑胡椒奶酪意面
+@ Vegetarian | Italy | 15 | en:Cacio e pepe | Quick,Pasta
+- Spaghetti: 400g
+- Pecorino: 120g
+- Parmesan: 40g
+- Black Pepper: 2 tsp
+- Butter: 20g
+1. Cook the spaghetti in lightly salted water.
+2. Toast the coarsely ground pepper in a large pan for 1 minute, then add the butter and a ladle of pasta water.
+3. Mix the finely grated cheeses with a little warm pasta water to make a paste.
+4. Add the drained pasta to the pan, then the cheese paste, tossing quickly off the heat and adding water until creamy.
+
+# Bucatini all'amatriciana | Pâtes à l'amatriciana | 阿马特里切培根番茄意面
+@ Pasta | Italy | 25 | en:Amatriciana | Pasta,Quick
+- Spaghetti: 400g
+- Bacon: 150g
+- Chopped Tomatoes: 400g
+- Pecorino: 60g
+- Chilli Flakes: 1 pinch
+- Dry White Wine: 50ml
+1. Cut the bacon into strips and fry for 6 minutes until crisp.
+2. Add the wine, let it bubble, then the tomatoes and chilli. Simmer for 12 minutes.
+3. Cook the pasta, drain and toss with the sauce and half the pecorino. Serve with the rest.
+
+# Spaghetti puttanesca | Spaghetti alla puttanesca | 普塔内斯卡意面
+@ Pasta | Italy | 25 | en:Spaghetti alla puttanesca | Quick,Pasta
+- Spaghetti: 400g
+- Chopped Tomatoes: 800g
+- Black Olives: 100g
+- Capers: 2 tbs
+- Anchovy Fillet: 4
+- Garlic: 3 cloves
+- Chilli Flakes: 1 pinch
+- Parsley: 2 tbs chopped
+1. Fry the garlic, chilli and anchovies in olive oil for 2 minutes until the anchovies melt.
+2. Add the tomatoes, olives and capers and simmer for 15 minutes.
+3. Toss with the cooked spaghetti and parsley.
+
+# Gnocchi alla sorrentina | Gnocchis à la sorrentine | 索伦托焗土豆团子
+@ Vegetarian | Italy | 35 | en:Gnocchi | Bake,Vegetarian
+- Gnocchi: 800g
+- Passata: 500ml
+- Garlic: 1 clove
+- Mozzarella: 250g
+- Basil: 1 handful
+- Parmesan: 40g
+1. Simmer the passata with the garlic and a pinch of salt for 10 minutes.
+2. Boil the gnocchi until they float, about 2 minutes. Drain.
+3. Heat the oven to 220C. Mix the gnocchi with the sauce and torn basil and put in a dish.
+4. Top with the mozzarella and parmesan and bake for 12 minutes until bubbling.
+
+# Ham and mushroom pizza | Pizza reine | 火腿蘑菇披萨
+@ Pork | Italy | 40 | en:Pizza | Pizza,Family
+- Bread Flour: 400g
+- Fast Action Yeast: 7g
+- Water: 250ml
+- Olive Oil: 2 tbs
+- Passata: 200ml
+- Mozzarella: 250g
+- Ham: 150g
+- Mushrooms: 150g
+- Dried Oregano: 1 tsp
+1. Mix the flour, yeast, a pinch of salt, the water and oil. Knead for 8 minutes and leave to rise for 1 hour.
+2. Heat the oven to 250C. Divide the dough in two and stretch into thin rounds.
+3. Spread with passata, then add the mozzarella, ham strips and sliced mushrooms. Sprinkle with oregano.
+4. Bake for 10 to 12 minutes until crisp.
+
+# Minestrone | Minestrone | 意式蔬菜浓汤
+@ Vegan | Italy | 45 | en:Minestrone | Soup
+- Onion: 1
+- Carrots: 2
+- Celery: 2 sticks
+- Courgettes: 1
+- Potatoes: 2
+- Chopped Tomatoes: 400g
+- Cannellini Beans: 400g
+- Macaroni: 100g
+- Vegetable Stock: 1.5 litres
+- Basil: 1 handful
+1. Soften the chopped onion, carrots and celery in olive oil for 8 minutes.
+2. Add the diced potatoes and courgette, tomatoes and stock. Simmer for 20 minutes.
+3. Add the beans and pasta and cook for 10 minutes more.
+4. Season and serve with torn basil.
+
+# Chicken cacciatore | Poulet chasseur à l'italienne | 意式猎人炖鸡
+@ Chicken | Italy | 60 | en:Cacciatore | Stew
+- Chicken Thighs: 8
+- Onion: 1
+- Garlic: 2 cloves
+- Red Pepper: 1
+- Chopped Tomatoes: 800g
+- Red Wine: 150ml
+- Rosemary: 2 sprigs
+- Black Olives: 80g
+- Rice: 300g
+1. Brown the seasoned chicken in olive oil for 8 minutes. Set aside.
+2. Fry the sliced onion, garlic and pepper for 5 minutes. Add the wine and let it bubble.
+3. Add the tomatoes and rosemary, return the chicken, cover and simmer for 35 minutes.
+4. Add the olives and serve with rice.
+
+# Chicken saltimbocca | Saltimbocca de poulet | 意式鼠尾草火腿鸡排
+@ Chicken | Italy | 25 | en:Saltimbocca | Quick
+- Chicken Breasts: 4
+- Parma Ham: 8 slices
+- Sage: 8 leaves
+- Butter: 30g
+- Dry White Wine: 100ml
+- New Potatoes: 700g
+- Green Beans: 300g
+1. Boil the potatoes for 18 minutes and the green beans for 6 minutes.
+2. Cut each chicken breast in two thin escalopes and flatten slightly.
+3. Lay a sage leaf on each and wrap in a slice of Parma ham.
+4. Fry in the butter for 3 minutes on each side. Add the wine and bubble for 1 minute. Serve with the vegetables.
+
+# Chicken piccata | Poulet piccata au citron | 柠檬刺山柑鸡排
+@ Chicken | Italy | 25 | en:Piccata | Quick
+- Chicken Breasts: 4
+- Plain Flour: 3 tbs
+- Butter: 40g
+- Lemon: 2
+- Capers: 2 tbs
+- Chicken Stock: 150ml
+- Spaghetti: 300g
+- Parsley: 2 tbs chopped
+1. Cook the spaghetti. Slice the chicken into thin escalopes, season and dust with flour.
+2. Fry in half the butter for 3 minutes on each side. Set aside.
+3. Add the stock, lemon juice and capers to the pan and simmer for 3 minutes. Swirl in the rest of the butter.
+4. Return the chicken, sprinkle with parsley and serve with the spaghetti.
+
+# Meatballs in tomato sauce | Boulettes sauce tomate (polpette) | 番茄肉丸
+@ Beef | Italy | 45 | File:Spaghetti and meatballs 1.jpg | Family
+- Minced Beef: 500g
+- Breadcrumbs: 50g
+- Milk: 50ml
+- Egg: 1
+- Parmesan: 40g
+- Garlic: 2 cloves
+- Passata: 700ml
+- Basil: 1 handful
+- Spaghetti: 400g
+1. Soak the breadcrumbs in the milk, then mix with the beef, egg, parmesan, 1 crushed garlic clove, salt and pepper.
+2. Roll into 20 balls and brown them in olive oil for 8 minutes.
+3. Add the remaining garlic and the passata and simmer for 20 minutes.
+4. Cook the spaghetti and serve with the meatballs, sauce and basil.
+
+# Pasta with tuna and tomato | Pâtes au thon et à la tomate | 金枪鱼番茄意面
+@ Pasta | Italy | 20 | File:Pasta al ragù di tonno rosso.jpg | Quick,Pasta
+- Penne Rigate: 400g
+- Tuna: 250g
+- Chopped Tomatoes: 400g
+- Garlic: 2 cloves
+- Capers: 1 tbs
+- Parsley: 2 tbs chopped
+- Chilli Flakes: 1 pinch
+1. Cook the pasta.
+2. Fry the garlic and chilli in olive oil for 1 minute, add the tomatoes and simmer for 10 minutes.
+3. Stir in the tuna and capers and warm through.
+4. Toss with the pasta and parsley.
+
+# Orecchiette with sausage and broccoli | Orecchiette saucisse et brocoli | 香肠西兰花猫耳朵面
+@ Pasta | Italy | 25 | en:Orecchiette | Quick,Pasta
+- Farfalle: 400g
+- Italian Fennel Sausages: 300g
+- Broccoli: 1 head
+- Garlic: 2 cloves
+- Chilli Flakes: 1 pinch
+- Parmesan: 40g
+1. Cook the pasta, adding the broccoli florets for the last 4 minutes.
+2. Remove the sausage skins and fry the meat, broken up, for 8 minutes with the garlic and chilli.
+3. Drain the pasta and broccoli, keeping some water, and toss with the sausage, a splash of water and the parmesan.
+
+# Linguine with clams | Linguine alle vongole | 蛤蜊扁意面
+@ Seafood | Italy | 25 | en:Spaghetti alle vongole | Quick,Shellfish
+- Linguine Pasta: 400g
+- Clams: 1kg
+- Garlic: 3 cloves
+- Dry White Wine: 150ml
+- Chilli Flakes: 1 pinch
+- Parsley: 4 tbs chopped
+- Extra Virgin Olive Oil: 4 tbs
+1. Rinse the clams well. Cook the linguine.
+2. Fry the garlic and chilli in the oil for 1 minute, add the clams and wine, cover and cook for 4 minutes until they open.
+3. Add the drained pasta to the pan with the parsley and toss for 1 minute.
+
+# Aubergine parmigiana | Parmigiana d'aubergines | 帕玛森焗茄子
+@ Vegetarian | Italy | 70 | en:Parmigiana | Bake,Vegetarian
+- Aubergine: 3
+- Passata: 700ml
+- Garlic: 1 clove
+- Mozzarella: 250g
+- Parmesan: 80g
+- Basil: 1 handful
+- Olive Oil: 6 tbs
+- Crusty Bread: 1
+1. Slice the aubergines lengthways, brush with oil and grill or fry for 3 minutes on each side.
+2. Simmer the passata with the garlic for 10 minutes.
+3. Heat the oven to 190C. Layer aubergine, sauce, mozzarella, basil and parmesan in a dish, finishing with sauce and parmesan.
+4. Bake for 35 minutes. Rest for 10 minutes and serve with bread.
+
+# Courgette frittata | Frittata aux courgettes | 西葫芦意式煎蛋饼
+@ Vegetarian | Italy | 25 | en:Frittata | Quick,Eggs,Vegetarian
+- Eggs: 8
+- Courgettes: 2
+- Onion: 1
+- Parmesan: 50g
+- Mint: 1 handful
+- Olive Oil: 2 tbs
+- Rocket: 100g
+1. Fry the sliced onion and grated courgettes in the oil for 8 minutes until soft.
+2. Beat the eggs with the parmesan, chopped mint, salt and pepper and pour into the pan.
+3. Cook gently for 8 minutes, then finish under a hot grill for 3 minutes until set.
+4. Serve in wedges with rocket.
+
+# Panzanella | Panzanella (salade toscane au pain) | 托斯卡纳面包沙拉
+@ Vegan | Italy | 20 | en:Panzanella | Salad,Quick
+- Stale Bread: 300g
+- Tomatoes: 6
+- Cucumber: 1
+- Red Onions: 1
+- Basil: 1 handful
+- Extra Virgin Olive Oil: 6 tbs
+- Red Wine Vinegar: 2 tbs
+- Cannellini Beans: 400g
+1. Tear the bread into chunks and toast in the oven at 200C for 8 minutes.
+2. Chop the tomatoes and cucumber and slice the onion thinly.
+3. Mix everything with the beans, basil, oil and vinegar. Season and leave for 10 minutes before serving.
+
+# Pea and mint risotto | Risotto petits pois et menthe | 薄荷豌豆烩饭
+@ Vegetarian | Italy | 35 | en:Risotto | Rice,Vegetarian
+- Arborio Rice: 320g
+- Frozen Peas: 300g
+- Onion: 1
+- Vegetable Stock: 1.2 litres
+- Butter: 40g
+- Parmesan: 60g
+- Mint: 1 handful
+- Lemon: 1
+1. Soften the chopped onion in half the butter for 4 minutes. Add the rice and stir for 1 minute.
+2. Add the hot stock a ladle at a time, stirring, for 15 minutes.
+3. Add the peas and cook for 4 minutes more.
+4. Stir in the rest of the butter, parmesan, chopped mint and lemon zest.
+
+# Tortellini in broth | Tortellini en bouillon | 意式馄饨汤
+@ Pasta | Italy | 20 | en:Tortellini | Quick,Soup
+- Tortellini: 500g
+- Chicken Stock: 1.5 litres
+- Carrots: 1
+- Spinach: 100g
+- Parmesan: 40g
+1. Bring the stock to the boil with the finely diced carrot and simmer for 5 minutes.
+2. Add the tortellini and cook for the time on the packet.
+3. Stir in the spinach for the last minute and serve with parmesan.
+
+# Lemon spaghetti | Spaghetti au citron | 柠檬意面
+@ Vegetarian | Italy | 15 | File:Lemon Spaghetti (14179778117).jpg | Quick,Pasta
+- Spaghetti: 400g
+- Lemon: 2
+- Butter: 40g
+- Parmesan: 80g
+- Double Cream: 100ml
+- Basil: 1 handful
+1. Cook the spaghetti.
+2. Melt the butter with the cream, the zest of both lemons and the juice of one.
+3. Toss with the drained pasta, the parmesan and a splash of cooking water. Finish with basil and pepper.
+
+# Pasta primavera | Pâtes primavera | 春蔬意面
+@ Vegetarian | Italy | 25 | en:Pasta primavera | Quick,Pasta,Vegetarian
+- Farfalle: 400g
+- Asparagus: 200g
+- Frozen Peas: 150g
+- Courgettes: 1
+- Garlic: 1 clove
+- Creme Fraiche: 150ml
+- Parmesan: 50g
+- Lemon: 1
+1. Cook the pasta, adding the asparagus in pieces and the peas for the last 4 minutes.
+2. Fry the diced courgette and garlic in olive oil for 5 minutes.
+3. Drain the pasta and vegetables and toss with the courgette, crème fraîche, parmesan and lemon zest.
+
+# Sausage and bean casserole | Saucisses aux haricots à l'italienne | 意式香肠炖豆
+@ Pork | Italy | 40 | File:-2021-12-03 Sausages, Baked Beans and Bubble and squeak, Trimingham, Norfolk.JPG | Stew,Family
+- Italian Fennel Sausages: 8
+- Cannellini Beans: 800g
+- Onion: 1
+- Garlic: 2 cloves
+- Chopped Tomatoes: 400g
+- Rosemary: 1 sprig
+- Crusty Bread: 1
+1. Brown the sausages in a casserole for 8 minutes. Add the chopped onion and garlic and cook for 4 minutes.
+2. Add the tomatoes, beans and rosemary and simmer for 20 minutes.
+3. Season and serve with crusty bread.
+
+# Calzone with ham and ricotta | Calzone jambon ricotta | 火腿乳清干酪披萨饺
+@ Pork | Italy | 45 | en:Calzone | Pizza
+- Bread Flour: 400g
+- Fast Action Yeast: 7g
+- Water: 250ml
+- Ricotta: 250g
+- Mozzarella: 200g
+- Ham: 150g
+- Passata: 150ml
+- Basil: 1 handful
+1. Mix the flour, yeast, a pinch of salt and the water, knead for 8 minutes and leave to rise for 1 hour.
+2. Heat the oven to 240C. Divide the dough in four and roll out into rounds.
+3. Spread passata on one half of each, add ricotta, mozzarella, ham and basil. Fold over and seal the edges.
+4. Bake for 15 minutes until puffed and golden.

@@ -17,6 +17,7 @@ apple cider vinegar;苹果醋
 apples;苹果
 apricot;杏子
 apricot jam;杏子酱
+arborio rice;意大利烩饭米
 asparagus;芦笋
 aubergine;茄子
 avocado;牛油果
@@ -117,6 +118,7 @@ cassaba;木薯
 cassava;木薯
 cassava flour;木薯粉
 caster sugar;细砂糖
+cauliflower;花椰菜
 cayenne pepper;卡宴辣椒粉
 celeriac;块根芹
 celery;芹菜
@@ -147,6 +149,7 @@ chili powder;辣椒粉
 chilli;辣椒
 chilli bean paste;豆瓣酱
 chilli flakes;辣椒碎
+chilli oil;辣椒油
 chilli powder;辣椒粉
 chilli sauce;辣椒酱
 chimichurri sauce;阿根廷青酱
@@ -168,6 +171,8 @@ cider;苹果酒
 cider vinegar;苹果醋
 cilantro;香菜
 cilantro leaves;香菜
+cinnamon;肉桂
+cinnamon stick;肉桂棒
 clams;蛤蜊
 clear honey;蜂蜜
 clotted cream;凝脂奶油
@@ -243,6 +248,7 @@ dry sherry;干雪利酒
 dry white wine;干白葡萄酒
 duck legs;鸭腿
 duck sauce;甜酸酱
+edamame beans;毛豆
 egg;鸡蛋
 egg noodles;鸡蛋面
 egg plants;茄子
@@ -312,6 +318,7 @@ ginger cordial;姜汁糖浆
 ginger garlic paste;姜蒜酱
 ginger paste;姜泥
 glutinous rice;糯米
+gnocchi;意式土豆团子
 goat meat;山羊肉
 goats cheese;山羊奶酪
 gochujang;韩式辣酱
@@ -353,6 +360,7 @@ gruyère;格鲁耶尔奶酪
 habanero pepper;哈瓦那辣椒
 haddock;黑线鳕
 hake;无须鳕
+halloumi;哈罗米奶酪
 ham;火腿
 hard taco shells;硬塔可壳
 haricot beans;白芸豆
@@ -394,6 +402,7 @@ kampot pepper;贡布胡椒
 khus khus;罂粟籽
 kidney beans;红腰豆
 kielbasa;波兰熏肠
+kimchi;韩国泡菜
 king prawns;大虾
 kosher salt;粗盐
 lamb;羊肉
@@ -442,6 +451,7 @@ massaman curry paste;玛莎曼咖喱酱
 mature cheddar;陈年切达奶酪
 mayonnaise;蛋黄酱
 melted butter;黄油
+merguez;北非羊肉香肠
 milk;牛奶
 minced beef;牛肉末
 minced garlic;蒜末
@@ -509,6 +519,7 @@ passata;番茄泥
 peanut butter;花生酱
 peanut oil;花生油
 peanuts;花生
+pear;梨
 peas;豌豆
 pecorino;佩科里诺奶酪
 penne rigate;笔管面
@@ -713,6 +724,7 @@ sweetcorn;玉米粒
 swiss cheese;瑞士奶酪
 szechuan peppercorns;花椒
 tabasco sauce;塔巴斯科辣酱
+tagliatelle;意大利宽面
 tahini;芝麻酱（中东）
 tahini paste;芝麻酱（中东）
 tamarind ball;罗望子
@@ -739,6 +751,7 @@ tomato purée;番茄膏
 tomato sauce;番茄酱汁
 tomatoes;番茄
 toor dal;木豆
+tortellini;意式饺子
 tortillas;小麦饼
 trout;鳟鱼
 truffle oil;松露油
@@ -806,8 +819,6 @@ yogurt;酸奶
 yuca;木薯
 zapallo squash;南瓜
 zucchini;西葫芦
-cinnamon;肉桂
-cinnamon stick;肉桂棒
 `;
 
 const ING_ZH = {};

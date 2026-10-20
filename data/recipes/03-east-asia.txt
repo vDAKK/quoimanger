@@ -1,0 +1,481 @@
+// Japon, Corée, Chine. Format : voir tools/build-recipes.js
+
+# Oyakodon | Oyakodon (bol de riz poulet et œuf) | 亲子丼
+@ Chicken | Japan | 25 | en:Oyakodon | Quick,Rice
+- Chicken Thighs: 4
+- Onion: 1
+- Eggs: 6
+- Soy Sauce: 4 tbs
+- Mirin: 3 tbs
+- Sugar: 1 tbs
+- Water: 200ml
+- Sushi Rice: 320g
+- Spring Onions: 2
+1. Cook the rice.
+2. Simmer the water, soy sauce, mirin and sugar in a frying pan. Add the sliced onion and cook for 3 minutes.
+3. Add the chicken cut into bite-size pieces and simmer for 7 minutes.
+4. Pour over the lightly beaten eggs, cover and cook for 1 minute until just set.
+5. Slide onto bowls of rice and top with sliced spring onions.
+
+# Gyudon | Gyudon (bol de riz au bœuf) | 牛丼
+@ Beef | Japan | 20 | en:Gyūdon | Quick,Rice
+- Beef: 400g
+- Onion: 2
+- Soy Sauce: 4 tbs
+- Mirin: 3 tbs
+- Sake: 2 tbs
+- Sugar: 1 tbs
+- Water: 200ml
+- Sushi Rice: 320g
+- Ginger: 1 tbs grated
+1. Cook the rice.
+2. Bring the water, soy sauce, mirin, sake, sugar and ginger to a simmer. Add the sliced onions and cook for 5 minutes.
+3. Add the beef and cook for 3 minutes, skimming.
+4. Serve the beef and onions over the rice with a little of the sauce.
+
+# Japanese chicken curry | Curry japonais au poulet | 日式咖喱鸡饭
+@ Chicken | Japan | 50 | en:Japanese curry | Curry,Family
+- Chicken Thighs: 600g
+- Onions: 2
+- Carrots: 2
+- Potatoes: 3
+- Curry Powder: 2 tbs
+- Plain Flour: 3 tbs
+- Butter: 40g
+- Chicken Stock: 800ml
+- Soy Sauce: 2 tbs
+- Honey: 1 tbs
+- Sushi Rice: 320g
+1. Brown the chicken pieces in a little oil. Add the onions, carrots and potatoes in chunks and cook for 5 minutes.
+2. Add the stock and simmer for 20 minutes.
+3. Meanwhile melt the butter, stir in the flour and curry powder and cook for 3 minutes to make a roux.
+4. Whisk a ladle of stock into the roux, then stir it into the pot with the soy sauce and honey. Simmer for 10 minutes until thick.
+5. Serve with the rice.
+
+# Okonomiyaki | Okonomiyaki (galette japonaise au chou) | 大阪烧
+@ Pork | Japan | 30 | en:Okonomiyaki | Pancake
+- Plain Flour: 150g
+- Eggs: 4
+- Water: 150ml
+- White Cabbage: 400g
+- Spring Onions: 4
+- Streaky Bacon: 8 slices
+- Mayonnaise: 4 tbs
+- Tomato Ketchup: 3 tbs
+- Worcestershire Sauce: 2 tbs
+1. Whisk the flour, eggs and water into a batter. Fold in the finely shredded cabbage and sliced spring onions.
+2. Pour a quarter of the batter into an oiled frying pan, shape into a thick round and lay 2 bacon slices on top.
+3. Cook for 5 minutes, flip and cook for 5 minutes more until the bacon is crisp. Repeat.
+4. Mix the ketchup and Worcestershire sauce, brush over the pancakes and drizzle with mayonnaise.
+
+# Yakisoba | Yakisoba (nouilles sautées japonaises) | 日式炒面
+@ Pork | Japan | 20 | en:Yakisoba | Quick,Noodles
+- Egg Noodles: 400g
+- Pork Belly Slices: 250g
+- White Cabbage: 200g
+- Carrots: 1
+- Onion: 1
+- Worcestershire Sauce: 4 tbs
+- Soy Sauce: 2 tbs
+- Tomato Ketchup: 1 tbs
+- Sugar: 1 tsp
+1. Cook the noodles, drain and rinse.
+2. Stir-fry the pork in strips for 4 minutes in a hot wok.
+3. Add the sliced onion, carrot and cabbage and stir-fry for 4 minutes.
+4. Add the noodles and the mixed sauces and toss for 2 minutes.
+
+# Chicken yakitori skewers | Brochettes yakitori | 日式烤鸡肉串
+@ Chicken | Japan | 30 | en:Yakitori | Grill
+- Chicken Thighs: 700g
+- Spring Onions: 6
+- Soy Sauce: 5 tbs
+- Mirin: 4 tbs
+- Sake: 2 tbs
+- Sugar: 1 tbs
+- Sushi Rice: 320g
+- Cucumber: 1
+1. Simmer the soy sauce, mirin, sake and sugar for 5 minutes until syrupy.
+2. Cook the rice. Thread chunks of chicken and spring onion onto skewers.
+3. Grill or pan-fry for 10 minutes, turning and brushing with the sauce several times.
+4. Serve with rice and sliced cucumber.
+
+# Salmon poke bowl | Poke bowl au saumon | 三文鱼波奇饭
+@ Seafood | United States | 25 | en:Poke (dish) | Quick,Bowl,Fish
+- Salmon: 400g
+- Sushi Rice: 300g
+- Soy Sauce: 4 tbs
+- Sesame Seed Oil: 1 tbs
+- Rice Vinegar: 3 tbs
+- Avocado: 2
+- Cucumber: 1
+- Edamame Beans: 150g
+- Sesame Seed: 1 tbs
+1. Cook the rice and season it with the rice vinegar and a pinch of sugar and salt. Let it cool.
+2. Cut the salmon into cubes and toss with the soy sauce and sesame oil.
+3. Divide the rice between bowls and arrange the salmon, sliced avocado, cucumber and edamame on top.
+4. Sprinkle with sesame seeds.
+
+# Agedashi tofu with rice | Tofu frit agedashi | 日式炸豆腐
+@ Vegetarian | Japan | 25 | en:Agedashi tofu | Quick,Vegetarian
+- Tofu: 500g
+- Potato Starch: 4 tbs
+- Soy Sauce: 3 tbs
+- Mirin: 3 tbs
+- Vegetable Stock: 250ml
+- Ginger: 1 tbs grated
+- Spring Onions: 2
+- Sushi Rice: 300g
+- Vegetable Oil: For frying
+1. Cook the rice. Drain the tofu, cut into cubes and pat dry.
+2. Simmer the stock, soy sauce and mirin for 2 minutes.
+3. Coat the tofu in potato starch and fry in the hot oil for 4 minutes until crisp.
+4. Serve the tofu in bowls, pour over the sauce and top with ginger and spring onions. Serve with rice.
+
+# Bibimbap | Bibimbap | 韩式拌饭
+@ Beef | South Korea | 40 | en:Bibimbap | Rice,Bowl
+- Sushi Rice: 320g
+- Minced Beef: 300g
+- Spinach: 200g
+- Carrots: 2
+- Bean Sprouts: 150g
+- Eggs: 4
+- Gochujang: 3 tbs
+- Soy Sauce: 2 tbs
+- Sesame Seed Oil: 2 tbs
+- Garlic: 2 cloves
+1. Cook the rice.
+2. Fry the beef with the garlic and soy sauce for 6 minutes.
+3. Blanch the spinach and bean sprouts for 1 minute each and season with a little sesame oil. Cut the carrots into matchsticks and stir-fry for 2 minutes.
+4. Fry the eggs sunny side up.
+5. Fill bowls with rice, arrange the beef and vegetables on top, add an egg and serve with gochujang mixed with the rest of the sesame oil.
+
+# Beef bulgogi | Bulgogi (bœuf mariné coréen) | 韩式烤牛肉
+@ Beef | South Korea | 30 | en:Bulgogi | Grill
+- Beef: 600g
+- Soy Sauce: 5 tbs
+- Brown Sugar: 2 tbs
+- Sesame Seed Oil: 2 tbs
+- Garlic: 3 cloves
+- Ginger: 1 tbs grated
+- Pear: 1/2
+- Spring Onions: 3
+- Sushi Rice: 320g
+- Lettuce: 1
+1. Grate the pear and mix with the soy sauce, sugar, sesame oil, garlic and ginger. Marinate the beef for at least 15 minutes.
+2. Cook the rice.
+3. Stir-fry the beef in a very hot pan in batches for 2 to 3 minutes.
+4. Add the sliced spring onions and serve with rice and lettuce leaves for wrapping.
+
+# Kimchi fried rice | Riz sauté au kimchi | 泡菜炒饭
+@ Pork | South Korea | 20 | en:Kimchi fried rice | Quick,Rice
+- Rice: 300g
+- Kimchi: 300g
+- Bacon: 150g
+- Gochujang: 1 tbs
+- Soy Sauce: 1 tbs
+- Sesame Seed Oil: 1 tbs
+- Eggs: 4
+- Spring Onions: 2
+1. Fry the bacon in strips for 4 minutes.
+2. Add the chopped kimchi and cook for 3 minutes.
+3. Add the rice, gochujang and soy sauce and stir-fry for 5 minutes until hot.
+4. Drizzle with sesame oil and top each bowl with a fried egg and spring onions.
+
+# Japchae | Japchae (nouilles de patate douce sautées) | 韩式杂菜粉丝
+@ Beef | South Korea | 35 | File:Japchae 2.jpg | Noodles
+- Rice Vermicelli: 250g
+- Beef: 200g
+- Spinach: 150g
+- Carrots: 1
+- Onion: 1
+- Mushrooms: 100g
+- Soy Sauce: 5 tbs
+- Sugar: 1 tbs
+- Sesame Seed Oil: 2 tbs
+- Sesame Seed: 1 tbs
+1. Soak or cook the noodles following the packet, drain and toss with a little sesame oil.
+2. Stir-fry the beef with 1 tbs soy sauce for 3 minutes. Set aside.
+3. Stir-fry the onion, carrot and mushrooms for 4 minutes, add the spinach for 1 minute.
+4. Add the noodles, beef, remaining soy sauce, sugar and sesame oil and toss for 2 minutes. Sprinkle with sesame seeds.
+
+# Korean fried chicken | Poulet frit coréen | 韩式炸鸡
+@ Chicken | South Korea | 45 | en:Korean fried chicken | Fried
+- Chicken Wings: 1kg
+- Potato Starch: 80g
+- Vegetable Oil: For frying
+- Gochujang: 3 tbs
+- Honey: 3 tbs
+- Soy Sauce: 2 tbs
+- Garlic: 3 cloves
+- Sesame Seed: 1 tbs
+- Rice: 300g
+1. Season the wings with salt and toss in the potato starch.
+2. Fry at 170C for 10 minutes, drain, then fry again at 190C for 5 minutes until very crisp.
+3. Heat the gochujang, honey, soy sauce and garlic in a large pan for 2 minutes.
+4. Toss the wings in the sauce, sprinkle with sesame and serve with rice.
+
+# Soft tofu stew | Sundubu-jjigae (ragoût de tofu soyeux) | 嫩豆腐汤
+@ Seafood | South Korea | 25 | en:Sundubu-jjigae | Soup,Spicy
+- Silken Tofu: 600g
+- Prawns: 200g
+- Kimchi: 150g
+- Onion: 1
+- Garlic: 2 cloves
+- Red Chilli Powder: 1 tbs
+- Soy Sauce: 1 tbs
+- Vegetable Stock: 600ml
+- Eggs: 4
+- Rice: 300g
+1. Cook the rice.
+2. Fry the onion, garlic, chilli powder and kimchi in a little oil for 3 minutes.
+3. Add the stock and soy sauce and simmer for 5 minutes. Add the prawns and spoon in large pieces of tofu.
+4. Simmer for 4 minutes, crack in the eggs and cook for 2 minutes. Serve bubbling with rice.
+
+# Chicken chow mein | Chow mein au poulet | 鸡肉炒面
+@ Chicken | China | 25 | en:Chow mein | Quick,Noodles
+- Egg Noodles: 300g
+- Chicken Breasts: 2
+- Bean Sprouts: 150g
+- Carrots: 1
+- Spring Onions: 4
+- Soy Sauce: 3 tbs
+- Oyster Sauce: 2 tbs
+- Sesame Seed Oil: 1 tbs
+- Garlic: 2 cloves
+1. Cook the noodles, drain and toss with the sesame oil.
+2. Stir-fry the sliced chicken in a hot wok for 5 minutes.
+3. Add the garlic, carrot matchsticks and spring onions and stir-fry for 2 minutes.
+4. Add the noodles, bean sprouts, soy and oyster sauces and toss for 3 minutes.
+
+# Egg fried rice | Riz cantonais aux œufs | 蛋炒饭
+@ Vegetarian | China | 15 | en:Fried rice | Quick,Rice,Vegetarian
+- Rice: 300g
+- Eggs: 4
+- Frozen Peas: 150g
+- Sweetcorn: 100g
+- Spring Onions: 4
+- Soy Sauce: 3 tbs
+- Sesame Seed Oil: 1 tbs
+- Vegetable Oil: 2 tbs
+1. Heat the oil in a wok, add the beaten eggs and scramble lightly for 1 minute. Set aside.
+2. Stir-fry the peas and sweetcorn for 2 minutes.
+3. Add the rice and stir-fry for 4 minutes until hot.
+4. Return the eggs, add the soy sauce, sesame oil and spring onions and toss.
+
+# Char siu pork with rice | Porc laqué char siu | 叉烧饭
+@ Pork | China | 60 | en:Char siu | Roast
+- Pork Shoulder: 800g
+- Hoisin Sauce: 4 tbs
+- Honey: 3 tbs
+- Soy Sauce: 3 tbs
+- Chinese Five Spice Powder: 1 tsp
+- Garlic: 2 cloves
+- Rice: 300g
+- Pak Choi: 4
+1. Cut the pork into long strips and marinate in the hoisin, 2 tbs honey, soy sauce, five spice and garlic for at least 30 minutes.
+2. Heat the oven to 200C. Roast the pork on a rack for 30 minutes, turning halfway.
+3. Brush with the rest of the honey and roast for 5 minutes more.
+4. Cook the rice, steam the pak choi for 4 minutes and serve with the sliced pork.
+
+# Cashew chicken | Poulet aux noix de cajou | 腰果鸡丁
+@ Chicken | China | 25 | en:Cashew chicken | Quick,Stir-fry
+- Chicken Breasts: 3
+- Cashew Nuts: 100g
+- Onion: 1
+- Green Pepper: 1
+- Soy Sauce: 3 tbs
+- Oyster Sauce: 2 tbs
+- Cornstarch: 1 tbs
+- Garlic: 2 cloves
+- Rice: 300g
+1. Cook the rice. Toss the diced chicken with 1 tbs soy sauce and the cornstarch.
+2. Toast the cashews in a dry wok for 2 minutes and set aside.
+3. Stir-fry the chicken for 5 minutes, add the onion, pepper and garlic and cook for 3 minutes.
+4. Add the remaining sauces and 3 tbs water, toss, then add the cashews. Serve with rice.
+
+# Black pepper beef | Bœuf au poivre noir à la chinoise | 黑椒牛柳
+@ Beef | China | 25 | File:Black-Pepper Beef (Sapi Lada Hitam), One Two Restaurant, Yogyakarta.jpg | Quick,Stir-fry
+- Beef: 500g
+- Onion: 1
+- Green Pepper: 1
+- Black Pepper: 2 tsp
+- Oyster Sauce: 3 tbs
+- Soy Sauce: 1 tbs
+- Cornstarch: 1 tsp
+- Garlic: 2 cloves
+- Rice: 300g
+1. Cook the rice. Toss the beef with the cornstarch and soy sauce.
+2. Stir-fry the beef in a very hot wok for 2 minutes and set aside.
+3. Stir-fry the onion, pepper and garlic for 3 minutes.
+4. Return the beef with the oyster sauce, the coarsely ground pepper and 3 tbs water and toss for 1 minute.
+
+# Chinese lemon chicken | Poulet au citron à la chinoise | 柠檬鸡
+@ Chicken | China | 35 | en:Lemon chicken | Fried,Family
+- Chicken Breasts: 3
+- Eggs: 1
+- Cornstarch: 80g
+- Vegetable Oil: For frying
+- Lemon: 2
+- Honey: 3 tbs
+- Chicken Stock: 150ml
+- Rice: 300g
+1. Cook the rice. Cut the chicken into strips, dip in beaten egg then in cornstarch.
+2. Fry in the hot oil for 5 minutes until golden. Drain.
+3. Simmer the lemon juice and zest, honey and stock with 1 tsp cornstarch mixed in water for 2 minutes until glossy.
+4. Toss the chicken in the sauce and serve with rice.
+
+# Dan dan noodles | Nouilles dan dan | 担担面
+@ Pork | China | 25 | en:Dan dan noodles | Spicy,Noodles
+- Egg Noodles: 400g
+- Minced Pork: 300g
+- Chinese Sesame Sauce: 3 tbs
+- Soy Sauce: 3 tbs
+- Chilli Oil: 2 tbs
+- Sichuan Pepper: 1 tsp
+- Garlic: 2 cloves
+- Pak Choi: 4
+- Spring Onions: 2
+1. Fry the pork with the garlic and 1 tbs soy sauce for 6 minutes until crisp.
+2. Mix the sesame sauce, remaining soy sauce, chilli oil, ground Sichuan pepper and 4 tbs hot water in the bowls.
+3. Cook the noodles, adding the pak choi for the last 2 minutes.
+4. Divide between the bowls, top with the pork and spring onions and mix at the table.
+
+# Red braised pork belly | Porc braisé rouge (hong shao rou) | 红烧肉
+@ Pork | China | 90 | en:Red braised pork belly | Braise
+- Pork Belly Slices: 800g
+- Brown Sugar: 2 tbs
+- Shaoxing Wine: 3 tbs
+- Soy Sauce: 3 tbs
+- Dark Soy Sauce: 1 tbs
+- Ginger: 4 slices
+- Star Anise: 2
+- Spring Onions: 3
+- Rice: 300g
+1. Cut the pork into cubes, blanch in boiling water for 3 minutes and drain.
+2. Melt the sugar in a wok until amber, add the pork and toss to coat.
+3. Add the wine, both soy sauces, ginger, star anise, spring onions and water to just cover. Simmer covered for 1 hour.
+4. Uncover and boil for 10 minutes until the sauce is sticky. Serve with rice.
+
+# Pork and cabbage dumplings | Raviolis chinois porc et chou (jiaozi) | 猪肉白菜饺子
+@ Pork | China | 60 | en:Jiaozi | Dumplings
+- Wonton Skin: 300g
+- Minced Pork: 400g
+- Napa Cabbage: 300g
+- Ginger: 1 tbs grated
+- Spring Onions: 3
+- Soy Sauce: 3 tbs
+- Sesame Seed Oil: 1 tbs
+- Rice Vinegar: 3 tbs
+1. Chop the cabbage finely, salt it, leave for 10 minutes and squeeze dry.
+2. Mix with the pork, ginger, spring onions, 2 tbs soy sauce and the sesame oil.
+3. Put a teaspoon of filling on each wrapper, wet the edges and pinch closed.
+4. Boil in batches for 5 minutes, until they float and the filling is cooked.
+5. Serve with the vinegar mixed with the remaining soy sauce.
+
+# Cumin lamb | Agneau au cumin | 孜然羊肉
+@ Lamb | China | 25 | File:Cumin Lamb (5179533335).jpg | Quick,Spicy
+- Lamb Leg: 500g
+- Cumin Seeds: 2 tbs
+- Chilli Flakes: 1 tsp
+- Onion: 1
+- Garlic: 2 cloves
+- Soy Sauce: 2 tbs
+- Cornstarch: 1 tsp
+- Coriander: 1 handful
+- Rice: 300g
+1. Cook the rice. Toss the lamb with the soy sauce and cornstarch.
+2. Toast the lightly crushed cumin in a dry wok for 1 minute.
+3. Add oil and stir-fry the lamb in a very hot wok for 3 minutes.
+4. Add the onion, garlic, chilli and cumin and stir-fry for 2 minutes. Finish with coriander.
+
+# Three cup chicken | Poulet aux trois tasses | 三杯鸡
+@ Chicken | China | 35 | en:Three-cup chicken | Braise
+- Chicken Thighs: 800g
+- Sesame Seed Oil: 3 tbs
+- Soy Sauce: 4 tbs
+- Rice Wine: 4 tbs
+- Ginger: 8 slices
+- Garlic: 10 cloves
+- Basil Leaves: 1 handful
+- Brown Sugar: 1 tbs
+- Rice: 300g
+1. Fry the ginger and whole garlic cloves in the sesame oil for 3 minutes.
+2. Add the chicken pieces and brown for 6 minutes.
+3. Add the soy sauce, rice wine and sugar, cover and simmer for 15 minutes, then uncover until the sauce is sticky.
+4. Stir in the basil and serve with rice.
+
+# Twice-cooked pork | Porc cuit deux fois | 回锅肉
+@ Pork | China | 45 | en:Twice cooked pork | Spicy,Stir-fry
+- Pork Belly Slices: 500g
+- Doubanjiang: 2 tbs
+- Leek: 1
+- Green Pepper: 1
+- Garlic: 2 cloves
+- Sugar: 1 tsp
+- Soy Sauce: 1 tbs
+- Rice: 300g
+1. Simmer the pork in water for 20 minutes. Cool and slice thinly.
+2. Fry the pork slices in a wok for 4 minutes until they curl and release fat.
+3. Add the bean paste and garlic and fry for 1 minute.
+4. Add the sliced leek and pepper, sugar and soy sauce and stir-fry for 3 minutes. Serve with rice.
+
+# Tomato and egg noodle soup | Soupe de nouilles tomate et œuf | 番茄鸡蛋面
+@ Vegetarian | China | 20 | en:Tomato and egg soup | Quick,Soup,Vegetarian
+- Egg Noodles: 300g
+- Tomatoes: 4
+- Eggs: 4
+- Vegetable Stock: 1.2 litres
+- Soy Sauce: 2 tbs
+- Spring Onions: 3
+- Sesame Seed Oil: 1 tsp
+1. Fry the chopped tomatoes in a little oil for 4 minutes until soft.
+2. Add the stock and soy sauce and bring to the boil.
+3. Drizzle in the beaten eggs, stirring gently to make ribbons.
+4. Cook the noodles, divide into bowls and pour over the soup. Add spring onions and sesame oil.
+
+# Chicken and sweetcorn soup | Soupe poulet maïs | 鸡肉玉米羹
+@ Chicken | China | 20 | en:Corn soup | Quick,Soup
+- Chicken Breasts: 2
+- Creamed Corn: 400g
+- Chicken Stock: 1.2 litres
+- Eggs: 2
+- Cornstarch: 2 tbs
+- Ginger: 1 tsp grated
+- Spring Onions: 3
+- Soy Sauce: 1 tbs
+1. Poach the chicken in the stock with the ginger for 12 minutes. Lift out and shred.
+2. Add the creamed corn and soy sauce to the stock and bring to a simmer.
+3. Stir in the cornstarch mixed with a little water and cook for 1 minute.
+4. Drizzle in the beaten eggs, return the chicken and finish with spring onions.
+
+# Steamed salmon with ginger and soy | Saumon vapeur gingembre et soja | 姜葱蒸三文鱼
+@ Seafood | China | 20 | File:Ginger Scallion Red Perch (50-366) (25058329532).jpg | Quick,Fish
+- Salmon: 4 fillets
+- Ginger: 3 tbs
+- Spring Onions: 4
+- Soy Sauce: 3 tbs
+- Sesame Seed Oil: 1 tbs
+- Vegetable Oil: 2 tbs
+- Rice: 300g
+- Pak Choi: 4
+1. Cook the rice.
+2. Put the salmon on a plate in a steamer with half the ginger and steam for 8 minutes, adding the pak choi for the last 4 minutes.
+3. Top the fish with the remaining ginger and sliced spring onions and pour over the soy sauce.
+4. Heat the oils until smoking and pour over the fish to sizzle. Serve with rice.
+
+# Mapo tofu with vegetables | Tofu mapo végétarien | 素麻婆豆腐
+@ Vegan | China | 20 | en:Mapo doufu | Quick,Spicy
+- Tofu: 500g
+- Mushrooms: 200g
+- Doubanjiang: 2 tbs
+- Garlic: 2 cloves
+- Ginger: 1 tbs grated
+- Sichuan Pepper: 1 tsp
+- Soy Sauce: 1 tbs
+- Cornstarch: 1 tbs
+- Spring Onions: 3
+- Rice: 300g
+1. Cook the rice. Cut the tofu into cubes and the mushrooms finely.
+2. Fry the mushrooms for 4 minutes, then add the bean paste, garlic and ginger for 1 minute.
+3. Add 250ml water and the soy sauce, slide in the tofu and simmer for 5 minutes.
+4. Thicken with the cornstarch mixed with water, sprinkle with ground Sichuan pepper and spring onions.

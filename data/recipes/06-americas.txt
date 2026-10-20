@@ -1,0 +1,464 @@
+// Amériques et îles britanniques. Format : voir tools/build-recipes.js
+
+# Chili con carne | Chili con carne | 墨西哥辣肉酱
+@ Beef | Mexico | 60 | en:Chili con carne | Stew,Spicy,Family
+- Minced Beef: 500g
+- Onion: 1
+- Garlic: 2 cloves
+- Red Pepper: 1
+- Chilli Powder: 2 tsp
+- Ground Cumin: 2 tsp
+- Chopped Tomatoes: 800g
+- Kidney Beans: 400g
+- Tomato Puree: 2 tbs
+- Rice: 300g
+- Sour Cream: 100ml
+1. Fry the onion, garlic and diced pepper for 5 minutes. Add the beef and brown for 6 minutes.
+2. Stir in the spices and tomato purée, then the tomatoes and 150ml water. Simmer for 30 minutes.
+3. Add the beans and cook for 10 minutes more.
+4. Serve with rice and sour cream.
+
+# Pork carnitas tacos | Tacos de carnitas | 墨西哥慢炖猪肉塔可
+@ Pork | Mexico | 180 | en:Carnitas | Tacos
+- Pork Shoulder: 1.2kg
+- Orange: 1
+- Lime: 2
+- Garlic: 4 cloves
+- Ground Cumin: 2 tsp
+- Dried Oregano: 1 tsp
+- Corn Tortillas: 12
+- Red Onions: 1
+- Coriander: 1 handful
+- Salsa: 200g
+1. Cut the pork into large chunks and put in a casserole with the orange juice, juice of 1 lime, garlic, spices, salt and water to half cover.
+2. Cover and cook at 160C for 2 hours 30 minutes until very tender.
+3. Shred the meat and fry it in a hot pan with some of its fat for 5 minutes until crisp.
+4. Serve in warm tortillas with onion, coriander, salsa and lime.
+
+# Chicken quesadillas | Quesadillas au poulet | 鸡肉芝士薄饼
+@ Chicken | Mexico | 25 | File:Chicken quesadilla - Massachusetts.jpg | Quick,Family
+- Flour Tortilla: 8
+- Chicken Breasts: 2
+- Shredded Mexican Cheese: 250g
+- Sweetcorn: 150g
+- Black Beans: 200g
+- Fajita Seasoning: 2 tsp
+- Sour Cream: 100ml
+- Salsa: 150g
+1. Slice the chicken, toss with the seasoning and fry for 7 minutes.
+2. Lay 4 tortillas flat and cover with cheese, chicken, corn and beans. Top with the other tortillas.
+3. Cook each quesadilla in a dry pan for 3 minutes on each side until the cheese melts.
+4. Cut into wedges and serve with sour cream and salsa.
+
+# Beef burritos | Burritos au bœuf | 牛肉墨西哥卷
+@ Beef | Mexico | 35 | en:Burrito | Wrap
+- Flour Tortilla: 4
+- Minced Beef: 400g
+- Rice: 200g
+- Black Beans: 400g
+- Onion: 1
+- Ground Cumin: 1 tsp
+- Chilli Powder: 1 tsp
+- Cheddar Cheese: 120g
+- Salsa: 150g
+- Lettuce: 1/2
+1. Cook the rice.
+2. Fry the onion and beef for 8 minutes, add the spices and the beans and cook for 5 minutes.
+3. Warm the tortillas and fill with rice, beef, cheese, salsa and lettuce.
+4. Fold in the sides, roll up tightly and toast briefly in a dry pan.
+
+# Chicken fajitas | Fajitas au poulet | 鸡肉法士达
+@ Chicken | Mexico | 25 | en:Fajita | Quick,Wrap
+- Chicken Breasts: 3
+- Red Pepper: 1
+- Green Pepper: 1
+- Red Onions: 1
+- Fajita Seasoning: 2 tbs
+- Flour Tortilla: 8
+- Avocado: 2
+- Sour Cream: 100ml
+- Lime: 1
+1. Slice the chicken, peppers and onion and toss with the seasoning and a little oil.
+2. Cook in a very hot pan for 8 minutes until charred.
+3. Mash the avocados with lime juice and salt.
+4. Serve with the warm tortillas, avocado and sour cream.
+
+# Arroz con pollo | Arroz con pollo (riz au poulet latino) | 拉美鸡肉饭
+@ Chicken | Colombia | 50 | en:Arroz con pollo | Rice,Family
+- Chicken Thighs: 8
+- Rice: 320g
+- Onion: 1
+- Red Pepper: 1
+- Garlic: 2 cloves
+- Ground Cumin: 1 tsp
+- Turmeric: 1 tsp
+- Chicken Stock: 750ml
+- Frozen Peas: 150g
+- Coriander: 1 handful
+1. Brown the chicken in a casserole for 8 minutes. Add the onion, pepper and garlic and cook for 4 minutes.
+2. Add the spices and rice and stir for 1 minute, then add the stock.
+3. Cover and simmer for 20 minutes, adding the peas for the last 5 minutes. Sprinkle with coriander.
+
+# Peruvian ceviche | Ceviche péruvien | 秘鲁柠汁腌鱼
+@ Seafood | Peru | 30 | en:Ceviche | Fish,Fresh
+- Sea Bass Fillets: 500g
+- Lime: 8
+- Red Onions: 1
+- Red Chilli: 1
+- Coriander: 1 handful
+- Sweet Potatoes: 2
+- Sweetcorn: 150g
+- Salt: to taste
+1. Boil the sweet potatoes in slices for 12 minutes and let them cool.
+2. Cut the fish into small cubes, season with salt and cover with the lime juice. Leave for 10 minutes.
+3. Add the very thinly sliced onion, chopped chilli and coriander.
+4. Serve with the sweet potato and corn.
+
+# Lomo saltado | Lomo saltado (bœuf sauté péruvien) | 秘鲁炒牛柳
+@ Beef | Peru | 35 | en:Lomo saltado | Stir-fry
+- Sirloin Steak: 500g
+- Red Onions: 1
+- Tomatoes: 3
+- Soy Sauce: 3 tbs
+- Red Wine Vinegar: 1 tbs
+- Garlic: 2 cloves
+- Fries: 500g
+- Rice: 300g
+- Coriander: 1 handful
+1. Cook the rice and the fries following the packet.
+2. Stir-fry the beef strips in a very hot wok for 2 minutes and set aside.
+3. Stir-fry the onion wedges and garlic for 2 minutes, add the tomato wedges, soy sauce and vinegar.
+4. Return the beef, toss in the fries and coriander and serve with rice.
+
+# Cuban picadillo | Picadillo cubain | 古巴碎牛肉
+@ Beef | Cuba | 35 | en:Picadillo | Family
+- Minced Beef: 500g
+- Onion: 1
+- Green Pepper: 1
+- Garlic: 2 cloves
+- Passata: 300ml
+- Ground Cumin: 1 tsp
+- Pimento Stuffed Olives: 60g
+- Raisins: 40g
+- Rice: 300g
+- Black Beans: 400g
+1. Fry the onion, pepper and garlic for 5 minutes, add the beef and brown for 6 minutes.
+2. Add the cumin, passata, sliced olives and raisins and simmer for 15 minutes.
+3. Serve with rice and warm black beans.
+
+# Black bean tacos | Tacos aux haricots noirs | 黑豆塔可
+@ Vegetarian | Mexico | 20 | en:Taco | Quick,Tacos,Vegetarian
+- Black Beans: 800g
+- Corn Tortillas: 12
+- Red Onions: 1
+- Ground Cumin: 1 tsp
+- Smoked Paprika: 1 tsp
+- Avocado: 2
+- Feta: 100g
+- Lime: 2
+- Coriander: 1 handful
+1. Fry half the onion for 4 minutes, add the drained beans and spices and cook for 5 minutes, crushing some of the beans.
+2. Mash the avocado with lime juice and salt.
+3. Warm the tortillas and fill with beans, avocado, crumbled feta, the rest of the onion and coriander.
+
+# Huevos rancheros | Huevos rancheros | 墨西哥牧场煎蛋
+@ Vegetarian | Mexico | 25 | en:Huevos rancheros | Eggs,Quick,Vegetarian
+- Eggs: 8
+- Corn Tortillas: 8
+- Chopped Tomatoes: 400g
+- Onion: 1
+- Garlic: 1 clove
+- Jalapeno: 1
+- Refried Beans: 400g
+- Avocado: 1
+- Coriander: 1 handful
+1. Simmer the onion, garlic, jalapeño and tomatoes for 10 minutes to make a salsa.
+2. Warm the refried beans and toast the tortillas in a dry pan.
+3. Fry the eggs.
+4. Spread beans on the tortillas, add the eggs and spoon over the salsa. Top with avocado and coriander.
+
+# Classic cheeseburger | Cheeseburger maison | 经典芝士汉堡
+@ Beef | United States | 30 | en:Cheeseburger | Burger,Family
+- Minced Beef: 600g
+- Sesame Seed Burger Buns: 4
+- Cheddar Cheese: 4 slices
+- Lettuce: 4 leaves
+- Tomatoes: 1
+- Red Onions: 1
+- Dill Pickles: 2
+- Tomato Ketchup: 4 tbs
+- Mustard: 2 tbs
+- Fries: 600g
+1. Cook the fries in the oven following the packet.
+2. Shape the beef into 4 patties slightly wider than the buns. Season well.
+3. Cook in a very hot pan for 3 minutes, flip, add the cheese and cook for 2 minutes more.
+4. Toast the buns and build the burgers with ketchup, mustard, lettuce, tomato, onion and pickles.
+
+# Baked mac and cheese | Mac and cheese au four | 焗芝士通心粉
+@ Vegetarian | United States | 40 | en:Macaroni and cheese | Bake,Family,Vegetarian
+- Macaroni: 400g
+- Butter: 50g
+- Plain Flour: 40g
+- Milk: 700ml
+- Mature Cheddar: 250g
+- Mustard Powder: 1 tsp
+- Breadcrumbs: 40g
+- Rocket: 100g
+1. Cook the pasta for 2 minutes less than the packet says.
+2. Make a sauce with the butter, flour and milk, simmer for 5 minutes, then stir in the mustard and most of the cheese.
+3. Heat the oven to 200C. Mix the pasta with the sauce, tip into a dish and top with the remaining cheese and breadcrumbs.
+4. Bake for 20 minutes. Serve with rocket.
+
+# Pulled pork buns with slaw | Burgers de porc effiloché et coleslaw | 手撕猪肉汉堡
+@ Pork | United States | 240 | en:Pulled pork | Burger,Barbecue
+- Pork Shoulder: 1.5kg
+- Smoked Paprika: 2 tbs
+- Brown Sugar: 2 tbs
+- Garlic Powder: 1 tsp
+- Barbeque Sauce: 200ml
+- Apple Cider Vinegar: 3 tbs
+- Bread Rolls: 6
+- White Cabbage: 1/4
+- Carrots: 2
+- Mayonnaise: 4 tbs
+1. Rub the pork with the paprika, sugar, garlic powder and salt.
+2. Put in a covered casserole with 200ml water and the vinegar and cook at 150C for 3 hours 30 minutes.
+3. Shred the meat and mix with the barbecue sauce and some of the juices.
+4. Mix the shredded cabbage and grated carrots with the mayonnaise. Fill the rolls with pork and slaw.
+
+# Chicken pot pie | Tourte au poulet américaine | 美式鸡肉派
+@ Chicken | United States | 60 | en:Pot pie | Pie,Family
+- Chicken Breasts: 3
+- Carrots: 2
+- Celery: 2 sticks
+- Onion: 1
+- Frozen Peas: 150g
+- Butter: 40g
+- Plain Flour: 40g
+- Chicken Stock: 400ml
+- Milk: 150ml
+- Puff Pastry: 1 sheet
+- Egg: 1
+1. Cook the diced chicken, carrots, celery and onion in the butter for 10 minutes.
+2. Stir in the flour, then the stock and milk and simmer for 5 minutes. Add the peas and season.
+3. Heat the oven to 200C. Pour into a pie dish, cover with the pastry and brush with egg.
+4. Bake for 25 minutes until golden.
+
+# Jambalaya | Jambalaya | 什锦饭
+@ Chicken | United States | 50 | en:Jambalaya | Rice,Spicy
+- Chicken Thighs: 4
+- Chorizo: 150g
+- King Prawns: 200g
+- Onion: 1
+- Green Pepper: 1
+- Celery: 2 sticks
+- Cajun: 2 tsp
+- Chopped Tomatoes: 400g
+- Rice: 300g
+- Chicken Stock: 700ml
+1. Brown the diced chicken and sliced chorizo for 6 minutes.
+2. Add the onion, pepper and celery and cook for 5 minutes, then the Cajun spice.
+3. Add the rice, tomatoes and stock, cover and simmer for 20 minutes.
+4. Add the prawns, cover and cook for 5 minutes more.
+
+# Chicken Caesar salad | Salade César au poulet | 凯撒鸡肉沙拉
+@ Chicken | United States | 25 | en:Caesar salad | Salad,Quick
+- Chicken Breasts: 3
+- Little Gem Lettuce: 3
+- Parmesan: 60g
+- Bread: 3 slices
+- Mayonnaise: 4 tbs
+- Lemon: 1
+- Garlic: 1 clove
+- Anchovy Fillet: 2
+- Worcestershire Sauce: 1 tsp
+1. Pan-fry the seasoned chicken for 6 minutes on each side and slice.
+2. Cut the bread into cubes and toast in a pan with olive oil until golden.
+3. Blend the mayonnaise, lemon juice, garlic, anchovies, Worcestershire sauce and half the parmesan.
+4. Toss the lettuce with the dressing and top with chicken, croutons and parmesan shavings.
+
+# Philly cheesesteak | Philly cheesesteak | 费城芝士牛排三明治
+@ Beef | United States | 25 | en:Cheesesteak | Sandwich,Quick
+- Sirloin Steak: 500g
+- Onions: 2
+- Green Pepper: 1
+- Swiss Cheese: 8 slices
+- Bread Rolls: 4
+- Butter: 20g
+1. Freeze the steak for 20 minutes, then slice it very thinly.
+2. Cook the sliced onions and pepper in the butter for 10 minutes.
+3. Fry the steak in a very hot pan for 2 minutes, mix with the onions and cover with the cheese until melted.
+4. Pile into the toasted rolls.
+
+# Cajun chicken pasta | Pâtes au poulet cajun | 卡真鸡肉意面
+@ Chicken | United States | 25 | File:Gfp-chicken-mushroom-pasta.jpg | Quick,Pasta
+- Penne Rigate: 400g
+- Chicken Breasts: 3
+- Cajun: 2 tbs
+- Red Pepper: 1
+- Garlic: 2 cloves
+- Double Cream: 200ml
+- Parmesan: 50g
+- Spring Onions: 2
+1. Cook the pasta.
+2. Toss the sliced chicken in the Cajun spice and fry for 7 minutes.
+3. Add the pepper and garlic and cook for 3 minutes, then the cream and parmesan for 2 minutes.
+4. Toss with the pasta and spring onions.
+
+# Chicken noodle soup | Soupe de poulet aux nouilles | 鸡汤面
+@ Chicken | United States | 40 | en:Chicken soup | Soup,Family
+- Chicken Thighs: 4
+- Carrots: 2
+- Celery: 2 sticks
+- Onion: 1
+- Chicken Stock: 1.5 litres
+- Egg Noodles: 200g
+- Thyme: 2 sprigs
+- Parsley: 2 tbs chopped
+1. Simmer the chicken in the stock with the thyme for 20 minutes. Lift out and shred.
+2. Add the diced carrots, celery and onion and simmer for 10 minutes.
+3. Add the noodles and cook for 5 minutes, then return the chicken and add the parsley.
+
+# Fish and chips | Fish and chips | 炸鱼薯条
+@ Seafood | United Kingdom | 45 | en:Fish and chips | Fried,Classic
+- Cod: 4 fillets
+- Plain Flour: 200g
+- Beer: 300ml
+- Baking Powder: 1 tsp
+- Floury Potatoes: 1kg
+- Sunflower Oil: For frying
+- Frozen Peas: 300g
+- Lemon: 1
+- Mayonnaise: 4 tbs
+1. Cut the potatoes into thick chips and fry at 160C for 7 minutes. Drain.
+2. Whisk the flour, baking powder, a pinch of salt and the cold beer into a batter.
+3. Dust the fish with flour, dip in the batter and fry at 180C for 6 minutes until golden.
+4. Fry the chips again at 180C for 3 minutes. Cook the peas.
+5. Serve with lemon and mayonnaise.
+
+# Cottage pie | Cottage pie | 农舍派
+@ Beef | United Kingdom | 70 | en:Cottage pie | Bake,Family
+- Minced Beef: 500g
+- Onion: 1
+- Carrots: 2
+- Tomato Puree: 1 tbs
+- Worcestershire Sauce: 2 tbs
+- Beef Stock: 300ml
+- Plain Flour: 1 tbs
+- Floury Potatoes: 1kg
+- Butter: 40g
+- Milk: 150ml
+- Cheddar Cheese: 60g
+1. Fry the onion and carrots for 5 minutes, add the beef and brown for 6 minutes.
+2. Stir in the flour, tomato purée and Worcestershire sauce, then the stock. Simmer for 20 minutes.
+3. Boil the potatoes for 20 minutes and mash with the butter and milk.
+4. Heat the oven to 200C. Top the meat with the mash and cheese and bake for 25 minutes.
+
+# Smoked haddock kedgeree-style rice | Riz au haddock fumé et œufs | 熏黑线鳕鸡蛋饭
+@ Seafood | United Kingdom | 35 | en:Kedgeree | Rice,Fish
+- Smoked Haddock: 400g
+- Basmati Rice: 300g
+- Eggs: 4
+- Onion: 1
+- Curry Powder: 2 tsp
+- Butter: 30g
+- Frozen Peas: 150g
+- Parsley: 3 tbs chopped
+- Lemon: 1
+1. Poach the haddock in water for 8 minutes, then flake it. Boil the eggs for 8 minutes and quarter them.
+2. Soften the onion in the butter for 5 minutes, add the curry powder, then the rice and 600ml of the poaching water. Cover and cook for 12 minutes.
+3. Add the peas for the last 3 minutes. Fold in the fish, eggs and parsley and serve with lemon.
+
+# Toad in the hole with onion gravy | Saucisses en pâte à Yorkshire | 约克郡布丁烤香肠
+@ Pork | United Kingdom | 50 | en:Toad in the hole | Bake,Family
+- Sausages: 8
+- Plain Flour: 140g
+- Eggs: 3
+- Milk: 200ml
+- Sunflower Oil: 3 tbs
+- Onions: 2
+- Beef Stock: 300ml
+- Frozen Peas: 300g
+1. Heat the oven to 220C. Put the sausages and oil in a roasting tin and cook for 10 minutes.
+2. Whisk the flour, eggs and milk into a smooth batter.
+3. Pour the batter around the sausages and bake for 25 minutes without opening the oven.
+4. Meanwhile soften the onions for 10 minutes, add the stock and simmer for 10 minutes. Serve with the peas.
+
+# Lamb shepherd's pie | Shepherd's pie à l'agneau | 牧羊人派
+@ Lamb | United Kingdom | 70 | en:Shepherd's pie | Bake
+- Lamb Mince: 500g
+- Onion: 1
+- Carrots: 2
+- Thyme: 1 tsp
+- Tomato Puree: 1 tbs
+- Lamb Stock: 300ml
+- Floury Potatoes: 1kg
+- Butter: 40g
+- Milk: 150ml
+- Frozen Peas: 200g
+1. Brown the lamb with the onion and carrots for 8 minutes.
+2. Add the thyme, tomato purée and stock and simmer for 20 minutes.
+3. Boil the potatoes for 20 minutes and mash with the butter and milk.
+4. Heat the oven to 200C. Spread the lamb in a dish, cover with the mash and bake for 25 minutes. Serve with peas.
+
+# Tuna melt | Tuna melt (croque au thon) | 金枪鱼芝士三明治
+@ Seafood | United States | 15 | en:Tuna melt | Quick,Sandwich
+- Tuna: 300g
+- Mayonnaise: 4 tbs
+- Red Onions: 1/2
+- Celery: 1 stick
+- Wholegrain Bread: 8 slices
+- Cheddar Cheese: 150g
+- Butter: 30g
+- Tomatoes: 2
+1. Mix the tuna with the mayonnaise, finely chopped onion and celery.
+2. Butter the bread on the outside, fill with the tuna, tomato slices and cheese.
+3. Cook in a frying pan over medium heat for 3 minutes on each side until golden and the cheese melts.
+
+# Black bean burgers | Burgers végétariens aux haricots noirs | 黑豆素汉堡
+@ Vegetarian | United States | 30 | en:Veggie burger | Burger,Vegetarian
+- Black Beans: 800g
+- Breadcrumbs: 80g
+- Egg: 1
+- Red Onions: 1
+- Ground Cumin: 1 tsp
+- Smoked Paprika: 1 tsp
+- Sesame Seed Burger Buns: 4
+- Cheddar Cheese: 4 slices
+- Lettuce: 4 leaves
+- Tomatoes: 1
+1. Mash the drained beans roughly, then mix with the breadcrumbs, egg, half the onion chopped and the spices. Shape into 4 patties.
+2. Fry in a little oil for 4 minutes on each side, adding the cheese at the end.
+3. Build the burgers with lettuce, tomato and the rest of the onion.
+
+# Sweet potato and black bean chilli | Chili végétarien patate douce et haricots noirs | 红薯黑豆素辣酱
+@ Vegan | Mexico | 45 | en:Chili con carne | Stew,Vegetarian
+- Sweet Potatoes: 2
+- Black Beans: 800g
+- Onion: 1
+- Red Pepper: 1
+- Garlic: 2 cloves
+- Chilli Powder: 2 tsp
+- Ground Cumin: 2 tsp
+- Chopped Tomatoes: 800g
+- Rice: 300g
+- Lime: 1
+1. Fry the onion, pepper and garlic for 5 minutes, add the spices.
+2. Add the sweet potato in cubes, the tomatoes and 200ml water and simmer for 20 minutes.
+3. Add the beans and cook for 10 minutes. Serve with rice and lime.
+
+# Brazilian black bean and sausage stew | Ragoût brésilien de haricots noirs et saucisses | 巴西黑豆香肠炖
+@ Pork | Brazil | 50 | File:Fabada en cazuela de barro.jpg | Stew
+- Black Beans: 800g
+- Sausages: 4
+- Bacon: 150g
+- Onion: 1
+- Garlic: 3 cloves
+- Bay Leaves: 2
+- Rice: 300g
+- Orange: 1
+- Kale: 200g
+1. Fry the bacon and sliced sausages for 6 minutes. Add the onion and garlic for 4 minutes.
+2. Add the beans with their liquid, the bay leaves and 300ml water and simmer for 25 minutes.
+3. Cook the rice. Stir-fry the shredded kale with a little garlic for 3 minutes.
+4. Serve the beans with rice, kale and orange slices.

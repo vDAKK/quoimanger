@@ -1,0 +1,350 @@
+// Plats rapides, végétariens et simples. Format : voir tools/build-recipes.js
+
+# Cheese and ham omelette with salad | Omelette jambon fromage | 火腿奶酪煎蛋卷
+@ Pork | France | 15 | en:Omelette | Quick,Eggs
+- Eggs: 10
+- Ham: 150g
+- Gruyère: 80g
+- Butter: 20g
+- Lettuce: 1
+- Vinaigrette Dressing: 3 tbs
+- Crusty Bread: 1
+1. Beat the eggs with salt and pepper.
+2. Melt a little butter in a frying pan, pour in a quarter of the eggs and stir gently for 1 minute.
+3. Add some diced ham and cheese, fold and slide onto a plate. Repeat.
+4. Serve with the dressed salad and bread.
+
+# Pasta with creamy mushrooms | Pâtes crémeuses aux champignons | 奶油蘑菇意面
+@ Vegetarian | Italy | 20 | File:Creamy Mushroom Pasta.jpg | Quick,Pasta,Vegetarian
+- Tagliatelle: 400g
+- Mushrooms: 400g
+- Garlic: 2 cloves
+- Creme Fraiche: 200ml
+- Parmesan: 50g
+- Parsley: 2 tbs chopped
+- Butter: 20g
+1. Cook the pasta.
+2. Fry the sliced mushrooms in the butter over high heat for 6 minutes, add the garlic for 1 minute.
+3. Stir in the crème fraîche and parmesan and simmer for 2 minutes.
+4. Toss with the pasta and parsley.
+
+# Halloumi fajitas | Fajitas au halloumi | 哈罗米奶酪法士达
+@ Vegetarian | Mexico | 20 | File:Vegetable Fajitas (4188499456).jpg | Quick,Wrap,Vegetarian
+- Halloumi: 250g
+- Red Pepper: 1
+- Yellow Pepper: 1
+- Red Onions: 1
+- Fajita Seasoning: 2 tsp
+- Flour Tortilla: 8
+- Greek Yogurt: 150g
+- Lime: 1
+- Avocado: 1
+1. Slice the halloumi, peppers and onion and toss with the seasoning and a little oil.
+2. Cook in a hot pan for 8 minutes until charred.
+3. Serve in warm tortillas with yogurt, sliced avocado and lime.
+
+# Chickpea and spinach curry | Curry de pois chiches aux épinards | 鹰嘴豆菠菜咖喱
+@ Vegan | India | 25 | File:Chickpea Curry.jpg | Quick,Curry,Vegetarian
+- Chickpeas: 800g
+- Coconut Milk: 400ml
+- Onion: 1
+- Garlic: 2 cloves
+- Curry Powder: 2 tbs
+- Chopped Tomatoes: 400g
+- Spinach: 200g
+- Basmati Rice: 300g
+1. Fry the onion and garlic for 5 minutes, add the curry powder for 1 minute.
+2. Add the tomatoes, coconut milk and chickpeas and simmer for 12 minutes.
+3. Stir in the spinach until wilted. Serve with rice.
+
+# Lentil bolognese | Bolognaise de lentilles | 扁豆肉酱意面
+@ Vegan | Italy | 40 | en:Bolognese sauce | Pasta,Vegetarian
+- Brown Lentils: 250g
+- Onion: 1
+- Carrots: 2
+- Celery: 1 stick
+- Garlic: 2 cloves
+- Chopped Tomatoes: 800g
+- Tomato Puree: 2 tbs
+- Dried Oregano: 1 tsp
+- Spaghetti: 400g
+1. Soften the chopped onion, carrot, celery and garlic in olive oil for 8 minutes.
+2. Add the lentils, tomatoes, tomato purée, oregano and 400ml water. Simmer for 30 minutes until thick.
+3. Serve with the spaghetti.
+
+# Mushroom stroganoff | Stroganoff aux champignons | 奶油蘑菇斯特罗加诺夫
+@ Vegetarian | Russia | 25 | File:Beef Stroganoff z boczniaka (Poznan).jpg | Quick,Vegetarian
+- Mushrooms: 600g
+- Onion: 1
+- Garlic: 2 cloves
+- Paprika: 2 tsp
+- Sour Cream: 200ml
+- Dijon Mustard: 1 tsp
+- Rice: 300g
+- Parsley: 2 tbs chopped
+1. Cook the rice.
+2. Fry the onion for 5 minutes, add the thickly sliced mushrooms and cook over high heat for 8 minutes.
+3. Add the garlic and paprika, then the sour cream and mustard and warm through.
+4. Serve with rice and parsley.
+
+# Vegetable fried rice with tofu | Riz sauté aux légumes et tofu | 豆腐蔬菜炒饭
+@ Vegan | China | 20 | en:Fried rice | Quick,Rice
+- Rice: 300g
+- Tofu: 300g
+- Carrots: 2
+- Frozen Peas: 150g
+- Spring Onions: 4
+- Soy Sauce: 4 tbs
+- Sesame Seed Oil: 1 tbs
+- Garlic: 2 cloves
+1. Fry the tofu cubes in a hot wok for 6 minutes. Set aside.
+2. Stir-fry the diced carrots, garlic and peas for 3 minutes.
+3. Add the rice and stir-fry for 4 minutes, then the tofu, soy sauce, sesame oil and spring onions.
+
+# Spinach and feta omelette | Omelette épinards et feta | 菠菜羊奶酪煎蛋卷
+@ Vegetarian | Greece | 15 | en:Omelette | Quick,Eggs,Vegetarian
+- Eggs: 10
+- Spinach: 150g
+- Feta: 120g
+- Butter: 20g
+- Cherry Tomatoes: 200g
+- Crusty Bread: 1
+1. Wilt the spinach in a pan for 2 minutes and squeeze dry.
+2. Beat the eggs and cook a quarter at a time in a little butter, stirring gently.
+3. Add some spinach and feta, fold and serve with tomatoes and bread.
+
+# Bean and cheese quesadillas | Quesadillas haricots et fromage | 豆子芝士薄饼
+@ Vegetarian | Mexico | 15 | File:Quesadilla plate, New Orleans November 2016.jpg | Quick,Vegetarian
+- Flour Tortilla: 8
+- Refried Beans: 400g
+- Cheddar Cheese: 200g
+- Sweetcorn: 150g
+- Spring Onions: 3
+- Salsa: 150g
+- Sour Cream: 100ml
+1. Spread the beans on 4 tortillas, top with cheese, corn and spring onions and cover with the other tortillas.
+2. Cook in a dry pan for 3 minutes on each side.
+3. Cut into wedges and serve with salsa and sour cream.
+
+# Quinoa bowl with roasted sweet potato | Bowl de quinoa et patate douce rôtie | 藜麦烤红薯碗
+@ Vegan | United States | 35 | File:Vegan Quinoa Bowl (44040185371).jpg | Bowl,Vegetarian
+- Quinoa: 250g
+- Sweet Potatoes: 2
+- Chickpeas: 400g
+- Smoked Paprika: 1 tsp
+- Avocado: 2
+- Rocket: 100g
+- Tahini: 3 tbs
+- Lemon: 1
+1. Roast the sweet potatoes in cubes and the chickpeas with oil and paprika at 220C for 25 minutes.
+2. Cook the quinoa in boiling water for 12 minutes and drain.
+3. Mix the tahini with lemon juice and water to a pouring sauce.
+4. Fill bowls with quinoa, rocket, sweet potato, chickpeas and sliced avocado and drizzle with the sauce.
+
+# Tomato and mozzarella gnocchi bake | Gnocchis tomate mozzarella au four | 番茄马苏里拉焗团子
+@ Vegetarian | Italy | 25 | en:Gnocchi | Quick,Bake,Vegetarian
+- Gnocchi: 800g
+- Chopped Tomatoes: 400g
+- Garlic: 1 clove
+- Mozzarella: 250g
+- Basil: 1 handful
+- Rocket: 100g
+1. Heat the grill. Fry the gnocchi in a little oil for 5 minutes until golden.
+2. Add the garlic and tomatoes and simmer for 5 minutes. Stir in the basil.
+3. Top with torn mozzarella and grill for 5 minutes. Serve with rocket.
+
+# Chicken and rice soup with lemon | Soupe de poulet au riz et citron | 柠檬鸡肉米汤
+@ Chicken | France | 35 | en:Chicken soup | Soup,Family
+- Chicken Breasts: 2
+- Chicken Stock: 1.5 litres
+- Rice: 120g
+- Carrots: 2
+- Leek: 1
+- Lemon: 1
+- Parsley: 2 tbs chopped
+1. Simmer the chicken in the stock for 15 minutes, lift out and shred.
+2. Add the rice, diced carrots and sliced leek and simmer for 15 minutes.
+3. Return the chicken, add lemon juice and parsley and season.
+
+# Pan-fried salmon with rice and green beans | Saumon poêlé, riz et haricots verts | 香煎三文鱼配米饭
+@ Seafood | France | 20 | File:Pan fried Salmon spread.JPG | Quick,Fish
+- Salmon: 4 fillets
+- Rice: 300g
+- Green Beans: 400g
+- Butter: 20g
+- Lemon: 1
+- Soy Sauce: 2 tbs
+- Honey: 1 tbs
+1. Cook the rice. Steam the green beans for 7 minutes.
+2. Fry the salmon skin side down for 5 minutes, turn and cook for 2 minutes.
+3. Add the butter, soy sauce, honey and lemon juice to the pan and spoon over the fish.
+
+# Chicken and potato traybake | Poulet et pommes de terre rôtis à la plaque | 烤盘鸡腿土豆
+@ Chicken | France | 50 | en:Roast chicken | Roast,Family
+- Chicken Thighs: 8
+- Potatoes: 1kg
+- Red Onions: 2
+- Garlic: 6 cloves
+- Rosemary: 3 sprigs
+- Olive Oil: 4 tbs
+- Lemon: 1
+- Lettuce: 1
+1. Heat the oven to 210C. Cut the potatoes into wedges and onions into quarters.
+2. Toss everything with the oil, rosemary, unpeeled garlic, salt and pepper on a large tray, chicken skin side up.
+3. Roast for 45 minutes until the skin is crisp. Squeeze over the lemon and serve with salad.
+
+# Pork chops with apples and mash | Côtes de porc aux pommes et purée | 苹果猪排配土豆泥
+@ Pork | France | 35 | en:Pork chop | Family
+- Pork Chops: 4
+- Apples: 2
+- Butter: 40g
+- Cider: 150ml
+- Floury Potatoes: 900g
+- Milk: 150ml
+- Thyme: 2 sprigs
+1. Boil the potatoes for 20 minutes and mash with half the butter and the milk.
+2. Season the chops and fry in the rest of the butter for 5 minutes on each side. Set aside.
+3. Fry the apple wedges and thyme in the pan for 4 minutes, add the cider and let it bubble for 2 minutes.
+4. Return the chops to warm through and serve with the mash.
+
+# Breaded chicken with rice and peas | Poulet pané, riz et petits pois | 炸鸡排配米饭豌豆
+@ Chicken | France | 30 | en:Chicken schnitzel | Family,Quick
+- Chicken Breasts: 4
+- Plain Flour: 50g
+- Eggs: 2
+- Breadcrumbs: 120g
+- Sunflower Oil: 5 tbs
+- Rice: 300g
+- Frozen Peas: 300g
+- Lemon: 1
+1. Cook the rice and the peas.
+2. Flatten the chicken breasts, coat in flour, beaten egg and breadcrumbs.
+3. Fry in the oil for 4 minutes on each side until golden and cooked through.
+4. Serve with rice, peas and lemon wedges.
+
+# Beef stir-fry with noodles | Nouilles sautées au bœuf | 牛肉炒面
+@ Beef | China | 20 | en:Stir frying | Quick,Noodles
+- Egg Noodles: 300g
+- Beef: 400g
+- Carrots: 1
+- Pak Choi: 2
+- Soy Sauce: 3 tbs
+- Oyster Sauce: 2 tbs
+- Garlic: 2 cloves
+- Ginger: 1 tbs grated
+1. Cook the noodles and drain.
+2. Stir-fry the beef in a very hot wok for 2 minutes. Set aside.
+3. Stir-fry the garlic, ginger, carrot and pak choi for 3 minutes.
+4. Return the beef with the noodles and sauces and toss for 2 minutes.
+
+# Prawn and pea risotto | Risotto aux crevettes et petits pois | 虾仁豌豆烩饭
+@ Seafood | Italy | 35 | en:Risotto | Rice
+- Arborio Rice: 320g
+- King Prawns: 300g
+- Frozen Peas: 200g
+- Onion: 1
+- Fish Stock: 1.2 litres
+- Dry White Wine: 100ml
+- Butter: 30g
+- Lemon: 1
+1. Soften the onion in the butter for 4 minutes, add the rice and stir for 1 minute.
+2. Add the wine, then the hot stock a ladle at a time, stirring, for 15 minutes.
+3. Add the peas and prawns and cook for 4 minutes more. Finish with lemon zest.
+
+# Baked potatoes with tuna and sweetcorn | Pommes de terre au four, thon et maïs | 烤土豆配金枪鱼玉米
+@ Seafood | United Kingdom | 70 | en:Baked potato | Family
+- Russet Potato: 4
+- Tuna: 300g
+- Sweetcorn: 200g
+- Mayonnaise: 4 tbs
+- Cheddar Cheese: 100g
+- Lettuce: 1
+1. Heat the oven to 200C. Prick the potatoes and bake for 1 hour until soft inside.
+2. Mix the tuna with the sweetcorn and mayonnaise.
+3. Split the potatoes, fill with the tuna mixture and top with grated cheese. Serve with salad.
+
+# Pea and ham soup | Velouté de petits pois au jambon | 豌豆火腿浓汤
+@ Pork | United Kingdom | 25 | en:Pea soup | Quick,Soup
+- Frozen Peas: 750g
+- Onion: 1
+- Butter: 20g
+- Vegetable Stock: 1 litre
+- Ham: 150g
+- Creme Fraiche: 4 tbs
+- Mint: 1 handful
+- Crusty Bread: 1
+1. Soften the onion in the butter for 5 minutes.
+2. Add the peas and stock and simmer for 8 minutes.
+3. Blend with the mint until smooth, then add the shredded ham.
+4. Serve with a spoon of crème fraîche and bread.
+
+# Creamy pumpkin soup | Velouté de potiron | 奶油南瓜汤
+@ Vegetarian | France | 40 | fr:Soupe de potiron | Soup,Vegetarian
+- Pumpkin: 1kg
+- Potatoes: 2
+- Onion: 1
+- Vegetable Stock: 1 litre
+- Creme Fraiche: 100ml
+- Nutmeg: 1 pinch
+- Crusty Bread: 1
+- Gruyère: 80g
+1. Soften the onion in a little butter for 5 minutes.
+2. Add the pumpkin and potatoes in cubes and the stock. Simmer for 25 minutes.
+3. Blend with the crème fraîche and nutmeg.
+4. Serve with bread and grated cheese.
+
+# Crispy chicken wraps | Wraps de poulet croustillant | 脆皮鸡肉卷
+@ Chicken | United States | 25 | en:Wrap (food) | Quick,Wrap
+- Chicken Breasts: 3
+- Breadcrumbs: 100g
+- Eggs: 1
+- Paprika: 1 tsp
+- Flour Tortilla: 4
+- Lettuce: 1/2
+- Tomatoes: 2
+- Mayonnaise: 4 tbs
+- Cheddar Cheese: 80g
+1. Cut the chicken into strips, dip in beaten egg then in breadcrumbs mixed with paprika.
+2. Bake at 220C for 15 minutes, turning once, or fry until golden.
+3. Fill the warm tortillas with lettuce, tomato, cheese, mayonnaise and chicken and roll up.
+
+# Teriyaki salmon rice bowl | Bol de riz au saumon teriyaki | 照烧三文鱼盖饭
+@ Seafood | Japan | 25 | File:Teriyaki salmon.jpg | Quick,Bowl,Fish
+- Salmon: 4 fillets
+- Soy Sauce: 4 tbs
+- Mirin: 3 tbs
+- Honey: 1 tbs
+- Sushi Rice: 300g
+- Broccoli: 1 head
+- Sesame Seed: 1 tbs
+- Spring Onions: 2
+1. Cook the rice and steam the broccoli florets for 5 minutes.
+2. Fry the salmon for 4 minutes on each side.
+3. Add the soy sauce, mirin and honey and let it bubble for 1 minute, spooning over the fish.
+4. Serve on the rice with the broccoli, sesame seeds and spring onions.
+
+# Egg and potato hash | Poêlée de pommes de terre, lardons et œufs | 土豆培根煎蛋
+@ Pork | France | 30 | en:Hash (food) | Quick,Eggs
+- Potatoes: 800g
+- Bacon Lardon: 150g
+- Onion: 1
+- Eggs: 4
+- Parsley: 2 tbs chopped
+- Lettuce: 1
+1. Boil the potatoes in cubes for 8 minutes and drain.
+2. Fry the lardons and onion for 5 minutes, add the potatoes and fry for 12 minutes until crisp.
+3. Make four hollows, crack in the eggs, cover and cook for 4 minutes. Sprinkle with parsley and serve with salad.
+
+# Pasta with sausage and tomato | Pâtes à la saucisse et tomate | 香肠番茄意面
+@ Pork | Italy | 25 | File:Penne with sausage and pumpkin ragù (8462238749).jpg | Quick,Pasta,Family
+- Penne Rigate: 400g
+- Sausages: 4
+- Onion: 1
+- Garlic: 1 clove
+- Passata: 500ml
+- Creme Fraiche: 3 tbs
+- Parmesan: 40g
+1. Cook the pasta.
+2. Squeeze the sausage meat out of the skins and fry with the onion for 8 minutes, breaking it up.
+3. Add the garlic and passata and simmer for 10 minutes, then stir in the crème fraîche.
+4. Toss with the pasta and serve with parmesan.
