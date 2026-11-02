@@ -1,0 +1,623 @@
+// Moyen-Orient : Liban, Syrie, Iran, Irak, Jordanie, Afghanistan, Caucase. Format : voir tools/build-recipes.js
+
+# Baked kibbeh | Kibbé au four (boulgour et agneau) | 烤羊肉碎麦饼
+@ Lamb | Lebanon | 70 | en:Kibbeh | Family
+- Bulgur Wheat: 250g
+- Lamb Mince: 700g
+- Onions: 2
+- Pine Nuts: 50g
+- Allspice: 2 tsp
+- Ground Cinnamon: 1 tsp
+- Olive Oil: 5 tbs
+- Yogurt: 300g
+- Cucumber: 1
+- Mint: 1 handful
+1. Soak the bulgur for 15 minutes and squeeze dry.
+2. Blend 450g lamb with one onion, the bulgur, half the spices and salt to a paste.
+3. Fry the remaining lamb with the other onion, pine nuts and spices for the filling.
+4. Press half the paste in an oiled dish, add the filling and cover with the remaining paste. Score into diamonds and drizzle with oil.
+5. Bake at 200°C for 35 minutes. Serve with yogurt mixed with cucumber and mint.
+
+# Lamb shish kebab | Brochettes d'agneau (chich kebab) | 羊肉串
+@ Lamb | Lebanon | 40 | en:Shish kebab
+- Lamb Leg: 800g
+- Onions: 1
+- Green Pepper: 1
+- Garlic: 3 cloves
+- Lemon: 1
+- Olive Oil: 4 tbs
+- Ground Cumin: 1 tsp
+- Paprika: 2 tsp
+- Pita Bread: 4
+- Tomatoes: 2
+- Parsley: 1 bunch
+- Yogurt: 200g
+1. Marinate the lamb cubes with the garlic, lemon juice, oil and spices for at least 1 hour.
+2. Thread onto skewers with pieces of onion and pepper.
+3. Grill for 10 minutes, turning, until charred outside and pink inside.
+4. Serve with warm pita, tomatoes, parsley and yogurt.
+
+# Maqluba | Maqluba (riz renversé au poulet et aubergines) | 倒扣饭
+@ Chicken | Palestine | 90 | en:Maqluba | Rice,Family
+- Chicken Thighs: 800g
+- Basmati Rice: 400g
+- Aubergine: 2
+- Cauliflower: 1/2
+- Tomatoes: 2
+- Onions: 1
+- Allspice: 2 tsp
+- Ground Turmeric: 1 tsp
+- Ground Cinnamon: 1 tsp
+- Chicken Stock: 900ml
+- Vegetable Oil: 6 tbs
+- Pine Nuts: 40g
+- Yogurt: 300g
+1. Simmer the chicken with the onion, half the spices and the stock for 25 minutes.
+2. Fry or roast the sliced aubergines and cauliflower florets until golden.
+3. Layer tomato slices, chicken, vegetables and the rinsed rice mixed with the remaining spices in a deep pot.
+4. Pour over the hot strained stock, cover and cook over low heat for 35 minutes.
+5. Rest 10 minutes, turn out onto a large plate and top with toasted pine nuts. Serve with yogurt.
+
+# Mansaf | Mansaf (agneau au yaourt et riz) | 约旦酸奶羊肉饭
+@ Lamb | Jordan | 120 | en:Mansaf | Rice,Family
+- Lamb Shoulder: 1kg
+- Greek Yogurt: 600g
+- Basmati Rice: 400g
+- Onions: 1
+- Cardamom: 4
+- Bay Leaf: 2
+- Ground Turmeric: 1 tsp
+- Ghee: 3 tbs
+- Almonds: 50g
+- Pine Nuts: 30g
+- Pita Bread: 2
+- Cornstarch: 1 tbs
+1. Simmer the lamb with the onion, cardamom and bay leaves in water for 1 hour 30.
+2. Whisk the yogurt with the cornstarch and 500ml of the strained broth, then simmer gently, stirring, for 10 minutes.
+3. Add the lamb to the yogurt sauce and simmer for 15 minutes.
+4. Cook the rice with the turmeric and ghee.
+5. Lay the bread on a platter, top with rice, lamb and toasted nuts. Serve the sauce on the side.
+
+# Muhammara | Mouhammara (purée de poivrons et noix) | 红椒核桃酱
+@ Vegan | Syria | 20 | en:Muhammara | Quick,Side
+- Roasted Pepper: 300g
+- Walnuts: 100g
+- Breadcrumbs: 40g
+- Pomegranate Molasses: 2 tbs
+- Garlic: 1 clove
+- Ground Cumin: 1 tsp
+- Chilli Flakes: 1 tsp
+- Olive Oil: 4 tbs
+- Pita Bread: 4
+1. Toast the walnuts.
+2. Blend the peppers, walnuts, breadcrumbs, molasses, garlic, cumin and chilli with the oil until coarse.
+3. Season and serve with warm pita.
+
+# Kafta with potatoes and tomatoes | Kafta au four, pommes de terre et tomates | 烤肉饼配土豆番茄
+@ Beef | Lebanon | 60 | en:Kofta | Family
+- Minced Beef: 700g
+- Onions: 1
+- Parsley: 1 bunch
+- Allspice: 2 tsp
+- Ground Cinnamon: 1 tsp
+- Potatoes: 4
+- Tomatoes: 4
+- Passata: 300ml
+- Olive Oil: 4 tbs
+- Pita Bread: 4
+1. Mix the beef with the grated onion, chopped parsley, spices and salt. Shape into flat patties.
+2. Arrange in a dish with slices of potato and tomato.
+3. Pour over the passata mixed with 200ml water and drizzle with oil.
+4. Bake at 200°C for 45 minutes. Serve with pita.
+
+# Ghormeh sabzi | Ghormeh sabzi (ragoût d'herbes iranien) | 伊朗香草炖肉
+@ Lamb | Iran | 150 | en:Ghormeh sabzi | Family
+- Lamb Shoulder: 700g
+- Parsley: 2 bunches
+- Coriander: 2 bunches
+- Spinach: 200g
+- Spring Onions: 6
+- Fenugreek: 2 tbs
+- Kidney Beans: 400g
+- Dried Limes: 4
+- Onions: 2
+- Ground Turmeric: 1 tsp
+- Basmati Rice: 400g
+- Vegetable Oil: 6 tbs
+1. Fry the onions with the turmeric, add the lamb cubes and brown them.
+2. Add 1 litre of water and simmer for 1 hour.
+3. Chop all the herbs, spinach and spring onions very finely and fry them in oil for 15 minutes until dark.
+4. Add the herbs, fenugreek, beans and pierced dried limes to the meat and simmer for 1 hour more.
+5. Serve with basmati rice.
+
+# Fesenjan | Fesenjān (poulet à la grenade et aux noix) | 石榴核桃炖鸡
+@ Chicken | Iran | 100 | en:Fesenjān | Family
+- Chicken Thighs: 1kg
+- Walnuts: 300g
+- Pomegranate Molasses: 6 tbs
+- Onions: 2
+- Ground Turmeric: 1 tsp
+- Ground Cinnamon: 1/2 tsp
+- Sugar: 1 tbs
+- Basmati Rice: 400g
+- Pomegranate: 1
+1. Toast the walnuts and grind them finely.
+2. Simmer the walnuts in 800ml water for 30 minutes, stirring, until the oil rises.
+3. Brown the chicken with the onions and turmeric.
+4. Add the chicken to the walnuts with the molasses, cinnamon and sugar and simmer for 45 minutes until thick and dark.
+5. Serve with rice and pomegranate seeds.
+
+# Kabab koobideh | Kabab koobideh (brochettes de viande hachée iraniennes) | 伊朗烤肉串
+@ Lamb | Iran | 40 | en:Kabab koobideh | Rice
+- Lamb Mince: 800g
+- Onions: 2
+- Ground Turmeric: 1 tsp
+- Sumac: 2 tsp
+- Tomatoes: 4
+- Basmati Rice: 400g
+- Butter: 50g
+- Saffron: 1 pinch
+- Eggs: 4
+1. Grate the onions, squeeze out the juice and knead with the lamb, turmeric and salt until sticky.
+2. Shape long flat kebabs around wide skewers.
+3. Grill for 8 minutes with the tomatoes, turning once.
+4. Serve on saffron rice with butter, sumac, the tomatoes and, traditionally, a raw egg yolk mixed into the rice.
+
+# Tahdig | Tahdig (riz croustillant au safran) | 伊朗锅巴饭
+@ Vegetarian | Iran | 70 | en:Tahdig | Rice,Side
+- Basmati Rice: 400g
+- Yogurt: 150g
+- Eggs: 1
+- Saffron: 1 pinch
+- Butter: 60g
+- Vegetable Oil: 4 tbs
+- Salt: 2 tsp
+1. Soak the rice, then boil it in salted water for 6 minutes and drain.
+2. Mix 4 spoons of rice with the yogurt, egg and saffron soaked in hot water.
+3. Spread this in a non-stick pan with the oil and butter, then pile the rest of the rice on top.
+4. Make holes with a spoon handle, cover with a lid wrapped in a cloth and cook for 10 minutes over medium heat then 40 minutes over low heat.
+5. Turn out onto a plate to show the golden crust.
+
+# Ash reshteh | Ash reshteh (soupe de légumineuses aux nouilles) | 伊朗面条豆汤
+@ Vegetarian | Iran | 90 | en:Ash reshteh | Soup
+- Kidney Beans: 400g
+- Chickpeas: 400g
+- Lentils: 100g
+- Linguine Pasta: 150g
+- Spinach: 300g
+- Parsley: 1 bunch
+- Coriander: 1 bunch
+- Dill: 1 bunch
+- Onions: 3
+- Dried Mint: 2 tbs
+- Ground Turmeric: 1 tsp
+- Greek Yogurt: 200g
+1. Fry 2 sliced onions until brown with the turmeric, then add 2 litres of water and the lentils and simmer for 20 minutes.
+2. Add the beans, chickpeas and chopped herbs and spinach and simmer for 30 minutes.
+3. Add the broken pasta and cook for 10 minutes.
+4. Fry the remaining onion until crisp and the dried mint in oil for 10 seconds.
+5. Serve topped with yogurt, crispy onions and mint oil.
+
+# Khoresh bademjan | Khoresh bademjan (ragoût d'aubergines et d'agneau) | 茄子炖羊肉
+@ Lamb | Iran | 100 | en:Khoresh bademjan | Family
+- Lamb Shoulder: 600g
+- Aubergine: 3
+- Tomatoes: 4
+- Onions: 2
+- Tomato Puree: 2 tbs
+- Ground Turmeric: 1 tsp
+- Dried Limes: 2
+- Lemon Juice: 2 tbs
+- Saffron: 1 pinch
+- Basmati Rice: 400g
+- Vegetable Oil: 6 tbs
+1. Brown the lamb with the onions and turmeric, add the tomato puree and 800ml water and simmer for 1 hour.
+2. Fry the aubergine slices until golden.
+3. Add the aubergines, halved tomatoes, dried limes, lemon juice and saffron and simmer for 30 minutes without stirring.
+4. Serve with rice.
+
+# Gheymeh | Gheymeh (ragoût d'agneau aux pois cassés et frites) | 黄豆炖羊肉配薯条
+@ Lamb | Iran | 100 | en:Gheymeh | Family
+- Lamb Shoulder: 600g
+- Yellow Split Peas: 150g
+- Onions: 2
+- Tomato Puree: 3 tbs
+- Dried Limes: 3
+- Ground Turmeric: 1 tsp
+- Ground Cinnamon: 1/2 tsp
+- Potatoes: 3
+- Vegetable Oil: 500ml
+- Basmati Rice: 400g
+1. Fry the onions and turmeric, brown the lamb and add the tomato puree.
+2. Add the split peas, dried limes, cinnamon and 1 litre of water and simmer for 1 hour 15.
+3. Cut the potatoes into thin fries and fry them until crisp.
+4. Serve the stew topped with fries, with rice.
+
+# Baghali polo | Baghali polo (riz à l'aneth et aux fèves) | 蚕豆莳萝饭
+@ Lamb | Iran | 120 | en:Baghali polo | Rice,Family
+- Basmati Rice: 400g
+- Broad Beans: 300g
+- Dill: 2 bunches
+- Lamb Shanks: 4
+- Onions: 1
+- Ground Turmeric: 1 tsp
+- Saffron: 1 pinch
+- Butter: 60g
+1. Simmer the lamb shanks with the onion and turmeric in water for 1 hour 45.
+2. Parboil the rice for 6 minutes with the broad beans, drain and mix with the chopped dill.
+3. Steam the rice in a pot with butter, covered, for 40 minutes.
+4. Serve the rice with saffron water poured over part of it and the lamb on top.
+
+# Kabuli palaw | Kabuli palaw (riz afghan à l'agneau, carottes et raisins) | 阿富汗手抓饭
+@ Lamb | Afghanistan | 120 | en:Kabuli palaw | Rice,Family
+- Lamb Shoulder: 800g
+- Basmati Rice: 400g
+- Onions: 2
+- Carrots: 3
+- Raisins: 80g
+- Almonds: 50g
+- Ground Cumin: 1 tsp
+- Cardamom: 4
+- Ground Cinnamon: 1/2 tsp
+- Sugar: 1 tbs
+- Vegetable Oil: 6 tbs
+1. Brown the onions and lamb, cover with 1 litre of water and simmer for 1 hour 15.
+2. Fry the carrot matchsticks with the sugar until caramelised, then the raisins and almonds.
+3. Parboil the rice for 6 minutes and drain.
+4. Put the rice over the lamb with 400ml of the broth and the spices, top with carrots, raisins and almonds.
+5. Cover tightly and steam for 30 minutes over low heat.
+
+# Ashak | Ashak (raviolis afghans aux poireaux) | 阿富汗韭葱饺
+@ Vegetarian | Afghanistan | 70 | en:Ashak | Starter
+- Wonton Skin: 30
+- Leek: 3
+- Spring Onions: 4
+- Chilli Flakes: 1 tsp
+- Greek Yogurt: 300g
+- Garlic: 2 cloves
+- Dried Mint: 1 tbs
+- Kidney Beans: 200g
+- Passata: 200ml
+- Ground Coriander: 1 tsp
+1. Finely chop the leeks and spring onions, salt them, squeeze dry and add the chilli.
+2. Fill the wrappers, fold them into half-moons and seal.
+3. Simmer the beans with the passata and coriander for 10 minutes.
+4. Steam the ashak for 12 minutes.
+5. Spread garlic yogurt on a plate, add the ashak and top with the bean sauce, more yogurt and dried mint.
+
+# Piti | Piti (ragoût d'agneau et pois chiches d'Azerbaïdjan) | 阿塞拜疆羊肉鹰嘴豆汤
+@ Lamb | Azerbaijan | 150 | en:Piti (food) | Soup,Family
+- Lamb Shoulder: 700g
+- Chickpeas: 400g
+- Potatoes: 3
+- Onions: 1
+- Dried Apricots: 8
+- Saffron: 1 pinch
+- Ground Turmeric: 1 tsp
+- Dried Mint: 1 tbs
+- Pita Bread: 4
+1. Put the lamb, onion, turmeric and 1.5 litres of water in a pot and simmer for 1 hour 30.
+2. Add the chickpeas, potatoes and apricots and simmer for 30 minutes.
+3. Add the saffron soaked in hot water and simmer for 10 minutes.
+4. Serve the broth over torn bread, then the meat and vegetables, sprinkled with dried mint.
+
+# Lyulya kebab | Lyulya kebab (brochettes d'agneau haché) | 柳利亚烤肉串
+@ Lamb | Azerbaijan | 40 | en:Lyulya kebab
+- Lamb Mince: 800g
+- Onions: 2
+- Ground Cumin: 1 tsp
+- Sumac: 2 tsp
+- Red Onions: 1
+- Parsley: 1 bunch
+- Tomatoes: 3
+- Pita Bread: 4
+1. Grate the onions, squeeze out the juice and knead with the lamb, cumin and salt until very sticky.
+2. Chill for 20 minutes, then shape around skewers.
+3. Grill for 10 minutes, turning.
+4. Serve on flatbread with red onion tossed with sumac and parsley, and grilled tomatoes.
+
+# Dushbara | Dushbara (mini raviolis en bouillon) | 阿塞拜疆小馄饨汤
+@ Lamb | Azerbaijan | 70 | en:Dushbara | Soup
+- Plain Flour: 300g
+- Eggs: 1
+- Lamb Mince: 400g
+- Onions: 1
+- Dried Mint: 1 tbs
+- Lamb Stock: 1.5l
+- White Wine Vinegar: 2 tbs
+- Garlic: 2 cloves
+1. Knead the flour with the egg, salt and about 100ml water. Rest for 20 minutes.
+2. Mix the lamb with the grated onion, salt and pepper.
+3. Roll the dough very thin, cut into 3cm squares, fill with a little meat and fold into tiny dumplings.
+4. Cook in the boiling stock for 6 minutes.
+5. Serve with dried mint and garlic vinegar.
+
+# Qutab | Qutab (galettes farcies d'Azerbaïdjan) | 阿塞拜疆薄馅饼
+@ Vegetarian | Azerbaijan | 50 | en:Qutab
+- Plain Flour: 300g
+- Spinach: 300g
+- Dill: 1 bunch
+- Coriander: 1 bunch
+- Spring Onions: 4
+- Butter: 60g
+- Sumac: 2 tsp
+- Yogurt: 300g
+1. Knead the flour with salt and 160ml water and rest for 20 minutes.
+2. Wilt the spinach, squeeze dry and chop with the herbs and spring onions.
+3. Roll the dough into thin discs, fill half, fold over and seal.
+4. Cook in a dry pan for 2 minutes per side, then brush with butter.
+5. Sprinkle with sumac and serve with yogurt.
+
+# Khorovats | Khorovats (grillades arméniennes) | 亚美尼亚烤肉
+@ Pork | Armenia | 60 | en:Khorovats
+- Pork Shoulder: 1kg
+- Onions: 3
+- Red Wine Vinegar: 3 tbs
+- Paprika: 2 tsp
+- Aubergine: 2
+- Tomatoes: 4
+- Green Pepper: 2
+- Coriander: 1 bunch
+- Pita Bread: 4
+1. Marinate the pork cubes with 2 sliced onions, the vinegar, paprika, salt and pepper for at least 2 hours.
+2. Thread onto skewers and grill over high heat for 15 minutes, turning.
+3. Grill the whole aubergines, tomatoes and peppers until blackened, peel and chop with coriander and the remaining onion.
+4. Serve the meat on flatbread with the grilled vegetable salad.
+
+# Harissa porridge | Harissa (bouillie de blé au poulet arménienne) | 亚美尼亚小麦鸡肉粥
+@ Chicken | Armenia | 150 | en:Harissa (dish) | Family
+- Chicken Legs: 6
+- Whole Wheat: 300g
+- Butter: 60g
+- Ground Cinnamon: 1 tsp
+- Paprika: 1 tsp
+- Salt: 2 tsp
+1. Soak the wheat overnight.
+2. Simmer the chicken in 2.5 litres of water for 1 hour, then remove the bones.
+3. Add the wheat and the meat to the broth and cook very gently for 1 hour 30, stirring and beating often, until thick and smooth.
+4. Serve with melted butter mixed with paprika and a pinch of cinnamon.
+
+# Ghapama | Ghapama (citrouille farcie au riz et fruits secs) | 南瓜酿饭
+@ Vegetarian | Armenia | 120 | en:Ghapama | Rice,Family
+- Pumpkin: 1
+- Basmati Rice: 250g
+- Dried Apricots: 80g
+- Raisins: 60g
+- Prunes: 60g
+- Walnuts: 60g
+- Butter: 80g
+- Honey: 3 tbs
+- Ground Cinnamon: 1 tsp
+1. Cut the top off the pumpkin and scoop out the seeds.
+2. Parboil the rice for 6 minutes and mix with the chopped dried fruit, nuts, melted butter, honey and cinnamon.
+3. Fill the pumpkin, add 100ml water, replace the lid.
+4. Bake at 180°C for 1 hour 30 until tender. Cut into wedges at the table.
+
+# Saleeg | Saleeg (riz crémeux au poulet du Hedjaz) | 沙特奶香鸡肉饭
+@ Chicken | Saudi Arabia | 70 | en:Saleeg | Rice,Family
+- Chicken: 1
+- Basmati Rice: 350g
+- Milk: 500ml
+- Butter: 60g
+- Cardamom: 5
+- Bay Leaf: 2
+- Onions: 1
+- Cinnamon Stick: 1
+1. Simmer the chicken with the onion, cardamom, bay leaves and cinnamon in water for 40 minutes.
+2. Remove the chicken and cook the rice in 1 litre of the broth until very soft, stirring.
+3. Add the milk and half the butter and cook until creamy.
+4. Brush the chicken with the remaining butter and brown it in a hot oven. Serve on the rice.
+
+# Masgouf-style grilled fish | Poisson grillé à l'irakienne (masgouf) | 伊拉克烤鱼
+@ Seafood | Iraq | 45 | en:Masgouf
+- Sea Bass Fillets: 4
+- Tamarind Paste: 2 tbs
+- Ground Turmeric: 1 tsp
+- Tomatoes: 3
+- Onions: 2
+- Olive Oil: 4 tbs
+- Lemon: 2
+- Pita Bread: 4
+- Parsley: 1 bunch
+1. Rub the fish with oil, turmeric, salt and the tamarind.
+2. Grill skin side to the heat for 8 minutes, then turn and top with sliced tomato and onion.
+3. Grill for 5 minutes more.
+4. Serve with lemon, flatbread and parsley.
+
+# Tepsi baytinijan | Tepsi baytinijan (gratin irakien d'aubergines et boulettes) | 伊拉克茄子肉丸烤盘
+@ Beef | Iraq | 75 | en:Tepsi baytinijan | Family
+- Aubergine: 3
+- Minced Beef: 500g
+- Onions: 2
+- Potatoes: 3
+- Tomatoes: 3
+- Tomato Puree: 2 tbs
+- Garlic: 4 cloves
+- Allspice: 1 tsp
+- Vegetable Oil: 6 tbs
+- Basmati Rice: 300g
+1. Fry the aubergine and potato slices until golden.
+2. Shape the beef mixed with an onion, garlic and allspice into small meatballs and brown them.
+3. Layer the vegetables, meatballs and tomato slices in a dish.
+4. Pour over the tomato puree mixed with 400ml water and bake at 190°C for 40 minutes. Serve with rice.
+
+# Sfiha | Sfiha (petites tartes à la viande) | 黎巴嫩肉馅小饼
+@ Lamb | Lebanon | 75 | en:Sfiha | Starter
+- Plain Flour: 400g
+- Yeast: 7g
+- Warm Water: 240ml
+- Lamb Mince: 400g
+- Onions: 1
+- Tomatoes: 2
+- Pine Nuts: 30g
+- Pomegranate Molasses: 1 tbs
+- Allspice: 1 tsp
+- Lemon: 1
+1. Knead the flour, yeast, salt, 2 tbs oil and warm water and leave to rise for 1 hour.
+2. Mix the lamb with the chopped onion, tomatoes squeezed of juice, pine nuts, molasses and allspice.
+3. Divide the dough into small discs, top with the meat and pinch into open squares.
+4. Bake at 230°C for 12 minutes. Serve with lemon.
+
+# Manakish za'atar | Manakish au zaatar | 扎塔香料饼
+@ Vegetarian | Lebanon | 75 | en:Manakish
+- Plain Flour: 400g
+- Yeast: 7g
+- Warm Water: 240ml
+- Za'atar: 5 tbs
+- Olive Oil: 8 tbs
+- Tomatoes: 3
+- Cucumber: 1
+- Mint: 1 handful
+- Feta: 150g
+1. Knead the flour, yeast, salt, 2 tbs oil and water and leave to rise for 1 hour.
+2. Divide into 4 and roll into thin rounds.
+3. Spread with za'atar mixed with the remaining oil.
+4. Bake at 240°C for 8 minutes. Serve with tomatoes, cucumber, mint and feta.
+
+# Batata harra | Batata harra (pommes de terre épicées libanaises) | 黎巴嫩辣土豆
+@ Vegan | Lebanon | 35 | en:Batata harra | Side
+- Potatoes: 6
+- Garlic: 5 cloves
+- Coriander: 1 bunch
+- Chilli Flakes: 1 tsp
+- Paprika: 1 tsp
+- Lemon: 1
+- Olive Oil: 6 tbs
+1. Cut the potatoes into cubes and roast or fry them until crisp.
+2. Fry the garlic, chilli and paprika in oil for 1 minute, add the chopped coriander.
+3. Toss the potatoes in the garlic oil and squeeze over lemon.
+
+# Freekeh soup with chicken | Soupe de freekeh au poulet | 青麦鸡汤
+@ Chicken | Syria | 60 | en:Freekeh | Soup
+- Freekeh: 200g
+- Chicken Thighs: 500g
+- Onions: 1
+- Carrots: 2
+- Celery: 2
+- Ground Cinnamon: 1/2 tsp
+- Allspice: 1 tsp
+- Chicken Stock: 1.5l
+- Lemon: 1
+- Parsley: 1 bunch
+1. Brown the chicken with the onion, then add the carrots, celery, spices and stock.
+2. Simmer for 25 minutes, remove the chicken and shred it.
+3. Add the rinsed freekeh and simmer for 25 minutes.
+4. Return the chicken and serve with lemon and parsley.
+
+# Kuku with herbs | Kuku (omelette iranienne aux herbes) | 伊朗香草蛋饼
+@ Vegetarian | Iran | 35 | en:Kuku (food) | Quick
+- Eggs: 8
+- Parsley: 2 bunches
+- Coriander: 1 bunch
+- Dill: 1 bunch
+- Spring Onions: 4
+- Walnuts: 50g
+- Ground Turmeric: 1/2 tsp
+- Baking Powder: 1/2 tsp
+- Vegetable Oil: 4 tbs
+- Yogurt: 300g
+- Pita Bread: 4
+1. Chop the herbs and spring onions very finely.
+2. Beat the eggs with the turmeric, baking powder and salt, add the herbs and chopped walnuts.
+3. Pour into a hot oiled pan, cover and cook over low heat for 15 minutes.
+4. Turn over and cook for 5 minutes. Serve with yogurt and bread.
+
+# Sabzi polo with fish | Sabzi polo (riz aux herbes et poisson) | 香草饭配鱼
+@ Seafood | Iran | 60 | en:Sabzi polo | Rice
+- Basmati Rice: 400g
+- Parsley: 2 bunches
+- Coriander: 1 bunch
+- Dill: 1 bunch
+- Spring Onions: 4
+- Garlic: 3 cloves
+- Butter: 60g
+- White Fish Fillets: 4
+- Ground Turmeric: 1 tsp
+- Plain Flour: 3 tbs
+- Lemon: 2
+1. Parboil the rice for 6 minutes, drain and mix with the chopped herbs and garlic.
+2. Steam in a pot with the butter, covered, for 40 minutes.
+3. Dust the fish with flour and turmeric and pan-fry until golden.
+4. Serve the rice with the fish and lemon.
+
+# Kashk e bademjan | Kashk-e bademjan (aubergines au yaourt et menthe) | 茄子酸奶酱
+@ Vegetarian | Iran | 45 | en:Kashk e bademjan | Side
+- Aubergine: 3
+- Onions: 2
+- Garlic: 4 cloves
+- Greek Yogurt: 200g
+- Walnuts: 50g
+- Dried Mint: 2 tbs
+- Ground Turmeric: 1 tsp
+- Vegetable Oil: 6 tbs
+- Pita Bread: 4
+1. Fry the aubergine slices until soft and mash them.
+2. Fry the onions until brown with the turmeric and half the garlic.
+3. Mix the aubergines with most of the onions and the yogurt and heat gently.
+4. Fry the remaining garlic and the mint in oil for a few seconds and pour on top with the onions and walnuts. Serve with bread.
+
+# Abgoosht | Abgoosht (pot-au-feu iranien) | 伊朗羊肉锅
+@ Lamb | Iran | 180 | en:Abgoosht | Soup,Family
+- Lamb Shanks: 3
+- Chickpeas: 400g
+- Kidney Beans: 200g
+- Potatoes: 4
+- Tomatoes: 3
+- Onions: 2
+- Tomato Puree: 2 tbs
+- Ground Turmeric: 1 tsp
+- Dried Limes: 2
+- Pita Bread: 4
+1. Simmer the lamb with the onions, turmeric and 2 litres of water for 2 hours.
+2. Add the chickpeas, beans, potatoes, tomatoes, puree and dried limes and cook for 45 minutes.
+3. Strain the broth and serve it with torn bread.
+4. Mash the meat and vegetables together and eat with bread as a second course.
+
+# Kousa mahshi | Kousa mahshi (courgettes farcies) | 酿西葫芦
+@ Lamb | Syria | 80 | en:Kousa mahshi | Family
+- Courgettes: 8
+- Lamb Mince: 300g
+- Basmati Rice: 150g
+- Tomatoes: 3
+- Passata: 500ml
+- Garlic: 3 cloves
+- Dried Mint: 1 tbs
+- Allspice: 1 tsp
+- Lemon: 1
+1. Cut the courgettes into halves and hollow them out.
+2. Mix the lamb with the rinsed raw rice, chopped tomato, allspice and salt.
+3. Fill the courgettes loosely.
+4. Lay them in a pot, pour over the passata mixed with 400ml water, garlic, mint and lemon juice.
+5. Simmer covered for 45 minutes.
+
+# Sheikh al-mahshi | Cheikh el-mahchi (aubergines farcies à l'agneau) | 酿茄子
+@ Lamb | Syria | 70 | en:Sheikh al-mahshi | Family
+- Aubergine: 6
+- Lamb Mince: 500g
+- Onions: 1
+- Pine Nuts: 40g
+- Allspice: 1 tsp
+- Passata: 500ml
+- Vegetable Oil: 5 tbs
+- Basmati Rice: 300g
+1. Peel the aubergines in stripes and fry them whole until golden.
+2. Fry the lamb with the onion, pine nuts and allspice.
+3. Slit the aubergines lengthways and fill with the meat.
+4. Pour over the passata mixed with 200ml water and bake at 190°C for 30 minutes. Serve with rice.
+
+# Lebanese lentil soup | Soupe de lentilles libanaise | 黎巴嫩扁豆汤
+@ Vegan | Lebanon | 40 | en:Lentil soup | Soup
+- Lentils: 300g
+- Onions: 2
+- Carrots: 2
+- Potatoes: 1
+- Garlic: 3 cloves
+- Ground Cumin: 2 tsp
+- Vegetable Stock: 1.5l
+- Lemon: 2
+- Olive Oil: 4 tbs
+- Pita Bread: 4
+1. Fry the onions, carrots and garlic in the oil, add the cumin.
+2. Add the red lentils, diced potato and stock and simmer for 25 minutes.
+3. Blend until smooth and season.
+4. Serve with lemon juice and toasted pita.

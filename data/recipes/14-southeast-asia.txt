@@ -1,0 +1,691 @@
+// Asie du Sud-Est : Vietnam, Malaisie, Singapour, Indonésie, Philippines, Cambodge, Laos. Format : voir tools/build-recipes.js
+
+# Banh xeo | Bánh xèo (crêpes croustillantes vietnamiennes) | 越南煎饼
+@ Pork | Vietnam | 40 | en:Bánh xèo
+- Rice Flour: 200g
+- Coconut Milk: 200ml
+- Ground Turmeric: 1 tsp
+- Spring Onions: 3
+- Pork Belly Slices: 250g
+- Prawns: 200g
+- Bean Sprouts: 200g
+- Lettuce: 1
+- Mint: 1 handful
+- Fish Sauce: 4 tbs
+- Lime: 2
+- Sugar: 2 tbs
+1. Whisk the rice flour, coconut milk, turmeric, sliced spring onions and 300ml water.
+2. Fry a few slices of pork and prawns in a hot oiled pan.
+3. Pour in a thin layer of batter, add bean sprouts, cover and cook until crisp.
+4. Fold in half. Mix the fish sauce with lime juice, sugar and water for the dipping sauce.
+5. Wrap pieces in lettuce with mint and dip.
+
+# Bun cha | Bún chả (porc grillé et vermicelles) | 越南烤肉米线
+@ Pork | Vietnam | 45 | en:Bún chả
+- Minced Pork: 400g
+- Pork Belly Slices: 300g
+- Fish Sauce: 6 tbs
+- Sugar: 4 tbs
+- Garlic: 4 cloves
+- Shallots: 2
+- Rice Vermicelli: 300g
+- Lime: 2
+- Carrots: 1
+- Lettuce: 1
+- Mint: 1 handful
+1. Marinate the minced pork (shaped into patties) and sliced belly with 2 tbs fish sauce, 2 tbs sugar, garlic and shallots.
+2. Grill until caramelised.
+3. Mix the remaining fish sauce and sugar with lime juice, 250ml warm water and thin carrot slices.
+4. Put the meat in the sauce bowls and serve with vermicelli, lettuce and herbs.
+
+# Bun bo Hue | Bún bò Huế (soupe de nouilles épicée de Hué) | 顺化牛肉米粉
+@ Beef | Vietnam | 120 | en:Bún bò Huế | Soup
+- Beef Shin: 600g
+- Pork Knuckle: 1
+- Lemongrass: 4
+- Shrimp Paste: 1 tbs
+- Chilli Flakes: 2 tbs
+- Fish Sauce: 4 tbs
+- Sugar: 1 tbs
+- Rice Noodles: 400g
+- Onion: 1
+- Bean Sprouts: 150g
+- Lime: 2
+- Mint: 1 handful
+1. Blanch the beef and pork, then simmer in 3 litres of water with bruised lemongrass and the onion for 1 hour 30.
+2. Fry the chilli flakes and chopped lemongrass in oil.
+3. Season the broth with shrimp paste, fish sauce, sugar and the chilli oil.
+4. Slice the meat and serve on noodles with the broth, bean sprouts, lime and herbs.
+
+# Com tam | Cơm tấm (riz brisé au porc grillé) | 越南碎米饭
+@ Pork | Vietnam | 40 | en:Cơm tấm | Rice
+- Pork Chops: 4
+- Fish Sauce: 5 tbs
+- Sugar: 3 tbs
+- Garlic: 4 cloves
+- Shallots: 2
+- Jasmine Rice: 300g
+- Eggs: 4
+- Cucumber: 1
+- Tomatoes: 2
+- Lime: 1
+- Spring Onions: 3
+1. Marinate the pork chops with 2 tbs fish sauce, 2 tbs sugar, garlic and shallots for 30 minutes.
+2. Cook the rice. Grill the chops until caramelised.
+3. Fry the eggs. Warm the chopped spring onions in hot oil.
+4. Serve the rice with the pork, egg, scallion oil, cucumber, tomatoes and a sauce of fish sauce, lime, sugar and water.
+
+# Goi cuon | Gỏi cuốn (rouleaux de printemps frais) | 越南鲜春卷
+@ Seafood | Vietnam | 40 | en:Gỏi cuốn | Starter
+- Rice Paper Sheets: 12
+- Prawns: 300g
+- Pork Tenderloin: 200g
+- Rice Vermicelli: 100g
+- Lettuce: 1
+- Mint: 1 handful
+- Coriander: 1 bunch
+- Hoisin Sauce: 4 tbs
+- Peanut Butter: 2 tbs
+- Peanuts: 30g
+1. Poach the pork and prawns, then slice them. Cook the vermicelli.
+2. Soften each rice paper in warm water.
+3. Fill with lettuce, herbs, vermicelli, pork and halved prawns and roll tightly.
+4. Mix the hoisin with the peanut butter and a little water and top with crushed peanuts.
+
+# Cha gio | Chả giò (nems vietnamiens frits) | 越南炸春卷
+@ Pork | Vietnam | 60 | en:Chả giò | Starter
+- Rice Paper Sheets: 20
+- Minced Pork: 400g
+- Glass Noodles: 50g
+- Wood Ear Mushrooms: 10g
+- Carrots: 1
+- Onion: 1
+- Eggs: 1
+- Fish Sauce: 2 tbs
+- Vegetable Oil: 800ml
+- Lettuce: 1
+- Mint: 1 handful
+1. Soak and chop the noodles and mushrooms.
+2. Mix with the pork, grated carrot, chopped onion, egg and fish sauce.
+3. Wet the rice papers and roll up the filling tightly.
+4. Fry at 170°C for 8 minutes until golden. Serve with lettuce, mint and nuoc cham.
+
+# Ca kho to | Cá kho tộ (poisson caramélisé en cocotte) | 越南焦糖焖鱼
+@ Seafood | Vietnam | 40 | en:Cá kho tộ
+- White Fish Fillets: 600g
+- Sugar: 4 tbs
+- Fish Sauce: 4 tbs
+- Garlic: 3 cloves
+- Shallots: 3
+- Black Pepper: 1 tsp
+- Spring Onions: 3
+- Jasmine Rice: 300g
+- Pak Choi: 4
+1. Cook the rice. Melt the sugar into a dark caramel and add 100ml water carefully.
+2. Add the garlic, shallots and fish sauce, then the fish pieces.
+3. Simmer for 20 minutes, turning once, until the sauce is thick.
+4. Add pepper and spring onions. Serve with rice and pak choi.
+
+# Canh chua | Canh chua (soupe aigre au poisson) | 越南酸鱼汤
+@ Seafood | Vietnam | 30 | en:Canh chua | Soup
+- White Fish Fillets: 500g
+- Tamarind Paste: 3 tbs
+- Pineapple Chunks: 200g
+- Tomatoes: 3
+- Bean Sprouts: 150g
+- Okra: 150g
+- Fish Sauce: 4 tbs
+- Sugar: 2 tbs
+- Garlic: 3 cloves
+- Coriander: 1 bunch
+- Jasmine Rice: 300g
+1. Cook the rice. Bring 1.5 litres of water to the boil with the tamarind.
+2. Add the pineapple, tomatoes and okra and simmer for 5 minutes.
+3. Add the fish and cook for 5 minutes. Season with fish sauce and sugar.
+4. Add the bean sprouts, fried garlic and coriander.
+
+# Bo kho | Bò kho (ragoût de bœuf à la citronnelle) | 越南炖牛肉
+@ Beef | Vietnam | 150 | en:Bò kho | Family
+- Beef Brisket: 900g
+- Lemongrass: 3
+- Star Anise: 3
+- Cinnamon Stick: 1
+- Tomato Puree: 3 tbs
+- Fish Sauce: 3 tbs
+- Carrots: 3
+- Ginger: 30g
+- Garlic: 5 cloves
+- Baguette: 1
+1. Marinate the beef with the fish sauce, garlic, ginger and a pinch of five spice for 30 minutes.
+2. Brown the beef, add the tomato puree, lemongrass, star anise, cinnamon and water to cover.
+3. Simmer for 2 hours.
+4. Add the carrots and cook for 30 minutes. Serve with baguette.
+
+# Pho ga | Phở gà (soupe de nouilles au poulet) | 越南鸡肉河粉
+@ Chicken | Vietnam | 90 | en:Phở gà | Soup
+- Chicken: 1
+- Onion: 2
+- Ginger: 50g
+- Star Anise: 3
+- Cinnamon Stick: 1
+- Coriander Seeds: 1 tsp
+- Fish Sauce: 4 tbs
+- Sugar: 1 tbs
+- Flat Rice Noodles: 400g
+- Bean Sprouts: 150g
+- Basil Leaves: 1 handful
+- Lime: 2
+1. Char the onions and ginger, then toast the spices.
+2. Simmer the chicken with them in 3 litres of water for 1 hour.
+3. Shred the chicken, strain the broth and season with fish sauce and sugar.
+4. Serve the noodles in the broth with chicken, bean sprouts, basil and lime.
+
+# Bun rieu | Bún riêu (soupe tomate au crabe et crevettes) | 越南蟹汤米线
+@ Seafood | Vietnam | 45 | en:Bún riêu | Soup
+- Crab Meay: 200g
+- Minced Pork: 200g
+- Prawns: 200g
+- Eggs: 2
+- Tomatoes: 5
+- Shrimp Paste: 1 tbs
+- Fish Sauce: 3 tbs
+- Chicken Stock: 1.5l
+- Rice Vermicelli: 400g
+- Tofu: 200g
+- Lettuce: 1
+1. Mix the crab, minced pork, chopped prawns and eggs.
+2. Fry the tomatoes in quarters with the shrimp paste, then add the stock.
+3. Drop spoonfuls of the crab mixture into the simmering soup and add the fried tofu cubes.
+4. Season with fish sauce. Serve on vermicelli with lettuce.
+
+# Mi Quang | Mì Quảng (nouilles au curcuma, porc et crevettes) | 广南面
+@ Pork | Vietnam | 50 | en:Mì Quảng
+- Flat Rice Noodles: 400g
+- Pork Shoulder: 400g
+- Prawns: 300g
+- Ground Turmeric: 2 tsp
+- Shallots: 3
+- Fish Sauce: 3 tbs
+- Chicken Stock: 600ml
+- Peanuts: 50g
+- Lettuce: 1
+- Mint: 1 handful
+- Eggs: 4
+1. Marinate the pork and prawns with turmeric, shallots and fish sauce.
+2. Fry them, add the stock and simmer for 20 minutes with the boiled eggs.
+3. Put the noodles and salad in bowls and add a little concentrated broth with the meat.
+4. Top with peanuts and herbs.
+
+# Cao lau | Cao lầu (nouilles de Hoi An au porc) | 会安高楼面
+@ Pork | Vietnam | 70 | en:Cao lầu
+- Udon Noodles: 400g
+- Pork Shoulder: 500g
+- Soy Sauce: 3 tbs
+- Chinese Five Spice Powder: 1 tsp
+- Garlic: 3 cloves
+- Sugar: 1 tbs
+- Bean Sprouts: 150g
+- Lettuce: 1
+- Mint: 1 handful
+- Wonton Skin: 8
+1. Marinate the pork with soy sauce, five spice, garlic and sugar, then roast at 200°C for 40 minutes.
+2. Fry the wonton skins until crisp.
+3. Slice the pork and heat the pan juices with a little water.
+4. Serve the noodles with the pork, juices, greens and crispy wonton pieces.
+
+# Ga kho gung | Gà kho gừng (poulet caramélisé au gingembre) | 越南姜焖鸡
+@ Chicken | Vietnam | 35 | en:Gà kho gừng | Quick
+- Chicken Thighs: 700g
+- Ginger: 60g
+- Sugar: 3 tbs
+- Fish Sauce: 3 tbs
+- Garlic: 3 cloves
+- Shallots: 2
+- Black Pepper: 1 tsp
+- Jasmine Rice: 300g
+- Spring Onions: 2
+1. Cook the rice. Make a dark caramel with the sugar and a splash of water.
+2. Add the shallots, garlic and ginger in matchsticks, then the chicken.
+3. Add the fish sauce and 100ml water and simmer for 20 minutes until glossy.
+4. Add pepper and spring onions.
+
+# Char kway teow | Char kway teow (nouilles sautées malaisiennes) | 炒粿条
+@ Seafood | Malaysia | 20 | en:Char kway teow | Quick
+- Flat Rice Noodles: 400g
+- Prawns: 250g
+- Chinese Sausage: 2
+- Eggs: 3
+- Bean Sprouts: 200g
+- Chives: 1 bunch
+- Dark Soy Sauce: 2 tbs
+- Soy Sauce: 1 tbs
+- Oyster Sauce: 1 tbs
+- Sambal: 2 tbs
+- Garlic: 3 cloves
+1. Stir-fry the garlic, prawns and sliced sausage in a very hot wok.
+2. Add the noodles and sauces and toss until charred.
+3. Push aside, scramble the eggs, then mix.
+4. Add the bean sprouts and chives and toss for 30 seconds.
+
+# Hokkien mee | Hokkien mee (nouilles sautées aux crevettes) | 福建面
+@ Seafood | Singapore | 30 | en:Hokkien mee
+- Egg Noodles: 250g
+- Rice Vermicelli: 150g
+- Prawns: 300g
+- Squid: 200g
+- Pork Belly Slices: 150g
+- Eggs: 2
+- Bean Sprouts: 150g
+- Chicken Stock: 400ml
+- Fish Sauce: 1 tbs
+- Garlic: 3 cloves
+- Lime: 2
+1. Fry the pork, then scramble the eggs and add the garlic.
+2. Add both noodles and toss.
+3. Add the stock gradually with the prawns and squid and simmer until absorbed.
+4. Add the bean sprouts and fish sauce. Serve with lime and chilli.
+
+# Bak kut teh | Bak kut teh (bouillon de travers aux épices) | 肉骨茶
+@ Pork | Malaysia | 120 | en:Bak kut teh | Soup
+- Pork Back Ribs: 1kg
+- Garlic: 2 bulbs
+- Star Anise: 3
+- Cinnamon Stick: 1
+- Cloves: 4
+- Peppercorns: 1 tbs
+- Soy Sauce: 4 tbs
+- Dark Soy Sauce: 2 tbs
+- Shiitake Mushrooms: 8
+- Tofu: 200g
+- Jasmine Rice: 300g
+1. Blanch the ribs and rinse.
+2. Simmer with the whole garlic bulbs, spices and 2.5 litres of water for 1 hour 30.
+3. Add the soy sauces, mushrooms and tofu and simmer for 20 minutes.
+4. Serve with rice.
+
+# Hainanese curry rice | Riz au curry hainanais (Singapour) | 海南咖喱饭
+@ Pork | Singapore | 60 | en:Hainanese curry rice | Curry,Rice
+- Pork Chops: 4
+- Chicken Thighs: 400g
+- Curry Powder: 3 tbs
+- Coconut Milk: 400ml
+- Potatoes: 2
+- Onion: 1
+- Cabbage: 300g
+- Eggs: 2
+- Panko: 100g
+- Soy Sauce: 3 tbs
+- Jasmine Rice: 300g
+1. Simmer the chicken and potatoes with the onion, curry powder and coconut milk for 30 minutes.
+2. Coat the pork chops in egg and panko and fry until golden.
+3. Braise the cabbage with the soy sauce and a little water.
+4. Serve the rice drowned in curry with the sliced pork chop and cabbage.
+
+# Soto ayam | Soto ayam (soupe de poulet indonésienne) | 印尼鸡汤
+@ Chicken | Indonesia | 60 | en:Soto ayam | Soup
+- Chicken Legs: 4
+- Ground Turmeric: 2 tsp
+- Lemongrass: 2
+- Galangal: 30g
+- Garlic: 5 cloves
+- Shallots: 5
+- Kaffir Lime Leaves: 4
+- Rice Vermicelli: 200g
+- Eggs: 4
+- Bean Sprouts: 150g
+- Lime: 2
+1. Blend the garlic, shallots, turmeric and galangal and fry the paste.
+2. Add the chicken, lemongrass, lime leaves and 2 litres of water and simmer for 40 minutes.
+3. Shred the chicken and return it to the broth.
+4. Serve over vermicelli and bean sprouts with halved boiled eggs and lime.
+
+# Ayam goreng | Ayam goreng (poulet frit indonésien) | 印尼炸鸡
+@ Chicken | Indonesia | 60 | en:Ayam goreng
+- Chicken Legs: 6
+- Garlic: 5 cloves
+- Shallots: 5
+- Ground Turmeric: 2 tsp
+- Ground Coriander: 2 tsp
+- Galangal: 20g
+- Lemongrass: 2
+- Vegetable Oil: 800ml
+- Jasmine Rice: 300g
+- Cucumber: 1
+- Sambal: 3 tbs
+1. Blend the garlic, shallots, spices and galangal.
+2. Simmer the chicken in the paste with lemongrass and 500ml water for 30 minutes until dry.
+3. Deep-fry the chicken until golden and crisp.
+4. Serve with rice, cucumber and sambal.
+
+# Ayam penyet | Ayam penyet (poulet écrasé et sambal) | 印尼压扁炸鸡
+@ Chicken | Indonesia | 60 | en:Ayam penyet
+- Chicken Legs: 4
+- Garlic: 4 cloves
+- Shallots: 4
+- Ground Turmeric: 1 tsp
+- Ground Coriander: 1 tsp
+- Red Chilli: 6
+- Tomatoes: 2
+- Shrimp Paste: 1 tsp
+- Tofu: 200g
+- Cabbage: 200g
+- Jasmine Rice: 300g
+- Vegetable Oil: 800ml
+1. Simmer the chicken with the garlic, shallots and spices in water for 30 minutes, then deep-fry until crisp.
+2. Fry the chillies, tomatoes and shrimp paste and pound into a sambal.
+3. Fry the tofu.
+4. Smash the chicken lightly with a pestle and serve with sambal, tofu, cabbage and rice.
+
+# Nasi uduk | Nasi uduk (riz au lait de coco et poulet) | 印尼椰浆饭
+@ Chicken | Indonesia | 45 | en:Nasi uduk | Rice
+- Jasmine Rice: 300g
+- Coconut Milk: 400ml
+- Lemongrass: 1
+- Bay Leaf: 2
+- Chicken Thighs: 500g
+- Ground Turmeric: 1 tsp
+- Garlic: 3 cloves
+- Eggs: 2
+- Peanuts: 50g
+- Cucumber: 1
+- Sambal: 2 tbs
+1. Cook the rice in the coconut milk and 150ml water with the lemongrass, bay leaves and salt.
+2. Rub the chicken with turmeric, garlic and salt and fry it.
+3. Make a thin omelette and slice it. Fry the peanuts.
+4. Serve the rice with the chicken, omelette, peanuts, cucumber and sambal.
+
+# Gulai ayam | Gulai ayam (curry de poulet de Sumatra) | 印尼黄咖喱鸡
+@ Chicken | Indonesia | 60 | en:Gulai | Curry
+- Chicken Thighs: 900g
+- Coconut Milk: 600ml
+- Shallots: 6
+- Garlic: 5 cloves
+- Ginger: 20g
+- Galangal: 20g
+- Ground Turmeric: 2 tsp
+- Red Chilli: 4
+- Lemongrass: 2
+- Kaffir Lime Leaves: 4
+- Jasmine Rice: 300g
+1. Blend the shallots, garlic, ginger, galangal, turmeric and chillies and fry the paste.
+2. Add the chicken, lemongrass and lime leaves and stir for 5 minutes.
+3. Add the coconut milk and 200ml water and simmer for 35 minutes.
+4. Serve with rice.
+
+# Opor ayam | Opor ayam (poulet doux au lait de coco) | 印尼椰奶炖鸡
+@ Chicken | Indonesia | 60 | en:Opor ayam | Curry,Family
+- Chicken Legs: 6
+- Coconut Milk: 800ml
+- Shallots: 6
+- Garlic: 5 cloves
+- Ground Coriander: 2 tsp
+- Ground Cumin: 1 tsp
+- Ground Turmeric: 1 tsp
+- Galangal: 20g
+- Lemongrass: 2
+- Bay Leaf: 3
+- Jasmine Rice: 300g
+1. Blend the shallots, garlic, ground spices and galangal and fry until fragrant.
+2. Add the chicken, lemongrass and bay leaves.
+3. Add the coconut milk and simmer gently for 40 minutes.
+4. Serve with rice.
+
+# Pecel | Pecel (légumes sauce cacahuète épicée) | 印尼花生酱拌菜
+@ Vegan | Indonesia | 30 | en:Pecel | Quick
+- Spinach: 200g
+- Bean Sprouts: 200g
+- Chinese Long Beans: 150g
+- Cabbage: 200g
+- Peanuts: 150g
+- Garlic: 2 cloves
+- Red Chilli: 2
+- Palm Sugar: 2 tbs
+- Tamarind Paste: 1 tbs
+- Kaffir Lime Leaves: 2
+- Tempeh: 200g
+- Jasmine Rice: 300g
+1. Blanch the vegetables separately.
+2. Fry the peanuts, then pound them with the garlic, chilli, sugar, tamarind and lime leaves. Thin with hot water.
+3. Fry the sliced tempeh.
+4. Serve the vegetables drizzled with peanut sauce, with tempeh and rice.
+
+# Sinigang | Sinigang (soupe aigre au porc) | 菲律宾酸汤
+@ Pork | Philippines | 60 | en:Sinigang | Soup
+- Pork Back Ribs: 800g
+- Tamarind Paste: 4 tbs
+- Tomatoes: 3
+- Onion: 1
+- Daikon Radish: 200g
+- Chinese Long Beans: 150g
+- Aubergine: 1
+- Spinach: 150g
+- Fish Sauce: 3 tbs
+- Jasmine Rice: 300g
+1. Simmer the ribs with the onion and tomatoes in 2 litres of water for 40 minutes.
+2. Add the tamarind and radish and cook for 10 minutes.
+3. Add the beans and aubergine, then the spinach.
+4. Season with fish sauce: it should be clearly sour. Serve with rice.
+
+# Kare-kare | Kare-kare (ragoût de bœuf sauce cacahuète) | 菲律宾花生炖牛尾
+@ Beef | Philippines | 180 | en:Kare-kare | Family
+- Oxtail: 1kg
+- Peanut Butter: 6 tbs
+- Rice Flour: 3 tbs
+- Onion: 1
+- Garlic: 4 cloves
+- Ground Annatto: 1 tsp
+- Aubergine: 1
+- Chinese Long Beans: 150g
+- Pak Choi: 3
+- Shrimp Paste: 2 tbs
+- Jasmine Rice: 300g
+1. Simmer the oxtail in water for 2 hours 30 until tender.
+2. Fry the garlic and onion with the annatto, add 1 litre of the broth and the peanut butter.
+3. Thicken with the toasted rice flour, add the oxtail.
+4. Add the vegetables and cook for 8 minutes. Serve with rice and shrimp paste.
+
+# Lechon kawali | Lechon kawali (poitrine de porc frite) | 菲律宾炸五花肉
+@ Pork | Philippines | 90 | en:Lechon kawali
+- Pork Belly Slices: 1kg
+- Bay Leaf: 3
+- Peppercorns: 1 tsp
+- Garlic: 1 bulb
+- Vegetable Oil: 1l
+- White Vinegar: 6 tbs
+- Soy Sauce: 2 tbs
+- Red Onions: 1
+- Jasmine Rice: 300g
+1. Simmer the pork belly in one piece with the bay leaves, peppercorns, garlic and salt for 45 minutes.
+2. Dry it thoroughly and leave uncovered in the fridge for at least 1 hour.
+3. Deep-fry in pieces until the skin blisters and crackles.
+4. Serve with vinegar mixed with soy sauce, garlic and onion, and rice.
+
+# Tinola | Tinola (soupe de poulet au gingembre) | 菲律宾姜汁鸡汤
+@ Chicken | Philippines | 45 | en:Tinola | Soup
+- Chicken Legs: 4
+- Ginger: 50g
+- Onion: 1
+- Garlic: 3 cloves
+- Fish Sauce: 3 tbs
+- Courgettes: 2
+- Spinach: 150g
+- Jasmine Rice: 300g
+1. Fry the ginger, onion and garlic in oil.
+2. Add the chicken and fish sauce and stir for 5 minutes.
+3. Add 1.5 litres of water and simmer for 25 minutes.
+4. Add the courgette and cook for 5 minutes, then the spinach. Serve with rice.
+
+# Arroz caldo | Arroz caldo (porridge de riz au poulet et gingembre) | 菲律宾姜汁鸡肉粥
+@ Chicken | Philippines | 50 | en:Arroz caldo | Soup
+- Chicken Thighs: 500g
+- Glutinous Rice: 200g
+- Ginger: 50g
+- Garlic: 6 cloves
+- Onion: 1
+- Fish Sauce: 3 tbs
+- Chicken Stock: 1.5l
+- Eggs: 4
+- Spring Onions: 3
+- Lime: 2
+1. Fry the ginger, onion and half the garlic, add the chicken and fish sauce.
+2. Add the rice and stir, then the stock.
+3. Simmer for 35 minutes, stirring, until thick.
+4. Serve with boiled eggs, crispy fried garlic, spring onions and lime.
+
+# Lumpia | Lumpia (rouleaux frits philippins) | 菲律宾春卷
+@ Pork | Philippines | 50 | en:Lumpia | Starter
+- Egg Roll Wrappers: 20
+- Minced Pork: 400g
+- Carrots: 1
+- Onion: 1
+- Garlic: 3 cloves
+- Spring Onions: 3
+- Eggs: 1
+- Soy Sauce: 2 tbs
+- Vegetable Oil: 800ml
+- Sweet Chilli Sauce: 5 tbs
+1. Mix the pork with the grated carrot, chopped onion, garlic, spring onions, egg and soy sauce.
+2. Roll thin cigars in the wrappers and seal.
+3. Fry at 175°C for 5 minutes until golden.
+4. Serve with sweet chilli sauce.
+
+# Mee rebus | Mee rebus (nouilles en sauce de patate douce) | 马来卤面
+@ Beef | Malaysia | 50 | en:Mee rebus
+- Egg Noodles: 400g
+- Sweet Potatoes: 2
+- Beef: 200g
+- Shallots: 5
+- Garlic: 3 cloves
+- Curry Powder: 2 tbs
+- Dried Shrimp: 2 tbs
+- Beef Stock: 1l
+- Eggs: 4
+- Bean Sprouts: 150g
+- Tofu: 150g
+- Lime: 2
+1. Boil and mash the sweet potatoes.
+2. Fry the shallots, garlic, curry powder and dried shrimp, add the sliced beef and stock.
+3. Stir in the sweet potato and simmer for 15 minutes until thick.
+4. Serve the noodles with the gravy, boiled eggs, bean sprouts, fried tofu and lime.
+
+# Mee siam | Mee siam (vermicelles aigres-douces) | 暹罗米粉
+@ Seafood | Singapore | 35 | en:Mee siam
+- Rice Vermicelli: 300g
+- Prawns: 250g
+- Tofu: 200g
+- Tamarind Paste: 3 tbs
+- Sweet Chilli Sauce: 3 tbs
+- Shallots: 4
+- Dried Shrimp: 2 tbs
+- Palm Sugar: 2 tbs
+- Eggs: 4
+- Bean Sprouts: 150g
+- Chives: 1 bunch
+- Lime: 2
+1. Fry the shallots and dried shrimp, add the tamarind, chilli sauce, sugar and 1 litre of water to make the gravy.
+2. Fry the vermicelli briefly with a spoon of the paste.
+3. Cook the prawns in the gravy.
+4. Serve the noodles with gravy, prawns, fried tofu, eggs, bean sprouts, chives and lime.
+
+# Roti canai with dhal | Roti canai et dhal | 印度煎饼配豆咖喱
+@ Vegetarian | Malaysia | 90 | en:Roti canai | Curry
+- Plain Flour: 400g
+- Eggs: 1
+- Milk: 100ml
+- Ghee: 6 tbs
+- Lentils: 200g
+- Onion: 1
+- Curry Powder: 2 tbs
+- Ground Turmeric: 1 tsp
+- Tomatoes: 2
+- Mustard Seeds: 1 tsp
+1. Knead the flour with the egg, milk, salt and 120ml water, divide into balls, coat in ghee and rest for 1 hour.
+2. Simmer the lentils with the turmeric, onion, tomatoes and curry powder for 25 minutes.
+3. Stretch each ball very thinly, fold into a square and cook in a hot pan with ghee until flaky.
+4. Fry the mustard seeds and pour over the dhal. Serve with the roti.
+
+# Murtabak | Murtabak (crêpe farcie à la viande) | 马来西亚肉馅煎饼
+@ Beef | Malaysia | 50 | en:Murtabak
+- Plain Flour: 300g
+- Minced Beef: 400g
+- Onion: 2
+- Eggs: 4
+- Curry Powder: 2 tbs
+- Spring Onions: 3
+- Ghee: 4 tbs
+- Cucumber: 1
+- White Vinegar: 2 tbs
+1. Knead the flour with salt and water into a soft dough and rest.
+2. Fry the beef with 1 onion and the curry powder and let cool. Mix with the eggs and spring onions.
+3. Stretch the dough thinly, put the filling in the middle and fold into a parcel.
+4. Fry in ghee for 4 minutes per side. Serve with sliced onion and cucumber in vinegar.
+
+# Nasi kerabu | Nasi kerabu (riz aux herbes et poisson grillé) | 马来西亚香草饭
+@ Seafood | Malaysia | 45 | en:Nasi kerabu | Rice
+- Jasmine Rice: 300g
+- Mackerel: 4
+- Ground Turmeric: 1 tsp
+- Cucumber: 1
+- Bean Sprouts: 150g
+- Mint: 1 handful
+- Basil Leaves: 1 handful
+- Kaffir Lime Leaves: 4
+- Desiccated Coconut: 60g
+- Eggs: 4
+- Sambal: 3 tbs
+1. Cook the rice.
+2. Rub the fish with turmeric and salt and grill.
+3. Toast the coconut until golden.
+4. Serve the rice with thinly sliced herbs, cucumber, bean sprouts, toasted coconut, fish, boiled eggs and sambal.
+
+# Kuy teav | Kuy teav (soupe de nouilles cambodgienne) | 柬埔寨粿条汤
+@ Pork | Cambodia | 60 | en:Kuy teav | Soup
+- Pork Back Ribs: 600g
+- Minced Pork: 200g
+- Prawns: 200g
+- Rice Stick Noodles: 400g
+- Dried Shrimp: 2 tbs
+- Onion: 1
+- Garlic: 6 cloves
+- Fish Sauce: 3 tbs
+- Sugar: 1 tbs
+- Bean Sprouts: 150g
+- Lime: 2
+1. Simmer the ribs with the onion and dried shrimp in 2.5 litres of water for 40 minutes.
+2. Season with fish sauce and sugar. Cook the minced pork and prawns in the broth.
+3. Fry the garlic until crisp.
+4. Serve the noodles in the broth with the meat, garlic oil, bean sprouts and lime.
+
+# Or lam | Or lam (ragoût laotien aux herbes) | 老挝香草炖肉
+@ Beef | Laos | 60 | en:Or lam | Family
+- Beef: 500g
+- Aubergine: 2
+- Chinese Long Beans: 150g
+- Lemongrass: 2
+- Red Chilli: 3
+- Glutinous Rice: 3 tbs
+- Fish Sauce: 3 tbs
+- Dill: 1 bunch
+- Basil Leaves: 1 handful
+- Spinach: 150g
+1. Simmer the beef with the lemongrass and chillies in 1 litre of water for 30 minutes.
+2. Add the aubergines and beans and cook for 15 minutes.
+3. Thicken with the glutinous rice soaked and ground.
+4. Add the greens, herbs and fish sauce. Serve with sticky rice.
+
+# Khao piak sen | Khao piak sen (soupe de nouilles laotienne) | 老挝米粉汤
+@ Chicken | Laos | 60 | en:Khao piak sen | Soup
+- Chicken Legs: 4
+- Rice Flour: 200g
+- Plain Flour: 150g
+- Garlic: 6 cloves
+- Shallots: 3
+- Fish Sauce: 3 tbs
+- Bean Sprouts: 150g
+- Coriander: 1 bunch
+- Spring Onions: 3
+- Lime: 2
+1. Simmer the chicken in 2.5 litres of water for 40 minutes, then shred it.
+2. Knead the flours with hot water, roll thick and cut into noodles.
+3. Cook the noodles directly in the broth so it thickens.
+4. Season with fish sauce. Serve with chicken, fried garlic and shallots, herbs and lime.

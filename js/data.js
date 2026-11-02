@@ -56,18 +56,18 @@ const NUTRITION = [
 // Regroupement des pays TheMealDB en grandes cuisines.
 const CUISINES = [
   { id: 'chinese', label: 'Chinoise', countries: ['China'] },
-  { id: 'indian', label: 'Indienne', countries: ['India', 'Bangladesh'] },
+  { id: 'indian', label: 'Indienne', countries: ['India', 'Bangladesh', 'Pakistan', 'Sri Lanka'] },
   { id: 'french', label: 'Française', countries: ['France', 'Belgium'] },
   { id: 'italian', label: 'Italienne', countries: ['Italy'] },
-  { id: 'medit', label: 'Méditerranéenne', countries: ['Spain', 'Greece', 'Portugal', 'Turkey', 'Croatia', 'Albania', 'Andorra', 'Morocco', 'Tunisia', 'Algeria', 'Egypt'] },
-  { id: 'mideast', label: 'Moyen-Orient', countries: ['Syria', 'Saudi Arabia', 'Afghanistan', 'Armenia', 'Azerbaijan'] },
+  { id: 'medit', label: 'Méditerranéenne', countries: ['Spain', 'Greece', 'Portugal', 'Turkey', 'Croatia', 'Albania', 'Andorra', 'Morocco', 'Tunisia', 'Algeria', 'Egypt', 'Bosnia and Herzegovina', 'Serbia'] },
+  { id: 'mideast', label: 'Moyen-Orient', countries: ['Syria', 'Saudi Arabia', 'Afghanistan', 'Armenia', 'Azerbaijan', 'Lebanon', 'Iran', 'Iraq', 'Jordan', 'Palestine', 'Yemen'] },
   { id: 'american', label: 'Américaine', countries: ['United States', 'Canada', 'Australia'] },
-  { id: 'latino', label: 'Mexicaine & Latino', countries: ['Mexico', 'Peru', 'Brazil', 'Colombia', 'Argentina', 'Venezuela', 'Uruguay', 'Chile', 'Costa Rica', 'Cuba'] },
+  { id: 'latino', label: 'Mexicaine & Latino', countries: ['Mexico', 'Peru', 'Brazil', 'Colombia', 'Argentina', 'Venezuela', 'Uruguay', 'Chile', 'Costa Rica', 'Cuba', 'El Salvador', 'Puerto Rico', 'Guatemala'] },
   { id: 'thai', label: 'Thaïe', countries: ['Thailand'] },
   { id: 'japanese', label: 'Japonaise & coréenne', countries: ['Japan', 'South Korea'] },
-  { id: 'seasia', label: 'Asie du Sud-Est', countries: ['Vietnam', 'Malaysia', 'Indonesia', 'Philippines', 'Cambodia', 'Laos'] },
-  { id: 'caribbean', label: 'Caraïbes & Afrique', countries: ['Jamaica', 'Barbados', 'Dominica', 'Aruba', 'Antigua and Barbuda', 'Cayman Islands', 'Bahamas', 'Kenya', 'Botswana', 'Angola'] },
-  { id: 'europe', label: 'Europe du Nord & de l’Est', countries: ['United Kingdom', 'Ireland', 'Netherlands', 'Norway', 'Denmark', 'Estonia', 'Poland', 'Russia', 'Ukraine', 'Slovakia', 'Bulgaria', 'Austria'] },
+  { id: 'seasia', label: 'Asie du Sud-Est', countries: ['Vietnam', 'Malaysia', 'Indonesia', 'Philippines', 'Cambodia', 'Laos', 'Singapore'] },
+  { id: 'caribbean', label: 'Caraïbes & Afrique', countries: ['Jamaica', 'Barbados', 'Dominica', 'Aruba', 'Antigua and Barbuda', 'Cayman Islands', 'Bahamas', 'Kenya', 'Botswana', 'Angola', 'Haiti', 'Trinidad and Tobago', 'Nigeria', 'Ghana', 'Senegal', 'South Africa', 'Ethiopia', 'Ivory Coast', 'Tanzania', 'Mali'] },
+  { id: 'europe', label: 'Europe du Nord & de l’Est', countries: ['United Kingdom', 'Ireland', 'Netherlands', 'Norway', 'Denmark', 'Estonia', 'Poland', 'Russia', 'Ukraine', 'Slovakia', 'Bulgaria', 'Austria', 'Germany', 'Switzerland', 'Hungary', 'Czech Republic', 'Sweden'] },
 ];
 const COUNTRY_TO_CUISINE = {};
 CUISINES.forEach(c => c.countries.forEach(p => (COUNTRY_TO_CUISINE[p] = c.id)));

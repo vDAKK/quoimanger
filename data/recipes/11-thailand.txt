@@ -1,0 +1,406 @@
+// Thaïlande : currys, salades, nouilles et grillades. Format : voir tools/build-recipes.js
+
+# Khao soi | Khao soi (nouilles au curry de Chiang Mai) | 泰北咖喱面
+@ Chicken | Thailand | 45 | en:Khao soi | Curry,Soup
+- Chicken Legs: 4
+- Thai Red Curry Paste: 3 tbs
+- Curry Powder: 1 tbs
+- Coconut Milk: 800ml
+- Chicken Stock: 400ml
+- Fish Sauce: 2 tbs
+- Palm Sugar: 1 tbs
+- Egg Noodles: 400g
+- Shallots: 4
+- Lime: 2
+- Coriander: 1 bunch
+1. Fry the curry paste and curry powder in a few spoons of the thick coconut cream until fragrant.
+2. Add the chicken, the rest of the coconut milk and the stock and simmer for 30 minutes.
+3. Season with fish sauce and palm sugar.
+4. Fry a handful of the noodles until crisp; boil the rest.
+5. Serve the noodles in the curry, topped with crispy noodles, sliced shallots, lime and coriander.
+
+# Kaeng som | Kaeng som (curry aigre au poisson et légumes) | 泰式酸咖喱
+@ Seafood | Thailand | 30 | en:Kaeng som | Curry,Soup
+- White Fish Fillets: 500g
+- Thai Red Curry Paste: 2 tbs
+- Tamarind Paste: 3 tbs
+- Fish Sauce: 3 tbs
+- Palm Sugar: 1 tbs
+- Green Papaya: 200g
+- Chinese Long Beans: 150g
+- Cabbage: 200g
+- Water: 1l
+- Jasmine Rice: 300g
+1. Cook the rice. Bring the water to the boil and stir in the curry paste.
+2. Add the papaya and cabbage and simmer for 8 minutes.
+3. Add the beans and the fish in pieces and cook for 4 minutes.
+4. Season with tamarind, fish sauce and sugar: it should be sour, salty and spicy.
+
+# Jungle curry | Kaeng pa (curry de la jungle sans coco) | 丛林咖喱
+@ Pork | Thailand | 30 | en:Kaeng pa | Curry
+- Pork Tenderloin: 400g
+- Thai Red Curry Paste: 3 tbs
+- Aubergine: 1
+- Chinese Long Beans: 150g
+- Bamboo Shoot: 150g
+- Kaffir Lime Leaves: 4
+- Basil Leaves: 1 handful
+- Fish Sauce: 2 tbs
+- Chicken Stock: 600ml
+- Vegetable Oil: 2 tbs
+- Jasmine Rice: 300g
+1. Cook the rice. Fry the curry paste in the oil.
+2. Add the sliced pork and stir-fry for 2 minutes.
+3. Add the stock, aubergine, beans, bamboo shoots and lime leaves and simmer for 10 minutes.
+4. Season with fish sauce and stir in the basil.
+
+# Kaeng hang le | Kaeng hang le (curry de porc du nord) | 泰北猪肉咖喱
+@ Pork | Thailand | 120 | en:Kaeng hang le | Curry,Family
+- Pork Belly Slices: 800g
+- Thai Red Curry Paste: 3 tbs
+- Curry Powder: 1 tbs
+- Tamarind Paste: 3 tbs
+- Palm Sugar: 2 tbs
+- Fish Sauce: 3 tbs
+- Ginger: 40g
+- Garlic: 8 cloves
+- Shallots: 6
+- Peanuts: 50g
+- Jasmine Rice: 300g
+1. Marinate the pork in large cubes with the curry paste and curry powder for 30 minutes.
+2. Fry the pork until browned, add 700ml water and simmer for 1 hour.
+3. Add the ginger in matchsticks, whole garlic, shallots, tamarind, sugar and fish sauce.
+4. Simmer for 30 minutes more until rich and tender. Add the peanuts and serve with rice.
+
+# Som tam | Som tam (salade de papaye verte) | 青木瓜沙拉
+@ Seafood | Thailand | 20 | en:Som tam | Quick,Starter
+- Green Papaya: 1
+- Cherry Tomatoes: 150g
+- Chinese Long Beans: 100g
+- Garlic: 2 cloves
+- Birds-eye Chillies: 3
+- Dried Shrimp: 2 tbs
+- Peanuts: 50g
+- Fish Sauce: 3 tbs
+- Lime: 2
+- Palm Sugar: 1 tbs
+- Glutinous Rice: 300g
+1. Soak and steam the glutinous rice, or cook jasmine rice.
+2. Shred the papaya into long thin strips.
+3. Pound the garlic and chillies, then the dried shrimp, peanuts and beans.
+4. Add the tomatoes, lime juice, fish sauce and sugar and pound lightly.
+5. Toss with the papaya and serve with the rice.
+
+# Nam tok beef salad | Nam tok (salade de bœuf grillé) | 泰式烤牛肉沙拉
+@ Beef | Thailand | 30 | en:Nam tok (food) | Quick
+- Sirloin Steak: 500g
+- Glutinous Rice: 3 tbs
+- Shallots: 4
+- Mint: 1 handful
+- Coriander: 1 bunch
+- Spring Onions: 3
+- Fish Sauce: 3 tbs
+- Lime: 2
+- Chilli Flakes: 1 tsp
+- Jasmine Rice: 300g
+- Cucumber: 1
+1. Toast the raw glutinous rice in a dry pan until golden and grind it to a powder.
+2. Grill the steak to medium-rare, rest it and slice thinly.
+3. Toss the beef with the fish sauce, lime juice, chilli flakes and toasted rice.
+4. Add the sliced shallots, herbs and spring onions. Serve with rice and cucumber.
+
+# Moo ping | Moo ping (brochettes de porc grillé) | 泰式烤猪肉串
+@ Pork | Thailand | 40 | en:Mu ping
+- Pork Shoulder: 700g
+- Garlic: 5 cloves
+- Coriander: 1 bunch
+- White Pepper: 1 tsp
+- Oyster Sauce: 2 tbs
+- Fish Sauce: 1 tbs
+- Soy Sauce: 1 tbs
+- Palm Sugar: 2 tbs
+- Coconut Milk: 100ml
+- Glutinous Rice: 300g
+- Cucumber: 1
+1. Pound the garlic, coriander stems and white pepper, then mix with the sauces and sugar.
+2. Slice the pork thinly and marinate for at least 1 hour.
+3. Thread onto skewers.
+4. Grill, brushing with coconut milk, for 10 minutes until caramelised.
+5. Serve with sticky rice and cucumber.
+
+# Gai yang | Gai yang (poulet grillé à la thaïe) | 泰式烤鸡
+@ Chicken | Thailand | 60 | en:Kai yang
+- Chicken Legs: 6
+- Garlic: 6 cloves
+- Coriander: 1 bunch
+- Lemongrass: 2
+- Fish Sauce: 3 tbs
+- Soy Sauce: 2 tbs
+- Palm Sugar: 1 tbs
+- White Pepper: 1 tsp
+- Sweet Chilli Sauce: 5 tbs
+- Glutinous Rice: 300g
+- Cucumber: 1
+1. Blend the garlic, coriander stems, lemongrass, sauces, sugar and pepper.
+2. Marinate the chicken for at least 2 hours.
+3. Grill or roast at 200°C for 40 minutes, turning, until golden and cooked through.
+4. Serve with sweet chilli sauce, sticky rice and cucumber.
+
+# Rad na | Rad na (nouilles larges en sauce) | 泰式滑蛋河粉
+@ Pork | Thailand | 25 | en:Rat na | Quick
+- Flat Rice Noodles: 400g
+- Pork Tenderloin: 300g
+- Chinese Broccoli: 300g
+- Dark Soy Sauce: 2 tbs
+- Oyster Sauce: 2 tbs
+- Soy Sauce: 1 tbs
+- Sugar: 1 tsp
+- Chicken Stock: 500ml
+- Cornstarch: 2 tbs
+- Garlic: 3 cloves
+- White Vinegar: 2 tbs
+1. Stir-fry the noodles with the dark soy sauce until slightly charred and divide between plates.
+2. Fry the garlic and sliced pork, then the Chinese broccoli.
+3. Add the stock, oyster sauce, soy sauce and sugar, then thicken with the cornstarch.
+4. Pour the sauce over the noodles. Serve with vinegar and chilli.
+
+# Khanom chin nam ngiao | Khanom chin nam ngiao (vermicelles, porc et tomates) | 泰北番茄猪肉米线
+@ Pork | Thailand | 50 | en:Khanom chin nam ngiao | Soup
+- Rice Vermicelli: 400g
+- Minced Pork: 300g
+- Pork Back Ribs: 400g
+- Cherry Tomatoes: 300g
+- Thai Red Curry Paste: 2 tbs
+- Shrimp Paste: 1 tsp
+- Fish Sauce: 2 tbs
+- Bean Sprouts: 150g
+- Cabbage: 150g
+- Lime: 2
+1. Simmer the ribs in 2 litres of water for 30 minutes.
+2. Fry the curry paste and shrimp paste, add the minced pork and tomatoes and cook for 5 minutes.
+3. Add to the broth and simmer for 15 minutes. Season with fish sauce.
+4. Cook the vermicelli and serve with the soup, bean sprouts, shredded cabbage and lime.
+
+# Hor mok | Hor mok (flan de poisson au curry vapeur) | 泰式蒸鱼糕
+@ Seafood | Thailand | 45 | en:Hor mok
+- White Fish Fillets: 500g
+- Thai Red Curry Paste: 2 tbs
+- Coconut Milk: 300ml
+- Eggs: 2
+- Fish Sauce: 2 tbs
+- Kaffir Lime Leaves: 4
+- Basil Leaves: 1 handful
+- Cabbage: 150g
+- Jasmine Rice: 300g
+1. Cook the rice. Cut the fish into small pieces.
+2. Whisk the curry paste, 250ml coconut milk, eggs and fish sauce, then add the fish.
+3. Line small bowls with basil and shredded cabbage and fill with the mixture.
+4. Steam for 15 minutes, top with the remaining coconut milk and shredded lime leaves and steam for 2 minutes.
+
+# Khao tom | Khao tom (soupe de riz au porc) | 泰式猪肉粥
+@ Pork | Thailand | 30 | en:Khao tom | Soup,Quick
+- Jasmine Rice: 200g
+- Minced Pork: 300g
+- Chicken Stock: 1.5l
+- Garlic: 6 cloves
+- Ginger: 30g
+- Fish Sauce: 2 tbs
+- Soy Sauce: 1 tbs
+- Coriander: 1 bunch
+- Spring Onions: 3
+- Vegetable Oil: 3 tbs
+1. Fry the sliced garlic in the oil until golden and set aside.
+2. Bring the stock to the boil with the ginger, add the rice and simmer for 15 minutes.
+3. Add small balls of minced pork and cook for 5 minutes.
+4. Season with fish sauce and soy sauce. Serve with crispy garlic, coriander and spring onions.
+
+# Khao kha mu | Khao kha mu (jarret de porc braisé et riz) | 猪脚饭
+@ Pork | Thailand | 150 | en:Khao kha mu | Rice,Family
+- Pork Knuckle: 1
+- Soy Sauce: 5 tbs
+- Dark Soy Sauce: 3 tbs
+- Palm Sugar: 3 tbs
+- Star Anise: 3
+- Cinnamon Stick: 1
+- Garlic: 6 cloves
+- Coriander: 1 bunch
+- Eggs: 4
+- Chinese Broccoli: 300g
+- Jasmine Rice: 300g
+1. Blanch the pork knuckle for 5 minutes.
+2. Simmer it with the soy sauces, sugar, spices, garlic and coriander stems in water to cover for 2 hours.
+3. Add the peeled boiled eggs for the last 30 minutes.
+4. Slice the meat and serve over rice with the eggs, blanched greens and some of the sauce.
+
+# Pad kra pao moo | Pad kra pao (porc haché au basilic) | 打抛猪
+@ Pork | Thailand | 15 | en:Phat kaphrao | Quick,Rice
+- Minced Pork: 500g
+- Garlic: 6 cloves
+- Birds-eye Chillies: 4
+- Basil Leaves: 2 handfuls
+- Oyster Sauce: 2 tbs
+- Fish Sauce: 1 tbs
+- Soy Sauce: 1 tbs
+- Sugar: 1 tsp
+- Eggs: 4
+- Jasmine Rice: 300g
+1. Cook the rice. Pound the garlic and chillies.
+2. Fry them in a hot wok, add the pork and stir-fry until cooked.
+3. Add the sauces and sugar, then the basil leaves.
+4. Fry the eggs in plenty of oil until crispy and serve on the rice with the pork.
+
+# Mee krob | Mee krob (vermicelles croustillantes aigres-douces) | 泰式脆米粉
+@ Seafood | Thailand | 30 | en:Mi krop | Starter
+- Rice Vermicelli: 150g
+- Prawns: 200g
+- Tofu: 150g
+- Tamarind Paste: 2 tbs
+- Palm Sugar: 4 tbs
+- Fish Sauce: 2 tbs
+- Lime: 1
+- Bean Sprouts: 150g
+- Spring Onions: 3
+- Vegetable Oil: 500ml
+1. Fry the dry vermicelli in small handfuls in very hot oil until puffed, and drain.
+2. Fry the diced tofu and the prawns.
+3. Simmer the tamarind, sugar, fish sauce and lime juice until syrupy.
+4. Gently toss the noodles, prawns and tofu in the sauce. Serve with bean sprouts and spring onions.
+
+# Pad khing | Pad khing (poulet sauté au gingembre) | 泰式姜丝炒鸡
+@ Chicken | Thailand | 20 | en:Phat khing | Quick
+- Chicken Breasts: 3
+- Ginger: 60g
+- Wood Ear Mushrooms: 15g
+- Onion: 1
+- Spring Onions: 3
+- Oyster Sauce: 2 tbs
+- Soy Sauce: 1 tbs
+- Fish Sauce: 1 tbs
+- Sugar: 1 tsp
+- Garlic: 3 cloves
+- Jasmine Rice: 300g
+1. Cook the rice. Soak and slice the mushrooms. Cut the ginger into fine matchsticks.
+2. Stir-fry the garlic and sliced chicken until cooked.
+3. Add the ginger, onion and mushrooms and stir-fry for 2 minutes.
+4. Season with the sauces and sugar and add the spring onions.
+
+# Pad prik khing | Pad prik khing (porc et haricots au curry sec) | 泰式红咖喱炒长豆
+@ Pork | Thailand | 20 | en:Phat phrik khing | Quick
+- Pork Tenderloin: 400g
+- Chinese Long Beans: 300g
+- Thai Red Curry Paste: 2 tbs
+- Kaffir Lime Leaves: 4
+- Fish Sauce: 1 tbs
+- Palm Sugar: 1 tbs
+- Vegetable Oil: 2 tbs
+- Jasmine Rice: 300g
+1. Cook the rice. Fry the curry paste in the oil until fragrant.
+2. Add the sliced pork and stir-fry for 3 minutes.
+3. Add the beans in pieces and a splash of water and cook for 3 minutes.
+4. Season with fish sauce and sugar and add the shredded lime leaves.
+
+# Kua gai noodles | Kuai tiao khua kai (nouilles sautées au poulet et à l'œuf) | 泰式鸡肉炒粉
+@ Chicken | Thailand | 20 | en:Kuai tiao khua kai | Quick
+- Flat Rice Noodles: 400g
+- Chicken Thighs: 400g
+- Eggs: 3
+- Garlic: 3 cloves
+- Oyster Sauce: 2 tbs
+- Fish Sauce: 1 tbs
+- Sugar: 1 tsp
+- Lettuce: 1
+- Spring Onions: 2
+- Vegetable Oil: 3 tbs
+1. Stir-fry the garlic and sliced chicken until cooked.
+2. Add the noodles and sauces and fry until slightly charred.
+3. Push to one side, scramble the eggs and let them set before mixing.
+4. Serve on lettuce leaves with spring onions.
+
+# Khao kluk kapi | Khao kluk kapi (riz sauté à la pâte de crevettes) | 虾酱炒饭
+@ Pork | Thailand | 30 | en:Khao kluk kapi | Rice
+- Jasmine Rice: 300g
+- Shrimp Paste: 2 tbs
+- Pork Belly Slices: 300g
+- Palm Sugar: 2 tbs
+- Soy Sauce: 2 tbs
+- Eggs: 3
+- Green Papaya: 150g
+- Shallots: 3
+- Chinese Long Beans: 100g
+- Lime: 2
+1. Cook the rice and let it cool.
+2. Simmer the pork pieces with the sugar, soy sauce and a little water until sweet and sticky.
+3. Make a thin omelette and slice it.
+4. Fry the shrimp paste in oil, add the rice and toss.
+5. Serve the rice with the sweet pork, omelette, shredded papaya, shallots, beans and lime.
+
+# Moo daeng | Moo daeng (porc rouge laqué) | 泰式叉烧饭
+@ Pork | Thailand | 80 | en:Mu daeng | Rice
+- Pork Tenderloin: 700g
+- Hoisin Sauce: 3 tbs
+- Soy Sauce: 2 tbs
+- Honey: 3 tbs
+- Chinese Five Spice Powder: 1 tsp
+- Garlic: 3 cloves
+- Cucumber: 1
+- Eggs: 4
+- Jasmine Rice: 300g
+1. Marinate the pork with the hoisin, soy sauce, honey, five spice and garlic for at least 1 hour.
+2. Roast at 200°C for 35 minutes, basting with the marinade.
+3. Simmer the remaining marinade with 100ml water to make a sauce.
+4. Slice the pork and serve with rice, halved boiled eggs, cucumber and the sauce.
+
+# Thai suki | Suki thaï (fondue de légumes et vermicelles) | 泰式寿喜烧
+@ Chicken | Thailand | 30 | en:Thai suki | Soup
+- Chicken Breasts: 2
+- Prawns: 200g
+- Glass Noodles: 150g
+- Napa Cabbage: 300g
+- Eggs: 2
+- Chicken Stock: 1.5l
+- Sriracha: 4 tbs
+- Lime: 1
+- Garlic: 3 cloves
+- Coriander: 1 bunch
+1. Bring the stock to the boil.
+2. Add the cabbage and soaked noodles, then the sliced chicken and prawns.
+3. Drizzle in the beaten eggs.
+4. Serve with a dipping sauce of sriracha, lime, garlic and coriander.
+
+# Thai noodle soup | Soupe de nouilles thaïe au porc | 泰式猪肉粿条汤
+@ Pork | Thailand | 30 | en:Kuai tiao | Soup,Quick
+- Rice Stick Noodles: 400g
+- Minced Pork: 300g
+- Pork Tenderloin: 200g
+- Chicken Stock: 1.5l
+- Bean Sprouts: 150g
+- Fish Sauce: 3 tbs
+- Sugar: 1 tsp
+- Garlic: 4 cloves
+- Chilli Flakes: 1 tsp
+- Coriander: 1 bunch
+- Spring Onions: 2
+1. Bring the stock to the boil with the fish sauce and sugar.
+2. Add small balls of minced pork and the thinly sliced pork and cook for 5 minutes.
+3. Cook the noodles and bean sprouts and divide between bowls.
+4. Pour over the broth and meat, top with fried garlic, herbs and chilli flakes.
+
+# Pork satay with peanut sauce | Saté de porc sauce cacahuète | 沙爹猪肉串
+@ Pork | Thailand | 45 | en:Satay
+- Pork Tenderloin: 700g
+- Coconut Milk: 400ml
+- Curry Powder: 2 tsp
+- Ground Turmeric: 1 tsp
+- Palm Sugar: 2 tbs
+- Fish Sauce: 2 tbs
+- Peanut Butter: 4 tbs
+- Thai Red Curry Paste: 1 tbs
+- Cucumber: 1
+- Red Onions: 1
+- White Vinegar: 3 tbs
+- Jasmine Rice: 300g
+1. Marinate the thin strips of pork with 100ml coconut milk, curry powder, turmeric, half the sugar and fish sauce.
+2. Simmer the remaining coconut milk with the curry paste, peanut butter and remaining sugar until thick.
+3. Thread the pork onto skewers and grill for 8 minutes.
+4. Mix the diced cucumber and onion with the vinegar and a pinch of sugar.
+5. Serve the skewers with peanut sauce, cucumber relish and rice.

@@ -1,0 +1,966 @@
+// Japon et Corée : cuisine familiale. Format : voir tools/build-recipes.js
+
+# Tonjiru | Tonjiru (soupe miso au porc et légumes) | 猪肉味噌汤
+@ Pork | Japan | 35 | en:Tonjiru | Soup
+- Pork Belly Slices: 250g
+- Daikon Radish: 200g
+- Carrots: 1
+- Potatoes: 2
+- Onion: 1
+- Tofu: 200g
+- Miso: 4 tbs
+- Dashi: 2 tsp
+- Spring Onions: 2
+- Sushi Rice: 320g
+1. Cook the rice. Fry the pork pieces in a pot until they colour.
+2. Add the sliced radish, carrot, potatoes and onion and stir for 2 minutes.
+3. Add 1.2 litres of water and the dashi and simmer for 15 minutes.
+4. Add the tofu, then dissolve the miso in the soup off the boil. Sprinkle with spring onions.
+
+# Miso soup | Soupe miso | 味噌汤
+@ Vegetarian | Japan | 10 | en:Miso soup | Quick,Soup,Side
+- Miso: 3 tbs
+- Dashi: 2 tsp
+- Silken Tofu: 200g
+- Spring Onions: 2
+- Water: 1l
+1. Bring the water and dashi to a simmer.
+2. Add the diced tofu.
+3. Off the heat, dissolve the miso through a small sieve.
+4. Serve with sliced spring onions.
+
+# Nikujaga | Nikujaga (bœuf et pommes de terre mijotés) | 土豆炖肉
+@ Beef | Japan | 40 | en:Nikujaga | Family
+- Beef: 300g
+- Potatoes: 4
+- Onion: 2
+- Carrots: 2
+- Soy Sauce: 4 tbs
+- Mirin: 3 tbs
+- Sake: 3 tbs
+- Sugar: 2 tbs
+- Dashi: 1 tsp
+- Sushi Rice: 320g
+- Snow Peas: 80g
+1. Fry the thinly sliced beef and onions in a little oil.
+2. Add the potatoes and carrots in chunks, 500ml water and the dashi.
+3. Add the sugar, sake, mirin and soy sauce and simmer with a lid slightly ajar for 20 minutes.
+4. Add the snow peas for the last 2 minutes. Serve with rice.
+
+# Hayashi rice | Hayashi rice (bœuf sauce demi-glace) | 牛肉烩饭
+@ Beef | Japan | 40 | en:Hayashi rice | Family
+- Beef: 400g
+- Onion: 2
+- Mushrooms: 200g
+- Tomato Puree: 3 tbs
+- Tomato Ketchup: 3 tbs
+- Worcestershire Sauce: 3 tbs
+- Red Wine: 100ml
+- Butter: 30g
+- Plain Flour: 2 tbs
+- Beef Stock: 400ml
+- Sushi Rice: 320g
+1. Cook the rice. Fry the sliced onions in butter until golden.
+2. Add the beef and mushrooms and cook for 3 minutes, then sprinkle with flour.
+3. Add the wine, stock, tomato puree, ketchup and Worcestershire sauce.
+4. Simmer for 20 minutes until thick and glossy. Serve with rice.
+
+# Omurice | Omurice (omelette au riz ketchup) | 蛋包饭
+@ Chicken | Japan | 25 | en:Omurice | Quick,Family
+- Rice: 300g
+- Chicken Thighs: 250g
+- Onion: 1
+- Frozen Peas: 80g
+- Tomato Ketchup: 6 tbs
+- Eggs: 8
+- Butter: 40g
+- Milk: 4 tbs
+1. Cook the rice. Fry the diced chicken and onion in half the butter.
+2. Add the rice, peas and 4 tbs ketchup and toss until red.
+3. For each portion, beat 2 eggs with 1 tbs milk and cook into a soft omelette.
+4. Place the rice on the omelette, fold it over and turn onto a plate. Top with ketchup.
+
+# Tamagoyaki | Tamagoyaki (omelette roulée japonaise) | 玉子烧
+@ Vegetarian | Japan | 15 | en:Tamagoyaki | Quick,Side
+- Eggs: 6
+- Sugar: 1 tbs
+- Soy Sauce: 1 tsp
+- Mirin: 1 tbs
+- Dashi: 1/2 tsp
+- Vegetable Oil: 2 tbs
+1. Beat the eggs with the sugar, soy sauce, mirin, dashi and 3 tbs water.
+2. Pour a thin layer into an oiled pan, let it set and roll it to one side.
+3. Pour in another layer, lifting the roll so the egg runs under it, then roll back.
+4. Repeat until the egg is used up. Rest for 2 minutes and slice.
+
+# Chawanmushi | Chawanmushi (flan salé vapeur) | 日式茶碗蒸
+@ Seafood | Japan | 30 | en:Chawanmushi | Starter
+- Eggs: 4
+- Dashi: 1 tsp
+- Water: 500ml
+- Soy Sauce: 1 tbs
+- Mirin: 1 tbs
+- Prawns: 8
+- Chicken Breast: 1
+- Shiitake Mushrooms: 4
+- Spring Onions: 1
+1. Dissolve the dashi in the water with the soy sauce and mirin and let it cool.
+2. Beat the eggs gently with the stock and strain.
+3. Divide the prawns, diced chicken and sliced mushrooms between 4 cups and pour over the egg.
+4. Cover and steam over low heat for 15 minutes, until just set. Top with spring onion.
+
+# Prawn and vegetable tempura | Tempura de crevettes et légumes | 天妇罗
+@ Seafood | Japan | 40 | en:Tempura
+- Raw King Prawns: 12
+- Sweet Potatoes: 1
+- Aubergine: 1
+- Green Beans: 100g
+- Tempura Flour: 200g
+- Cold Water: 300ml
+- Vegetable Oil: 1l
+- Soy Sauce: 4 tbs
+- Mirin: 2 tbs
+- Daikon Radish: 100g
+- Sushi Rice: 320g
+1. Cook the rice. Slice the vegetables thinly and make small cuts on the underside of the prawns so they stay straight.
+2. Mix the tempura flour lightly with the ice-cold water, leaving lumps.
+3. Dip the prawns and vegetables in the batter and fry at 175°C for 2 to 3 minutes until crisp.
+4. Heat the soy sauce and mirin with 100ml water as a dipping sauce, served with grated radish.
+
+# Ebi furai | Ebi furai (crevettes panées) | 炸虾
+@ Seafood | Japan | 30 | en:Ebi furai | Quick
+- Raw King Prawns: 16
+- Plain Flour: 50g
+- Eggs: 2
+- Panko: 100g
+- Vegetable Oil: 500ml
+- Cabbage: 300g
+- Mayonnaise: 4 tbs
+- Lemon: 1
+- Sushi Rice: 320g
+1. Cook the rice. Peel the prawns, keeping the tails, and score the undersides.
+2. Coat in flour, beaten egg and panko.
+3. Fry at 175°C for 3 minutes until golden.
+4. Serve with shredded cabbage, mayonnaise, lemon and rice.
+
+# Korokke | Korokke (croquettes japonaises) | 日式可乐饼
+@ Beef | Japan | 50 | en:Korokke | Family
+- Potatoes: 5
+- Minced Beef: 200g
+- Onion: 1
+- Plain Flour: 50g
+- Eggs: 2
+- Panko: 120g
+- Vegetable Oil: 600ml
+- Tonkatsu Sauce: 4 tbs
+- Cabbage: 300g
+1. Boil and mash the potatoes.
+2. Fry the onion and minced beef, season and mix into the potatoes. Let cool.
+3. Shape into 12 patties and coat in flour, egg and panko.
+4. Fry at 175°C for 4 minutes until golden.
+5. Serve with tonkatsu sauce and shredded cabbage.
+
+# Menchi katsu | Menchi katsu (steak haché pané) | 炸肉饼
+@ Beef | Japan | 35 | en:Menchi-katsu
+- Minced Beef: 300g
+- Minced Pork: 200g
+- Onion: 1
+- Eggs: 3
+- Breadcrumbs: 30g
+- Plain Flour: 50g
+- Panko: 120g
+- Vegetable Oil: 600ml
+- Tonkatsu Sauce: 4 tbs
+- Cabbage: 300g
+- Sushi Rice: 320g
+1. Mix the meats with the finely chopped onion, 1 egg, breadcrumbs, salt and pepper. Shape 8 patties.
+2. Coat in flour, beaten egg and panko.
+3. Fry at 170°C for 6 minutes until golden and cooked through.
+4. Serve with tonkatsu sauce, cabbage and rice.
+
+# Hamburg steak | Hambāgu (steak haché japonais en sauce) | 日式汉堡排
+@ Beef | Japan | 35 | en:Hamburg steak | Family
+- Minced Beef: 400g
+- Minced Pork: 200g
+- Onion: 1
+- Eggs: 1
+- Breadcrumbs: 40g
+- Milk: 4 tbs
+- Tomato Ketchup: 4 tbs
+- Worcestershire Sauce: 3 tbs
+- Red Wine: 50ml
+- Butter: 20g
+- Sushi Rice: 320g
+- Broccoli: 1
+1. Soak the breadcrumbs in the milk and mix with the meats, fried onion, egg, salt and pepper.
+2. Shape 4 thick oval patties, making a dent in the centre.
+3. Brown on both sides, then add a splash of water, cover and cook for 8 minutes.
+4. Add the wine, ketchup, Worcestershire sauce and butter to the pan and reduce.
+5. Serve with the sauce, rice and broccoli.
+
+# Butadon | Butadon (bol de riz au porc caramélisé) | 豚丼
+@ Pork | Japan | 20 | en:Butadon | Quick,Rice
+- Pork Belly Slices: 450g
+- Onion: 1
+- Soy Sauce: 4 tbs
+- Mirin: 3 tbs
+- Sake: 2 tbs
+- Sugar: 1 tbs
+- Ginger: 1 tsp grated
+- Sushi Rice: 320g
+- Spring Onions: 2
+1. Cook the rice. Slice the pork thinly.
+2. Fry the pork until golden, then add the sliced onion.
+3. Add the soy sauce, mirin, sake, sugar and ginger and reduce until sticky.
+4. Spoon over the rice and top with spring onions.
+
+# Kitsune udon | Kitsune udon (udon au tofu frit) | 狐狸乌冬面
+@ Vegetarian | Japan | 25 | en:Kitsune udon | Quick,Soup
+- Udon Noodles: 4
+- Tofu: 300g
+- Dashi: 2 tsp
+- Soy Sauce: 5 tbs
+- Mirin: 3 tbs
+- Sugar: 2 tbs
+- Spring Onions: 3
+- Vegetable Oil: 4 tbs
+1. Slice the tofu, pat dry and fry until golden.
+2. Simmer the tofu with 2 tbs soy sauce, 1 tbs mirin, the sugar and 100ml water until absorbed.
+3. Bring 1.4 litres of water to the boil with the dashi and remaining soy sauce and mirin.
+4. Heat the udon in the broth and top with the sweet tofu and spring onions.
+
+# Zaru soba | Zaru soba (soba froides et sauce) | 笊篱荞麦面
+@ Vegan | Japan | 15 | en:Zaru soba | Quick
+- Soba Noodles: 400g
+- Soy Sauce: 5 tbs
+- Mirin: 3 tbs
+- Dashi: 1 tsp
+- Spring Onions: 3
+- Nori: 2
+- Wasabi: 1 tsp
+1. Simmer the soy sauce, mirin, dashi and 250ml water for 2 minutes and chill the dipping sauce.
+2. Cook the soba, then rinse thoroughly in cold water and drain.
+3. Serve on plates topped with strips of nori, with the sauce, spring onions and a little wasabi on the side.
+
+# Chahan | Chāhan (riz sauté japonais) | 日式炒饭
+@ Pork | Japan | 15 | en:Chāhan | Quick,Rice
+- Rice: 300g
+- Eggs: 3
+- Ham: 120g
+- Spring Onions: 4
+- Soy Sauce: 2 tbs
+- Sesame Seed Oil: 1 tsp
+- Vegetable Oil: 2 tbs
+1. Use cold cooked rice.
+2. Scramble the eggs in a very hot wok and immediately add the rice, tossing to coat each grain.
+3. Add the diced ham and spring onions and stir-fry for 3 minutes.
+4. Pour the soy sauce around the edge of the wok, toss and finish with sesame oil.
+
+# Tonkotsu ramen | Ramen tonkotsu (bouillon de porc crémeux) | 豚骨拉面
+@ Pork | Japan | 240 | en:Tonkotsu ramen | Soup
+- Pigs Trotters: 2
+- Pork Belly Slices: 500g
+- Garlic: 1 bulb
+- Ginger: 40g
+- Onion: 1
+- Soy Sauce: 6 tbs
+- Mirin: 3 tbs
+- Eggs: 4
+- Egg Noodles: 400g
+- Spring Onions: 3
+- Nori: 2
+- Bean Sprouts: 150g
+1. Blanch the trotters, rinse, then boil hard in 3 litres of water with the garlic, ginger and onion for 3 hours, topping up with water, until milky.
+2. Roll the pork belly, simmer it in the soy sauce, mirin and 300ml water for 1 hour 30, turning, then slice.
+3. Boil the eggs for 6 minutes 30, peel and soak them in the pork braising liquid.
+4. Strain the broth and season with some of the braising liquid.
+5. Cook the noodles and serve in the broth with the pork, halved eggs, bean sprouts, nori and spring onions.
+
+# Shoyu ramen | Ramen shōyu (bouillon à la sauce soja) | 酱油拉面
+@ Chicken | Japan | 60 | en:Ramen | Soup
+- Chicken Wings: 600g
+- Ginger: 30g
+- Garlic: 4 cloves
+- Spring Onions: 4
+- Soy Sauce: 6 tbs
+- Mirin: 2 tbs
+- Dashi: 1 tsp
+- Egg Noodles: 400g
+- Eggs: 4
+- Ham: 150g
+- Pak Choi: 4
+- Nori: 2
+1. Simmer the chicken wings with the ginger, garlic and 2 spring onions in 2 litres of water for 45 minutes. Strain.
+2. Season the broth with the soy sauce, mirin and dashi.
+3. Boil the eggs for 6 minutes 30 and peel them.
+4. Cook the noodles and pak choi.
+5. Serve the noodles in the broth with the halved eggs, ham, pak choi, nori and spring onions.
+
+# Gyoza | Gyozas porc et chou | 日式煎饺
+@ Pork | Japan | 50 | en:Gyoza | Starter
+- Minced Pork: 300g
+- Cabbage: 200g
+- Garlic: 2 cloves
+- Ginger: 1 tsp grated
+- Spring Onions: 2
+- Soy Sauce: 3 tbs
+- Sesame Seed Oil: 1 tbs
+- Wonton Skin: 30
+- Rice Vinegar: 2 tbs
+- Chilli Oil: 1 tbs
+1. Salt the finely chopped cabbage, squeeze it dry and mix with the pork, garlic, ginger, spring onions, 1 tbs soy sauce and the sesame oil.
+2. Fill the wrappers and pleat them.
+3. Fry in an oiled pan until the bases are golden, add 100ml water, cover and steam until the water evaporates.
+4. Serve with the remaining soy sauce mixed with vinegar and chilli oil.
+
+# Onigiri | Onigiri (boules de riz garnies) | 日式饭团
+@ Seafood | Japan | 30 | en:Onigiri | Rice
+- Sushi Rice: 400g
+- Tuna: 160g
+- Mayonnaise: 3 tbs
+- Salmon: 150g
+- Nori: 4
+- Salt: 1 tsp
+- Sesame Seed: 1 tbs
+- Cucumber: 1
+- Miso: 2 tbs
+1. Cook the rice and let it cool slightly.
+2. Mix the tuna with the mayonnaise. Grill the salmon and flake it.
+3. With wet, salted hands, shape triangles of rice with a little filling in the centre.
+4. Wrap the base in a strip of nori and sprinkle with sesame seeds.
+5. Serve with cucumber and a quick miso soup.
+
+# Salmon ochazuke | Ochazuke au saumon (riz au thé) | 鲑鱼茶泡饭
+@ Seafood | Japan | 20 | en:Ochazuke | Quick,Rice
+- Sushi Rice: 320g
+- Salmon: 2
+- Dashi: 1 tsp
+- Soy Sauce: 1 tbs
+- Nori: 1
+- Sesame Seed: 1 tbs
+- Spring Onions: 2
+1. Cook the rice and grill the salted salmon, then flake it.
+2. Make 800ml hot green tea or dashi broth seasoned with soy sauce.
+3. Put the rice in bowls, top with the salmon, nori strips, sesame and spring onions.
+4. Pour the hot tea or broth over at the table.
+
+# Sukiyaki | Sukiyaki (fondue sucrée-salée au bœuf) | 寿喜烧
+@ Beef | Japan | 30 | en:Sukiyaki | Family
+- Beef: 500g
+- Tofu: 300g
+- Napa Cabbage: 300g
+- Shiitake Mushrooms: 8
+- Spring Onions: 4
+- Glass Noodles: 100g
+- Soy Sauce: 6 tbs
+- Mirin: 6 tbs
+- Sugar: 3 tbs
+- Sake: 4 tbs
+- Eggs: 4
+- Sushi Rice: 320g
+1. Simmer the soy sauce, mirin, sugar and sake with 100ml water to make the sauce.
+2. Brown a few slices of beef in a wide pan, then add some sauce.
+3. Arrange the tofu, cabbage, mushrooms, spring onions and soaked noodles around and simmer for 5 minutes.
+4. Cook the beef slices a few at a time and dip them in beaten raw egg if you like. Serve with rice.
+
+# Shabu-shabu | Shabu-shabu (fondue japonaise au bouillon) | 涮涮锅
+@ Beef | Japan | 30 | en:Shabu-shabu | Family
+- Beef: 500g
+- Tofu: 300g
+- Napa Cabbage: 300g
+- Shiitake Mushrooms: 8
+- Carrots: 1
+- Udon Noodles: 2
+- Dashi: 2 tsp
+- Soy Sauce: 5 tbs
+- Lemon: 1
+- Chinese Sesame Sauce: 4 tbs
+1. Bring 1.5 litres of water with the dashi to a simmer in a pot on the table.
+2. Mix the soy sauce with the lemon juice for the ponzu.
+3. Cook the vegetables and tofu in the broth, then swish the thin slices of beef for a few seconds each.
+4. Dip in ponzu or sesame sauce. Finish with the udon cooked in the broth.
+
+# Tebasaki chicken wings | Ailes de poulet tebasaki (Nagoya) | 名古屋手羽先
+@ Chicken | Japan | 45 | en:Tebasaki
+- Chicken Wings: 1kg
+- Potato Starch: 4 tbs
+- Soy Sauce: 4 tbs
+- Mirin: 3 tbs
+- Sugar: 2 tbs
+- Garlic: 2 cloves
+- Sesame Seed: 2 tbs
+- Black Pepper: 1 tsp
+- Vegetable Oil: 600ml
+- Cabbage: 300g
+1. Pat the wings dry and dust with potato starch.
+2. Fry at 160°C for 8 minutes, then at 180°C for 3 minutes until very crisp.
+3. Simmer the soy sauce, mirin, sugar and garlic until syrupy.
+4. Brush the wings with the glaze and sprinkle with sesame seeds and lots of black pepper. Serve with cabbage.
+
+# Yakiniku | Yakiniku (bœuf grillé mariné) | 日式烤肉
+@ Beef | Japan | 30 | en:Yakiniku | Quick
+- Sirloin Steak: 600g
+- Soy Sauce: 5 tbs
+- Mirin: 2 tbs
+- Sugar: 1 tbs
+- Garlic: 2 cloves
+- Sesame Seed Oil: 1 tbs
+- Sesame Seed: 1 tbs
+- Onion: 1
+- Green Pepper: 1
+- Sushi Rice: 320g
+- Lettuce: 1
+1. Mix the soy sauce, mirin, sugar, garlic, sesame oil and sesame seeds.
+2. Slice the beef thinly and marinate for 15 minutes in half the sauce.
+3. Grill the beef and the onion and pepper slices on a very hot griddle.
+4. Serve with rice, lettuce and the remaining sauce for dipping.
+
+# Hiyashi chuka | Hiyashi chūka (nouilles froides garnies) | 中华冷面
+@ Pork | Japan | 25 | en:Hiyashi chūka | Quick
+- Egg Noodles: 400g
+- Ham: 150g
+- Cucumber: 1
+- Eggs: 3
+- Tomatoes: 2
+- Soy Sauce: 4 tbs
+- Rice Vinegar: 4 tbs
+- Sugar: 2 tbs
+- Sesame Seed Oil: 1 tbs
+1. Mix the soy sauce, vinegar, sugar, sesame oil and 3 tbs water and chill.
+2. Cook thin egg omelettes and cut them into strips.
+3. Cook the noodles, then rinse in iced water.
+4. Arrange the noodles with strips of ham, cucumber and omelette and tomato wedges. Pour over the dressing.
+
+# Hiyayakko | Hiyayakko (tofu froid gingembre et ciboule) | 日式冷豆腐
+@ Vegan | Japan | 5 | en:Hiyayakko | Quick,Side
+- Silken Tofu: 400g
+- Ginger: 1 tsp grated
+- Spring Onions: 2
+- Soy Sauce: 2 tbs
+- Sesame Seed: 1 tsp
+1. Drain the chilled tofu and cut into 4 blocks.
+2. Top with grated ginger, spring onions and sesame seeds.
+3. Pour over the soy sauce just before eating.
+
+# Kinpira carrots | Kinpira de carottes | 金平胡萝卜
+@ Vegan | Japan | 15 | en:Kinpira | Quick,Side
+- Carrots: 3
+- Soy Sauce: 2 tbs
+- Mirin: 2 tbs
+- Sugar: 1 tsp
+- Sesame Seed Oil: 1 tbs
+- Sesame Seed: 1 tbs
+- Dried Red Chillies: 1
+1. Cut the carrots into fine matchsticks.
+2. Stir-fry in the sesame oil with the crumbled chilli for 3 minutes.
+3. Add the soy sauce, mirin and sugar and cook until absorbed.
+4. Sprinkle with sesame seeds.
+
+# Spinach gomaae | Épinards gomaae (sauce au sésame) | 芝麻拌菠菜
+@ Vegan | Japan | 10 | en:Goma-ae | Quick,Side
+- Spinach: 400g
+- Sesame Seed: 4 tbs
+- Soy Sauce: 2 tbs
+- Sugar: 1 tbs
+1. Blanch the spinach for 30 seconds, cool in cold water and squeeze dry.
+2. Toast and grind the sesame seeds, then mix with the soy sauce and sugar.
+3. Toss the spinach with the dressing.
+
+# Cucumber sunomono | Sunomono (salade de concombre vinaigrée) | 醋拌黄瓜
+@ Vegan | Japan | 10 | en:Sunomono | Quick,Side
+- Cucumber: 2
+- Rice Vinegar: 4 tbs
+- Sugar: 1 tbs
+- Soy Sauce: 1 tsp
+- Sesame Seed: 1 tbs
+- Salt: 1/2 tsp
+1. Slice the cucumber very thinly, salt it for 5 minutes and squeeze out the water.
+2. Mix the vinegar, sugar and soy sauce until the sugar dissolves.
+3. Toss the cucumber in the dressing and sprinkle with sesame seeds.
+
+# Chikuzenni | Chikuzenni (poulet et légumes mijotés) | 筑前煮
+@ Chicken | Japan | 45 | en:Chikuzenni | Family
+- Chicken Thighs: 500g
+- Carrots: 2
+- Shiitake Mushrooms: 8
+- Bamboo Shoot: 150g
+- Potatoes: 2
+- Snow Peas: 80g
+- Soy Sauce: 4 tbs
+- Mirin: 3 tbs
+- Sugar: 1 tbs
+- Dashi: 1 tsp
+- Sushi Rice: 320g
+1. Brown the chicken pieces in a little oil.
+2. Add the carrots, mushrooms, bamboo shoots and potatoes in chunks and stir for 2 minutes.
+3. Add 400ml water, the dashi, sugar, mirin and soy sauce and simmer for 25 minutes until the liquid has almost gone.
+4. Add the snow peas at the end. Serve with rice.
+
+# Kakuni | Kakuni (poitrine de porc braisée) | 日式角煮
+@ Pork | Japan | 150 | en:Kakuni | Family
+- Pork Belly Slices: 900g
+- Ginger: 30g
+- Spring Onions: 3
+- Sake: 150ml
+- Soy Sauce: 5 tbs
+- Mirin: 4 tbs
+- Sugar: 3 tbs
+- Eggs: 4
+- Pak Choi: 4
+- Sushi Rice: 320g
+1. Cut the pork into large cubes, brown them and then simmer in water with the ginger and spring onions for 1 hour.
+2. Drain, add 400ml fresh water, the sake, sugar, mirin and soy sauce.
+3. Add the boiled peeled eggs and simmer for 1 hour, until the pork is very tender and the sauce glossy.
+4. Serve with pak choi and rice.
+
+# Katsu sando | Katsu sando (sandwich au porc pané) | 炸猪排三明治
+@ Pork | Japan | 30 | en:Katsu sando | Quick
+- Pork Chops: 4
+- Plain Flour: 50g
+- Eggs: 2
+- Panko: 120g
+- Vegetable Oil: 500ml
+- White Bread: 8 slices
+- Tonkatsu Sauce: 5 tbs
+- Cabbage: 200g
+- Mayonnaise: 3 tbs
+1. Flatten the pork chops slightly, season and coat in flour, egg and panko.
+2. Fry at 170°C for 5 minutes until golden and cooked through.
+3. Spread the bread with mayonnaise, add shredded cabbage, the cutlet brushed with tonkatsu sauce.
+4. Close, press lightly, trim the crusts and cut in half.
+
+# Doria | Doria (gratin de riz à la béchamel) | 日式焗饭
+@ Chicken | Japan | 45 | en:Doria (food) | Family
+- Rice: 300g
+- Chicken Thighs: 300g
+- Onion: 1
+- Mushrooms: 150g
+- Tomato Ketchup: 3 tbs
+- Butter: 50g
+- Plain Flour: 40g
+- Milk: 600ml
+- Cheese: 120g
+1. Cook the rice. Fry the diced chicken, onion and mushrooms in a little butter, add the rice and ketchup.
+2. Make a béchamel with the remaining butter, the flour and milk.
+3. Spread the rice in a dish, cover with the béchamel and cheese.
+4. Bake at 220°C for 15 minutes until golden.
+
+# Tsukemen | Tsukemen (nouilles à tremper) | 沾面
+@ Pork | Japan | 40 | en:Tsukemen
+- Egg Noodles: 400g
+- Pork Belly Slices: 300g
+- Chicken Stock: 600ml
+- Soy Sauce: 5 tbs
+- Mirin: 2 tbs
+- Rice Vinegar: 1 tbs
+- Chinese Sesame Sauce: 2 tbs
+- Eggs: 4
+- Spring Onions: 3
+- Nori: 2
+1. Fry the pork belly pieces until golden.
+2. Add the stock, soy sauce, mirin, vinegar and sesame sauce and simmer for 15 minutes to make a strong dipping broth.
+3. Boil the eggs for 6 minutes 30 and peel them.
+4. Cook the noodles, rinse them in cold water and serve beside bowls of hot broth with the egg, nori and spring onions.
+
+# Chicken teriyaki | Poulet teriyaki | 照烧鸡
+@ Chicken | Japan | 25 | en:Teriyaki | Quick
+- Chicken Thighs: 6
+- Soy Sauce: 4 tbs
+- Mirin: 4 tbs
+- Sake: 2 tbs
+- Sugar: 1 tbs
+- Sushi Rice: 320g
+- Broccoli: 1
+- Sesame Seed: 1 tbs
+1. Cook the rice and steam the broccoli.
+2. Fry the chicken thighs skin side down until very crisp, then turn and cook for 5 minutes.
+3. Wipe out the fat, add the soy sauce, mirin, sake and sugar and reduce, turning the chicken, until glossy.
+4. Slice and serve with rice and broccoli, sprinkled with sesame.
+
+# Kimchi jjigae | Kimchi jjigae (ragoût de kimchi) | 泡菜汤
+@ Pork | South Korea | 35 | en:Kimchi-jjigae | Soup
+- Kimchi: 400g
+- Pork Belly Slices: 250g
+- Tofu: 300g
+- Onion: 1
+- Gochugaru: 1 tbs
+- Gochujang: 1 tbs
+- Garlic: 3 cloves
+- Spring Onions: 3
+- Sushi Rice: 320g
+1. Fry the pork pieces in a pot until they colour.
+2. Add the chopped kimchi and fry for 5 minutes.
+3. Add the onion, garlic, gochugaru, gochujang and 700ml water and simmer for 15 minutes.
+4. Add the tofu in slices and simmer for 5 minutes. Top with spring onions and serve with rice.
+
+# Doenjang jjigae | Doenjang jjigae (ragoût de pâte de soja) | 大酱汤
+@ Vegetarian | South Korea | 30 | en:Doenjang-jjigae | Soup
+- Doenjang: 4 tbs
+- Tofu: 300g
+- Courgettes: 1
+- Potatoes: 1
+- Onion: 1
+- Mushrooms: 100g
+- Green Chilli: 1
+- Garlic: 2 cloves
+- Gochugaru: 1 tsp
+- Sushi Rice: 320g
+1. Dissolve the doenjang in 700ml water and bring to the boil.
+2. Add the diced potato and onion and simmer for 8 minutes.
+3. Add the courgette, mushrooms, garlic, chilli and gochugaru and cook for 5 minutes.
+4. Add the tofu and simmer for 3 minutes. Serve bubbling with rice.
+
+# Budae jjigae | Budae jjigae (« ragoût de l'armée ») | 部队锅
+@ Pork | South Korea | 30 | en:Budae-jjigae | Soup,Family
+- Sausages: 4
+- Ham: 200g
+- Kimchi: 250g
+- Tofu: 200g
+- Onion: 1
+- Gochujang: 2 tbs
+- Gochugaru: 1 tbs
+- Soy Sauce: 1 tbs
+- Garlic: 3 cloves
+- Chicken Stock: 1l
+- Egg Noodles: 200g
+- Cheese: 4 slices
+- Spring Onions: 3
+1. Mix the gochujang, gochugaru, soy sauce and garlic.
+2. Arrange the sliced sausages, ham, kimchi, tofu and onion in a wide pan.
+3. Add the stock and the paste and bring to the boil for 10 minutes.
+4. Add the noodles and cheese and cook for 3 minutes. Top with spring onions.
+
+# Galbi jjim | Galbi jjim (côtes de bœuf braisées) | 炖牛排骨
+@ Beef | South Korea | 150 | en:Galbi-jjim | Family
+- Beef Short Ribs: 1.2kg
+- Soy Sauce: 6 tbs
+- Brown Sugar: 3 tbs
+- Pear: 1
+- Garlic: 6 cloves
+- Ginger: 20g
+- Mirin: 3 tbs
+- Sesame Seed Oil: 1 tbs
+- Carrots: 2
+- Daikon Radish: 300g
+- Shiitake Mushrooms: 6
+- Sushi Rice: 320g
+1. Soak the ribs in cold water for 30 minutes, then blanch for 5 minutes and rinse.
+2. Blend the soy sauce, sugar, pear, garlic, ginger, mirin and sesame oil.
+3. Simmer the ribs in the sauce and 800ml water, covered, for 1 hour.
+4. Add the carrots, radish and mushrooms and cook for 40 minutes, until the sauce is reduced. Serve with rice.
+
+# Dakgalbi | Dakgalbi (poulet sauté épicé) | 春川辣炒鸡排
+@ Chicken | South Korea | 35 | en:Dak-galbi
+- Chicken Thighs: 700g
+- Gochujang: 3 tbs
+- Gochugaru: 1 tbs
+- Soy Sauce: 2 tbs
+- Sugar: 1 tbs
+- Garlic: 4 cloves
+- Cabbage: 300g
+- Sweet Potatoes: 1
+- Onion: 1
+- Korean Rice Cakes: 200g
+- Sesame Seed Oil: 1 tbs
+- Sushi Rice: 320g
+1. Marinate the chicken with the gochujang, gochugaru, soy sauce, sugar and garlic for 20 minutes.
+2. Fry the chicken in a large pan with the sweet potato in thin slices for 8 minutes.
+3. Add the cabbage, onion and rice cakes with a splash of water and cook for 8 minutes, stirring.
+4. Finish with sesame oil and serve with rice.
+
+# Tteokbokki | Tteokbokki (gâteaux de riz épicés) | 辣炒年糕
+@ Vegetarian | South Korea | 25 | en:Tteok-bokki | Quick
+- Korean Rice Cakes: 500g
+- Gochujang: 3 tbs
+- Gochugaru: 1 tbs
+- Sugar: 2 tbs
+- Soy Sauce: 1 tbs
+- Cabbage: 150g
+- Spring Onions: 3
+- Eggs: 4
+- Vegetable Stock: 500ml
+1. Boil the eggs for 8 minutes and peel them.
+2. Bring the stock to the boil with the gochujang, gochugaru, sugar and soy sauce.
+3. Add the rice cakes and cabbage and simmer for 10 minutes, stirring, until the sauce thickens.
+4. Add the eggs and spring onions and serve.
+
+# Kimchi pancakes | Galettes au kimchi (kimchijeon) | 泡菜煎饼
+@ Vegetarian | South Korea | 25 | en:Kimchi-buchimgae | Quick
+- Kimchi: 300g
+- Plain Flour: 150g
+- Eggs: 1
+- Spring Onions: 3
+- Gochugaru: 1 tsp
+- Vegetable Oil: 4 tbs
+- Soy Sauce: 3 tbs
+- Rice Vinegar: 1 tbs
+1. Mix the chopped kimchi with a little of its juice, the flour, egg, spring onions, gochugaru and about 120ml water.
+2. Fry thin pancakes in hot oil for 3 minutes per side until crisp.
+3. Serve with soy sauce mixed with vinegar.
+
+# Pajeon | Pajeon (galette à la ciboule) | 葱饼
+@ Vegetarian | South Korea | 20 | en:Pajeon | Quick
+- Spring Onions: 12
+- Plain Flour: 150g
+- Rice Flour: 50g
+- Eggs: 2
+- Cold Water: 250ml
+- Vegetable Oil: 4 tbs
+- Soy Sauce: 3 tbs
+- Rice Vinegar: 1 tbs
+- Gochugaru: 1 tsp
+1. Mix the flours with the cold water and a pinch of salt.
+2. Lay the spring onions, cut to the length of the pan, in hot oil and pour over the batter.
+3. Drizzle with beaten egg and cook for 4 minutes per side, pressing down.
+4. Serve with soy sauce, vinegar and gochugaru.
+
+# Seafood pajeon | Haemul pajeon (galette aux fruits de mer) | 海鲜葱饼
+@ Seafood | South Korea | 25 | en:Haemul pajeon | Quick
+- Spring Onions: 10
+- Frozen Seafood Mix: 300g
+- Plain Flour: 150g
+- Rice Flour: 50g
+- Eggs: 2
+- Cold Water: 250ml
+- Red Chilli: 1
+- Vegetable Oil: 4 tbs
+- Soy Sauce: 3 tbs
+- Rice Vinegar: 1 tbs
+1. Thaw and pat dry the seafood.
+2. Mix the flours with the cold water and salt.
+3. Lay the spring onions in hot oil, scatter with seafood and chilli and pour over the batter, then the beaten egg.
+4. Cook for 4 minutes per side until crisp. Serve with soy sauce and vinegar.
+
+# Dakbokkeumtang | Dakbokkeumtang (poulet mijoté épicé) | 辣炖鸡
+@ Chicken | South Korea | 50 | en:Dak-bokkeum-tang | Family
+- Chicken Legs: 6
+- Potatoes: 3
+- Carrots: 2
+- Onion: 1
+- Gochujang: 2 tbs
+- Gochugaru: 2 tbs
+- Soy Sauce: 4 tbs
+- Sugar: 1 tbs
+- Garlic: 5 cloves
+- Spring Onions: 3
+- Sushi Rice: 320g
+1. Blanch the chicken pieces for 3 minutes and rinse.
+2. Mix the gochujang, gochugaru, soy sauce, sugar and garlic.
+3. Put the chicken in a pot with the sauce and 600ml water and simmer for 15 minutes.
+4. Add the potatoes, carrots and onion and simmer for 20 minutes until tender. Top with spring onions and serve with rice.
+
+# Samgyeopsal | Samgyeopsal (poitrine de porc grillée en feuilles de laitue) | 韩式烤五花肉
+@ Pork | South Korea | 30 | en:Samgyeopsal | Quick
+- Pork Belly Slices: 800g
+- Lettuce: 1
+- Garlic: 8 cloves
+- Kimchi: 200g
+- Gochujang: 2 tbs
+- Doenjang: 2 tbs
+- Sesame Seed Oil: 2 tbs
+- Spring Onions: 4
+- Sushi Rice: 320g
+1. Mix the gochujang and doenjang with a little sesame oil to make ssamjang.
+2. Grill the pork slices on a hot griddle until crisp, with the garlic cloves and kimchi.
+3. Cut the pork into pieces with scissors.
+4. Wrap in lettuce leaves with rice, garlic, kimchi, spring onions and ssamjang.
+
+# Gimbap | Gimbap (rouleaux coréens) | 韩式紫菜包饭
+@ Beef | South Korea | 50 | en:Gimbap
+- Sushi Rice: 400g
+- Nori: 6
+- Minced Beef: 200g
+- Eggs: 3
+- Spinach: 200g
+- Carrots: 2
+- Cucumber: 1
+- Soy Sauce: 2 tbs
+- Sesame Seed Oil: 2 tbs
+- Sesame Seed: 1 tbs
+1. Cook the rice and season with 1 tbs sesame oil and salt.
+2. Fry the beef with the soy sauce. Make a thin omelette and cut it into strips. Blanch the spinach and stir-fry the carrot matchsticks.
+3. Spread rice on a sheet of nori, line up the fillings and roll tightly.
+4. Brush with sesame oil, sprinkle with sesame and slice.
+
+# Jajangmyeon | Jajangmyeon (nouilles sauce de soja noir) | 炸酱面（韩式）
+@ Pork | South Korea | 35 | en:Jajangmyeon
+- Egg Noodles: 400g
+- Pork Belly Slices: 250g
+- Sweet Bean Sauce: 5 tbs
+- Onion: 2
+- Courgettes: 1
+- Potatoes: 1
+- Sugar: 1 tbs
+- Cornstarch: 1 tbs
+- Cucumber: 1
+- Vegetable Oil: 3 tbs
+1. Fry the diced pork until golden, then add the diced onion, courgette and potato and cook for 5 minutes.
+2. Fry the sweet bean sauce in the oil for 2 minutes and add it to the vegetables with the sugar and 400ml water.
+3. Simmer for 10 minutes and thicken with the cornstarch.
+4. Cook the noodles and serve topped with the sauce and cucumber matchsticks.
+
+# Kalguksu | Kalguksu (soupe de nouilles coupées au couteau) | 刀切面
+@ Chicken | South Korea | 45 | en:Kalguksu | Soup
+- Chicken Breasts: 2
+- Plain Flour: 300g
+- Courgettes: 1
+- Potatoes: 1
+- Onion: 1
+- Garlic: 3 cloves
+- Soy Sauce: 2 tbs
+- Spring Onions: 3
+- Kimchi: 200g
+1. Knead the flour with a pinch of salt and 140ml water and rest for 20 minutes.
+2. Simmer the chicken in 2 litres of water with the onion and garlic for 20 minutes, then shred it.
+3. Roll the dough thinly, flour it, fold and cut into noodles.
+4. Cook the noodles in the broth with the potato and courgette for 6 minutes.
+5. Season with soy sauce, return the chicken and serve with spring onions and kimchi.
+
+# Mandu | Mandu (raviolis coréens) | 韩式饺子
+@ Pork | South Korea | 60 | en:Mandu (food) | Starter
+- Minced Pork: 300g
+- Tofu: 150g
+- Kimchi: 150g
+- Glass Noodles: 50g
+- Spring Onions: 3
+- Garlic: 2 cloves
+- Soy Sauce: 3 tbs
+- Sesame Seed Oil: 1 tbs
+- Wonton Skin: 30
+- Rice Vinegar: 2 tbs
+1. Soak and chop the noodles. Squeeze the tofu and chopped kimchi dry.
+2. Mix with the pork, spring onions, garlic, 1 tbs soy sauce and sesame oil.
+3. Fill and seal the wrappers.
+4. Steam for 10 minutes or pan-fry then steam. Serve with soy sauce and vinegar.
+
+# Gyeran jjim | Gyeran jjim (œufs vapeur coréens) | 韩式蒸蛋
+@ Vegetarian | South Korea | 15 | en:Gyeran-jjim | Quick,Side
+- Eggs: 5
+- Water: 300ml
+- Spring Onions: 2
+- Salt: 1/2 tsp
+- Sesame Seed Oil: 1 tsp
+1. Beat the eggs with the water and salt.
+2. Pour into a small pot over medium heat and stir until it starts to set.
+3. Add the spring onions, cover and cook over very low heat for 5 minutes until puffed.
+4. Drizzle with sesame oil.
+
+# Korean vegetable namul | Namul (légumes assaisonnés coréens) | 韩式凉拌菜
+@ Vegan | South Korea | 20 | en:Namul | Quick,Side
+- Spinach: 300g
+- Bean Sprouts: 300g
+- Garlic: 2 cloves
+- Soy Sauce: 2 tbs
+- Sesame Seed Oil: 2 tbs
+- Sesame Seed: 1 tbs
+- Spring Onions: 2
+1. Blanch the spinach for 30 seconds and the bean sprouts for 3 minutes, cool and squeeze dry.
+2. Season each separately with garlic, soy sauce, sesame oil, sesame seeds and spring onions.
+3. Serve as side dishes.
+
+# Bossam | Bossam (porc bouilli en feuilles de chou) | 菜包肉
+@ Pork | South Korea | 90 | en:Bossam | Family
+- Pork Belly Slices: 1kg
+- Doenjang: 2 tbs
+- Garlic: 6 cloves
+- Ginger: 20g
+- Onion: 1
+- Napa Cabbage: 1
+- Kimchi: 300g
+- Gochujang: 2 tbs
+- Sushi Rice: 320g
+1. Simmer the piece of pork belly with the doenjang, garlic, ginger and onion in water to cover for 1 hour 15.
+2. Salt the cabbage leaves for 30 minutes and rinse.
+3. Slice the pork thickly.
+4. Wrap in cabbage leaves with kimchi, garlic and gochujang. Serve with rice.
+
+# Galbitang | Galbitang (soupe claire de côtes de bœuf) | 牛排骨汤
+@ Beef | South Korea | 150 | en:Galbi-tang | Soup
+- Beef Short Ribs: 1kg
+- Daikon Radish: 400g
+- Onion: 1
+- Garlic: 6 cloves
+- Soy Sauce: 3 tbs
+- Glass Noodles: 100g
+- Eggs: 2
+- Spring Onions: 4
+- Sushi Rice: 320g
+1. Soak the ribs for 30 minutes, blanch them and rinse.
+2. Simmer in 3 litres of water with the onion and garlic for 1 hour 30.
+3. Add the radish in pieces and simmer for 30 minutes. Season with soy sauce and salt.
+4. Add the soaked noodles. Serve with strips of omelette, spring onions and rice.
+
+# Yukgaejang | Yukgaejang (soupe de bœuf épicée) | 辣牛肉汤
+@ Beef | South Korea | 120 | en:Yukgaejang | Soup
+- Beef Brisket: 600g
+- Bean Sprouts: 300g
+- Spring Onions: 10
+- Shiitake Mushrooms: 6
+- Gochugaru: 3 tbs
+- Soy Sauce: 3 tbs
+- Garlic: 5 cloves
+- Sesame Seed Oil: 2 tbs
+- Eggs: 2
+- Sushi Rice: 320g
+1. Simmer the beef in 2.5 litres of water for 1 hour 30, then shred it.
+2. Mix the beef with the gochugaru, soy sauce, garlic and sesame oil.
+3. Add to the broth with the bean sprouts, mushrooms and long pieces of spring onion and simmer for 20 minutes.
+4. Drizzle in the beaten eggs and serve with rice.
+
+# Jjimdak | Jjimdak (poulet braisé aux nouilles) | 安东炖鸡
+@ Chicken | South Korea | 50 | en:Jjimdak | Family
+- Chicken Legs: 6
+- Soy Sauce: 6 tbs
+- Brown Sugar: 3 tbs
+- Garlic: 6 cloves
+- Dried Red Chillies: 4
+- Potatoes: 2
+- Carrots: 2
+- Onion: 1
+- Glass Noodles: 150g
+- Spring Onions: 3
+- Sesame Seed: 1 tbs
+1. Soak the noodles in warm water.
+2. Simmer the chicken with the soy sauce, sugar, garlic, chillies and 600ml water for 15 minutes.
+3. Add the potatoes, carrots and onion and simmer for 20 minutes.
+4. Add the noodles and cook for 5 minutes until they absorb the sauce. Top with spring onions and sesame.
+
+# Gyeran mari | Gyeran mari (omelette roulée coréenne) | 韩式鸡蛋卷
+@ Vegetarian | South Korea | 15 | en:Gyeran-mari | Quick,Side
+- Eggs: 6
+- Carrots: 1
+- Spring Onions: 2
+- Salt: 1/2 tsp
+- Vegetable Oil: 2 tbs
+1. Beat the eggs with the salt, finely diced carrot and spring onions.
+2. Pour a thin layer into an oiled pan, roll it up when almost set.
+3. Add more egg and keep rolling until finished.
+4. Rest and slice.
+
+# Courgette jeon | Jeon de courgettes (courgettes à l'œuf) | 西葫芦煎
+@ Vegetarian | South Korea | 20 | en:Jeon (food) | Quick,Side
+- Courgettes: 2
+- Plain Flour: 50g
+- Eggs: 3
+- Vegetable Oil: 3 tbs
+- Soy Sauce: 3 tbs
+- Rice Vinegar: 1 tbs
+1. Slice the courgettes into rounds and season with salt.
+2. Coat each slice in flour, then beaten egg.
+3. Pan-fry for 2 minutes per side until golden.
+4. Serve with soy sauce mixed with vinegar.
+
+# Dakjuk | Dakjuk (porridge de riz au poulet) | 韩式鸡肉粥
+@ Chicken | South Korea | 60 | en:Dakjuk | Soup
+- Chicken Breasts: 2
+- Sushi Rice: 200g
+- Garlic: 5 cloves
+- Ginger: 20g
+- Carrots: 1
+- Spring Onions: 3
+- Sesame Seed Oil: 1 tbs
+- Soy Sauce: 2 tbs
+1. Simmer the chicken with the garlic and ginger in 2 litres of water for 20 minutes, then shred it.
+2. Soak the rice for 30 minutes, fry it in the sesame oil, then add the broth.
+3. Simmer for 30 minutes, stirring often, until creamy.
+4. Add the chicken and diced carrot, season with soy sauce and top with spring onions.

@@ -1,0 +1,657 @@
+// Italie : pâtes, plats mijotés, pizzas, cuisine de la mer. Format : voir tools/build-recipes.js
+
+# Penne alla vodka | Penne alla vodka | 伏特加番茄奶油通心粉
+@ Pasta | Italy | 25 | en:Penne alla vodka | Quick
+- Penne Rigate: 400g
+- Passata: 400ml
+- Double Cream: 150ml
+- Vodka: 50ml
+- Onion: 1
+- Garlic: 2 cloves
+- Chilli Flakes: 1/2 tsp
+- Butter: 30g
+- Parmesan: 60g
+1. Cook the pasta.
+2. Soften the onion and garlic in the butter, add the chilli and vodka and reduce for 1 minute.
+3. Add the passata and simmer for 10 minutes, then stir in the cream.
+4. Toss the pasta in the sauce with the parmesan and a little cooking water.
+
+# Pasta alla gricia | Pasta alla gricia (pancetta et pecorino) | 罗马培根奶酪面
+@ Pasta | Italy | 20 | en:Pasta alla gricia | Quick
+- Rigatoni: 400g
+- Pancetta: 200g
+- Pecorino: 100g
+- Black Pepper: 2 tsp
+1. Cook the pasta.
+2. Fry the pancetta strips slowly until golden and crisp.
+3. Add the drained pasta and a ladle of cooking water to the pan.
+4. Off the heat, toss with the pecorino and pepper until creamy.
+
+# Pasta al pomodoro | Pâtes à la tomate et au basilic | 番茄罗勒意面
+@ Vegetarian | Italy | 25 | en:Pasta al pomodoro | Quick
+- Spaghetti: 400g
+- Plum Tomatoes: 800g
+- Garlic: 3 cloves
+- Basil: 1 bunch
+- Olive Oil: 5 tbs
+- Parmesan: 50g
+1. Gently fry the garlic in the oil.
+2. Add the tomatoes, crushed, with salt and simmer for 15 minutes.
+3. Cook the pasta and toss it in the sauce with torn basil.
+4. Serve with parmesan.
+
+# Pappardelle with beef ragu | Pappardelle au ragoût de bœuf | 牛肉宽面
+@ Beef | Italy | 180 | en:Pappardelle | Family
+- Tagliatelle: 400g
+- Beef Shin: 700g
+- Onion: 1
+- Carrots: 1
+- Celery: 1
+- Red Wine: 250ml
+- Chopped Tomatoes: 400g
+- Rosemary: 1 sprig
+- Olive Oil: 3 tbs
+- Parmesan: 50g
+1. Brown the beef in large pieces in the oil.
+2. Add the diced onion, carrot and celery and soften.
+3. Add the wine, tomatoes, rosemary and 200ml water and simmer covered for 2 hours 30.
+4. Shred the meat into the sauce.
+5. Cook the pasta and toss with the ragù. Serve with parmesan.
+
+# Arancini | Arancini (boules de risotto frites) | 西西里炸饭团
+@ Vegetarian | Italy | 70 | en:Arancini | Starter
+- Arborio Rice: 300g
+- Vegetable Stock: 1l
+- Saffron: 1 pinch
+- Parmesan: 60g
+- Mozzarella: 125g
+- Frozen Peas: 80g
+- Eggs: 2
+- Plain Flour: 60g
+- Breadcrumbs: 150g
+- Vegetable Oil: 800ml
+- Passata: 300ml
+1. Cook the rice in the stock with the saffron like a risotto, add the parmesan and let it cool completely.
+2. Shape balls around a cube of mozzarella and a few peas.
+3. Coat in flour, beaten egg and breadcrumbs.
+4. Fry at 175°C for 5 minutes until golden. Serve with warm passata.
+
+# Suppli | Supplì (croquettes de riz romaines) | 罗马炸饭团
+@ Beef | Italy | 70 | en:Supplì | Starter
+- Arborio Rice: 300g
+- Minced Beef: 200g
+- Passata: 400ml
+- Onion: 1
+- Mozzarella: 125g
+- Eggs: 2
+- Breadcrumbs: 150g
+- Parmesan: 40g
+- Vegetable Oil: 800ml
+1. Fry the onion and beef, add the passata and simmer for 15 minutes.
+2. Add the rice and cook, adding water as needed, for 18 minutes. Stir in the parmesan and let cool.
+3. Shape into oblong croquettes around a stick of mozzarella.
+4. Coat in egg and breadcrumbs and fry until golden.
+
+# Vitello tonnato | Vitello tonnato (veau sauce au thon) | 金枪鱼酱小牛肉
+@ Beef | Italy | 90 | en:Vitello tonnato
+- Veal: 800g
+- Onion: 1
+- Carrots: 1
+- Celery: 1
+- Dry White Wine: 200ml
+- Tuna: 160g
+- Mayonnaise: 150g
+- Anchovy Fillet: 3
+- Capers: 2 tbs
+- Lemon: 1
+- Rocket: 100g
+1. Simmer the veal in water with the vegetables and wine for 1 hour, then let it cool in the broth.
+2. Blend the tuna, mayonnaise, anchovies, half the capers, lemon juice and a little broth until smooth.
+3. Slice the veal very thinly and cover with the sauce.
+4. Garnish with capers and serve with rocket.
+
+# Pork scaloppine with marsala | Escalopes de porc au marsala | 马沙拉酒煎猪排
+@ Pork | Italy | 25 | en:Scaloppine | Quick
+- Pork Tenderloin: 600g
+- Plain Flour: 50g
+- Butter: 40g
+- Mushrooms: 250g
+- Sherry: 120ml
+- Chicken Stock: 150ml
+- Parsley: 1 bunch
+- Potatoes: 4
+1. Boil the potatoes. Slice the pork into medallions and flatten them.
+2. Dust with flour and fry in butter for 2 minutes per side. Set aside.
+3. Fry the mushrooms, add the sherry (or marsala) and stock and reduce.
+4. Return the pork for 1 minute and add parsley. Serve with the potatoes.
+
+# Beef spezzatino | Spezzatino (ragoût de bœuf aux pommes de terre) | 意式炖牛肉
+@ Beef | Italy | 150 | en:Spezzatino | Family
+- Beef: 900g
+- Potatoes: 4
+- Onion: 1
+- Carrots: 2
+- Celery: 1
+- Red Wine: 200ml
+- Tomato Puree: 2 tbs
+- Rosemary: 1 sprig
+- Beef Stock: 500ml
+- Olive Oil: 3 tbs
+1. Brown the beef cubes in the oil.
+2. Add the onion, carrots and celery and soften.
+3. Add the wine, tomato puree, rosemary and stock and simmer covered for 1 hour 30.
+4. Add the potatoes and cook for 40 minutes more.
+
+# Beef involtini | Involtini de bœuf à la tomate | 意式牛肉卷
+@ Beef | Italy | 60 | en:Involtini | Family
+- Beef: 600g
+- Parma Ham: 8 slices
+- Parmesan: 50g
+- Parsley: 1 bunch
+- Garlic: 2 cloves
+- Passata: 500ml
+- Onion: 1
+- Olive Oil: 3 tbs
+- Potatoes: 6
+1. Flatten 8 thin slices of beef.
+2. Top each with ham, parmesan, parsley and garlic, roll up and secure.
+3. Brown the rolls in the oil, add the onion, then the passata.
+4. Simmer covered for 40 minutes. Serve with mashed potatoes made from the potatoes.
+
+# Steak tagliata with rocket | Tagliata de bœuf, roquette et parmesan | 意式切片牛排
+@ Beef | Italy | 20 | en:Bistecca alla fiorentina | Quick
+- Sirloin Steak: 2
+- Rocket: 150g
+- Parmesan: 50g
+- Cherry Tomatoes: 200g
+- Balsamic Vinegar: 2 tbs
+- Olive Oil: 4 tbs
+- Rosemary: 1 sprig
+- New Potatoes: 600g
+1. Roast the potatoes with oil and rosemary.
+2. Sear the steaks in a very hot pan for 3 minutes per side and rest for 5 minutes.
+3. Slice thickly and lay on the rocket and halved tomatoes.
+4. Top with parmesan shavings, oil and balsamic vinegar.
+
+# Porchetta | Porchetta (rôti de porc aux herbes) | 意式烤猪肉卷
+@ Pork | Italy | 180 | en:Porchetta | Family
+- Pork Belly Slices: 2kg
+- Garlic: 6 cloves
+- Rosemary: 3 sprigs
+- Fennel Seeds: 2 tbs
+- Sage: 10 leaves
+- Lemon Zest: 1 tbs
+- Chilli Flakes: 1 tsp
+- Salt: 2 tbs
+- Potatoes: 6
+1. Use a single piece of pork belly. Lay it skin side down and score the meat.
+2. Rub with the chopped garlic, herbs, crushed fennel, lemon zest, chilli and salt.
+3. Roll tightly and tie, salting the skin.
+4. Roast at 160°C for 2 hours 30 with the potatoes, then at 230°C for 20 minutes to crisp the skin.
+
+# Peperonata | Peperonata (poivrons fondants) | 意式炖甜椒
+@ Vegan | Italy | 45 | en:Peperonata | Side
+- Red Pepper: 3
+- Yellow Pepper: 2
+- Onion: 2
+- Tomatoes: 3
+- Garlic: 2 cloves
+- Olive Oil: 5 tbs
+- Basil: 1 handful
+- Red Wine Vinegar: 1 tbs
+1. Soften the sliced onions in the oil.
+2. Add the peppers in strips and the garlic and cook for 15 minutes.
+3. Add the chopped tomatoes and simmer for 20 minutes until soft.
+4. Finish with vinegar and basil.
+
+# Caponata | Caponata (aubergines aigres-douces) | 西西里茄子烩
+@ Vegan | Italy | 50 | en:Caponata | Side
+- Aubergine: 3
+- Celery: 3
+- Onion: 1
+- Plum Tomatoes: 400g
+- Green Olives: 80g
+- Capers: 2 tbs
+- Red Wine Vinegar: 4 tbs
+- Sugar: 1 tbs
+- Pine Nuts: 30g
+- Olive Oil: 8 tbs
+- Crusty Bread: 1
+1. Fry the cubed aubergines in oil until golden.
+2. Soften the onion and celery, add the tomatoes and cook for 10 minutes.
+3. Add the olives, capers, vinegar and sugar, then the aubergines.
+4. Simmer for 10 minutes, add pine nuts and serve at room temperature with bread.
+
+# Pizza marinara | Pizza marinara (tomate, ail, origan) | 番茄大蒜披萨
+@ Vegan | Italy | 90 | en:Pizza marinara
+- Strong White Bread Flour: 500g
+- Yeast: 7g
+- Warm Water: 320ml
+- Passata: 300ml
+- Garlic: 4 cloves
+- Dried Oregano: 2 tsp
+- Olive Oil: 5 tbs
+- Salt: 2 tsp
+1. Knead the flour, yeast, salt, 1 tbs oil and water for 10 minutes and leave to rise for 1 hour.
+2. Divide into 4 and stretch thinly.
+3. Spread with passata, sliced garlic, oregano and oil.
+4. Bake on a very hot tray at the highest oven setting for 8 minutes.
+
+# Pizza quattro formaggi | Pizza quatre fromages | 四种奶酪披萨
+@ Vegetarian | Italy | 90 | en:Pizza quattro formaggi
+- Strong White Bread Flour: 500g
+- Yeast: 7g
+- Warm Water: 320ml
+- Mozzarella: 250g
+- Gorgonzola: 100g
+- Parmesan: 50g
+- Goats Cheese: 100g
+- Olive Oil: 3 tbs
+1. Make the dough with the flour, yeast, salt, 1 tbs oil and water and leave to rise for 1 hour.
+2. Stretch into 4 thin bases.
+3. Top with the four cheeses.
+4. Bake at the highest oven setting for 8 minutes.
+
+# Pizza capricciosa | Pizza capricciosa | 什锦披萨
+@ Pork | Italy | 90 | en:Pizza capricciosa
+- Strong White Bread Flour: 500g
+- Yeast: 7g
+- Warm Water: 320ml
+- Passata: 250ml
+- Mozzarella: 250g
+- Ham: 150g
+- Mushrooms: 150g
+- Black Olives: 60g
+- Olive Oil: 3 tbs
+1. Make the dough and leave to rise for 1 hour.
+2. Stretch into 4 bases and spread with passata.
+3. Top with mozzarella, ham, sliced mushrooms and olives.
+4. Bake at the highest oven setting for 9 minutes.
+
+# Focaccia | Focaccia au romarin | 迷迭香佛卡夏
+@ Vegan | Italy | 150 | en:Focaccia | Side
+- Strong White Bread Flour: 500g
+- Yeast: 7g
+- Warm Water: 400ml
+- Olive Oil: 8 tbs
+- Rosemary: 2 sprigs
+- Sea Salt: 2 tsp
+- Cherry Tomatoes: 150g
+1. Mix the flour, yeast, salt and water into a wet dough and leave to rise for 1 hour 30, folding twice.
+2. Spread in an oiled tin and leave to rise for 30 minutes.
+3. Dimple with your fingers, add the tomatoes and rosemary, drizzle with oil and sprinkle with sea salt.
+4. Bake at 220°C for 25 minutes.
+
+# Piadina | Piadina (galette garnie jambon, roquette) | 意式薄饼卷
+@ Pork | Italy | 30 | en:Piadina | Quick
+- Plain Flour: 400g
+- Olive Oil: 4 tbs
+- Milk: 200ml
+- Baking Powder: 1 tsp
+- Parma Ham: 8 slices
+- Mozzarella: 250g
+- Rocket: 100g
+1. Knead the flour, oil, milk, baking powder and salt into a soft dough. Rest for 15 minutes.
+2. Roll into 4 thin discs and cook in a dry pan for 2 minutes per side.
+3. Fill with ham, mozzarella and rocket and fold in half.
+
+# Panzerotti | Panzerotti (chaussons frits tomate-mozzarella) | 意式炸饺
+@ Vegetarian | Italy | 90 | en:Panzerotti | Starter
+- Plain Flour: 500g
+- Yeast: 7g
+- Warm Water: 300ml
+- Mozzarella: 300g
+- Passata: 200ml
+- Dried Oregano: 1 tsp
+- Vegetable Oil: 800ml
+1. Knead the dough and leave to rise for 1 hour.
+2. Roll into small discs.
+3. Fill with diced mozzarella and a spoon of passata seasoned with oregano, fold and seal.
+4. Fry until golden and puffed.
+
+# Pasta e ceci | Pasta e ceci (pâtes aux pois chiches) | 鹰嘴豆意面汤
+@ Vegan | Italy | 35 | en:Pasta e ceci | Soup
+- Chickpeas: 800g
+- Macaroni: 200g
+- Garlic: 3 cloves
+- Rosemary: 1 sprig
+- Tomato Puree: 2 tbs
+- Vegetable Stock: 1l
+- Olive Oil: 4 tbs
+- Chilli Flakes: 1/2 tsp
+1. Fry the garlic, rosemary and chilli in the oil, add the tomato puree.
+2. Add the chickpeas and stock, simmer for 10 minutes and blend a third.
+3. Add the pasta and cook until tender, adding water if needed.
+4. Serve thick, with a drizzle of oil.
+
+# Pappa al pomodoro | Pappa al pomodoro (soupe de pain à la tomate) | 番茄面包汤
+@ Vegan | Italy | 35 | en:Pappa al pomodoro | Soup
+- Stale Bread: 300g
+- Plum Tomatoes: 800g
+- Garlic: 3 cloves
+- Basil: 1 bunch
+- Vegetable Stock: 700ml
+- Olive Oil: 6 tbs
+1. Fry the garlic in oil, add the tomatoes and simmer for 15 minutes.
+2. Add the stock and the bread torn into pieces.
+3. Cook for 10 minutes, stirring, until thick.
+4. Stir in basil and plenty of oil.
+
+# Acquacotta | Acquacotta (soupe toscane aux légumes et œuf) | 托斯卡纳蔬菜汤
+@ Vegetarian | Italy | 50 | en:Acquacotta | Soup
+- Onion: 2
+- Celery: 2
+- Carrots: 2
+- Plum Tomatoes: 400g
+- Kale: 200g
+- Mushrooms: 200g
+- Vegetable Stock: 1.2l
+- Eggs: 4
+- Stale Bread: 4 slices
+- Parmesan: 50g
+1. Soften the onion, celery and carrot in oil.
+2. Add the mushrooms, tomatoes, kale and stock and simmer for 30 minutes.
+3. Poach the eggs in the soup.
+4. Serve over toasted bread with parmesan.
+
+# Stracciatella soup | Stracciatella (bouillon à l'œuf et au parmesan) | 意式蛋花汤
+@ Chicken | Italy | 15 | en:Stracciatella (soup) | Quick,Soup
+- Chicken Stock: 1.5l
+- Eggs: 4
+- Parmesan: 60g
+- Semolina: 2 tbs
+- Nutmeg: 1 pinch
+- Spinach: 150g
+- Crusty Bread: 1
+1. Beat the eggs with the parmesan, semolina and nutmeg.
+2. Bring the stock to the boil and add the spinach.
+3. Pour in the egg mixture while stirring with a fork so it forms threads.
+4. Serve with bread.
+
+# Fish in acqua pazza | Poisson à l'acqua pazza | 疯狂水煮鱼
+@ Seafood | Italy | 25 | en:Acqua pazza (food) | Quick
+- Sea Bass Fillets: 4
+- Cherry Tomatoes: 300g
+- Garlic: 3 cloves
+- Dry White Wine: 150ml
+- Parsley: 1 bunch
+- Olive Oil: 4 tbs
+- Chilli Flakes: 1/2 tsp
+- Crusty Bread: 1
+1. Fry the garlic and chilli in the oil, add the halved tomatoes.
+2. Add the wine and 200ml water and simmer for 5 minutes.
+3. Lay the fish in the broth, cover and poach for 6 minutes.
+4. Add parsley and serve with bread.
+
+# Cacciucco | Cacciucco (soupe de poissons de Livourne) | 意式海鲜炖汤
+@ Seafood | Italy | 60 | en:Cacciucco | Soup,Family
+- White Fish Fillets: 500g
+- Squid: 300g
+- Mussels: 500g
+- Prawns: 250g
+- Plum Tomatoes: 800g
+- Garlic: 4 cloves
+- Red Wine: 150ml
+- Chilli Flakes: 1 tsp
+- Sage: 4 leaves
+- Crusty Bread: 1
+1. Fry the garlic, sage and chilli in oil, add the squid and cook for 5 minutes.
+2. Add the wine, tomatoes and 300ml water and simmer for 20 minutes.
+3. Add the fish, then the mussels and prawns, and cook for 6 minutes.
+4. Serve over toasted bread rubbed with garlic.
+
+# Fritto misto | Fritto misto de la mer | 意式炸海鲜
+@ Seafood | Italy | 30 | en:Fritto misto | Quick
+- Squid: 400g
+- Prawns: 300g
+- White Fish Fillets: 300g
+- Plain Flour: 150g
+- Semolina: 50g
+- Vegetable Oil: 1l
+- Lemon: 2
+- Rocket: 100g
+1. Cut the squid into rings and the fish into strips.
+2. Toss the seafood in the flour and semolina.
+3. Fry in batches at 180°C for 2 minutes until golden.
+4. Salt and serve with lemon and rocket.
+
+# Pasta con le sarde | Pasta con le sarde (sardines, fenouil, raisins) | 沙丁鱼茴香意面
+@ Seafood | Italy | 35 | en:Pasta con le sarde
+- Spaghetti: 400g
+- Sardines: 400g
+- Fennel: 1
+- Onion: 1
+- Raisins: 40g
+- Pine Nuts: 30g
+- Saffron: 1 pinch
+- Breadcrumbs: 50g
+- Olive Oil: 5 tbs
+1. Cook the pasta with the chopped fennel fronds and stalks.
+2. Soften the onion and chopped fennel bulb in oil, add the raisins, pine nuts and saffron.
+3. Add the sardine fillets and break them up.
+4. Toss with the pasta and top with toasted breadcrumbs.
+
+# Spaghetti alla Nerano | Spaghetti alla Nerano (courgettes et provolone) | 西葫芦奶酪意面
+@ Vegetarian | Italy | 30 | en:Spaghetti alla Nerano | Quick
+- Spaghetti: 400g
+- Courgettes: 4
+- Parmesan: 80g
+- Basil: 1 bunch
+- Butter: 30g
+- Vegetable Oil: 200ml
+1. Slice the courgettes thinly and fry until golden. Drain.
+2. Blend a third of them with a ladle of pasta water.
+3. Cook the pasta and toss with the cream, the fried courgettes, butter and parmesan.
+4. Add basil and serve.
+
+# Spinach and ricotta ravioli | Raviolis ricotta-épinards, beurre et sauge | 菠菜乳清干酪饺
+@ Vegetarian | Italy | 90 | en:Ravioli
+- Plain Flour: 300g
+- Eggs: 4
+- Ricotta: 250g
+- Spinach: 300g
+- Parmesan: 60g
+- Nutmeg: 1 pinch
+- Butter: 80g
+- Sage: 10 leaves
+1. Knead the flour with 3 eggs into a firm dough and rest for 30 minutes.
+2. Wilt and squeeze the spinach, chop and mix with the ricotta, the remaining egg, half the parmesan and nutmeg.
+3. Roll the dough thinly, place spoonfuls of filling, cover with another sheet and cut out the ravioli.
+4. Cook for 4 minutes and toss in butter browned with sage. Serve with parmesan.
+
+# Gnocchi alla romana | Gnocchi à la romaine (semoule gratinée) | 罗马式粗粒小麦团子
+@ Vegetarian | Italy | 60 | en:Gnocchi alla romana | Family
+- Semolina: 250g
+- Milk: 1l
+- Butter: 80g
+- Parmesan: 100g
+- Egg Yolks: 2
+- Nutmeg: 1 pinch
+- Rocket: 100g
+1. Bring the milk to the boil with salt and nutmeg and pour in the semolina, stirring for 8 minutes.
+2. Off the heat, add half the butter and parmesan and the yolks.
+3. Spread 1cm thick and let it set, then cut out rounds.
+4. Arrange overlapping in a dish, top with butter and parmesan and bake at 220°C for 20 minutes. Serve with rocket.
+
+# Canederli in broth | Canederli (boulettes de pain au speck en bouillon) | 南蒂罗尔面包丸汤
+@ Pork | Italy | 50 | en:Canederli | Soup
+- Stale Bread: 300g
+- Milk: 250ml
+- Eggs: 2
+- Smoked Ham: 120g
+- Onion: 1
+- Chives: 1 bunch
+- Plain Flour: 40g
+- Beef Stock: 1.5l
+1. Soak the diced bread in the milk and beaten eggs.
+2. Add the diced ham, fried onion, chives and flour and mix well.
+3. Shape 8 balls with wet hands.
+4. Simmer in the stock for 15 minutes.
+
+# Cotoletta alla milanese | Côtelette milanaise | 米兰炸小牛排
+@ Beef | Italy | 30 | en:Cotoletta alla milanese | Quick
+- Veal: 4
+- Eggs: 2
+- Breadcrumbs: 150g
+- Butter: 100g
+- Lemon: 1
+- Rocket: 100g
+- Cherry Tomatoes: 200g
+1. Flatten the veal cutlets.
+2. Dip in beaten egg, then breadcrumbs, pressing well.
+3. Fry in foaming butter for 3 minutes per side.
+4. Serve with lemon, rocket and tomatoes.
+
+# Insalata caprese | Salade caprese | 卡布里沙拉
+@ Vegetarian | Italy | 10 | en:Insalata caprese | Quick,Side
+- Mozzarella: 250g
+- Beef Tomatoes: 3
+- Basil: 1 bunch
+- Olive Oil: 4 tbs
+- Sea Salt: 1 tsp
+- Crusty Bread: 1
+1. Slice the tomatoes and mozzarella.
+2. Arrange alternately with basil leaves.
+3. Drizzle with oil, season and serve with bread.
+
+# Tomato bruschetta | Bruschetta à la tomate | 番茄烤面包片
+@ Vegan | Italy | 15 | en:Bruschetta | Quick,Starter
+- Ciabatta: 1
+- Tomatoes: 4
+- Garlic: 1 clove
+- Basil: 1 handful
+- Olive Oil: 4 tbs
+- Balsamic Vinegar: 1 tbs
+1. Dice the tomatoes and mix with basil, oil, salt and vinegar.
+2. Toast thick slices of bread and rub with garlic.
+3. Spoon the tomatoes on top.
+
+# Polenta with sausage ragu | Polenta et ragoût de saucisses | 玉米糊配香肠酱
+@ Pork | Italy | 50 | en:Polenta | Family
+- Cornmeal: 250g
+- Italian Fennel Sausages: 6
+- Passata: 500ml
+- Onion: 1
+- Garlic: 2 cloves
+- Red Wine: 100ml
+- Parmesan: 60g
+- Butter: 40g
+1. Brown the sausages cut into pieces, add the onion and garlic.
+2. Add the wine and passata and simmer for 25 minutes.
+3. Pour the cornmeal into 1.2 litres of boiling salted water and stir for 30 minutes (or follow the packet).
+4. Stir the butter and parmesan into the polenta and top with the ragù.
+
+# Fregola with clams | Fregola aux palourdes | 撒丁岛蛤蜊珍珠面
+@ Seafood | Italy | 35 | en:Fregola
+- Couscous: 300g
+- Clams: 1kg
+- Cherry Tomatoes: 250g
+- Garlic: 3 cloves
+- Dry White Wine: 150ml
+- Parsley: 1 bunch
+- Chilli Flakes: 1/2 tsp
+- Fish Stock: 700ml
+1. Use fregola if you can find it, otherwise giant couscous. Open the clams with the wine in a covered pan and strain the juice.
+2. Fry the garlic and chilli, add the tomatoes, then the fregola and toast for 1 minute.
+3. Add the clam juice and stock gradually, cooking like a risotto for 15 minutes.
+4. Return the clams with parsley.
+
+# Malloreddus with sausage | Malloreddus à la saucisse (Sardaigne) | 撒丁岛香肠小贝壳面
+@ Pork | Italy | 40 | en:Malloreddus
+- Bowtie Pasta: 400g
+- Italian Fennel Sausages: 4
+- Onion: 1
+- Passata: 500ml
+- Saffron: 1 pinch
+- Pecorino: 60g
+- Basil: 1 handful
+1. Use malloreddus or any small pasta. Fry the crumbled sausage meat with the onion.
+2. Add the passata and saffron and simmer for 20 minutes.
+3. Cook the pasta and toss with the sauce.
+4. Serve with pecorino and basil.
+
+# Passatelli in broth | Passatelli en bouillon | 意式面包屑面条汤
+@ Vegetarian | Italy | 35 | en:Passatelli | Soup
+- Breadcrumbs: 150g
+- Parmesan: 120g
+- Eggs: 4
+- Lemon Zest: 1 tsp
+- Nutmeg: 1 pinch
+- Chicken Stock: 1.5l
+1. Mix the breadcrumbs, parmesan, eggs, lemon zest and nutmeg into a firm dough. Rest for 30 minutes.
+2. Bring the stock to the boil.
+3. Press the dough through a potato ricer with large holes directly into the stock.
+4. Cook for 2 minutes until they float.
+
+# Baccala alla vicentina | Morue à la vicentina | 维琴察炖鳕鱼
+@ Seafood | Italy | 150 | en:Baccalà alla vicentina | Family
+- Salt Cod: 800g
+- Onion: 3
+- Anchovy Fillet: 4
+- Milk: 500ml
+- Parmesan: 50g
+- Plain Flour: 50g
+- Olive Oil: 150ml
+- Parsley: 1 bunch
+- Cornmeal: 250g
+1. Soak the cod for 48 hours, changing the water often.
+2. Soften the sliced onions in oil with the anchovies.
+3. Cut the cod into pieces, dust with flour and parmesan and lay on the onions.
+4. Cover with milk and the remaining oil and simmer very gently for 2 hours.
+5. Serve with soft polenta.
+
+# Beans all'uccelletto | Haricots à l'uccelletto (tomate et sauge) et saucisses | 番茄鼠尾草白豆配香肠
+@ Pork | Italy | 30 | en:Fagioli all'uccelletto | Quick
+- Cannellini Beans: 800g
+- Italian Fennel Sausages: 6
+- Plum Tomatoes: 400g
+- Garlic: 3 cloves
+- Sage: 8 leaves
+- Olive Oil: 4 tbs
+- Crusty Bread: 1
+1. Brown the sausages and set aside.
+2. Fry the garlic and sage in the oil, add the tomatoes and simmer for 10 minutes.
+3. Add the beans and sausages and simmer for 10 minutes.
+4. Serve with bread.
+
+# Saltimbocca alla romana | Saltimbocca de veau à la romaine | 罗马式小牛肉卷
+@ Beef | Italy | 25 | en:Saltimbocca | Quick
+- Veal: 8 escalopes
+- Parma Ham: 8 slices
+- Sage: 8 leaves
+- Plain Flour: 40g
+- Butter: 50g
+- Dry White Wine: 120ml
+- Potatoes: 4
+1. Boil or roast the potatoes.
+2. Top each escalope with a slice of ham and a sage leaf, secure with a toothpick and dust with flour.
+3. Fry ham side down first in butter, then turn for 1 minute.
+4. Deglaze with the wine and pour the sauce over the veal.
+
+# Pici all'aglione | Pici à l'aglione (sauce tomate à l'ail) | 托斯卡纳大蒜番茄粗面
+@ Vegan | Italy | 40 | en:Pici
+- Spaghetti: 400g
+- Garlic: 8 cloves
+- Plum Tomatoes: 800g
+- Chilli Flakes: 1/2 tsp
+- Olive Oil: 6 tbs
+- Pecorino: 50g
+1. Use pici or thick spaghetti. Slice the garlic and cook it very gently in the oil for 10 minutes without colouring.
+2. Add the chilli and tomatoes and simmer for 25 minutes, mashing.
+3. Cook the pasta and toss in the sauce.
+4. Serve with pecorino.
+
+# Sausage and radicchio risotto | Risotto à la saucisse | 香肠烩饭
+@ Pork | Italy | 40 | en:Risotto
+- Arborio Rice: 320g
+- Italian Fennel Sausages: 4
+- Onion: 1
+- Red Wine: 120ml
+- Chicken Stock: 1.2l
+- Butter: 40g
+- Parmesan: 60g
+- Red Cabbage: 150g
+1. Fry the crumbled sausage and the onion.
+2. Add the rice, toast for 1 minute, then the wine.
+3. Add the hot stock a ladle at a time, stirring, for 18 minutes, adding the shredded cabbage halfway.
+4. Finish with butter and parmesan.

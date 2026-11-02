@@ -1,0 +1,223 @@
+// Méditerranée : Balkans, Espagne, Portugal, Grèce, Turquie, Maghreb. Format : voir tools/build-recipes.js
+
+# Bosnian pot | Bosanski lonac (ragoût bosnien) | 波斯尼亚炖锅
+@ Beef | Bosnia and Herzegovina | 150 | en:Bosanski lonac | Stew,Family
+- Beef: 500g
+- Lamb Shoulder: 400g
+- Potatoes: 4
+- Carrots: 2
+- White Cabbage: 0.5
+- Onions: 2
+- Tomatoes: 3
+- Green Beans: 200g
+- Garlic: 6 cloves
+- Peppercorns: 1 tsp
+- Bay Leaves: 2
+- Parsley: 1 handful
+1. Layer the meat cubes with all the vegetables in a deep pot, seasoning each layer with salt, garlic and peppercorns.
+2. Add the bay leaves and water to come halfway up.
+3. Cover tightly and simmer very gently (or bake at 160°C) for 2 h 30 without stirring.
+4. Sprinkle with parsley.
+
+# Serbian pljeskavica | Pljeskavica (burger serbe) | 塞尔维亚肉饼
+@ Beef | Serbia | 35 | en:Pljeskavica | Burger,Grill,Quick
+- Minced Beef: 500g
+- Minced Pork: 300g
+- Onions: 2
+- Garlic: 2 cloves
+- Paprika: 1 tsp
+- Pita Bread: 4
+- Feta: 150g
+- Tomatoes: 2
+- Cucumber: 1
+- Red Pepper: 1
+1. Mix the meats with one grated onion, garlic, paprika and salt. Shape 4 large thin patties.
+2. Grill for 4 minutes per side.
+3. Dice the tomatoes, cucumber, pepper and other onion with crumbled feta for a šopska-style salad.
+4. Serve the patties in warm pita with the salad.
+
+# Serbian stuffed peppers | Poivrons farcis serbes | 塞尔维亚酿甜椒
+@ Beef | Serbia | 80 | en:Stuffed peppers | Bake,Family
+- Yellow Pepper: 8
+- Minced Beef: 500g
+- Rice: 120g
+- Onions: 1
+- Paprika: 2 tsp
+- Eggs: 1
+- Passata: 500ml
+- Plain Flour: 1 tbs
+- Sour Cream: 150ml
+1. Fry the onion, add the beef and paprika. Off the heat mix in the raw rice, egg and salt.
+2. Cut the tops off the peppers, remove the seeds and fill three-quarters full.
+3. Stand them in a pot, add the passata thickened with flour and water to half their height.
+4. Simmer covered for 1 hour. Serve with sour cream.
+
+# Croatian black risotto | Risotto noir croate | 克罗地亚墨鱼汁烩饭
+@ Seafood | Croatia | 50 | File:Risotto nero di seppia.jpg | Rice,Shellfish
+- Squid: 600g
+- Arborio Rice: 320g
+- Onions: 1
+- Garlic: 3 cloves
+- Dry White Wine: 150ml
+- Fish Stock: 1.2 litres
+- Tomato Puree: 1 tbs
+- Olive Oil: 4 tbs
+- Parsley: 1 handful
+- Lemon: 1
+1. Cut the squid into rings and keep the ink sachets.
+2. Fry the onion and garlic in oil, add the squid and cook 10 minutes.
+3. Add the rice, wine, tomato puree and ink, then the hot stock a ladle at a time for 18 minutes.
+4. Finish with parsley and lemon.
+
+# Pasticada | Pašticada (bœuf braisé dalmate) | 达尔马提亚炖牛肉
+@ Beef | Croatia | 180 | en:Pašticada | Braise,Classic
+- Beef: 1.2kg
+- Streaky Bacon: 100g
+- Garlic: 5 cloves
+- Red Wine Vinegar: 150ml
+- Onions: 2
+- Carrots: 2
+- Celeriac: 0.25
+- Prunes: 10
+- Red Wine: 300ml
+- Tomato Puree: 2 tbs
+- Cloves: 3
+- Gnocchi: 800g
+1. Lard the beef with bacon and garlic and marinate in the vinegar overnight.
+2. Brown the beef, then the onions and vegetables. Add the prunes, cloves, tomato puree and wine.
+3. Braise covered on low heat for 2 h 30, adding water as needed.
+4. Blend the sauce. Serve the sliced beef with the sauce and gnocchi.
+
+# Greek stifado | Stifado (bœuf aux petits oignons) | 希腊洋葱炖牛肉
+@ Beef | Greece | 150 | en:Stifado | Stew,Classic
+- Beef: 1kg
+- Shallots: 600g
+- Garlic: 4 cloves
+- Red Wine: 250ml
+- Red Wine Vinegar: 2 tbs
+- Chopped Tomatoes: 400g
+- Tomato Puree: 2 tbs
+- Cinnamon Stick: 1
+- Cloves: 4
+- Bay Leaves: 2
+- Olive Oil: 4 tbs
+- Orzo: 300g
+1. Brown the beef in oil. Add the garlic, wine and vinegar.
+2. Add the tomatoes, tomato puree, spices and enough water to cover. Simmer 1 hour.
+3. Add the peeled whole shallots and cook 1 hour more until thick.
+4. Serve with orzo or bread.
+
+# Greek gemista | Gemista (légumes farcis au riz) | 希腊酿蔬菜
+@ Vegan | Greece | 90 | en:Gemista | Vegetarian,Bake
+- Tomatoes: 6
+- Green Pepper: 4
+- Rice: 200g
+- Onions: 1
+- Garlic: 2 cloves
+- Mint: 1 handful
+- Parsley: 1 handful
+- Olive Oil: 100ml
+- Potatoes: 4
+1. Hollow out the tomatoes and peppers. Chop the tomato flesh.
+2. Fry the onion and garlic, add the rice, tomato flesh, herbs and salt. Cook 5 minutes.
+3. Fill the vegetables, put on the lids and set in a dish with potato wedges. Drizzle with oil.
+4. Add a glass of water and bake at 180°C for 1 h 15.
+
+# Greek fasolada | Fasolada (soupe de haricots grecque) | 希腊白豆汤
+@ Vegan | Greece | 60 | en:Fasolada | Soup,Vegetarian
+- Cannellini Beans: 800g
+- Carrots: 2
+- Celery: 2 sticks
+- Onions: 1
+- Chopped Tomatoes: 400g
+- Tomato Puree: 1 tbs
+- Olive Oil: 100ml
+- Bay Leaves: 2
+- Parsley: 1 handful
+- Crusty Bread: 1
+1. Soften the onion, carrots and celery in the oil.
+2. Add the tomatoes, tomato puree, bay leaves, drained beans and 1 litre water.
+3. Simmer 40 minutes until thick.
+4. Add parsley and serve with bread.
+
+# Turkish iskender kebab | İskender kebab | 土耳其伊斯坎德尔烤肉
+@ Lamb | Turkey | 40 | en:İskender kebap | Classic
+- Lamb Leg: 600g
+- Pita Bread: 4
+- Passata: 300ml
+- Butter: 60g
+- Greek Yogurt: 400g
+- Paprika: 1 tsp
+- Ground Cumin: 1 tsp
+- Garlic: 2 cloves
+- Green Pepper: 2
+- Tomatoes: 2
+1. Marinate thin lamb slices with cumin, paprika, garlic and salt. Sear quickly in a hot pan.
+2. Warm the passata with a little butter and salt.
+3. Cut the pita into squares on plates, top with the meat and tomato sauce.
+4. Pour over sizzling melted butter, add the yogurt and grilled peppers and tomatoes.
+
+# Turkish manti | Mantı (raviolis turcs au yaourt) | 土耳其小饺子
+@ Lamb | Turkey | 90 | en:Manti (food) | Dumplings
+- Plain Flour: 400g
+- Eggs: 1
+- Lamb Mince: 300g
+- Onions: 1
+- Greek Yogurt: 400g
+- Garlic: 2 cloves
+- Butter: 50g
+- Pul Biber: 2 tsp
+- Dried Mint: 1 tsp
+1. Knead the flour, egg, 150ml water and salt. Rest 30 minutes.
+2. Mix the lamb with grated onion and salt.
+3. Roll the dough thinly, cut into 4cm squares, add a little filling and pinch the corners together.
+4. Boil for 10 minutes. Serve with garlic yogurt and butter melted with pul biber and mint.
+
+# Spanish albondigas | Albóndigas (boulettes à la tomate) | 西班牙番茄肉丸
+@ Beef | Spain | 45 | en:Albóndigas | Family
+- Minced Beef: 300g
+- Minced Pork: 300g
+- Breadcrumbs: 50g
+- Eggs: 1
+- Garlic: 3 cloves
+- Parsley: 1 handful
+- Onions: 1
+- Chopped Tomatoes: 400g
+- Smoked Paprika: 1 tsp
+- Dry White Wine: 100ml
+- Olive Oil: 4 tbs
+- Rice: 300g
+1. Mix the meats with breadcrumbs, egg, garlic, parsley and salt. Roll into balls and brown in oil.
+2. Fry the onion in the same pan, add the paprika, wine and tomatoes.
+3. Simmer the meatballs in the sauce for 20 minutes.
+4. Serve with rice or bread.
+
+# Portuguese caldo verde | Caldo verde | 葡萄牙羽衣甘蓝汤
+@ Pork | Portugal | 40 | en:Caldo verde | Soup,Quick
+- Potatoes: 800g
+- Onions: 1
+- Garlic: 2 cloves
+- Kale: 250g
+- Chorizo: 150g
+- Olive Oil: 4 tbs
+- Crusty Bread: 1
+1. Simmer the potatoes, onion and garlic in 1.5 litres salted water for 20 minutes. Mash or blend.
+2. Shred the kale very finely and add to the soup for 5 minutes.
+3. Fry the chorizo slices.
+4. Serve with chorizo, a drizzle of olive oil and bread.
+
+# Portuguese bacalhau a bras | Bacalhau à Brás | 葡萄牙土豆丝炒鳕鱼
+@ Seafood | Portugal | 40 | en:Bacalhau à Brás | Fish,Eggs
+- Salt Cod: 400g
+- Potatoes: 600g
+- Onions: 2
+- Garlic: 2 cloves
+- Eggs: 6
+- Black Olives: 60g
+- Parsley: 1 handful
+- Olive Oil: 5 tbs
+- Sunflower Oil: 300ml
+1. Soak the cod for 24 hours, changing the water. Flake it.
+2. Cut the potatoes into matchsticks and fry until crisp.
+3. Fry the sliced onions and garlic in olive oil, add the cod and cook 5 minutes.
+4. Add the fries and the beaten eggs and stir until just creamy. Top with olives and parsley.

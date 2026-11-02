@@ -18,6 +18,7 @@ apples;苹果
 apricot;杏子
 apricot jam;杏子酱
 arborio rice;意大利烩饭米
+asafoetida;阿魏粉
 asparagus;芦笋
 aubergine;茄子
 avocado;牛油果
@@ -30,6 +31,7 @@ baby squid;小鱿鱼
 bacon;培根
 bacon lardon;培根丁
 baguette;法棍
+baked beans;茄汁焗豆
 baking powder;泡打粉
 balsamic vinegar;意大利香醋
 bamboo shoot;竹笋
@@ -51,6 +53,7 @@ beef fillet;牛里脊
 beef flank steak;牛腹肉排
 beef gravy;牛肉肉汁
 beef shin;牛腱
+beef short ribs;牛小排
 beef stock;牛肉高汤
 beef stock concentrate;浓缩牛肉高汤
 beef stock cubes;牛肉高汤块
@@ -158,7 +161,10 @@ chinese cabbage;大白菜
 chinese five spice powder;五香粉
 chinese leaf;大白菜
 chinese long beans;豇豆
+chinese sausage;广式腊肠
 chinese sesame sauce;芝麻酱
+chinkiang vinegar;镇江香醋
+chipotle chillies in adobo;腌制烟熏辣椒
 chives;细香葱
 chopped chive;细香葱
 chopped onion;洋葱
@@ -187,6 +193,7 @@ coconut milk;椰奶
 coconut oil;椰子油
 cod;鳕鱼
 codfish bulljaw;咸鳕鱼
+cola;可乐
 colby jack cheese;科尔比杰克奶酪
 cold water;冷水
 conchs;海螺
@@ -218,17 +225,20 @@ cubed feta cheese;菲达奶酪丁
 cucumber;黄瓜
 cumin;孜然
 cumin seeds;孜然籽
+curry leaves;咖喱叶
 curry powder;咖喱粉
 daikon radish;白萝卜
 dark beer;黑啤
 dark brown sugar;黑糖
 dark soy sauce;老抽
+dashi;日式高汤粉
 deli ham;火腿片
 desiccated coconut;椰丝
 diced tomatoes;番茄丁（罐装）
 dijon mustard;第戎芥末酱
 dill;莳萝
 dill pickles;酸黄瓜
+doenjang;韩式大酱
 doner meat;烤肉
 doubanjiang;豆瓣酱
 double cream;重奶油
@@ -236,6 +246,7 @@ dried apricots;杏干
 dried chillies;干辣椒
 dried dill;干莳萝
 dried leaves of summer savoury;干香薄荷
+dried limes;干青柠
 dried mint;干薄荷
 dried oregano;干牛至
 dried red chillies;干红辣椒
@@ -317,13 +328,16 @@ ginger;生姜
 ginger cordial;姜汁糖浆
 ginger garlic paste;姜蒜酱
 ginger paste;姜泥
+glass noodles;粉丝
 glutinous rice;糯米
 gnocchi;意式土豆团子
 goat meat;山羊肉
 goats cheese;山羊奶酪
+gochugaru;韩国辣椒粉
 gochujang;韩式辣酱
 golden caster sugar;金砂糖
 goose fat;鹅油
+gorgonzola;戈贡佐拉奶酪
 gouda cheese;高达奶酪
 granulated sugar;白砂糖
 grape tomatoes;圣女果
@@ -404,6 +418,7 @@ kidney beans;红腰豆
 kielbasa;波兰熏肠
 kimchi;韩国泡菜
 king prawns;大虾
+korean rice cakes;韩国年糕
 kosher salt;粗盐
 lamb;羊肉
 lamb fat;羊油
@@ -459,12 +474,14 @@ minced pork;猪肉末
 mincemeat;肉末
 mint;薄荷
 mirin;味醂
+miso;味噌
 mixed beef cuts;炖用牛肉
 mixed grain;杂粮
 mixed peppers;彩椒
 molasses;糖蜜
 monkfish;鮟鱇鱼
 monterey jack cheese;蒙特里杰克奶酪
+moong dal;绿豆瓣
 morcilla;西班牙血肠
 morning glory;空心菜
 mozzarella;马苏里拉奶酪
@@ -483,9 +500,11 @@ napa cabbage;大白菜
 natural yoghurt;原味酸奶
 new potatoes;新土豆
 noodles;面条
+nori;海苔
 nutmeg;肉豆蔻
 oats;燕麦片
 oil;食用油
+okra;秋葵
 olive oil;橄榄油
 onion;洋葱
 onion salt;洋葱盐
@@ -494,6 +513,7 @@ orange;橙子
 orange juice;橙汁
 orange zest;橙皮
 oregano;牛至
+orzo;米粒面
 oxtail;牛尾
 oyster mushrooms;平菇
 oyster sauce;蚝油
@@ -505,8 +525,10 @@ pak choi;小白菜
 palm hearts;棕榈心
 palm sugar;棕榈糖
 panang curry paste;帕能咖喱酱
+pancetta;意式培根
 pandan leaves;香兰叶
 paneer;印度奶酪
+panko;日式面包糠
 panquehue cheese;智利奶酪
 paprika;红椒粉
 parma ham;帕尔马火腿
@@ -520,6 +542,7 @@ peanut butter;花生酱
 peanut oil;花生油
 peanuts;花生
 pear;梨
+pearl barley;珍珠大麦
 peas;豌豆
 pecorino;佩科里诺奶酪
 penne rigate;笔管面
@@ -530,6 +553,7 @@ phyllo dough;酥皮
 pickle juice;腌黄瓜汁
 pickled garlics;腌蒜
 pickled grape leaves;腌葡萄叶
+pickled mustard greens;酸菜
 pickled scallion head brine;腌葱头汁
 pickled scallion heads;腌葱头
 pico de gallo sauce;墨西哥番茄莎莎
@@ -631,6 +655,7 @@ salsa lizano;利萨诺酱
 salt;盐
 salt cod;咸鳕鱼
 salted butter;有盐黄油
+sambal;参巴辣酱
 sardines;沙丁鱼
 sauerkraut;酸菜
 sausages;香肠
@@ -681,6 +706,7 @@ smoked paprika;烟熏红椒粉
 smoky aïoli;烟熏蒜泥蛋黄酱
 smoky paprika;烟熏红椒粉
 snow peas;荷兰豆
+soba noodles;荞麦面
 soda water;苏打水
 sorrel jam;酸模果酱
 sour cream;酸奶油
@@ -715,6 +741,7 @@ sun-dried tomatoes;油浸番茄干
 sunflower oil;葵花籽油
 sushi rice;寿司米
 swede;芜菁甘蓝
+sweet bean sauce;甜面酱
 sweet chilli sauce;泰式甜辣酱
 sweet peppadew peppers;甜辣椒（瓶装）
 sweet potatoes;红薯
@@ -750,6 +777,7 @@ tomato puree;番茄膏
 tomato purée;番茄膏
 tomato sauce;番茄酱汁
 tomatoes;番茄
+tonkatsu sauce;猪排酱
 toor dal;木豆
 tortellini;意式饺子
 tortillas;小麦饼
@@ -767,6 +795,7 @@ unsalted beef stock;无盐牛肉高汤
 unsalted butter;无盐黄油
 unsalted peanuts;原味花生
 unsweetened coconut milk;无糖椰奶
+urad dal;黑吉豆
 vanilla;香草
 vanilla extract;香草精
 vanilla pod;香草荚
@@ -783,9 +812,11 @@ vinaigrette dressing;油醋汁
 vine leaves;葡萄叶
 vine tomatoes;藤番茄
 vinegar;白醋
+vodka;伏特加
 västerbottensost cheese;瑞典硬奶酪
 walnuts;核桃
 warm water;温水
+wasabi;芥末
 water;水
 water chestnut;荸荠
 whipping cream;淡奶油
@@ -795,6 +826,7 @@ white bread mix;白面包预拌粉
 white cabbage;圆白菜
 white fish;白肉鱼
 white fish fillets;白鱼柳
+white pepper;白胡椒粉
 white sauerkraut;酸菜
 white vinegar;白醋
 white wine;白葡萄酒
@@ -817,6 +849,7 @@ yellow pepper;黄椒
 yellow split peas;黄豌豆瓣
 yogurt;酸奶
 yuca;木薯
+za'atar;扎塔香料
 zapallo squash;南瓜
 zucchini;西葫芦
 `;

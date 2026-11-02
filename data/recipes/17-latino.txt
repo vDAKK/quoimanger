@@ -1,0 +1,319 @@
+// Mexique, Amérique centrale et du Sud. Format : voir tools/build-recipes.js
+
+# Cochinita pibil | Cochinita pibil (porc mariné à l’achiote) | 墨西哥胭脂树烤猪肉
+@ Pork | Mexico | 200 | en:Cochinita pibil | Tacos,Classic
+- Pork Shoulder: 1.2kg
+- Achiote Paste: 100g
+- Orange Juice: 200ml
+- Lime: 3
+- Garlic: 4 cloves
+- Ground Cumin: 1 tsp
+- Dried Oregano: 1 tsp
+- Banana Leaves: 2
+- Red Onions: 2
+- Corn Tortillas: 16
+1. Blend the achiote with orange juice, juice of 2 limes, garlic, cumin, oregano and salt. Marinate the pork in it overnight.
+2. Wrap the pork and marinade in banana leaves (or foil) in a dish. Cook covered at 160°C for 3 hours.
+3. Slice the red onions thinly and steep in the remaining lime juice with salt.
+4. Shred the pork in its juices. Serve in warm tortillas with the pickled onions.
+
+# Chicken tinga tostadas | Tostadas au poulet tinga | 墨西哥辣鸡脆饼
+@ Chicken | Mexico | 40 | en:Tinga (dish) | Tacos,Spicy,Quick
+- Chicken Breasts: 3
+- Chopped Tomatoes: 400g
+- Chipotle Chillies In Adobo: 2
+- Onions: 2
+- Garlic: 2 cloves
+- Dried Oregano: 1 tsp
+- Corn Tortillas: 12
+- Refried Beans: 400g
+- Lettuce: 1
+- Sour Cream: 150ml
+- Queso Fresco: 150g
+1. Poach the chicken in salted water for 15 minutes and shred it.
+2. Blend the tomatoes with chipotle, garlic and oregano. Fry the sliced onions, add the sauce and simmer 10 minutes.
+3. Stir in the chicken.
+4. Bake the tortillas until crisp. Spread with beans, top with the chicken, lettuce, cream and cheese.
+
+# Pozole rojo | Pozole rojo | 墨西哥红玉米猪肉汤
+@ Pork | Mexico | 150 | en:Pozole | Soup,Spicy
+- Pork Shoulder: 1kg
+- Dried White Corn: 400g
+- Ancho Chillies: 4
+- Garlic: 5 cloves
+- Onions: 1
+- Dried Oregano: 2 tsp
+- Cabbage: 0.25
+- Radish: 8
+- Lime: 2
+- Corn Tortillas: 8
+1. Simmer the pork with half an onion, garlic and salt in 3 litres of water for 1 h 30. Add the cooked corn (hominy) for the last 30 minutes.
+2. Soak the seeded chillies in hot water, then blend with garlic, onion and a little broth. Strain into the pot.
+3. Simmer for 20 minutes more and season.
+4. Serve with shredded cabbage, sliced radish, oregano, lime and toasted tortillas.
+
+# Mole poblano chicken | Poulet au mole | 墨西哥巧克力辣酱鸡
+@ Chicken | Mexico | 90 | en:Mole poblano | Classic,Spicy
+- Chicken Legs: 6
+- Ancho Chillies: 4
+- Chopped Tomatoes: 400g
+- Onions: 1
+- Garlic: 3 cloves
+- Almonds: 50g
+- Raisins: 40g
+- Sesame Seed: 3 tbs
+- Corn Tortillas: 2
+- Cocoa: 2 tbs
+- Ground Cinnamon: 1 tsp
+- Ground Clove: 0.25 tsp
+- Chicken Stock: 600ml
+- Rice: 400g
+1. Poach the chicken in the stock for 35 minutes. Keep the stock.
+2. Toast the chillies, soak them, then fry the onion, garlic, almonds, raisins, half the sesame and torn tortillas.
+3. Blend everything with the tomatoes, cocoa, spices and 400ml stock until smooth.
+4. Fry the sauce in a little oil for 15 minutes. Add the chicken, simmer 10 minutes and sprinkle with sesame. Serve with rice.
+
+# Chiles rellenos | Chiles rellenos (poivrons farcis au fromage) | 墨西哥奶酪酿辣椒
+@ Vegetarian | Mexico | 60 | en:Chile relleno | Vegetarian,Fried,Cheese
+- Green Pepper: 4
+- Monterey Jack Cheese: 250g
+- Eggs: 4
+- Plain Flour: 50g
+- Chopped Tomatoes: 400g
+- Onions: 1
+- Garlic: 2 cloves
+- Jalapeno: 1
+- Vegetable Oil: 300ml
+- Rice: 300g
+1. Roast the peppers under the grill until blackened, steam them in a bag, then peel and slit open. Remove the seeds.
+2. Stuff with cheese. Simmer the tomatoes with the onion, garlic and jalapeno into a sauce.
+3. Whip the egg whites stiff, fold in the yolks. Dust the peppers with flour, dip in the batter and fry until golden.
+4. Serve on the tomato sauce with rice.
+
+# Enchiladas verdes | Enchiladas vertes au poulet | 墨西哥绿酱卷饼
+@ Chicken | Mexico | 50 | en:Enchilada | Bake,Family
+- Chicken Breasts: 3
+- Green Salsa: 500ml
+- Corn Tortillas: 12
+- Sour Cream: 200ml
+- Monterey Jack Cheese: 200g
+- Onions: 1
+- Coriander: 1 bunch
+1. Poach and shred the chicken. Mix with a little salsa and chopped onion.
+2. Warm the tortillas, fill with chicken and roll. Place in a dish.
+3. Mix the remaining salsa with half the cream and pour over. Top with cheese.
+4. Bake at 200°C for 20 minutes. Serve with cream and coriander.
+
+# Sopa de lima | Sopa de lima (soupe au citron vert du Yucatán) | 尤卡坦青柠鸡汤
+@ Chicken | Mexico | 45 | en:Sopa de lima | Soup
+- Chicken Breasts: 2
+- Chicken Stock: 1.5 litres
+- Onions: 1
+- Green Pepper: 1
+- Tomatoes: 2
+- Garlic: 2 cloves
+- Lime: 4
+- Dried Oregano: 1 tsp
+- Corn Tortillas: 6
+- Avocado: 1
+1. Poach the chicken in the stock with oregano for 15 minutes, then shred.
+2. Fry the onion, pepper, garlic and tomatoes. Add to the stock and simmer 10 minutes.
+3. Add the chicken and the juice of 3 limes.
+4. Serve with crisp tortilla strips, avocado and lime slices.
+
+# Pupusas with curtido | Pupusas et curtido | 萨尔瓦多玉米饼
+@ Vegetarian | El Salvador | 60 | en:Pupusa | Vegetarian,Cheese
+- Yellow Masarepa: 400g
+- Refried Beans: 200g
+- Mozzarella: 250g
+- Cabbage: 0.5
+- Carrots: 1
+- Onions: 0.5
+- White Vinegar: 150ml
+- Dried Oregano: 1 tsp
+- Tomato Sauce: 200ml
+1. Mix the shredded cabbage, grated carrot, sliced onion, vinegar, oregano and salt. Leave 30 minutes.
+2. Knead the corn flour with 500ml warm water and salt.
+3. Flatten balls of dough, fill with beans and cheese, close and flatten again.
+4. Cook in a dry pan for 4 minutes per side. Serve with the curtido and tomato sauce.
+
+# Guatemalan pepian | Pepián de poulet | 危地马拉炖鸡
+@ Chicken | Guatemala | 75 | en:Pepián | Stew
+- Chicken Legs: 6
+- Tomatoes: 5
+- Red Pepper: 1
+- Onions: 1
+- Garlic: 3 cloves
+- Sesame Seed: 3 tbs
+- Pumpkin: 50g
+- Dried Chillies: 2
+- Ground Cinnamon: 0.5 tsp
+- Potatoes: 3
+- Green Beans: 200g
+- Rice: 300g
+1. Simmer the chicken in 1 litre of salted water for 25 minutes.
+2. Toast the tomatoes, pepper, onion, garlic, sesame, pumpkin seeds and chillies in a dry pan until charred.
+3. Blend with the cinnamon and some broth.
+4. Add the sauce, potatoes and beans to the chicken and simmer 25 minutes. Serve with rice.
+
+# Puerto Rican pernil with rice | Pernil portoricain et riz | 波多黎各烤猪肩配米饭
+@ Pork | Puerto Rico | 240 | en:Pernil | Roast,Family
+- Pork Shoulder: 2kg
+- Garlic: 10 cloves
+- Dried Oregano: 1 tbs
+- Olive Oil: 3 tbs
+- White Vinegar: 2 tbs
+- Sazon: 2 tsp
+- Rice: 400g
+- Pinto Beans: 400g
+- Green Pepper: 1
+- Onions: 1
+1. Crush the garlic with oregano, oil, vinegar, sazon and plenty of salt. Rub into slits all over the pork. Marinate overnight.
+2. Roast covered at 160°C for 3 hours, then uncovered at 220°C for 30 minutes until the skin crackles.
+3. Fry the onion and pepper, add the rice, beans and 700ml water and cook covered for 20 minutes.
+4. Slice the pork and serve with the rice.
+
+# Mofongo with garlic shrimp | Mofongo et crevettes à l’ail | 波多黎各捣芭蕉配蒜香虾
+@ Seafood | Puerto Rico | 40 | en:Mofongo | Fried
+- Plantain: 4
+- Garlic: 6 cloves
+- Bacon: 4 slices
+- King Prawns: 400g
+- Chopped Tomatoes: 200g
+- Olive Oil: 4 tbs
+- Chicken Stock: 150ml
+- Coriander: 1 handful
+- Vegetable Oil: 500ml
+1. Fry chunks of green plantain in oil for 8 minutes. Fry the bacon until crisp.
+2. Mash the plantain with half the garlic, the bacon, a little oil and stock.
+3. Sauté the prawns in olive oil with the remaining garlic, add the tomatoes and cook 3 minutes.
+4. Shape the mofongo into domes and serve with the prawns and coriander.
+
+# Cuban ropa vieja | Ropa vieja (bœuf effiloché cubain) | 古巴手撕牛肉
+@ Beef | Cuba | 150 | en:Ropa vieja | Stew,Family
+- Beef Flank Steak: 1kg
+- Onions: 2
+- Green Pepper: 1
+- Red Pepper: 1
+- Garlic: 4 cloves
+- Chopped Tomatoes: 400g
+- Tomato Puree: 2 tbs
+- Ground Cumin: 1 tsp
+- Dried Oregano: 1 tsp
+- Dry White Wine: 150ml
+- Pimento Stuffed Olives: 80g
+- Rice: 400g
+- Black Beans: 400g
+1. Simmer the beef in salted water with half an onion for 1 h 30. Shred it.
+2. Fry the onions, peppers and garlic, add the spices, wine, tomatoes and tomato puree.
+3. Add the beef with some broth and the olives. Simmer 20 minutes.
+4. Serve with rice and black beans.
+
+# Colombian bandeja paisa | Bandeja paisa | 哥伦比亚大拼盘
+@ Pork | Colombia | 90 | en:Bandeja paisa | Family,Classic
+- Pinto Beans: 800g
+- Minced Beef: 400g
+- Chorizo: 4
+- Pork Belly Slices: 400g
+- Eggs: 4
+- Plantain: 2
+- Avocado: 2
+- Rice: 300g
+- Onions: 1
+- Tomatoes: 2
+- Ground Cumin: 1 tsp
+1. Simmer the beans with half the onion and tomatoes, cumin and salt for 20 minutes.
+2. Fry the minced beef with the remaining onion and tomato.
+3. Fry the pork belly until crisp, then the chorizo, plantain slices and eggs.
+4. Serve everything on plates with rice and avocado.
+
+# Ajiaco | Ajiaco (soupe colombienne poulet-pommes de terre) | 哥伦比亚鸡肉土豆汤
+@ Chicken | Colombia | 75 | en:Ajiaco | Soup
+- Chicken Breasts: 3
+- Potatoes: 1kg
+- Corn On The Cob: 2
+- Onions: 1
+- Garlic: 2 cloves
+- Coriander: 1 bunch
+- Chicken Stock: 2 litres
+- Double Cream: 150ml
+- Capers: 2 tbs
+- Avocado: 2
+1. Simmer the chicken with the onion, garlic and coriander stems in the stock for 25 minutes. Shred.
+2. Add the potatoes in slices (some fine, some thicker) and the corn in rounds. Cook 40 minutes until the fine potatoes melt into the soup.
+3. Return the chicken.
+4. Serve with cream, capers, avocado and coriander.
+
+# Argentine steak with chimichurri | Steak argentin et chimichurri | 阿根廷牛排配青酱
+@ Beef | Argentina | 30 | en:Chimichurri | Grill,Quick
+- Sirloin Steak: 4
+- Parsley: 1 bunch
+- Garlic: 3 cloves
+- Dried Oregano: 1 tsp
+- Red Chilli Flakes: 0.5 tsp
+- Red Wine Vinegar: 3 tbs
+- Olive Oil: 120ml
+- Potatoes: 800g
+- Tomatoes: 3
+- Onions: 1
+1. Chop the parsley and garlic finely and mix with oregano, chilli, vinegar, oil and salt.
+2. Cut the potatoes in wedges and roast at 220°C for 30 minutes.
+3. Grill the steaks for 3 to 4 minutes per side and rest 5 minutes.
+4. Serve with the chimichurri and a tomato and onion salad.
+
+# Peruvian aji de gallina | Ají de gallina | 秘鲁辣奶油鸡
+@ Chicken | Peru | 50 | en:Ají de gallina | Spicy,Family
+- Chicken Breasts: 3
+- Bread: 4 slices
+- Evaporated Milk: 300ml
+- Onions: 1
+- Garlic: 3 cloves
+- Yellow Pepper: 2
+- Green Chilli: 2
+- Walnuts: 50g
+- Parmesan: 40g
+- Ground Turmeric: 0.5 tsp
+- Potatoes: 4
+- Black Olives: 8
+- Eggs: 2
+- Rice: 300g
+1. Poach the chicken for 20 minutes and shred it. Keep some broth. Soak the bread in the milk.
+2. Blend the peppers and chillies. Fry the onion and garlic, add the pepper paste and turmeric.
+3. Blend the bread with the walnuts and add to the pan with broth until creamy. Stir in the chicken and parmesan.
+4. Serve on rice with boiled potatoes, eggs and olives.
+
+# Peruvian arroz chaufa | Arroz chaufa (riz sauté péruvien) | 秘鲁中式炒饭
+@ Chicken | Peru | 25 | en:Arroz chaufa | Rice,Quick,Stir-fry
+- Rice: 300g
+- Chicken Breasts: 2
+- Eggs: 3
+- Red Pepper: 1
+- Spring Onions: 4
+- Ginger: 1 tbs
+- Garlic: 2 cloves
+- Soy Sauce: 4 tbs
+- Sesame Seed Oil: 1 tbs
+- Vegetable Oil: 3 tbs
+1. Cook the rice the day before or let it cool completely.
+2. Scramble the eggs in a hot wok and set aside.
+3. Stir-fry the diced chicken with ginger and garlic, then the pepper.
+4. Add the rice, soy sauce and sesame oil and stir-fry on high heat. Add the egg and spring onions.
+
+# Moqueca | Moqueca (ragoût de poisson au lait de coco) | 巴西椰奶炖鱼
+@ Seafood | Brazil | 45 | en:Moqueca | Fish,Stew
+- White Fish Fillets: 700g
+- Prawns: 200g
+- Coconut Milk: 400ml
+- Onions: 1
+- Red Pepper: 1
+- Yellow Pepper: 1
+- Tomatoes: 3
+- Garlic: 3 cloves
+- Lime: 2
+- Paprika: 1 tsp
+- Coriander: 1 bunch
+- Rice: 300g
+1. Marinate the fish with lime juice, garlic and salt for 20 minutes.
+2. Layer the onion, peppers and tomatoes in rings in a wide pan, then the fish.
+3. Pour over the coconut milk mixed with paprika. Cover and simmer for 15 minutes, adding the prawns for the last 5.
+4. Sprinkle with coriander and serve with rice.

@@ -1,0 +1,348 @@
+// Europe du Nord, centrale et de l’Est. Format : voir tools/build-recipes.js
+
+# Pork schnitzel with potato salad | Escalope viennoise et salade de pommes de terre | 炸猪排配土豆沙拉
+@ Pork | Austria | 45 | en:Wiener schnitzel | Classic,Fried,Family
+- Pork Tenderloin: 600g
+- Plain Flour: 60g
+- Eggs: 2
+- Breadcrumbs: 150g
+- Potatoes: 800g
+- Onions: 1
+- White Wine Vinegar: 3 tbs
+- Beef Stock: 150ml
+- Dijon Mustard: 1 tsp
+- Chives: 1 bunch
+- Lemon: 1
+- Sunflower Oil: 200ml
+1. Boil the potatoes in their skins, peel and slice while warm.
+2. Heat the stock with the finely chopped onion, vinegar, mustard, salt and a little oil. Pour over the potatoes and leave for 20 minutes. Add the chives.
+3. Cut the pork into escalopes and flatten them thinly. Coat in flour, beaten egg, then breadcrumbs.
+4. Fry in hot oil for 2 to 3 minutes per side. Serve with lemon wedges and the salad.
+
+# Hungarian goulash | Goulasch hongrois | 匈牙利牛肉汤
+@ Beef | Hungary | 120 | en:Goulash | Soup,Stew,Classic
+- Beef Shin: 800g
+- Onions: 3
+- Sweet Smoked Paprika: 3 tbs
+- Caraway Seed: 1 tsp
+- Garlic: 3 cloves
+- Tomatoes: 2
+- Red Pepper: 2
+- Potatoes: 4
+- Carrots: 2
+- Tomato Puree: 1 tbs
+- Lard: 2 tbs
+- Crusty Bread: 1
+1. Fry the chopped onions in lard until golden.
+2. Off the heat, stir in the paprika, then add the beef cubes, caraway and garlic.
+3. Add 1.5 litres of water and the tomato puree. Simmer covered for 1 h 15.
+4. Add the potatoes, carrots, peppers and tomatoes and cook for 30 minutes. Serve with bread.
+
+# Chicken paprikash | Poulet au paprika | 匈牙利红椒鸡
+@ Chicken | Hungary | 60 | en:Chicken paprikash | Family
+- Chicken Thighs: 8
+- Onions: 2
+- Sweet Smoked Paprika: 2 tbs
+- Red Pepper: 1
+- Tomatoes: 2
+- Chicken Stock: 400ml
+- Sour Cream: 200ml
+- Plain Flour: 1 tbs
+- Butter: 30g
+- Egg Noodles: 400g
+1. Brown the chicken in butter and set aside. Soften the onions in the same pan.
+2. Off the heat add the paprika, then the pepper, tomatoes, chicken and stock.
+3. Simmer for 35 minutes.
+4. Mix the sour cream with the flour and stir into the sauce. Heat without boiling. Serve with noodles.
+
+# Hungarian lecso with sausage | Lecsó aux saucisses | 匈牙利甜椒炖香肠
+@ Pork | Hungary | 35 | en:Lecsó | Quick
+- Kielbasa: 400g
+- Yellow Pepper: 3
+- Red Pepper: 2
+- Onions: 2
+- Tomatoes: 4
+- Paprika: 1 tbs
+- Eggs: 4
+- Lard: 1 tbs
+- Bread: 4 slices
+1. Fry the onions in lard, then the sliced sausage.
+2. Add the peppers in strips and cook for 10 minutes.
+3. Add the paprika and chopped tomatoes, cook for 10 minutes.
+4. Stir in the beaten eggs until just set. Serve with bread.
+
+# German beef rouladen | Paupiettes de bœuf allemandes | 德式牛肉卷
+@ Beef | Germany | 120 | en:Rouladen | Braise,Classic
+- Beef Cutlet: 8
+- Streaky Bacon: 8 slices
+- Dijon Mustard: 4 tbs
+- Dill Pickles: 4
+- Onions: 2
+- Beef Stock: 500ml
+- Red Wine: 200ml
+- Carrots: 1
+- Tomato Puree: 1 tbs
+- Potatoes: 1kg
+1. Flatten the beef slices, spread with mustard and top with bacon, onion and a pickle quarter.
+2. Roll up and secure with toothpicks. Brown well in a casserole.
+3. Add the chopped carrot and remaining onion, then the tomato puree, wine and stock.
+4. Simmer covered for 1 h 30. Thicken the sauce and serve with boiled potatoes.
+
+# Bratwurst with sauerkraut and mash | Saucisses et choucroute, purée | 德国香肠配酸菜和土豆泥
+@ Pork | Germany | 40 | en:Bratwurst | Family
+- German Sausages: 8
+- Sauerkraut: 500g
+- Onions: 1
+- Juniper Berries: 4
+- Bay Leaf: 1
+- Dry White Wine: 150ml
+- Potatoes: 1kg
+- Butter: 50g
+- Milk: 150ml
+- Mustard: 2 tbs
+1. Soften the onion, add the rinsed sauerkraut, juniper, bay and wine. Simmer for 30 minutes.
+2. Boil and mash the potatoes with the butter and hot milk.
+3. Fry the sausages until browned.
+4. Serve with the sauerkraut, mash and mustard.
+
+# Kaesespaetzle | Käsespätzle (pâtes fraîches au fromage) | 德国奶酪面疙瘩
+@ Vegetarian | Germany | 40 | en:Käsespätzle | Cheese,Family
+- Plain Flour: 400g
+- Eggs: 4
+- Milk: 150ml
+- Emmentaler Cheese: 250g
+- Onions: 3
+- Butter: 50g
+- Chives: 1 bunch
+- Rocket: 100g
+1. Beat the flour, eggs, milk and salt into a thick, sticky batter.
+2. Press or scrape the batter into boiling salted water. Lift out the spätzle when they float.
+3. Fry the sliced onions in butter until crisp.
+4. Layer the spätzle with the grated cheese in a hot dish. Top with onions and chives. Serve with a green salad.
+
+# German potato pancakes with apple | Galettes de pommes de terre et compote | 德式土豆饼配苹果
+@ Vegetarian | Germany | 35 | en:Potato pancake | Quick,Fried
+- Potatoes: 1kg
+- Onions: 1
+- Eggs: 2
+- Plain Flour: 3 tbs
+- Apples: 4
+- Sugar: 2 tbs
+- Sour Cream: 150ml
+- Sunflower Oil: 150ml
+1. Cook the peeled apples with sugar and a little water into a chunky compote.
+2. Grate the potatoes and onion, squeeze out the liquid and mix with eggs, flour and salt.
+3. Fry flattened spoonfuls in hot oil for 3 to 4 minutes per side.
+4. Serve with the compote and sour cream.
+
+# Swiss rosti with eggs | Rösti et œufs | 瑞士土豆饼配鸡蛋
+@ Vegetarian | Switzerland | 40 | en:Rösti | Eggs,Quick
+- Potatoes: 1kg
+- Butter: 60g
+- Eggs: 4
+- Gruyere: 100g
+- Onions: 1
+- Bacon Lardon: 150g
+- Little Gem Lettuce: 2
+1. Boil the potatoes in their skins for 10 minutes, cool, then grate coarsely.
+2. Fry the onion and bacon, mix with the grated potato and salt.
+3. Press into a hot buttered pan and cook for 10 minutes per side until golden.
+4. Top with cheese and fried eggs. Serve with lettuce.
+
+# Zurich-style veal | Émincé de veau à la zurichoise | 苏黎世奶油小牛肉
+@ Beef | Switzerland | 30 | en:Zürcher Geschnetzeltes | Quick,Classic
+- Veal: 600g
+- Mushrooms: 250g
+- Shallots: 2
+- Dry White Wine: 150ml
+- Double Cream: 250ml
+- Beef Stock: 100ml
+- Butter: 30g
+- Plain Flour: 1 tbs
+- Parsley: 1 handful
+- Potatoes: 800g
+1. Cut the veal into thin strips, dust with flour and brown quickly in butter. Set aside.
+2. Fry the shallots and sliced mushrooms.
+3. Add the wine and reduce, then the stock and cream. Simmer for 5 minutes.
+4. Return the veal to warm through. Sprinkle with parsley and serve with rösti or potatoes.
+
+# Swedish meatballs | Boulettes suédoises | 瑞典肉丸
+@ Beef | Sweden | 45 | en:Swedish meatballs | Family,Classic
+- Minced Beef: 400g
+- Minced Pork: 200g
+- Breadcrumbs: 50g
+- Milk: 100ml
+- Onions: 1
+- Eggs: 1
+- Ground Allspice: 0.5 tsp
+- Butter: 40g
+- Plain Flour: 2 tbs
+- Beef Stock: 400ml
+- Double Cream: 150ml
+- Potatoes: 1kg
+- Cranberry: 4 tbs
+1. Soak the breadcrumbs in milk. Mix with the meats, grated onion, egg, allspice and salt.
+2. Roll into small balls and fry in butter until browned. Set aside.
+3. Stir the flour into the pan juices, then whisk in the stock and cream. Simmer for 5 minutes.
+4. Return the meatballs to the sauce. Serve with mashed potatoes and cranberry sauce.
+
+# Swedish salmon with dill potatoes | Saumon et pommes de terre à l’aneth | 瑞典莳萝三文鱼
+@ Seafood | Sweden | 30 | en:Swedish cuisine | Fish,Quick
+- Salmon: 4 fillets
+- New Potatoes: 800g
+- Dill: 1 bunch
+- Sour Cream: 200ml
+- Lemon: 1
+- Cucumber: 1
+- White Wine Vinegar: 3 tbs
+- Sugar: 1 tbs
+- Butter: 30g
+1. Slice the cucumber thinly and toss with vinegar, sugar and salt.
+2. Boil the potatoes and toss with butter and half the dill.
+3. Pan-fry the salmon skin-side down for 5 minutes, then 2 minutes on the other side.
+4. Mix the sour cream with lemon and the rest of the dill. Serve together.
+
+# Pyttipanna | Pyttipanna (poêlée suédoise) | 瑞典杂烩炒
+@ Beef | Sweden | 35 | en:Pyttipanna | Quick,Eggs
+- Potatoes: 800g
+- Beef: 300g
+- Smoked Ham: 150g
+- Onions: 2
+- Butter: 40g
+- Eggs: 4
+- Beetroot: 2
+- Parsley: 1 handful
+1. Cut the potatoes, meat, ham and onions into small dice.
+2. Fry the potatoes in butter for 15 minutes until golden.
+3. Add the onions, then the meat and ham, and fry for 10 minutes more.
+4. Serve topped with fried eggs, pickled beetroot and parsley.
+
+# Danish pork with parsley sauce | Porc croustillant sauce persil | 丹麦脆猪肉配欧芹酱
+@ Pork | Denmark | 50 | en:Stegt flæsk | Classic
+- Pork Belly Slices: 800g
+- Potatoes: 1kg
+- Butter: 40g
+- Plain Flour: 3 tbs
+- Milk: 500ml
+- Parsley: 2 bunches
+- Nutmeg: 1 pinch
+1. Fry the pork slices slowly in a dry pan until very crisp, about 20 minutes.
+2. Boil the potatoes.
+3. Melt the butter, stir in the flour, then whisk in the milk and simmer until thick.
+4. Add plenty of chopped parsley, nutmeg and salt. Serve with the pork and potatoes.
+
+# Dutch hutspot | Hutspot (purée carottes-oignons) | 荷兰胡萝卜土豆泥
+@ Beef | Netherlands | 60 | en:Hutspot | Family
+- Potatoes: 1kg
+- Carrots: 800g
+- Onions: 3
+- Beef Shin: 600g
+- Bay Leaf: 1
+- Butter: 50g
+- Milk: 100ml
+1. Simmer the beef with the bay leaf in salted water for 1 hour 30, until tender. (Or use leftover stewed beef.)
+2. Boil the potatoes, carrots and onions together for 20 minutes.
+3. Drain and mash roughly with butter and milk.
+4. Serve with the sliced beef and some cooking broth.
+
+# Polish pork cutlets with cucumber salad | Kotlet schabowy et salade de concombre | 波兰炸猪排配黄瓜沙拉
+@ Pork | Poland | 40 | en:Kotlet schabowy | Fried,Family
+- Pork Chops: 4
+- Eggs: 2
+- Plain Flour: 50g
+- Breadcrumbs: 150g
+- Cucumber: 2
+- Sour Cream: 150ml
+- Dill: 1 bunch
+- Potatoes: 800g
+- Lard: 4 tbs
+1. Boil the potatoes and toss with some dill.
+2. Slice the cucumbers thinly, salt them, then mix with sour cream and dill.
+3. Flatten the boneless chops, coat in flour, egg and breadcrumbs.
+4. Fry in lard for 4 minutes per side.
+
+# Chicken Kiev | Poulet à la Kiev | 基辅炸鸡卷
+@ Chicken | Ukraine | 50 | en:Chicken Kiev | Fried,Classic
+- Chicken Breasts: 4
+- Butter: 120g
+- Garlic: 3 cloves
+- Parsley: 1 handful
+- Plain Flour: 60g
+- Eggs: 2
+- Breadcrumbs: 150g
+- Potatoes: 800g
+- Peas: 300g
+- Sunflower Oil: 500ml
+1. Mix the butter with garlic and parsley, shape into 4 logs and freeze for 20 minutes.
+2. Flatten the chicken, wrap each around a butter log, sealing well.
+3. Coat twice in flour, egg and breadcrumbs.
+4. Fry in hot oil for 4 minutes, then bake at 190°C for 15 minutes. Serve with mash and peas.
+
+# Pelmeni | Pelmeni (raviolis russes) | 俄罗斯饺子
+@ Pork | Russia | 80 | en:Pelmeni | Dumplings
+- Plain Flour: 400g
+- Eggs: 1
+- Minced Pork: 250g
+- Minced Beef: 250g
+- Onions: 1
+- Bay Leaves: 2
+- Sour Cream: 200ml
+- Dill: 1 bunch
+- Butter: 30g
+1. Make a dough with the flour, egg, 180ml water and salt. Rest 30 minutes.
+2. Mix the meats with grated onion, salt and pepper.
+3. Roll the dough thinly, cut small circles, fill and fold into little rings.
+4. Boil in salted water with bay leaves for 5 minutes after they rise. Serve with butter, sour cream and dill.
+
+# Czech svickova | Svíčková (bœuf sauce crème aux légumes) | 捷克奶油酱牛肉
+@ Beef | Czech Republic | 150 | en:Svíčková | Classic,Braise
+- Beef: 1kg
+- Carrots: 3
+- Celeriac: 0.5
+- Parsnips: 2
+- Onions: 2
+- Bacon: 100g
+- Bay Leaves: 3
+- Allspice Berries: 6
+- Lemon: 1
+- Double Cream: 250ml
+- Cranberry: 4 tbs
+- Bread: 8 slices
+1. Lard the beef with bacon strips. Brown it with the diced vegetables and onions.
+2. Add the spices and 500ml water and braise covered at 170°C for 2 hours.
+3. Remove the meat and blend the vegetables with the juices, cream and lemon juice until smooth.
+4. Serve the sliced beef with the sauce, cranberry and slices of bread or dumplings.
+
+# Czech roast pork with dumplings and cabbage | Porc rôti, knödel et chou | 捷克烤猪肉配团子和酸菜
+@ Pork | Czech Republic | 120 | en:Vepřo knedlo zelo | Roast,Classic
+- Pork Shoulder: 1.2kg
+- Caraway Seed: 2 tsp
+- Garlic: 4 cloves
+- Onions: 2
+- Red Cabbage: 1
+- Sugar: 2 tbs
+- Cider Vinegar: 3 tbs
+- Bread: 6 slices
+- Plain Flour: 300g
+- Milk: 200ml
+- Eggs: 1
+- Instant Yeast: 7g
+1. Rub the pork with garlic, caraway and salt. Roast on sliced onions at 180°C for 1 h 45, basting with water.
+2. Braise the shredded red cabbage with sugar, vinegar and a little water for 45 minutes.
+3. Mix flour, milk, egg, yeast, salt and the diced bread. Rise 30 minutes, shape into 2 logs and steam or simmer for 20 minutes.
+4. Slice and serve with the pork, juices and cabbage.
+
+# Mulgikapsad | Mulgikapsad (porc, choucroute et orge, Estonie) | 爱沙尼亚酸菜炖猪肉
+@ Pork | Estonia | 120 | en:Mulgikapsad | Stew
+- Pork Shoulder: 800g
+- Sauerkraut: 600g
+- Pearl Barley: 100g
+- Onions: 1
+- Carrots: 1
+- Bay Leaf: 1
+- Brown Sugar: 1 tbs
+- Potatoes: 800g
+1. Brown the pork cubes with the onion and grated carrot.
+2. Add the sauerkraut, rinsed barley, bay leaf, sugar and 500ml water.
+3. Simmer covered for 1 h 30 until thick and tender.
+4. Serve with boiled potatoes.

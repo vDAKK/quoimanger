@@ -22,6 +22,7 @@ apples;Pommes;fl
 apricot;Abricots;fl
 apricot jam;Confiture d'abricot;su
 arborio rice;Riz arborio (risotto);ep
+asafoetida;Asa-fœtida;mo*
 asparagus;Asperges;fl
 aubergine;Aubergine;fl
 avocado;Avocat;fl
@@ -34,6 +35,7 @@ baby squid;Petits calamars;po
 bacon;Bacon / lardons;ch
 bacon lardon;Lardons;ch
 baguette;Baguette;bl
+baked beans;Haricots blancs à la tomate;ep
 baking powder;Levure chimique;su*
 balsamic vinegar;Vinaigre balsamique;sa*
 bamboo shoot;Pousses de bambou;mo
@@ -55,6 +57,7 @@ beef fillet;Filet de bœuf;bo
 beef flank steak;Bavette de bœuf;bo
 beef gravy;Fond de sauce brune;es
 beef shin;Jarret de bœuf;bo
+beef short ribs;Plat de côtes de bœuf;bo
 beef stock;Bouillon de bœuf;es
 beef stock concentrate;Fond de bœuf;es
 beef stock cubes;Bouillon de bœuf (cubes);es
@@ -162,7 +165,10 @@ chinese cabbage;Chou chinois;fl
 chinese five spice powder;Cinq-épices;mo
 chinese leaf;Chou chinois;fl
 chinese long beans;Haricots kilomètre;mo
+chinese sausage;Saucisse chinoise (lap cheong);mo
 chinese sesame sauce;Pâte de sésame;mo
+chinkiang vinegar;Vinaigre noir de Chinkiang;mo
+chipotle chillies in adobo;Piments chipotle en sauce adobo;mo
 chives;Ciboulette;fl
 chopped chive;Ciboulette;fl
 chopped onion;Oignons;fl
@@ -191,6 +197,7 @@ coconut milk;Lait de coco;mo
 coconut oil;Huile de coco;sa
 cod;Cabillaud;po
 codfish bulljaw;Morue salée;po
+cola;Cola;bs
 colby jack cheese;Cheddar râpé;fr
 cold water;Eau;-
 conchs;Bulots / coquillages;po
@@ -222,17 +229,20 @@ cubed feta cheese;Feta;fr
 cucumber;Concombre;fl
 cumin;Cumin;es
 cumin seeds;Graines de cumin;es
+curry leaves;Feuilles de curry;mo
 curry powder;Curry en poudre;es
 daikon radish;Radis blanc (daikon);fl
 dark beer;Bière brune;bs
 dark brown sugar;Sucre brun / vergeoise;su
 dark soy sauce;Sauce soja foncée;mo
+dashi;Dashi (bouillon japonais);mo*
 deli ham;Jambon blanc;ch
 desiccated coconut;Noix de coco râpée;su
 diced tomatoes;Tomates en dés (boîte);ep
 dijon mustard;Moutarde de Dijon;sa*
 dill;Aneth frais;fl
 dill pickles;Cornichons;ep
+doenjang;Pâte de soja coréenne (doenjang);mo
 doner meat;Viande kebab;ch
 doubanjiang;Pâte de piment (doubanjiang);mo
 double cream;Crème entière liquide;cr
@@ -240,6 +250,7 @@ dried apricots;Abricots secs;su
 dried chillies;Piments séchés;es
 dried dill;Aneth séché;es
 dried leaves of summer savoury;Sarriette séchée;es
+dried limes;Citrons séchés (loomi);mo*
 dried mint;Menthe séchée;es
 dried oregano;Origan séché;es*
 dried red chillies;Piments rouges séchés;es
@@ -321,13 +332,16 @@ ginger;Gingembre frais;fl
 ginger cordial;Sirop de gingembre;bs
 ginger garlic paste;Pâte ail-gingembre;mo
 ginger paste;Gingembre en purée;mo
+glass noodles;Vermicelles de soja;mo
 glutinous rice;Riz gluant;mo
 gnocchi;Gnocchis;ch
 goat meat;Viande de chèvre / agneau;bo
 goats cheese;Fromage de chèvre;fr
+gochugaru;Piment coréen en poudre (gochugaru);mo*
 gochujang;Gochujang;mo
 golden caster sugar;Sucre blond;su*
 goose fat;Graisse d'oie;ep
+gorgonzola;Gorgonzola;fr
 gouda cheese;Gouda;fr
 granulated sugar;Sucre en poudre;su*
 grape tomatoes;Tomates cerises;fl
@@ -408,6 +422,7 @@ kidney beans;Haricots rouges;ep
 kielbasa;Saucisse fumée polonaise;ch
 kimchi;Kimchi;mo
 king prawns;Gambas;po
+korean rice cakes;Gâteaux de riz coréens (tteok);mo
 kosher salt;Gros sel;es*
 lamb;Agneau;bo
 lamb fat;Graisse d'agneau;bo
@@ -463,12 +478,14 @@ minced pork;Porc haché / chair à saucisse;bo
 mincemeat;Viande hachée;bo
 mint;Menthe fraîche;fl
 mirin;Mirin;mo
+miso;Pâte miso;mo
 mixed beef cuts;Bœuf à braiser;bo
 mixed grain;Mélange de céréales;ep
 mixed peppers;Poivrons tricolores;fl
 molasses;Mélasse;su
 monkfish;Lotte;po
 monterey jack cheese;Cheddar râpé;fr
+moong dal;Lentilles mungo jaunes (moong dal);mo*
 morcilla;Boudin noir;ch
 morning glory;Liseron d'eau;mo
 mozzarella;Mozzarella;fr
@@ -487,9 +504,11 @@ napa cabbage;Chou chinois;fl
 natural yoghurt;Yaourt nature;cr
 new potatoes;Pommes de terre nouvelles;fl
 noodles;Nouilles;mo
+nori;Feuilles de nori;mo*
 nutmeg;Noix de muscade;es
 oats;Flocons d'avoine;ep
 oil;Huile;sa*
+okra;Gombos;mo
 olive oil;Huile d'olive;sa*
 onion;Oignons;fl
 onion salt;Sel à l'oignon;es
@@ -498,6 +517,7 @@ orange;Oranges;fl
 orange juice;Jus d'orange;bs
 orange zest;Oranges (zeste);fl
 oregano;Origan;es*
+orzo;Orzo (pâtes en forme de riz);ep
 oxtail;Queue de bœuf;bo
 oyster mushrooms;Pleurotes;fl
 oyster sauce;Sauce d'huître;mo
@@ -509,8 +529,10 @@ pak choi;Pak choï;fl
 palm hearts;Cœurs de palmier;ep
 palm sugar;Sucre de palme;mo
 panang curry paste;Pâte de curry panang;mo
+pancetta;Pancetta;ch
 pandan leaves;Feuilles de pandan;mo
 paneer;Paneer / halloumi;fr
+panko;Chapelure panko;mo*
 panquehue cheese;Fromage à pâte pressée;fr
 paprika;Paprika;es
 parma ham;Jambon de Parme;ch
@@ -524,6 +546,7 @@ peanut butter;Beurre de cacahuète;su
 peanut oil;Huile d'arachide;sa*
 peanuts;Cacahuètes;ep
 pear;Poire;fl
+pearl barley;Orge perlé;ep
 peas;Petits pois;sg
 pecorino;Pecorino;fr
 penne rigate;Penne;ep
@@ -534,6 +557,7 @@ phyllo dough;Pâte filo;ch
 pickle juice;Jus de cornichons;ep
 pickled garlics;Ail mariné;mo
 pickled grape leaves;Feuilles de vigne;mo
+pickled mustard greens;Moutarde chinoise saumurée (suan cai);mo
 pickled scallion head brine;Saumure d'oignons marinés;mo
 pickled scallion heads;Petits oignons marinés;ep
 pico de gallo sauce;Salsa pico de gallo;mo
@@ -635,6 +659,7 @@ salsa lizano;Sauce Lizano;mo
 salt;Sel;es*
 salt cod;Morue salée;po
 salted butter;Beurre demi-sel;cr
+sambal;Sambal oelek;mo*
 sardines;Sardines;po
 sauerkraut;Choucroute;ch
 sausages;Saucisses;bo
@@ -685,6 +710,7 @@ smoked paprika;Paprika fumé;es
 smoky aïoli;Aïoli;sa
 smoky paprika;Paprika fumé;es
 snow peas;Pois gourmands;fl
+soba noodles;Nouilles soba;mo
 soda water;Eau gazeuse;bs
 sorrel jam;Confiture d'oseille;mo
 sour cream;Crème fraîche épaisse;cr
@@ -719,6 +745,7 @@ sun-dried tomatoes;Tomates séchées;ep
 sunflower oil;Huile de tournesol;sa*
 sushi rice;Riz à sushi;mo
 swede;Rutabaga;fl
+sweet bean sauce;Sauce soja sucrée (tianmianjiang);mo
 sweet chilli sauce;Sauce chili douce;mo
 sweet peppadew peppers;Piments doux (bocal);ep
 sweet potatoes;Patates douces;fl
@@ -754,6 +781,7 @@ tomato puree;Concentré de tomate;ep
 tomato purée;Concentré de tomate;ep
 tomato sauce;Sauce tomate;ep
 tomatoes;Tomates;fl
+tonkatsu sauce;Sauce tonkatsu;mo*
 toor dal;Lentilles toor dal;mo
 tortellini;Tortellini;ch
 tortillas;Tortillas de blé;mo
@@ -771,6 +799,7 @@ unsalted beef stock;Bouillon de bœuf;es
 unsalted butter;Beurre doux;cr
 unsalted peanuts;Cacahuètes non salées;ep
 unsweetened coconut milk;Lait de coco;mo
+urad dal;Lentilles urad;mo*
 vanilla;Vanille;su
 vanilla extract;Extrait de vanille;su
 vanilla pod;Gousse de vanille;su
@@ -787,9 +816,11 @@ vinaigrette dressing;Vinaigrette;sa
 vine leaves;Feuilles de vigne;mo
 vine tomatoes;Tomates en grappe;fl
 vinegar;Vinaigre blanc;sa*
+vodka;Vodka;bs*
 västerbottensost cheese;Comté affiné;fr
 walnuts;Cerneaux de noix;su
 warm water;Eau;-
+wasabi;Wasabi;mo*
 water;Eau;-
 water chestnut;Châtaignes d'eau;mo
 whipping cream;Crème entière liquide;cr
@@ -799,6 +830,7 @@ white bread mix;Préparation pain blanc;su
 white cabbage;Chou blanc;fl
 white fish;Filets de poisson blanc;po
 white fish fillets;Filets de poisson blanc;po
+white pepper;Poivre blanc moulu;es*
 white sauerkraut;Choucroute;ch
 white vinegar;Vinaigre blanc;sa*
 white wine;Vin blanc;bs
@@ -821,6 +853,7 @@ yellow pepper;Poivron jaune;fl
 yellow split peas;Pois cassés;ep
 yogurt;Yaourt nature;cr
 yuca;Manioc;mo
+za'atar;Zaatar;es*
 zapallo squash;Courge;fl
 zucchini;Courgettes;fl
 `;

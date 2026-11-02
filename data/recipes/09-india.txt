@@ -1,0 +1,954 @@
+// Inde, Pakistan, Bangladesh : nord, sud, Goa, Bengale. Format : voir tools/build-recipes.js
+
+# Rajma | Rajma (curry de haricots rouges) | 印式红芸豆咖喱
+@ Vegetarian | India | 45 | en:Rajma | Curry,Family
+- Kidney Beans: 800g
+- Onions: 2
+- Chopped Tomatoes: 400g
+- Ginger Garlic Paste: 2 tbs
+- Green Chilli: 2
+- Cumin Seeds: 1 tsp
+- Ground Coriander: 2 tsp
+- Ground Turmeric: 1/2 tsp
+- Chilli Powder: 1 tsp
+- Garam Masala: 1 tsp
+- Ghee: 2 tbs
+- Basmati Rice: 300g
+- Coriander Leaves: 1 handful
+1. Cook the rice. Fry the cumin seeds in the ghee, then the chopped onions until golden.
+2. Add the ginger garlic paste and chillies, then the ground spices and cook for 1 minute.
+3. Add the tomatoes and cook for 10 minutes until the oil separates.
+4. Add the drained beans and 400ml water, simmer for 20 minutes and mash a few beans to thicken.
+5. Finish with garam masala and coriander and serve with rice.
+
+# Chole bhature | Chole bhature (pois chiches et pains frits) | 鹰嘴豆配炸面包
+@ Vegetarian | India | 60 | en:Chole bhature | Curry
+- Chickpeas: 800g
+- Onions: 2
+- Tomatoes: 3
+- Ginger Garlic Paste: 1 tbs
+- Garam Masala: 2 tsp
+- Ground Cumin: 1 tsp
+- Ground Coriander: 2 tsp
+- Chilli Powder: 1 tsp
+- Plain Flour: 300g
+- Yogurt: 100g
+- Baking Powder: 1 tsp
+- Vegetable Oil: 500ml
+1. Mix the flour, yogurt, baking powder, a pinch of salt and enough water to make a soft dough. Rest for 30 minutes.
+2. Fry the onions until brown, add the ginger garlic paste, spices and chopped tomatoes and cook for 10 minutes.
+3. Add the chickpeas and 300ml water and simmer for 15 minutes.
+4. Roll the dough into 8 discs and deep-fry until they puff up.
+5. Serve the chickpeas with the hot breads.
+
+# Pav bhaji | Pav bhaji (purée de légumes épicée et petits pains) | 孟买蔬菜糊配面包
+@ Vegetarian | India | 45 | en:Pav bhaji | Family
+- Potatoes: 3
+- Cauliflower: 1/2
+- Frozen Peas: 100g
+- Green Pepper: 1
+- Onions: 2
+- Tomatoes: 4
+- Ginger Garlic Paste: 1 tbs
+- Garam Masala: 2 tsp
+- Chilli Powder: 1 tsp
+- Butter: 80g
+- Bread Rolls: 8
+- Lemon: 1
+- Coriander Leaves: 1 handful
+1. Boil the potatoes, cauliflower and peas until soft, then drain and mash.
+2. Melt half the butter, fry one onion and the pepper, add the ginger garlic paste and tomatoes and cook for 8 minutes.
+3. Add the spices and the mashed vegetables with a little water and mash together for 10 minutes.
+4. Toast the halved rolls in the remaining butter.
+5. Serve the bhaji with the rolls, chopped raw onion, lemon wedges and coriander.
+
+# Aloo paratha | Aloo paratha (galettes farcies aux pommes de terre) | 土豆馅饼
+@ Vegetarian | India | 50 | en:Aloo paratha
+- Plain Flour: 300g
+- Potatoes: 4
+- Green Chilli: 2
+- Ground Cumin: 1 tsp
+- Garam Masala: 1 tsp
+- Coriander Leaves: 1 handful
+- Ghee: 4 tbs
+- Yogurt: 300g
+- Salt: 1 tsp
+1. Knead the flour with salt and about 180ml water into a soft dough and rest for 20 minutes.
+2. Boil and mash the potatoes with the chilli, spices, coriander and salt.
+3. Roll a ball of dough, fill it with potato, close it and roll out again gently.
+4. Cook in a hot pan, brushing with ghee, for 2 minutes per side until golden.
+5. Serve with yogurt.
+
+# Sambar | Sambar (lentilles et légumes au tamarin) | 桑巴汤
+@ Vegan | India | 50 | en:Sambar (dish) | Curry,Soup
+- Toor Dal: 200g
+- Tamarind Paste: 2 tbs
+- Carrots: 2
+- Aubergine: 1
+- Onions: 1
+- Tomatoes: 2
+- Curry Powder: 2 tbs
+- Mustard Seeds: 1 tsp
+- Curry Leaves: 10
+- Dried Red Chillies: 2
+- Ground Turmeric: 1/2 tsp
+- Vegetable Oil: 2 tbs
+- Basmati Rice: 300g
+1. Cook the dal in 800ml water with the turmeric for 30 minutes until soft, then whisk.
+2. Simmer the diced vegetables in 500ml water with the tamarind and curry powder for 15 minutes.
+3. Add the dal and simmer for 5 minutes. Cook the rice.
+4. Fry the mustard seeds, curry leaves and chillies in the oil and pour over the sambar.
+
+# Upma | Upma (semoule salée aux légumes) | 印式咸粗粒小麦粥
+@ Vegan | India | 25 | en:Upma | Quick
+- Semolina: 200g
+- Onions: 1
+- Carrots: 1
+- Frozen Peas: 80g
+- Mustard Seeds: 1 tsp
+- Curry Leaves: 10
+- Green Chilli: 2
+- Ginger: 1 tbs grated
+- Cashew Nuts: 40g
+- Vegetable Oil: 3 tbs
+- Lemon: 1
+1. Toast the semolina in a dry pan until fragrant and set aside.
+2. Fry the mustard seeds, cashews, curry leaves, chilli and ginger in the oil, then the onion, carrot and peas.
+3. Add 600ml boiling salted water.
+4. Pour in the semolina while stirring and cook for 3 minutes until fluffy. Serve with lemon.
+
+# Poha | Poha (riz aplati aux épices) | 印式炒扁米
+@ Vegan | India | 20 | en:Poha (rice) | Quick
+- Rice: 250g
+- Onions: 1
+- Potatoes: 1
+- Peanuts: 50g
+- Mustard Seeds: 1 tsp
+- Curry Leaves: 10
+- Green Chilli: 2
+- Ground Turmeric: 1/2 tsp
+- Sugar: 1 tsp
+- Lemon: 1
+- Coriander Leaves: 1 handful
+1. Use flattened rice (poha) if you can find it; rinse it and leave it to soften for 5 minutes. Otherwise use leftover cooked rice.
+2. Fry the peanuts in oil, then the mustard seeds, curry leaves and chilli.
+3. Add the onion and diced potato and cook for 8 minutes.
+4. Add the turmeric, rice, sugar and salt and toss for 3 minutes.
+5. Finish with lemon juice and coriander.
+
+# Khichdi | Khichdi (riz et lentilles) | 印式豆饭
+@ Vegetarian | India | 35 | en:Khichdi | Rice,Family
+- Basmati Rice: 200g
+- Moong Dal: 150g
+- Ghee: 2 tbs
+- Cumin Seeds: 1 tsp
+- Ground Turmeric: 1/2 tsp
+- Ginger: 1 tbs grated
+- Frozen Peas: 100g
+- Carrots: 1
+- Yogurt: 300g
+1. Rinse the rice and dal together.
+2. Fry the cumin seeds and ginger in the ghee, then add the rice, dal, turmeric, diced carrot and peas.
+3. Add 1.2 litres of water and salt and simmer for 25 minutes until soft and porridge-like.
+4. Serve with a spoon of ghee and yogurt.
+
+# Paneer tikka | Paneer tikka (brochettes de fromage indien) | 印度奶酪串
+@ Vegetarian | India | 40 | en:Paneer tikka
+- Paneer: 450g
+- Yogurt: 200g
+- Ginger Garlic Paste: 1 tbs
+- Garam Masala: 2 tsp
+- Chilli Powder: 1 tsp
+- Ground Cumin: 1 tsp
+- Lemon Juice: 2 tbs
+- Green Pepper: 1
+- Red Onions: 1
+- Basmati Rice: 300g
+- Mint: 1 handful
+1. Mix the yogurt, ginger garlic paste, spices and lemon juice. Add the paneer, pepper and onion in cubes and leave for 20 minutes.
+2. Cook the rice.
+3. Thread onto skewers and grill for 12 minutes, turning, until charred in places.
+4. Serve with rice and a little yogurt mixed with chopped mint.
+
+# Paneer butter masala | Paneer butter masala | 黄油奶酪咖喱
+@ Vegetarian | India | 35 | en:Paneer makhani | Curry
+- Paneer: 400g
+- Butter: 50g
+- Onions: 1
+- Tomatoes: 5
+- Cashew Nuts: 40g
+- Ginger Garlic Paste: 1 tbs
+- Garam Masala: 2 tsp
+- Chilli Powder: 1 tsp
+- Double Cream: 100ml
+- Sugar: 1 tsp
+- Fenugreek: 1 tsp
+- Naan Bread: 4
+1. Simmer the onion, tomatoes and cashews in 200ml water for 15 minutes, then blend until smooth.
+2. Melt the butter, fry the ginger garlic paste and spices, then add the sauce and simmer for 5 minutes.
+3. Add the paneer cubes, cream, sugar and crushed fenugreek and simmer for 5 minutes.
+4. Serve with warm naan.
+
+# Kadai paneer | Kadai paneer (paneer aux poivrons) | 印式铁锅奶酪
+@ Vegetarian | India | 30 | en:Kadai paneer | Curry,Quick
+- Paneer: 400g
+- Green Pepper: 2
+- Onions: 2
+- Tomatoes: 3
+- Coriander Seeds: 1 tbs
+- Dried Red Chillies: 3
+- Ginger Garlic Paste: 1 tbs
+- Garam Masala: 1 tsp
+- Vegetable Oil: 3 tbs
+- Naan Bread: 4
+1. Toast and coarsely grind the coriander seeds and dried chillies.
+2. Fry one sliced onion and the peppers in large pieces for 3 minutes and set aside.
+3. Fry the other onion, then the ginger garlic paste, ground spices and chopped tomatoes for 8 minutes.
+4. Add the paneer, peppers and garam masala and toss for 3 minutes. Serve with naan.
+
+# Shahi paneer | Shahi paneer (paneer à la crème et aux noix de cajou) | 皇家奶酪咖喱
+@ Vegetarian | India | 35 | en:Shahi paneer | Curry
+- Paneer: 400g
+- Onions: 2
+- Cashew Nuts: 50g
+- Yogurt: 150g
+- Double Cream: 150ml
+- Ginger Garlic Paste: 1 tbs
+- Cardamom: 4
+- Garam Masala: 1 tsp
+- Saffron: 1 pinch
+- Ghee: 2 tbs
+- Basmati Rice: 300g
+1. Simmer the onions and cashews in water for 10 minutes, then blend to a paste.
+2. Fry the cardamom and ginger garlic paste in the ghee, add the paste and cook for 5 minutes.
+3. Stir in the yogurt, cream, saffron and garam masala.
+4. Add the paneer and simmer for 5 minutes. Serve with rice.
+
+# Malai kofta | Malai kofta (boulettes de légumes à la crème) | 奶油蔬菜丸咖喱
+@ Vegetarian | India | 60 | en:Malai kofta | Curry
+- Potatoes: 3
+- Paneer: 200g
+- Cornstarch: 3 tbs
+- Raisins: 30g
+- Onions: 2
+- Tomatoes: 4
+- Cashew Nuts: 50g
+- Double Cream: 100ml
+- Ginger Garlic Paste: 1 tbs
+- Garam Masala: 2 tsp
+- Vegetable Oil: 400ml
+- Basmati Rice: 300g
+1. Mash the boiled potatoes with the grated paneer, cornstarch and salt. Shape 12 balls around a raisin each.
+2. Deep-fry the koftas until golden and drain.
+3. Simmer the onions, tomatoes and cashews in water for 15 minutes and blend.
+4. Fry the ginger garlic paste and garam masala, add the sauce and cream and simmer for 5 minutes.
+5. Pour the sauce over the koftas just before serving with rice.
+
+# Dum aloo | Dum aloo (petites pommes de terre mijotées) | 印式焖土豆
+@ Vegetarian | India | 45 | en:Dum aloo | Curry
+- Baby New Potatoes: 800g
+- Yogurt: 200g
+- Onions: 1
+- Tomatoes: 2
+- Ginger Garlic Paste: 1 tbs
+- Fennel Seeds: 1 tsp
+- Ground Ginger: 1 tsp
+- Chilli Powder: 2 tsp
+- Garam Masala: 1 tsp
+- Vegetable Oil: 4 tbs
+- Naan Bread: 4
+1. Parboil the potatoes for 10 minutes, peel them, prick them and fry until golden.
+2. Fry the onion, ginger garlic paste and fennel seeds, then add the tomatoes and cook for 5 minutes.
+3. Whisk the yogurt with the chilli and ground ginger and stir in off the heat.
+4. Add the potatoes and 200ml water, cover and cook gently for 15 minutes. Finish with garam masala and serve with naan.
+
+# Aloo matar | Aloo matar (pommes de terre et petits pois) | 土豆豌豆咖喱
+@ Vegan | India | 35 | en:Aloo matar | Curry,Quick
+- Potatoes: 4
+- Frozen Peas: 250g
+- Onions: 1
+- Chopped Tomatoes: 400g
+- Ginger Garlic Paste: 1 tbs
+- Cumin Seeds: 1 tsp
+- Ground Turmeric: 1/2 tsp
+- Ground Coriander: 2 tsp
+- Garam Masala: 1 tsp
+- Vegetable Oil: 3 tbs
+- Basmati Rice: 300g
+1. Fry the cumin seeds, then the onion until golden.
+2. Add the ginger garlic paste and spices, then the tomatoes, and cook for 5 minutes.
+3. Add the diced potatoes and 400ml water and simmer for 15 minutes.
+4. Add the peas, cook for 5 minutes and finish with garam masala. Serve with rice.
+
+# Navratan korma | Navratan korma (korma aux neuf légumes) | 九宝蔬菜科尔马
+@ Vegetarian | India | 45 | en:Navratan korma | Curry
+- Carrots: 2
+- Cauliflower: 1/2
+- Green Beans: 150g
+- Frozen Peas: 100g
+- Potatoes: 2
+- Paneer: 200g
+- Cashew Nuts: 50g
+- Onions: 1
+- Double Cream: 150ml
+- Yogurt: 100g
+- Garam Masala: 2 tsp
+- Ghee: 2 tbs
+- Basmati Rice: 300g
+1. Steam or boil the diced vegetables until just tender.
+2. Simmer the onion and cashews in water for 10 minutes and blend.
+3. Fry the paste with the garam masala in the ghee for 3 minutes, then stir in the yogurt and cream.
+4. Add the vegetables and paneer cubes and simmer for 5 minutes. Serve with rice.
+
+# Chicken 65 | Poulet 65 (poulet frit épicé) | 65号辣炸鸡
+@ Chicken | India | 40 | en:Chicken 65
+- Chicken Thighs: 700g
+- Yogurt: 100g
+- Ginger Garlic Paste: 1 tbs
+- Chilli Powder: 2 tsp
+- Ground Turmeric: 1/2 tsp
+- Rice Flour: 3 tbs
+- Cornstarch: 2 tbs
+- Curry Leaves: 15
+- Green Chilli: 3
+- Vegetable Oil: 400ml
+- Lemon: 1
+- Basmati Rice: 300g
+1. Marinate the chicken pieces with the yogurt, ginger garlic paste, spices and salt for 20 minutes.
+2. Add the rice flour and cornstarch and mix.
+3. Deep-fry the chicken in batches until crisp and drain. Cook the rice.
+4. Fry the curry leaves and slit chillies in 1 tbs oil, toss with the chicken and squeeze over the lemon.
+
+# Chicken Chettinad | Poulet chettinad | 切蒂纳德咖喱鸡
+@ Chicken | India | 55 | en:Chicken Chettinad | Curry
+- Chicken Thighs: 800g
+- Onions: 2
+- Tomatoes: 2
+- Desiccated Coconut: 40g
+- Coriander Seeds: 1 tbs
+- Fennel Seeds: 1 tsp
+- Peppercorns: 1 tsp
+- Dried Red Chillies: 5
+- Cinnamon Stick: 1
+- Curry Leaves: 15
+- Ginger Garlic Paste: 1 tbs
+- Vegetable Oil: 3 tbs
+- Basmati Rice: 300g
+1. Toast the coconut, coriander, fennel, peppercorns, chillies and cinnamon, then grind with a little water to a paste.
+2. Fry the onions and curry leaves until golden, add the ginger garlic paste and tomatoes and cook for 5 minutes.
+3. Add the chicken and the spice paste and stir for 5 minutes.
+4. Add 300ml water and simmer for 25 minutes. Serve with rice.
+
+# Hyderabadi chicken biryani | Biryani de Hyderabad au poulet | 海德拉巴鸡肉香饭
+@ Chicken | India | 90 | en:Hyderabadi biryani | Rice,Family
+- Chicken Thighs: 800g
+- Basmati Rice: 400g
+- Yogurt: 200g
+- Onions: 3
+- Ginger Garlic Paste: 2 tbs
+- Biryani Masala: 2 tbs
+- Chilli Powder: 1 tsp
+- Mint: 1 handful
+- Coriander Leaves: 1 handful
+- Saffron: 1 pinch
+- Milk: 4 tbs
+- Ghee: 4 tbs
+- Cardamom: 4
+- Bay Leaf: 2
+1. Marinate the chicken with the yogurt, ginger garlic paste, biryani masala, chilli and half the herbs for 1 hour.
+2. Fry the sliced onions in ghee until deep brown and crisp.
+3. Boil the rice with the cardamom and bay leaves for 6 minutes, until 70% cooked, and drain.
+4. Put the chicken in a heavy pan, add half the onions, then the rice, the remaining herbs and onions and the saffron soaked in milk.
+5. Cover tightly and cook over very low heat for 35 minutes. Leave to rest 10 minutes before opening.
+
+# Pork vindaloo | Vindaloo de porc | 温达卢咖喱猪肉
+@ Pork | India | 120 | en:Vindaloo | Curry
+- Pork Shoulder: 900g
+- White Wine Vinegar: 80ml
+- Dried Red Chillies: 10
+- Garlic: 8 cloves
+- Ginger: 30g
+- Cumin Seeds: 2 tsp
+- Cloves: 6
+- Cinnamon Stick: 1
+- Peppercorns: 1 tsp
+- Onions: 2
+- Brown Sugar: 1 tbs
+- Basmati Rice: 300g
+1. Soak the chillies in the vinegar, then blend with the garlic, ginger and whole spices to a paste.
+2. Coat the pork cubes with the paste and marinate for at least 1 hour.
+3. Fry the onions until golden, add the pork and brown it.
+4. Add the sugar and 300ml water and simmer covered for 1 hour 15 until tender. Serve with rice.
+
+# Nihari | Nihari (bœuf mijoté de Delhi) | 尼哈里炖牛肉
+@ Beef | Pakistan | 180 | en:Nihari | Curry,Family
+- Beef Shin: 1kg
+- Onions: 2
+- Ginger Garlic Paste: 2 tbs
+- Garam Masala: 2 tsp
+- Fennel Seeds: 1 tsp
+- Ground Ginger: 1 tsp
+- Chilli Powder: 2 tsp
+- Plain Flour: 3 tbs
+- Ghee: 4 tbs
+- Ginger: 30g
+- Lemon: 2
+- Naan Bread: 4
+1. Fry the onions in ghee until brown and remove half for garnish.
+2. Add the beef and ginger garlic paste and brown, then the spices.
+3. Add 1.5 litres of water and simmer covered for 2 hours 30, until the meat falls apart.
+4. Whisk the flour with a little water and stir into the stew to thicken. Cook for 10 minutes.
+5. Serve with fried onions, ginger matchsticks, lemon and naan.
+
+# Seekh kebab | Seekh kebab (brochettes d'agneau haché) | 印式烤肉串
+@ Lamb | India | 35 | en:Seekh kebab
+- Lamb Mince: 600g
+- Onions: 1
+- Ginger Garlic Paste: 1 tbs
+- Green Chilli: 2
+- Garam Masala: 2 tsp
+- Ground Cumin: 1 tsp
+- Coriander Leaves: 1 handful
+- Mint: 1 handful
+- Naan Bread: 4
+- Yogurt: 200g
+- Cucumber: 1
+- Red Onions: 1
+1. Mix the lamb with the grated onion squeezed dry, ginger garlic paste, chilli, spices and half the herbs.
+2. Shape long sausages around skewers.
+3. Grill for 10 minutes, turning, until browned.
+4. Serve in naan with yogurt mixed with the remaining mint, cucumber and sliced red onion.
+
+# Fish molee | Fish molee (poisson au lait de coco du Kerala) | 喀拉拉椰奶鱼
+@ Seafood | India | 35 | en:Fish molee | Curry,Quick
+- White Fish Fillets: 600g
+- Coconut Milk: 400ml
+- Onions: 1
+- Tomatoes: 2
+- Green Chilli: 3
+- Ginger: 1 tbs grated
+- Garlic: 3 cloves
+- Curry Leaves: 15
+- Ground Turmeric: 1 tsp
+- Black Pepper: 1 tsp
+- Coconut Oil: 2 tbs
+- Basmati Rice: 300g
+1. Rub the fish with turmeric and salt.
+2. Fry the onion, ginger, garlic, chillies and curry leaves in the coconut oil until soft.
+3. Add half the coconut milk mixed with 100ml water and the pepper and bring to a simmer.
+4. Add the fish and tomato slices and cook for 6 minutes. Pour in the remaining coconut milk and heat through. Serve with rice.
+
+# Chingri malai curry | Chingri malai (crevettes au lait de coco du Bengale) | 孟加拉椰奶虾
+@ Seafood | Bangladesh | 30 | en:Chingri malai curry | Curry,Quick
+- Raw King Prawns: 600g
+- Coconut Milk: 400ml
+- Onions: 2
+- Ginger Garlic Paste: 1 tbs
+- Ground Turmeric: 1 tsp
+- Chilli Powder: 1 tsp
+- Garam Masala: 1 tsp
+- Cinnamon Stick: 1
+- Cardamom: 3
+- Ghee: 2 tbs
+- Sugar: 1 tsp
+- Basmati Rice: 300g
+1. Rub the prawns with turmeric and salt and sear them quickly in the ghee. Set aside.
+2. Fry the whole spices, then the grated onion until golden, and the ginger garlic paste.
+3. Add the chilli powder and coconut milk and simmer for 5 minutes.
+4. Return the prawns with the sugar and garam masala and cook for 3 minutes. Serve with rice.
+
+# Kosha mangsho | Kosha mangsho (agneau bengali mijoté) | 孟加拉干烧羊肉
+@ Lamb | India | 120 | en:Kosha mangsho | Curry,Family
+- Lamb Shoulder: 900g
+- Yogurt: 200g
+- Onions: 3
+- Ginger Garlic Paste: 2 tbs
+- Ground Turmeric: 1 tsp
+- Chilli Powder: 2 tsp
+- Ground Cumin: 2 tsp
+- Garam Masala: 2 tsp
+- Potatoes: 3
+- Mustard Seeds: 1 tsp
+- Vegetable Oil: 5 tbs
+- Basmati Rice: 300g
+1. Marinate the lamb with the yogurt, ginger garlic paste, turmeric and chilli for 1 hour.
+2. Fry the onions in the oil until brown, add the lamb and the cumin.
+3. Cook over medium heat, stirring often, for 30 minutes until the oil separates and the meat is dark.
+4. Add the potatoes and 400ml hot water and simmer covered for 45 minutes. Finish with garam masala and serve with rice.
+
+# Kadhi pakora | Kadhi pakora (sauce yaourt et beignets d'oignon) | 酸奶咖喱配炸蔬菜球
+@ Vegetarian | India | 50 | en:Kadhi | Curry
+- Yogurt: 400g
+- Chickpea Flour: 150g
+- Onions: 2
+- Ground Turmeric: 1 tsp
+- Chilli Powder: 1 tsp
+- Cumin Seeds: 1 tsp
+- Mustard Seeds: 1 tsp
+- Curry Leaves: 10
+- Dried Red Chillies: 2
+- Vegetable Oil: 300ml
+- Basmati Rice: 300g
+1. Whisk the yogurt with 60g chickpea flour, the turmeric and 800ml water. Simmer for 25 minutes, stirring often.
+2. Mix the remaining flour with the sliced onions, chilli powder, salt and a little water. Fry spoonfuls until crisp.
+3. Fry the cumin, mustard seeds, curry leaves and dried chillies in 2 tbs oil and pour over the kadhi.
+4. Add the pakoras and serve with rice.
+
+# Vegetable pakora | Pakoras de légumes | 印式蔬菜炸团
+@ Vegan | India | 30 | en:Pakora | Starter
+- Chickpea Flour: 200g
+- Onions: 2
+- Potatoes: 1
+- Spinach: 100g
+- Green Chilli: 2
+- Ground Cumin: 1 tsp
+- Chilli Powder: 1 tsp
+- Ground Turmeric: 1/2 tsp
+- Vegetable Oil: 500ml
+- Tomato Ketchup: 4 tbs
+1. Mix the flour with the spices, salt and about 150ml water to a thick batter.
+2. Stir in the sliced onions, thin potato sticks, shredded spinach and chilli.
+3. Deep-fry spoonfuls at 175°C for 4 minutes until crisp.
+4. Drain and serve hot with ketchup or chutney.
+
+# Samosas | Samosas aux pommes de terre et petits pois | 咖喱角
+@ Vegan | India | 70 | en:Samosa | Starter
+- Plain Flour: 250g
+- Vegetable Oil: 500ml
+- Potatoes: 4
+- Frozen Peas: 100g
+- Cumin Seeds: 1 tsp
+- Garam Masala: 2 tsp
+- Green Chilli: 2
+- Ginger: 1 tbs grated
+- Coriander Leaves: 1 handful
+- Lemon: 1
+1. Rub 4 tbs oil into the flour with a pinch of salt and add water to make a firm dough. Rest for 20 minutes.
+2. Fry the cumin, ginger and chilli, add the boiled diced potatoes, peas, garam masala, coriander and lemon juice.
+3. Roll the dough into ovals, cut in half, shape each half into a cone, fill and seal.
+4. Fry slowly in medium-hot oil for 10 minutes until golden and crisp.
+
+# Aloo tikki | Aloo tikki (galettes de pommes de terre épicées) | 印式土豆饼
+@ Vegetarian | India | 35 | en:Aloo tikki | Starter
+- Potatoes: 5
+- Frozen Peas: 80g
+- Breadcrumbs: 40g
+- Green Chilli: 2
+- Garam Masala: 1 tsp
+- Ground Cumin: 1 tsp
+- Coriander Leaves: 1 handful
+- Vegetable Oil: 4 tbs
+- Yogurt: 200g
+- Tamarind Paste: 2 tbs
+1. Mash the boiled potatoes with the peas, breadcrumbs, chilli, spices, coriander and salt.
+2. Shape into 12 patties.
+3. Pan-fry for 4 minutes per side until crisp.
+4. Serve with yogurt and the tamarind paste mixed with a little sugar and water.
+
+# Jeera rice | Riz au cumin (jeera rice) | 孜然饭
+@ Vegan | India | 25 | en:Jeera rice | Rice,Side
+- Basmati Rice: 300g
+- Cumin Seeds: 2 tsp
+- Bay Leaf: 1
+- Cardamom: 3
+- Vegetable Oil: 2 tbs
+- Salt: 1 tsp
+1. Rinse and soak the rice for 15 minutes.
+2. Fry the cumin seeds, bay leaf and cardamom in the oil.
+3. Add the drained rice and stir for 1 minute, then 500ml water and the salt.
+4. Cover and cook over low heat for 12 minutes. Rest for 5 minutes and fluff.
+
+# Lemon rice | Riz au citron | 柠檬饭
+@ Vegan | India | 20 | en:Lemon rice | Rice,Quick
+- Basmati Rice: 300g
+- Lemon: 2
+- Peanuts: 50g
+- Mustard Seeds: 1 tsp
+- Curry Leaves: 12
+- Green Chilli: 2
+- Ground Turmeric: 1/2 tsp
+- Vegetable Oil: 3 tbs
+1. Cook the rice and let it cool slightly.
+2. Fry the peanuts, mustard seeds, curry leaves and chilli in the oil.
+3. Add the turmeric, then the rice and salt.
+4. Toss with the lemon juice.
+
+# Cucumber raita | Raïta au concombre | 黄瓜酸奶酱
+@ Vegetarian | India | 10 | en:Raita | Quick,Side
+- Yogurt: 400g
+- Cucumber: 1
+- Ground Cumin: 1 tsp
+- Mint: 1 handful
+- Salt: 1/2 tsp
+1. Grate the cucumber and squeeze out the water.
+2. Mix with the yogurt, toasted cumin, chopped mint and salt.
+3. Chill until serving.
+
+# Chicken tikka | Poulet tikka | 印式烤鸡块
+@ Chicken | India | 45 | en:Chicken tikka
+- Chicken Breasts: 4
+- Yogurt: 200g
+- Ginger Garlic Paste: 1 tbs
+- Garam Masala: 2 tsp
+- Chilli Powder: 1 tsp
+- Paprika: 2 tsp
+- Ground Cumin: 1 tsp
+- Lemon: 1
+- Red Onions: 1
+- Naan Bread: 4
+- Lettuce: 1
+1. Mix the yogurt, ginger garlic paste, spices, lemon juice and salt. Add the chicken cubes and marinate for at least 30 minutes.
+2. Thread onto skewers.
+3. Grill at high heat for 12 minutes, turning, until charred at the edges.
+4. Serve with naan, lettuce and sliced red onion.
+
+# Egg bhurji | Egg bhurji (œufs brouillés épicés) | 印式辣炒蛋
+@ Vegetarian | India | 15 | en:Egg bhurji | Quick
+- Eggs: 8
+- Onions: 1
+- Tomatoes: 2
+- Green Chilli: 2
+- Ground Turmeric: 1/2 tsp
+- Chilli Powder: 1/2 tsp
+- Garam Masala: 1/2 tsp
+- Butter: 30g
+- Coriander Leaves: 1 handful
+- Naan Bread: 4
+1. Fry the onion and chilli in the butter, then add the tomatoes and spices and cook for 3 minutes.
+2. Pour in the beaten eggs and stir over low heat until softly set.
+3. Add the coriander and serve with warm naan.
+
+# Bisi bele bath | Bisi bele bath (riz, lentilles et légumes du Karnataka) | 卡纳塔克豆饭
+@ Vegetarian | India | 50 | en:Bisi bele bath | Rice
+- Basmati Rice: 200g
+- Toor Dal: 150g
+- Carrots: 2
+- Green Beans: 100g
+- Frozen Peas: 80g
+- Tamarind Paste: 2 tbs
+- Curry Powder: 2 tbs
+- Desiccated Coconut: 3 tbs
+- Mustard Seeds: 1 tsp
+- Curry Leaves: 10
+- Cashew Nuts: 40g
+- Ghee: 3 tbs
+1. Cook the rice and dal together in 1.3 litres of water for 25 minutes until very soft.
+2. Cook the diced vegetables in a little water with the tamarind, curry powder and coconut for 10 minutes.
+3. Mix everything into a soft, porridge-like consistency, adding water if needed.
+4. Fry the mustard seeds, curry leaves and cashews in the ghee and pour over.
+
+# Chicken xacuti | Poulet xacuti (Goa) | 果阿椰香咖喱鸡
+@ Chicken | India | 60 | en:Xacuti | Curry
+- Chicken Thighs: 800g
+- Desiccated Coconut: 80g
+- Onions: 2
+- Coriander Seeds: 1 tbs
+- Poppy Seeds: 1 tbs
+- Dried Red Chillies: 6
+- Cloves: 4
+- Cinnamon Stick: 1
+- Star Anise: 1
+- Ginger Garlic Paste: 1 tbs
+- Tamarind Paste: 1 tbs
+- Vegetable Oil: 3 tbs
+- Basmati Rice: 300g
+1. Toast the coconut and whole spices until golden, then blend with water to a smooth paste.
+2. Fry the onions until golden, add the ginger garlic paste and the chicken and brown it.
+3. Add the spice paste and 300ml water and simmer for 25 minutes.
+4. Stir in the tamarind and simmer for 5 minutes. Serve with rice.
+
+# Chicken cafreal | Poulet cafreal (Goa, aux herbes vertes) | 果阿青酱烤鸡
+@ Chicken | India | 60 | en:Cafreal
+- Chicken Legs: 6
+- Coriander Leaves: 2 bunches
+- Mint: 1 handful
+- Green Chilli: 4
+- Garlic: 6 cloves
+- Ginger: 30g
+- Lime: 2
+- White Wine Vinegar: 2 tbs
+- Cumin Seeds: 1 tsp
+- Peppercorns: 1 tsp
+- Cloves: 4
+- Potatoes: 4
+1. Blend the herbs, chilli, garlic, ginger, lime juice, vinegar and whole spices to a green paste.
+2. Slash the chicken and marinate in the paste for at least 1 hour.
+3. Pan-fry the chicken for 10 minutes until browned, then add a splash of water, cover and cook for 20 minutes.
+4. Serve with roast or fried potatoes and lime wedges.
+
+# Bhuna khichuri | Bhuna khichuri (riz et lentilles du Bangladesh) | 孟加拉炒豆饭
+@ Vegetarian | Bangladesh | 45 | en:Bhuna khichuri | Rice,Family
+- Basmati Rice: 250g
+- Moong Dal: 150g
+- Onions: 2
+- Ginger Garlic Paste: 1 tbs
+- Ground Turmeric: 1 tsp
+- Chilli Powder: 1 tsp
+- Cinnamon Stick: 1
+- Cardamom: 3
+- Bay Leaf: 2
+- Ghee: 4 tbs
+- Eggs: 4
+1. Dry-roast the dal until fragrant and rinse it with the rice.
+2. Fry the onions in ghee until brown, add the whole spices and ginger garlic paste.
+3. Add the rice, dal and ground spices and fry for 5 minutes.
+4. Add 1 litre of hot water and salt and cook covered over low heat for 20 minutes.
+5. Serve with fried or boiled eggs.
+
+# Mustard fish curry | Poisson à la moutarde (shorshe) | 孟加拉芥末鱼
+@ Seafood | Bangladesh | 30 | en:Shorshe ilish | Curry,Quick
+- Mackerel: 4
+- Mustard Seeds: 4 tbs
+- Green Chilli: 4
+- Ground Turmeric: 1 tsp
+- Mustard: 1 tbs
+- Vegetable Oil: 4 tbs
+- Basmati Rice: 300g
+1. Soak the mustard seeds in water for 15 minutes and grind them with 2 chillies and a pinch of salt.
+2. Cut the fish into pieces and rub with turmeric and salt.
+3. Lightly fry the fish in the oil.
+4. Add the mustard paste, 200ml water and the remaining slit chillies and simmer for 8 minutes. Serve with rice.
+
+# Kacchi biryani | Kacchi biryani (agneau et riz cuits ensemble) | 孟加拉羊肉香饭
+@ Lamb | Bangladesh | 120 | en:Kacchi biryani | Rice,Family
+- Lamb Shoulder: 900g
+- Basmati Rice: 450g
+- Yogurt: 250g
+- Onions: 3
+- Potatoes: 3
+- Ginger Garlic Paste: 2 tbs
+- Biryani Masala: 2 tbs
+- Saffron: 1 pinch
+- Milk: 4 tbs
+- Ghee: 5 tbs
+- Rose Water: 1 tsp
+1. Marinate the lamb with the yogurt, ginger garlic paste and biryani masala for at least 2 hours.
+2. Fry the sliced onions in ghee until crisp and the halved potatoes until golden.
+3. Boil the rice for 5 minutes and drain.
+4. Layer the meat, potatoes, half the onions and the rice in a heavy pan. Add the saffron milk, rose water and remaining ghee.
+5. Seal tightly and cook for 10 minutes over medium heat, then 1 hour over very low heat.
+
+# Murgh musallam | Murgh musallam (poulet entier farci aux épices) | 莫卧儿整鸡
+@ Chicken | India | 120 | en:Murgh musallam | Curry,Family
+- Chicken: 1
+- Eggs: 4
+- Yogurt: 250g
+- Onions: 3
+- Cashew Nuts: 50g
+- Ginger Garlic Paste: 2 tbs
+- Garam Masala: 2 tsp
+- Chilli Powder: 2 tsp
+- Saffron: 1 pinch
+- Ghee: 4 tbs
+- Naan Bread: 4
+1. Marinate the chicken in half the yogurt, ginger garlic paste and spices for 2 hours.
+2. Stuff the chicken with the hard-boiled eggs.
+3. Fry the onions in ghee until brown and blend with the cashews and the remaining yogurt.
+4. Brown the chicken in the pot, add the sauce, saffron and 300ml water.
+5. Cover and cook gently for 1 hour, basting, then serve with naan.
+
+# Chana dal | Chana dal (pois cassés jaunes au tadka) | 印式黄豆瓣汤
+@ Vegan | India | 50 | en:Chana dal | Curry
+- Yellow Split Peas: 250g
+- Onions: 1
+- Tomatoes: 2
+- Ginger Garlic Paste: 1 tbs
+- Ground Turmeric: 1 tsp
+- Cumin Seeds: 1 tsp
+- Garam Masala: 1 tsp
+- Dried Red Chillies: 2
+- Vegetable Oil: 3 tbs
+- Basmati Rice: 300g
+1. Simmer the split peas with the turmeric in 1 litre of water for 40 minutes until soft.
+2. Fry the cumin and chillies, then the onion, ginger garlic paste and tomatoes for 8 minutes.
+3. Stir into the dal with the garam masala and simmer for 5 minutes. Serve with rice.
+
+# Masoor dal | Masoor dal (lentilles corail) | 红扁豆汤
+@ Vegan | India | 30 | en:Masoor dal | Curry,Quick
+- Lentils: 250g
+- Onions: 1
+- Tomatoes: 2
+- Garlic: 4 cloves
+- Ginger: 1 tbs grated
+- Ground Turmeric: 1 tsp
+- Cumin Seeds: 1 tsp
+- Chilli Powder: 1/2 tsp
+- Vegetable Oil: 3 tbs
+- Coriander Leaves: 1 handful
+- Basmati Rice: 300g
+1. Rinse the red lentils and simmer with the turmeric in 900ml water for 20 minutes.
+2. Fry the cumin seeds, then the onion, garlic, ginger, tomatoes and chilli.
+3. Stir into the lentils and finish with coriander. Serve with rice.
+
+# Mutton curry | Curry d'agneau à la maison | 家常咖喱羊肉
+@ Lamb | India | 100 | en:Mutton curry | Curry,Family
+- Lamb Shoulder: 900g
+- Onions: 3
+- Tomatoes: 3
+- Yogurt: 150g
+- Ginger Garlic Paste: 2 tbs
+- Ground Coriander: 2 tsp
+- Chilli Powder: 2 tsp
+- Ground Turmeric: 1 tsp
+- Garam Masala: 2 tsp
+- Bay Leaf: 2
+- Vegetable Oil: 4 tbs
+- Basmati Rice: 300g
+1. Fry the bay leaves and onions until deep brown.
+2. Add the ginger garlic paste, lamb and ground spices and fry for 10 minutes.
+3. Add the tomatoes and yogurt and cook until the oil separates.
+4. Add 500ml water and simmer covered for 1 hour 15. Finish with garam masala and serve with rice.
+
+# Gobi manchurian | Gobi manchurian (chou-fleur frit sauce indo-chinoise) | 印式中式炸花菜
+@ Vegan | India | 40 | en:Gobi manchurian
+- Cauliflower: 1
+- Plain Flour: 60g
+- Cornstarch: 60g
+- Garlic: 5 cloves
+- Ginger: 1 tbs grated
+- Green Chilli: 2
+- Spring Onions: 4
+- Soy Sauce: 3 tbs
+- Tomato Ketchup: 3 tbs
+- Chilli Sauce: 2 tbs
+- Vegetable Oil: 500ml
+- Basmati Rice: 300g
+1. Make a batter with the flour, cornstarch, salt and water. Coat the florets and deep-fry until crisp.
+2. Cook the rice.
+3. Fry the garlic, ginger, chilli and spring onions in 2 tbs oil.
+4. Add the soy sauce, ketchup, chilli sauce and 4 tbs water, then toss the cauliflower in the sauce.
+
+# Chilli chicken | Poulet chilli indo-chinois | 印式辣子鸡
+@ Chicken | India | 35 | en:Chilli chicken | Quick
+- Chicken Thighs: 600g
+- Cornstarch: 4 tbs
+- Eggs: 1
+- Green Pepper: 2
+- Onions: 1
+- Green Chilli: 3
+- Garlic: 5 cloves
+- Soy Sauce: 3 tbs
+- Chilli Sauce: 2 tbs
+- White Vinegar: 1 tbs
+- Spring Onions: 3
+- Vegetable Oil: 400ml
+- Basmati Rice: 300g
+1. Coat the chicken pieces in egg and cornstarch and deep-fry until crisp.
+2. Cook the rice.
+3. Stir-fry the garlic, chilli, onion and pepper in 2 tbs oil for 2 minutes.
+4. Add the soy sauce, chilli sauce and vinegar, toss in the chicken and spring onions.
+
+# Hakka noodles | Nouilles hakka indo-chinoises | 印式客家炒面
+@ Vegetarian | India | 25 | en:Hakka noodles | Quick
+- Egg Noodles: 400g
+- Cabbage: 200g
+- Carrots: 2
+- Green Pepper: 1
+- Spring Onions: 4
+- Garlic: 4 cloves
+- Soy Sauce: 3 tbs
+- Chilli Sauce: 1 tbs
+- White Vinegar: 1 tbs
+- Vegetable Oil: 3 tbs
+1. Cook the noodles, rinse in cold water and toss with a little oil.
+2. Stir-fry the garlic and shredded vegetables over high heat for 3 minutes.
+3. Add the noodles, soy sauce, chilli sauce and vinegar and toss for 2 minutes.
+4. Finish with spring onions.
+
+# Ven pongal | Ven pongal (riz et lentilles au poivre) | 印式胡椒豆饭
+@ Vegetarian | India | 35 | en:Pongal (dish) | Rice
+- Rice: 200g
+- Moong Dal: 100g
+- Ghee: 4 tbs
+- Peppercorns: 1 tsp
+- Cumin Seeds: 1 tsp
+- Ginger: 1 tbs grated
+- Curry Leaves: 10
+- Cashew Nuts: 40g
+- Salt: 1 tsp
+1. Dry-roast the dal, then cook it with the rice in 1.2 litres of water for 25 minutes until creamy.
+2. Fry the crushed peppercorns, cumin, ginger, curry leaves and cashews in the ghee.
+3. Stir into the rice with the salt and serve hot.
+
+# Avial | Avial (légumes à la noix de coco et au yaourt) | 喀拉拉椰子酸奶炖菜
+@ Vegetarian | India | 35 | en:Avial | Curry
+- Carrots: 2
+- Green Beans: 150g
+- Potatoes: 2
+- Courgettes: 1
+- Desiccated Coconut: 80g
+- Green Chilli: 3
+- Cumin Seeds: 1 tsp
+- Yogurt: 150g
+- Curry Leaves: 15
+- Coconut Oil: 2 tbs
+- Ground Turmeric: 1/2 tsp
+- Basmati Rice: 300g
+1. Cut the vegetables into batons and cook them in a little water with turmeric and salt for 10 minutes.
+2. Blend the coconut with the chillies and cumin and a little water.
+3. Add the paste to the vegetables and cook for 5 minutes.
+4. Stir in the yogurt off the heat, then the coconut oil and curry leaves. Serve with rice.
+
+# Cabbage thoran | Thoran de chou (chou sauté à la noix de coco) | 椰子炒卷心菜
+@ Vegan | India | 20 | en:Thoran | Quick,Side
+- Cabbage: 500g
+- Desiccated Coconut: 60g
+- Mustard Seeds: 1 tsp
+- Curry Leaves: 10
+- Green Chilli: 2
+- Ground Turmeric: 1/2 tsp
+- Coconut Oil: 2 tbs
+1. Pop the mustard seeds in the coconut oil, add the curry leaves and chilli.
+2. Add the finely shredded cabbage, turmeric and salt, cover and cook for 5 minutes.
+3. Stir in the coconut and cook for 2 minutes uncovered.
+
+# Appam with vegetable stew | Appam et ragoût de légumes au coco | 喀拉拉米饼配椰奶炖菜
+@ Vegan | India | 60 | en:Appam
+- Rice Flour: 250g
+- Coconut Milk: 600ml
+- Yeast: 5g
+- Sugar: 2 tbs
+- Potatoes: 2
+- Carrots: 2
+- Green Beans: 100g
+- Onions: 1
+- Ginger: 1 tbs grated
+- Green Chilli: 2
+- Curry Leaves: 10
+- Cinnamon Stick: 1
+1. Mix the rice flour, 200ml coconut milk, yeast, sugar and 200ml warm water and leave to ferment for 4 hours.
+2. Cook the onion, ginger, chilli, curry leaves and cinnamon, add the diced vegetables and 200ml water and simmer for 15 minutes.
+3. Add the remaining coconut milk and heat gently.
+4. Pour a ladle of batter into a hot pan, swirl so the edges are thin, cover and cook for 2 minutes.
+5. Serve the appams with the stew.
+
+# Onion uttapam | Uttapam aux oignons | 洋葱厚米饼
+@ Vegetarian | India | 30 | en:Uttapam
+- Rice Flour: 200g
+- Semolina: 50g
+- Yogurt: 150g
+- Onions: 2
+- Tomatoes: 2
+- Green Chilli: 2
+- Coriander Leaves: 1 handful
+- Vegetable Oil: 4 tbs
+- Desiccated Coconut: 50g
+1. Mix the rice flour, semolina, yogurt, salt and water to a thick batter and rest for 15 minutes.
+2. Pour a thick pancake into a hot oiled pan.
+3. Scatter with chopped onion, tomato, chilli and coriander and press gently.
+4. Cook for 3 minutes per side and serve with coconut mixed with a little yogurt.
+
+# Pesarattu | Pesarattu (crêpes de lentilles vertes) | 绿豆煎饼
+@ Vegan | India | 30 | en:Pesarattu
+- Moong Dal: 250g
+- Ginger: 1 tbs grated
+- Green Chilli: 2
+- Cumin Seeds: 1 tsp
+- Onions: 1
+- Coriander Leaves: 1 handful
+- Vegetable Oil: 4 tbs
+- Desiccated Coconut: 50g
+1. Soak the dal for at least 4 hours, then blend with the ginger, chillies, cumin, salt and a little water.
+2. Spread a ladle of batter thinly in a hot oiled pan.
+3. Sprinkle with chopped onion and coriander and cook until crisp.
+4. Fold and serve with coconut chutney.
