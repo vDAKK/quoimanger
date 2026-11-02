@@ -1,6 +1,6 @@
 # QuoiManger
 
-Menu de la semaine personnalisé, façon HelloFresh, à partir de la base gratuite [TheMealDB](https://www.themealdb.com) (~790 plats) et de ~600 recettes maison (`data/recipes/`).
+Menu de la semaine personnalisé, façon HelloFresh, à partir de la base gratuite [TheMealDB](https://www.themealdb.com) (~790 plats) et de ~680 recettes maison (`data/recipes/`).
 
 ## Lancer
 

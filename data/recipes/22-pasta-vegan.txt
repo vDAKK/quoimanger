@@ -1,0 +1,282 @@
+// Pâtes et plats végétaliens, toutes cuisines. Format : voir tools/build-recipes.js
+
+# Baked ziti | Penne au four à l’italo-américaine | 美式焗通心粉
+@ Pasta | United States | 50 | en:Baked ziti | Pasta,Bake,Family
+- Penne Rigate: 400g
+- Italian Fennel Sausages: 400g
+- Onions: 1
+- Garlic: 2 cloves
+- Passata: 700ml
+- Ricotta: 250g
+- Mozzarella: 250g
+- Parmesan: 50g
+- Basil: 1 handful
+1. Brown the sausage meat with the onion and garlic. Add the passata and simmer 15 minutes.
+2. Cook the pasta for 2 minutes less than the packet time.
+3. Mix the pasta with the sauce and layer in a dish with spoonfuls of ricotta and torn mozzarella.
+4. Top with parmesan and bake at 200°C for 20 minutes. Add basil.
+
+# Spaghetti and meatballs | Spaghetti aux boulettes | 意式肉丸意面
+@ Pasta | United States | 50 | en:Spaghetti and meatballs | Pasta,Family
+- Spaghetti: 400g
+- Minced Beef: 400g
+- Minced Pork: 200g
+- Breadcrumbs: 50g
+- Milk: 80ml
+- Eggs: 1
+- Parmesan: 60g
+- Garlic: 3 cloves
+- Parsley: 1 handful
+- Passata: 700ml
+- Onions: 1
+- Basil: 1 handful
+1. Mix the meats with breadcrumbs soaked in milk, egg, half the parmesan, garlic, parsley and salt. Roll into balls.
+2. Brown the meatballs. Soften the onion, add the passata and simmer the meatballs in it for 20 minutes.
+3. Cook the spaghetti.
+4. Serve with the sauce, meatballs, basil and parmesan.
+
+# Pasta alla genovese | Pâtes à la genovese (ragù d’oignons) | 那不勒斯洋葱牛肉酱面
+@ Pasta | Italy | 210 | en:Genovese sauce | Pasta,Classic
+- Rigatoni: 400g
+- Beef: 600g
+- Onions: 1.5kg
+- Carrots: 1
+- Celery: 1 stick
+- Dry White Wine: 150ml
+- Olive Oil: 4 tbs
+- Parmesan: 60g
+1. Brown the beef in large pieces in oil with the chopped carrot and celery.
+2. Add the thinly sliced onions and a pinch of salt. Cover and cook very gently for 3 hours, stirring now and then, adding the wine halfway.
+3. Shred the beef into the golden onion sauce.
+4. Toss with the cooked pasta and parmesan.
+
+# Pasta with pumpkin and sage | Pâtes à la courge et sauge | 南瓜鼠尾草意面
+@ Pasta | Italy | 35 | File:Pasta with pumpkin, aubergine and chili pepper (30506843925).jpg | Pasta,Vegetarian,Quick
+- Farfalle: 400g
+- Butternut Squash: 1
+- Sage: 1 bunch
+- Butter: 60g
+- Garlic: 2 cloves
+- Parmesan: 60g
+- Walnuts: 50g
+1. Cut the squash into small cubes and roast with oil at 220°C for 25 minutes.
+2. Fry the sage leaves in the butter until crisp, add the garlic.
+3. Cook the pasta and toss with the squash, sage butter and a little pasta water.
+4. Top with parmesan and toasted walnuts.
+
+# Pesto rosso pasta | Pâtes au pesto rosso | 红香蒜酱意面
+@ Pasta | Italy | 20 | File:Pesto rosso.jpg | Pasta,Vegetarian,Quick
+- Farfalle: 400g
+- Sun-dried Tomatoes: 150g
+- Almonds: 40g
+- Parmesan: 50g
+- Garlic: 1 clove
+- Basil: 1 bunch
+- Olive Oil: 80ml
+- Cherry Tomatoes: 12
+1. Blend the sun-dried tomatoes, almonds, parmesan, garlic, half the basil and the oil.
+2. Cook the pasta.
+3. Toss with the pesto and a little pasta water.
+4. Add the halved cherry tomatoes and the remaining basil.
+
+# Prawn and courgette linguine | Linguine crevettes et courgettes | 虾仁西葫芦意面
+@ Pasta | Italy | 25 | en:Linguine | Pasta,Quick,Shellfish
+- Linguine Pasta: 400g
+- King Prawns: 400g
+- Courgettes: 2
+- Garlic: 3 cloves
+- Red Chilli: 1
+- Lemon: 1
+- Dry White Wine: 100ml
+- Olive Oil: 5 tbs
+- Parsley: 1 handful
+1. Cook the pasta.
+2. Fry the grated courgettes in oil with garlic and chilli for 5 minutes.
+3. Add the prawns and wine and cook 3 minutes.
+4. Toss with the pasta, lemon zest and juice and parsley.
+
+# Paccheri with seafood | Paccheri aux fruits de mer | 海鲜管面
+@ Pasta | Italy | 35 | en:Paccheri | Pasta,Shellfish
+- Paccheri Pasta: 400g
+- Frozen Seafood Mix: 500g
+- Cherry Tomatoes: 300g
+- Garlic: 3 cloves
+- Red Chilli: 1
+- Dry White Wine: 150ml
+- Olive Oil: 5 tbs
+- Parsley: 1 handful
+1. Fry the garlic and chilli in oil, then the halved tomatoes for 5 minutes.
+2. Add the seafood and wine and cook 5 minutes.
+3. Cook the paccheri for 1 minute less than the packet time.
+4. Finish cooking the pasta in the sauce. Add parsley.
+
+# Pasta with broccoli and anchovies | Pâtes au brocoli et anchois | 西兰花凤尾鱼意面
+@ Pasta | Italy | 25 | en:Orecchiette | Pasta,Quick
+- Penne Rigate: 400g
+- Broccoli: 2
+- Anchovy Fillet: 8
+- Garlic: 3 cloves
+- Chilli Flakes: 0.5 tsp
+- Olive Oil: 6 tbs
+- Breadcrumbs: 50g
+- Pecorino: 50g
+1. Cook the broccoli florets with the pasta in the same water.
+2. Melt the anchovies in oil with the garlic and chilli.
+3. Toast the breadcrumbs in a little oil.
+4. Toss the pasta and broccoli in the anchovy oil, crushing some broccoli. Top with breadcrumbs and pecorino.
+
+# Pasta with peas and ham | Pâtes aux petits pois et jambon | 豌豆火腿意面
+@ Pasta | Italy | 20 | File:Strichetti al sugo di piselli.jpg | Pasta,Quick,Family
+- Farfalle: 400g
+- Frozen Peas: 300g
+- Ham: 200g
+- Onions: 1
+- Butter: 30g
+- Single Cream: 150ml
+- Parmesan: 60g
+1. Soften the onion in butter, add the diced ham and peas with a splash of water. Cook 5 minutes.
+2. Cook the pasta.
+3. Add the cream to the peas and warm through.
+4. Toss with the pasta and parmesan.
+
+# Penne with gorgonzola and walnuts | Penne gorgonzola et noix | 戈贡佐拉核桃通心粉
+@ Pasta | Italy | 20 | en:Gorgonzola | Pasta,Quick,Vegetarian,Cheese
+- Penne Rigate: 400g
+- Gorgonzola: 200g
+- Single Cream: 150ml
+- Walnuts: 60g
+- Rocket: 80g
+- Black Pepper: 1 tsp
+1. Cook the pasta.
+2. Melt the gorgonzola in the cream over low heat.
+3. Toss with the pasta and some pasta water.
+4. Top with toasted walnuts, rocket and pepper.
+
+# Mushroom bourguignon | Bourguignon de champignons | 红酒炖蘑菇
+@ Vegan | France | 60 | File:Mushroom Bourguignon with roasted parsnip and creamed potatoes (GOC Kings Langley Xmas 2012 084) (8290538877).jpg | Vegetarian,Stew
+- Chestnut Mushroom: 600g
+- Shallots: 8
+- Carrots: 3
+- Garlic: 3 cloves
+- Red Wine: 400ml
+- Vegetable Stock: 300ml
+- Tomato Puree: 2 tbs
+- Thyme: 3 sprigs
+- Bay Leaf: 1
+- Plain Flour: 1 tbs
+- Olive Oil: 4 tbs
+- Potatoes: 1kg
+1. Brown the mushrooms in batches in hot oil. Set aside.
+2. Fry the shallots and carrots, add the garlic, tomato puree and flour.
+3. Add the wine, stock and herbs and simmer 25 minutes. Return the mushrooms for 10 minutes.
+4. Serve with mashed potatoes made with olive oil.
+
+# Chickpea and vegetable tagine | Tajine de pois chiches et légumes | 鹰嘴豆蔬菜塔吉锅
+@ Vegan | Morocco | 50 | en:Tajine | Vegetarian,Stew
+- Chickpeas: 800g
+- Butternut Squash: 0.5
+- Carrots: 3
+- Courgettes: 2
+- Onions: 2
+- Garlic: 3 cloves
+- Ras El Hanout: 2 tsp
+- Ground Ginger: 1 tsp
+- Chopped Tomatoes: 400g
+- Dried Apricots: 80g
+- Vegetable Stock: 400ml
+- Coriander: 1 bunch
+- Couscous: 300g
+1. Fry the onions in oil, add the garlic and spices.
+2. Add the squash and carrots in chunks, tomatoes, apricots and stock. Simmer 20 minutes.
+3. Add the courgettes and chickpeas and cook 10 minutes.
+4. Serve with couscous and coriander.
+
+# West African peanut stew | Ragoût d’arachide et patate douce | 西非花生红薯炖菜
+@ Vegan | Ghana | 45 | en:Groundnut soup | Vegetarian,Stew,Spicy
+- Sweet Potatoes: 3
+- Peanut Butter: 150g
+- Chopped Tomatoes: 400g
+- Onions: 1
+- Garlic: 3 cloves
+- Ginger: 1 tbs
+- Red Chilli: 1
+- Kale: 200g
+- Vegetable Stock: 800ml
+- Roasted Peanut: 40g
+- Rice: 300g
+1. Fry the onion, garlic, ginger and chilli.
+2. Add the cubed sweet potatoes, tomatoes and stock and simmer 20 minutes.
+3. Stir in the peanut butter and kale and cook 5 minutes.
+4. Serve with rice and crushed peanuts.
+
+# Tofu katsu curry | Curry katsu au tofu | 日式炸豆腐咖喱
+@ Vegan | Japan | 45 | en:Katsu curry | Curry,Vegetarian
+- Tofu: 600g
+- Plain Flour: 60g
+- Soya Milk: 150ml
+- Panko: 120g
+- Onions: 1
+- Carrots: 2
+- Garlic: 2 cloves
+- Curry Powder: 2 tbs
+- Vegetable Stock: 500ml
+- Soy Sauce: 1 tbs
+- Maple Syrup: 1 tbs
+- Sushi Rice: 300g
+- Vegetable Oil: 200ml
+1. Fry the onion and carrots, add the garlic and curry powder, then 1 tbs flour, the stock, soy sauce and syrup. Simmer 15 minutes and blend.
+2. Press the tofu and cut into thick slices.
+3. Coat in flour, soya milk and panko and fry until golden.
+4. Serve on rice with the sauce.
+
+# Teriyaki tofu rice bowl | Bol de tofu teriyaki | 照烧豆腐饭
+@ Vegan | Japan | 30 | en:Teriyaki | Bowl,Quick,Vegetarian
+- Tofu: 500g
+- Soy Sauce: 4 tbs
+- Mirin: 3 tbs
+- Sugar: 1 tbs
+- Corn Flour: 2 tbs
+- Broccoli: 1
+- Edamame Beans: 200g
+- Carrots: 2
+- Sesame Seed: 2 tbs
+- Sushi Rice: 300g
+- Vegetable Oil: 2 tbs
+1. Cook the rice. Steam the broccoli and edamame.
+2. Cut the tofu into cubes, toss in corn flour and fry until crisp.
+3. Simmer the soy sauce, mirin and sugar until syrupy and toss the tofu in it.
+4. Serve on rice with the vegetables, grated carrot and sesame.
+
+# Rice and lentil stuffed peppers | Poivrons farcis riz et lentilles | 米饭扁豆酿甜椒
+@ Vegan | Greece | 70 | en:Stuffed peppers | Vegetarian,Bake
+- Red Pepper: 4
+- Rice: 150g
+- Lentils: 150g
+- Onions: 1
+- Garlic: 2 cloves
+- Chopped Tomatoes: 400g
+- Dried Oregano: 1 tsp
+- Mint: 1 handful
+- Olive Oil: 4 tbs
+- Potatoes: 4
+1. Cook the lentils for 15 minutes.
+2. Fry the onion and garlic, add the rice, lentils, half the tomatoes, herbs and salt.
+3. Fill the halved peppers and place in a dish with potato wedges and the remaining tomatoes.
+4. Drizzle with oil, add a glass of water and bake covered at 190°C for 40 minutes, then uncovered for 15.
+
+# Vegan mushroom stroganoff | Stroganov végétal aux champignons | 纯素蘑菇斯特罗加诺夫
+@ Vegan | Russia | 30 | File:Beef Stroganoff z boczniaka (Poznan).jpg | Vegetarian,Quick
+- Mushrooms: 700g
+- Onions: 2
+- Garlic: 2 cloves
+- Cashew Nuts: 100g
+- Dijon Mustard: 1 tbs
+- Paprika: 1 tsp
+- Vegetable Stock: 200ml
+- Olive Oil: 3 tbs
+- Parsley: 1 handful
+- Rice: 300g
+1. Soak the cashews in boiling water for 15 minutes and blend with 200ml water until smooth.
+2. Fry the mushrooms in batches until browned, then the onions and garlic.
+3. Add the paprika, mustard, stock and cashew cream and simmer 5 minutes.
+4. Serve with rice and parsley.

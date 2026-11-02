@@ -1,0 +1,466 @@
+// France du quotidien et des régions (Lyon, Bresse, Savoie, Sud-Ouest, Alsace, Provence) et Belgique. Format : voir tools/build-recipes.js
+
+# Bresse-style chicken in cream | Poulet à la crème façon Bresse | 布雷斯奶油鸡
+@ Chicken | France | 60 | File:Poulet de Bresse à la crème, Le Café Français (Bourg-en-Bresse), janvier 2024.jpg | Classic,Family
+- Chicken Legs: 6
+- Mushrooms: 250g
+- Shallots: 3
+- Dry White Wine: 200ml
+- Chicken Stock: 200ml
+- Creme Fraiche: 300ml
+- Butter: 40g
+- Plain Flour: 1 tbs
+- Thyme: 2 sprigs
+- Rice: 300g
+1. Brown the chicken pieces in butter. Add the shallots, then sprinkle with flour and stir.
+2. Add the wine, stock and thyme. Cover and simmer for 35 minutes.
+3. Sauté the mushrooms separately and add them to the pot.
+4. Remove the chicken, stir the crème fraîche into the sauce and reduce for 5 minutes. Serve with rice.
+
+# Lyonnaise salad | Salade lyonnaise | 里昂沙拉
+@ Pork | France | 25 | fr:Salade lyonnaise | Starter,Salad,Quick,Eggs
+- Little Gem Lettuce: 3
+- Bacon Lardon: 200g
+- Eggs: 4
+- Bread: 4 slices
+- Garlic: 1 clove
+- Red Wine Vinegar: 3 tbs
+- Dijon Mustard: 1 tsp
+- Olive Oil: 4 tbs
+- Shallots: 1
+1. Fry the bacon until crisp. Toast cubes of bread rubbed with garlic in the bacon fat.
+2. Whisk the mustard, vinegar, oil and chopped shallot.
+3. Poach the eggs for 3 minutes in simmering water with a splash of vinegar.
+4. Toss the salad with the dressing, bacon and croutons and top each plate with an egg.
+
+# Lyonnaise potatoes with sausages | Pommes de terre lyonnaises et saucisses | 里昂土豆配香肠
+@ Pork | France | 40 | fr:Pommes de terre à la lyonnaise | Family
+- Potatoes: 1kg
+- Onions: 3
+- Sausages: 8
+- Butter: 50g
+- Parsley: 1 handful
+- Lettuce: 1
+1. Boil the potatoes in their skins for 15 minutes, then peel and slice.
+2. Cook the sliced onions slowly in half the butter until golden.
+3. Fry the potatoes in the rest of the butter until crisp, then mix with the onions.
+4. Pan-fry the sausages. Serve with parsley and a green salad.
+
+# Diots in white wine | Diots au vin blanc | 萨瓦白葡萄酒香肠
+@ Pork | France | 50 | fr:Diot | Classic
+- Sausages: 8
+- Onions: 3
+- Dry White Wine: 300ml
+- Bay Leaf: 1
+- Thyme: 2 sprigs
+- Butter: 20g
+- Potatoes: 1kg
+1. Brown the sausages in butter and set aside.
+2. Soften the sliced onions in the same pan.
+3. Add the wine, herbs and sausages. Cover and simmer for 30 minutes.
+4. Serve with boiled potatoes or polenta.
+
+# Basque veal axoa | Axoa de veau | 巴斯克辣椒炖小牛肉
+@ Beef | France | 60 | fr:Axoa | Stew
+- Veal: 800g
+- Onions: 2
+- Green Pepper: 2
+- Red Pepper: 1
+- Garlic: 3 cloves
+- Paprika: 2 tsp
+- Chilli Flakes: 0.5 tsp
+- Chicken Stock: 200ml
+- Olive Oil: 3 tbs
+- Potatoes: 800g
+1. Cut the veal into small dice (or ask your butcher to mince it coarsely).
+2. Fry the onions, peppers and garlic in oil for 10 minutes.
+3. Add the veal and spices and brown, then the stock.
+4. Simmer covered for 40 minutes. Serve with boiled potatoes.
+
+# Garbure | Garbure | 加斯科涅蔬菜浓汤
+@ Pork | France | 120 | fr:Garbure | Soup,Classic
+- Duck Legs: 2
+- Smoked Ham: 200g
+- Savoy Cabbage: 0.5
+- Haricot Beans: 400g
+- Potatoes: 3
+- Carrots: 3
+- Turnips: 2
+- Leek: 1
+- Onions: 1
+- Garlic: 3 cloves
+- Crusty Bread: 1
+1. Simmer the ham in 2.5 litres of water with the onion and garlic for 30 minutes.
+2. Add the diced carrots, turnips, leek and potatoes and cook 20 minutes.
+3. Add the shredded cabbage, beans and duck legs and simmer for 1 hour.
+4. Shred the duck into the soup. Serve very thick, with bread.
+
+# Duck breast with sarladaise potatoes | Magret de canard et pommes sarladaises | 鸭胸配萨尔拉土豆
+@ Miscellaneous | France | 45 | fr:Pommes de terre sarladaises | Classic
+- Duck Breast: 2
+- Potatoes: 1kg
+- Garlic: 3 cloves
+- Parsley: 1 bunch
+- Green Beans: 300g
+- Honey: 1 tbs
+- Balsamic Vinegar: 2 tbs
+1. Score the duck skin and cook skin-side down in a cold pan over medium heat for 12 minutes. Pour off and keep the fat.
+2. Turn and cook 4 minutes. Rest 10 minutes, then slice.
+3. Fry the sliced potatoes in duck fat for 20 minutes. Add the chopped garlic and parsley at the end.
+4. Deglaze the pan with honey and vinegar. Serve with green beans.
+
+# Aligot with sausages | Aligot et saucisses | 奥布拉克芝士土豆泥配香肠
+@ Pork | France | 50 | fr:Aligot | Cheese,Classic
+- Potatoes: 1kg
+- Cheese: 350g
+- Creme Fraiche: 150ml
+- Butter: 50g
+- Garlic: 2 cloves
+- Sausages: 8
+- Lettuce: 1
+1. Boil the potatoes with the garlic and mash finely.
+2. Over low heat, beat in the butter and crème fraîche.
+3. Add the grated cheese (Cantal or tomme) little by little, beating hard until stretchy.
+4. Serve with grilled sausages and salad.
+
+# Chicory and ham gratin | Endives au jambon | 火腿菊苣焗
+@ Pork | Belgium | 60 | fr:Chicon au gratin | Bake,Family
+- Chicory: 8
+- Ham: 8 slices
+- Butter: 50g
+- Plain Flour: 40g
+- Milk: 600ml
+- Gruyere: 120g
+- Nutmeg: 1 pinch
+- Lemon: 0.5
+1. Braise the chicory in a little butter, lemon juice and a pinch of sugar for 20 minutes, covered.
+2. Make a béchamel with butter, flour and milk. Season with nutmeg.
+3. Roll each chicory in a slice of ham and place in a dish.
+4. Cover with béchamel and cheese. Bake at 200°C for 25 minutes.
+
+# Flemish beef and beer stew | Carbonnade flamande | 佛兰德啤酒炖牛肉
+@ Beef | Belgium | 180 | fr:Carbonade flamande | Stew,Classic
+- Beef: 1.2kg
+- Onions: 4
+- Dark Beer: 750ml
+- Bread: 2 slices
+- Dijon Mustard: 2 tbs
+- Brown Sugar: 1 tbs
+- Thyme: 2 sprigs
+- Bay Leaves: 2
+- Butter: 40g
+- Fries: 800g
+1. Brown the beef in butter and set aside. Soften the onions in the same pot.
+2. Return the beef, add the beer, sugar and herbs.
+3. Spread the bread with mustard and lay it on top.
+4. Simmer covered for 2 h 30, stirring the bread into the sauce. Serve with fries.
+
+# Veal paupiettes | Paupiettes de veau | 小牛肉卷
+@ Beef | France | 70 | fr:Paupiette | Family
+- Veal: 4 escalopes
+- Minced Pork: 300g
+- Streaky Bacon: 4 slices
+- Shallots: 2
+- Carrots: 3
+- Mushrooms: 200g
+- Dry White Wine: 150ml
+- Chicken Stock: 200ml
+- Tomato Puree: 1 tbs
+- Parsley: 1 handful
+- Rice: 300g
+1. Season the minced pork with chopped shallot and parsley. Place a ball on each flattened escalope, roll and wrap with bacon. Tie with string.
+2. Brown the paupiettes. Add the sliced carrots and remaining shallot.
+3. Add the wine, stock and tomato puree. Simmer covered for 45 minutes, adding the mushrooms halfway.
+4. Serve with rice.
+
+# Roast pork with prunes | Rôti de porc aux pruneaux | 西梅烤猪肉
+@ Pork | France | 90 | fr:Rôti de porc | Roast,Family
+- Pork Tenderloin: 1kg
+- Prunes: 16
+- Onions: 2
+- Dry White Wine: 150ml
+- Chicken Stock: 200ml
+- Thyme: 3 sprigs
+- Butter: 30g
+- Potatoes: 1kg
+1. Brown the pork in butter in a casserole.
+2. Add the onions, thyme, wine and stock.
+3. Roast covered at 180°C for 50 minutes, adding the prunes and potatoes in chunks around it after 15 minutes.
+4. Slice and serve with the prunes and juices.
+
+# Chicken with tarragon | Poulet à l’estragon | 龙蒿鸡
+@ Chicken | France | 45 | File:Tarragon chicken - one of my favourite dishes.jpg | Family,Quick
+- Chicken Breasts: 4
+- Shallots: 2
+- Dry White Wine: 150ml
+- Creme Fraiche: 200ml
+- Tarragon Leaves: 1 bunch
+- Butter: 30g
+- Tagliatelle: 400g
+1. Brown the chicken in butter for 6 minutes per side.
+2. Add the shallots, then the wine and reduce by half.
+3. Stir in the crème fraîche and half the chopped tarragon. Simmer for 10 minutes.
+4. Add the remaining tarragon. Serve with tagliatelle.
+
+# Fish meuniere | Poisson meunière | 黄油煎鱼
+@ Seafood | France | 25 | fr:Sole meunière | Fish,Quick,Classic
+- White Fish Fillets: 4
+- Plain Flour: 50g
+- Butter: 80g
+- Lemon: 1
+- Parsley: 1 handful
+- New Potatoes: 800g
+- Green Beans: 300g
+1. Boil the potatoes and the green beans.
+2. Dust the fish with flour and fry in half the butter for 3 minutes per side.
+3. Add the rest of the butter and cook until nutty brown. Add the lemon juice and parsley.
+4. Pour over the fish and serve.
+
+# Tian provencal | Tian provençal | 普罗旺斯烤蔬菜
+@ Vegan | France | 75 | fr:Tian (cuisine) | Vegetarian,Bake
+- Courgettes: 2
+- Aubergine: 1
+- Tomatoes: 5
+- Onions: 2
+- Garlic: 3 cloves
+- Thyme: 3 sprigs
+- Olive Oil: 6 tbs
+- Rice: 300g
+1. Soften the sliced onions and garlic in oil and spread in a baking dish.
+2. Slice the vegetables into rounds and arrange them standing upright in alternating rows.
+3. Drizzle with oil, add thyme and season.
+4. Bake at 180°C for 1 hour. Serve with rice.
+
+# Pissaladiere | Pissaladière | 尼斯洋葱挞
+@ Miscellaneous | France | 75 | fr:Pissaladière | Tart
+- Puff Pastry: 1 sheet
+- Onions: 1kg
+- Olive Oil: 5 tbs
+- Thyme: 2 sprigs
+- Anchovy Fillet: 12
+- Black Olives: 16
+- Rocket: 100g
+1. Cook the sliced onions very slowly in oil with thyme for 45 minutes until soft and sweet, without colouring.
+2. Spread on the pastry.
+3. Make a lattice of anchovies and dot with olives.
+4. Bake at 200°C for 25 minutes. Serve with rocket.
+
+# Salmon and spinach quiche | Quiche saumon épinards | 三文鱼菠菜咸派
+@ Seafood | France | 60 | fr:Quiche | Tart,Fish,Family
+- Shortcrust Pastry: 1 sheet
+- Salmon: 300g
+- Spinach: 300g
+- Eggs: 3
+- Double Cream: 200ml
+- Milk: 100ml
+- Gruyere: 80g
+- Nutmeg: 1 pinch
+- Lettuce: 1
+1. Line a tart tin with the pastry and bake blind at 180°C for 10 minutes.
+2. Wilt the spinach and squeeze dry. Cut the salmon into cubes.
+3. Whisk the eggs, cream, milk, nutmeg and cheese.
+4. Spread the salmon and spinach on the pastry, pour over the mixture and bake for 35 minutes. Serve with salad.
+
+# French stuffed cabbage | Chou farci | 法式酿卷心菜
+@ Pork | France | 120 | fr:Chou farci | Family,Classic
+- Savoy Cabbage: 1
+- Minced Pork: 500g
+- Minced Beef: 200g
+- Onions: 1
+- Garlic: 2 cloves
+- Eggs: 1
+- Bread: 2 slices
+- Milk: 100ml
+- Carrots: 2
+- Chicken Stock: 500ml
+- Streaky Bacon: 6 slices
+1. Blanch the cabbage leaves for 5 minutes.
+2. Mix the meats with the onion, garlic, egg, bread soaked in milk, salt and pepper.
+3. Fill the leaves, roll and wrap with bacon. Place in a casserole with the sliced carrots.
+4. Add the stock and cook covered at 170°C for 1 h 30.
+
+# Potee auvergnate | Potée auvergnate | 奥弗涅炖菜
+@ Pork | France | 150 | fr:Potée auvergnate | Stew,Classic
+- Pork Knuckle: 1
+- Smoked Ham: 300g
+- Sausages: 4
+- Savoy Cabbage: 1
+- Potatoes: 6
+- Carrots: 4
+- Turnips: 3
+- Leek: 2
+- Onions: 1
+- Cloves: 2
+- Bay Leaves: 2
+1. Simmer the pork knuckle and ham with the onion studded with cloves and bay in 3 litres of water for 1 hour.
+2. Add the cabbage in quarters, carrots, turnips and leeks. Cook 45 minutes.
+3. Add the potatoes and sausages and cook 30 minutes.
+4. Serve the meat and vegetables with some broth and mustard.
+
+# French stuffed tomatoes | Tomates farcies | 法式酿番茄
+@ Pork | France | 70 | fr:Tomates farcies | Bake,Family
+- Beef Tomatoes: 8
+- Sausages: 4
+- Minced Beef: 200g
+- Onions: 1
+- Garlic: 2 cloves
+- Parsley: 1 bunch
+- Breadcrumbs: 40g
+- Eggs: 1
+- Rice: 250g
+1. Cut the tops off the tomatoes and scoop out the flesh. Salt the insides and turn upside down.
+2. Mix the sausage meat, beef, onion, garlic, parsley, breadcrumbs and egg.
+3. Fill the tomatoes, replace the lids and spread the raw rice with the chopped flesh and 300ml water around them.
+4. Bake at 180°C for 50 minutes.
+
+# Baeckeoffe | Baeckeoffe | 阿尔萨斯三肉炖锅
+@ Pork | France | 240 | fr:Baeckeoffe | Classic,Bake
+- Pork Shoulder: 500g
+- Lamb Shoulder: 500g
+- Beef: 500g
+- Dry White Wine: 750ml
+- Onions: 3
+- Leek: 1
+- Carrots: 2
+- Garlic: 3 cloves
+- Bouquet Garni: 1
+- Potatoes: 1.5kg
+1. Marinate the meats with the wine, onions, garlic and bouquet garni overnight.
+2. Layer sliced potatoes, carrots, leek and meats in a casserole, finishing with potatoes.
+3. Pour over the marinade. Seal the lid tightly (with a flour and water paste if you like).
+4. Bake at 170°C for 3 hours.
+
+# Chicken vol-au-vent | Bouchées à la reine | 酥皮奶油鸡
+@ Chicken | France | 50 | fr:Bouchée à la reine | Classic,Family
+- Chicken Breasts: 3
+- Mushrooms: 250g
+- Puff Pastry: 2 sheets
+- Butter: 50g
+- Plain Flour: 40g
+- Chicken Stock: 500ml
+- Double Cream: 150ml
+- Egg Yolks: 1
+- Lemon: 0.5
+- Rice: 250g
+1. Poach the chicken in the stock for 15 minutes. Dice it and keep the stock.
+2. Cut 4 large pastry circles, mark a smaller circle inside and bake at 200°C for 20 minutes.
+3. Make a sauce with butter, flour and the stock, add the cream, yolk and lemon juice.
+4. Add the chicken and sautéed mushrooms. Fill the pastry cases and serve with rice.
+
+# Leg of lamb with flageolet beans | Gigot d’agneau aux flageolets | 烤羊腿配菜豆
+@ Lamb | France | 90 | File:Gigot d agneau 2019.jpg | Roast,Classic
+- Lamb Leg: 1.5kg
+- Garlic: 6 cloves
+- Rosemary: 3 sprigs
+- Thyme: 3 sprigs
+- Olive Oil: 3 tbs
+- Flageolet Beans: 800g
+- Shallots: 2
+- Butter: 30g
+1. Stud the lamb with slivers of garlic, rub with oil, herbs and salt.
+2. Roast at 200°C for 15 minutes per 500g. Rest for 15 minutes.
+3. Soften the shallots in butter, add the drained beans and a little of the roasting juices.
+4. Slice the lamb and serve with the beans.
+
+# Savoyard cheese toast | Croûte au fromage savoyarde | 萨瓦芝士烤面包
+@ Vegetarian | France | 30 | fr:Croûte au fromage | Cheese,Quick
+- Crusty Bread: 8 slices
+- Dry White Wine: 150ml
+- Gruyere: 300g
+- Garlic: 1 clove
+- Eggs: 4
+- Little Gem Lettuce: 2
+1. Rub the bread with garlic and lay in a baking dish.
+2. Drizzle with white wine.
+3. Cover with grated cheese and bake at 220°C for 15 minutes.
+4. Top with a fried egg and serve with salad.
+
+# Hake with sauce vierge | Merlu sauce vierge | 鳕鱼配初榨橄榄油酱
+@ Seafood | France | 25 | fr:Sauce vierge | Fish,Quick
+- Hake: 4 fillets
+- Tomatoes: 3
+- Shallots: 1
+- Basil: 1 bunch
+- Lemon: 1
+- Olive Oil: 100ml
+- Rice: 300g
+1. Cook the rice.
+2. Dice the tomatoes and shallot, mix with the chopped basil, lemon juice and oil. Warm gently.
+3. Pan-fry the hake in a little oil for 3 minutes per side.
+4. Spoon the sauce over the fish.
+
+# Eggs in red wine sauce | Œufs en meurette | 红酒酱水波蛋
+@ Pork | France | 40 | fr:Œufs en meurette | Starter,Eggs,Classic
+- Eggs: 8
+- Red Wine: 750ml
+- Shallots: 3
+- Bacon Lardon: 150g
+- Mushrooms: 150g
+- Butter: 40g
+- Plain Flour: 1 tbs
+- Thyme: 2 sprigs
+- Bread: 8 slices
+1. Reduce the wine with the shallots and thyme by half.
+2. Fry the bacon and mushrooms. Thicken the wine with butter kneaded with flour and add the bacon and mushrooms.
+3. Poach the eggs in the sauce or in simmering water for 3 minutes.
+4. Serve on garlic toast with the sauce.
+
+# Fish parmentier | Parmentier de poisson | 鱼肉土豆泥焗
+@ Seafood | France | 50 | File:Fish Pie.jpg | Fish,Bake,Family
+- White Fish Fillets: 600g
+- Potatoes: 1kg
+- Milk: 500ml
+- Butter: 50g
+- Leek: 2
+- Creme Fraiche: 150ml
+- Gruyere: 80g
+- Dill: 1 handful
+1. Poach the fish in the milk for 6 minutes. Flake it and keep the milk.
+2. Boil and mash the potatoes with butter and some of the milk.
+3. Soften the leeks, add the crème fraîche, dill and fish.
+4. Spread in a dish, cover with mash and cheese. Bake at 200°C for 20 minutes.
+
+# Chicken chasseur | Poulet chasseur | 猎人鸡
+@ Chicken | France | 60 | File:Chicken Chasseur (7624941118).jpg | Family,Classic
+- Chicken Legs: 6
+- Mushrooms: 300g
+- Shallots: 3
+- Chopped Tomatoes: 400g
+- Dry White Wine: 200ml
+- Tomato Puree: 1 tbs
+- Tarragon Leaves: 1 handful
+- Butter: 30g
+- Potatoes: 800g
+1. Brown the chicken in butter. Add the shallots and mushrooms.
+2. Add the wine and reduce, then the tomatoes and tomato puree.
+3. Simmer covered for 35 minutes.
+4. Add the tarragon. Serve with potatoes.
+
+# Beef patties with green beans | Steak haché et haricots verts | 牛肉饼配四季豆
+@ Beef | France | 20 | fr:Steak haché | Quick,Family
+- Minced Beef: 600g
+- Shallots: 2
+- Green Beans: 600g
+- Garlic: 1 clove
+- Butter: 40g
+- Parsley: 1 handful
+- Potatoes: 800g
+1. Boil the potatoes and the green beans.
+2. Shape the beef into 4 patties and season.
+3. Fry in butter for 3 minutes per side. Add the shallots to the pan for the last minute.
+4. Toss the beans with garlic butter and parsley.
+
+# Chicken curry with cream | Poulet au curry et à la crème | 法式奶油咖喱鸡
+@ Chicken | France | 35 | File:Chicken curry and rice.jpg | Quick,Family,Curry
+- Chicken Breasts: 4
+- Onions: 1
+- Curry Powder: 2 tbs
+- Creme Fraiche: 200ml
+- Apples: 1
+- Chicken Stock: 150ml
+- Butter: 20g
+- Rice: 300g
+1. Brown the diced chicken in butter. Add the onion and diced apple.
+2. Sprinkle with curry powder and stir for 1 minute.
+3. Add the stock and simmer 10 minutes.
+4. Stir in the crème fraîche. Serve with rice.

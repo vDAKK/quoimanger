@@ -4163,5 +4163,579 @@
   "page": "https://commons.wikimedia.org/wiki/File:Soup_joumou.jpg",
   "artist": "Lëa-Kim Châteauneuf",
   "license": "CC BY-SA 4.0"
+ },
+ "qm-bresse-style-chicken-in-cream": {
+  "spec": "File:Poulet de Bresse à la crème, Le Café Français (Bourg-en-Bresse), janvier 2024.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Poulet_de_Bresse_%C3%A0_la_cr%C3%A8me%2C_Le_Caf%C3%A9_Fran%C3%A7ais_%28Bourg-en-Bresse%29%2C_janvier_2024.jpg/960px-Poulet_de_Bresse_%C3%A0_la_cr%C3%A8me%2C_Le_Caf%C3%A9_Fran%C3%A7ais_%28Bourg-en-Bresse%29%2C_janvier_2024.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Poulet_de_Bresse_%C3%A0_la_cr%C3%A8me,_Le_Caf%C3%A9_Fran%C3%A7ais_(Bourg-en-Bresse),_janvier_2024.jpg",
+  "artist": "Benoît Prieur",
+  "license": "CC0"
+ },
+ "qm-lyonnaise-salad": {
+  "spec": "fr:Salade lyonnaise",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Salade_lyonnaise.JPG/960px-Salade_lyonnaise.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Salade_lyonnaise.JPG",
+  "artist": "Arnaud 25",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-lyonnaise-potatoes-with-sausages": {
+  "spec": "fr:Pommes de terre à la lyonnaise",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Potatoes_lyonnaise.JPG/960px-Potatoes_lyonnaise.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Potatoes_lyonnaise.JPG",
+  "artist": "Glane23",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-diots-in-white-wine": {
+  "spec": "fr:Diot",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Diots_02.jpg/960px-Diots_02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Diots_02.jpg",
+  "artist": "Arnaud 25",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-basque-veal-axoa": {
+  "spec": "fr:Axoa",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Restaurant_la_Vieille-Auberge_-_Chez_D%C3%A9d%C3%A9_%28Saint-Jean-Pied-de-Port%29_-_axoa_d%C3%A9coup%C3%A9.jpg/960px-Restaurant_la_Vieille-Auberge_-_Chez_D%C3%A9d%C3%A9_%28Saint-Jean-Pied-de-Port%29_-_axoa_d%C3%A9coup%C3%A9.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Restaurant_la_Vieille-Auberge_-_Chez_D%C3%A9d%C3%A9_(Saint-Jean-Pied-de-Port)_-_axoa_d%C3%A9coup%C3%A9.jpg",
+  "artist": "Tangopaso",
+  "license": "Public domain"
+ },
+ "qm-garbure": {
+  "spec": "fr:Garbure",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Garbure_02.jpg/960px-Garbure_02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Garbure_02.jpg",
+  "artist": "Arnaud 25",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-duck-breast-with-sarladaise-potatoes": {
+  "spec": "fr:Pommes de terre sarladaises",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Pommes_de_terre_sarladaises_02.jpg/960px-Pommes_de_terre_sarladaises_02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pommes_de_terre_sarladaises_02.jpg",
+  "artist": "Arnaud 25",
+  "license": "CC0"
+ },
+ "qm-aligot-with-sausages": {
+  "spec": "fr:Aligot",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Bol_d%27aligot.jpg/960px-Bol_d%27aligot.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Bol_d%27aligot.jpg",
+  "artist": "Slastic",
+  "license": "Public domain"
+ },
+ "qm-chicory-and-ham-gratin": {
+  "spec": "fr:Chicon au gratin",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Jielbeaumadier_chicon_au_jambon_maroilles_2010.jpg/960px-Jielbeaumadier_chicon_au_jambon_maroilles_2010.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Jielbeaumadier_chicon_au_jambon_maroilles_2010.jpg",
+  "artist": "Jiel Beaumadier",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-flemish-beef-and-beer-stew": {
+  "spec": "fr:Carbonade flamande",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Jielbeaumadier_carbonade_flamande_2010.jpg/960px-Jielbeaumadier_carbonade_flamande_2010.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Jielbeaumadier_carbonade_flamande_2010.jpg",
+  "artist": "Jiel Beaumadier",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-veal-paupiettes": {
+  "spec": "fr:Paupiette",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Putenroulade.JPG/960px-Putenroulade.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Putenroulade.JPG",
+  "artist": "User:Mattes",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-roast-pork-with-prunes": {
+  "spec": "fr:Rôti de porc",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Schweinsbraten-1.jpg/960px-Schweinsbraten-1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Schweinsbraten-1.jpg",
+  "artist": "Rainer Zenz",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-chicken-with-tarragon": {
+  "spec": "File:Tarragon chicken - one of my favourite dishes.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tarragon_chicken_-_one_of_my_favourite_dishes.jpg/960px-Tarragon_chicken_-_one_of_my_favourite_dishes.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tarragon_chicken_-_one_of_my_favourite_dishes.jpg",
+  "artist": "Lars Plougmann",
+  "license": "CC BY-SA 2.0"
+ },
+ "qm-fish-meuniere": {
+  "spec": "fr:Sole meunière",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Sole_meuniere_%284689490702%29.jpg/960px-Sole_meuniere_%284689490702%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Sole_meuniere_(4689490702).jpg",
+  "artist": "Jay Cross from Berkeley, California, US",
+  "license": "CC BY 2.0"
+ },
+ "qm-tian-provencal": {
+  "spec": "fr:Tian (cuisine)",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Tian_proven%C3%A7al_de_l%C3%A9gumes.jpg/960px-Tian_proven%C3%A7al_de_l%C3%A9gumes.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tian_proven%C3%A7al_de_l%C3%A9gumes.jpg",
+  "artist": "Arnaud 25",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-pissaladiere": {
+  "spec": "fr:Pissaladière",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Pissaladi%C3%A8re_02.jpg/960px-Pissaladi%C3%A8re_02.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pissaladi%C3%A8re_02.jpg",
+  "artist": "Arnaud 25",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-salmon-and-spinach-quiche": {
+  "spec": "fr:Quiche",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Quiche_Lorraine.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Quiche_Lorraine.jpg",
+  "artist": "",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-french-stuffed-cabbage": {
+  "spec": "fr:Chou farci",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Farci2.JPG/960px-Farci2.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Farci2.JPG",
+  "artist": "gérard cohen",
+  "license": "CC BY 2.5"
+ },
+ "qm-potee-auvergnate": {
+  "spec": "fr:Potée auvergnate",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/47/La_Thuili%C3%A8re%2C_potee_auvergnate.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:La_Thuili%C3%A8re,_potee_auvergnate.jpg",
+  "artist": "NdFrayssinet",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-french-stuffed-tomatoes": {
+  "spec": "fr:Tomates farcies",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Tomates_farcies_maison_de_Mina_Biennier.jpg/960px-Tomates_farcies_maison_de_Mina_Biennier.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tomates_farcies_maison_de_Mina_Biennier.jpg",
+  "artist": "Mina Biennier",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-baeckeoffe": {
+  "spec": "fr:Baeckeoffe",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Baeckeoffe_01.JPG/960px-Baeckeoffe_01.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Baeckeoffe_01.JPG",
+  "artist": "Arnaud 25",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-chicken-vol-au-vent": {
+  "spec": "fr:Bouchée à la reine",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Koninginnehapje.jpg/960px-Koninginnehapje.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Koninginnehapje.jpg",
+  "artist": "Heipedia",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-leg-of-lamb-with-flageolet-beans": {
+  "spec": "File:Gigot d agneau 2019.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Gigot_d_agneau_2019.jpg/960px-Gigot_d_agneau_2019.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gigot_d_agneau_2019.jpg",
+  "artist": "Cloudapple",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-savoyard-cheese-toast": {
+  "spec": "fr:Croûte au fromage",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Croute_au_fromage.jpg/960px-Croute_au_fromage.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Croute_au_fromage.jpg",
+  "artist": "Popo le Chien",
+  "license": "CC0"
+ },
+ "qm-hake-with-sauce-vierge": {
+  "spec": "fr:Sauce vierge",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Gulf_Red_Snapper_%2820988408955%29.jpg/960px-Gulf_Red_Snapper_%2820988408955%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Gulf_Red_Snapper_(20988408955).jpg",
+  "artist": "Ralph Daily from Birmingham, United States",
+  "license": "CC BY 2.0"
+ },
+ "qm-eggs-in-red-wine-sauce": {
+  "spec": "fr:Œufs en meurette",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%C5%92uf_en_meurette.jpg/960px-%C5%92uf_en_meurette.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%C5%92uf_en_meurette.jpg",
+  "artist": "Arnaud 25",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-fish-parmentier": {
+  "spec": "File:Fish Pie.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Fish_Pie.jpg/960px-Fish_Pie.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fish_Pie.jpg",
+  "artist": "Atelier Joly",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-chicken-chasseur": {
+  "spec": "File:Chicken Chasseur (7624941118).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Chicken_Chasseur_%287624941118%29.jpg/960px-Chicken_Chasseur_%287624941118%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_Chasseur_(7624941118).jpg",
+  "artist": "Rusty Clark ~ 100K Photos from merritt usland FLA",
+  "license": "CC BY 2.0"
+ },
+ "qm-beef-patties-with-green-beans": {
+  "spec": "fr:Steak haché",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Burger_starting_to_cook_on_barbecue.jpg/960px-Burger_starting_to_cook_on_barbecue.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Burger_starting_to_cook_on_barbecue.jpg",
+  "artist": "domdomegg",
+  "license": "CC BY 4.0"
+ },
+ "qm-chicken-curry-with-cream": {
+  "spec": "File:Chicken curry and rice.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Chicken_curry_and_rice.jpg/960px-Chicken_curry_and_rice.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_curry_and_rice.jpg",
+  "artist": "E4024",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-pad-pak-bung": {
+  "spec": "en:Ipomoea aquatica",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/N_Ipoa_D1600.JPG/960px-N_Ipoa_D1600.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:N_Ipoa_D1600.JPG",
+  "artist": "Eric Guinther",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-pad-woon-sen": {
+  "spec": "File:Fried cellophane noodles with shrimp Pad woon sen kung.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Fried_cellophane_noodles_with_shrimp_Pad_woon_sen_kung.jpg/960px-Fried_cellophane_noodles_with_shrimp_Pad_woon_sen_kung.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fried_cellophane_noodles_with_shrimp_Pad_woon_sen_kung.jpg",
+  "artist": "Sakurai Midori",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-pla-rad-prik": {
+  "spec": "File:DFC 2100 Spicy Thai-style fish topped with omelet fresh chilies garlic shallots and cilantro served with cucumber and lime.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/DFC_2100_Spicy_Thai-style_fish_topped_with_omelet_fresh_chilies_garlic_shallots_and_cilantro_served_with_cucumber_and_lime.jpg/960px-DFC_2100_Spicy_Thai-style_fish_topped_with_omelet_fresh_chilies_garlic_shallots_and_cilantro_served_with_cucumber_and_lime.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:DFC_2100_Spicy_Thai-style_fish_topped_with_omelet_fresh_chilies_garlic_shallots_and_cilantro_served_with_cucumber_and_lime.jpg",
+  "artist": "PattayaPatrol",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-pad-pak-ruam": {
+  "spec": "File:ผัดผักรวมมิตร Stir-fried mixed vegetables (9306903082).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/%E0%B8%9C%E0%B8%B1%E0%B8%94%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_Stir-fried_mixed_vegetables_%289306903082%29.jpg/960px-%E0%B8%9C%E0%B8%B1%E0%B8%94%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_Stir-fried_mixed_vegetables_%289306903082%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E0%B8%9C%E0%B8%B1%E0%B8%94%E0%B8%9C%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3_Stir-fried_mixed_vegetables_(9306903082).jpg",
+  "artist": "Vee Satayamas from Bangkok, Thailand",
+  "license": "CC BY 2.0"
+ },
+ "qm-boat-noodles": {
+  "spec": "en:Boat noodles",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Boat_noodles.jpg/960px-Boat_noodles.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Boat_noodles.jpg",
+  "artist": "Flickr user Alpha",
+  "license": "CC BY-SA 2.0"
+ },
+ "qm-hoy-tod": {
+  "spec": "en:Oyster omelette",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Billyfoodoysteromelette.jpg/960px-Billyfoodoysteromelette.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Billyfoodoysteromelette.jpg",
+  "artist": "Archon6812",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-gaeng-jued": {
+  "spec": "File:Clear Soup 2018-05-05 (1).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Clear_Soup_2018-05-05_%281%29.jpg/960px-Clear_Soup_2018-05-05_%281%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Clear_Soup_2018-05-05_(1).jpg",
+  "artist": "Index Librorum Permissorum",
+  "license": "CC0"
+ },
+ "qm-chicken-and-sausage-gumbo": {
+  "spec": "en:Gumbo",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Gumbo.JPG/960px-Gumbo.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Gumbo.JPG",
+  "artist": "Amadscientist",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-classic-meatloaf": {
+  "spec": "en:Meatloaf",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/MeatloafWithSauce.jpg/960px-MeatloafWithSauce.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:MeatloafWithSauce.jpg",
+  "artist": "Renee Comet (photographer)",
+  "license": "Public domain"
+ },
+ "qm-buffalo-chicken-wings": {
+  "spec": "en:Buffalo wing",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Buffalo_wings-01.jpg/960px-Buffalo_wings-01.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Buffalo_wings-01.jpg",
+  "artist": "Clotee Pridgen Allochuku",
+  "license": "CC BY 2.0"
+ },
+ "qm-shrimp-and-grits": {
+  "spec": "en:Shrimp and grits",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Shrimp_and_grits_at_the_Green_Goddess.jpg/960px-Shrimp_and_grits_at_the_Green_Goddess.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Shrimp_and_grits_at_the_Green_Goddess.jpg",
+  "artist": "Jason Riedy",
+  "license": "CC BY 2.0"
+ },
+ "qm-bbq-pork-ribs": {
+  "spec": "en:Pork ribs",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Balinese_Roasted_Pork_Ribs_-_Iga_Babi_Panggang_Bali.JPG/960px-Balinese_Roasted_Pork_Ribs_-_Iga_Babi_Panggang_Bali.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Balinese_Roasted_Pork_Ribs_-_Iga_Babi_Panggang_Bali.JPG",
+  "artist": "Gunawan Kartapranata",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-cobb-salad": {
+  "spec": "en:Cobb salad",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Cobb_salad%2C_15_October_2010.jpg/960px-Cobb_salad%2C_15_October_2010.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Cobb_salad,_15_October_2010.jpg",
+  "artist": "Jodimichelle",
+  "license": "CC BY-SA 2.0"
+ },
+ "qm-chicken-and-dumplings": {
+  "spec": "en:Chicken and dumplings",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Chicken_and_dumplings.JPG/960px-Chicken_and_dumplings.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_and_dumplings.JPG",
+  "artist": "Amadscientist",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-red-beans-and-rice": {
+  "spec": "en:Red beans and rice",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/76/Red_beans.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_beans.jpg",
+  "artist": "Will7777 at en.wikipedia",
+  "license": "Public domain"
+ },
+ "qm-corn-chowder": {
+  "spec": "en:Corn chowder",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vegan_Garden_Corn_Chowder_with_Chives_%28cropped%29.jpg/960px-Vegan_Garden_Corn_Chowder_with_Chives_%28cropped%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Vegan_Garden_Corn_Chowder_with_Chives_(cropped).jpg",
+  "artist": "tomatoes and friends",
+  "license": "CC BY 2.0"
+ },
+ "qm-reuben-sandwich": {
+  "spec": "en:Reuben sandwich",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Katz%27s_Deli_-_Lunch.jpg/960px-Katz%27s_Deli_-_Lunch.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Katz%27s_Deli_-_Lunch.jpg",
+  "artist": "Ernesto Andrade",
+  "license": "CC BY 2.0"
+ },
+ "qm-blackened-salmon": {
+  "spec": "en:Blackening (cooking)",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/The_Food_at_Davids_Kitchen_090.jpg/960px-The_Food_at_Davids_Kitchen_090.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Food_at_Davids_Kitchen_090.jpg",
+  "artist": "David Reber from Kansas City, USA",
+  "license": "CC BY-SA 2.0"
+ },
+ "qm-chickpea-fatteh": {
+  "spec": "en:Fatteh",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/08/%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%D9%81%D8%AA%D9%91%D8%A9_%D8%A8%D8%A7%D9%84%D9%84%D9%88%D8%B2_%D9%88_%D8%A7%D9%84%D8%B3%D9%91%D9%85%D9%86.jpg",
+  "artist": "Eaeeae",
+  "license": "CC BY 3.0"
+ },
+ "qm-shish-barak": {
+  "spec": "en:Shish barak",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/D%C3%BC%C5%9Fb%C9%99r%C9%99_yar%C4%B1mfabrikat%C4%B1_1.jpg/960px-D%C3%BC%C5%9Fb%C9%99r%C9%99_yar%C4%B1mfabrikat%C4%B1_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:D%C3%BC%C5%9Fb%C9%99r%C9%99_yar%C4%B1mfabrikat%C4%B1_1.jpg",
+  "artist": "Sefer azeri",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-mloukhieh-with-chicken": {
+  "spec": "en:Mulukhiyah",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Molokheya_Egypt%2C_2012.JPG/960px-Molokheya_Egypt%2C_2012.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Molokheya_Egypt,_2012.JPG",
+  "artist": "Habib M'henni",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-riz-a-djej": {
+  "spec": "File:Another time at this local place to eat Dajaj&Roz (4100494072).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Another_time_at_this_local_place_to_eat_Dajaj%26Roz_%284100494072%29.jpg/960px-Another_time_at_this_local_place_to_eat_Dajaj%26Roz_%284100494072%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Another_time_at_this_local_place_to_eat_Dajaj%26Roz_(4100494072).jpg",
+  "artist": "Jadi from Iran",
+  "license": "CC BY 2.0"
+ },
+ "qm-galayet-bandora": {
+  "spec": "en:Galayet bandora",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%D9%82%D9%84%D8%A7%D9%8A%D8%A9_%D8%A8%D9%86%D8%AF%D9%88%D8%B1%D8%A9.jpg/960px-%D9%82%D9%84%D8%A7%D9%8A%D8%A9_%D8%A8%D9%86%D8%AF%D9%88%D8%B1%D8%A9.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D9%84%D8%A7%D9%8A%D8%A9_%D8%A8%D9%86%D8%AF%D9%88%D8%B1%D8%A9.jpg",
+  "artist": "Rania al-Bahara",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-baked-ziti": {
+  "spec": "en:Baked ziti",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Ziti_al_rag%C3%B9.jpg/960px-Ziti_al_rag%C3%B9.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Ziti_al_rag%C3%B9.jpg",
+  "artist": "10Rosso",
+  "license": "CC BY 2.0"
+ },
+ "qm-spaghetti-and-meatballs": {
+  "spec": "en:Spaghetti and meatballs",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Spaghetti_and_meatballs_1.jpg/960px-Spaghetti_and_meatballs_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Spaghetti_and_meatballs_1.jpg",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0"
+ },
+ "qm-pasta-alla-genovese": {
+  "spec": "en:Genovese sauce",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Genovesesauce.jpg/960px-Genovesesauce.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Genovesesauce.jpg",
+  "artist": "Darouet",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-pasta-with-pumpkin-and-sage": {
+  "spec": "File:Pasta with pumpkin, aubergine and chili pepper (30506843925).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pasta_with_pumpkin%2C_aubergine_and_chili_pepper_%2830506843925%29.jpg/960px-Pasta_with_pumpkin%2C_aubergine_and_chili_pepper_%2830506843925%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pasta_with_pumpkin,_aubergine_and_chili_pepper_(30506843925).jpg",
+  "artist": "Luca Nebuloni",
+  "license": "CC BY 2.0"
+ },
+ "qm-pesto-rosso-pasta": {
+  "spec": "File:Pesto rosso.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pesto_rosso.jpg/960px-Pesto_rosso.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Pesto_rosso.jpg",
+  "artist": "Ich",
+  "license": "CC0"
+ },
+ "qm-prawn-and-courgette-linguine": {
+  "spec": "en:Linguine",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Linguine.jpg/960px-Linguine.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Linguine.jpg",
+  "artist": "Sebastian Zurkuhl (= Circle357)",
+  "license": "CC BY-SA 2.0 de"
+ },
+ "qm-paccheri-with-seafood": {
+  "spec": "en:Paccheri",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Paccheri3.jpg/960px-Paccheri3.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Paccheri3.jpg",
+  "artist": "Popo le Chien",
+  "license": "CC0"
+ },
+ "qm-pasta-with-broccoli-and-anchovies": {
+  "spec": "en:Orecchiette",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Orecchiette_carbonara.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Orecchiette_carbonara.jpg",
+  "artist": "Foodista",
+  "license": "CC BY 2.0"
+ },
+ "qm-penne-with-gorgonzola-and-walnuts": {
+  "spec": "en:Gorgonzola",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/A_Gongonzola_from_Baci.jpg/960px-A_Gongonzola_from_Baci.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:A_Gongonzola_from_Baci.jpg",
+  "artist": "Peachyeung316",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-mushroom-bourguignon": {
+  "spec": "File:Mushroom Bourguignon with roasted parsnip and creamed potatoes (GOC Kings Langley Xmas 2012 084) (8290538877).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Mushroom_Bourguignon_with_roasted_parsnip_and_creamed_potatoes_%28GOC_Kings_Langley_Xmas_2012_084%29_%288290538877%29.jpg/960px-Mushroom_Bourguignon_with_roasted_parsnip_and_creamed_potatoes_%28GOC_Kings_Langley_Xmas_2012_084%29_%288290538877%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mushroom_Bourguignon_with_roasted_parsnip_and_creamed_potatoes_(GOC_Kings_Langley_Xmas_2012_084)_(8290538877).jpg",
+  "artist": "Peter O'Connor aka anemoneprojectors",
+  "license": "CC BY-SA 2.0"
+ },
+ "qm-chickpea-and-vegetable-tagine": {
+  "spec": "en:Tajine",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Tajine-marocain-un-plat-varie-et-sain_%28cropped%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Tajine-marocain-un-plat-varie-et-sain_(cropped).jpg",
+  "artist": "BBouchra00",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-west-african-peanut-stew": {
+  "spec": "en:Groundnut soup",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Fufu.jpg/960px-Fufu.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fufu.jpg",
+  "artist": "Londonsista",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-tofu-katsu-curry": {
+  "spec": "en:Katsu curry",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/%E3%81%A8%E3%82%93%E3%81%8B%E3%82%89%E4%BA%AD_%E6%AD%A6%E8%94%B5%E9%87%8E%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%81%8B%E3%81%A4%E3%82%AB%E3%83%AC%E3%83%BC_-_1.jpg/960px-%E3%81%A8%E3%82%93%E3%81%8B%E3%82%89%E4%BA%AD_%E6%AD%A6%E8%94%B5%E9%87%8E%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%81%8B%E3%81%A4%E3%82%AB%E3%83%AC%E3%83%BC_-_1.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:%E3%81%A8%E3%82%93%E3%81%8B%E3%82%89%E4%BA%AD_%E6%AD%A6%E8%94%B5%E9%87%8E%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%81%8B%E3%81%A4%E3%82%AB%E3%83%AC%E3%83%BC_-_1.jpg",
+  "artist": "Kyu3a",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-teriyaki-tofu-rice-bowl": {
+  "spec": "en:Teriyaki",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/22nd_June_2012_Teriyaki_Duck.jpg/960px-22nd_June_2012_Teriyaki_Duck.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:22nd_June_2012_Teriyaki_Duck.jpg",
+  "artist": "Murcotipton",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-rice-and-lentil-stuffed-peppers": {
+  "spec": "en:Stuffed peppers",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Quinoa_stuffed_peppers.jpg/960px-Quinoa_stuffed_peppers.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Quinoa_stuffed_peppers.jpg",
+  "artist": "Mark Bonica",
+  "license": "CC BY 2.0"
+ },
+ "qm-vegan-mushroom-stroganoff": {
+  "spec": "File:Beef Stroganoff z boczniaka (Poznan).jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Beef_Stroganoff_z_boczniaka_%28Poznan%29.jpg/960px-Beef_Stroganoff_z_boczniaka_%28Poznan%29.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Beef_Stroganoff_z_boczniaka_(Poznan).jpg",
+  "artist": "MOs810",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-kai-jeow": {
+  "spec": "File:Khao khaichiao (omelette with rice), Bangkok, 2018-05-15.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Khao_khaichiao_%28omelette_with_rice%29%2C_Bangkok%2C_2018-05-15.jpg/960px-Khao_khaichiao_%28omelette_with_rice%29%2C_Bangkok%2C_2018-05-15.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Khao_khaichiao_(omelette_with_rice),_Bangkok,_2018-05-15.jpg",
+  "artist": "Bitterschoko",
+  "license": "CC0"
+ },
+ "qm-pineapple-fried-rice": {
+  "spec": "File:Fried Rice in Pineapple.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Fried_Rice_in_Pineapple.jpg/960px-Fried_Rice_in_Pineapple.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Fried_Rice_in_Pineapple.jpg",
+  "artist": "kawaiikiri",
+  "license": "CC BY-SA 2.0"
+ },
+ "qm-yam-woon-sen": {
+  "spec": "File:Yam wun sen.JPG",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Yam_wun_sen.JPG/960px-Yam_wun_sen.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Yam_wun_sen.JPG",
+  "artist": "Takeaway",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-tod-man-pla": {
+  "spec": "File:Thanin market tod man pla.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Thanin_market_tod_man_pla.jpg/960px-Thanin_market_tod_man_pla.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Thanin_market_tod_man_pla.jpg",
+  "artist": "Takeaway",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-yam-talay": {
+  "spec": "File:Thai Seafood Salad (Yum Talay) - Aberdeen Seafood 2025-09-08.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Thai_Seafood_Salad_%28Yum_Talay%29_-_Aberdeen_Seafood_2025-09-08.jpg/960px-Thai_Seafood_Salad_%28Yum_Talay%29_-_Aberdeen_Seafood_2025-09-08.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Thai_Seafood_Salad_(Yum_Talay)_-_Aberdeen_Seafood_2025-09-08.jpg",
+  "artist": "Andy Li",
+  "license": "CC0"
+ },
+ "qm-khai-palo": {
+  "spec": "File:Mu phalo.JPG",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mu_phalo.JPG/960px-Mu_phalo.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Mu_phalo.JPG",
+  "artist": "Takeaway",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-pad-kana-moo-krob": {
+  "spec": "File:Phat khana mu krop.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Phat_khana_mu_krop.jpg/960px-Phat_khana_mu_krop.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Phat_khana_mu_krop.jpg",
+  "artist": "Takeaway",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-gai-tod": {
+  "spec": "File:Kai thot krueng thae.JPG",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Kai_thot_krueng_thae.JPG/960px-Kai_thot_krueng_thae.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Kai_thot_krueng_thae.JPG",
+  "artist": "Takeaway",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-red-duck-curry-with-pineapple": {
+  "spec": "File:Red roast duck curry.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Red_roast_duck_curry.jpg/960px-Red_roast_duck_curry.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Red_roast_duck_curry.jpg",
+  "artist": "Terence Ong",
+  "license": "CC BY 2.5"
+ },
+ "qm-tashreeb": {
+  "spec": "File:Tashreeb Iraqi.JPG",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Tashreeb_Iraqi.JPG/960px-Tashreeb_Iraqi.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Tashreeb_Iraqi.JPG",
+  "artist": "Miansari66",
+  "license": "CC0"
+ },
+ "qm-joojeh-kabab": {
+  "spec": "File:Joojeh-kabab.JPG",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Joojeh-kabab.JPG/960px-Joojeh-kabab.JPG",
+  "page": "https://commons.wikimedia.org/wiki/File:Joojeh-kabab.JPG",
+  "artist": "Nasser-sadeghi",
+  "license": "CC BY-SA 4.0"
+ },
+ "qm-mirza-ghasemi": {
+  "spec": "File:Mirza-Qasemi dish.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Mirza-Qasemi_dish.jpg/960px-Mirza-Qasemi_dish.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Mirza-Qasemi_dish.jpg",
+  "artist": "Diako1971",
+  "license": "CC BY-SA 3.0"
+ },
+ "qm-pasta-with-peas-and-ham": {
+  "spec": "File:Strichetti al sugo di piselli.jpg",
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Strichetti_al_sugo_di_piselli.jpg/960px-Strichetti_al_sugo_di_piselli.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Strichetti_al_sugo_di_piselli.jpg",
+  "artist": "GastRomagna",
+  "license": "CC BY-SA 4.0"
  }
 }

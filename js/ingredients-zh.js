@@ -148,6 +148,7 @@ chicken thighs;鸡大腿肉
 chicken wings;鸡翅
 chickpea flour;鹰嘴豆粉
 chickpeas;鹰嘴豆
+chicory;菊苣
 chili powder;辣椒粉
 chilli;辣椒
 chilli bean paste;豆瓣酱
@@ -257,6 +258,7 @@ dried white corn;干白玉米
 dried white navy beans;干白芸豆
 dry sherry;干雪利酒
 dry white wine;干白葡萄酒
+duck breast;鸭胸
 duck legs;鸭腿
 duck sauce;甜酸酱
 edamame beans;毛豆
@@ -294,6 +296,7 @@ fish fillet;鱼柳
 fish sauce;鱼露
 fish stock;鱼汤
 five spice powder;五香粉
+flageolet beans;菜豆
 flank steak;牛腹肉排
 flat rice noodles;河粉
 flax eggs;亚麻籽

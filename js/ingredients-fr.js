@@ -152,6 +152,7 @@ chicken thighs;Hauts de cuisse de poulet;bo
 chicken wings;Ailes de poulet;bo
 chickpea flour;Farine de pois chiche;mo
 chickpeas;Pois chiches;ep
+chicory;Endives;fl
 chili powder;Piment en poudre;es
 chilli;Piment rouge;fl
 chilli bean paste;Pâte de piment (doubanjiang);mo
@@ -261,6 +262,7 @@ dried white corn;Maïs blanc séché;mo
 dried white navy beans;Haricots blancs secs;ep
 dry sherry;Xérès sec;bs
 dry white wine;Vin blanc sec;bs
+duck breast;Magret de canard;bo
 duck legs;Cuisses de canard;bo
 duck sauce;Sauce aigre-douce;mo
 edamame beans;Edamames;sg
@@ -298,6 +300,7 @@ fish fillet;Filets de poisson blanc;po
 fish sauce;Sauce nuoc-mâm;mo
 fish stock;Fumet de poisson;es
 five spice powder;Cinq-épices;mo
+flageolet beans;Flageolets;ep
 flank steak;Bavette;bo
 flat rice noodles;Nouilles de riz plates;mo
 flax eggs;Graines de lin;ep

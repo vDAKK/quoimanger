@@ -1,0 +1,328 @@
+// États-Unis et Moyen-Orient (suite). Format : voir tools/build-recipes.js
+
+# Chicken and sausage gumbo | Gumbo poulet et saucisse | 秋葵浓汤
+@ Chicken | United States | 90 | en:Gumbo | Stew,Spicy
+- Chicken Thighs: 6
+- Kielbasa: 300g
+- Plain Flour: 80g
+- Vegetable Oil: 80ml
+- Onions: 1
+- Green Pepper: 1
+- Celery: 3 sticks
+- Garlic: 3 cloves
+- Okra: 200g
+- Cajun: 1 tbs
+- Chicken Stock: 1.2 litres
+- Bay Leaves: 2
+- Spring Onions: 3
+- Rice: 300g
+1. Cook the flour in the oil, stirring constantly, for 15 to 20 minutes until the roux is chocolate brown.
+2. Add the onion, pepper and celery and cook 5 minutes, then the garlic and cajun spices.
+3. Whisk in the stock. Add the chicken, sliced sausage, okra and bay leaves and simmer for 45 minutes.
+4. Shred the chicken. Serve over rice with spring onions.
+
+# Classic meatloaf | Pain de viande à l’américaine | 美式肉饼
+@ Beef | United States | 75 | en:Meatloaf | Bake,Family
+- Minced Beef: 600g
+- Minced Pork: 200g
+- Onions: 1
+- Breadcrumbs: 60g
+- Milk: 100ml
+- Eggs: 2
+- Worcestershire Sauce: 1 tbs
+- Tomato Ketchup: 6 tbs
+- Brown Sugar: 1 tbs
+- Cider Vinegar: 1 tbs
+- Potatoes: 1kg
+- Butter: 40g
+1. Mix the meats with the grated onion, breadcrumbs soaked in milk, eggs, Worcestershire sauce and salt.
+2. Shape into a loaf on a baking tray.
+3. Mix the ketchup, sugar and vinegar and brush over. Bake at 180°C for 1 hour.
+4. Serve sliced with buttery mashed potatoes.
+
+# Buffalo chicken wings | Ailes de poulet Buffalo | 水牛城辣鸡翅
+@ Chicken | United States | 60 | en:Buffalo wing | Spicy,Grill
+- Chicken Wings: 1.5kg
+- Baking Powder: 1 tbs
+- Hotsauce: 120ml
+- Butter: 60g
+- Celery: 4 sticks
+- Carrots: 3
+- Stilton Cheese: 80g
+- Sour Cream: 150ml
+- Mayonnaise: 3 tbs
+1. Toss the wings with baking powder and salt. Bake on a rack at 220°C for 45 minutes, turning once.
+2. Melt the butter with the hot sauce.
+3. Mash the blue cheese with sour cream and mayonnaise for a dip.
+4. Toss the wings in the sauce. Serve with celery and carrot sticks and the dip.
+
+# Shrimp and grits | Crevettes et polenta à la cajun | 虾配玉米粥
+@ Seafood | United States | 35 | en:Shrimp and grits | Shellfish,Quick
+- King Prawns: 500g
+- Cornmeal: 200g
+- Milk: 500ml
+- Cheddar Cheese: 100g
+- Butter: 40g
+- Bacon: 4 slices
+- Garlic: 2 cloves
+- Cajun: 2 tsp
+- Lemon: 1
+- Spring Onions: 3
+1. Bring the milk and 500ml water to a boil, whisk in the cornmeal and cook 15 minutes, stirring. Add the cheese and half the butter.
+2. Fry the bacon until crisp and crumble it.
+3. Cook the prawns in the bacon fat with garlic, cajun spice and the remaining butter for 3 minutes. Add the lemon juice.
+4. Serve the prawns on the grits with bacon and spring onions.
+
+# BBQ pork ribs | Travers de porc barbecue | 烧烤猪肋排
+@ Pork | United States | 180 | en:Pork ribs | Barbecue,Grill
+- Pork Back Ribs: 2kg
+- Brown Sugar: 3 tbs
+- Smoked Paprika: 2 tbs
+- Garlic Powder: 1 tsp
+- Mustard Powder: 1 tsp
+- Barbeque Sauce: 250ml
+- White Cabbage: 0.5
+- Carrots: 2
+- Mayonnaise: 4 tbs
+- Cider Vinegar: 2 tbs
+- Corn On The Cob: 4
+1. Rub the ribs with sugar, paprika, garlic, mustard and salt. Wrap tightly in foil.
+2. Bake at 150°C for 2 h 30.
+3. Unwrap, brush with barbecue sauce and grill or roast at 230°C for 15 minutes.
+4. Serve with coleslaw (cabbage, carrot, mayonnaise and vinegar) and grilled corn.
+
+# Cobb salad | Salade Cobb | 科布沙拉
+@ Chicken | United States | 30 | en:Cobb salad | Salad,Quick
+- Chicken Breasts: 2
+- Bacon: 6 slices
+- Eggs: 4
+- Avocado: 2
+- Cherry Tomatoes: 16
+- Iceberg Lettuce: 1
+- Stilton Cheese: 100g
+- Chives: 1 bunch
+- Red Wine Vinegar: 2 tbs
+- Dijon Mustard: 1 tsp
+- Olive Oil: 5 tbs
+1. Grill the chicken and dice. Fry the bacon and crumble. Hard-boil the eggs.
+2. Whisk the vinegar, mustard and oil.
+3. Arrange the lettuce with rows of chicken, bacon, egg, avocado, tomatoes and cheese.
+4. Sprinkle with chives and serve with the dressing.
+
+# Chicken and dumplings | Poulet et boulettes de pâte | 美式鸡肉团子汤
+@ Chicken | United States | 70 | en:Chicken and dumplings | Soup,Family
+- Chicken Thighs: 8
+- Onions: 1
+- Carrots: 3
+- Celery: 2 sticks
+- Chicken Stock: 1.5 litres
+- Thyme: 2 sprigs
+- Plain Flour: 250g
+- Baking Powder: 2 tsp
+- Butter: 50g
+- Milk: 180ml
+- Parsley: 1 handful
+1. Simmer the chicken with the vegetables, thyme and stock for 35 minutes. Shred the chicken.
+2. Rub the butter into the flour, baking powder and salt, then stir in the milk to a soft dough.
+3. Drop spoonfuls of dough into the simmering soup.
+4. Cover and cook 15 minutes without lifting the lid. Return the chicken and add parsley.
+
+# Red beans and rice | Haricots rouges et riz (Louisiane) | 路易斯安那红豆饭
+@ Pork | United States | 75 | en:Red beans and rice | Rice,Family
+- Kidney Beans: 800g
+- Kielbasa: 400g
+- Onions: 1
+- Green Pepper: 1
+- Celery: 2 sticks
+- Garlic: 3 cloves
+- Cajun: 2 tsp
+- Bay Leaves: 2
+- Chicken Stock: 500ml
+- Rice: 300g
+- Spring Onions: 3
+1. Brown the sliced sausage. Add the onion, pepper and celery and cook 8 minutes.
+2. Add the garlic, cajun spices, beans with their liquid, stock and bay leaves.
+3. Simmer 45 minutes, crushing some beans to thicken.
+4. Serve over rice with spring onions.
+
+# Corn chowder | Chaudrée de maïs | 玉米浓汤
+@ Pork | United States | 40 | en:Corn chowder | Soup,Quick
+- Sweetcorn: 600g
+- Potatoes: 3
+- Bacon: 6 slices
+- Onions: 1
+- Celery: 2 sticks
+- Chicken Stock: 800ml
+- Milk: 300ml
+- Double Cream: 100ml
+- Chives: 1 bunch
+- Crusty Bread: 1
+1. Fry the chopped bacon, then the onion and celery.
+2. Add the diced potatoes and stock and simmer 15 minutes.
+3. Add the corn, milk and cream and cook 5 minutes. Blend a third of the soup and return it.
+4. Serve with chives and bread.
+
+# Reuben sandwich | Sandwich Reuben | 鲁本三明治
+@ Beef | United States | 20 | en:Reuben sandwich | Sandwich,Quick
+- Rye Bread: 8 slices
+- Corned Beef: 400g
+- Sauerkraut: 250g
+- Swiss Cheese: 8 slices
+- Mayonnaise: 4 tbs
+- Tomato Ketchup: 2 tbs
+- Dill Pickles: 2
+- Butter: 40g
+1. Mix the mayonnaise, ketchup and chopped pickle for the dressing.
+2. Spread the dressing on the bread, layer with corned beef, drained sauerkraut and cheese.
+3. Butter the outside of the sandwiches.
+4. Cook in a pan, pressed down, for 4 minutes per side until the cheese melts.
+
+# Blackened salmon | Saumon cajun noirci | 卡津黑椒三文鱼
+@ Seafood | United States | 25 | en:Blackening (cooking) | Fish,Quick,Spicy
+- Salmon: 4 fillets
+- Smoked Paprika: 2 tsp
+- Cayenne Pepper: 0.5 tsp
+- Garlic Powder: 1 tsp
+- Dried Oregano: 1 tsp
+- Thyme: 1 tsp
+- Butter: 30g
+- Rice: 300g
+- Corn On The Cob: 2
+- Lime: 1
+1. Mix the spices with salt and rub over the salmon.
+2. Cook in a very hot cast-iron pan with butter for 3 minutes per side until dark.
+3. Cut the corn from the cob and stir into the cooked rice with lime juice.
+4. Serve the salmon on the rice.
+
+# Chickpea fatteh | Fatteh aux pois chiches | 鹰嘴豆酸奶面包
+@ Vegetarian | Lebanon | 30 | en:Fatteh | Vegetarian,Quick
+- Pita Bread: 4
+- Chickpeas: 800g
+- Greek Yogurt: 500g
+- Tahini: 3 tbs
+- Garlic: 2 cloves
+- Lemon: 1
+- Pine Nuts: 40g
+- Butter: 30g
+- Ground Cumin: 1 tsp
+- Parsley: 1 handful
+- Paprika: 1 tsp
+1. Cut the pita into squares, brush with oil and bake at 200°C for 10 minutes until crisp.
+2. Warm the chickpeas in their liquid with the cumin.
+3. Whisk the yogurt with tahini, crushed garlic, lemon juice and salt.
+4. Layer bread, chickpeas and yogurt. Top with pine nuts fried in butter, paprika and parsley.
+
+# Shish barak | Shish barak (raviolis à l’agneau, sauce yaourt) | 黎巴嫩酸奶羊肉饺
+@ Lamb | Lebanon | 90 | en:Shish barak | Dumplings
+- Plain Flour: 300g
+- Lamb Mince: 300g
+- Onions: 1
+- Pine Nuts: 40g
+- Ground Allspice: 0.5 tsp
+- Greek Yogurt: 800g
+- Corn Flour: 1 tbs
+- Eggs: 1
+- Garlic: 3 cloves
+- Coriander: 1 bunch
+- Butter: 30g
+1. Make a dough with the flour, 150ml water and salt. Rest 30 minutes.
+2. Fry the lamb with onion, pine nuts and allspice.
+3. Roll the dough thin, cut small circles, fill, fold and pinch the ends together. Bake at 200°C for 10 minutes.
+4. Heat the yogurt with the corn flour and egg, stirring constantly. Add the dumplings and simmer 10 minutes. Top with garlic and coriander fried in butter.
+
+# Mloukhieh with chicken | Mloukhieh au poulet | 黎巴嫩黄麻叶炖鸡
+@ Chicken | Lebanon | 75 | en:Mulukhiyah | Stew
+- Chicken Legs: 4
+- Mulukhiyah: 400g
+- Garlic: 8 cloves
+- Coriander: 1 bunch
+- Onions: 1
+- Cinnamon Stick: 1
+- Lemon: 2
+- Chicken Stock: 1 litre
+- Vermicelli Pasta: 50g
+- Rice: 300g
+1. Simmer the chicken with the onion and cinnamon in the stock for 40 minutes. Shred it.
+2. Fry the crushed garlic and chopped coriander in oil until fragrant.
+3. Add the chopped mulukhiyah leaves and the broth and simmer 15 minutes. Return the chicken.
+4. Fry the vermicelli in butter, add the rice and cook it. Serve with the stew and lemon.
+
+# Riz a djej | Riz à djej (riz au poulet épicé) | 黎巴嫩香料鸡肉饭
+@ Chicken | Lebanon | 75 | File:Another time at this local place to eat Dajaj&Roz (4100494072).jpg | Rice,Family
+- Chicken Legs: 4
+- Minced Beef: 250g
+- Basmati Rice: 400g
+- Onions: 2
+- Ground Cinnamon: 1 tsp
+- Ground Allspice: 1 tsp
+- Cinnamon Stick: 1
+- Bay Leaves: 2
+- Almonds: 50g
+- Pine Nuts: 40g
+- Butter: 40g
+- Greek Yogurt: 300g
+1. Simmer the chicken with one onion, the cinnamon stick and bay leaves in 1.5 litres of water for 40 minutes. Shred the chicken.
+2. Brown the minced beef with the other onion and the ground spices.
+3. Add the rice and 800ml of the chicken broth. Cover and cook 18 minutes.
+4. Top the rice with chicken and nuts toasted in butter. Serve with yogurt.
+
+# Tashreeb | Tashreeb (bouillon d’agneau au pain) | 伊拉克羊肉泡馍
+@ Lamb | Iraq | 120 | File:Tashreeb Iraqi.JPG | Soup,Stew
+- Lamb Shoulder: 800g
+- Chickpeas: 400g
+- Onions: 2
+- Tomatoes: 3
+- Tomato Puree: 2 tbs
+- Dried Limes: 3
+- Ground Turmeric: 1 tsp
+- Ground Allspice: 1 tsp
+- Pita Bread: 4
+1. Brown the lamb with the onions and spices.
+2. Add the tomatoes, tomato puree, pierced dried limes and 1.5 litres of water. Simmer 1 h 30.
+3. Add the chickpeas for the last 20 minutes.
+4. Tear the bread into bowls, ladle the broth over it and top with the meat.
+
+# Galayet bandora | Galayet bandora (tomates poêlées jordaniennes) | 约旦番茄炒锅
+@ Vegan | Jordan | 20 | en:Galayet bandora | Vegetarian,Quick
+- Tomatoes: 8
+- Onions: 1
+- Garlic: 4 cloves
+- Green Chilli: 2
+- Olive Oil: 6 tbs
+- Pine Nuts: 40g
+- Pita Bread: 4
+- Chickpeas: 400g
+1. Fry the onion, garlic and chillies in olive oil until soft.
+2. Add the chopped tomatoes and salt and cook 15 minutes until saucy.
+3. Warm the chickpeas in it.
+4. Top with toasted pine nuts and serve with bread.
+
+# Joojeh kabab | Joojeh kabab (brochettes de poulet au safran) | 伊朗藏红花烤鸡串
+@ Chicken | Iran | 40 | File:Joojeh-kabab.JPG | Grill,Rice
+- Chicken Breasts: 4
+- Saffron: 1 pinch
+- Greek Yogurt: 200g
+- Onions: 1
+- Lemon: 2
+- Butter: 30g
+- Basmati Rice: 400g
+- Tomatoes: 4
+- Sumac: 1 tsp
+1. Steep the saffron in 2 tbs of hot water. Mix with the yogurt, grated onion, lemon juice and salt. Marinate the chicken pieces for at least 1 hour.
+2. Thread onto skewers with tomato halves.
+3. Grill for 10 to 12 minutes, basting with melted butter.
+4. Serve on rice with sumac.
+
+# Mirza ghasemi | Mirza ghasemi (aubergines fumées aux œufs) | 伊朗烟熏茄子炒蛋
+@ Vegetarian | Iran | 50 | File:Mirza-Qasemi dish.jpg | Vegetarian,Eggs
+- Aubergine: 4
+- Garlic: 6 cloves
+- Tomatoes: 4
+- Ground Turmeric: 1 tsp
+- Eggs: 4
+- Vegetable Oil: 4 tbs
+- Pita Bread: 4
+1. Grill the whole aubergines over a flame or under the grill until blackened and soft. Peel and chop.
+2. Fry the garlic in oil with the turmeric, then add the chopped tomatoes and cook 10 minutes.
+3. Add the aubergines and cook 10 minutes.
+4. Stir in the beaten eggs until just set. Serve with bread.
